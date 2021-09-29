@@ -3,14 +3,14 @@ $(function () {
     words: ['<img class="sliderb" src="images/family.png" />', '<img class="sliderb" src="images/wellness-slider.png" />','<img class="sliderb" src="images/preventive-health.png" />','<img class="sliderb" src="images/opthal.png" />','<img class="sliderb" src="images/gynaecologists.png" />'],
     animationIn: "fadeIn",
     animationOut: "fadeOut",
-    speed: 4000
+    speed: 3000
   });;
 
   $("#box6words").wordsrotator({
     words: ['Children & Family',  'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists'],
     animationIn: "fadeInDown",
     animationOut: "fadeOut",
-    speed: 4000
+    speed: 3000
   });
 
 });
@@ -22,14 +22,14 @@ $(function () {
    words: ['<img class="sliderb img-fluid" src="images/family.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />','<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />'],    
    animationIn: "fadeIn",
     animationOut: "fadeOut",
-    speed: 4000
+    speed: 3000
   });;
 
   $("#box2words").wordsrotator({
     words: ['Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal', 'Cronic Care', 'Gynaecologists', 'Mental Health', 'Sexual Health'],
     animationIn: "fadeInDown",
     animationOut: "fadeOut",
-    speed: 400000000
+    speed: 3000
   });
 
 });
