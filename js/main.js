@@ -29,7 +29,7 @@ $(function () {
     words: [' Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists', 'Sexual Health'],
     animationIn: "fadeInDown",
     animationOut: "fadeOut",
-    speed: 400000
+    speed: 4000
   });
 
 });
