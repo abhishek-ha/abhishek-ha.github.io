@@ -1,13 +1,13 @@
 $(function () {
   $("#box4words").wordsrotator({
-    words: ['<img class="sliderb" src="images/family.png" />', '<img class="sliderb" src="images/wellness-slider.png" />','<img class="sliderb" src="images/preventive-health.png" />','<img class="sliderb" src="images/opthal.png" />','<img class="sliderb" src="images/gynaecologists.png" />'],
+    words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />'],    
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
     speed: 4000
   });;
 
   $("#box6words").wordsrotator({
-    words: ['Preventive HealthCare',  'Wellness', 'Children & Family', 'Opthal',  'Gynaecologists'],
+    words: [' Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists', 'Sexual Health'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
     speed: 4000
