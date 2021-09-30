@@ -1,16 +1,16 @@
 $(function () {
   $("#box4words").wordsrotator({
     words: ['<img class="sliderb" src="images/family.png" />', '<img class="sliderb" src="images/wellness-slider.png" />','<img class="sliderb" src="images/preventive-health.png" />','<img class="sliderb" src="images/opthal.png" />','<img class="sliderb" src="images/gynaecologists.png" />'],
-    animationIn: "fadeIn",
-    animationOut: "fadeOut",
-    speed: 3000
+    animationIn: "slideIn 0.4s",
+    animationOut: "slideOut 0.4s",
+    speed: 4000
   });;
 
   $("#box6words").wordsrotator({
-    words: ['Children & Family',  'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists'],
-    animationIn: "fadeInDown",
-    animationOut: "fadeOut",
-    speed: 3000
+    words: ['Preventive HealthCare',  'Wellness', 'Children & Family', 'Opthal',  'Gynaecologists'],
+    animationIn: "slideIn 0.4s",
+    animationOut: "slideOut 0.4s",
+    speed: 4000
   });
 
 });
@@ -19,28 +19,20 @@ $(function () {
 
 $(function () {
   $("#box1words").wordsrotator({
-   words: ['<img class="sliderb img-fluid" src="images/family.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />','<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />'],    
-   animationIn: "fadeIn",
+   words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />'],    
+   animationIn: "fadeInDown",
     animationOut: "fadeOut",
-    speed: 3000
+    speed: 4000
   });;
 
   $("#box2words").wordsrotator({
-    words: ['Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal', 'Cronic Care', 'Gynaecologists', 'Mental Health', 'Sexual Health'],
+    words: [' Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists', 'Sexual Health'],
     animationIn: "fadeInDown",
     animationOut: "fadeOut",
-    speed: 3000
+    speed: 400000
   });
 
 });
-
-
-
-
-
-
-
-
 
 
 $(document).ready(function(){
@@ -130,8 +122,6 @@ jQuery(document).ready(function($) {
           });
 
 
-
-
 $(document).ready(function()
 {
 
@@ -151,7 +141,7 @@ responsive:
 {
 0:{items:1},
 575:{items:2},
-768:{items:3},
+768:{items:2},
 991:{items:3},
 1199:{items:3}
 }
@@ -177,6 +167,47 @@ viewedSlider.trigger('next.owl.carousel');
 }
 
 });
+
+
+$(document).ready(function() {
+    $("#news-slider2").owlCarousel({
+loop:true,
+margin:30,
+autoplay:true,
+autoplayTimeout:400000,
+   responsive:
+{
+0:{items:1},
+575:{items:2},
+768:{items:2},
+991:{items:3},
+1199:{items:3}
+}
+    });
+
+});
+
+
+$(document).ready(function() {
+    $("#serviceslider1").owlCarousel({
+loop:true,
+margin:30,
+autoplay:true,
+autoplayTimeout:4000,
+   responsive:
+{
+0:{items:1},
+575:{items:2},
+768:{items:2},
+991:{items:3},
+1199:{items:3}
+}
+    });
+
+});
+
+
+
 
 
 
