@@ -11,7 +11,9 @@ body{
     color: #666;
 
    letter-spacing: 1px;
-   background-color: #f1fbfd;
+ /*  background-color: #f1fbfd;*/
+    background-color: #fff;
+
   
    -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -529,12 +531,10 @@ header{
     background-repeat: no-repeat;
     background-size: 55%;
 }
-.get-know-container {
-    background-image: url(../images/get-know-Section-Background.png);
-    background-position: 0% 80%;
-    background-repeat: no-repeat;
-    background-size: 64%;
-}
+
+
+
+
 .fingertip-section{
     }
 .bggrey{
@@ -895,12 +895,7 @@ li {
 
 /* Bringing Health Section */
 
-.bringing-section{
-    background: url(../images/section-background.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 55%;
-}
+
 .column-gap-50{
     column-gap: 50%;
 }
@@ -1481,10 +1476,10 @@ li {
 
 @media only screen and (max-width: 575px){
 
-.navbar-light .navbar-brand {
+/*.navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
     margin: auto;
-}
+}*/
 
 .activate1{
     display: none;
@@ -1686,7 +1681,7 @@ li {
     background-size: 115%;
     padding-top: 147px;
     background-position: 92% 7%;
-    background-color: #f1fbfd;
+    background-color: #fff;
 }
 
 
@@ -1699,6 +1694,32 @@ h2{
     line-height: 30px;
 }
 
+.we-take-care{
+     background-image: url(../images/get-know-Section-Background.png);
+   /* background-position: 0% 80%;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.whereur{
+    background: url(../images/section-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bringing-section{
+    background: url(../images/section-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.get-know-container {
+    background-image: url(../images/get-know-Section-Background.png);
+   /* background-position: 0% 80%;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
 .rotation-animations, .static-banner-headline {
    line-height: 30px;
@@ -1837,6 +1858,33 @@ h2{
 @media only screen and (min-width: 351px){
 h1{
     font-size: 25px;
+}
+
+
+.we-take-care{
+     background-image: url(../images/get-know-Section-Background.png);
+   /* background-position: 0% 80%;*/
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.whereur{
+    background: url(../images/section-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.bringing-section{
+    background: url(../images/section-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.get-know-container {
+    background-image: url(../images/get-know-Section-Background.png);
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    background-size: 64%;
 }
 
 
@@ -4307,7 +4355,7 @@ h1{
     background-size: 300px;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    margin-bottom: 150px; 
+    margin-bottom: 50px; 
     display: block;
 }
 .card-info h4{
@@ -4606,7 +4654,7 @@ h1{
     background-size: 300px;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    margin-bottom: 150px; 
+    margin-bottom: 50px; 
     display: block;
 }
 
