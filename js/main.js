@@ -1,13 +1,13 @@
 $(function () {
   $("#box4words").wordsrotator({
-    words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />'],    
+     words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png"/>'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
     speed: 4000
   });;
 
   $("#box6words").wordsrotator({
-    words: [' Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists', 'Sexual Health'],
+ words: [' Children & Family', 'Dental', 'Wellness', 'Preventive HealthCare', 'Opthal',  'Gynaecologists', 'Sexual Health'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
     speed: 4000
@@ -19,7 +19,7 @@ $(function () {
 
 $(function () {
   $("#box1words").wordsrotator({
-   words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />'],    
+   words: ['<img class="sliderb img-fluid" src="images/family.png" />','<img class="sliderb img-fluid" src="images/dental.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/gynaecologists.png" />','<img class="sliderb img-fluid" src="images/shealth.png"/>'],    
    animationIn: "fadeInDown",
     animationOut: "fadeOut",
     speed: 4000
@@ -209,8 +209,21 @@ autoplayTimeout:4000,
 
 
 
+$(document).ready(function() {
+    $("#corporateslider").owlCarousel({
+loop:true,
+margin:30,
+autoplay:true,
+autoplayTimeout:3000,
+   responsive:
+{
+0:{items:2},
+575:{items:3},
+768:{items:4},
+991:{items:3},
+1199:{items:3}
+}
+    });
 
-
-
-
+});
 
