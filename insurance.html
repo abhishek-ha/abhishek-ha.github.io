@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/jquery.wordrotator.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
@@ -26,44 +27,84 @@
     
     background-color: transparent;
   }  
-
-
-
 </style>
 
   </head>
   <body>
 
-<header >
-     
-    <div class="container">
-    <div class="d-flex flex-column flex-md-row align-items-center pt-4 bg-white  ">
-  <h5 class="my-0 mr-md-auto logo"><a href="index.html"><img src="images/logo.png"></h5>
-   <a class="btn1" href="#">Login</a>
-</div>
-</div>
-</header>
 
+<nav class="navbar navbar-expand-lg navbar-light sticky-top mob1">
+    <div class="container">
+        <a class="navbar-brand logo mdcenter" href="index.html"><img src="images/logo.png"> </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse " id="mobile_nav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+        </ul>
+        <ul class="navbar-nav navbar-light">
+            
+            <li class="nav-item dmenu dropdown pl-5">
+            <a class="nav-link dropdown-toggle btn1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Login </a>
+               
+                <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.healthassure.in/Register/MpowerLogin?mpower=mpower" target="_blank"> Insurer Login</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.healthassure.in/Register/MpowerLogin?mpower=mpower" target="_blank"> Corporate Login </a>
+                     <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://live.healthassure.in/Products" target="_blank"> HealthAssure Login </a>
+                </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top desk1 ">
+    <div class="container">
+        <a class="navbar-brand logo mdcenter" href="index.html"><img src="images/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse " id="mobile_nav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
+        </ul>
+        <ul class="navbar-nav navbar-light">
+            
+            <li class="nav-item dmenu dropdown ">
+        <a class="dropdown-item" href="https://www.healthassure.in/Register/MpowerLogin?mpower=mpower" target="_blank"> Insurer Login</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.healthassure.in/Register/MpowerLogin?mpower=mpower" target="_blank"> Corporate Login </a>
+                     <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://live.healthassure.in/Products" target="_blank"> HealthAssure Login </a>
+               <div class="dropdown-divider"></div>
+               
+            </li>
+          </ul>
+        </div>
+    </div>
+</nav>
 <section  class="corporate-wellnessbg">
 
 <div class="container  ">
         <div class="row pt-7">
             <div class="col-md-6 ">
-                <h2 class="head pb-6"> Affordable Corporate  <br>Wellness For You </h2>
+                <h2 class="head pb-6">We Work with almost<br> all  Leading Insurance Companies in India<br> </h2>
 
     <form class="bggrey3 pt-4 pb-6 pl-4 pr-4 radius1 ml-2 mr-5 mt-5 ">
     <h2 class="head1  pb-5 pt-1">Enter your details to receive a call back </h2>
      <div class="form-group">
-    <input type="text" class="form-control formrds" id="inputAddress" placeholder="Full Name *" required>
+    <input type="text" class="form-control formrds"  placeholder="Full Name *" required>
   </div>
 
  <div class="form-group">
-    <input type="email" class="form-control formrds" id="inputAddress" placeholder="Email *" required>
+    <input type="email" class="form-control formrds"  placeholder="Email *" required>
   </div>
    <div class="form-group">
-    <input type="text" class="form-control formrds" id="inputAddress" placeholder="Mobile*" required>
+    <input type="text" class="form-control formrds"  placeholder="Mobile*" required>
   </div>
-<button type="submit" class="btn btn-class border-green btn-lg btn-block mt-3">Submit</button>
+<button type="submit" type="submit" class="btn btn-class border-green btn-lg btn-block mt-3">Submit</button>
 </form>
               </div>
        </div>
@@ -204,22 +245,238 @@
 </div>
     </section>
 
-<div class="container pt-7">
-    <div class="row">
-        <div class="col-12 text-center">
-                        <h2 class="head"> HealthAssure Primary Care for Your Employees </h2>
-                        <p class="subhead"> Explore our range of offering </p>
-                        <div class="line"></div>
-     </div>
-    </div>
 
-<div class="row pt-5">
-    <div class="col-md-12 text-center">
-     <img src="images/corporates.png" class="img-fluid" >
-        
-    </div>
-    </div>
+
+
+
+
+<div class="container">
+     <div class="row mainhead">
+            <div class="col-12 text-center">
+                <h2 class="head">Corporates That We Work With</h2>
+                <p class="subhead">Our client's trust keeps us connected</p>
+                <div class="line"></div>
+
+               <!--  <div>
+                    <img src="images/Corporates.png" class="img-fluid" style="width: 80%;">
+                </div> -->
+            </div>
+        </div>
+
+<div class="row pt-5 mob1">
+    <div class="col-xl-2  col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/aditya-birla.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/bharti-axa.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/kotak-life.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/fedex.png" class="img-fluid corporate">
+   </div>
+     <div class=" col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/hdfc-life.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/ola.jpg" class="img-fluid corporate">
+   </div>
+   
+
+   
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/wipro.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/met-life.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/lic.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/reliance-life.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/birla-sun-life.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/deutsche-bank.jpg" class="img-fluid corporate">
+   </div>
+<div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/ibm.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/max-life.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/icici-bank.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/tata-motors.png" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/sbi-card.jpg" class="img-fluid corporate">
+   </div>
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6">
+        <img src="corporate/max-bupa.png" class="img-fluid corporate">
+   </div>
+    
+ 
 </div>
+
+<div class="row d-flex justify-content-center mob1">
+
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6  ">
+        <img src="corporate/icici-prudental.png" class="img-fluid corporate">
+   </div>
+
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ">
+        <img src="corporate/tata-aia.png" class="img-fluid corporate">
+   </div>
+  
+    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-6 ">
+        <img src="corporate/deloitte.png" class="img-fluid corporate">
+   </div>
+ 
+</div>
+
+
+
+
+    <div class="row flex-cr-gap desk1 pt-5">
+                <div class="col-md-12">
+                    <div id="corporateslider" class="owl-carousel">
+                        <div class="post-slide2">
+   <div class="col-xl-2  col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/aditya-birla.png" class="img-fluid corporate">
+   </div>
+         </div>
+            <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/bharti-axa.png" class="img-fluid corporate">
+   </div>
+ </div>
+                        
+                        <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/kotak-life.jpg" class="img-fluid corporate">
+   </div>
+ </div>
+
+               <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/fedex.png" class="img-fluid corporate">
+   </div>
+ </div>
+                           <div class="post-slide2">
+<div class=" col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/hdfc-life.png" class="img-fluid corporate">
+   </div>
+</div>
+                           <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/ola.jpg" class="img-fluid corporate">
+   </div>
+ </div>
+                           <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/wipro.jpg" class="img-fluid corporate">
+   </div>
+</div>
+                           <div class="post-slide2">
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/met-life.jpg" class="img-fluid corporate">
+   </div>
+                      </div>
+                           <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/lic.png" class="img-fluid corporate">
+   </div>
+</div>
+                           <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/reliance-life.png" class="img-fluid corporate">
+   </div>
+ </div>
+
+                           <div class="post-slide2">
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/birla-sun-life.jpg" class="img-fluid corporate">
+   </div>
+</div>
+<div class="post-slide2">
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/deutsche-bank.jpg" class="img-fluid corporate">
+   </div>
+ </div>
+<div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/ibm.png" class="img-fluid corporate">
+   </div>
+ </div>
+
+ <div class="post-slide2">
+
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/max-life.jpg" class="img-fluid corporate">
+   </div>
+ </div>
+
+                            <div class="post-slide2">
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/icici-bank.png" class="img-fluid corporate">
+   </div>
+</div>
+
+                            <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/tata-motors.png" class="img-fluid corporate">
+   </div>
+</div>
+
+                            <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/sbi-card.jpg" class="img-fluid corporate">
+   </div>
+</div>
+
+
+                            <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6">
+        <img src="corporate/max-bupa.png" class="img-fluid corporate">
+   </div>
+ </div>
+ <div class="post-slide2">
+
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 ">
+        <img src="corporate/icici-prudental.png" class="img-fluid corporate">
+   </div>
+</div>
+
+ <div class="post-slide2">
+ <div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 ">
+        <img src="corporate/tata-aia.png" class="img-fluid corporate">
+   </div>
+</div>
+
+                            <div class="post-slide2">
+<div class="col-xl-2 col-lg-2 col-md-12 col-sm-6 ">
+        <img src="corporate/deloitte.png" class="img-fluid corporate">
+   </div>
+</div>
+  </div>
+                </div>
+            </div>
+
+
+    
+</div>
+
+
+
+
+
 
 <section class="bg-white"> 
 <div class="container pt-7">
@@ -434,73 +691,60 @@
 
 
 
- <section class="footerbg">
-     <div class="container-fluid footer_row_one pt-3">
+ <section class="footerins">
+    <div class="container-fluid footer_row_one pt-3">
         <div class="row">
             <div class="container">
-                <div class="row align-items-center justify-space-between">
-                    <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-lg-8 col-md-6 col-sm-12">
                         <div class="_one">
                             <h2>Get Started</h2>
                             <h3>with HealthAssure today</h3>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4  col-sm-12">
+                    <div class="col-lg-4 col-md-6  col-sm-12">
                         <div class="footerblue ">
-                            <a href="#" class=" border-blue1">Explore Plans <i class="fa fa-chevron-right ml-2"></i></a>
+                            <a href="#" class=" border-blue1">Explore Plans <i class="fa fa-chevron-right pl-88" ></i></a>
                         </div>
                     </div>
                 </div>
     <div class="row mt-3 d-flex">
 
                     <div class="col-md-6">
-                          <div class="desk ml-4 ">
+                          <div class="desk1 ml-4 ">
                             <div class="mt-4 footerbtn">
-                          <a href="#" class=" border-green1 footerbtn">Corporates <i class="fa fa-chevron-right ml-2 text-right pl-109"></i></a>
+                          <a href="corporate-wellness.html" target="_blank" class=" border-green1 footerbtn">Corporates <i class="fa fa-chevron-right ml-2 text-right pl-109"></i></a>
                           </div>
                           <div class="mt-4 footerbtn">
-                      <a href="#" class=" border-green1 footerbtn ">Insurance Companies <i class="fa fa-chevron-right ml-2 pl-2 pb-2 pt-2"></i></a>
+                      <a href="insurance.html" target="_blank"  class=" border-green1 footerbtn ">Insurance Companies <i class="fa fa-chevron-right ml-2 pl-2 pb-2 pt-2"></i></a>
                           </div>
 
                            </div>
                     </div>
                     <div class="col-md-6 ">
 
-         <div class="desk ml-4  ">
+         <div class="desk1 ml-4  ">
             <div class="mt-4 footerbtn">
-                <a href="#" class=" border-green1 ">Agents <i class="fa fa-chevron-right ml-2 pl-148"></i></a>
+                <a href="agents.html" target="_blank"  class=" border-green1 ">Agents <i class="fa fa-chevron-right ml-2 pl-148"></i></a>
             </div>
             <div class="mt-4 footerbtn">
-            <a href="#" class=" border-green1 ">Providers <i class="fa fa-chevron-right ml-2 pl-123 "></i></a>   
+            <a href="provider.html" target="_blank"  class=" border-green1 ">Providers <i class="fa fa-chevron-right ml-2 pl-123 "></i></a>   
                </div>
             </div>
 
   </div>
 
- <!-- <div class="col-md-12 col-sm-6 col-xs-12 mbtn  ">
-      <a href="#" class="btn-class border-green">Corporates <i class="fa fa-chevron-right ml-2"></i></a>
-    </div>
-<div class="col-md-12 col-sm-6 col-xs-12 mbtn  ">
-    <a href="#" class="btn-class border-green">Insurance Companies <i class="fa fa-chevron-right ml-2"></i></a>
-    </div>
-<div class="col-md-12 col-sm-6 col-xs-12 mbtn  ">
-    <a href="#" class="btn-class border-green">Agents <i class="fa fa-chevron-right ml-2"></i></a>
-    </div>
-<div class="col-md-12 col-sm-6 col-xs-12 mbtn  ">
-<a href="#" class="btn-class border-green">Providers <i class="fa fa-chevron-right ml-2"></i></a>
-    </div> -->
-<!-- </div> -->
   
-   <div class="col-md-12 d-flex justify-space-between w-100 mob ">
-                        <a href="#" class="btn-class border-green1 ">Corporates <i class="fa fa-chevron-right ml-2 text-right "></i></a>
-                        <a href="#" class=" border-green1">Insurance Companies <i class="fa fa-chevron-right ml-2 pl-2 pb-2 pt-2"></i></a>
-                        <a href="#" class="btn-class border-green1 ">Agents <i class="fa fa-chevron-right ml-2 pl-5"></i></a>
-                        <a href="#" class="btn-class border-green1 ">Providers <i class="fa fa-chevron-right ml-2 pl-4 "></i></a>
+   <div class="col-md-12 d-flex justify-space-between w-100 mob1 ">
+                        <a href="corporate-wellness.html" target="_blank"  class="btn-class border-green1 ">Corporates <i class="fa fa-chevron-right footerlft text-right "></i></a>
+                        <a href="insurance.html" target="_blank"  class=" border-green1">Insurance Companies <i class="fa fa-chevron-right footerlft pl-2 pb-2 pt-2"></i></a>
+                        <a href="agents.html" target="_blank"  class="btn-class border-green1 ">Agents <i class="fa fa-chevron-right footerlft pl-5"></i></a>
+                        <a href="provider.html" target="_blank"  class="btn-class border-green1 ">Providers <i class="fa fa-chevron-right footerlft pl-4 "></i></a>
                     </div>
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-md-4 col-sm-12 ">
+                    <div class="col-md-4 col-sm-12  pb-4">
                         <div class="addr d-flex ml-4">
                             <div class="addr-icon">
                                 <i class="fa fa-map-marker"></i>
@@ -525,36 +769,38 @@
                                 <div>  hello@HealthAssure.in<br>CIN U85100MH2011PTC223007  </div>
                                
                                 <div class="f_social_links">
-                                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/healthassure.india/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/healthassure2011/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/healthassure1" target="_blank"><i class="fa fa-twitter"></i></a>
                                 </div>
                             </div>
                         </div>
                         
                     </div>
-                    <div class="col-md-4 col-sm-12 white footer-16">
+
+                     <div class="col-md-4 col-sm-12 white footer-16">
                         <h5 class="ml-4 text-white">Quick Links</h5>
                         <div class="fline ml-4"> </div>
                         <div class="d-flex footer_quick_links">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Plans</a></li>
+                                <li><a href="#package">Plans</a></li>
                                 <li><a href="#">Find your plan</a></li>
                                 <li><a href="#">Health Shop</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="https://healthassure.in/Register/Contact" target="_blank">Contact</a></li>
                             </ul>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Media</a></li>
-                                <li><a href="#">Blog</a></li>
+                            <ul class="ml-3">
+                                <li><a href="https://healthassure.in/Register/AboutUs" target="_blank">About Us</a></li>
+                                
+                                <li><a href="#media">Media</a></li>
+                                <li><a href="https://healthassure.blog/" target="_blank">Blog</a></li>
                                 <li><a href="#">My Account</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 white footer-16 Speciallists_near_you">
+
+  <div class="col-md-4 col-sm-12 white footer-16 Speciallists_near_you">
                         <div class="flex__right">
                             <h5 class="text-white ml-4">Speciallists Near You </h5>
                             <div class="fline ml-4"> </div>
@@ -577,14 +823,16 @@
             </div>
         </div>
         <div class="footer">
-        <p class="text-center white f-14 mb-0 mt-5" >Copyright @ 2021 HealthAssure | All Rights Reserved</p> 
+        <p class="text-center white f-14 mb-0 mt-5" >Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf" target="_blank">Return Policy </a>| <a href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">Terms & Conditions </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf" target="_blank">Privacy Policy</a></p> 
         </div>
  </div>
 
 </section>
 
 
-     <script src="js/bootstrap.min.js"></script>
+ 
+
+ <script src="js/bootstrap.min.js"></script>
  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
    <script src="js/jquery.wordrotator.js"></script>
  
@@ -595,26 +843,24 @@
 
 
     <script >
-        
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
 
 
+$(document).ready(function () {
+$('.navbar-light .dmenu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(300);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideUp(210)
+    });
+}); 
+ 
+    $(document).ready(function() {
+    $(".megamenu").on("click", function(e) {
+        e.stopPropagation();
+    });
+});
 
-    </script>
+
+     </script>
 
 
   
