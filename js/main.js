@@ -3,14 +3,14 @@ $(function () {
      words: ['<img class="sliderb img-fluid" src="images/childcare.png" />', '<img class="sliderb img-fluid" src="images/eldercare.png" />', '<img class="sliderb img-fluid" src="images/gynaecologists.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />', '<img class="sliderb img-fluid" src="images/dental.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/sleep.png" />','<img class="sliderb img-fluid" src="images/weight-loss.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png"/>','<img class="sliderb img-fluid" src="images/chestpain.png"/>','<img class="sliderb img-fluid" src="images/neckpain.png"/>','<img class="sliderb img-fluid" src="images/allergy.png" />','<img class="sliderb img-fluid" src="images/covid-concern.png" />','<img class="sliderb img-fluid" src="images/stomach-pain.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
-    speed: 200000
+    speed: 2000
   });;
 
   $("#box6words").wordsrotator({
  words: [' Child Care <span  class="near">, near you</span>','Elderly Care <span class="near">, near you</span>','Women Care <span  class="near">, near you</span>','Health Screening <span  class="near">, near you</span>',  'Dental Checkup <span  class="near">, near you</span>','Eye Checkup <span  class="near">, near you</span>','Sleep Issues <span  class="near">, near you</span>','Weight Issues <span  class="near">, near you</span>', 'Mindfulness <span  class="near">, near you</span>','Chest Discomfort <span  class="near">, near you</span>','Neck Pain <span  class="near">, near you</span>','Flu/Allergy <span  class="near">, near you</span>','Covid Concerns <span  class="near">, near you</span>','Upset Stomach <span  class="near">, near you</span>', 'Therapy <span  class="near">, near you</span>'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
-    speed: 200000
+    speed: 2000
   });
 });
 
