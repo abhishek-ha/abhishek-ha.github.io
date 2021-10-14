@@ -227,7 +227,7 @@
             var i = showIndexsInfo.hashIndexs[index];
             if (i !== undefined) {
                 scales = Math.pow(config.scale, Math.abs(i - halfShowNum));
-                zIndex = 9999 + (i > halfShowNum ? (config.num - 1 - i) : i);
+                zIndex = 999 + (i > halfShowNum ? (config.num - 1 - i) : i);
                 $(element).css({
                     display: 'block',
                     position: 'absolute',
