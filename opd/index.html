@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href="/">
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Project Mobile Cafe">
@@ -24,10 +26,31 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=77881004');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2654709203');
       });
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCgeCdykznJszYYrsnU6FExV2gvby8pO6Y",
+      authDomain: "moto-web-1.firebaseapp.com",
+      projectId: "moto-web-1",
+      storageBucket: "moto-web-1.appspot.com",
+      messagingSenderId: "962817508969",
+      appId: "1:962817508969:web:ee84af01614eb7bafc44f8"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
 </body>
 </html>

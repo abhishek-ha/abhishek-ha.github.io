@@ -1,16 +1,16 @@
 $(function () {
   $("#box4words").wordsrotator({
-     words: ['<img class="sliderb img-fluid" src="images/childcare.png" />', '<img class="sliderb img-fluid" src="images/eldercare.png" />', '<img class="sliderb img-fluid" src="images/gynaecologists.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />', '<img class="sliderb img-fluid" src="images/dental.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/sleep.png" />','<img class="sliderb img-fluid" src="images/weight-loss.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png"/>','<img class="sliderb img-fluid" src="images/chestpain.png"/>','<img class="sliderb img-fluid" src="images/neckpain.png"/>','<img class="sliderb img-fluid" src="images/allergy.png" />','<img class="sliderb img-fluid" src="images/covid-concern.png" />','<img class="sliderb img-fluid" src="images/stomach-pain.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />','<img class="sliderb img-fluid" src="images/hospitalization.png"/>'],
+     words: ['<img class="sliderb img-fluid" src="images/childcare.png" alt="childcare" />', '<img class="sliderb img-fluid" src="images/eldercare.png" alt="Elder Care" />', '<img class="sliderb img-fluid" src="images/gynaecologists.png" alt="Women Care" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" alt="Health Screening" />', '<img class="sliderb img-fluid" src="images/dental.png" alt="Dental Care" />','<img class="sliderb img-fluid" src="images/opthal.png" alt="Eye Checkup" />','<img class="sliderb img-fluid" src="images/sleep.png" alt="Sleep Issues" />','<img class="sliderb img-fluid" src="images/weight-loss.png" alt="Weight Loss" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" alt="Mindfulness"/>','<img class="sliderb img-fluid" src="images/chestpain.png" alt="Chest Discomfort" />','<img class="sliderb img-fluid" src="images/neckpain.png" alt="Neck Pain"/>','<img class="sliderb img-fluid" src="images/allergy.png" alt="Allergy" />','<img class="sliderb img-fluid" src="images/covid-concern.png" alt="Covid Concerns" />','<img class="sliderb img-fluid" src="images/stomach-pain.png" alt="Stomach Pain" />','<img class="sliderb img-fluid" src="images/shealth.png" alt="Sexual Health" />','<img class="sliderb img-fluid" src="images/hospitalization.png" alt="Hospitalization"/>'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
-    speed: 2000
+    speed: 400000
   });;
 
   $("#box6words").wordsrotator({
- words: [' Child Care <span  class="near">, near you</span>','Elderly Care <span class="near">, near you</span>','Women Care <span  class="near">, near you</span>','Health Screening <span  class="near">, near you</span>',  'Dental Checkup <span  class="near">, near you</span>','Eye Checkup <span  class="near">, near you</span>','Sleep Issues <span  class="near">, near you</span>','Weight Issues <span  class="near">, near you</span>', 'Mindfulness <span  class="near">, near you</span>','Chest Discomfort <span  class="near">, near you</span>','Neck Pain <span  class="near">, near you</span>','Flu/Allergy <span  class="near">, near you</span>','Covid Concerns <span  class="near">, near you</span>','Upset Stomach <span  class="near">, near you</span>', 'Therapy <span  class="near">, near you</span>','Hospitalisation <span  class="near">'],
+ words: [' Child Care <span class="near">, near you</span>','Elderly Care <span class="near">, near you</span>','Women Care <span  class="near">, near you</span>','Health Screening <span  class="near">, near you</span>',  'Dental Checkup <span  class="near">, near you</span>','Eye Checkup <span  class="near">, near you</span>','Sleep Issues <span  class="near">, near you</span>','Weight Issues <span  class="near">, near you</span>', 'Mindfulness <span  class="near">, near you</span>','Chest Discomfort <span  class="near">, near you</span>','Neck Pain <span  class="near">, near you</span>','Flu/Allergy <span  class="near">, near you</span>','Covid Concerns <span  class="near">, near you</span>','Upset Stomach <span  class="near">, near you</span>', 'Therapy <span  class="near">, near you</span>','Hospitalisation <span  class="near">'],
     animationIn: "slideIn 0.4s",
     animationOut: "slideOut 0.4s",
-    speed: 2000
+    speed: 400000
   });
 });
 
@@ -18,16 +18,17 @@ $(function () {
 
 $(function () {
   $("#box1words").wordsrotator({
-     words: ['<img class="sliderb img-fluid" src="images/childcare.png" />', '<img class="sliderb img-fluid" src="images/eldercare.png" />', '<img class="sliderb img-fluid" src="images/gynaecologists.png" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" />', '<img class="sliderb img-fluid" src="images/dental.png" />','<img class="sliderb img-fluid" src="images/opthal.png" />','<img class="sliderb img-fluid" src="images/sleep.png" />','<img class="sliderb img-fluid" src="images/weight-loss.png" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png"/>','<img class="sliderb img-fluid" src="images/chestpain.png"/>','<img class="sliderb img-fluid" src="images/neckpain.png"/>','<img class="sliderb img-fluid" src="images/allergy.png" />','<img class="sliderb img-fluid" src="images/covid-concern.png" />','<img class="sliderb img-fluid" src="images/stomach-pain.png" />','<img class="sliderb img-fluid" src="images/shealth.png" />','<img class="sliderb img-fluid" src="images/hospitalization.png"/>'],
-    animationOut: "fadeOut",
-    speed: 4000
+     words: ['<img class="sliderb img-fluid" src="images/childcare.png" alt="childcare" />', '<img class="sliderb img-fluid" src="images/eldercare.png" alt="Elder Care" />', '<img class="sliderb img-fluid" src="images/gynaecologists.png" alt="Women Care" />', '<img class="sliderb img-fluid" src="images/preventive-health.png" alt="Health Screening" />', '<img class="sliderb img-fluid" src="images/dental.png" alt="Dental Care" />','<img class="sliderb img-fluid" src="images/opthal.png" alt="Eye Checkup" />','<img class="sliderb img-fluid" src="images/sleep.png" alt="Sleep Issues" />','<img class="sliderb img-fluid" src="images/weight-loss.png" alt="Weight Loss" />', '<img class="sliderb img-fluid" src="images/wellness-slider.png" alt="Mindfulness"/>','<img class="sliderb img-fluid" src="images/chestpain.png" alt="Chest Discomfort" />','<img class="sliderb img-fluid" src="images/neckpain.png" alt="Neck Pain"/>','<img class="sliderb img-fluid" src="images/allergy.png" alt="Allergy" />','<img class="sliderb img-fluid" src="images/covid-concern.png" alt="Covid Concerns" />','<img class="sliderb img-fluid" src="images/stomach-pain.png" alt="Stomach Pain" />','<img class="sliderb img-fluid" src="images/shealth.png" alt="Sexual Health" />','<img class="sliderb img-fluid" src="images/hospitalization.png" alt="Hospitalization"/>'],
+   animationIn: "slideIn 0.4s",
+    animationOut: "slideOut 0.4s",
+    speed: 400000
   });;
 
   $("#box2words").wordsrotator({
- words: [' Child Care <span  class="near">, near you</span>','Elderly Care <span class="near">, near you</span>','Women Care <span  class="near">, near you</span>','Health Screening <span  class="near">, near you</span>',  'Dental Checkup <span  class="near">, near you</span>','Eye Checkup <span  class="near">, near you</span>','Sleep Issues <span  class="near">, near you</span>','Weight Issues <span  class="near">, near you</span>', 'Mindfulness <span  class="near">, near you</span>','Chest Discomfort <span  class="near">, near you</span>','Neck Pain <span  class="near">, near you</span>','Flu/Allergy <span  class="near">, near you</span>','Covid Concerns <span  class="near">, near you</span>','Upset Stomach <span  class="near">, near you</span>', 'Therapy <span  class="near">, near you</span>','Hospitalisation <span  class="near">'],
-    animationIn: "fadeInDown",
-    animationOut: "fadeOut",
-    speed: 4000
+ words: [' Child Care <span  class="near">, near you</span>','Elderly Care <span class="near">, near you</span>','Women Care <span  class="near">, near you</span>','Health Screening <span  class="near">, near you</span>',  'Dental Checkup <span  class="near">, near you</span>','Eye Checkup <span  class="near">, near you</span>','Sleep Issues <span  class="near">, near you</span>','Weight Issues <span  class="near">, near you</span>', 'Mindfulness <span  class="near">, near you</span>','Chest Discomfort <span  class="near">, near you</span>','Neck Pain <span  class="near">, near you</span>','Flu/Allergy <span  class="near">, near you</span>','Covid Concerns <span  class="near">, near you</span>','Upset Stomach <span  class="near">, near you</span>', 'Therapy <span  class="near">, near you</span>',' Hospitalisation <span  class="near">'],
+    animationIn: "slideIn 0.4s",
+    animationOut: "slideOut 0.4s",
+    speed: 400000
   });
 
 });
@@ -136,10 +137,10 @@ jQuery(document).ready(function($) {
                     items: 1
                   },
                   768: {
-                    items: 3
+                    items: 1
                   },
                   1170: {
-                    items: 5   
+                    items: 1  
                   }
                 }
             });
@@ -277,147 +278,6 @@ viewedSlider.trigger('next.owl.carousel');
 }
 
 });
-
-
-
-
-(()=> {
-    const linearCarousel = (el) => {
-        const carouselElement =  el;
-        let carouselItems = el.querySelectorAll('.carousel__item');
-        let activeIndex = 0;
-
-        const reAlignCarousel = () => {
-            if(carouselItems.length == 0) {
-                return;
-            }
-            Array.prototype.forEach.call(carouselItems, item => {
-                item.classList.remove('carousel__item-prev', 'carousel__item-prev-prev', 'carousel__item-next', 'carousel__item-next-next', 'carousel__item--active')
-            });
-
-            if (activeIndex === 0) {
-                carouselItems[carouselItems.length-1].classList.add('carousel__item-prev');
-                carouselItems[carouselItems.length-2].classList.add('carousel__item-prev-prev');
-                carouselItems[activeIndex+1].classList.add('carousel__item-next');
-                carouselItems[activeIndex+2].classList.add('carousel__item-next-next');
-            } else if (activeIndex === 1) {
-                carouselItems[0].classList.add('carousel__item-prev');
-                carouselItems[carouselItems.length-1].classList.add('carousel__item-prev-prev');
-                carouselItems[activeIndex+1].classList.add('carousel__item-next');
-                carouselItems[activeIndex+2].classList.add('carousel__item-next-next');
-            } else if (activeIndex === carouselItems.length-2) {
-                carouselItems[activeIndex-1].classList.add('carousel__item-prev');
-                carouselItems[activeIndex-2].classList.add('carousel__item-prev-prev');
-                carouselItems[activeIndex+1].classList.add('carousel__item-next');
-                carouselItems[0].classList.add('carousel__item-next-next');
-            } else if (activeIndex === carouselItems.length-1) {
-                carouselItems[activeIndex-1].classList.add('carousel__item-prev');
-                carouselItems[activeIndex-2].classList.add('carousel__item-prev-prev');
-                carouselItems[0].classList.add('carousel__item-next');
-                carouselItems[1].classList.add('carousel__item-next-next');
-            } else {
-                carouselItems[activeIndex-1].classList.add('carousel__item-prev');
-                carouselItems[activeIndex-2].classList.add('carousel__item-prev-prev');
-                carouselItems[activeIndex+1].classList.add('carousel__item-next');
-                carouselItems[activeIndex+2].classList.add('carousel__item-next-next');
-            }
-            carouselItems[activeIndex].classList.add('carousel__item--active');
-        }
-
-
-        const cloneElementAndAppendToCarousel = (element) => {
-            var clone = element.cloneNode(true);
-            console.log(clone);
-            carouselElement.appendChild(clone);
-        }
-
-        const moveToNextItem = () => {
-            if(activeIndex == (carouselItems.length - 1)) {
-                activeIndex = 0;
-            } else {
-                activeIndex++;
-            }
-            reAlignCarousel();
-        }
-
-        const moveToPrevItem = () => {
-            if(activeIndex == 0) {
-                activeIndex = carouselItems.length - 1;
-            } else {
-                activeIndex--;
-            }
-            reAlignCarousel();
-        }
-
-        const addButtonsToCarousel = () => {
-            const prevButtonElement = document.createElement('div');
-            prevButtonElement.classList.add('carousel__button-prev');
-            
-            const nextButtonElement = document.createElement('div');
-            nextButtonElement.classList.add('carousel__button-next');
-
-            prevButtonElement.addEventListener('click', moveToPrevItem);
-            nextButtonElement.addEventListener('click', moveToNextItem);
-            
-            carouselElement.appendChild(prevButtonElement);
-            carouselElement.appendChild(nextButtonElement);
-        }
-
-        const bindClickEventForItems = () => {
-            carouselElement.addEventListener('click', e => {
-                const targetElement = e.path.filter(element => element.classList && element.classList.contains('carousel__item'))[0];
-                if(!targetElement)
-                return;
-                const indexCSSClasses = ['carousel__item-next-next', 'carousel__item-next', 'carousel__item-prev', 'carousel__item-prev-prev'];
-                const indexCSSClass = indexCSSClasses.filter(cssClass => targetElement.classList.contains(cssClass))[0];
-                switch(indexCSSClass) {
-                    case 'carousel__item-next-next':
-                    case 'carousel__item-next':
-                        moveToNextItem();
-                        break;
-                    case 'carousel__item-prev-prev':
-                    case 'carousel__item-prev':
-                        moveToPrevItem();
-                }
-            })
-        }
-
-        const initializeCarousel = () => {
-            switch(carouselItems.length) {
-                case 0:
-                    return;
-                case 1:
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    break;
-                case 2:
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    cloneElementAndAppendToCarousel(carouselItems[1]);
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    break;
-                case 3:
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                    cloneElementAndAppendToCarousel(carouselItems[1]);
-                    break;
-                case 4:
-                    cloneElementAndAppendToCarousel(carouselItems[0]);
-                break;
-            }
-            carouselItems = el.querySelectorAll('.carousel__item')
-            reAlignCarousel();
-
-            addButtonsToCarousel();
-
-            bindClickEventForItems();
-        }
-        initializeCarousel();
-        console.log('DAMAN', carouselItems[0])
-    }
-    linearCarousel(document.querySelector('.horizontal-carousel'));
-})();
-
 
 
 
