@@ -32,6 +32,8 @@ html{
     display: none!important;
 } 
 }
+
+
 .h-111{
     height: 80px;
 }
@@ -1806,8 +1808,6 @@ li {
     margin: 0 auto !important;
     color: #413f40;
 }
-
-
 .box2{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -1839,9 +1839,6 @@ li {
     background-position: 92% 7%;
     background-color: #f1fbfd;
 }
-
-
-
 .footerbg {
     background-image: url(../images/footer.png);
     background-repeat: no-repeat;
@@ -1855,16 +1852,13 @@ li {
     padding-top: 15px;  
     margin-left: 1rem!important;
 }
-
 h1{
     font-size: 23px;
 }
-
 h2{
     font-size: 21px;
     line-height: 28px;
 }
-
 .sliderb{
     width: 336px;
     height: 225px;
@@ -1883,7 +1877,6 @@ h2{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 .bringing-section{
     background: url(../images/section-background.png);
     background-position: right top;
@@ -1896,7 +1889,6 @@ h2{
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 .corporate-wellnessbtm{
     background-image: url('../images/corporate-wellnessbg.png');
     background-size: 100%;
@@ -1919,7 +1911,6 @@ h2{
     background-position: 92% 7%;
     background-color:#f2f9f5;
 }
-
 .footercorp{
    background-image: url(../images/footer.png);
     background-repeat: no-repeat;
@@ -1928,14 +1919,12 @@ h2{
     background-position: 92% 7%;
     background-color: #a4d4e5;
 }
-
 .agentbottombg{
     background-image:url('../images/agentbg1.png');
      background-repeat: no-repeat;
       background-size:100%;
      /* background-color: #f2f9f5;*/
 }
-
 .ecosys{
     margin-top: -190px!important;
 }
@@ -1951,7 +1940,6 @@ h2{
    /*width: 138px;*/
    text-align: center;
 }
-
 .border-blue1{
     padding: 14px 25px;
      font-size: 17px;
@@ -1975,14 +1963,12 @@ h2{
     font-size: 39px;
     margin-top: 30px;
 }*/
-
 .dottedbg{
         background-image: url('../images/dotted-circle.png');
     background-size: 95%;
     background-repeat: no-repeat;
     background-position: 58% 13%;
 }
-
 .border-green1{
     background-color: #0a8943;
     color:#ffffff;
@@ -2027,7 +2013,6 @@ h2{
 .testimon{
     text-align: center;
 }
-
 .circle1{
     background-color: #f3f8e1;
     width: 115px;
@@ -2042,7 +2027,6 @@ h2{
    line-height: 14px;
    font-weight: 300;
 }
-
 .circle1 h3{
     font-size: 15px;
     line-height:20px ;
@@ -2062,19 +2046,16 @@ h2{
     margin-left: 5%;
      width: 70px;
 }
-
 .miracles-healthcare{
     margin-top: -690px;
     margin-left: 44%;
     width: 70px;
 }
-
 .medall{
      margin-top: -665px;
      width: 70px;
      margin-left: -3%;
 }
-
 .apolloclinic{
     margin-top: -640px;
     margin-left: -3%;
@@ -3411,7 +3392,6 @@ h1{
      margin-top: -908px;
      margin-left: 63px;
  }
-
 .srl{
     margin-top: -775px;
     margin-left: -30%;
@@ -3454,7 +3434,6 @@ h1{
       margin-left: -10%;
     width: 160px;
 }
-
 .north{
     font-size: 13px;
     line-height: 17px;
@@ -3464,7 +3443,6 @@ h1{
     width: 160px;
     text-align: center;
 }
-
 .south{
      font-size: 13px;
      line-height: 17px;
@@ -3610,8 +3588,6 @@ h1{
 .whereu{
     padding-top: 80px;
 }
-
-
 }
 
 
@@ -3632,8 +3608,6 @@ h1{
      margin-left:-11px; 
      font-weight:350;
 }
-
-
 .box2{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -3658,7 +3632,6 @@ h1{
     border: 1px;
     width: 200px;
     margin-left: 27%;
-
 }
 
 .border-blue{
@@ -3750,8 +3723,6 @@ h1{
     padding-top: 30px;
     padding-left: 25px;
 }
-
-
 .ecosys{
     margin-top: 4rem!important;
 }
@@ -3764,8 +3735,7 @@ h1{
 .fortis{
      margin-top: -571px;
      margin-left: 11px;
-     
- }
+     }
 
 .srl{
       margin-top: -168px;
@@ -3928,8 +3898,6 @@ h1{
     margin: 0 auto !important;
     color: #413f40;
 }
-
-
 .box2{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -3953,7 +3921,9 @@ h1{
     padding-left:88px;
 }
 
-
+.wher{
+    padding-left: 3.5rem;
+}
 .pgreenbtn{
     background-color: #0a8943;
     color:#ffffff;
@@ -5250,7 +5220,7 @@ h1{
 
 .testi img{
    width: 90px!important;
-    border-radius: 50%!important;
+    border-radius: 1%!important;
 }
 .testimon{
     float: right;
@@ -5818,7 +5788,7 @@ h1{
      background-image: url(../images/get-know-Section-Background.png);
    /* background-position: 0% 80%;*/
     background-repeat: no-repeat;
-    background-size: 46%;
+    background-size: 41%;
 }
 
 .get-know-container {
