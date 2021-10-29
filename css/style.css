@@ -211,10 +211,7 @@ a:hover{
 .sldr1 .carousel{
  box-shadow: 7px 7px 30px -5px rgb(0 0 0 / 10%);
 }
-
-
-
-    .sldr1ul li {
+.sldr1ul li {
          transition: width .5s, height .5s, top .5s, left .5s;
             -webkit-transition: width .5s, height .5s, top .5s, left .5s;
             
@@ -1820,7 +1817,7 @@ li {
     border-radius: 30px;
 }
 .near{
-    font-size:18px;
+    font-size:15px;
      color:#666; 
      margin-left:-11px; 
      font-weight:350;
@@ -2008,7 +2005,7 @@ h2{
 
 .testi img{
     width: 80px!important;
-    border-radius: 50%!important;
+    
 }
 .testimon{
     text-align: center;
@@ -2217,7 +2214,7 @@ h2{
 }
 
 .near{
-    font-size:18px;
+    font-size:15px;
      color:#666; 
      margin-left:-11px; 
      font-weight:350;
@@ -2309,7 +2306,7 @@ h2{
 
 .testi img{
      width: 80px!important;
-    border-radius: 50%!important;
+   
 }
 .testimon{
     text-align: center;
@@ -2650,7 +2647,7 @@ h2{
 }
 
 .near{
-    font-size:18px;
+    font-size:16px;
      color:#666; 
      margin-left:-11px; 
      font-weight:350;
@@ -2743,7 +2740,7 @@ h1{
 
 .testi img{
     width: 100px!important;
-    border-radius: 50%!important;
+  
 }
 .testimon{
     text-align: center;
@@ -3073,7 +3070,7 @@ h1{
 
 .testi img{
     width: 100px!important;
-    border-radius: 50%!important;
+   
 }
 .testimon{
     text-align: center;
@@ -3376,7 +3373,7 @@ h1{
 
 .testi img{
     width: 100px!important;
-    border-radius: 50%!important;
+   
 }
 .testimon{
     text-align: center;
@@ -3603,7 +3600,7 @@ h1{
 }
 
 .near{
-    font-size:18px;
+    font-size:17px;
      color:#666; 
      margin-left:-11px; 
      font-weight:350;
@@ -3716,7 +3713,7 @@ h1{
 
 .testi img{
     width: 90px!important;
-    border-radius: 50%!important;
+   
 }
 .testimon{
     float: right;
@@ -4002,7 +3999,6 @@ h1{
 
 .testi img{
     width: 90px!important;
-    border-radius: 50%!important;
 }
 .testimon{
     float: right;
@@ -4317,7 +4313,6 @@ h1{
 
 .testi img{
     width: 90px!important;
-    border-radius: 50%!important;
 }
 .testimon{
     float: right;
@@ -4635,7 +4630,6 @@ h1{
 
 .testi img{
     width: 90px!important;
-    border-radius: 50%!important;
 }
 .testimon{
     float: right;
@@ -4916,7 +4910,6 @@ h1{
 
 .testi img{
     width: 90px!important;
-    border-radius: 50%!important;
 }
 .testimon{
     float: right;
