@@ -36,6 +36,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+      <meta name="description" content="Project Mobile Cafe">
+
+      <!-- iOS meta tags & icons -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="mobilecafe">
+      <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+      <title>mobilecafe</title>
+      <link rel="manifest" href="manifest.json">
+        
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +59,34 @@
 
 </head>
   <body>
+      <script>
+          if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+              navigator.serviceWorker.register('flutter_service_worker.js');
+            });
+          }
+        </script>
+        <script src="main.dart.js" type="application/javascript"></script>
+
+        <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+
+          // Your web app's Firebase configuration
+          const firebaseConfig = {
+            apiKey: "AIzaSyCgeCdykznJszYYrsnU6FExV2gvby8pO6Y",
+            authDomain: "moto-web-1.firebaseapp.com",
+            projectId: "moto-web-1",
+            storageBucket: "moto-web-1.appspot.com",
+            messagingSenderId: "962817508969",
+            appId: "1:962817508969:web:ee84af01614eb7bafc44f8"
+          };
+
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+        </script>
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 99999;">
     <div class="container mt-2 mb-2">
@@ -59,7 +102,8 @@
             <li class="nav-item"><a class="nav-link" href="#plan">Explore Plans</a></li>
              <li class="nav-item"><a class="nav-link" href="#client">Our Customers</a></li>
             <li class="nav-item dmenu dropdown loginp">
-                <a class="nav-link dropdown-toggle btn1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle btn1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
                 Login
                 </a>
                 <div class="dropdown-menu sm-menu" aria-labelledby="navbarDropdown">
