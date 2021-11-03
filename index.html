@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +41,7 @@
 </head>
   <body>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 99999;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 999;">
     <div class="container mt-2 mb-2">
         <a class="navbar-brand logo mdcenter" href="index.html"><img src="images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,8 +77,8 @@
                 <p class="rotation-animations pt-1 pb-3">
                 <span id="box6words" >  </span>  </p>
          <div class="two-btn-wrapper d-flex mdcenter pt-2">
-                <a href="/opd" class="btn-class border-blue">Try our Plans  </a>
-                    <a href="#" class="btn-class border-green mrmns" data-toggle="modal" data-target="#exampleModal">Talk to Advisor </a>
+                <a href="/opd/opd" class="btn-class border-blue">Try our Plans  </a>
+                    <a href="#" class="btn-class border-green mrmns" data-toggle="modal" data-target="#exampleModal" onclick="advisorclick();">Talk to Advisor </a>
                  </div>
                 <p class="pt-2 pl-3"><a href="#services"> See all our services <i class="fa fa-chevron-right" aria-hidden="true"></i> </a> </p>
               </div>
@@ -104,7 +102,7 @@
             <div class="col-md-6 col-lg-6 pb-1  mdcenter">
                 <div id="box1words" > </div>
            <div class="two-btn-wrapper d-flex mdcenter mt-4">
-                    <a href="/opd" class="btn-class border-blue">Try our Plans </a>
+                    <a href="/opd/opd" class="btn-class border-blue">Try our Plans </a>
                     <a href="#" class="btn-class border-green" data-toggle="modal" data-target="#exampleModal">Request Callback</a>
                 </div>
         <p class="pt-2 pl-3"><a href="#services"> see all our services <i class="fa fa-chevron-right"></i> </a></p>
@@ -144,7 +142,7 @@
 </div> 
 <p><b> Take control of your Health Today, starting at just Rs. 999/yr.</b></p>
                         <div class="d-flex  mdcenter pb-3">
-                           <a href="/opd" class="btn-class border-blue  mt-3"> Sign Me Up! </a>
+                           <a href="/opd/opd" class="btn-class border-blue  mt-3"> Sign Me Up! </a>
      </div>
         </div>
          </div>
@@ -188,7 +186,7 @@
       </div>
 <p > Take control of your Health Today, starting at just Rs. 999/yr. </p>
                         <div class="d-flex  mdcenter pb-3">
-                        <a href="/opd" class="btn-class border-blue  "> Sign Me Up! </a>
+                        <a href="/opd/opd" class="btn-class border-blue  "> Sign Me Up! </a>
                      </div>
                 </div>
   
@@ -208,7 +206,7 @@
 
 
                   <div class="d-flex  mdcenter pb-3">
-                        <a href="/opd" class="btn-class border-blue  "> Get Assure One </a>
+                        <a href="/opd/opd" class="btn-class border-blue  "> Get Assure One </a>
                      </div>
                    </div>
            <div class="col-md-6 h-100 pb-2  wher">
@@ -1082,7 +1080,7 @@
 
 
  <div class="col-md-6 pt-5" id="Advisormessagediv" style="display: none;">
-                        <h3 class="text-center" > THANKYOU FOR CONTACT !!</h3>
+                        <h3 class="text-center" > Thank you for your interest !!</h3>
                             <p class="text-center pt-2" id="AmessageId"><b></b></p>
                             <div class="col-md-8   mx-auto">
       <button type="submit" data-dismiss="modal" value="OK" class=" btn-class  pgreenbtn" id="button"> Ok </button>
@@ -1105,10 +1103,7 @@
  
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-        
-    </script> -->
-
+  
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
          <script src="js/Carousel.js"></script>
  
@@ -1153,6 +1148,16 @@ $('.navbar-light .dmenu').hover(function () {
                     }
                 });
             });
+
+function advisorclick(){
+     $('#Advisorformdiv').show();
+    $('#Advisormessagediv').hide();
+    $('#AdvisorPhone').val('');
+    $('#AdvisorName').val('');
+    $('#AdvisorEmail').val('');
+}
+
+
 </script>
 
 

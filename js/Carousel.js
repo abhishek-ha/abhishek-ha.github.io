@@ -88,7 +88,7 @@
                 $container.data('isanimating', true);
                 $(element).css({
                     display: 'block',
-                    'z-index': zIndexs[i] + 9999
+                    'z-index': zIndexs[i] + 998
                 }).animate({
                     width: scales * config.maxWidth,
                     height: scales * config.maxHeight,
@@ -180,7 +180,7 @@
     function initStyle($container) {
         var showIndexsInfo = getShowIndexs($container);
 
-        var zIndex = 9999;
+        var zIndex = 998;
         var scales;
         var config = $container.data('config');
         var halfShowNum = (config.num - 1) / 2;

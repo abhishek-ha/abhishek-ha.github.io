@@ -30,9 +30,7 @@ $(function () {
     animationOut: "slideOut 0.4s",
     speed: 4000
   });
-
 });
-
 
 $(document).ready(function(){
   $('.customer-logos').slick({
