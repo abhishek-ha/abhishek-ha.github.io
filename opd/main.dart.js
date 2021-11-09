@@ -92426,7 +92426,7 @@ $1(a){var s,r,q,p,o
 if(t.Mj.b(a)){s=a.gtN()
 r=this.a
 q=r.x
-s=s.b>0?r.x=q+10:r.x=q-10
+s=s.b>0?r.x=q+15:r.x=q-15
 q=r.c
 p=q.d
 o=C.c.gcg(p).Q
