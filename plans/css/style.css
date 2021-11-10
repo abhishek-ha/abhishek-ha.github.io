@@ -535,7 +535,7 @@ footer .social ul li a{
     font-family: "Lato",sans-serif;
     font-size: 13px;
     font-weight: 400;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
     font-family: "Lato",sans-serif;
