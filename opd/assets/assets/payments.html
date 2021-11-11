@@ -21,10 +21,7 @@
           "description": name,
           "image":image,
           "handler": function (response){
-             window.parent.postMessage("SUCCESS","*");      //2
-             alert(response.razorpay_payment_id);
-             alert(response.razorpay_order_id);
-             alert(response.razorpay_signature)    
+             window.parent.postMessage("SUCCESS","*");
           },    
           "prefill": {        
              "name": "",        
@@ -39,7 +36,12 @@
           },
           "modal": {
             "ondismiss": function(){
-               window.parent.postMessage("MODAL_CLOSED","*");   //3
+                 console.time('generate');
+                 var result = {dd:"ddd", sub:{xx:"dd"}, num:666};
+                 var uarr = stringToUintArray(JSON.stringify(result));
+                 //self.postMessage(uarr.buffer, [uarr.buffer]);
+
+               window.parent.postMessage("MODAL_CLOSED", "*", [uarr.buffer]);   //3
             }
           }
        };
@@ -48,6 +50,13 @@
           rzp1.open();
           e.preventDefault();
        }
+
+   function stringToUintArray(message) {
+        var encoded = self.btoa(message);
+        var uintArray = Array.prototype.slice.call(encoded).map(ch => ch.charCodeAt(0));
+        var uarray = new Uint8Array(uintArray);
+        return uarray;
+   }
 
      </script>
 </body>
