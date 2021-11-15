@@ -1,619 +1,701 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <meta name="description" content="">
-	<title> Total Assure | Healthassure </title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title> Total Assure | Healthassure </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-<!-- Facebook Pixel Code -->
-	<script>
-		!function(f,b,e,v,n,t,s)
-		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-		n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];
-		s.parentNode.insertBefore(t,s)}(window,document,'script',
-		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '2465482423582535'); 
-		fbq('track', 'PageView');
-	</script>
-	<noscript>
-		<img height="1" width="1" 
-		src="https://www.facebook.com/tr?id=2465482423582535&ev=PageView
-		&noscript=1"/>
-	</noscript>
-<!-- End Facebook Pixel Code -->
-<!-- Hotjar Tracking Code for https://opd.healthassure.in/plans/totalassure.html -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2691517,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<!-- End Hotjar Tracking Code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2465482423582535');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2465482423582535&ev=PageView
+		&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Hotjar Tracking Code for https://opd.healthassure.in/plans/totalassure.html -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2691517, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- End Hotjar Tracking Code -->
 </head>
+
 <body>
-<section class="totalassureassurebg deskfit">
-    <div class="container ">
+    <section class="totalassureassurebg deskfit">
+        <div class="container ">
             <div class="row">
                 <div class="col-md-12">
-                <a href="totalassure.html"><img src="images/logo-white.png" class="img-fluid logo"></a>   
-                   </div>
-                  </div>
-             </div>
+                    <a href="totalassure.html"><img src="images/logo-white.png" class="img-fluid logo"></a>
+                </div>
+            </div>
+        </div>
     </section>
 
-   <section class="mobfit">
-      <div>
-        <img src="images/totalassure-mobile.jpg" class="img-fluid w-100">
-    </div>
-  </section>
+    <section class="mobfit">
+        <div>
+            <img src="images/totalassure-mobile.jpg" class="img-fluid w-100">
+        </div>
+    </section>
 
-<section class="bg-lgrey">
-  <div class="container-fluid pb-6  py-5 pdlr">
-     <div class="row">
+    <section class="bg-lgrey">
+        <div class="container-fluid pb-6  py-5 pdlr">
+            <div class="row">
                 <div class="col-12">
                     <div class="mb-5">
                         <h1 class="head text-center"> Let us call you back! </h1>
                         <p class="text-center"><b>Fill your details below:</b></p>
-                      </div>
+                    </div>
                 </div>
             </div>
-         <form id="CallbackAdvisorform" method="post">
-    <div class="row">
-        <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="text"  class="form-control mb-2" id="AdvisorName" placeholder="Name *" required>
-    </div>
-  <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="email" class="form-control mb-2" id="AdvisorEmail"  placeholder="Email *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="text" maxlength="10" class="form-control mb-2" id="AdvisorPhone"  pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3 mx-auto  ">
-            <button type="submit" class="btn btn-primary w-100 h-90"  >Submit </button>
-    </div>
-</div>
-    </form>
-</div>
-</section>
+            <form id="CallbackAdvisorform" method="post">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="text" class="form-control mb-2" id="AdvisorName" placeholder="Name *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="email" class="form-control mb-2" id="AdvisorEmail" placeholder="Email *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="text" maxlength="10" class="form-control mb-2" id="AdvisorPhone"
+                            pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3 mx-auto  ">
+                        <button type="submit" class="btn btn-primary w-100 h-90">Submit </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
 
-<section class="py-5 px-3 px-md-0 bg-white ">
+    <section class="py-5 px-3 px-md-0 bg-white ">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="mb-5">
-                        <h1 class="head text-center"> A health care plan which actually takes care of all your Health Needs </h1>
-                        <h6 class=" text-center"><b>Everyday care Insurance plan to help you stay on top of your health. Anywhere, Anytime </b></h6>
+                        <h1 class="head text-center"> A health care plan which actually takes care of all your Health
+                            Needs </h1>
+                        <h6 class=" text-center"><b>Everyday care Insurance plan to help you stay on top of your health.
+                                Anywhere, Anytime </b></h6>
                     </div>
                 </div>
             </div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xx-5 pt-5">
-                            <img src="images/totalassure.png" class="img-fluid ">
-                     </div>
-                        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xx-7">
-                            <div class="d-flex flex-wrap align-items-center justify-content-center flex-row">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xx-5 pt-5">
+                    <img src="images/totalassure.png" class="img-fluid ">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xx-7">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center flex-row">
 
-<div class="row">
-    <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-        <div class="item3">
+                        <div class="row">
+                            <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
                                     <img src="images/doctor.png">
                                     <label class="f-poppins d-block">Doctors on Call </label>
 
                                     <p class="my-2"><b> Unlimited </b></p>
-                                  <p> Talk to a doctor anytime, anywhere. Book unlimited Rs.0 appointments on your schedule. </p>
-                                                                    </div>
-                                          </div>
+                                    <p> Talk to a doctor anytime, anywhere. Book unlimited Rs.0 appointments on your
+                                        schedule. </p>
+                                </div>
+                            </div>
 
-    <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-        <div class="item3" >
+                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
                                     <img src="images/careteam.png">
                                     <label class="f-poppins d-block"> Care Team </label>
-                                     <p class="my-2"><b> Free </b></p>
-                                    <p> Dedicated care team to answer health related questions and help you get the most out of your Plan.</p>
-                                     </div> 
-                                      </div>
-
-    <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="item3">
-                                    <img src="images/tele-doctor.png">
-                                <label class="f-poppins d-block"> Online Gym & Wellness </label>
-                                 <p class="my-2"><b> Free </b></p>
-                                    <p> Stay on top of your health with Unlimited Free Access to LIVE yoga, meditation, fitness, nutrition and therapy </p>
+                                    <p class="my-2"><b> Free </b></p>
+                                    <p> Dedicated care team to answer health related questions and help you get the most
+                                        out of your Plan.</p>
                                 </div>
-                             </div>
+                            </div>
+
+                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
+                                    <img src="images/tele-doctor.png">
+                                    <label class="f-poppins d-block"> Online Gym & Wellness </label>
+                                    <p class="my-2"><b> Free </b></p>
+                                    <p> Stay on top of your health with Unlimited Free Access to LIVE yoga, meditation,
+                                        fitness, nutrition and therapy </p>
+                                </div>
+                            </div>
 
 
-    <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="item3">
+                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
                                     <img src="images/hospital.png">
                                     <label class="f-poppins d-block"> Hospital Coverage </label>
-                                      <p class="my-2"><b> ₹ 2,00000 </b></p>
-                                    <p >Rs. 200,000 Hospitalisation cover. </p>
+                                    <p class="my-2"><b> ₹ 2,00000 </b></p>
+                                    <p>Rs. 200,000 Hospitalisation cover. </p>
                                 </div>
-    </div>
+                            </div>
 
-    <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-        <div class="item3">
+                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
                                     <img src="images/room-rent.png">
                                     <label class="f-poppins d-block"> Room Rent </label>
-                                     <p class="my-2"><b> 1% of Sum assured </b></p>
-                                <p > Covers Room Rent of upto 1% of sum assured and ICU charges upto 2% of sum assured </p>
+                                    <p class="my-2"><b> 1% of Sum assured </b></p>
+                                    <p> Covers Room Rent of upto 1% of sum assured and ICU charges upto 2% of sum
+                                        assured </p>
                                 </div>
-                         </div>
-       <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-        <div class="item3">
+                            </div>
+                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="item3">
                                     <img src="images/cashless.png">
-                                <label class="f-poppins d-block"> Cashless Hospitals </label>
-                                 <p class="my-2"><b> 4700+ </b></p>
-                            <p> 4700+ Cashless Hospitals available </p>
-                                  </div>
-                              </div>
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 mx-auto">
-                   <div class="item3">
+                                    <label class="f-poppins d-block"> Cashless Hospitals </label>
+                                    <p class="my-2"><b> 4700+ </b></p>
+                                    <p> 4700+ Cashless Hospitals available </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-4 mx-auto">
+                                <div class="item3">
                                     <div class="text-center my-3 ">
-                                <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank" class="btn btn-primary py-2 px-5 w-100 h-90">Buy Now</a>
-                               
+                                        <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank"
+                                            class="btn btn-primary py-2 px-5 w-100 h-90">Buy Now</a>
+
+                                    </div>
+                                </div>
                             </div>
-                                  </div>
-                              </div>
-                            </div>
-                           </div>
-                         </div>
+                        </div>
                     </div>
                 </div>
-             </section>
+            </div>
+        </div>
+    </section>
 
 
- <section class="py-5 px-3 bg-lgrey  desk-hidden" id="generic_price_table" >
+    <section class="py-5 px-3 bg-lgrey  desk-hidden" id="generic_price_table">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                   <div class="mb-5">
-                    <h1 class="head text-center" >  Our Plans </h1>
-                <p class="text-center"><b> Complete Everyday Care Insurance plan that looks after all your primary care health needs. Save time & money</b></p>
-                                          </div>
+                    <div class="mb-5">
+                        <h1 class="head text-center"> Our Plans </h1>
+                        <p class="text-center"><b> Complete Everyday Care Insurance plan that looks after all your
+                                primary care health needs. Save time & money</b></p>
+                    </div>
                 </div>
             </div>
-       <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix text-center">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix text-center">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head ">
                                     <span> Silver</span>
                                 </div>
-                          </div>
-                            <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency">3999</span>
-                                 <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency">3999</span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                         <div class="generic_feature_list">
+                        <div class="generic_feature_list">
                             <ul>
-                             <li><span class="float-left"> Doctors on call </span><span class="float-right">Free</span> </li>
-                              <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span> </li>
-                             <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right"> Free </span> </li>
-                             <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited </span> </li>
-                                <li class="activeplan"><span class="float-left"> Specilist Visits </span><span class="float-right"> Best Price Gaurantee </span> </li>
-                            <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span class="float-right"> ₹ 4000 </span> </li>
-                            <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right"> Upto 20% discounts. </span> </li>
-                            <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span class="float-right">₹ 2,00000 </span> </li>
-                                <li><span class="float-left"> Room Rent  </span><span class="float-right">1% of SI per day</span> </li>
-                                <li><span class="float-left"> Cashless Hospitals  </span><span class="float-right"> 4700+ </span> </li>
-                                <li><span class="float-left"> Co-Pay  </span><span class="float-right">Full Claim Paid by Insurer</span> </li>
+                                <li><span class="float-left"> Doctors on call </span><span
+                                        class="float-right">Free</span> </li>
+                                <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span>
+                                </li>
+                                <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right">
+                                        Free </span> </li>
+                                <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited
+                                    </span> </li>
+                                <li class="activeplan"><span class="float-left"> Specilist Visits </span><span
+                                        class="float-right"> Best Price Gaurantee </span> </li>
+                                <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span
+                                        class="float-right"> ₹ 4000 </span> </li>
+                                <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right">
+                                        Upto 20% discounts. </span> </li>
+                                <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span
+                                        class="float-right">₹ 2,00000 </span> </li>
+                                <li><span class="float-left"> Room Rent </span><span class="float-right">1% of SI per
+                                        day</span> </li>
+                                <li><span class="float-left"> Cashless Hospitals </span><span class="float-right"> 4700+
+                                    </span> </li>
+                                <li><span class="float-left"> Co-Pay </span><span class="float-right">Full Claim Paid by
+                                        Insurer</span> </li>
 
-                             </ul>
-                           <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank"> <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button></a>
-                      </div>
-                     </div>
-                  </div>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button></a>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix text-center">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix text-center">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head">
                                     <span> Gold </span>
                                 </div>
-                          </div>
-                             <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency"> 5999 </span>
-                                <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency"> 5999 </span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                          <div class="generic_feature_list">
+                        <div class="generic_feature_list">
                             <ul>
-                                <li><span class="float-left"> Doctors on call </span><span class="float-right">Free</span> </li>
-                                <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span> </li>
-                                <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right"> Free </span> </li>
-                                 <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited </span> </li>
-                                 <li class="activeplan"><span class="float-left"> Specilist Visits </span><span class="float-right"> Unlimited </span> </li>
-                            <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span class="float-right"> ₹ 6000 </span> </li>
-                            <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right">Upto 20% discounts.</span> </li>
-                            <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span class="float-right">₹ 2,00000 </span> </li>
-                                <li><span class="float-left"> Room Rent  </span><span class="float-right"> 1% of SI per day </span> </li>
-                                <li><span class="float-left"> Cashless Hospitals  </span><span class="float-right">4700+ </span> </li>
-                                <li><span class="float-left"> Co-Pay  </span><span class="float-right"> Full Claim Paid by Insurer </span> </li>
-                               </ul>
-                          <a href="https://rzp.io/l/TotalAssureGoldSelf" target="_blank">  <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button></a>
+                                <li><span class="float-left"> Doctors on call </span><span
+                                        class="float-right">Free</span> </li>
+                                <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span>
+                                </li>
+                                <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right">
+                                        Free </span> </li>
+                                <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited
+                                    </span> </li>
+                                <li class="activeplan"><span class="float-left"> Specilist Visits </span><span
+                                        class="float-right"> Unlimited </span> </li>
+                                <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span
+                                        class="float-right"> ₹ 6000 </span> </li>
+                                <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right">Upto
+                                        20% discounts.</span> </li>
+                                <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span
+                                        class="float-right">₹ 2,00000 </span> </li>
+                                <li><span class="float-left"> Room Rent </span><span class="float-right"> 1% of SI per
+                                        day </span> </li>
+                                <li><span class="float-left"> Cashless Hospitals </span><span class="float-right">4700+
+                                    </span> </li>
+                                <li><span class="float-left"> Co-Pay </span><span class="float-right"> Full Claim Paid
+                                        by Insurer </span> </li>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssureGoldSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button></a>
                         </div>
-                   
-                   </div>
-               </div>
 
-             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix text-center">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix text-center">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head">
                                     <span> Platinum </span>
                                 </div>
-                          </div>
-                             <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency"> 8999 </span>
-                                 <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency"> 8999 </span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                          <div class="generic_feature_list">
-                             <ul>
-                                <li><span class="float-left"> Doctors on call </span><span class="float-right">Free</span> </li>
-                                <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span> </li>
-                                <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right"> Free </span> </li>
-                                 <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited </span> </li>
-                                <li class="activeplan"><span class="float-left"> Specilist Visits </span><span class="float-right"> Unlimited </span> </li>
-                            <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span class="float-right"> ₹ 10,000 </span> </li>
-                            <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right">Upto 20% discounts. </span> </li>
-                            <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span class="float-right">₹ 3,00000 </span> </li>
-                                <li><span class="float-left"> Room Rent  </span><span class="float-right"> 1% of SI per day </span> </li>
-                                <li><span class="float-left"> Cashless Hospitals  </span><span class="float-right"> 4700+ </span> </li>
-                                <li><span class="float-left"> Co-Pay  </span><span class="float-right"> Full Claim Paid by Insurer </span> </li>
+                        <div class="generic_feature_list">
+                            <ul>
+                                <li><span class="float-left"> Doctors on call </span><span
+                                        class="float-right">Free</span> </li>
+                                <li><span class="float-left"> Care Team</span> <span class="float-right"> Free </span>
+                                </li>
+                                <li><span class="float-left"> Online Gym & Wellness </span><span class="float-right">
+                                        Free </span> </li>
+                                <li><span class="float-left"> Doctor Visits </span><span class="float-right"> Unlimited
+                                    </span> </li>
+                                <li class="activeplan"><span class="float-left"> Specilist Visits </span><span
+                                        class="float-right"> Unlimited </span> </li>
+                                <li class="activeplan"><span class="float-left"> Lab Tests & Scans </span><span
+                                        class="float-right"> ₹ 10,000 </span> </li>
+                                <li><span class="float-left"> Pharmacy & Medicines </span><span class="float-right">Upto
+                                        20% discounts. </span> </li>
+                                <li class="activeplan"><span class="float-left"> Hospital Coverage </span><span
+                                        class="float-right">₹ 3,00000 </span> </li>
+                                <li><span class="float-left"> Room Rent </span><span class="float-right"> 1% of SI per
+                                        day </span> </li>
+                                <li><span class="float-left"> Cashless Hospitals </span><span class="float-right"> 4700+
+                                    </span> </li>
+                                <li><span class="float-left"> Co-Pay </span><span class="float-right"> Full Claim Paid
+                                        by Insurer </span> </li>
 
-                             </ul>
-                         <a href="https://rzp.io/l/TotalAssurePlatinumSelf" target="_blank">   <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button></a>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssurePlatinumSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button></a>
                         </div>
-                   </div>
-               </div>
-           </div>
- <div class="row ">
-            <div class="col-md-12">
-          <h6> Terms & Conditions</h6>
-            <p style="font-size:11px;"><span style="font-weight:700;">Insurance Partner : MAGMA HDI.</span> Family Definition: Self + Spouse / Self + Spouse + 1 Child / Self + /Spouse + 2 Children. Age Band:18 - 45 Years for adults and 91 days to 25 years for children. Sum Insured:Sum insured per family Rs.1L,2L,3L during the policy period. Pre - Post
-Hospitalisation: Pre hospitalisation and post hospitalisation for 30 days & 60 days
-respectively are covered. Room Rent: Room rent is restricted to 1% of SI for Normal & 2% of SI for ICU (Room rent limit incl. of nursing charges). Ambulance
-Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition: Claim must be filed within 30 days from the date of completion of treatment.
- ID Cards: E-Cards to be issued.</p>
-            
- </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <h6> Terms & Conditions</h6>
+                    <p style="font-size:11px;"><span style="font-weight:700;">Insurance Partner : MAGMA HDI.</span>
+                        Family Definition: Self + Spouse / Self + Spouse + 1 Child / Self + /Spouse + 2 Children. Age
+                        Band:18 - 45 Years for adults and 91 days to 25 years for children. Sum Insured:Sum insured per
+                        family Rs.1L,2L,3L during the policy period. Pre - Post
+                        Hospitalisation: Pre hospitalisation and post hospitalisation for 30 days & 60 days
+                        respectively are covered. Room Rent: Room rent is restricted to 1% of SI for Normal & 2% of SI
+                        for ICU (Room rent limit incl. of nursing charges). Ambulance
+                        Service: Limited to Rs.2,000 per person in case of emergency. Special Condition: Claim must be
+                        filed within 30 days from the date of completion of treatment.
+                        ID Cards: E-Cards to be issued.</p>
+
+                </div>
+            </div>
         </div>
-       </div>
     </section>
 
 
- <section class="py-5 px-3 bg-lgrey mob-hidden" id="generic_price_table" >
+    <section class="py-5 px-3 bg-lgrey mob-hidden" id="generic_price_table">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 offset-md-3">
-                   <div class="mb-5">
-                    <h1 class="head text-center" >  Our Plans </h1>
-                    <p class="text-center"><b> Complete Everyday Care Insurance plan that looks after all your primary care health needs. Save time & money </b></p>
-                                          </div>
+                    <div class="mb-5">
+                        <h1 class="head text-center"> Our Plans </h1>
+                        <p class="text-center"><b> Complete Everyday Care Insurance plan that looks after all your
+                                primary care health needs. Save time & money </b></p>
+                    </div>
                 </div>
             </div>
-       <div class="row">
+            <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 planspt">
                     <div class="generic_content clearfix" style="background-color:transparent;">
-                       <div class="generic_feature_list pt-2" >
+                        <div class="generic_feature_list pt-2">
                             <ul>
                                 <li class="right-arrow"><span style="color:#ffffff;"> Doctors on Call</span></li>
                                 <li class="right-arrow"><span style="color:#ffffff;"> Care Team </span></li>
-                               <li class="right-arrow"><span style="color:#ffffff;"> Online Gym & Wellness </span></li>
-                           <li class="right-arrow"><span style="color:#ffffff;"> Doctor Visits </span></li>
-                                   <li class="right-arrow"><span style="color:#ffffff;"> Specilist Visits </span></li>
-                                   <li class="right-arrow"><span style="color:#ffffff;"> Lab Tests & Scans </span></li>
-                                  
-                                    <li class="right-arrow"><span style="color:#ffffff;">Hospital Coverage   </span></li>
-                                     <li class="right-arrow"><span style="color:#ffffff;"> Room Rent </span></li>
-                                      <li class="right-arrow"><span style="color:#ffffff;"> Cashless Hospitals </span></li>
-                                       <li class="right-arrow"><span style="color:#ffffff;"> Co-Pay </span></li>
-                                        <li class="right-arrow"><span style="color:#ffffff;">Pharmacy & Medicines </span></li>
-                              </ul>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Online Gym & Wellness </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Doctor Visits </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Specilist Visits </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Lab Tests & Scans </span></li>
+
+                                <li class="right-arrow"><span style="color:#ffffff;">Hospital Coverage </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Room Rent </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Cashless Hospitals </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;"> Co-Pay </span></li>
+                                <li class="right-arrow"><span style="color:#ffffff;">Pharmacy & Medicines </span></li>
+                            </ul>
                         </div>
-                     </div>
-                    
+                    </div>
+
                 </div>
-              
+
 
                 <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head">
                                     <span> Silver</span>
                                 </div>
-                          </div>
-                            <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency">3999</span>
-                                <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency">3999</span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                         <div class="generic_feature_list">
-                           <ul>
+                        <div class="generic_feature_list">
+                            <ul>
                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
-                             <li><span> Unlimited </span> </li>
+                                <li><span> Unlimited </span> </li>
                                 <li class="activeplan"><span> Best Price Gaurantee </span> </li>
-                                  <li class="activeplan"><span>  ₹ 4000  </span> </li>
-                                      
-                                 <li class="activeplan"><span> ₹ 2,00000 </span> </li>
-                                 <li><span> 1% of SI per day </span> </li>
-                                  <li><span> 4700+ </span> </li>
-                                   <li><span> Full Claim by Insurer </span> </li>
-                                   <li><span> Upto 20% discounts.</span> </li>
-                          </ul>
-                       <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank"> <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button> </a>     
-                      </div>
-                     </div>
-                    
-                   </div>
+                                <li class="activeplan"><span> ₹ 4000 </span> </li>
+
+                                <li class="activeplan"><span> ₹ 2,00000 </span> </li>
+                                <li><span> 1% of SI per day </span> </li>
+                                <li><span> 4700+ </span> </li>
+                                <li><span> Full Claim by Insurer </span> </li>
+                                <li><span> Upto 20% discounts.</span> </li>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssureSilverSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button> </a>
+                        </div>
+                    </div>
+
+                </div>
 
 
                 <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head">
                                     <span> Gold </span>
                                 </div>
-                          </div>
-                             <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency">5999</span>
-                                <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency">5999</span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                          <div class="generic_feature_list">
+                        <div class="generic_feature_list">
                             <ul>
-                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
-                             <li><span> Unlimited </span> </li>
+                                <li><span> Free </span> </li>
+                                <li><span> Unlimited </span> </li>
                                 <li class="activeplan"><span> Unlimited </span> </li>
-                                  <li class="activeplan"><span>  ₹ 6000  </span> </li>
-                                     
-                                 <li class="activeplan"><span> ₹ 2,00000 </span> </li>
-                                 <li><span> 1% of SI per day </span> </li>
-                                  <li><span> 4700+ </span> </li>
-                                   <li><span> Full Claim by Insurer </span> </li>
-                                    <li><span> Upto 20% discounts. </span> </li>                             
-                            </ul>
-                         <a href="https://rzp.io/l/TotalAssureGoldSelf" target="_blank">  <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button></a> 
-                        </div>
-                  </div>
-               </div>
+                                <li class="activeplan"><span> ₹ 6000 </span> </li>
 
-      <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
-                  <div class="generic_content clearfix">
-                    <div class="generic_head_price clearfix">
-                    <div class="generic_head_content clearfix">
-                     <div class="head_bg"></div>
+                                <li class="activeplan"><span> ₹ 2,00000 </span> </li>
+                                <li><span> 1% of SI per day </span> </li>
+                                <li><span> 4700+ </span> </li>
+                                <li><span> Full Claim by Insurer </span> </li>
+                                <li><span> Upto 20% discounts. </span> </li>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssureGoldSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+                    <div class="generic_content clearfix">
+                        <div class="generic_head_price clearfix">
+                            <div class="generic_head_content clearfix">
+                                <div class="head_bg"></div>
                                 <div class="head">
                                     <span> Platinum </span>
                                 </div>
-                          </div>
-                             <div class="generic_price_tag clearfix">    
+                            </div>
+                            <div class="generic_price_tag clearfix">
                                 <span class="price">
-                                <span class="sign">₹</span>
-                                <span class="currency">8999</span>
-                             <span class="ex"> <b>Excl. Tax/Year</b></span>
-                               </span>
+                                    <span class="sign">₹</span>
+                                    <span class="currency">8999</span>
+                                    <span class="ex"> <b>Excl. Tax/Year</b></span>
+                                </span>
                             </div>
                         </div>
-                          <div class="generic_feature_list">
+                        <div class="generic_feature_list">
                             <ul>
-                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
                                 <li><span> Free </span> </li>
-                             <li><span> Unlimited </span> </li>
+                                <li><span> Free </span> </li>
+                                <li><span> Unlimited </span> </li>
                                 <li class="activeplan"><span> Unlimited </span> </li>
-                                <li class="activeplan"><span>  ₹ 10,000  </span> </li>
-                                      
-                                 <li class="activeplan"><span> ₹ 3,00000 </span> </li>
-                                 <li><span> 1% of SI per day </span> </li>
-                                  <li><span> 4700+ </span> </li>
-                                   <li><span> Full Claim by Insurer </span> </li>
-                                   <li><span> Upto 20% discounts. </span> </li>                             
-                            </ul>
-                           <a href="https://rzp.io/l/TotalAssurePlatinumSelf" target="_blank"> <button type="submit" class="btn btn-primary  w-100 h-90" > Buy Now </button></a>
-                        </div>
-                  </div>
-               </div>
-             </div>
+                                <li class="activeplan"><span> ₹ 10,000 </span> </li>
 
- <div class="row pt-5">
-            <div class="col-md-12">
-          <h6> Terms & Conditions</h6>
-            <p style="font-size:11px;"><span style="font-weight:700;">Insurance Partner : MAGMA HDI.</span> Family Definition: Self + Spouse / Self + Spouse + 1 Child / Self + /Spouse + 2 Children. Age Band:18 - 45 Years for adults and 91 days to 25 years for children. Sum Insured:Sum insured per family Rs.1L,2L,3L during the policy period. Pre - Post
-Hospitalisation: Pre hospitalisation and post hospitalisation for 30 days & 60 days
-respectively are covered. Room Rent: Room rent is restricted to 1% of SI for Normal & 2% of SI for ICU (Room rent limit incl. of nursing charges). Ambulance
-Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition: Claim must be filed within 30 days from the date of completion of treatment.
- ID Cards: E-Cards to be issued.</p>
-            
- </div>
+                                <li class="activeplan"><span> ₹ 3,00000 </span> </li>
+                                <li><span> 1% of SI per day </span> </li>
+                                <li><span> 4700+ </span> </li>
+                                <li><span> Full Claim by Insurer </span> </li>
+                                <li><span> Upto 20% discounts. </span> </li>
+                            </ul>
+                            <a href="https://rzp.io/l/TotalAssurePlatinumSelf" target="_blank"> <button type="submit"
+                                    class="btn btn-primary  w-100 h-90"> Buy Now </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div class="col-md-12">
+                    <h6> Terms & Conditions</h6>
+                    <p style="font-size:11px;"><span style="font-weight:700;">Insurance Partner : MAGMA HDI.</span>
+                        Family Definition: Self + Spouse / Self + Spouse + 1 Child / Self + /Spouse + 2 Children. Age
+                        Band:18 - 45 Years for adults and 91 days to 25 years for children. Sum Insured:Sum insured per
+                        family Rs.1L,2L,3L during the policy period. Pre - Post
+                        Hospitalisation: Pre hospitalisation and post hospitalisation for 30 days & 60 days
+                        respectively are covered. Room Rent: Room rent is restricted to 1% of SI for Normal & 2% of SI
+                        for ICU (Room rent limit incl. of nursing charges). Ambulance
+                        Service: Limited to Rs.2,000 per person in case of emergency. Special Condition: Claim must be
+                        filed within 30 days from the date of completion of treatment.
+                        ID Cards: E-Cards to be issued.</p>
+
+                </div>
+            </div>
         </div>
- </div>
     </section>
 
-<section class="py-3 px-3">
-     <div class="container">
-        <div class="row">
+    <section class="py-3 px-3">
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
                     <div class="mb-5">
                         <h1 class="head text-center"> Our All Plan Include </h1>
-                     </div>
-                </div>
-            </div>
-         <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
-      <div class="benefits">
-    <img src="images/coverage.png" class="img-fluid">
-    
-</div>
- <p class="text-center pt-2"> Coverage 18 to 45 Years </p>
-                 </div>
-        <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
-         <div class="benefits">
-    <img src="images/notepad.png" class="img-fluid">
-    </div>
-       <p class="text-center pt-2"> Policy Tenure 1 Year</p>
-                  </div>
-<div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
- <div class="benefits">
-    <img src="images/panindia.png" class="img-fluid">
-    </div>
-<p class="text-center pt-2"> PAN INDIA Coverage </p>
-                </div>
-    <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
-<div class="benefits">
-    <img src="images/zero-waiting.png" class="img-fluid">
-    </div>
- <p class="text-center pt-2"> Zero Waiting Period </p>
-    </div>
-
-    <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
- <div class="benefits">
-    <img src="images/shield.png" class="img-fluid">
-    </div>
-<p class="text-center pt-2"> Quick Issuance </p>
-                 </div>
-
-     <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
- <div class="benefits">
-    <img src="images/clock.png" class="img-fluid">
-    </div>
- <p class="text-center pt-2"> 24*7 Support </p>
- </div>
-  </div>
-  </div>
-    </section>
-
-
-
-
-<section class="bg-lgrey">  
-<div class="bbb_viewed py-5">
-    <div class="container">
-       <div class="row">
-                <div class="col-12">
-                    <div class="mb-5">
-                        <h1 class="head text-center"> See what our customers have to say </h1>
                     </div>
                 </div>
             </div>
-        <div class="row">
-            <div class="col">
-                <div class="bbb_main_container">
-                    <div class="bbb_viewed_title_container">
-                        
-                        <div class="bbb_viewed_nav_container">
-                            <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fa fa-chevron-left"></i></div>
-                            <div class="bbb_viewed_nav bbb_viewed_next"><i class="fa fa-chevron-right"></i></div>
-                        </div>
-                    </div>
-                    <div class="bbb_viewed_slider_container">
-                        <div class="owl-carousel owl-theme bbb_viewed_slider">
-                          
-                            <div class="owl-item">
-                                <div class="bbb_viewed_item d-flex flex-column  justify-content-center box4">
-                                   <p class="text-center mt-5"> Prevention is better than claim! Love how HealthAssure is focused on preventive healthcare along with value-based health insurance plans. Super easy, hassle-free experience as well. </p>
-                                     <p class="pt-6 float-left"><b> Avanish Bajaj </b><br> Fashion Designer </p>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/coverage.png" class="img-fluid">
 
-                                   </div>
-                      
-                             </div>
-                        <div class="owl-item">
-                                <div class="bbb_viewed_item d-flex flex-column  justify-content-center  box4">
-                                   <p class="text-center mt-5"> If it's in my hand I surely give more than 5 star because of their composure and their way. It's growing industry if it's kept that type of positive attitude. Loved it </p>
-                                <p class="pt-7 float-left"><b>Vikas Maurya </b> <br> UI UX Specialist </p>
-                                   </div>
-                               </div>
-                      <div class="owl-item">
-                                <div class="bbb_viewed_item d-flex flex-column justify-content-center  box4">
-                                   <p class=" text-center mt-5"> HealthAssure plan really stands out in the market not just because of their all-round healthcare features and app but also because of their great service. They have given us constant support, showing that they really care.</p>
-                                    <p class="pt-5 float-left"><b> Aaryaman Bisht </b><br> Advocate   </p>
-                                   </div>
-                             
-                            </div>
-                        <div class="owl-item">
-                                <div class="bbb_viewed_item d-flex flex-column justify-content-center  box4">
-                                   <p class="mt-5 text-center"> Fantastic Health Checkup provider that also offers employee health benefits. Their service providers are exceptional. They also provide a chat service with the care team 24/7. I highly recommend HealthAssure </p>
-                                       <p class="pt-5 float-left"><b> Simrat Kaur </b> <br>Software Engineer  </p>
-                                   </div>
-                               
-                            </div>
-                        </div>
                     </div>
+                    <p class="text-center pt-2"> Coverage 18 to 45 Years </p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/notepad.png" class="img-fluid">
+                    </div>
+                    <p class="text-center pt-2"> Policy Tenure 1 Year</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/panindia.png" class="img-fluid">
+                    </div>
+                    <p class="text-center pt-2"> PAN INDIA Coverage </p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/zero-waiting.png" class="img-fluid">
+                    </div>
+                    <p class="text-center pt-2"> Zero Waiting Period </p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/shield.png" class="img-fluid">
+                    </div>
+                    <p class="text-center pt-2"> Quick Issuance </p>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                    <div class="benefits">
+                        <img src="images/clock.png" class="img-fluid">
+                    </div>
+                    <p class="text-center pt-2"> 24*7 Support </p>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</section>
-
-
-<section class="bg-lgrey">
-    <div class="container py-5 px-3">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rtUcjxAdjkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
-            </div>
-            
-        </div>
         </div>
     </section>
 
 
-<section class="py-5 px-3 px-md-0 bg-lgrey">
+
+
+    <section class="bg-lgrey">
+        <div class="bbb_viewed py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mb-5">
+                            <h1 class="head text-center"> See what our customers have to say </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="bbb_main_container">
+                            <div class="bbb_viewed_title_container">
+
+                                <div class="bbb_viewed_nav_container">
+                                    <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fa fa-chevron-left"></i></div>
+                                    <div class="bbb_viewed_nav bbb_viewed_next"><i class="fa fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bbb_viewed_slider_container">
+                                <div class="owl-carousel owl-theme bbb_viewed_slider">
+
+                                    <div class="owl-item">
+                                        <div class="bbb_viewed_item d-flex flex-column  justify-content-center box4">
+                                            <p class="text-center mt-5"> Prevention is better than claim! Love how
+                                                HealthAssure is focused on preventive healthcare along with value-based
+                                                health insurance plans. Super easy, hassle-free experience as well. </p>
+                                            <p class="pt-6 float-left"><b> Avanish Bajaj </b><br> Fashion Designer </p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="bbb_viewed_item d-flex flex-column  justify-content-center  box4">
+                                            <p class="text-center mt-5"> If it's in my hand I surely give more than 5
+                                                star because of their composure and their way. It's growing industry if
+                                                it's kept that type of positive attitude. Loved it </p>
+                                            <p class="pt-7 float-left"><b>Vikas Maurya </b> <br> UI UX Specialist </p>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="bbb_viewed_item d-flex flex-column justify-content-center  box4">
+                                            <p class=" text-center mt-5"> HealthAssure plan really stands out in the
+                                                market not just because of their all-round healthcare features and app
+                                                but also because of their great service. They have given us constant
+                                                support, showing that they really care.</p>
+                                            <p class="pt-5 float-left"><b> Aaryaman Bisht </b><br> Advocate </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="owl-item">
+                                        <div class="bbb_viewed_item d-flex flex-column justify-content-center  box4">
+                                            <p class="mt-5 text-center"> Fantastic Health Checkup provider that also
+                                                offers employee health benefits. Their service providers are
+                                                exceptional. They also provide a chat service with the care team 24/7. I
+                                                highly recommend HealthAssure </p>
+                                            <p class="pt-5 float-left"><b> Simrat Kaur </b> <br>Software Engineer </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-lgrey">
+        <div class="container py-5 px-3">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rtUcjxAdjkI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 px-3 px-md-0 bg-lgrey">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5 px-4 px-md-0">
@@ -622,115 +704,117 @@ Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition
                 </div>
             </div>
 
-        <div class="row  mt-4">
-                        <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="row  mt-4">
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
                     <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-                           <div class="item2">
-                                <div class="item-card shadow">
-                                <label class="f-poppins text-uppercase">7000+ Partners</label>
-                                    <p>Trusted and verified providers.</p>
-                                    <img src="images/net.png" class="img-fluid">
-                                </div>
-                            </div>
-                       </div>
-<div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
-                     <div class="item2">
-                                <div class="item-card shadow">
-                                    <label class="f-poppins text-uppercase">1500+ Cities</label>
-                                    <p>Multiple options within 5km from you.</p>
-                                    <img src="images/city.png" class="img-fluid">
-                                </div>
-                            </div>
-</div>
-<div class=" col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
                         <div class="item2">
-                                <div class="item-card shadow">
-                                    <label class="f-poppins text-uppercase">Easy Access</label>
-                                    <p>Book easy appointment via our mobile app or website.</p>
-                                    <img src="images/easy.png" class="img-fluid">
+                            <div class="item-card shadow">
+                                <label class="f-poppins text-uppercase">7000+ Partners</label>
+                                <p>Trusted and verified providers.</p>
+                                <img src="images/net.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="item2">
+                            <div class="item-card shadow">
+                                <label class="f-poppins text-uppercase">1500+ Cities</label>
+                                <p>Multiple options within 5km from you.</p>
+                                <img src="images/city.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <div class="item2">
+                            <div class="item-card shadow">
+                                <label class="f-poppins text-uppercase">Easy Access</label>
+                                <p>Book easy appointment via our mobile app or website.</p>
+                                <img src="images/easy.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6 col-md-6 col-lg-12 col-xl-3 col-xxl-3 pl-5 ">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
+                                <div class="d-flex align-items-center justify-content-start mb-4">
+                                    <img src="images/rupee.png" class="img-fluid " style="width: 40px;">
+                                    <div class="pl-4 pt-2">
+                                        <h6 class="f-poppins">Everything Cashless</h6>
+                                        <h6 class="">No payment required at centers.</h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-<div class=" col-sm-6 col-md-6 col-lg-12 col-xl-3 col-xxl-3 pl-5 ">
-
- <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
-                        <div class="d-flex align-items-center justify-content-start mb-4">
-                            <img src="images/rupee.png" class="img-fluid " style="width: 40px;">
-                            <div class="pl-4 pt-2">
-                                <h6 class="f-poppins">Everything Cashless</h6>
-                                <h6 class="">No payment required at centers.</h6>
+                            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
+                                <div class="d-flex align-items-center justify-content-start mb-4">
+                                    <img src="images/wait.png" class="img-fluid me-3" style="width: 40px;">
+                                    <div class="pl-4 pt-2">
+                                        <h6 class="f-poppins"> No Waiting Period</h6>
+                                        <h6 class="">Start using from day 1.</h6>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
-              <div class="d-flex align-items-center justify-content-start mb-4">
-                        <img src="images/wait.png" class="img-fluid me-3" style="width: 40px;">
-                            <div class="pl-4 pt-2">
-                                <h6 class="f-poppins"> No Waiting Period</h6>
-                                <h6 class="">Start using from day 1.</h6>
+
+                            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
+                                <div class="d-flex align-items-center justify-content-start mb-4">
+                                    <img src="images/discount1.png" class="img-fluid me-3" style="width: 40px;">
+                                    <div class="pl-4 pt-2">
+                                        <h6 class="f-poppins">Huge Discounts</h6>
+                                        <h6 class="">Avail exclusive discounts & benefits as a HealthAssure user.</h6>
+                                    </div>
+                                </div>
                             </div>
+
+                            <h6 class="f-poppins">& many more benefits...</h6>
                         </div>
-                       </div>
-
-               <div class="col-sm-12 col-md-12 col-lg-4 col-xl-12 col-xxl-12">
-                  <div class="d-flex align-items-center justify-content-start mb-4">
-                            <img src="images/discount1.png" class="img-fluid me-3" style="width: 40px;">
-                            <div class="pl-4 pt-2">
-                                <h6 class="f-poppins">Huge Discounts</h6>
-                                <h6 class="">Avail exclusive discounts & benefits as a HealthAssure user.</h6>
-                            </div>
-                        </div>
-                        </div>
-
-                        <h6 class="f-poppins">& many more benefits...</h6>
                     </div>
-                  </div>
+                </div>
+            </div>
+
+            <form id="CallbackAdvisorform1" method="post">
+                <div class="row py-5  mob-hidden">
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
+                        <input type="text" class="form-control mb-2" id="AdvisorName1" placeholder="Name *" required>
                     </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
+                        <input type="email" class="form-control mb-2" id="AdvisorEmail1" placeholder="Email *" required>
                     </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
+                        <input type="text" maxlength="10" class="form-control mb-2" id="AdvisorPhone1"
+                            pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 mx-auto  ">
+                        <button type="submit" class="btn btn-primary w-100 h-90">Submit </button>
+                    </div>
+                </div>
+            </form>
 
-<form  id="CallbackAdvisorform1" method="post">
-    <div class="row py-5  mob-hidden">
-        <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
-            <input type="text"  class="form-control mb-2"  id="AdvisorName1"  placeholder="Name *" required>
-    </div>
-  <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
-            <input type="email" class="form-control mb-2"  id="AdvisorEmail1" placeholder="Email *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3">
-            <input type="text"  maxlength="10" class="form-control mb-2" id="AdvisorPhone1"  pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 mx-auto  ">
-            <button type="submit" class="btn btn-primary w-100 h-90" >Submit </button>
-    </div>
-</div>
-  </form>
+        </div>
+    </section>
 
-   </div>
-</section>
+    <section class="bg-lgrey desk-hidden">
+        <div class="container-fluid  py-3 pdlr">
+            <form id="CallbackAdvisorform2" method="post">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="text" class="form-control mb-2" id="AdvisorName2" placeholder="Name *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="email" class="form-control mb-2" id="AdvisorEmail2" placeholder="Email *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
+                        <input type="text" maxlength="10" class="form-control mb-2" id="AdvisorPhone2"
+                            pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
+                    </div>
+                    <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3 mx-auto  ">
+                        <button type="submit" class="btn btn-primary w-100 h-90">Submit </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
-<section class="bg-lgrey desk-hidden">
-   <div class="container-fluid  py-3 pdlr">
-        <form id="CallbackAdvisorform2" method="post">
-    <div class="row">
-        <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="text"  class="form-control mb-2"  id="AdvisorName2"  placeholder="Name *" required>
-    </div>
-  <div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="email" class="form-control mb-2"  id="AdvisorEmail2" placeholder="Email *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3">
-            <input type="text"  maxlength="10" class="form-control mb-2" id="AdvisorPhone2"  pattern="[789][0-9]{9}" placeholder="Contact Number *" required>
-    </div>
-<div class="col-sm-12 col-md-6  col-lg-3 col-xl-3 col-xxl-3 mx-auto  ">
-            <button type="submit" class="btn btn-primary w-100 h-90" >Submit </button>
-    </div>
-</div>
-    </form>
-</div>
-</section>
-
-<section class="py-5 px-3 px-md-0 bg-white ">
+    <section class="py-5 px-3 px-md-0 bg-white ">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5 px-4 px-md-0">
@@ -779,15 +863,18 @@ Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center store d-flex align-items-center justify-content-center flex-wrap">
+                <div
+                    class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center store d-flex align-items-center justify-content-center flex-wrap">
                     <div class="yt mx-4">
                         <a href="https://www.youtube.com/channel/UCbB5tHJTceHvr7Fp9Tk5qew" target="_blank">
                             <img class="" style="width: 50px; margin-top: 0;" src="images/youtube.png"><br>
                             <small class="text-dark f-poppins"><strong>See how to book via HealthAssure</strong></small>
                         </a>
                     </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.healthassure" target="_blank"><img class="mx-4" src="images/android.png"></a>
-                    <a href="https://apps.apple.com/in/app/healthpass-doctors-health/id1397803100" target="_blank"><img class="mx-4" src="images/apple.png"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.healthassure" target="_blank"><img
+                            class="mx-4" src="images/android.png"></a>
+                    <a href="https://apps.apple.com/in/app/healthpass-doctors-health/id1397803100" target="_blank"><img
+                            class="mx-4" src="images/apple.png"></a>
                 </div>
             </div>
         </div>
@@ -811,7 +898,7 @@ Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition
             </div>
         </div>
     </section>
-<section class="py-5 px-3 px-md-0 bg-white ">
+    <section class="py-5 px-3 px-md-0 bg-white ">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-3 px-4 px-md-0">
@@ -826,358 +913,305 @@ Service: Limited to Rs.2,000 per person in case of emergency.  Special Condition
 
 
 
-<section class="footerbg">
-    <div class="container-fluid footer_row_one pt-3">
-        <div class="row">
-            <div class="container">
-                <div class="row d-flex align-items-center ">
-                    <div class="col-lg-8 col-md-6 col-sm-12">
-                        <div class="_one">
-                            <h2>Get Started</h2>
-                            <h3>with HealthAssure today</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6  col-sm-12">
-                        <div class="footerblue ">
-                            <a href="#" class=" border-blue1">Explore Plans <i class="fa fa-chevron-right pl-88" ></i></a>
-                        </div>
-                    </div>
-                </div>
-    <div class="row mt-3 d-flex">
-
-                    <div class="col-md-6">
-                          <div class="desk1 ml-4 ">
-                            <div class="mt-4 footerbtn">
-                          <a href="corporate-wellness.html" target="_blank" class=" border-green1 ">Corporates <i class="fa fa-chevron-right ml-2 text-right pl-109"></i></a>
-                          </div>
-                          <div class="mt-4 footerbtn">
-                      <a href="insurance.html" target="_blank"  class=" border-green1  ">Insurance Companies <i class="fa fa-chevron-right ml-2 pl-2 pb-2 pt-2"></i></a>
-                          </div>
-
-                           </div>
-                    </div>
-                    <div class="col-md-6 ">
-
-         <div class="desk1 ml-4  ">
-            <div class="mt-4 footerbtn">
-                <a href="agents.html" target="_blank"  class=" border-green1 ">Agents <i class="fa fa-chevron-right ml-2  pl-148"></i></a>
-            </div>
-            <div class="mt-4 footerbtn">
-            <a href="provider.html" target="_blank"  class=" border-green1 ">Providers <i class="fa fa-chevron-right ml-2 pt-2 pl-123 "></i></a>   
-               </div>
-            </div>
-
-  </div>
-
-  
-   <div class="col-md-12 d-flex justify-space-between w-100 mob1 ">
-                        <a href="corporate-wellness.html" target="_blank"  class="btn-class border-green1 ">Corporates <i class="fa fa-chevron-right  float-right pt-2"></i></a>
-                        <a href="insurance.html" target="_blank"  class=" border-green1">Insurance Companies <i class="fa fa-chevron-right  pl-3 pt-2 float-right"></i></a>
-                        <a href="agents.html" target="_blank"  class="btn-class border-green1 ">Agents <i class="fa fa-chevron-right   float-right pt-2"></i></a>
-                        <a href="provider.html" target="_blank"  class="btn-class border-green1 ">Providers <i class="fa fa-chevron-right  pt-2 float-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-lg-6  col-md-6 col-sm-12  pb-4">
-                        <div class="addr d-flex ml-4">
-                            <div class="addr-icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <div class="addr-content">
-                                HealthAssure<br>Registered Office : 1st Floor, Excom House,<br> North Wing,  7 Saki-vihar Road, Sakinaka,<br> Andheri(E), Mumbai-400 072
+    <section class="footerbg">
+        <div class="container-fluid footer_row_one pt-3">
+            <div class="row">
+                <div class="container">
+                    <div class="row d-flex align-items-center ">
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <div class="_one">
+                                <h2>Get Started</h2>
+                                <h3>with HealthAssure today</h3>
                             </div>
                         </div>
-                        <div class="phone d-flex mt-3 ml-4">
-                            <div class="phone-icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="phone-content">
-                                +91-22-6167-6600
+                        <div class="col-lg-4 col-md-6  col-sm-12">
+                            <div class="footerblue ">
+                                <a href="#" class=" border-blue1">Explore Plans <i
+                                        class="fa fa-chevron-right pl-88"></i></a>
                             </div>
                         </div>
-                        <div class="mail d-flex mt-3 ml-4">
-                            <div class="mail-icon">
-                                <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="row mt-3 d-flex">
+
+                        <div class="col-md-6">
+                            <div class="desk1 ml-4 ">
+                                <div class="mt-4 footerbtn">
+                                    <a href="corporate-wellness.html" target="_blank" class=" border-green1 ">Corporates
+                                        <i class="fa fa-chevron-right ml-2 text-right pl-109"></i></a>
+                                </div>
+                                <div class="mt-4 footerbtn">
+                                    <a href="insurance.html" target="_blank" class=" border-green1  ">Insurance
+                                        Companies <i class="fa fa-chevron-right ml-2 pl-2 pb-2 pt-2"></i></a>
+                                </div>
+
                             </div>
-                            <div class="mail-content">
-                                <div>  hello@healthassure.in<br>CIN U85100MH2011PTC223007  </div>
-                               
-                                <div class="f_social_links">
-                                    <a href="https://www.facebook.com/healthassure.india/" target="_blank"><i class="fa fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/healthassure2011/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                    <a href="https://twitter.com/healthassure1" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="col-md-6 ">
+
+                            <div class="desk1 ml-4  ">
+                                <div class="mt-4 footerbtn">
+                                    <a href="agents.html" target="_blank" class=" border-green1 ">Agents <i
+                                            class="fa fa-chevron-right ml-2  pl-148"></i></a>
+                                </div>
+                                <div class="mt-4 footerbtn">
+                                    <a href="provider.html" target="_blank" class=" border-green1 ">Providers <i
+                                            class="fa fa-chevron-right ml-2 pt-2 pl-123 "></i></a>
                                 </div>
                             </div>
+
                         </div>
-                        
+
+
+                        <div class="col-md-12 d-flex justify-space-between w-100 mob1 ">
+                            <a href="corporate-wellness.html" target="_blank"
+                                class="btn-class border-green1 ">Corporates <i
+                                    class="fa fa-chevron-right  float-right pt-2"></i></a>
+                            <a href="insurance.html" target="_blank" class=" border-green1">Insurance Companies <i
+                                    class="fa fa-chevron-right  pl-3 pt-2 float-right"></i></a>
+                            <a href="agents.html" target="_blank" class="btn-class border-green1 ">Agents <i
+                                    class="fa fa-chevron-right   float-right pt-2"></i></a>
+                            <a href="provider.html" target="_blank" class="btn-class border-green1 ">Providers <i
+                                    class="fa fa-chevron-right  pt-2 float-right"></i></a>
+                        </div>
                     </div>
 
-                     <div class="col-lg-6 col-md-6  col-sm-12 white footer-16">
-                        <h5 class="ml-4 text-white">Quick Links</h5>
-                        <div class="fline ml-4"> </div>
-                        <div class="d-flex footer_quick_links">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#plan">Plans</a></li> 
-                               <!--  <li><a href="#">Health Shop</a></li> -->
-                                <li><a href="https://healthassure.in/Register/Contact" target="_blank">Contact</a></li>
-                            </ul>
-                            <ul class=" ml-3 pl-7">
-                                <li><a href="https://healthassure.in/Register/AboutUs" target="_blank">About Us</a></li>
-                                
-                                <li><a href="#media">Media</a></li>
-                                <li><a href="https://healthassure.blog/" target="_blank">Blog</a></li>
-                              
-                            </ul>
+                    <div class="row mt-5">
+                        <div class="col-lg-6  col-md-6 col-sm-12  pb-4">
+                            <div class="addr d-flex ml-4">
+                                <div class="addr-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="addr-content">
+                                    HealthAssure<br>Registered Office : 1st Floor, Excom House,<br> North Wing, 7
+                                    Saki-vihar Road, Sakinaka,<br> Andheri(E), Mumbai-400 072
+                                </div>
+                            </div>
+                            <div class="phone d-flex mt-3 ml-4">
+                                <div class="phone-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="phone-content">
+                                    +91-22-6167-6600
+                                </div>
+                            </div>
+                            <div class="mail d-flex mt-3 ml-4">
+                                <div class="mail-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="mail-content">
+                                    <div> hello@healthassure.in<br>CIN U85100MH2011PTC223007 </div>
+
+                                    <div class="f_social_links">
+                                        <a href="https://www.facebook.com/healthassure.india/" target="_blank"><i
+                                                class="fa fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/healthassure2011/" target="_blank"><i
+                                                class="fa fa-instagram"></i></a>
+                                        <a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home"
+                                            target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://twitter.com/healthassure1" target="_blank"><i
+                                                class="fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
+                        <div class="col-lg-6 col-md-6  col-sm-12 white footer-16">
+                            <h5 class="ml-4 text-white">Quick Links</h5>
+                            <div class="fline ml-4"> </div>
+                            <div class="d-flex footer_quick_links">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#plan">Plans</a></li>
+                                    <!--  <li><a href="#">Health Shop</a></li> -->
+                                    <li><a href="https://healthassure.in/Register/Contact" target="_blank">Contact</a>
+                                    </li>
+                                </ul>
+                                <ul class=" ml-3 pl-7">
+                                    <li><a href="https://healthassure.in/Register/AboutUs" target="_blank">About Us</a>
+                                    </li>
+
+                                    <li><a href="#media">Media</a></li>
+                                    <li><a href="https://healthassure.blog/" target="_blank">Blog</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <p class="text-center white f-14 mb-0 mt-5">Copyright @ 2021 HealthAssure | All Rights Reserved | <a
+                        href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf"
+                        target="_blank">Return Policy </a>| <a
+                        href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">Terms &
+                        Conditions </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf"
+                        target="_blank">Privacy Policy</a></p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="thankyoufirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog my-5">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h3> Thank you for your interest !!</h3>
+                    <p id="AmessageId"> WE WILL GET BACK TO YOU SOON</p>
+                    <div class="col-md-12 mx-auto mb-5">
+                        <button type="button" class="btn btn-success border-green w-50" data-dismiss="modal"> Ok
+                        </button>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="footer">
-        <p class="text-center white f-14 mb-0 mt-5" >Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf" target="_blank">Return Policy </a>| <a href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">Terms & Conditions </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf" target="_blank">Privacy Policy</a></p> 
-        </div>
- </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-<div class="modal fade" id="thankyoufirst" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog my-5">
-    <div class="modal-content">
-      <div class="modal-header">
-      
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-   <h3> Thank you for your interest !!</h3>
-   <p id="AmessageId">  WE WILL GET BACK TO YOU SOON</p>
-<div class="col-md-12 mx-auto mb-5">
-<button  type="button" class="btn btn-success border-green w-50" data-dismiss="modal"> Ok </button>
-</div>
-      </div>
-     
     </div>
-  </div>
-</div>
 
 
 
 
 
-<script  href="js/custom.js"></script>
+    <script href="js/custom.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/CallbackAdvisor.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/618b73156885f60a50bb2020/1fk4bj3pt';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/618b73156885f60a50bb2020/1fk4bj3pt';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 
 
 
-
-
-<script >
-
- $("#CallbackAdvisorform").submit(function (event) {
-                event.preventDefault();
-               
-                let AdvisorObj = {
-                    mobileNo: $('#AdvisorPhone').val(), name: $('#AdvisorName').val(), dob: "2000-01-01", email: $('#AdvisorEmail').val(), utmSource: "FitassurePage", utmMedium: "Mobile_No", utmCampaign: "Home Page", utmTerm: "Fitassure Page",
-                    utmContent: "https://healthassure.in/"
-                };
-                $.ajax({
-                    type: "POST",
-                    url: " https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
-                    data: JSON.stringify(AdvisorObj),
-                    dataType: "json",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    success: function (result) {
-
-                        $('#AmessageId').html('');
-                        $('#AmessageId').html(result.message);
-                        $('#AdvisorPhone').val('');
-                        $('#AdvisorName').val('');
-                        $('#AdvisorEmail').val('');
-                        jQuery.noConflict(); 
-
-                        $('#thankyoufirst').modal('toggle');
-                        
-
-                       
-                         // $('#thankyoufirst').modal('show')
-
-                       
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                    }
+    <script>
+        $("#CallbackAdvisorform").submit(function (event) {
+            event.preventDefault();
+            SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
+                $('#AdvisorEmail').val(), 'TotalassurePage').then(function (result) {
+                    $('#AmessageId').html('');
+                    $('#AmessageId').html(result.message);
+                    $('#AdvisorPhone').val('');
+                    $('#AdvisorName').val('');
+                    $('#AdvisorEmail').val('');
+                    jQuery.noConflict();
+                    $('#thankyoufirst').modal('toggle');
                 });
-            });
-
-
-
- $("#CallbackAdvisorform1").submit(function (event) {
-                event.preventDefault();
-              
-                let AdvisorObj = {
-                    mobileNo: $('#AdvisorPhone1').val(), name: $('#AdvisorName1').val(), dob: "2000-01-01", email: $('#AdvisorEmail1').val(), utmSource: "FitassurePage", utmMedium: "Mobile_No", utmCampaign: "Fitassure Page", utmTerm: "Home Page",
-                    utmContent: "https://healthassure.in/"
-                };
-                $.ajax({
-                    type: "POST",
-                    url: " https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
-                    data: JSON.stringify(AdvisorObj),
-                    dataType: "json",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    success: function (result) {
-
-
-                        $('#AmessageId').html(result.message);
-                          $('#AdvisorPhone1').val('');
-                          $('#AdvisorName1').val('');
-                         $('#AdvisorEmail1').val('');
-                        jQuery.noConflict(); 
-                        
-                        $('#thankyoufirst').modal('toggle');
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                    }
+        });
+        $("#CallbackAdvisorform1").submit(function (event) {
+            event.preventDefault();
+            SaveCallbackAdvisor($('#AdvisorPhone1').val(), $('#AdvisorName1').val(),
+                $('#AdvisorEmail1').val(), 'TotalassurePage').then(function (result) {
+                    $('#AmessageId').html('');
+                    $('#AmessageId').html(result.message);
+                    $('#AdvisorPhone1').val('');
+                    $('#AdvisorName1').val('');
+                    $('#AdvisorEmail1').val('');
+                    jQuery.noConflict();
+                    $('#thankyoufirst').modal('toggle');
                 });
-            });
-
-
-
-
-  $("#CallbackAdvisorform2").submit(function (event) {
-                event.preventDefault();
-              
-                let AdvisorObj = {
-                    mobileNo: $('#AdvisorPhone2').val(), name: $('#AdvisorName2').val(), dob: "2000-01-01", email: $('#AdvisorEmail2').val(), utmSource: "FitassurePage", utmMedium: "Mobile_No", utmCampaign: "Fitassure Page", utmTerm: "Home Page",
-                    utmContent: "https://healthassure.in/"
-                };
-                $.ajax({
-                    type: "POST",
-                    url: " https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
-                    data: JSON.stringify(AdvisorObj),
-                    dataType: "json",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    success: function (result) {
-
-
-                        $('#AmessageId').html(result.message);
-                         $('#AdvisorPhone2').val('');
-                          $('#AdvisorName2').val('');
-                         $('#AdvisorEmail2').val('');
-                         jQuery.noConflict(); 
-                        
-                        $('#thankyoufirst').modal('toggle');
-                        
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                    }
+        });
+        $("#CallbackAdvisorform2").submit(function (event) {
+            event.preventDefault();
+            SaveCallbackAdvisor($('#AdvisorPhone2').val(), $('#AdvisorName2').val(),
+                $('#AdvisorEmail2').val(), 'TotalassurePage').then(function (result) {
+                    $('#AmessageId').html('');
+                    $('#AmessageId').html(result.message);
+                    $('#AdvisorPhone2').val('');
+                    $('#AdvisorName2').val('');
+                    $('#AdvisorEmail2').val('');
+                    jQuery.noConflict();
+                    $('#thankyoufirst').modal('toggle');
                 });
-            });
-
-function advisorclick(){
-     $('#Advisorformdiv').show();
-    $('#Advisormessagediv').hide();
-    $('#AdvisorPhone').val('');
-    $('#AdvisorName').val('');
-    $('#AdvisorEmail').val('');
-}
-
-</script>
+        });
+    </script>
 
 
 
-<script >
-    
- $(document).ready(function(){
+    <script>
 
-if($('.bbb_viewed_slider').length)
-{
-var viewedSlider = $('.bbb_viewed_slider');
+        $(document).ready(function () {
 
-viewedSlider.owlCarousel(
-{
-loop:true,
-margin:30,
-autoplay:true,
-autoplayTimeout:40000,
-nav:false,
-dots:false,
-responsive:
-{
-0:{items:1},
-575:{items:1},
-768:{items:2},
-991:{items:2},
-1199:{items:3}
-}
-});
+            if ($('.bbb_viewed_slider').length) {
+                var viewedSlider = $('.bbb_viewed_slider');
 
-if($('.bbb_viewed_prev').length)
-{
-var prev = $('.bbb_viewed_prev');
-prev.on('click', function()
-{
-viewedSlider.trigger('prev.owl.carousel');
-});
-}
+                viewedSlider.owlCarousel(
+                    {
+                        loop: true,
+                        margin: 30,
+                        autoplay: true,
+                        autoplayTimeout: 40000,
+                        nav: false,
+                        dots: false,
+                        responsive:
+                        {
+                            0: { items: 1 },
+                            575: { items: 1 },
+                            768: { items: 2 },
+                            991: { items: 2 },
+                            1199: { items: 3 }
+                        }
+                    });
 
-if($('.bbb_viewed_next').length)
-{
-var next = $('.bbb_viewed_next');
-next.on('click', function()
-{
-viewedSlider.trigger('next.owl.carousel');
-});
-}
-}
+                if ($('.bbb_viewed_prev').length) {
+                    var prev = $('.bbb_viewed_prev');
+                    prev.on('click', function () {
+                        viewedSlider.trigger('prev.owl.carousel');
+                    });
+                }
 
-});
+                if ($('.bbb_viewed_next').length) {
+                    var next = $('.bbb_viewed_next');
+                    next.on('click', function () {
+                        viewedSlider.trigger('next.owl.carousel');
+                    });
+                }
+            }
 
-</script>
+        });
+
+    </script>
 </body>
+
 </html>
