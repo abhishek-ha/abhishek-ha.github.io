@@ -12,13 +12,13 @@ function getUrlVars(url = window.location.href) {
 function SaveCallbackAdvisor(Phone, Name, Email, Source) {
     return new Promise(function (resolve, reject) {
         var Vars = getUrlVars();
-        UtmSource = Vars["utmSource"];
-        if (Vars["utmSource"] == null) {
+        UtmSource = Vars["utm_source"];
+        if (Vars["utm_source"] == null) {
             UtmSource = Source;
         }
         let AdvisorObj = {
-            mobileNo: Phone, name: Name, dob: "2000-01-01", email: Email, utmSource: UtmSource, utmMedium: Vars["utmMedium"], utmCampaign: Vars["utmCampaign"], utmTerm: Vars["utmTerm"],
-            utmContent: Vars["utmContent"]
+            mobileNo: Phone, name: Name, dob: "2000-01-01", email: Email, utmSource: UtmSource, utmMedium: Vars["utm_medium"], utmCampaign: Vars["utm_campaign"], utmTerm: Vars["utm_term"],
+            utmContent: Vars["utm_content"]
         };
         $.ajax({
             type: "POST",
