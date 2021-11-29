@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+<head><title>RazorPay Web Payment</title></head>
+<body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+   const queryString = window.location.search;
+   console.log(queryString);
+   const urlParams = new URLSearchParams(queryString);
+   const name = urlParams.get('name')
+   const price = urlParams.get('price')
+   //const image = urlParams.get('image')
+   const image = 'https://live.healthassure.in/opd/images/logo.png'
+  
+      options = {
+          //"key": "4qopXf8ts7wduwE4iQMh26QM",
+          "key":"rzp_live_xxYGxuXYKzXEcW",
+          "amount": price, "currency": "INR",
+          "name":"HealthAssure",
+          "description": name,
+          "image":image,
+          "handler": function (response){
+             window.parent.postMessage("SUCCESS","*");
+          },    
+          "prefill": {        
+             "name": "",        
+             "email":"ajit@gmail.com",
+             "contact":"+91-000000000"  
+           },   
+           "notes": {        
+             "address": "Autofy"    
+          },    
+          "theme": {
+             "color": "#DF0145"    
+          },
+          "modal": {
+            "ondismiss": function(){
+                 console.time('generate');
+                 var result = {dd:"ddd", sub:{xx:"dd"}, num:666};
+                 var uarr = stringToUintArray(JSON.stringify(result));
+                 //self.postMessage(uarr.buffer, [uarr.buffer]);
+
+               window.parent.postMessage("MODAL_CLOSED", "*", [uarr.buffer]);   //3
+            }
+          }
+       };
+       var rzp1 = new Razorpay(options);
+       window.onload = function(e){  //1  
+          rzp1.open();
+          e.preventDefault();
+       }
+
+   function stringToUintArray(message) {
+        var encoded = self.btoa(message);
+        var uintArray = Array.prototype.slice.call(encoded).map(ch => ch.charCodeAt(0));
+        var uarray = new Uint8Array(uintArray);
+        return uarray;
+   }
+
+     </script>
+</body>
+</html>

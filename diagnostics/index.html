@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<base href="/">-->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="HealthAssure | Building India's First OPD Health Care Plan">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <title> HealthAssure | Building India's First OPD Health Care Plan </title>
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="HealhAssure">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDuyufDJPVajueHOF1UxVJz6go_Gk0uh8"></script>
+
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3074829012');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCgeCdykznJszYYrsnU6FExV2gvby8pO6Y",
+      authDomain: "moto-web-1.firebaseapp.com",
+      projectId: "moto-web-1",
+      storageBucket: "moto-web-1.appspot.com",
+      messagingSenderId: "962817508969",
+      appId: "1:962817508969:web:ee84af01614eb7bafc44f8"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+</body>
+</html>
