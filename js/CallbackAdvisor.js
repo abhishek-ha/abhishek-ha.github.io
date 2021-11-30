@@ -40,3 +40,10 @@ function SaveCallbackAdvisor(Phone, Name, Email, Source) {
         });
     });
 }
+
+function UserTracking(MobileNo, sub1 = null) {
+    if (sub1 == null) {
+        sub1 = Date.now();
+    }
+    $('body').append("<iframe src='https://tracking.icubeswire.co/aff_a?offer_id=2617&adv_sub1=" + sub1 + "&adv_sub2=" + MobileNo + "' width='1' height='1' id='pixelcodeurl' /></iframe>");
+}

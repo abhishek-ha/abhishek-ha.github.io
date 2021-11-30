@@ -1132,6 +1132,7 @@
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
                 $('#AdvisorEmail').val(), 'OptimaassurePage').then(function (result) {
+                    UserTracking($('#AdvisorPhone').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
                     $('#AdvisorPhone').val('');
@@ -1145,6 +1146,7 @@
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone1').val(), $('#AdvisorName1').val(),
                 $('#AdvisorEmail1').val(), 'OptimaassurePage').then(function (result) {
+                    UserTracking($('#AdvisorPhone1').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
                     $('#AdvisorPhone1').val('');
@@ -1158,6 +1160,7 @@
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone2').val(), $('#AdvisorName2').val(),
                 $('#AdvisorEmail2').val(), 'OptimaassurePage').then(function (result) {
+                    UserTracking($('#AdvisorPhone2').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
                     $('#AdvisorPhone2').val('');
