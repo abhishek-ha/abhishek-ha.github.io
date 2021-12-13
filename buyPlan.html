@@ -203,7 +203,7 @@
 <body>
     <div class="container">
         <div class="row ">
-            <div id="loadding" style="overflow: hidden;" >
+            <div id="loadding" style="overflow: hidden;">
                 <center>
                     <div id="preload"></div>
                 </center>
@@ -241,7 +241,7 @@
             <div id="buyplanformdiv" class="col-lg-4 col-md-4 col-sm-4 model-medium">
                 <div class="modal-header">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h3> <span id="buyplanpopuptitle1" style="font-size:30px;
+                        <h3> <span id="buyplanpopuptitle1" style="font-size:25px;
     font-weight:600;">Modal Header </span> <span></span> <span class="close"><a style="border: radius 0;"
                                     href="javascript:closeform()">&times;</a></span> </h3>
                     </div>
@@ -302,12 +302,13 @@
             return vars;
         }
         var Vars = getUrlVars();
-        $('#buyplanpopuptitle').html(Vars["PopupTitle"]);
-        $('#buyplanpopuptitle1').html(Vars["PopupTitle"]);
+        var PTitle = Vars["PopupTitle"].replace("%20", " ");
+        $('#buyplanpopuptitle').html(PTitle);
+        $('#buyplanpopuptitle1').html(PTitle);
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
             $('#Placeorder').html('Processing...');
-            BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), $('#CustomerDOB').val(), $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], Vars["PopupTitle"]).then(function (result) {
+            BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), $('#CustomerDOB').val(), $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle).then(function (result) {
                 $('#CustomerName').val('');
                 $('#CustomerEmail').val('');
                 $('#CustomerPhone').val('');
