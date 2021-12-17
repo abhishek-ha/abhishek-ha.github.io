@@ -33,20 +33,25 @@ footer .social ul li a{
             background-color:#ffffff !important;
         }
       .logo {
-            width: 18%;
+            width: 36%;
             padding-top: 30px;
         }
-
-       .text-blue {
+        .text-blue {
             color: #448aff;
         }
-
-        .f-poppins {
+       .f-poppins {
             font-family: 'Poppins', sans-serif;
         }
      .f-50 {
             font-size: 35px;
         }
+
+
+.specialist{
+    padding: 33px 0px 33px 0px!important;
+} 
+
+
 
 @media only screen and (max-width: 500px){
 
@@ -230,8 +235,7 @@ footer .social ul li a{
             border-radius: 10px;
             margin-bottom: 0;
         }
-
-        .item3 p {
+       .item3 p {
             font-weight: 500;
             color: #212121;
             font-size: 14px;
@@ -1001,8 +1005,12 @@ footer .social ul li a{
 }
 
 .planspt{
-    padding-top:206px;
+    padding-top:168px;
 }
+
+/*.planspt{
+    padding-top:206px;
+}*/
 
 
 
@@ -1047,7 +1055,7 @@ footer .social ul li a{
 
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     padding: 10px 8px 8px 8px;
     transition: all 0.3s ease-in-out 0s;
     min-height: 40px;
@@ -4386,8 +4394,6 @@ li {
     text-align: center;
     margin:auto;
 }
-
-
 }
 
 
@@ -5318,21 +5324,73 @@ h4{color:#444}
 }
 
 
+
+
+.btn1 {
+    background: #0f5fc2;
+    color: #ffffff!important;
+  /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
+    border-radius: 50px;
+    width: 120px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left: 15px;
+}
+
+.btn1:hover{
+    background: #000000!important;
+    color: #fff!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 500px){
     .mobfit{
-
-      display: none;  
+     display: none;  
     }
+   .aboutbt{
+         display: none;  
+}
+    .small, small {
+    font-size: 11px;
+    font-weight: 600;
+}
 
+
+
+}
+
+
+@media only screen and (max-width: 500px){
+   
+   .aboutbt a{
+         text-decoration:none;
+         color:#000000;
+         font-size: 14px;
+         font-weight:600;
+         margin-top:-54%;
+         background-color:#0a8943;
+}
 }
 
 @media only screen and (max-width: 501px){
     .deskfit{
-
       display: none;  
     }
 
+    .small, small {
+    font-size: 10px;
+    font-weight: 600;
 }
+
+
+}
+
 
 
 
