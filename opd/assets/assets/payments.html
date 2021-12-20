@@ -10,6 +10,8 @@
    const urlParams = new URLSearchParams(queryString);
    const name = urlParams.get('name')
    const price = urlParams.get('price')
+   const email = urlParams.get('email')
+   const mobile = urlParams.get('mobile')
    //const image = urlParams.get('image')
    const image = 'https://live.healthassure.in/opd/images/logo.png'
   
@@ -19,14 +21,14 @@
           "amount": price, "currency": "INR",
           "name":"HealthAssure",
           "description": name,
-          "image":image,
+          "image": image,
           "handler": function (response){
              window.parent.postMessage("SUCCESS","*");
           },    
           "prefill": {        
              "name": "",        
-             "email":"ajit@gmail.com",
-             "contact":"+91-000000000"  
+             "email": email,
+             "contact": mobile
            },   
            "notes": {        
              "address": "Autofy"    
