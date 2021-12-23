@@ -766,7 +766,7 @@ CIN U85100MH2011PTC223007</h6>
 
 <script src="js/custom.js"></script>
 
-<script src="js/CallbackAdvisor.js"></script>
+<script src="../js/CallbackAdvisor.js"></script>
 
 
 
@@ -793,7 +793,7 @@ CIN U85100MH2011PTC223007</h6>
  $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'FitassurePage').then(function (result) {
+                $('#AdvisorEmail').val(), 'FitassurePage',false).then(function (result) {
                     UserTracking($('#AdvisorPhone').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);

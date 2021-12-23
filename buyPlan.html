@@ -242,7 +242,7 @@
                 <div class="modal-header">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h3> <span id="buyplanpopuptitle1" style="font-size:25px;
-    font-weight:600;">Modal Header </span> <span></span> <span class="close"><a style="border: radius 0;"
+    font-weight:500;">Please fill the form </span> <span></span> <span class="close"><a style="border: radius 0;"
                                     href="javascript:closeform()">&times;</a></span> </h3>
                     </div>
                 </div>
@@ -268,7 +268,8 @@
                             max="2015-01-01" required />
                     </div>
                     <div class="form-check" style="margin-top: 20px;">
-                        <input class="form-check-input" type="radio" name="CustomerGender" id="inlineRadio1"
+                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br/>
+                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender" id="inlineRadio1"
                             checked="checked" value="Male">
                         <label class="form-check-label" for="inlineRadio1">Male</label>
                         <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
@@ -304,7 +305,7 @@
         var Vars = getUrlVars();
         var PTitle = Vars["PopupTitle"].replace("%20", " ");
         $('#buyplanpopuptitle').html(PTitle);
-        $('#buyplanpopuptitle1').html(PTitle);
+        //$('#buyplanpopuptitle1').html(PTitle);
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
             $('#Placeorder').html('Processing...');
@@ -330,6 +331,12 @@
         function opningPaymentSuccesspage() {
             $('#congratulationsdiv').show();
             $('#buyplanformdiv').hide();
+            try {
+                var IsUserTracker = Vars["IsUserTracker"];
+                if (IsUserTracker) {
+
+                }
+            } catch { }
         }
         function closebuyplanpopup() {
             parent.postMessage("closebuyplanpopup", "*");

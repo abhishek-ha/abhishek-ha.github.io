@@ -1153,7 +1153,7 @@
         $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'FitassurePage').then(function (result) {
+                $('#AdvisorEmail').val(), 'FitassurePage', false).then(function (result) {
                     UserTracking($('#AdvisorPhone').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
@@ -1161,14 +1161,14 @@
                     $('#AdvisorName').val('');
                     $('#AdvisorEmail').val('');
                     //jQuery.noConflict();
-                    //$('#thankyoufirst').modal('toggle');
+                    $('#thankyoufirst').modal('toggle');
                 });
         });
 
         $("#CallbackAdvisorform1").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone1').val(), $('#AdvisorName1').val(),
-                $('#AdvisorEmail1').val(), 'FitassurePage').then(function (result) {
+                $('#AdvisorEmail1').val(), 'FitassurePage',false).then(function (result) {
                     UserTracking($('#AdvisorPhone1').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
@@ -1176,13 +1176,13 @@
                     $('#AdvisorName1').val('');
                     $('#AdvisorEmail1').val('');
                     //jQuery.noConflict();
-                    //$('#thankyoufirst').modal('toggle');
+                    $('#thankyoufirst').modal('toggle');
                 });
         });
         $("#CallbackAdvisorform2").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone2').val(), $('#AdvisorName2').val(),
-                $('#AdvisorEmail2').val(), 'FitassurePage').then(function (result) {
+                $('#AdvisorEmail2').val(), 'FitassurePage',false).then(function (result) {
                     UserTracking($('#AdvisorPhone2').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
@@ -1190,7 +1190,7 @@
                     $('#AdvisorName2').val('');
                     $('#AdvisorEmail2').val('');
                     //jQuery.noConflict();
-                    //$('#thankyoufirst').modal('toggle');
+                    $('#thankyoufirst').modal('toggle');
                 });
         });
     </script>

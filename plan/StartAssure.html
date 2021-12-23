@@ -153,7 +153,7 @@
 
                 <div class="col-md-6 padding-top-150">
                   <h1 > <span style="font-size:20px;background-color: #0f5fc2; padding: 5px; "> Introducing </span> <br><span style="background-color: #0f5fc2; padding: 5px; "> StartAssure </span> </h1>
-                    <p class="hero-text" style="background-color:#0f5fc2; padding: 5px; "> Unlimited tele consultations | Rs. 1000 diagnostic tests | Doctor coach | Navigation Assistance </p>
+                    <p class="hero-text" style="background-color:#0f5fc2; padding: 5px; "> <b>Rs. 1000 diagnostic tests</b> | Unlimited tele consultations | Doctor coach | Navigation Assistance </p>
                     <div class="padding-top-70">
 
  <h1 style="background-color:#0f5fc2; padding: 5px;  width:350px;"> Rs. 499  <span style="font-size:20px;"> only per year</span> </h1>
@@ -357,6 +357,18 @@
        <!--begin row -->
 
                 <div class="row">
+                  <!--begin col-md-4 -->
+                  <div class="col-md-3">
+
+                    <div class="main-services">
+                    <img src="https://opd.healthassure.in/plans/images/hospital.png" width="80px" alt="pic">
+                    <h3><a href="#"> Diagnostic Coverage </a></h3>
+                    <h4>₹ 1,000 </h4>
+                   
+                   <p> Rs. 1,000 diagnostic wallet to be used at centers within 5kms of whereever you are.  </p>
+                    </div>
+                    </div>
+                   <!--end col-md-4 -->
                  <!--begin col-md-4 -->
                    <div class="col-md-3">
 
@@ -394,18 +406,6 @@
  </div>
 <!--end col-md-4 -->
 
- <!--begin col-md-4 -->
-                   <div class="col-md-3">
-
- <div class="main-services">
- <img src="https://opd.healthassure.in/plans/images/hospital.png" width="80px" alt="pic">
- <h3><a href="#"> Diagnostic Coverage </a></h3>
- <h4>₹ 1,000 </h4>
-
-<p> Rs. 1,000 diagnostic wallet to be used at centers within 5kms of whereever you are.  </p>
- </div>
- </div>
-<!--end col-md-4 -->
 
 
 </div>
@@ -689,7 +689,7 @@ CIN U85100MH2011PTC223007</h6>
  $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'StartAssurePage').then(function (result) {
+                $('#AdvisorEmail').val(), 'StartAssurePage', false).then(function (result) {
                     UserTracking($('#AdvisorPhone').val());
                     $('#AmessageId').html('');
                     $('#AmessageId').html(result.message);
@@ -697,7 +697,7 @@ CIN U85100MH2011PTC223007</h6>
                     $('#AdvisorName').val('');
                     $('#AdvisorEmail').val('');
                     // jQuery.noConflict();
-                    //$('#thankyoufirst').modal('toggle');
+                    $('#thankyoufirst').modal('toggle');
                 });
         });
 

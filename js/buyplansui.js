@@ -32,8 +32,8 @@
         "<iframe id='BuyPlaniframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' ></iframe> </div></div></div>");
 })();
 
-function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode) {
-    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode);
+function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false) {
+    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker);
     openmodal();
 }
 
