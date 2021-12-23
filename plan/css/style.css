@@ -381,7 +381,7 @@ bottom: 0;
     color: #ffffff!important;
   /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
     border-radius: 50px;
-    width: 200px;
+    width: 240px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
@@ -4385,6 +4385,11 @@ input.contact-submit{
     }
   }
 
-
+a {
+    color: #0f5fc2;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 
 
