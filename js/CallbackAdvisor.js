@@ -30,7 +30,7 @@ function SaveCallbackAdvisor(Phone, Name, Email, Source, IsShowOTPPopup = true) 
             EmailValue = Email;
             SourceValue = Source;
             OpenOTPPopup();
-            resolve({message:"WE WILL GET BACK TO YOU SOON"}) // Resolve promise and go to then() 
+            resolve({ message: "WE WILL GET BACK TO YOU SOON" }) // Resolve promise and go to then() 
         } else {
             $.ajax({
                 type: "POST",
@@ -55,10 +55,18 @@ function SaveCallbackAdvisor(Phone, Name, Email, Source, IsShowOTPPopup = true) 
 }
 
 function UserTracking(MobileNo, sub1 = null) {
-    if (sub1 == null) {
-        sub1 = Date.now();
-    }
-    $('body').append("<iframe src='https://tracking.icubeswire.co/aff_a?offer_id=2617&adv_sub1=" + sub1 + "&adv_sub2=" + MobileNo + "' width='1' height='1' id='pixelcodeurl' /></iframe>");
+    try {
+        if (sub1 == null) {
+            sub1 = Date.now();
+        }
+        var Vars = getUrlVars();
+        if (Vars["utm_source"].toLowerCase() == 'icubes') {
+            $('body').append("<iframe src='https://tracking.icubeswire.co/aff_a?offer_id=2617&adv_sub1=" + sub1 + "&adv_sub2=" + MobileNo + "' width='1' height='1' id='pixelcodeurl' /></iframe>");
+        }
+        if (Vars["utm_source"].toLowerCase() == 'fb lead ads' || Vars["utm_source"].toLowerCase() == 'facebook') {
+            fbq('track', 'SubmitApplication');
+        }
+    } catch { }
 }
 
 function GetOTPforValidation(MobileNumbar) {
@@ -306,7 +314,7 @@ function VarifyOTPforValidation(otp, mobileno) {
 function openmodalcallback() {
     var modal = document.getElementById("callbackpopup");
     modal.style.display = "block";
-   
+
 }
 
 function closemodalcallback() {
@@ -323,10 +331,10 @@ function closemodalcallback() {
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].value = '';
     }
-   
+
 }
 
-try{
+try {
     var app = new Vue({
         el: '#otpapp',
         methods: {
@@ -336,7 +344,7 @@ try{
             }
         }
     });
-}catch{}
+} catch { }
 var defoultSource1 = null;
 var showotppopup = true;
 function CallBackModalPopup(defoultSource, showotppopup1 = true) {

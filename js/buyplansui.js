@@ -31,9 +31,19 @@
         "            <div class='modal-content'>" +
         "<iframe id='BuyPlaniframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' ></iframe> </div></div></div>");
 })();
-
+function getUrlVars1(url = window.location.href) {
+    var vars = [], hash;
+    var hashes = url.slice(url.indexOf('?') + 1).split('&');
+    for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+var Vars1 = getUrlVars1();
 function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false) {
-    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker);
+    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"]);
     openmodal();
 }
 

@@ -203,12 +203,12 @@
 <body>
     <div class="container">
         <div class="row ">
-            <div id="loadding" style="overflow: hidden;">
+            <div id="loadding" style="overflow: hidden;display: none;">
                 <center>
                     <div id="preload"></div>
                 </center>
             </div>
-            <div id="congratulationsdiv" class="modelbuypopup mt-6 " style="background-color:#ffffff; ">
+            <div id="congratulationsdiv" class="modelbuypopup mt-6 " style="background-color:#ffffff; display: none;">
                 <div class="col-md-12 " style="background-color:#ffffff;border-radius:5px;  margin-bottom: 50px;">
                     <div class="iconcheck" style="text-align: center;"> <img src="images/greencheck.png"> </div>
                     <h3 class="head"
@@ -242,8 +242,8 @@
                 <div class="modal-header">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h3> <span id="buyplanpopuptitle1" style="font-size:25px;
-    font-weight:500;"> Please enter your details... </span> <span></span> <span class="close"><a style="border: radius 0;"
-                                    href="javascript:closeform()">&times;</a></span> </h3>
+    font-weight:500;"> Please enter your details... </span> <span></span> <span class="close"><a
+                                    style="border: radius 0;" href="javascript:closeform()">&times;</a></span> </h3>
                     </div>
                 </div>
                 <form method="post" id="buyplanform" style="margin-top: 15px;margin-bottom: 15px;">
@@ -268,9 +268,9 @@
                             max="2015-01-01" required />
                     </div>
                     <div class="form-check" style="margin-top: 20px;">
-                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br/>
-                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender" id="inlineRadio1"
-                            checked="checked" value="Male">
+                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio1" checked="checked" value="Male">
                         <label class="form-check-label" for="inlineRadio1">Male</label>
                         <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
                             id="inlineRadio2" value="Female">
@@ -331,12 +331,18 @@
         function opningPaymentSuccesspage() {
             $('#congratulationsdiv').show();
             $('#buyplanformdiv').hide();
+            console.log('opningPaymentSuccesspage');
             try {
-                var IsUserTracker = Vars["IsUserTracker"];
+                /*var IsUserTracker = Vars["IsUserTracker"];
                 if (IsUserTracker) {
                     $('body').append('<iframe src="https://epromotion.in/healthassure" height="0" width="0" frameborder="0"></iframe>');
+                }*/
+                if (Vars["utm_source"].toLowerCase() == 'cuberoot') {
+                    console.log(Vars["utm_source"]);
+                    console.log('*****************************cuberoot**********************');
+                    $('body').append('<iframe src="https://epromotion.in/healthassure" height="0" width="0" frameborder="0"></iframe>');
                 }
-            } catch { }
+            } catch { console.log('error');}
         }
         function closebuyplanpopup() {
             parent.postMessage("closebuyplanpopup", "*");
