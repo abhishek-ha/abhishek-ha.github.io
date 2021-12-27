@@ -46,8 +46,8 @@ section {
     background-color: #ffffff;
 }
 .main-services:hover {
-    transform: scale(1.025);
-    transition: all 0.1s;
+    transform: scale(1.085);
+    transition: all 0.8s;
 }
 .main-services ul li{
   line-height: 23px;
