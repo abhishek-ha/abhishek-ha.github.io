@@ -197,6 +197,11 @@
                 border-top: 2px solid green;
             }
         }
+
+
+      
+
+
     </style>
 </head>
 
@@ -259,7 +264,7 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerPhone">Phone</label>
-                        <input type="tel" name="CustomerPhone" id="CustomerPhone" pattern="[0-9]{10}"
+                        <input type="tel" name="CustomerPhone" maxlength="10" id="CustomerPhone" pattern="[789][0-9]{9}"
                             title="Ten digits Number" class="form-control" placeholder="Phone" required />
                     </div>
                     <div class="form-group">

@@ -244,6 +244,25 @@ textarea {
   margin-top: 3px;
 }
 
+@media only screen and (min-width:768.50px){
+
+  .header .logo img {
+    max-height: 70px;
+  margin-right: 6px;
+  width: 100%;
+  }
+
+}
+@media only screen and (max-width:768px){
+.header .logo img {
+    max-height: 70px;
+    margin-right: 6px;
+    width: 170px;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -517,7 +536,7 @@ padding: 250px;
 
  
   background: url(../img/Mobiler.jpg) top center no-repeat;
- background-size: contain;
+ background-size: 100%;
 }
   .hero {
     text-align: center;
