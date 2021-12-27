@@ -305,10 +305,12 @@
         var Vars = getUrlVars();
         var PTitle = Vars["PopupTitle"].replace("%20", " ");
         $('#buyplanpopuptitle').html(PTitle);
+        var CustomerPhone_val = null;
         //$('#buyplanpopuptitle1').html(PTitle);
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
             $('#Placeorder').html('Processing...');
+            CustomerPhone_val = $('#CustomerPhone').val();
             BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), $('#CustomerDOB').val(), $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle).then(function (result) {
                 $('#CustomerName').val('');
                 $('#CustomerEmail').val('');
@@ -339,10 +341,24 @@
                 }*/
                 if (Vars["utm_source"].toLowerCase() == 'cuberoot') {
                     console.log(Vars["utm_source"]);
+                    console.log(CustomerPhone_val);
+                    $.ajax({
+                        type: "GET",
+                        url: "https://epromotion.in/healthassure/?phone=" + CustomerPhone_val,
+                        dataType: "json",
+                        success: function (result) {
+                            console.warn(result);
+                        },
+                        error: function (eror) {
+                            console.warn(eror);
+                        }
+                    });
                     console.log('*****************************cuberoot**********************');
-                    $('body').append('<iframe src="https://epromotion.in/healthassure" height="0" width="0" frameborder="0"></iframe>');
+                    //$('body').append('<iframe src="https://epromotion.in/healthassure/?phone=' + CustomerPhone_val + '" height="0" width="0" frameborder="0"></iframe>');
+                    console.log("CustomerPhone_val");
+                    console.log(CustomerPhone_val);
                 }
-            } catch { console.log('error');}
+            } catch { console.log('error'); }
         }
         function closebuyplanpopup() {
             parent.postMessage("closebuyplanpopup", "*");
