@@ -48,20 +48,47 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <!-- Template Main CSS File -->
+
+
+
+  <!-- Template Main CSS File -->
 
   <link href="assets/css/style.css" rel="stylesheet">
+<!-- Hotjar Tracking Code for https://healthassure.in/ha/fitassure-cub-c1 --> 
+<script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2762735,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <style>
+  .hero {
+        visibility: hidden;
+        margin-top: 0px;
+        padding: 0px;
+}
 
-  <!-- Hotjar Tracking Code for https://healthassure.in/ha/fitassure-cub-c1 --> 
-  <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2762735,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+.buyNowBtn{
+background: none !important;
+border: none !important;
+margin-top: 80px;
+  }
+#plan{
+  margin-top: -39px !important;
+}  
 
+@media only screen and (max-width: 768px) {
+      .buyNowBtn{
+        display: none;
+      }
+      .buyNowBtnMob{
+        display: block !important;
+        background: none !important;
+border: none !important;
+margin-top: 30px;
 
-
-
-
-
+      }
+}
+</style>
 </head>
 
 
@@ -99,7 +126,7 @@
     </div>
 
   </header><!-- End Header -->
-  <section id="hero" class="hero d-flex align-items-center">
+<!--   <section id="hero" class="hero d-flex align-items-center">
      <div class="container">
 
       <div class="row">
@@ -132,25 +159,33 @@
 
     </div>
   </section>
+ -->
 
 
+  <main id="main" class="mt-5">
 
-  <main id="main">
-
-     <section id="package1" class="services mt-1 ">
+     <section id="package1" class="services mt-5 ">
 
      <div class="container-fluid" data-aos="fade-up" style="padding-right: 0;padding-left: 0;">
 
+<button type="button" class="buyNowBtn" onclick="OpenBuyPlanPopup('StartAssure-Plus','HAOPDR003-48','')">
    <div class="row gy-4 mb-5">
-
-  <img src="assets/img/first.jpg">
+  <img src="assets/img/topBnr.jpg">
 </div>
+</button>
+
+<button type="button" class="buyNowBtnMob" onclick="OpenBuyPlanPopup('StartAssure-Plus','HAOPDR003-48','')" style="display: none;">
+   <div class="row">
+  <img src="assets/img/topBnrMob.jpg">
+</div>
+</button>
+
 </div>
  </section>
 
 
 <section id="plan">
-  <div class="container pt-5">
+  <div class="container">
     <div class="row">
 
       <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12">

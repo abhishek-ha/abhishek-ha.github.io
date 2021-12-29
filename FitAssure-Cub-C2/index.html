@@ -34,6 +34,35 @@
 <!-- Hotjar Tracking Code for https://healthassure.in/ha/fitassure-cub-c2 --> 
 <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2762726,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
 
+    <style>
+  .hero {
+        visibility: hidden;
+        margin-top: 0px;
+        padding: 0px;
+}
+
+.buyNowBtn{
+background: none !important;
+border: none !important;
+margin-top: 80px;
+  }
+#plan{
+  margin-top: -39px !important;
+}  
+
+@media only screen and (max-width: 768px) {
+      .buyNowBtn{
+        display: none;
+      }
+      .buyNowBtnMob{
+        display: block !important;
+        background: none !important;
+border: none !important;
+margin-top: 55px;
+
+      }
+}
+</style>
 
 </head>
 
@@ -64,7 +93,7 @@
 
 
 
-  <section id="hero" class="hero d-flex align-items-center">
+<!--   <section id="hero" class="hero d-flex align-items-center">
 
 
 
@@ -102,7 +131,7 @@
 
 
 
-  </section>
+  </section> -->
 
   <main id="main">
  
@@ -110,10 +139,17 @@
      <div class="container-fluid" data-aos="fade-up" style="padding-right: 0;padding-left: 0;">
 
        
- <div class="row gy-4 ">
-
-  <img src="assets/img/main-banner.jpg">
+<button type="button" class="buyNowBtn" onclick="OpenBuyPlanPopup('StartAssure-Plus','HAOPDR003-48','')">
+   <div class="row gy-4 mb-5">
+  <img src="assets/img/topBnr.jpg">
 </div>
+</button>
+
+<button type="button" class="buyNowBtnMob" onclick="OpenBuyPlanPopup('StartAssure-Plus','HAOPDR003-48','')" style="display: none;">
+   <div class="row">
+  <img src="assets/img/topBnrMob.jpg">
+</div>
+</button>
       </div>
    </section>
 
