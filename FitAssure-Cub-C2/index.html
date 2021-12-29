@@ -425,6 +425,59 @@ In our endeavor to connect people to resources and create a healthier tomorrow, 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+
+
+
+  <div id="myModal" class="modal fade " role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg rounded">
+      <!-- Modal content-->
+      <div class="modal-content bg-white">
+        <div class="modal-header">
+          <h5 class="modal-title"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         
+        </div>
+        <div class="modal-body ">
+          <div class="row my-3 mx-3">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12 ">
+                <img src="assets/img/modalpopup.png" class="img-fluid">
+
+     </div>
+ <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12">
+    <h2 class="modalhead"> Not Ready Yet ? </h2>
+    <h4 class="pb-2"><b> Let us help you out</b></h4>
+     <form class="mb-5">
+<div class="form-group">
+  <input type="text" class="form-control" autocomplete="off"  placeholder="Name *" required>
+ </div>
+
+  <div class="form-group">
+  <input type="text" class="form-control" autocomplete="off"   placeholder="Phone *" pattern="[789][0-9]{9}" maxlength="10" required>
+ </div>
+  <div class="form-group mx-auto text-center">
+    <button class="btn btn1 btn-primary btn-block" type="submit">Submit </button>
+   </div>
+
+
+ </form>
+         
+     </div>
+     </div> 
+         
+        </div>
+        <!-- <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+        </div> -->
+      </div>
+  
+    </div>
+  </div>
+
+
+
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -438,6 +491,17 @@ In our endeavor to connect people to resources and create a healthier tomorrow, 
   <script src="assets/js/main.js"></script>
   <script src="../js/buyplansui.js"></script>
 
+
+  <script>
+    $(document).ready(function(){  
+          if(localStorage.getItem('popState') != 'shown'){
+            $("#myModal").delay(3000).fadeIn();
+            localStorage.setItem('popState','shown')
+        }
+       $('#myModal').modal('show');
+      
+        }); 
+    </script>
 
 
 </body>
