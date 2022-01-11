@@ -25,6 +25,22 @@ footer .social ul li a{
     color: #ffffff;
 }
 
+a{
+    text-decoration:none!important;
+    color: #000000;
+}
+a:hover{
+    text-decoration:none!important;
+    color: #407bff!important;
+}
+
+.borderhalf{
+    border: 2px solid #ffffff;
+    width: 150px;
+    margin: auto;
+}
+
+
 .pdlr{
     padding-left: 3%;
     padding-right: 3%;
@@ -33,7 +49,7 @@ footer .social ul li a{
             background-color:#ffffff !important;
         }
       .logo {
-            width: 36%;
+            width: 250px;
             padding-top: 30px;
         }
         .text-blue {
@@ -45,22 +61,15 @@ footer .social ul li a{
      .f-50 {
             font-size: 35px;
         }
-
-
 .specialist{
     padding: 33px 0px 33px 0px!important;
 } 
-
-
-
 @media only screen and (max-width: 500px){
-
-    .logomob{
+ .logomob{
         margin-top: -13%;
         width: 100%;
      }
 }
-
 .box{
     color: #ffffff;
     background-color: #3b5bdb;
@@ -77,8 +86,6 @@ footer .social ul li a{
     /*width: 315px;*/
     height: 320px;
 }
-
-
 .box4:before {
   font-family: Georgia, serif;
   content: "“";
@@ -134,7 +141,7 @@ footer .social ul li a{
     color: #ffffff!important;
     background-color: #0f5fc2!important;
     border-color: #0f5fc2!important;
-    border-radius: 15px;
+  
 }
 .btn-primary:hover {
     color: #ffffff!important;
@@ -297,7 +304,7 @@ footer .social ul li a{
             } */
 
             .logo {
-                width: 40%;
+                width: 47%;
                 padding: 20px 20px 0px 20px;
             }
 
@@ -350,9 +357,7 @@ footer .social ul li a{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-
 }
-
 
 @media only screen and (min-width:801px){
     .h-90{
@@ -374,8 +379,8 @@ footer .social ul li a{
     background-color: transparent;
     border: 1px solid transparent;
     padding: .375rem .75rem;
-    font-size: 1.3rem;
-    border-radius:10px!important;
+    font-size: 1.1rem;
+    border-radius:none!important;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 }
@@ -383,12 +388,20 @@ footer .social ul li a{
 .benefits {
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px #f1f8f4;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-radius: 50%;
     padding: 5px;
     margin: auto;
 }
+.benefits img{
+    width: 90px;
+    height: 90px;
+    text-align:center;
+}
+
+
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -518,6 +531,28 @@ footer .social ul li a{
     padding: 0;
     text-transform: uppercase;
 }
+
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .silverhead span {
+    font-family: "Raleway",sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .silverhead{
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
 #generic_price_table .generic_content .generic_head_price .generic_price_tag{
     padding: 0 0 20px;
 }
@@ -621,8 +656,6 @@ footer .social ul li a{
 .text-left{
     text-align: left!important;
 }
-
-
 @media (max-width: 767px) {
     #generic_price_table .generic_content{
         margin-bottom:75px;
@@ -643,11 +676,9 @@ footer .social ul li a{
     }
 }
 
-
 #generic_price_table_home{
      font-family: 'Raleway', sans-serif;
 }
-
 .text-center h1,
 .text-center h1 a{
     color: #7885CB;
@@ -816,7 +847,6 @@ footer .social ul li a{
     color: #FFF;
     text-decoration:none;
 }
-
 .right-arrow:after {
     content: '';
     display: block;  
@@ -5388,13 +5418,80 @@ h4{color:#444}
     font-weight: 600;
 }
 
+}
 
+.bg1 {
+    background: url('../../images/main-banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.formbox{
+    background-color:#e5f1fd;
+    color: #ffffff;
+     border-bottom-left-radius:30px;
+}
+.formbox1{
+     border-top-right-radius:30px;
+     background-color:#2b51e2;
+     color:#ffffff;
+     text-align: center;
 }
 
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2em + 1rem + 2px);
+    padding: .375rem 1.5rem;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.logo{width:170px;}
 
 
 
+.custom-navbar{background-color: #fff;}
+.nav-link{color: #000000!important;}
+.custom-toggler.navbar-toggler {border-color: rgb(247,32,78);}
+.custom-toggler .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,32,78, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+.custom-toggler .navbar-toggler-icon{width: 18px!important;}
+.custom-toggler:hover{border-color: rgb(255,255,255); background-color: #f76a88;}
+.navbar-toggler-icon:hover{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}#logo_custom{margin-top: -6px;}
+@media only screen and (max-width: 760px) { .logo{width:230px;}}
+                          
+.plan ul li{
+   text-align:left;
+    color:#000000;
+}
 
+.service{
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    min-height:230px;
+    padding:6px;
+}
 
+.fa-1{
+    font-size:9px; 
+    vertical-align: middle;
+}
 
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #ffffff;
+    border-color: #ffc107;
+}

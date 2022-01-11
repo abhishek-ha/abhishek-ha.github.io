@@ -436,14 +436,11 @@ header{
 .pl-123{
     padding-left: 123px;
 }
-
 .ulli{
    /* font-size: 15px;*/
    /* text-indent: 20px;*/
-    color:#0863bd ;
-  
+    color:#0863bd;
 }
-
 .bgblue{
     background-color: #014181;
 }
@@ -452,7 +449,8 @@ header{
       background-position: 0% 80%;
     background-size: 64%;
     background-repeat: no-repeat;
-  height: 700px;
+      height: auto;
+    background-color: #faf5f4;
 }
 .healthcarepartner{
     background-image: url('images/healthcarepartner.png');
