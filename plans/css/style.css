@@ -135,7 +135,7 @@ a{
     color: #ffffff!important;
     background-color: #0f5fc2!important;
     border-color: #0f5fc2!important;
-    border-radius: 15px;
+  
 }
 .btn-primary:hover {
     color: #ffffff!important;
@@ -374,7 +374,7 @@ a{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1.1rem;
-    border-radius:10px!important;
+    border-radius:none!important;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 }
