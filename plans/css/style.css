@@ -5478,3 +5478,14 @@ h4{color:#444}
     font-size:9px; 
     vertical-align: middle;
 }
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #ffffff;
+    border-color: #ffc107;
+}
