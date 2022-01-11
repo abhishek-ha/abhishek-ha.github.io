@@ -27,7 +27,13 @@ footer .social ul li a{
 
 a{
     text-decoration:none!important;
+    color: #000000;
 }
+a:hover{
+    text-decoration:none!important;
+    color: #407bff!important;
+}
+
 .borderhalf{
     border: 2px solid #ffffff;
     width: 150px;
