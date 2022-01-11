@@ -38,20 +38,27 @@
           },
           "modal": {
             "ondismiss": function(){
-                 console.time('generate');
+                /* console.time('generate');
                  var result = {dd:"ddd", sub:{xx:"dd"}, num:666};
                  var uarr = stringToUintArray(JSON.stringify(result));
                  //self.postMessage(uarr.buffer, [uarr.buffer]);
 
-               window.parent.postMessage("MODAL_CLOSED", "*", [uarr.buffer]);   //3
+               window.parent.postMessage("MODAL_CLOSED", "*", [uarr.buffer]);  */
+
+                 window.parent.postMessage("MODAL_CLOSED","*");
             }
           }
        };
-       var rzp1 = new Razorpay(options);
-       window.onload = function(e){  //1  
+        const rzp1 = new Razorpay(options);
+          rzp1.on('payment.failed', function (response) {
+               window.parent.postMessage("MODAL_CLOSED","*");
+             });
+          rzp1.open();
+
+       /*window.onload = function(e){  //1
           rzp1.open();
           e.preventDefault();
-       }
+       }*/
 
    function stringToUintArray(message) {
         var encoded = self.btoa(message);
