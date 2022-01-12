@@ -234,6 +234,9 @@ a:hover{
             text-align: center;
             color: #5336ca;
            /* margin: 15px;*/
+           background-color: #ffffff;
+           min-height: 280px;
+           padding: 10px;
         }
       .item3 img {
             width: 100px;
