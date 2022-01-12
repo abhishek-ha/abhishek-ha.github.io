@@ -5382,6 +5382,57 @@ h4{color:#444}
     text-decoration: none;
 }
 
+.btn2 {
+    background: #0f5fc2;
+    color: #ffffff!important;
+  /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
+    border-radius: 50px;
+    width:150px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left: 15px;
+}
+
+.btn2:hover{
+    background: #000000!important;
+    color: #fff!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+}
+
+
+.btn3 {
+    background:#0a8943;
+    color: #ffffff!important;
+  /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
+    border-radius: 50px;
+    width:180px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left: 15px;
+}
+
+.btn3:hover{
+    background: #000000!important;
+    color: #fff!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+}
+
+
+
+
+
 @media only screen and (min-width: 500px){
     .mobfit{
      display: none;  
@@ -5523,3 +5574,4 @@ h4{color:#444}
     color:#ffffff!important;
     background-color:#0f5fc2;
 }
+
