@@ -236,7 +236,7 @@ a:hover{
            /* margin: 15px;*/
            background-color: #ffffff;
            min-height: 250px;
-           padding: 10px;
+           padding: 20px;
         }
       .item3 img {
             width: 100px;
@@ -5530,7 +5530,7 @@ h4{color:#444}
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-radius: 10px;
-    min-height:190px;
+    min-height:196px;
     padding:6px;
 }
 .service: hover{
@@ -5558,7 +5558,7 @@ h4{color:#444}
     border-radius:none;
    padding:6px;
    color: #000000; 
-     height:90px;
+     height:95px;
 }
 .service1 img{
     width: 50px;
@@ -5574,6 +5574,19 @@ h4{color:#444}
       border-top-right-radius: 20px;
        border-top-left-radius:20px;
 }
+
+.icon1:hover{
+    display: none;
+
+}
+.icon2{
+     display:none;  
+}
+
+.icon2:hover{
+     display: inline-block;
+}
+
 
 
 
