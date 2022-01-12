@@ -5393,9 +5393,6 @@ h4{color:#444}
     font-size: 11px;
     font-weight: 600;
 }
-
-
-
 }
 
 
@@ -5457,7 +5454,7 @@ h4{color:#444}
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.logo{width:170px;}
+.logo{width:180px;}
 
 
 
@@ -5471,9 +5468,11 @@ h4{color:#444}
 @media only screen and (max-width: 760px) { .logo{width:230px;}}
                           
 .plan ul li{
-   text-align:left;
+ 
     color:#000000;
     letter-spacing:0.5px;
+    list-style-type:disc;
+    margin-left: 18px;
 }
 
 .service{
@@ -5505,4 +5504,22 @@ h4{color:#444}
 .btn-warning:hover {
     color: #ffffff;
     border-color: #ffc107;
+}
+
+
+.head2{
+    font-size: 30px;
+    font-weight:600;
+    line-height:37px;
+    text-shadow:2px 2px #cccccc;
+}
+.navbar-light .navbar-nav .nav-link {
+    transition: 0.3s;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color:#ffffff!important;
+    background-color:#0f5fc2;
 }
