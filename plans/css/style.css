@@ -233,7 +233,7 @@ a:hover{
     .item3 {
             text-align: center;
             color: #5336ca;
-           /* margin: 15px;*/
+            margin: 15px;
            background-color: #ffffff;
            min-height: 250px;
            padding: 20px;
@@ -5587,6 +5587,22 @@ h4{color:#444}
      display: inline-block;
 }
 
+@media only screen and (min-width: 1300px){
+.bringing-section {
+    background: url(../../images/section-background.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 47%;
+}
+}
+
+@media only screen and (min-width: 1300px){
+.we-take-care {
+    background-image: url(../../images/get-know-Section-Background.png);
+    /* background-position: 0% 80%; */
+    background-repeat: no-repeat;
+    background-size: 41%;
+}
 
 
 
