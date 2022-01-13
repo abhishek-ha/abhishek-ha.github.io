@@ -5442,8 +5442,6 @@ h4{color:#444}
 
 
 
-
-
 @media only screen and (min-width: 500px){
     .mobfit{
      display: none;  
@@ -5645,7 +5643,7 @@ h4{color:#444}
      width: 90%;
      margin: 0px auto;
     /* margin-top: 100px*/
-    margin-top:10px;
+    margin-top:50px;
  }
 
 .mySlides {display: none;}
