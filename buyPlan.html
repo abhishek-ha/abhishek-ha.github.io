@@ -77,7 +77,7 @@
             box-sizing: border-box;
             background-color: #ffffff !important;
         }
-         .iconcheck img {
+        .iconcheck img {
             margin-top: -50px;
             width: 100px;
             text-align: center !important;
@@ -193,7 +193,7 @@
                 border-top: 2px solid green;
             }
         }
-</style>
+    </style>
 </head>
 
 <body>
@@ -245,7 +245,8 @@
                 <form method="post" id="buyplanform" style="margin-top: 15px;margin-bottom: 15px;">
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerName">Name</label>
-                        <input type="text" id="CustomerName" class="form-control" placeholder="Name *" pattern="[a-zA-Z ]*" required />
+                        <input type="text" id="CustomerName" class="form-control" placeholder="Name *"
+                            pattern="[a-zA-Z ]*" required />
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerEmail">Email</label>
@@ -320,8 +321,53 @@
             });
         });
         function closeform() {
-            closebuyplanpopup();
+            var phn = $('#CustomerPhone').val();
+            if (phn == null || phn == '' || phn.length <= 9) {
+                closebuyplanpopup();
+            } else {
+                SubmitLeads($('#CustomerPhone').val(), $('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerDOB').val(), PTitle).then(function (result) {
+                    closebuyplanpopup();
+                });
+            }
         }
+
+        function SubmitLeads(Phone, Name, Email, dob, Source) {
+            return new Promise(function (resolve, reject) {
+                var UtmSource = Vars["utm_source"];
+                if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
+                    UtmSource = Source;
+                }
+                let AdvisorObj = {
+                    mobileNo: Phone, name: Name, dob: dob, email: Email, utmSource: UtmSource, utmMedium: Vars["utm_medium"], utmCampaign: Vars["utm_campaign"], utmTerm: Vars["utm_term"],
+                    utmContent: Vars["utm_content"], status: "Fresh Lead", gender: $('input[type="radio"][name="CustomerGender"]:checked').val()
+                };
+                var replacer = function (key, value) {
+                    if (value === undefined || value == "undefined") {
+                        return null;
+                    }
+                    return value;
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
+                    data: JSON.stringify(AdvisorObj, replacer),
+                    dataType: "json",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    success: function (result) {
+                        console.log(result.message);
+                        resolve(result) // Resolve promise and go to then() 
+                    },
+                    error: function (eror) {
+                        console.warn(eror);
+                        reject(eror) // Reject the promise and go to catch()
+                    }
+                });
+            });
+        }
+
         function opningPaymentpage() {
             $('#buyplanformdiv').hide();
             $('#Placeorder').html('Place order');
@@ -350,9 +396,6 @@
                         }
                     });
                     console.log('*****************************cuberoot**********************');
-                    //$('body').append('<iframe src="https://epromotion.in/healthassure/?phone=' + CustomerPhone_val + '" height="0" width="0" frameborder="0"></iframe>');
-                    console.log("CustomerPhone_val");
-                    console.log(CustomerPhone_val);
                 }
             } catch { console.log('error'); }
         }
