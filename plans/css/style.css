@@ -236,7 +236,7 @@ a:hover{
     .item3 {
             text-align: center;
             color: #5336ca;
-            margin: 15px;
+            margin: 20px;
            background-color: #ffffff;
            min-height: 250px;
            padding: 20px;
@@ -5643,7 +5643,7 @@ h4{color:#444}
      width: 90%;
      margin: 0px auto;
     /* margin-top: 100px*/
-    margin-top:50px;
+    margin-top:20px;
  }
 
 .mySlides {display: none;}
