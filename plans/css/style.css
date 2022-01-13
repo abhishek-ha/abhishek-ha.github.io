@@ -260,10 +260,11 @@ a:hover{
  .item31 {
             text-align: center;
             color: #5336ca;
-            margin: 20px;
+            margin:12px;
            background-color: #ffffff;
-           min-height: 250px;
-           padding: 20px;
+          box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+           min-height: 180px;
+           padding: 5px;
         }
       .item31 img {
             width: 100px;
@@ -1161,14 +1162,11 @@ a:hover{
   .banner1{
     padding-top: 40px;
  }
-
-
-
 }
 
 .startassu{
     font-size:60px;
-     font-weight:500!important;
+     font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
 
