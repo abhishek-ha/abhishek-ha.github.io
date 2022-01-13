@@ -260,10 +260,10 @@ a:hover{
  .item31 {
             text-align: center;
             color: #5336ca;
-            margin:8px;
+            margin:4px;
            background-color: #ffffff;
           box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-           min-height: 180px;
+           min-height: 185px;
            padding: 5px;
         }
       .item31 img {
@@ -432,8 +432,6 @@ a:hover{
     height: 90px;
     text-align:center;
 }
-
-
 
 .button {
     background-color: #4CAF50;
@@ -1075,6 +1073,19 @@ a:hover{
     padding-top:206px;
 }*/
 
+@media only screen and (max-width:900px){
+    .mlb{
+    margin-left: 0px;
+}
+}
+
+@media only screen and (min-width:901px){
+    .mlb{
+    margin-left:1.8rem;
+}
+}
+
+
 
 
 @media only screen and (max-width: 350px){
@@ -1100,7 +1111,6 @@ a:hover{
             font-weight: 700;
             line-height: 37px;
 }
-
 .faqhead h4{
     font-size:26px;
     line-height:33px;
@@ -1134,13 +1144,12 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
-  .head {
+.head {
             font-family: 'Poppins', sans-serif;
             font-size: 28px;
         }
 
-  .pl-109{
+.pl-109{
     padding-left: 109px;
 }
 .pl-148{
@@ -1154,15 +1163,29 @@ a:hover{
     padding-left:75px!important;
 }
  .banner{
-    padding-top: 20px;
+    padding-top: 120px;
  }
 .banner1{
-    padding-top: 20px;
+    padding-top:0px;
  }
 .startassu{
     font-size:30px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
+}
+
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.mlb{
+    margin-left: 0px;
+}
+
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
 }
 
 }
@@ -1227,44 +1250,46 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
-  .head {
+.head {
         font-family: 'Poppins', sans-serif;
         font-size: 28px;
         }
-
-           .pl-109{
+.pl-109{
     padding-left: 109px;
 }
 .pl-148{
     padding-left: 141px;
 }
-
 .pl-123{
     padding-left: 123px;
 }
-
 .pl-88 {
     padding-left:75px!important;
 }
-
 .banner{
     padding-top: 40px;
+    margin-top: 130px;
  }
-
-  .banner1{
-    padding-top: 40px;
+.banner1{
+    padding-top:0px;
  }
-
 .startassu{
-    font-size:60px;
+    font-size:35px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
 
-
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
 }
 
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
+}
+}
 
 
 @media only screen and (min-width: 400px){
@@ -1325,6 +1350,7 @@ a:hover{
 
 .banner{
     padding-top: 40px;
+    margin-top: 110px;
  }
 
   .banner1{
@@ -1332,12 +1358,21 @@ a:hover{
  }
 
 .startassu{
-    font-size:60px;
+    font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
 
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
 
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
+}
 
 }
 
@@ -1413,6 +1448,17 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
+}
+
+
 }
 
 
@@ -1505,7 +1551,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
+}
 
 }
 
@@ -1613,7 +1667,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
+}
 
 }
 
@@ -1724,8 +1786,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 }
 
@@ -1785,7 +1854,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
+}
 }
 
 
@@ -1885,7 +1962,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
+}
 
 }
 
@@ -1971,7 +2056,8 @@ a:hover{
  }
 
   .banner1{
-    padding-top: 40px;
+    padding-top:40px;
+    margin-top:90px;
  }
 
 .startassu{
@@ -1979,6 +2065,16 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:19px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
+}
+
 
 
 }
@@ -2080,6 +2176,16 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+
+}
 
 }
 
@@ -2163,8 +2269,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 }
 
@@ -2249,8 +2362,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 
 }
@@ -2318,8 +2438,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 }
 
@@ -2384,8 +2511,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:24px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 }
 
@@ -2450,8 +2584,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 
 }
@@ -2518,8 +2659,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:24px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
 
-
+}
 
 }
 
@@ -2584,7 +2732,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+   font-size:24px;
+}
+.offer1 img{
+    margin-top:-13%;
+    width:60%;
 
+}
 
 }
 
@@ -2599,9 +2755,6 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
-
-
  .fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
@@ -2652,7 +2805,14 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
-
+.thead1{
+    letter-spacing: 1px;
+    font-size:24px;
+}
+.offer1 img{
+    margin-top:-13%;
+    width:60%;
+}
 
 
 }
@@ -2717,8 +2877,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:24px;
+}
+.offer1 img{
+    margin-top:-13%;
+    width:60%;
 
-
+}
 }
 
 
@@ -2782,8 +2949,15 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-13%;
+    width:60%;
 
-
+}
 
 
 }
@@ -2881,6 +3055,16 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-13%;
+    width:60%;
+
+}
+
 }
 
 
@@ -5718,7 +5902,7 @@ h4{color:#444}
     color: #ffffff!important;
   /*box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
     border-radius: 50px;
-    width:212px;
+    width:194px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
@@ -5742,7 +5926,7 @@ h4{color:#444}
     color: #ffffff!important;
   /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
     border-radius: 50px;
-    width:212px;
+    width:194px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
@@ -5845,7 +6029,7 @@ h4{color:#444}
 .custom-toggler .navbar-toggler-icon{width: 18px!important;}
 .custom-toggler:hover{border-color: rgb(255,255,255); background-color: #f76a88;}
 .navbar-toggler-icon:hover{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}#logo_custom{margin-top: -6px;}
-@media only screen and (max-width: 760px) { .logo{width:230px;}}
+@media only screen and (max-width: 760px) { .logo{width:220px;}}
                           
 .plan ul li{
  
@@ -5945,6 +6129,7 @@ h4{color:#444}
     transition: 0.3s;
     padding-left: 24px;
     padding-right: 24px;
+    font-size: 18px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
