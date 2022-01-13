@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif!important;
-        /*font-family: 'Rubik', sans-serif !important;*/
+        font-family: 'Rubik', sans-serif !important;
             overflow-x: hidden!important;
             font-size: 15px;
         }
@@ -236,10 +236,9 @@ a:hover{
     .item3 {
             text-align: center;
             color: #5336ca;
-            margin: 20px;
+            margin: 5px;
            background-color: #ffffff;
-           min-height: 250px;
-           padding: 20px;
+         
         }
       .item3 img {
             width: 100px;
@@ -257,6 +256,33 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
+
+ .item31 {
+            text-align: center;
+            color: #5336ca;
+            margin: 20px;
+           background-color: #ffffff;
+           min-height: 250px;
+           padding: 20px;
+        }
+      .item31 img {
+            width: 100px;
+            background-color: rgba(74, 78, 238, 0.01);
+            padding: 25px 25px 5px 25px;
+            border-radius: 10px;
+            margin-bottom: 0;
+        }
+       .item31 p {
+            font-weight: 500;
+            color: #212121;
+            font-size: 14px;
+        }
+      .item31 p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
        .btn-o {
             background-color: #f43f54;
             color: #fafafa;
@@ -5567,7 +5593,7 @@ h4{color:#444}
     border-radius:none;
    padding:6px;
    color: #000000; 
-     height:105px;
+     height:109px;
 }
 .service1 img{
     width: 50px;
