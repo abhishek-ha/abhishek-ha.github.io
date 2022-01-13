@@ -11,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif!important;
         /*font-family: 'Rubik', sans-serif !important;*/
             overflow-x: hidden!important;
+            font-size: 15px;
         }
 
 html{
@@ -58,6 +59,7 @@ a:hover{
         }
        .f-poppins {
             font-family: 'Poppins', sans-serif;
+            font-weight: 600;
         }
      .f-50 {
             font-size: 35px;
@@ -5539,7 +5541,7 @@ h4{color:#444}
     background-color: #fff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-radius: 10px;
-    min-height:196px;
+    min-height:200px;
     padding:6px;
 }
 .service: hover{
@@ -5553,7 +5555,7 @@ h4{color:#444}
 
 .service1{
   border-radius:none;
-    height:112px;
+    height:105px;
     padding:6px;
     color: #ffffff;
     font-weight:600;
@@ -5601,7 +5603,7 @@ h4{color:#444}
     background: url(../../images/section-background.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 47%;
+    background-size: 40%;
 }
 }
 
