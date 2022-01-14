@@ -284,6 +284,11 @@ a:hover{
         }
 
 
+ 
+
+
+
+
        .btn-o {
             background-color: #f43f54;
             color: #fafafa;
@@ -1073,17 +1078,7 @@ a:hover{
     padding-top:206px;
 }*/
 
-@media only screen and (max-width:900px){
-    .mlb{
-    margin-left: 0px;
-}
-}
 
-@media only screen and (min-width:901px){
-    .mlb{
-    margin-left:1.8rem;
-}
-}
 
 
 
@@ -1188,7 +1183,27 @@ a:hover{
     width:30%;
 
 }
-
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 100px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+       .benitem p {
+            font-weight: 500;
+            color: #ffffff;
+            font-size: 14px;
+            text-align: center;
+        }
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
 }
 
 
@@ -1291,6 +1306,40 @@ a:hover{
     width:30%;
 
 }
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 80px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+       .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align: center;
+        }
+
+  .benitem p b {
+            font-weight: 500;
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+        }
+
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
+
+
+
 }
 
 
@@ -1376,6 +1425,38 @@ a:hover{
     width:30%;
 
 }
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 90px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+        .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+           text-align:center;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 15px;
+       }
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
+
 
 }
 
@@ -1461,6 +1542,33 @@ a:hover{
     width:30%;
 
 }
+
+
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 90px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+        .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+           text-align:center;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 15px;
+       }
 
 
 }
@@ -1565,6 +1673,33 @@ a:hover{
     width:30%;
 
 }
+
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 90px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+        .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align:center;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 15px;
+       }
+
 
 }
 
@@ -1871,6 +2006,39 @@ a:hover{
     width:30%;
 
 }
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 90px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+        .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align:left;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 15px;
+       }
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
+
+
 }
 
 
@@ -1980,6 +2148,39 @@ a:hover{
     width:30%;
 
 }
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 80px;
+           padding: 2px 2px;
+           
+        }
+       .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align:left;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 15px;
+       }
+
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
+
 
 }
 
@@ -3078,7 +3279,7 @@ a:hover{
     font-size:18px;
 }
 .offer1 img{
-    margin-top:-37%;
+    margin-top:-43%;
     width:60%;
 
 }
@@ -6171,8 +6372,9 @@ h4{color:#444}
     border-top-right-radius: calc(0.3rem - 1px);
 }
 
-.ben img{
-    width:150px!important;
+.ben {
+      width:150px!important;
+     margin:auto;
 }
 
 
