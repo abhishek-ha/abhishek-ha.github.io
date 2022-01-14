@@ -2070,8 +2070,8 @@ a:hover{
     font-size:19px;
 }
 .offer1 img{
-    margin-top:-22%;
-    width:30%;
+    margin-top:-163%;
+    width:75%;
 
 }
 
@@ -2516,8 +2516,8 @@ a:hover{
     font-size:24px;
 }
 .offer1 img{
-    margin-top:-22%;
-    width:30%;
+    margin-top:-86%;
+    width:60%;
 
 }
 
@@ -5902,7 +5902,7 @@ h4{color:#444}
     color: #ffffff!important;
   /*box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
     border-radius: 50px;
-    width:200px;
+    width:194px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
@@ -6156,4 +6156,8 @@ h4{color:#444}
     border-bottom:none;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.ben img{
+    width: 150px;
 }
