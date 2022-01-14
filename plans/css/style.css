@@ -5902,11 +5902,12 @@ h4{color:#444}
     color: #ffffff!important;
   /*box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
     border-radius: 50px;
-    width:194px;
+    width:200px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
    margin-left:0px;
+   border:1px solid #0f5fc2;
 }
 
 .btn2:hover{
@@ -6137,4 +6138,15 @@ h4{color:#444}
     background-color:#0f5fc2!important;
     border-radius:10px;
 }
- 
+ .modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom:none;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
