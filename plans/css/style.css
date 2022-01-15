@@ -454,20 +454,7 @@ a:hover{
     color: #ffffff;
     text-decoration: none;
 }
-.buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-}
+
 
 
 
@@ -5661,9 +5648,6 @@ li {
 }
 
 
-
-
-
 @media only screen and (min-width: 427px) {
 
  .footerblue{
@@ -5892,8 +5876,6 @@ li {
     fill: #292728;
 }
 
-
-
 /*footer*/
 
 .footer_row_one{
@@ -6026,9 +6008,7 @@ li {
 .specialists_links{
     font-size: 16px;
 }
-
 }
-
 
 @media only screen and (max-width: 766px) {
     .mob{
@@ -6039,7 +6019,6 @@ li {
     .desk{
        display: none!important;
 }
-
 }
 
 @media only screen and (max-width: 1100px){
@@ -6111,8 +6090,6 @@ h4{color:#444}
 @media only screen and (max-width:479px){.pricingTable2{margin:0}
 .pricingTable2 .pricing-content li{font-size:15px}
 }
-
-
 
 
 .btn1 {
@@ -6255,8 +6232,26 @@ h4{color:#444}
     min-height:200px;
     padding:6px;
     margin:auto;
-  border: 1px solid rgb(210, 166, 67);
+  border:1px solid rgb(201 213 219);
 }
+
+.service .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+}
+
+
 .service: hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
@@ -6288,6 +6283,7 @@ h4{color:#444}
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
+    cursor: pointer;
 }
 
 
@@ -6312,7 +6308,7 @@ h4{color:#444}
 }
 
 .service3 .buybtn{
-   background-color:#000000;
+   background-color:#d2a643;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -6326,15 +6322,6 @@ h4{color:#444}
     margin-right:9px;
 }
 
-
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
-}
-
 .service4{
     background-color:#c8e6e8;
     border-radius:0px;
@@ -6343,13 +6330,25 @@ h4{color:#444}
     margin:auto;
   border: 1px solid rgb(210, 166, 67);
 }
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
+
+
+.service4 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
 }
+
+
 
 .service5{
     background-color:#e6f3fa;
