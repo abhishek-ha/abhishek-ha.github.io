@@ -454,6 +454,24 @@ a:hover{
     color: #ffffff;
     text-decoration: none;
 }
+.buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+}
+
+
+
+
 #generic_price_table{
     background-color: #ffffff;
 }
@@ -2024,6 +2042,7 @@ a:hover{
             color: #5336ca;
             margin:4px;
           padding: 5px;
+          margin: ;
         }
       .benitem  img {
             width: 90px;
@@ -2955,7 +2974,7 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
      padding-bottom:50px;
-     padding-top:26px;
+     padding-top:8px;
 }
 .thead1{
     letter-spacing: 1px;
@@ -2964,9 +2983,7 @@ a:hover{
 .offer1 img{
     margin-top:-13%;
     width:60%;
-
 }
-
 }
 
 
@@ -3027,10 +3044,10 @@ a:hover{
  }
 
 .startassu{
-    font-size:60px;
+    font-size:55px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
-    padding-top:26px;
+    padding-top:15px;
 }
 .thead1{
     letter-spacing: 1px;
@@ -6120,7 +6137,6 @@ h4{color:#444}
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     text-decoration: none;
 }
-
 .btn2 {
     background: #0f5fc2;
     color: #ffffff!important;
@@ -6133,7 +6149,6 @@ h4{color:#444}
    margin-left:0px;
    border:1px solid #0f5fc2;
 }
-
 .btn2:hover{
     background: #000000!important;
     color: #fff!important;
@@ -6145,28 +6160,10 @@ h4{color:#444}
     text-decoration: none;
 }
 
-
-.btn3 {
-    background:#0a8943;
-    color: #ffffff!important;
-  /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
-    border-radius: 50px;
-    width:194px;
-   font-weight: 700;
-   text-align: center;
-   padding: 10px;  
-   margin-left:0px;
-}
-
-.btn3:hover{
-    background: #000000!important;
-    color: #fff!important;
-    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
-    border-radius: 50px;
-    padding: 10px;
-    font-weight: 700;
-    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    text-decoration: none;
+.dashedborder{
+    border-bottom:2px dashed #000000;
+    width: 90px;
+    margin: auto;
 }
 
 
@@ -6183,11 +6180,8 @@ h4{color:#444}
     font-weight: 600;
 }
 }
-
-
 @media only screen and (max-width: 500px){
-   
-   .aboutbt a{
+ .aboutbt a{
          text-decoration:none;
          color:#000000;
          font-size: 14px;
@@ -6208,12 +6202,10 @@ h4{color:#444}
 }
 
 }
-
 .bg1 {
     background: url('../../images/main-banner.jpg') no-repeat center center;
     background-size: cover;
 }
-
 .formbox{
     background-color:#e5f1fd;
     color: #ffffff;
@@ -6225,8 +6217,6 @@ h4{color:#444}
      color:#ffffff;
      text-align: center;
 }
-
-
 .form-control {
     display: block;
     width: 100%;
@@ -6244,9 +6234,6 @@ h4{color:#444}
 }
 
 .logo{width:180px;}
-
-
-
 .custom-navbar{background-color: #fff;}
 .nav-link{color: #000000!important;}
 .custom-toggler.navbar-toggler {border:2px solid #000000;}
@@ -6262,23 +6249,13 @@ h4{color:#444}
 }*/
 
 
-                          
-.plan ul li{
- 
-    color:#000000;
-    letter-spacing:0.5px;
-    list-style-type:disc;
-    margin-left: 18px;
-}
-
 .service{
-    background-color: #fff;
-    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 10px;
+    background-color:#e6f3fa;
+    border-radius:0px;
     min-height:200px;
     padding:6px;
     margin:auto;
-    max-width:300px;
+  border: 1px solid rgb(210, 166, 67);
 }
 .service: hover{
     background-color:#fafafa;
@@ -6286,6 +6263,156 @@ h4{color:#444}
     border-radius: 8px;
     min-height:190px;
     padding:6px;
+}
+
+
+.service2{
+    background-color:#f7f3e0;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+
+.service2 .buybtn{
+   background-color:#000000;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+}
+
+
+
+
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+
+.service3{
+    background-color:#f2f0e9;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+
+.service3 .buybtn{
+   background-color:#000000;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+}
+
+
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+.service4{
+    background-color:#c8e6e8;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+.service5{
+    background-color:#e6f3fa;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+.service6{
+    background-color:#e6f3fa;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+.service7{
+    background-color:#e6f3fa;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border: 1px solid rgb(210, 166, 67);
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+
+.plan ul{
+    border-top:2px dashed #c7cbd0;
+    width: 90%;
+    margin:auto;
+}
+
+
+.plan ul li{
+     color:#000000;
+    letter-spacing:0.5px;
+    list-style-type:disc;
+    margin-left:18px;
+    margin-right:9px;
 }
 
 
@@ -6298,7 +6425,6 @@ h4{color:#444}
     font-size: 18px;
     letter-spacing: 1px;  
 }
-
 .service1:hover{
     background-color:#eaeaea;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
@@ -6311,7 +6437,6 @@ h4{color:#444}
     width: 50px;
     margin: auto;
 }
-
 .fa-1{
     font-size:9px; 
     vertical-align: middle;
@@ -6321,15 +6446,12 @@ h4{color:#444}
       border-top-right-radius: 20px;
        border-top-left-radius:20px;
 }
-
 .icon1:hover{
     display: none;
-
 }
 .icon2{
      display:none;  
 }
-
 .icon2:hover{
      display: inline-block;
 }
@@ -6350,9 +6472,6 @@ h4{color:#444}
     background-repeat: no-repeat;
     background-size: 41%;
 }
-
-
-
 .head2{
     font-size: 30px;
     font-weight:600;
@@ -6384,9 +6503,7 @@ h4{color:#444}
     border-top-right-radius: calc(0.3rem - 1px);
 }
 
-.ben {
-      width:150px!important;
-     margin:auto;
-}
+
+
 
 
