@@ -6233,6 +6233,7 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(201 213 219);
+  min-height: 291px;
 }
 
 .service .buybtn{
@@ -6268,6 +6269,7 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(215 209 181);
+   min-height: 291px;
 }
 
 .service2 .buybtn{
@@ -6305,35 +6307,10 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border: 1px solid rgb(210, 166, 67);
+  min-height: 291px;
 }
 
 .service3 .buybtn{
-   background-color:#d2a643;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-}
-
-.service4{
-    background-color:#c8e6e8;
-    border-radius:0px;
-    min-height:200px;
-    padding:6px;
-    margin:auto;
-  border:1px solid rgb(184 192 193);
-}
-
-
-.service4 .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
     right:0px; 
@@ -6346,7 +6323,36 @@ h4{color:#444}
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
+    cursor:pointer;
+     margin-top:57px;
+}
+
+.service4{
+    background-color:#c8e6e8;
+    border-radius:0px;
+    min-height:200px;
+    padding:6px;
+    margin:auto;
+  border:1px solid rgb(184 192 193);
+  min-height: 291px;
+}
+
+
+.service4 .buybtn{
+   background-color:#000000;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
     cursor: pointer;
+
 }
 
 
@@ -6411,7 +6417,7 @@ h4{color:#444}
      color:#000000;
     letter-spacing:0.5px;
     list-style-type:disc;
-    margin-left:18px;
+    margin-left:25px;
     margin-right:9px;
 }
 
