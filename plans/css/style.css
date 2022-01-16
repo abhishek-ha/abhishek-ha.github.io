@@ -286,6 +286,50 @@ a:hover{
         }
 
 
+
+ .plancard {
+           
+            color: #000000;
+            background-color: #ffffff;
+            box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+            min-height: 190px;
+            padding: 5px;
+            margin:auto;
+           margin-top:10px;
+           text-align:left;
+           border-radius:6px;
+        }
+ .plancard h4{
+           text-align:left;
+        }
+
+
+
+
+      .plancard  img {
+            width: 120px;
+            background-color: rgba(74, 78, 238, 0.01);
+            padding: 25px 25px 5px 25px;
+            border-radius: 10px;
+            margin-bottom: 0;
+        }
+       .plancard  p {
+            font-weight: 500;
+            color: #212121;
+            font-size: 14px;
+        }
+      .plancard  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+        .plancard ul li{
+            text-align:left;
+            line-height: 20px;
+            margin-bottom:10px;
+       }
+
+
+
  
 
 
@@ -6233,7 +6277,7 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(201 213 219);
-  min-height: 291px;
+  min-height: 288px;
 }
 
 .service .buybtn{
@@ -6269,7 +6313,7 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(215 209 181);
-   min-height: 291px;
+  min-height: 288px;
 }
 
 .service2 .buybtn{
@@ -6324,7 +6368,7 @@ h4{color:#444}
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-     margin-top:57px;
+     margin-top:29px;
 }
 
 .service4{
@@ -6334,7 +6378,7 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(184 192 193);
-  min-height: 291px;
+  min-height: 288px;
 }
 
 
