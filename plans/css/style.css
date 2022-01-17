@@ -374,9 +374,10 @@ a:hover{
         .tnc {
             text-decoration: none;
             color: #212121;
-            font-size: 12px;
+            font-size:12px;
             display: block;
-            margin-top: 10px;
+            margin-top:10px;
+            font-weight:500;
         }
       .w48 {
             width: 48%;
@@ -3258,7 +3259,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:83px;
+    margin-top:61px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -4634,7 +4635,7 @@ a:hover{
 }
 .service .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+    color:#ffffff!important; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4669,7 +4670,7 @@ a:hover{
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+   color:#ffffff!important; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4695,7 +4696,7 @@ a:hover{
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+     color:#ffffff!important; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4707,7 +4708,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:83px;
+    margin-top:61px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -4721,7 +4722,7 @@ a:hover{
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+     color:#ffffff!important; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4733,7 +4734,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:62px;
+    margin-top:39px;
 }
 
 
