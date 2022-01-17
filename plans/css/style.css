@@ -6277,6 +6277,8 @@ h4{color:#444}
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:342px;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -6307,8 +6309,10 @@ h4{color:#444}
     min-height:200px;
     padding:6px;
     margin:auto;
-  border:1px solid rgb(201 213 219);
+   border:1px solid rgb(201 213 219);
    min-height:342px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -6334,6 +6338,8 @@ h4{color:#444}
     margin:auto;
  border:1px solid rgb(201 213 219);
    min-height:351px;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+     border-radius:10px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -6357,8 +6363,10 @@ h4{color:#444}
     min-height:200px;
     padding:6px;
     margin:auto;
-  border:1px solid rgb(201 213 219);
- min-height:349px;
+   border:1px solid rgb(201 213 219);
+   min-height:349px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
