@@ -6269,7 +6269,6 @@ h4{color:#444}
     background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
 }*/
 
-
 .service{
     background-color:#e6f3fa;
     border-radius:0px;
@@ -6277,9 +6276,8 @@ h4{color:#444}
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:305px;
+   min-height:342px;
 }
-
 .service .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -6294,9 +6292,8 @@ h4{color:#444}
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
+    margin-top: 33px;
 }
-
-
 .service: hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
@@ -6304,18 +6301,15 @@ h4{color:#444}
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
-    background-color:#f7f3e0;
+    background-color:#e6f3fa;
     border-radius:0px;
     min-height:200px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(215 209 181);
-   min-height:305px;
+   min-height:342px;
 }
-
 .service2 .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -6330,8 +6324,8 @@ h4{color:#444}
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
+    margin-top: 33px;
 }
-
 .service3{
     background-color:#f2f0e9;
     border-radius:0px;
@@ -6339,9 +6333,8 @@ h4{color:#444}
     padding:6px;
     margin:auto;
    border: 1px solid rgb(210, 166, 67);
-   min-height:315px;
+   min-height:351px;
 }
-
 .service3 .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -6356,9 +6349,8 @@ h4{color:#444}
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-     margin-top:29px;
+    margin-top: 60px;
 }
-
 .service4{
     background-color:#c8e6e8;
     border-radius:0px;
@@ -6366,10 +6358,8 @@ h4{color:#444}
     padding:6px;
     margin:auto;
   border:1px solid rgb(184 192 193);
-  min-height:315px;
+ min-height:349px;
 }
-
-
 .service4 .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -6384,7 +6374,7 @@ h4{color:#444}
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:9px;
+    margin-top:39px;
 }
 .service5{
     background-color:#e6f3fa;
@@ -6449,6 +6439,7 @@ h4{color:#444}
     margin-left:25px;
     margin-right:9px;
     padding-bottom:6px;
+    font-size:15px;
 }
 
 
