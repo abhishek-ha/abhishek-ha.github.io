@@ -1284,7 +1284,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 502px;
+   min-height:484px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1342,14 +1342,14 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:14px;
+    margin-top:3px;
 }
 .service2 .buybtn:hover{
    background-color:#000000;
 }
 .service3{
     background-color:#e6f3fa;
-   height: 523px;
+   height:499px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1382,7 +1382,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:472px;
+   height:485px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1552,10 +1552,11 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:473px;
+   min-height:471px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
+  max-width:310px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -1591,10 +1592,11 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:435px;
+    min-height:471px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    max-width:310px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -1618,13 +1620,14 @@ min-height:472px;
 
 .service3{
     background-color:#e6f3fa;
-    height:502px;
+    min-height:500px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    max-width:310px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -1647,13 +1650,14 @@ min-height:472px;
 }
 .service4{
     background-color:#e6f3fa;
-    min-height:438px;
+    min-height:471px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
+   max-width:310px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -1676,7 +1680,7 @@ min-height:472px;
 }
 
   .val{
-    padding-top:0px;
+    padding-top:10px;
 }
 }
 
@@ -3214,6 +3218,7 @@ min-height:472px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
+      max-width: 344px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -3229,7 +3234,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top: 22px;
 }
 .service: hover{
     background-color:#fafafa;
@@ -3247,6 +3252,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
+         max-width: 344px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -3262,7 +3268,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:2px;
 }
 .service3{
     background-color:#e6f3fa;
@@ -3273,6 +3279,7 @@ min-height:472px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+        max-width: 344px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -3288,7 +3295,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:61px;
+    margin-top:22px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -3299,6 +3306,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
+       max-width: 344px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -3314,7 +3322,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:41px;
+    margin-top:4px;
 }
 }
 
@@ -3626,6 +3634,7 @@ min-height:472px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
+   max-width: 357px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -3661,6 +3670,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
+       max-width: 357px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -3677,6 +3687,7 @@ min-height:472px;
     margin-right:9px;
     cursor: pointer;
     margin-top: 33px;
+
 }
 .service3{
     background-color:#e6f3fa;
@@ -3687,6 +3698,7 @@ min-height:472px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+      max-width: 357px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -3713,6 +3725,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
+        max-width: 357px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -4065,14 +4078,14 @@ min-height:472px;
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
-    padding:6px;
+   background-color:#e6f3fa;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height: 358px;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -5520,16 +5533,14 @@ min-height:472px;
 }
 
 
-
-
 }
 
 
 @media only screen and (min-width: 1800px){
  .pt-bnr {
-    padding-top: 270px;
+    padding-top:270px;
     text-align:right;
-    padding-right: 20px;
+    padding-right:20px;
     }
  .pdb{
     padding-bottom:45px;
