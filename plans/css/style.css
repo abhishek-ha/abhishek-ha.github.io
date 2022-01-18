@@ -4603,7 +4603,7 @@ a:hover{
  }
 
 .startassu{
-    font-size:55px;
+    font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-top:15px;
@@ -4626,7 +4626,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:365px;
+   min-height: 328px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4661,10 +4661,10 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:365px;
+    min-height: 328px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
-     margin-top:10px;
+    margin-top:10px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -4687,7 +4687,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:373px;
+   min-height:352px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4713,7 +4713,7 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:371px;
+   min-height:350px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
