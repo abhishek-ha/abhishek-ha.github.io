@@ -5187,6 +5187,144 @@ min-height:472px;
     background-origin: border-box;
      background-size: 100%;
 }
+
+
+.banner{
+    padding-top: 40px;
+    margin-top: 90px;
+    padding-bottom:80px;
+ }
+
+  .banner1{
+    padding-top: 40px;
+     margin-top: 90px;
+ }
+
+.startassu{
+    font-size:50px;
+     font-weight:700!important;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+  .val{
+    padding-top:0px;
+}
+
+
+.service{
+    background-color:#e6f3fa;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    min-height:343px;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
+  margin-top:10px;
+}
+.service .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top: 33px;
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+    min-height:190px;
+    padding:6px;
+}
+
+
+.service2{
+    background-color:#e6f3fa;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   min-height:343px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+     margin-top:10px;
+}
+.service2 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top: 33px;
+}
+.service3{
+    background-color:#e6f3fa;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   min-height:373px;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.service3 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:38px;
+}
+.service4{
+    background-color:#e6f3fa;
+   padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   min-height:371px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
+}
+.service4 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:62px;
+}
 }
 
 
