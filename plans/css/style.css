@@ -379,6 +379,15 @@ a:hover{
             margin-top:10px;
             font-weight:500;
         }
+         .tnc1 {
+            text-decoration: none;
+            color: #212121;
+            font-size:12px;
+            display: block;
+            font-weight:500;
+        }
+
+
       .w48 {
             width: 48%;
         }
@@ -4734,7 +4743,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:30px;
+    margin-top:38px;
 }
 .service4{
     background-color:#f3fafd;
