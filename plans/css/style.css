@@ -385,6 +385,7 @@ a:hover{
             font-size:12px;
             display: block;
             font-weight:500;
+            margin-bottom:1px;
         }
 
 
@@ -4625,17 +4626,15 @@ min-height:472px;
     margin-top: 130px;
     padding-bottom:80px;
  }
-
-  .banner1{
-    padding-top: 40px;
-     margin-top: 120px;
+.banner1{
+    padding-top:25px;
+     margin-top:120px;
  }
-
 .startassu{
     font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
-    padding-top:15px;
+    padding-top:0px;
 }
 .thead1{
     letter-spacing: 1px;
@@ -4655,7 +4654,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:375px;
+   min-height:373px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4713,8 +4712,8 @@ min-height:472px;
     background-color:#f3fafd;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    height:400px;
+    border:1px solid rgb(201 213 219);
+    height:399px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4761,8 +4760,6 @@ min-height:472px;
     cursor: pointer;
     margin-top:63px;
 }
-
-
 }
 
 
@@ -4775,9 +4772,7 @@ min-height:472px;
    .pdb{
     padding-bottom:45px;
 }
-
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -4803,7 +4798,6 @@ min-height:472px;
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -4833,13 +4827,10 @@ min-height:472px;
 .offer1 img{
    margin-top:-51%;
     width:60%;
-
 }
-
-  .val{
+ .val{
     padding-top:10px;
 }
-
 .service{
     background-color:#e6f3fa;
     padding:6px;
