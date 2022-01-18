@@ -4676,8 +4676,6 @@ min-height:472px;
     cursor: pointer;
     margin-top: 40px;
 }
-
-
 .service: hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
@@ -4685,14 +4683,12 @@ min-height:472px;
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
    background-color:#f3fafd;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:379px;
+   min-height:373px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4718,7 +4714,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:405px;
+    height:400px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4744,7 +4740,7 @@ min-height:472px;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:400px;
+    height:396px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4844,13 +4840,12 @@ min-height:472px;
     padding-top:10px;
 }
 
-
 .service{
     background-color:#e6f3fa;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 327px;
+    min-height: 369px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4884,7 +4879,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 369px;
+    min-height: 365px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -4929,7 +4924,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top: 39px;
+      margin-top:44px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -4955,10 +4950,8 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:64px;
+    margin-top:68px;
 }
-
-
 
 }
 
@@ -8251,9 +8244,9 @@ h4{color:#444}
     margin-left:20px;
     margin-right:9px;
     padding-bottom:6px;
-    font-size:15px;
-   text-indent: -12px;
-            padding-left: 12px;
+    font-size:14.6px;
+   text-indent: -10px;
+    padding-left:10px;
 
 }
 .plan ul li:before {
