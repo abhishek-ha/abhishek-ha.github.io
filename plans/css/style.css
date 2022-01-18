@@ -1276,16 +1276,14 @@ a:hover{
         }
 
 .val{
-    padding-top:0px;
+    padding-top: 9px;
 }
 .service{
     background-color:#e6f3fa;
-    border-radius:0px;
-    min-height:200px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:430px;
+   min-height: 502px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1321,12 +1319,10 @@ a:hover{
 
 .service2{
     background-color:#e6f3fa;
-    border-radius:0px;
-    min-height:200px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:430px;
+min-height:491px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1353,7 +1349,7 @@ a:hover{
 .service3{
     background-color:#e6f3fa;
     border-radius:0px;
-    min-height:430px;
+  min-height: 541px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1375,7 +1371,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:14px;
+    margin-top:2px;
 }
 
 .service3 .buybtn:hover{
@@ -1383,11 +1379,10 @@ a:hover{
 }
 .service4{
     background-color:#e6f3fa;
-    border-radius:0px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:430px;
+   min-height:492px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1557,7 +1552,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:405px;
+   min-height:468px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1576,7 +1571,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:50px;
+    margin-top:2px;
 }
 
 .service .buybtn:hover{
@@ -1596,7 +1591,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:405px;
+    min-height:435px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -1615,7 +1610,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top:2px;
 }
 .service2 .buybtn:hover{
    background-color:#000000;
@@ -1623,7 +1618,7 @@ a:hover{
 
 .service3{
     background-color:#e6f3fa;
-    min-height:405px;
+    min-height:519px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1645,18 +1640,17 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:54px;
+    margin-top:2px;
 }
 .service3 .buybtn:hover{
    background-color:#000000;
 }
 .service4{
     background-color:#e6f3fa;
-    min-height:405px;
+    min-height:458px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    margin-top:50px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1675,7 +1669,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:34px;
+    margin-top:2px;
 }
 .service4 .buybtn:hover{
    background-color:#000000;
@@ -4014,7 +4008,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:328px;
+    min-height: 378px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4049,7 +4043,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-  min-height:328px;
+   min-height: 378px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -4094,7 +4088,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:83px;
+    margin-top:20px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -4120,7 +4114,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:63px;
+    margin-top:15px;
 }
 
 }
@@ -4699,7 +4693,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:375px;
+   min-height:379px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4886,14 +4880,12 @@ a:hover{
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
     background-color:#e6f3fa;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 366px;
+    min-height: 369px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -8257,13 +8249,18 @@ h4{color:#444}
      color:#000000;
     letter-spacing:0.5px;
    /* list-style-type:disc;*/
-    margin-left:25px;
+    margin-left:15px;
     margin-right:9px;
     padding-bottom:6px;
     font-size:15px;
 }
-
-
+.plan ul li:before {
+     content: "\f00c";
+     font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+}
 .service1{
   border-radius:none;
     height:105px;
