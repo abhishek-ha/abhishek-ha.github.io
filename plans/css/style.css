@@ -1322,7 +1322,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-min-height:491px;
+min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1348,8 +1348,7 @@ min-height:491px;
 }
 .service3{
     background-color:#e6f3fa;
-    border-radius:0px;
-  min-height: 541px;
+   height: 523px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1382,7 +1381,7 @@ min-height:491px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:492px;
+   height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1552,7 +1551,7 @@ min-height:491px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:468px;
+   min-height:473px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1618,7 +1617,7 @@ min-height:491px;
 
 .service3{
     background-color:#e6f3fa;
-    min-height:519px;
+    height:502px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1647,7 +1646,7 @@ min-height:491px;
 }
 .service4{
     background-color:#e6f3fa;
-    min-height:458px;
+    min-height:438px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4719,7 +4718,7 @@ min-height:491px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:400px;
+    height:405px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4745,7 +4744,7 @@ min-height:491px;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:397px;
+    height:400px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4842,7 +4841,7 @@ min-height:491px;
 }
 
   .val{
-    padding-top:0px;
+    padding-top:10px;
 }
 
 
@@ -4930,7 +4929,7 @@ min-height:491px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top: 37px;
+      margin-top: 39px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -4956,7 +4955,7 @@ min-height:491px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:62px;
+    margin-top:64px;
 }
 
 
