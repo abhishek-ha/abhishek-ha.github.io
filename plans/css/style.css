@@ -4429,7 +4429,7 @@ a:hover{
     padding-top: 22px;
 }
 .service{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4464,7 +4464,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4490,7 +4490,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4500,7 +4500,7 @@ a:hover{
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
+   
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -4622,11 +4622,11 @@ a:hover{
 
 
 .service{
-    background-color:#e6f3fa;
+    background-color:#f3fafd;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 328px;
+   min-height: 378px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4645,7 +4645,6 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
 }
 .service: hover{
     background-color:#fafafa;
@@ -4657,11 +4656,11 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+   background-color:#f3fafd;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 328px;
+     min-height:378px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4683,7 +4682,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+    background-color:#f3fafd;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4709,7 +4708,7 @@ a:hover{
     margin-top:61px;
 }
 .service4{
-    background-color:#e6f3fa;
+    background-color:#f3fafd;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
