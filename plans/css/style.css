@@ -8248,10 +8248,13 @@ h4{color:#444}
      color:#000000;
     letter-spacing:0.5px;
    /* list-style-type:disc;*/
-    margin-left:15px;
+    margin-left:20px;
     margin-right:9px;
     padding-bottom:6px;
     font-size:15px;
+   text-indent: -12px;
+            padding-left: 12px;
+
 }
 .plan ul li:before {
      content: "\f00c";
