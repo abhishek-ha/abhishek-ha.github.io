@@ -387,6 +387,14 @@ a:hover{
             font-weight:500;
             margin-bottom:1px;
         }
+          .tnc2 {
+            text-decoration: none;
+            color: #212121;
+            font-size:12px;
+            display: block;
+            font-weight:500;
+            margin-bottom:1px;
+        }
 
 
       .w48 {
@@ -3346,8 +3354,9 @@ min-height:472px;
         }
 
         .head1 span {
-            font-size:45px;
+            font-size:40px;
             font-weight:900;
+            color:#0f5fc2;
         }
 
  .pdb{
