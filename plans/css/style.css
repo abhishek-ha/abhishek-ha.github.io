@@ -382,7 +382,7 @@ a:hover{
          .tnc1 {
             text-decoration: none;
             color: #212121;
-            font-size:12px;
+            font-size:9px;
             display: block;
             font-weight:500;
             margin-bottom:1px;
@@ -4637,7 +4637,7 @@ min-height:472px;
 .banner{
     padding-top: 40px;
     margin-top: 130px;
-    padding-bottom:80px;
+    padding-bottom:60px;
  }
 .banner1{
     padding-top:25px;
