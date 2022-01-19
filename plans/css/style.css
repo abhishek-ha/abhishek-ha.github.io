@@ -772,7 +772,6 @@ a:hover{
         float:left;
         width:50%;
     }
-
 #generic_price_table .col-md-4{
         float:left;
         width:50%;
@@ -887,7 +886,6 @@ a:hover{
     margin: 50px auto;
     line-height: 2px;
 }
-
 #generic_price_table_home .itemname{
     text-align: center;
     font-size: 50px ;
@@ -1073,8 +1071,7 @@ a:hover{
      color: rgba(0, 0, 0, 0.6);
      margin-left: 8px
  }
-
- .bbb_viewed_price span::after {
+.bbb_viewed_price span::after {
      display: block;
      position: absolute;
      top: 6px;
@@ -1322,7 +1319,7 @@ a:hover{
 }
 
 .service .buybtn:hover{
-   background-color:#000000;
+   background-color:#0860cc;
 }
 
 
@@ -1353,7 +1350,7 @@ min-height:472px;
     margin-top:3px;
 }
 .service2 .buybtn:hover{
-   background-color:#000000;
+   background-color:#0860cc;
 }
 .service3{
     background-color:#e6f3fa;
@@ -1383,7 +1380,7 @@ min-height:472px;
 }
 
 .service3 .buybtn:hover{
-   background-color:#000000;
+   background-color:#0860cc;
 }
 .service4{
     background-color:#e6f3fa;
@@ -1412,11 +1409,8 @@ min-height:472px;
     margin-top:15px;
 }
 .service4 .buybtn:hover{
-   background-color:#000000;
+   background-color:#0860cc;
 }
-
-
-
 }
 
 
@@ -1575,8 +1569,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -1584,7 +1578,7 @@ min-height:472px;
 }
 
 .service .buybtn:hover{
-   background-color:#000000;
+   background-color:#026cf0;
 }
 .service: hover{
     background-color:#fafafa;
@@ -1615,15 +1609,15 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:2px;
 }
 .service2 .buybtn:hover{
-   background-color:#000000;
+  background-color:#026cf0;
 }
 
 .service3{
@@ -1646,15 +1640,15 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
     margin-top:2px;
 }
 .service3 .buybtn:hover{
-   background-color:#000000;
+   background-color:#026cf0;
 }
 .service4{
     background-color:#e6f3fa;
@@ -1676,18 +1670,17 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:2px;
 }
 .service4 .buybtn:hover{
-   background-color:#000000;
+   background-color:#026cf0;
 }
-
-  .val{
+.val{
     padding-top:10px;
 }
 }
@@ -1806,8 +1799,7 @@ min-height:472px;
             font-weight: 400;
             font-size: 90%;
         }
-
-          .val{
+ .val{
     padding-top:0px;
 }
 
@@ -1830,8 +1822,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -1865,8 +1857,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -1891,8 +1883,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -1917,15 +1909,13 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:-7px;
 }
-
-
 }
 
 
@@ -2036,8 +2026,7 @@ min-height:472px;
             color: #ffffff;
             font-size: 15px;
        }
-
-         .val{
+   .val{
     padding-top:0px;
 }
 
@@ -2060,8 +2049,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2093,8 +2082,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2119,8 +2108,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -2145,15 +2134,13 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:39px;
 }
-
-
 }
 
 
@@ -2222,7 +2209,6 @@ min-height:472px;
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -2230,13 +2216,11 @@ min-height:472px;
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
      padding-bottom:20px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
 
@@ -2256,7 +2240,6 @@ min-height:472px;
     width:30%;
 
 }
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -2306,8 +2289,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2341,8 +2324,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2367,8 +2350,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -2393,8 +2376,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2537,8 +2520,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2572,8 +2555,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -2598,8 +2581,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -2624,8 +2607,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3013,8 +2996,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3048,8 +3031,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3074,8 +3057,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -3100,8 +3083,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3237,8 +3220,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3271,8 +3254,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3298,8 +3281,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -3325,8 +3308,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3654,8 +3637,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3690,8 +3673,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3718,8 +3701,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -3745,8 +3728,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3852,8 +3835,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3887,8 +3870,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -3913,8 +3896,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -3939,8 +3922,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4044,8 +4027,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4079,8 +4062,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4105,8 +4088,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -4131,8 +4114,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4312,8 +4295,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4347,8 +4330,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4373,8 +4356,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -4399,8 +4382,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4500,8 +4483,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4534,8 +4517,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4560,8 +4543,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -4586,8 +4569,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4690,8 +4673,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4723,8 +4706,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4749,8 +4732,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+   padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -4775,8 +4758,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+   padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4872,8 +4855,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -4932,8 +4915,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -4958,8 +4941,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5063,8 +5046,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5098,8 +5081,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5124,8 +5107,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -5150,8 +5133,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5253,8 +5236,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5288,8 +5271,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
@@ -5314,8 +5297,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
@@ -5340,8 +5323,8 @@ min-height:472px;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:4px;
+    padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
