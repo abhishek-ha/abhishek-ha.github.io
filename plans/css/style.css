@@ -1382,7 +1382,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:485px;
+   height:532px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1914,7 +1914,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:39px;
+    margin-top:-7px;
 }
 
 
@@ -3214,7 +3214,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 327px;
+   min-height: 375px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -3275,7 +3275,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-  min-height: 358px;
+  min-height:403px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4928,7 +4928,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top:44px;
+      margin-top:39px;
 }
 .service4{
     background-color:#e6f3fa;
