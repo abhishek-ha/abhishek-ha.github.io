@@ -3340,9 +3340,9 @@ min-height:472px;
         }
 
 
-.head1 { font-size: 40px;
-          font-weight: 700;
-         line-height: 50px;
+.head1 { font-size:35px;
+          font-weight:600;
+         line-height:45px;
         }
 
         .head1 span {
@@ -4658,7 +4658,7 @@ min-height:472px;
     width:60%;
 }
   .val{
-    padding-top:14px;
+   padding-top:6px;
 }
 
 
@@ -4829,7 +4829,7 @@ min-height:472px;
      margin-top: 120px;
  }
 .startassu{
-    font-size:46px;
+    font-size:43px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
@@ -4842,7 +4842,7 @@ min-height:472px;
     width:60%;
 }
  .val{
-    padding-top:10px;
+    padding-top:6px;
 }
 .service{
     background-color:#e6f3fa;
