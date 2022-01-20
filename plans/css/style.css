@@ -4481,6 +4481,7 @@ min-height:472px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
+   max-width:362px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -4515,6 +4516,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
+       max-width:362px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -4541,6 +4543,7 @@ min-height:472px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+      max-width:362px;
 }
 .service3 .buybtn{
    
@@ -4567,6 +4570,7 @@ min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
+     max-width:362px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -4914,7 +4918,7 @@ min-height:472px;
 .benitem p b {
            font-weight: 600;
             color: #ffffff;
-           font-size: 14.4px;
+           font-size: 14px;
          line-height: 24px;
          letter-spacing:0.5px;
        }
