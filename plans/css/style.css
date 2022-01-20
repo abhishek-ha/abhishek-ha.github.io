@@ -4930,7 +4930,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:32px;
+    margin-top:41px;
 }
 
 .service: hover{
@@ -4964,7 +4964,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:46px;
+    margin-top:63px;
 }
 .service3{
      background-color:#fcfcfc;
@@ -4990,14 +4990,14 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top:30px;
+      margin-top:41px;
 }
 .service4{
     background-color:#fcfcfc;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:431px;
+    min-height:496px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -5016,7 +5016,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:74px;
+    margin-top:97px;
 }
 
 }
