@@ -1296,7 +1296,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:484px;
+   min-height:582px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1336,7 +1336,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:472px;
+   min-height:572px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1363,7 +1363,7 @@ a:hover{
 }
 .service3{
      background-color:#fcfcfc;
-   height:499px;
+   height:651px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1397,7 +1397,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:532px;
+    height:685px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4937,7 +4937,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:34px;
+    margin-top:32px;
 }
 
 .service: hover{
@@ -4971,7 +4971,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:48px;
+    margin-top:46px;
 }
 .service3{
      background-color:#fcfcfc;
@@ -4997,7 +4997,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top:32px;
+      margin-top:30px;
 }
 .service4{
     background-color:#fcfcfc;
@@ -5023,7 +5023,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:76px;
+    margin-top:74px;
 }
 
 }
