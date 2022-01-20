@@ -1291,10 +1291,8 @@ a:hover{
     padding-top:3px;
     padding-right:15px;
 }
-
-
 .service{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1334,7 +1332,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+   background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1364,7 +1362,7 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
 .service3{
-    background-color:#e6f3fa;
+     background-color:#fcfcfc;
    height:499px;
     padding:6px;
     margin:auto;
@@ -1395,7 +1393,7 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
 .service4{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1562,7 +1560,7 @@ a:hover{
 
 
 .service{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1603,7 +1601,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1635,7 +1633,7 @@ a:hover{
 }
 
 .service3{
-    background-color:#e6f3fa;
+     background-color:#fcfcfc;
     min-height:500px;
     padding:6px;
     margin:auto;
@@ -1666,7 +1664,7 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
 .service4{
-    background-color:#e6f3fa;
+     background-color:#fcfcfc;
     min-height: 523px;
     padding:6px;
     margin:auto;
@@ -1820,7 +1818,6 @@ a:hover{
 }
 
 .service{
-    background-color:#e6f3fa;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1855,7 +1852,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1881,7 +1878,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1907,7 +1904,7 @@ a:hover{
     margin-top:14px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1969,8 +1966,6 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 13px;
@@ -2047,8 +2042,7 @@ a:hover{
 }
 
 .service{
-    background-color:#e6f3fa;
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -2080,7 +2074,7 @@ a:hover{
     padding:6px;
 }
 .service2{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2106,7 +2100,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2132,7 +2126,7 @@ a:hover{
     margin-top: 60px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2283,12 +2277,8 @@ a:hover{
   .val{
     padding-top:0px;
 }
-
-
-
 .service{
-    background-color:#e6f3fa;
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -2322,7 +2312,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2348,7 +2338,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2374,7 +2364,7 @@ a:hover{
     margin-top: 60px;
 }
 .service4{
-    background-color:#e6f3fa;
+ 
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2518,7 +2508,7 @@ a:hover{
 }
 
 .service{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2553,7 +2543,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2579,7 +2569,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2605,7 +2595,7 @@ a:hover{
     margin-top: 60px;
 }
 .service4{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2851,9 +2841,6 @@ a:hover{
             font-size: 90%;
         }
 }
-
-
-
 @media only screen and (min-width: 700px){
  .pt-bnr {
     padding-top: 100px;
@@ -2995,8 +2982,7 @@ a:hover{
 
 
 .service{
-    background-color:#e6f3fa;
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -3030,7 +3016,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3056,7 +3042,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3082,7 +3068,7 @@ a:hover{
     margin-top: 60px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3210,16 +3196,13 @@ a:hover{
 .offer1 img{
     margin-top:-163%;
     width:75%;
-
 }
-
-  .val{
+.val{
     padding-top:0px;
 }
 
 .service{
-    background-color:#e6f3fa;
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height: 375px;
@@ -3252,8 +3235,7 @@ a:hover{
     padding:6px;
 }
 .service2{
-    background-color:#e6f3fa;
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:372px;
@@ -3279,8 +3261,7 @@ a:hover{
     margin-top:19px;
 }
 .service3{
-    background-color:#e6f3fa;
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
   min-height:403px;
@@ -3306,7 +3287,7 @@ a:hover{
     margin-top:22px;
 }
 .service4{
-    background-color:#e6f3fa;
+  
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3635,7 +3616,7 @@ a:hover{
 }
 
 .service{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3671,7 +3652,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+ 
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3699,7 +3680,7 @@ a:hover{
 
 }
 .service3{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3710,7 +3691,7 @@ a:hover{
       max-width: 357px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
+ 
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -3726,7 +3707,7 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3834,7 +3815,7 @@ a:hover{
 
 
 .service{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3869,7 +3850,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3895,7 +3876,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3921,7 +3902,7 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-    background-color:#e6f3fa;
+  
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4026,7 +4007,7 @@ a:hover{
     padding-top: 22px;
 }
 .service{
-    background-color:#e6f3fa;
+ 
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4061,7 +4042,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4087,7 +4068,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-   background-color:#e6f3fa;
+  
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4113,7 +4094,7 @@ a:hover{
     margin-top:20px;
 }
 .service4{
-    background-color:#e6f3fa;
+    
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4294,7 +4275,7 @@ a:hover{
     padding-top: 22px;
 }
 .service{
-    background-color:#e6f3fa;
+    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4329,7 +4310,7 @@ a:hover{
 
 
 .service2{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4355,7 +4336,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-    background-color:#e6f3fa;
+   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4381,7 +4362,7 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4391,7 +4372,7 @@ a:hover{
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
+   
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -4482,8 +4463,7 @@ a:hover{
     padding-top: 22px;
 }
 .service{
-   
-    padding:6px;
+ padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     min-height:343px;
@@ -4528,7 +4508,7 @@ a:hover{
        max-width:362px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
+  
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -4571,7 +4551,7 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-    background-color:#e6f3fa;
+   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4713,7 +4693,7 @@ a:hover{
             font-size: 90%;
         }
 .service{
-    background-color:#f3fafd;
+     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4746,7 +4726,7 @@ a:hover{
     padding:6px;
 }
 .service2{
-   background-color:#f3fafd;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4772,7 +4752,7 @@ a:hover{
     margin-top:56px;
 }
 .service3{
-    background-color:#f3fafd;
+     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
     border:1px solid rgb(201 213 219);
@@ -4798,7 +4778,7 @@ a:hover{
     margin-top:38px;
 }
 .service4{
-    background-color:#f3fafd;
+     background-color:#fcfcfc;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4902,7 +4882,6 @@ a:hover{
     padding-top:0px;
     padding-bottom:0px;
 }
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -4912,8 +4891,7 @@ a:hover{
       .benitem  img {
             width: 80px;
            padding: 2px 2px;
-           
-        }
+            }
        .benitem p {
             font-weight: 400;
             color: #ffffff;
@@ -4935,17 +4913,15 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
-
 .service{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
+    border:1px solid rgb(201 213 219);
     min-height:457px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:10px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -4972,7 +4948,7 @@ a:hover{
     padding:6px;
 }
 .service2{
-    background-color:#e6f3fa;
+     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4998,7 +4974,7 @@ a:hover{
     margin-top:48px;
 }
 .service3{
-    background-color:#e6f3fa;
+     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -5024,7 +5000,7 @@ a:hover{
       margin-top:32px;
 }
 .service4{
-    background-color:#e6f3fa;
+    background-color:#fcfcfc;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
