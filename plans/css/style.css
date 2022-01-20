@@ -4794,7 +4794,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:100px;
+    margin-top:119px;
 }
 }
 
@@ -8449,7 +8449,7 @@ h4{color:#444}
 .custom-toggler .navbar-toggler-icon{width: 18px!important;}
 .custom-toggler:hover{border-color: rgb(255,255,255); background-color: #000000;}
 .navbar-toggler-icon:hover{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}#logo_custom{margin-top: -6px;}
-@media only screen and (max-width: 760px) { .logo{width:220px;}}
+@media only screen and (max-width: 760px) { .logo{width:207px;}}
 
 
 /*.navbar-light .navbar-toggler-icon {
