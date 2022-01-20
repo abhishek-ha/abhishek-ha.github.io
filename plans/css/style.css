@@ -4653,7 +4653,7 @@ a:hover{
 .banner1{
     padding-top:25px;
      margin-top:120px;
-      padding-bottom:60px;
+      padding-bottom:60px!important;
  }
 .startassu{
     font-size:40px;
@@ -4877,7 +4877,7 @@ a:hover{
 .banner1{
     padding-top: 20px;
      margin-top: 120px;
-     padding-bottom:60px;
+    padding-bottom:60px!important;
  }
 .startassu{
     font-size:43px;
