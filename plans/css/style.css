@@ -1287,9 +1287,12 @@ a:hover{
             font-size: 90%;
         }
 
-.val{
-    padding-top: 9px;
+.val p{
+    padding-top:3px;
+    padding-right:15px;
 }
+
+
 .service{
     background-color:#e6f3fa;
     padding:6px;
@@ -1335,7 +1338,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-min-height:472px;
+   min-height:472px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1550,8 +1553,14 @@ min-height:472px;
             font-size: 90%;
         }
    .val{
-    padding-top:0px;
+    padding-top:0px; 
 }
+   .val p{
+    padding-top:0px; 
+    padding-right:15px;
+}
+
+
 .service{
     background-color:#e6f3fa;
     padding:6px;
@@ -4711,7 +4720,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:403px;
+   min-height:459px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4763,14 +4772,14 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:40px;
+    margin-top:56px;
 }
 .service3{
     background-color:#f3fafd;
     padding:6px;
     margin:auto;
     border:1px solid rgb(201 213 219);
-     min-height:428px;
+     min-height:489px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4796,7 +4805,7 @@ min-height:472px;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:425px;
+   min-height:486px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4815,7 +4824,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:63px;
+    margin-top:84px;
 }
 }
 
@@ -4892,7 +4901,8 @@ min-height:472px;
 .val p{
     text-align:right;
     padding-right:15px!important;
-    padding-top:6px;
+    padding-top:0px;
+    padding-bottom:0px;
 }
 
 .benitem {
@@ -4934,7 +4944,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 405px;
+    min-height:457px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4953,7 +4963,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 38px;
+    margin-top:34px;
 }
 
 .service: hover{
@@ -4968,7 +4978,7 @@ min-height:472px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:405px;
+      min-height:457px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -4987,7 +4997,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:48px;
 }
 .service3{
     background-color:#e6f3fa;
@@ -5013,7 +5023,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-      margin-top:39px;
+      margin-top:32px;
 }
 .service4{
     background-color:#e6f3fa;
@@ -5039,7 +5049,7 @@ min-height:472px;
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:68px;
+    margin-top:76px;
 }
 
 }
