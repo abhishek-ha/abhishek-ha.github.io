@@ -4466,7 +4466,7 @@ a:hover{
  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:343px;
+    min-height:474px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4501,15 +4501,14 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:343px;
+   min-height:474px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
        max-width:362px;
 }
 .service2 .buybtn{
-  
-    color:#EFEDD8; 
+  color:#EFEDD8; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4521,11 +4520,10 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:55px;
 }
 .service3{
-  
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:373px;
@@ -4535,8 +4533,7 @@ a:hover{
       max-width:362px;
 }
 .service3 .buybtn{
-   
-    color:#EFEDD8; 
+   color:#EFEDD8; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4548,14 +4545,13 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:83px;
+    margin-top:30px;
 }
 .service4{
-   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:371px;
+   min-height:499px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4575,10 +4571,9 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:62px;
+    margin-top:79px;
 }
 }
-
 
 @media only screen and (min-width: 1300px){
  .pt-bnr {
@@ -4616,7 +4611,6 @@ a:hover{
     background-size: 100%;
      min-height: 725px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -4624,7 +4618,6 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
     margin-top: 130px;
