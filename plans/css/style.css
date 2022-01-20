@@ -387,14 +387,20 @@ a:hover{
             font-weight:500;
             margin-bottom:1px;
         }
-          .tnc2 {
-            text-decoration: none;
-            color: #212121;
-            font-size:12px;
-            display: block;
-            font-weight:500;
-            margin-bottom:1px;
-        }
+         .tnc2 {
+    text-decoration: none;
+    color: #212121;
+    font-size: 12px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 1px;
+    text-align: right;
+    padding-right: 10px;
+}
+.val{
+    text-align:right;
+    padding-right:10px!important;
+}
 
 
       .w48 {
@@ -4648,9 +4654,17 @@ min-height:472px;
     margin-top:-51%;
     width:60%;
 }
-  .val{
-   padding-top:6px;
+ .val{
+    text-align:right;
+    padding-right:10px!important;
+    padding-top:6px;
 }
+ .val p{
+    text-align:right;
+    padding-right:10px!important;
+    padding-top:6px;
+}
+
 .service{
     background-color:#f3fafd;
     padding:6px;
