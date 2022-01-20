@@ -4653,6 +4653,7 @@ a:hover{
 .banner1{
     padding-top:25px;
      margin-top:120px;
+      padding-bottom:60px;
  }
 .startassu{
     font-size:40px;
@@ -4711,10 +4712,6 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
-
-
-
 .service{
     background-color:#f3fafd;
     padding:6px;
@@ -4880,6 +4877,7 @@ a:hover{
 .banner1{
     padding-top: 20px;
      margin-top: 120px;
+     padding-bottom:60px;
  }
 .startassu{
     font-size:43px;
