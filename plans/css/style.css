@@ -4654,16 +4654,52 @@ min-height:472px;
     margin-top:-51%;
     width:60%;
 }
+ 
  .val{
-    text-align:right;
-    padding-right:10px!important;
-    padding-top:6px;
-}
+   padding-right:15px!important; 
+   padding-top:6px;
+ }
  .val p{
     text-align:right;
-    padding-right:10px!important;
-    padding-top:6px;
+    padding-right:15px!important;
+    
 }
+
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+        }
+      .benitem  img {
+            width: 80px;
+           padding: 2px 2px;
+           
+        }
+       .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align:left;
+            padding-left:5px;
+            padding-top:10px;
+        }
+
+.benitem p b {
+           font-weight: 600;
+            color: #ffffff;
+           font-size: 14.4px;
+         line-height: 24px;
+         letter-spacing:0.5px;
+       }
+
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+
+
+
 
 .service{
     background-color:#f3fafd;
@@ -4848,6 +4884,12 @@ min-height:472px;
     padding-top:6px;
 }
 
+.val p{
+    text-align:right;
+    padding-right:15px!important;
+    padding-top:6px;
+}
+
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -4871,9 +4913,9 @@ min-height:472px;
 .benitem p b {
            font-weight: 600;
             color: #ffffff;
-           font-size: 15px;
+           font-size: 14.4px;
          line-height: 24px;
-         letter-spacing:0.4px;
+         letter-spacing:0.5px;
        }
 
       .benitem  p.sub {
