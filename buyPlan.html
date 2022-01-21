@@ -23,6 +23,7 @@
         html {
             overflow-x: hidden !important;
         }
+
         div {
             background-color: transparent;
         }
@@ -77,6 +78,7 @@
             box-sizing: border-box;
             background-color: #ffffff !important;
         }
+
         .iconcheck img {
             margin-top: -50px;
             width: 100px;
@@ -262,7 +264,7 @@
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerDOB">DOB</label>
                         <input type="date" id="CustomerDOB" class="form-control" placeholder="DOB" min="1920-01-01"
-                            max="2015-01-01" required />
+                            max="2015-01-01" />
                     </div>
                     <div class="form-check" style="margin-top: 20px;">
                         <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
@@ -307,8 +309,12 @@
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
             $('#Placeorder').html('Processing...');
+            var CustomerDOB = $('#CustomerDOB').val();
+            if (CustomerDOB == null || CustomerDOB == '') {
+                CustomerDOB = '2000-01-01';
+            }
             CustomerPhone_val = $('#CustomerPhone').val();
-            BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), $('#CustomerDOB').val(), $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle).then(function (result) {
+            BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle).then(function (result) {
                 $('#CustomerName').val('');
                 $('#CustomerEmail').val('');
                 $('#CustomerPhone').val('');
@@ -325,7 +331,11 @@
             if (phn == null || phn == '' || phn.length <= 9) {
                 closebuyplanpopup();
             } else {
-                SubmitLeads($('#CustomerPhone').val(), $('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerDOB').val(), PTitle).then(function (result) {
+                var CustomerDOB = $('#CustomerDOB').val();
+                if (CustomerDOB == null || CustomerDOB == '') {
+                    CustomerDOB = '2000-01-01';
+                }
+                SubmitLeads($('#CustomerPhone').val(), $('#CustomerName').val(), $('#CustomerEmail').val(), CustomerDOB, PTitle).then(function (result) {
                     closebuyplanpopup();
                 });
             }
