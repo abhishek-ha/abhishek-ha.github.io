@@ -2329,7 +2329,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:5px;
 }
 .service: hover{
     background-color:#fafafa;
@@ -2364,14 +2364,13 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:10px;
 }
 .service3{
-    
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:373px;
+   height:580px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -2390,10 +2389,9 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top: 60px;
+    margin-top:4px;
 }
 .service4{
- 
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2416,7 +2414,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:39px;
+    margin-top:15px;
 }
 }
 
