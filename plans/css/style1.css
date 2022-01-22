@@ -1257,27 +1257,23 @@ a:hover{
       .benitem  img {
             width: 90px;
            padding: 5px 5px 5px 5px;
-           
-        }
+     }
        .benitem p {
             font-weight:400;
             color: #ffffff;
             font-size: 13px;
             text-align: center;
         }
-
- .benitem p b {
+.benitem p b {
             font-weight: 600;
             color: #ffffff;
             font-size: 15px;
             
         }
-
-      .benitem  p.sub {
+  .benitem  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
-
 .val p{
     padding-top:3px;
     padding-right:15px;
@@ -1287,7 +1283,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:585px;
+   height:580px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1323,7 +1319,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:575px;
+   height:549px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1350,7 +1346,7 @@ a:hover{
 }
 .service3{
      background-color:#fcfcfc;
-    height:642px;
+    height:614px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1383,7 +1379,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:656px;
+    height:631px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -1597,18 +1593,16 @@ a:hover{
     padding-top:0px; 
     padding-right:15px;
 }
-
-
 .service{
     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:544px;
+   min-height:560px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
-  max-width:310px;
+  width:310px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -1642,11 +1636,11 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:544px;
+    min-height:540px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-    max-width:310px;
+    width:310px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -1671,14 +1665,14 @@ a:hover{
 
 .service3{
      background-color:#fcfcfc;
-    min-height:595px;
+    min-height:590px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-    max-width:310px;
+    width:310px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -1702,14 +1696,14 @@ a:hover{
 }
 .service4{
      background-color:#fcfcfc;
-    min-height:615px;
+    min-height:611px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
-   max-width:310px;
+   width:310px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -1735,41 +1729,6 @@ a:hover{
     padding-top:10px;
 }
 
-.servicebox{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:615px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:15px;
-  max-width: 345px;
-}
-
-
-.buybtn1{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:45%;
-}
-
-.buybtn1:hover{
-
-    color:#ffffff!important; 
-   
-}
 }
 
 
@@ -1894,7 +1853,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:503px;
+   height:553px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -1913,7 +1872,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:11px;
 }
 .service: hover{
     background-color:#fafafa;
@@ -1925,11 +1884,10 @@ a:hover{
 
 
 .service2{
-    
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:503px;
+    height:537px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1948,14 +1906,13 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top: 33px;
+    margin-top:12px;
 }
 .service3{
-  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:510px;
+   height:539px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -1977,11 +1934,10 @@ a:hover{
     margin-top:14px;
 }
 .service4{
-   
-   padding:6px;
+ padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:510px;
+   height:612px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -2000,7 +1956,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:-7px;
+    margin-top:14px;
 }
 }
 
@@ -3273,16 +3229,15 @@ a:hover{
 .val{
     padding-top:0px;
 }
-
 .service{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 375px;
+   height:427px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
-      max-width: 344px;
+   width:344px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -3304,18 +3259,17 @@ a:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
-    min-height:190px;
-    padding:6px;
+   padding:6px;
 }
 .service2{
   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:372px;
+   height:427px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
-         max-width: 344px;
+      width:344px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -3331,17 +3285,17 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:13px;
+    margin-top:33px;
 }
 .service3{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:512px;
+    height:465px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-        max-width: 344px;
+      width: 344px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -3360,15 +3314,14 @@ a:hover{
     margin-top:22px;
 }
 .service4{
-  
-   padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:512px;
+     height:465px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
-       max-width: 344px;
+    width:344px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -3807,9 +3760,7 @@ a:hover{
  .pdb{
     padding-bottom:25px;
 }
-
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -3833,7 +3784,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -3841,7 +3791,6 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
      padding-bottom:40px;
@@ -3849,7 +3798,6 @@ a:hover{
  .banner1{
     padding-top: 40px;
  }
-
 .startassu{
     font-size:60px;
      font-weight:700!important;
@@ -4054,7 +4002,7 @@ a:hover{
   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height: 378px;
+    height:431px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4085,14 +4033,14 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 378px;
+   height:431px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+    color:#ffffff; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -4110,7 +4058,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 358px;
+   height:471px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4135,7 +4083,7 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height: 358px;
+   height:467px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4238,8 +4186,7 @@ a:hover{
  .pdb{
     padding-bottom:25px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -4247,7 +4194,6 @@ a:hover{
     background-size: 100%;
     min-height: 630px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -4256,7 +4202,6 @@ a:hover{
     background-size: 100%;
     min-height: 630px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -4265,7 +4210,6 @@ a:hover{
     background-size: 100%;
     min-height: 630px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -4273,7 +4217,6 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
      padding-bottom:80px;
@@ -4302,8 +4245,7 @@ a:hover{
     padding-top: 22px;
 }
 .service{
-    
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -4337,8 +4279,7 @@ a:hover{
 
 
 .service2{
-   
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -4363,8 +4304,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-   
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:373px;
@@ -4389,7 +4329,6 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-   
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4530,6 +4469,7 @@ a:hover{
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
+  width:358px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -4562,6 +4502,7 @@ a:hover{
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:358px;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -4588,6 +4529,7 @@ a:hover{
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:358px;
 }
 .service3 .buybtn{
    background-color:#0f5fc2;
@@ -4614,6 +4556,7 @@ a:hover{
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
+   width:358px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -4707,10 +4650,123 @@ a:hover{
  }
  .val p{
     text-align:right;
-    padding-right:15px!important;
-    
+    padding-right:15px!important;    
 }
 
+.service{
+     background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   height:490px!important;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
+  margin-top:10px;
+  width:358px;
+}
+.service .buybtn{
+   background-color:#0f5fc2;
+    color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:88px!important;
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius:8px;
+    padding:6px;
+}
+.service2{
+    background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   height:488px!important;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:358px;
+}
+.service2 .buybtn{
+   background-color:#0f5fc2;
+   color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:110px!important;
+}
+.service3{
+     background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+    border:1px solid rgb(201 213 219);
+    height:493px!important;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:358px;
+}
+.service3 .buybtn{
+   background-color:#0f5fc2;
+     color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+   padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:62px!important;
+}
+.service4{
+     background-color:#fcfcfc;
+   padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    height:491px!important;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
+   width:358px;
+}
+.service4 .buybtn{
+   background-color:#0f5fc2;
+     color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+   padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:128px!important;
+}
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -4730,7 +4786,6 @@ a:hover{
             padding-left:5px;
             padding-top:10px;
         }
-
 .benitem p b {
            font-weight: 600;
             color: #ffffff;
@@ -4738,11 +4793,11 @@ a:hover{
          line-height: 24px;
          letter-spacing:0.5px;
        }
-
-      .benitem  p.sub {
+    .benitem  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
+
 
 }
 
@@ -4823,6 +4878,128 @@ a:hover{
     padding-top:0px;
     padding-bottom:0px;
 }
+.service{
+     background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   height:490px!important;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
+  margin-top:10px;
+  width:358px;
+}
+.service .buybtn{
+   background-color:#0f5fc2;
+    color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:87px!important;
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius:8px;
+    padding:6px;
+}
+.service2{
+    background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   height:488px!important;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:358px;
+}
+.service2 .buybtn{
+   background-color:#0f5fc2;
+   color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:110px!important;
+}
+.service3{
+     background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+    border:1px solid rgb(201 213 219);
+    height:492px!important;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:358px;
+}
+.service3 .buybtn{
+   background-color:#0f5fc2;
+     color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+   padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:60px!important;
+}
+.service4{
+     background-color:#fcfcfc;
+   padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    height:492px!important;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
+   width:358px;
+}
+.service4 .buybtn{
+   background-color:#0f5fc2;
+     color:#ffffff!important; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+   padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:128px!important;
+}
+
+
+
+
+
+
+
+
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -4854,8 +5031,6 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
-
 }
 
 
