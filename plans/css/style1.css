@@ -1604,7 +1604,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:573px;
+   min-height:544px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:15px;
@@ -1635,17 +1635,14 @@ a:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
-    min-height:190px;
-    padding:6px;
+   padding:6px;
 }
-
-
 .service2{
     background-color:#fcfcfc;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    min-height:573px;
+    min-height:544px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -1674,7 +1671,7 @@ a:hover{
 
 .service3{
      background-color:#fcfcfc;
-    min-height:624px;
+    min-height:595px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1705,7 +1702,7 @@ a:hover{
 }
 .service4{
      background-color:#fcfcfc;
-    min-height:673px;
+    min-height:615px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3612,7 +3609,6 @@ a:hover{
     padding: 8px 0;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .right-arrow {
     display: inline-block;
     position: relative;
@@ -3622,14 +3618,11 @@ a:hover{
     width: 225px; 
      margin-bottom: 1px;
      text-align: center!important;
-
 }
-
- .pdb{
+.pdb{
     padding-bottom:25px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -3684,23 +3677,19 @@ a:hover{
 .offer1 img{
     margin-top:-22%;
     width:30%;
-
 }
-
-  .val{
+.val{
     padding-top:0px;
 }
-
 .service{
-  
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:365px;
+    height:490px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
-   max-width: 357px;
+  width:358px!important;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -3722,21 +3711,17 @@ a:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
-    min-height:190px;
     padding:6px;
 }
-
-
 .service2{
- 
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:365px;
+   height:490px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
-       max-width: 357px;
+       width:358px!important;
 }
 .service2 .buybtn{
    background-color:#0f5fc2;
@@ -3760,15 +3745,14 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:373px;
+    height:490px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-      max-width: 357px;
+     width:358px!important;
 }
 .service3 .buybtn{
- 
-    color:#EFEDD8; 
+   color:#EFEDD8; 
     right:0px; 
     width:150px;
     position:absolute;
@@ -3783,15 +3767,14 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-   
-   padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   min-height:373px;
+    height:490px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
-        max-width: 357px;
+   width:358px;
 }
 .service4 .buybtn{
    background-color:#0f5fc2;
@@ -3834,7 +3817,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -3843,7 +3825,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -3865,8 +3846,7 @@ a:hover{
     padding-top: 40px;
      padding-bottom:40px;
  }
-
-  .banner1{
+ .banner1{
     padding-top: 40px;
  }
 
@@ -3888,11 +3868,8 @@ a:hover{
   .val{
     padding-top:0px;
 }
-
-
 .service{
-    
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -3923,10 +3900,7 @@ a:hover{
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
-   
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3952,8 +3926,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-  
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:373px;
@@ -3978,8 +3951,7 @@ a:hover{
     margin-top:83px;
 }
 .service4{
-  
-   padding:6px;
+    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:373px;
@@ -4004,8 +3976,6 @@ a:hover{
     margin-top:41px;
 }
 }
-
-
 @media only screen and (min-width: 1000px){
 
  .head {
@@ -4077,13 +4047,11 @@ a:hover{
     margin-top:-86%;
     width:60%;
 }
-
- .val{
+.val{
     padding-top: 22px;
 }
 .service{
- 
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     min-height: 378px;
@@ -4111,13 +4079,9 @@ a:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
-    min-height:190px;
     padding:6px;
 }
-
-
 .service2{
-    
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4143,8 +4107,7 @@ a:hover{
     margin-top:15px;
 }
 .service3{
-  
-   padding:6px;
+    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height: 358px;
@@ -4169,7 +4132,6 @@ a:hover{
     margin-top:27px;
 }
 .service4{
-    
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4194,16 +4156,13 @@ a:hover{
     cursor: pointer;
     margin-top:3px;
 }
-
 }
-
 
 @media only screen and (min-width: 1050px){
  .head {
             font-size: 40px;
         }
-
- .pt-bnr {
+.pt-bnr {
     padding-top: 100px;
     text-align:right;
     }
@@ -4218,7 +4177,6 @@ a:hover{
     background-size: 100%;
      min-height: 600px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -4227,7 +4185,6 @@ a:hover{
     background-size: 100%;
     min-height: 600px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -4244,13 +4201,11 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
      padding-bottom:60px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
 
@@ -4267,10 +4222,7 @@ a:hover{
 .offer1 img{
     margin-top:-22%;
     width:30%;
-
 }
-
-
 }
 
 @media only screen and (min-width: 1100px){
@@ -4574,7 +4526,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:516px;
+   height:490px!important;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4593,13 +4545,12 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:37%;
+    margin-top:67px!important;
 }
 .service: hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
+    border-radius:8px;
     padding:6px;
 }
 .service2{
@@ -4607,7 +4558,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:516px;
+   height:488px!important;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4626,14 +4577,14 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:61%;
+    margin-top:110px!important;
 }
 .service3{
      background-color:#fcfcfc;
     padding:6px;
     margin:auto;
     border:1px solid rgb(201 213 219);
-    height:516px;
+    height:511px!important;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4652,14 +4603,14 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:41px;
+    margin-top:41px!important;
 }
 .service4{
      background-color:#fcfcfc;
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:516px;
+    height:509px!important;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4678,7 +4629,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:70%;
+    margin-top:128px!important;
 }
 }
 
@@ -8271,11 +8222,10 @@ h4{color:#444}
 .plan ul li{
      color:#000000;
     letter-spacing:0.5px;
-   /* list-style-type:disc;*/
-    margin-left:20px;
-    margin-right:9px;
+    margin-left:13px;
+    margin-right:7px;
     padding-bottom:6px;
-    font-size:14.6px;
+    font-size:14px;
    text-indent: -10px;
     padding-left:10px;
 
