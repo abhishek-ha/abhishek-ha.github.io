@@ -51,8 +51,8 @@ a:hover{
             background-color:#ffffff !important;
         }
       .logo {
-            width: 250px;
-            padding-top: 30px;
+            width: 190px;
+            padding-top:20px;
         }
         .text-blue {
             color: #448aff;
@@ -414,7 +414,7 @@ a:hover{
 
             .logo {
                 width: 47%;
-                padding: 20px 20px 0px 20px;
+                padding: 20px 20px 0px 02px;
             }
 
             .item3 {
@@ -1319,7 +1319,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:549px;
+   height:563px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -1379,7 +1379,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:631px;
+    height:641px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4422,7 +4422,6 @@ a:hover{
     background-size: 100%;
     min-height: 685px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -4439,7 +4438,6 @@ a:hover{
     padding-top: 40px;
      margin-top: 100px;
  }
-
 .startassu{
     font-size:60px;
      font-weight:700!important;
@@ -4592,7 +4590,6 @@ a:hover{
     background-size: 100%;
      min-height: 725px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -4641,7 +4638,6 @@ a:hover{
     margin-top:-51%;
     width:60%;
 }
- 
  .val{
    padding-right:15px!important; 
    padding-top:6px;
@@ -4650,7 +4646,6 @@ a:hover{
     text-align:right;
     padding-right:15px!important;    
 }
-
 .service{
      background-color:#fcfcfc;
     padding:6px;
@@ -4787,17 +4782,10 @@ a:hover{
 .benitem p b {
            font-weight: 600;
             color: #ffffff;
-           font-size: 14px;
-         line-height: 24px;
-         letter-spacing:0.5px;
-       }
-    .benitem  p.sub {
-            font-weight: 400;
-            font-size: 90%;
-        }
-
-
-}
+           font-size:14.3px;
+         line-height: 22px;
+      }
+   }
 
 
 @media only screen and (min-width: 1400px){
@@ -4817,7 +4805,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -4826,7 +4813,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -4842,7 +4828,6 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
     margin-top: 120px;
@@ -4990,14 +4975,6 @@ a:hover{
     cursor: pointer;
     margin-top:128px!important;
 }
-
-
-
-
-
-
-
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -5016,19 +4993,12 @@ a:hover{
             padding-left:5px;
             padding-top:10px;
         }
-
-.benitem p b {
+      .benitem p b {
            font-weight:700;
             color: #ffffff;
-           font-size: 13.5px;
-         line-height: 24px;
-         letter-spacing:0.5px;
+           font-size:14.5px;
+         line-height:20px;
        }
-
-      .benitem  p.sub {
-            font-weight: 400;
-            font-size: 90%;
-        }
 }
 
 
