@@ -122,8 +122,6 @@
    </div>
     </section>
 
-
-
 <section class="bluesec" id="benefits">
     <div class="container-fluid">
         <div class="row">
@@ -724,7 +722,7 @@
                                 <ul>
                                     <li><a href="https://healthassure.in/">Home</a></li>
                                     <li><a href="#benefits">Plans</a></li>
-                                     <li><a href="#">Contact </a></li> 
+                                     <li><a href="javascript:void(0);" onclick="advisorclick();">Contact </a></li> 
                                    
                                     </li>
                                 </ul>
@@ -780,6 +778,11 @@
 
 
     <script>
+
+
+
+
+
         $(document).ready(function () {
             $('.navbar-light .dmenu').hover(function () {
                 $(this).find('.sm-menu').first().stop(true, true).slideDown(300);
@@ -787,6 +790,29 @@
                 $(this).find('.sm-menu').first().stop(true, true).slideUp(210)
             });
         });
+
+
+   $("#CallbackAdvisorform").submit(function (event) {
+            event.preventDefault();
+            SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
+                $('#AdvisorEmail').val(), 'HomePage').then(function (result) {
+                    $('#AmessageId').html(result.message);
+                    $('#Advisorformdiv').hide();
+                    $('#Advisormessagediv').show();
+                });
+        });
+
+        function advisorclick() {
+            CallBackModalPopup('HomePage',false);
+            $('#Advisorformdiv').show();
+            $('#Advisormessagediv').hide();
+            $('#AdvisorPhone').val('');
+            $('#AdvisorName').val('');
+            $('#AdvisorEmail').val('');
+        }
+
+
+        
 
      function advisorclick() {
             CallBackModalPopup('startassure-elite',false);
