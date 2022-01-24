@@ -3231,7 +3231,7 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:427px;
+   height:426px;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -3263,7 +3263,7 @@ a:hover{
   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:427px;
+   height:426px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
      margin-top:10px;
@@ -3289,7 +3289,7 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:465px;
+    height:464px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -3315,7 +3315,7 @@ a:hover{
   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-     height:465px;
+    height:464px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -4651,7 +4651,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:489px!important;
+   height:484px!important;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4671,7 +4671,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor: pointer;
-    margin-top:88px!important;
+    margin-top:83px!important;
 }
 .service: hover{
     background-color:#fafafa;
@@ -4711,7 +4711,7 @@ a:hover{
     padding:6px;
     margin:auto;
     border:1px solid rgb(201 213 219);
-    height:491px!important;
+    height:487px!important;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4731,7 +4731,7 @@ a:hover{
     font-size:19px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:62px!important;
+    margin-top:57px!important;
 }
 .service4{
      background-color:#fcfcfc;
@@ -4866,7 +4866,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:490px!important;
+   height:487px!important;
   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
   border-radius:10px;
   margin-top:10px;
@@ -4899,7 +4899,7 @@ a:hover{
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-   height:488px!important;
+   height:487px!important;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4926,7 +4926,7 @@ a:hover{
     padding:6px;
     margin:auto;
     border:1px solid rgb(201 213 219);
-    height:492px!important;
+    height:489px!important;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -4953,7 +4953,7 @@ a:hover{
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
-    height:492px!important;
+    height:489px!important;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
@@ -8535,10 +8535,6 @@ h4{color:#444}
     width: 200px;
     border-top: 2px solid #78bd46;
 }
-
-
-
-
 .btn-class{
     padding: 14px 21px;
     font-size: 20px;
