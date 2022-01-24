@@ -8539,4 +8539,15 @@ h4{color:#444}
 
 
 
-
+.btn-class{
+    padding: 14px 21px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 550!important;
+    transition: all 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+    width: 250px;
+    text-align: center;
+    margin:auto;
+    border: 1px solid #0a8943;
+}
