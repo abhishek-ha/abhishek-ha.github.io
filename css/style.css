@@ -7415,11 +7415,9 @@ h1{
    line-height: 14px;
    font-weight: 300;
 }
-
 .circle1 h3{
     font-size: 28px;
-    line-height:36px ;
-
+    line-height:36px;
 }
 .circle2{
     background-color: #caf8f8;
@@ -7429,7 +7427,6 @@ h1{
     border-radius: 50%;
     margin-left: 50px;
     margin-top: 10%;
-
 }
 .circle2 p{
    font-size: 11px;
@@ -7454,7 +7451,6 @@ h1{
    line-height: 14px;
    font-weight: 300;
 }
-
 .circle3 h3{
     font-size: 28px;
     line-height:36px ;
@@ -7471,16 +7467,13 @@ h1{
 .circle4 h3{
      font-size: 28px;
     line-height:36px ;
-
 }
 .circle4 p{
     font-size: 11px;
    line-height: 14px;
    font-weight: 300;
 }
-
 }
-
 
 
 @media only screen and (min-width: 1900px){

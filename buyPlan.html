@@ -80,23 +80,24 @@
         }
 
         .thankyouss {
-            width: 40%;
+            width:70%;
             margin-top: 80px;
             margin-bottom: 30px;
-            margin-left: 30%;
-            margin-right: 30%;
+            margin-left: 15%;
+            margin-right: 15%;
             border-radius: 10px;
             box-sizing: border-box;
             background-color: #ffffff !important;
         }
 
         .thankyouss h3 {
-            font-size: 28px;
-            font-weight: 600;
+            font-size: 23px;
+            font-weight:600;
+            padding-top:50px;
         }
 
         .thankyouss p {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 500;
         }
 
@@ -230,6 +231,17 @@
                 border-top: 2px solid green;
             }
         }
+
+@media only screen and (max-width: 990px){
+  .mob1{
+        display: none!important;
+    }
+}
+
+
+
+
+
     </style>
 </head>
 
@@ -244,17 +256,11 @@
             <div id="congratulationsdiv" class="modelbuypopup mt-6 " style="background-color:#ffffff; display: none;">
                 <div class="col-md-12 " style="background-color:#ffffff;border-radius:5px;  margin-bottom: 50px;">
                     <div class="iconcheck" style="text-align: center;"> <img src="images/greencheck.png"> </div>
-                    <h3 class="head"
-                        style="font-weight:600;padding-top: 15px; text-align:center; text-transform: uppercase;">
-                        Congratulations </h3>
+     <h3 class="head" style="font-weight:600;padding-top: 15px; text-align:center; text-transform: uppercase;"> Congratulations </h3>
                     <!-- <h3 style="text-align:center;"> <span id="buyplanpopuptitle" style="font-size:30px;
     font-weight:600; text-align:center;">Modal Header </span> <span class="close"><a style="border: radius 0;"href="javascript:closeform()">&times;</a></span> </h3> -->
-                    <p style="font-size: 16px; padding-top: 10px; text-align:center;"> You have successfully purchased
-                        the Plan <span id="buyplanpopuptitle" style="font-weight:600;">Modal Header </span>.</p>
-                    <p style="font-size: 16px; padding-top: 10px; text-align:center;"> You will soon receive the app
-                        access credentials to unlock your plan and start benefiting from it. Please download
-                        HealthAssure app from playstore or appstore to book tests, scans, doctor appointments and much
-                        more, across India wherever you are.</p>
+    <p style="font-size: 16px; padding-top: 10px; text-align:center;"> You have successfully purchased the Plan <span id="buyplanpopuptitle" style="font-weight:600;">Modal Header </span>. </p>
+    <p style="font-size: 16px; padding-top: 10px; text-align:center;"> You will soon receive the app access credentials to unlock your plan and start benefiting from it. Please download HealthAssure app from playstore or appstore to book tests, scans, doctor appointments and much more, across India wherever you are.</p>
                     <p style="font-size: 16px; text-align:center;">Our Onboarding team and Doctor Coach will get in
                         touch with you soon to help you with a super smooth experience of our ecosystem.</p>
                     <p style="font-size: 16px; text-align:center;"> For any queries you can reach out to us on
@@ -320,11 +326,17 @@
                     </div>
                 </form>
             </div>
-            <div class="text-center">
-                <div id="Thankyoupopup" class="col-lg-6 col-md-6 col-sm-4  col-md-offset-3 pt-5 mt-5 mx-auto thankyouss"
-                    style="display:none;">
-                    <h3 class="text-center"> Thankyou for showing interest in HealthAssure Products.</h3>
-                    <p class="text-center pt-2"><b> Our advisor will contact you shortly. </b></p>
+       </div>
+
+       <div class="row thankyouss" id="Thankyoupopup" style="display:none;">
+
+        <div class="col-lg-6">
+                            <img src="images/call-center1.png" class="img-responsive mob1" alt="call us">
+                        </div>
+       
+            <div  class="col-lg-6 col-md-12 col-sm-12 mx-auto " >
+                    <h3 class="text-center"> Thankyou for showing interest in HealthAssure Plans. </h3>
+                <p class="text-center pt-2"> Our advisor will contact you shortly. </p>
                     <div class="col-md-12   mx-auto text-center">
                         <button type="submit" data-dismiss="modal" onclick="closebuyplanpopup()" value="OK"
                             class=" btn btn-success btn-class  pgreenbtn" id="button">
@@ -334,8 +346,16 @@
                         <br>
                     </div>
                 </div>
-            </div>
-        </div>
+         
+           
+
+       </div>
+
+
+
+
+
+
     </div>
     <script src="js/buyplans.min.js"></script>
     <script>
