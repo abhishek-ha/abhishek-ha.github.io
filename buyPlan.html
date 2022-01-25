@@ -70,7 +70,7 @@
 
         .model-medium {
             width: 40%;
-            margin-top: 30px;
+            margin-top: 80px;
             margin-bottom: 30px;
             margin-left: 30%;
             margin-right: 30%;
@@ -78,6 +78,30 @@
             box-sizing: border-box;
             background-color: #ffffff !important;
         }
+
+        .thankyouss {
+            width: 40%;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: #ffffff !important;
+        }
+
+        .thankyouss h3 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .thankyouss p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+
+
 
         .iconcheck img {
             margin-top: -50px;
@@ -87,6 +111,17 @@
 
         @media only screen and (max-width: 800px) {
             .model-medium {
+                width: 92%;
+                margin-left: 4%;
+                margin-right: 4%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: #ffffff !important;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+
+            .thankyouss {
                 width: 92%;
                 margin-left: 4%;
                 margin-right: 4%;
@@ -285,6 +320,21 @@
                     </div>
                 </form>
             </div>
+            <div class="text-center">
+                <div id="Thankyoupopup" class="col-lg-6 col-md-6 col-sm-4  col-md-offset-3 pt-5 mt-5 mx-auto thankyouss"
+                    style="display:none;">
+                    <h3 class="text-center"> Thankyou for showing interest in HealthAssure Products.</h3>
+                    <p class="text-center pt-2"><b> Our advisor will contact you shortly. </b></p>
+                    <div class="col-md-12   mx-auto text-center">
+                        <button type="submit" data-dismiss="modal" onclick="closebuyplanpopup()" value="OK"
+                            class=" btn btn-success btn-class  pgreenbtn" id="button">
+                            Ok
+                        </button>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/buyplans.min.js"></script>
@@ -302,7 +352,7 @@
             return vars;
         }
         var Vars = getUrlVars();
-        var PTitle = Vars["PopupTitle"].replace("%20", " ");
+        var PTitle = Vars["PopupTitle"].replace("%20", " ").replace("%20", " ");
         $('#buyplanpopuptitle').html(PTitle);
         var CustomerPhone_val = null;
         //$('#buyplanpopuptitle1').html(PTitle);
@@ -417,7 +467,10 @@
             parent.postMessage("closebuyplanpopup", "*");
         }
         function userClosePaymentPopup() {
-            closebuyplanpopup();
+            $('#congratulationsdiv').hide();
+            $('#loadding').hide();
+            $('#buyplanformdiv').hide();
+            $('#Thankyoupopup').show();
         }
         function ShowLoding(flag = true) {
             if (flag) {
@@ -434,15 +487,10 @@
             var day = dtToday.getDate();
             var year = dtToday.getFullYear();
 
-
-
             if (month < 10)
                 month = '0' + month.toString();
             if (day < 10)
                 day = '0' + day.toString();
-
-
-
             var maxDate = year + '-' + month + '-' + day;
             $('#CustomerDOB').attr('max', maxDate);
         });
