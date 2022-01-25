@@ -4618,6 +4618,15 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+
 .banner{
     padding-top: 40px;
     margin-top: 130px;
