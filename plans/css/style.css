@@ -329,13 +329,35 @@ a:hover{
        }
 
 
+ .plancard1 {
+           
+            color:#000000;
+            background-color:#f2f1f6;
+            box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+            min-height: 180px;
+            padding: 5px;
+            margin:auto;
+           margin-top:10px;
+           text-align:left;
+           border-radius:6px;
+          
+        }
 
- 
+.plancard1 h1{
+
+           font-size:32px;
+           font-weight:500;
+           font-family: 'Poppins', sans-serif;
+}
 
 
-
-
-       .btn-o {
+.plancard1 h1 span{
+           color:#0f5fc2;
+           font-size:34px;
+           font-weight:600;
+           font-family: 'Poppins', sans-serif;
+}
+.btn-o {
             background-color: #f43f54;
             color: #fafafa;
         }
@@ -4434,6 +4456,26 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+.heppy-individual-floater{
+    background-image: url('../images/happy-individual-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+
+
+
+
 .banner{
     padding-top: 40px;
     margin-top: 130px;
@@ -4620,6 +4662,14 @@ a:hover{
 }
 .heppy-family-floater{
     background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+.heppy-individual-floater{
+    background-image: url('../images/happy-individual-floater-plan.jpg');
     background-repeat: no-repeat;
     background-position:100%;
     background-origin: border-box;
@@ -4850,6 +4900,27 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+.heppy-individual-floater{
+    background-image: url('../images/happy-individual-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+
+
+
+
+
 
 .banner{
     padding-top: 40px;
@@ -8354,6 +8425,36 @@ h4{color:#444}
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     text-decoration: none;
 }
+
+.brochure {
+    background: #0f5fc2;
+    color: #ffffff!important;
+  /*  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);*/
+    border-radius: 50px;
+    width: 250px;
+   font-weight: 700;
+   text-align: center;
+   padding:13px 10px 13px 10px;  
+   margin-left: 15px;
+}
+
+.brochure:hover{
+    background: #000000!important;
+    color: #fff!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+    padding:13px 10px 13px 10px;  
+    font-weight: 700;
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
 .btn2 {
     background: #0f5fc2;
     color: #ffffff!important;
