@@ -566,6 +566,15 @@ a:hover{
     border-color: #0f5fc2 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #0f5fc2;
 }
 
+#generic_price_table .generic_content .generic_head_price .generic_head_content .silver{
+    border-color: #b8bcc5 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #b8bcc5!important;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .gold{
+    border-color: #f7d000 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f7d000!important;
+}
+
+
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
     color: #ffffff;
 }
@@ -610,6 +619,19 @@ a:hover{
     color: #fff;
 }
 
+#generic_price_table .generic_content.active .generic_head_price .generic_head_content ,
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .silver{
+    border-color: #0a8943 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #0a8943!important;
+    color: #fff;
+}
+
+#generic_price_table .generic_content.active .generic_head_price .generic_head_content ,
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .gold{
+    border-color: #0a8943 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #0a8943!important;
+    color: #fff;
+}
+
+
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
 #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
     color: #fff;
@@ -645,6 +667,18 @@ a:hover{
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
+    border-style: solid;
+    border-width: 90px 1411px 23px 399px;
+    position: absolute;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .silver{
+    border-style: solid;
+    border-width: 90px 1411px 23px 399px;
+    position: absolute;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .gold{
     border-style: solid;
     border-width: 90px 1411px 23px 399px;
     position: absolute;
