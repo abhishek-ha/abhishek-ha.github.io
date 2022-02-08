@@ -1085,7 +1085,7 @@ a:hover{
  }
 
  .bbb_viewed_prev {
-     margin-right: 15px
+     margin-right: 15px;
  }
 
  .bbb_viewed_slider_container {
@@ -1477,6 +1477,14 @@ a:hover{
 .service4 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+}
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height:423px;
 }
 }
 
@@ -2976,6 +2984,18 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height:423px;
+}
+
+
+
+
 .banner{
     padding-top: 40px;
     padding-bottom:20px;
@@ -3643,6 +3663,19 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 500px;
+}
+
+
+
+
 .banner{
     padding-top: 40px;
  }
@@ -4034,6 +4067,16 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 650px;
+}
+
+
 .banner{
     padding-top: 40px;
      padding-bottom:35px;
@@ -4226,6 +4269,18 @@ a:hover{
      background-size: 100%;
 }
 
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 650px;
+}
+
+
+
+
 .banner{
     padding-top: 40px;
      padding-bottom:60px;
@@ -4302,6 +4357,17 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
+
+.heppy-family-floater{
+    background-image: url('../images/happy-family-floater-plan.jpg');
+    background-repeat: no-repeat;
+    background-position:100%;
+    background-origin: border-box;
+     background-size: 100%;
+       min-height: 725px;
+}
+
+
 
 .banner{
     padding-top: 40px;
@@ -4702,6 +4768,9 @@ a:hover{
      background-size: 100%;
        min-height: 725px;
 }
+
+
+
 .heppy-individual-floater{
     background-image: url('../images/happy-individual-floater-plan.jpg');
     background-repeat: no-repeat;
