@@ -285,9 +285,7 @@ a:hover{
             font-size: 90%;
         }
 
-
-
- .plancard {
+.plancard {
            
             color: #000000;
             background-color: #ffffff;
@@ -821,6 +819,7 @@ a:hover{
     -o-transition: all 0.3s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
+
 .text-left{
     text-align: left!important;
 }
