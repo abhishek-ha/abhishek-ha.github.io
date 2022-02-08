@@ -91,7 +91,7 @@
             <div class="row">
 
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xx-12">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center flex-row">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center flex-row" >
 
                         <div class="row">
                             <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
@@ -139,7 +139,7 @@
         </div>
     </section>
 
-    <section class="py-5 px-3 bg-lgrey  desk-hidden" id="generic_price_table">
+    <section class="py-5 px-3 bg-lgrey  desk-hidden" id="generic_price_table ">
        
         <div class="container">
             <div class="row">
@@ -205,7 +205,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="generic_feature_list">
+                        <div class="generic_feature_list" id="plan">
                             <ul>
                                 <li><span class="float-left"> Doctors on call </span><span
                                         class="float-right">Free</span> </li>
@@ -965,11 +965,11 @@
                                     <li><a href="https://healthassure.in/">Home</a></li>
                                     <li><a href="#plan">Plans</a></li>
                                     <!--  <li><a href="#">Health Shop</a></li> -->
-                                    <li> <a href="#contact">Contact</a>
+                                    <li> <a href="#"  onclick="advisorclick();">Contact</a>
                                     </li>
                                 </ul>
                                 <ul class=" ml-3 pl-7">
-                                    <li> <a href="https://healthassure.in/Register/AboutUs" target="_blank">About Us</a></li>
+                                    <li> <a href="https://haapp.healthassure.in/Register/AboutUs" target="_blank">About Us</a></li>
 
 
                                     <li><a href="https://healthassure.blog/" target="_blank">Blog</a></li>
@@ -1106,6 +1106,18 @@
                     $('#thankyoufirst').modal('toggle');
                 });
         });
+
+
+  function advisorclick() {
+            CallBackModalPopup('HomePage',false);
+            $('#Advisorformdiv').show();
+            $('#Advisormessagediv').hide();
+            $('#AdvisorPhone').val('');
+            $('#AdvisorName').val('');
+            $('#AdvisorEmail').val('');
+        }
+
+        
     </script>
 
 
