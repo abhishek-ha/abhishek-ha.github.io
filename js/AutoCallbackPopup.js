@@ -15,12 +15,12 @@ function getUrlVarsAutoPopUp(url = window.location.href) {
         "        <div class='modal-header'>" +
         "          <h5 class='modal-title'> </h5>" +
         "        <button type='button' class='btn' onclick='AutoCallbackPopupformclose()' data-bs-dismiss='modal'>X</button></div>" +
-        "        <div class='modal-body '><div class='row my-3 mx-3'>" +
+        "        <div class='modal-body '><div class='row my-1 mx-1'>" +
         "            <div class='col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12 '><img src='https://healthassure.in/images/Automodalpopup.png' class='img-fluid'></div>" +
         "	<div class='col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12'>" +
         "    <h2 class='modalhead'> Not Ready Yet ? </h2>" +
         "    <h4 class='pb-2'><b> Let us help you out</b></h4>" +
-        "     <form class='mb-5' id='AutoCallbackPopupform'>" +
+        "     <form class='mb-3' id='AutoCallbackPopupform'>" +
         "	<div class='form-group'><input type='text' class='form-control' autocomplete='off' id='AutoPopupName' placeholder='Name *' required></div>" +
         "	<div class='form-group'><input type='text' class='form-control' autocomplete='off' id='AutoPopupPhone'  placeholder='Phone *' pattern='[0123456789][0-9]{9}'' title='Please Enter Ten digits Number' maxlength='10' required></div>" +
         "	<div class='form-group'><input type='email' class='form-control' autocomplete='off' id='AutoPopupEmail' placeholder='Email *'  required></div>" +
