@@ -284,12 +284,8 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
-
-
- .plancard {
-           
-            color: #000000;
+    .plancard {
+           color: #000000;
             background-color: #ffffff;
             box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
             min-height: 190px;
@@ -303,10 +299,7 @@ a:hover{
            text-align:left;
         }
 
-
-
-
-      .plancard  img {
+ .plancard  img {
             width: 120px;
             background-color: rgba(74, 78, 238, 0.01);
             padding: 25px 25px 5px 25px;
@@ -1131,10 +1124,6 @@ a:hover{
 }*/
 
 
-
-
-
-
 @media only screen and (max-width: 350px){
  .pt-bnr {
     padding-top: 200px;
@@ -1420,13 +1409,8 @@ a:hover{
 .service-fiassure .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
-
-
-
-
-
-
 
 .servicebox{
      background-color:#fcfcfc;
@@ -1770,12 +1754,8 @@ a:hover{
 .service-fiassure .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
-
-
-
-
-
 .val{
     padding-top:10px;
 }
@@ -2037,14 +2017,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
-
 }
 
 
@@ -2295,14 +2267,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
-
 }
 
 
@@ -2567,14 +2531,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
-
 }
 
 
@@ -2726,11 +2682,8 @@ a:hover{
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
-  
-    padding:6px;
+  padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:365px;
@@ -2755,8 +2708,7 @@ a:hover{
     margin-top: 33px;
 }
 .service3{
-
-    padding:6px;
+   padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
    min-height:373px;
@@ -3054,13 +3006,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 
 }
 @media only screen and (min-width: 700px){
@@ -3342,14 +3287,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
-
 }
 
 @media only screen and (min-width: 750px){
@@ -3591,13 +3528,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 
 }
 
@@ -3737,12 +3667,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
 }
 
 
@@ -4066,12 +3990,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
 
 }
 
@@ -4278,13 +4196,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 }
 @media only screen and (min-width: 1000px){
 
@@ -4469,13 +4380,14 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:614px;
+    height:456px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:100%;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -4493,13 +4405,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 }
 
 @media only screen and (min-width: 1050px){
@@ -4810,10 +4715,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
 
 
 }
@@ -5029,10 +4930,6 @@ a:hover{
     margin-right:9px;
     cursor:pointer;
     margin-top:2px;
-}
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
 
 }
@@ -5253,14 +5150,14 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:438px;
+    height:440px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-    width: 100%;
+    width:500px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -5278,15 +5175,8 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
 
-
-
-
-   }
+ }
 
 
 @media only screen and (min-width: 1400px){
@@ -5503,14 +5393,15 @@ a:hover{
 
 
 .service-fiassure{
-     background-color:#fcfcfc;
-    height:614px;
+    background-color:#fcfcfc;
+    height:440px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:500px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -5528,13 +5419,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 }
 
 
@@ -5614,14 +5498,15 @@ a:hover{
 
 
 .service-fiassure{
-     background-color:#fcfcfc;
-    height:614px;
+    background-color:#fcfcfc;
+    height:440px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:500px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -5639,13 +5524,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 }
 
 
@@ -5832,14 +5710,15 @@ a:hover{
 }
 
 .service-fiassure{
-     background-color:#fcfcfc;
-    height:614px;
+    background-color:#fcfcfc;
+    height:440px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
+    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:500px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -5857,13 +5736,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
-
-
 }
 
 
@@ -6057,9 +5929,6 @@ a:hover{
     cursor: pointer;
     margin-top:62px;
 }
-
-
-
 .service-fiassure{
      background-color:#fcfcfc;
     height:614px;
@@ -6086,11 +5955,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
 }
 
 
@@ -6181,10 +6045,6 @@ a:hover{
     margin-right:9px;
     cursor:pointer;
     margin-top:2px;
-}
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
 
 }
@@ -6308,11 +6168,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-}
-
 }
 
 
