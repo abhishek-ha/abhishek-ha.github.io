@@ -18,7 +18,7 @@ function getUrlVarsAutoPopUp(url = window.location.href) {
         "        <div class='modal-body '><div class='row my-1 mx-1'>" +
         "            <div class='col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12 '><img src='https://healthassure.in/images/Automodalpopup.png' class='img-fluid'></div>" +
         "	<div class='col-xxl-6 col-xl-6 col-lg-6 col-md-16 col-sm-12'>" +
-        "    <h2 class='modalhead'> Not Ready Yet ? </h2>" +
+        "    <h2 class='modalhead text-center'> Not Ready Yet ? </h2>" +
         "    <h4 class='pb-2'><b> Let us help you out</b></h4>" +
         "     <form class='mb-3' id='AutoCallbackPopupform'>" +
         "	<div class='form-group'><input type='text' class='form-control' autocomplete='off' id='AutoPopupName' placeholder='Name *' required></div>" +
