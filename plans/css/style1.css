@@ -2087,7 +2087,7 @@ a:hover{
  }
 
 .startassu{
-    font-size:60px;
+    font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-bottom:20px;
@@ -5589,7 +5589,7 @@ a:hover{
  }
 
 .startassu{
-    font-size:50px;
+    font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
@@ -5711,7 +5711,6 @@ a:hover{
     cursor: pointer;
     margin-top:70%;
 }
-
 .service-fiassure{
     background-color:#fcfcfc;
     height:436px;
@@ -5751,8 +5750,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -5760,7 +5758,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -5769,7 +5766,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -5809,16 +5805,11 @@ a:hover{
 
 .startassu{
     font-size:40px;
-     font-weight:700!important;
-    font-family: 'Poppins', sans-serif;
+     
 }
-
-
-  .val{
+.val{
     padding-top:0px;
 }
-
-
 .service{
     background-color:#e6f3fa;
     padding:6px;
