@@ -1382,7 +1382,7 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:614px;
+    height:643px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1727,13 +1727,14 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:554px;
+    height:580px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+    width:100%;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -1991,15 +1992,15 @@ a:hover{
 }
 
 .service-fiassure{
-     background-color:#fcfcfc;
-    height:525px;
+    background-color:#fcfcfc;
+    height:559px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-    width:385px;
+    width:373px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
@@ -2242,7 +2243,7 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:525px;
+     height:559px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2506,7 +2507,7 @@ a:hover{
 
 .service-fiassure{
      background-color:#fcfcfc;
-    height:525px;
+   height:559px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3510,7 +3511,7 @@ a:hover{
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
-   width:385px;
+   width:410px;
 }
 .service-fiassure .buybtn{
    background-color:#0f5fc2;
