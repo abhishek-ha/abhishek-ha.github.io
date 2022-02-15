@@ -4987,7 +4987,7 @@ a:hover{
 .banner1{
     padding-top:25px;
      margin-top:120px;
-      padding-bottom:60px!important;
+     padding-bottom:15px!important;
  }
 .startassu{
     font-size:40px;
@@ -5230,7 +5230,7 @@ a:hover{
 .banner1{
     padding-top: 20px;
      margin-top: 120px;
-    padding-bottom:60px!important;
+    padding-bottom:10px!important;
  }
 .startassu{
     font-size:43px;
@@ -5479,6 +5479,7 @@ a:hover{
   .banner1{
     padding-top: 40px;
      margin-top: 90px;
+     
  }
 
 .startassu{
@@ -5586,6 +5587,7 @@ a:hover{
   .banner1{
     padding-top: 40px;
      margin-top: 90px;
+     padding-bottom:20px!important;
  }
 
 .startassu{
@@ -5801,6 +5803,7 @@ a:hover{
   .banner1{
     padding-top: 40px;
      margin-top: 90px;
+     padding-bottom:20px!important;
  }
 
 .startassu{
