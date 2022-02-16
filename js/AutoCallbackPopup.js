@@ -31,7 +31,7 @@ function getUrlVarsAutoPopUp(url = window.location.href) {
     $(document.body).click(function () {
         IsOpenHelpPopup = false;
     });
-    setTimeout(OpenHelpPopup, 8000);
+    setTimeout(OpenHelpPopup, 16000);
     function OpenHelpPopup() {
         if (IsOpenHelpPopup) {
             $('#AutoCallbackPopupModal').modal('show');
