@@ -11721,3 +11721,43 @@ button :focus {
 outline: 0;
 }
 
+
+.bluesec{
+    background-color:#0f5fc2;
+      border-top-right-radius: 20px;
+       border-top-left-radius:20px;
+}
+
+
+
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+           max-width:300px;
+        }
+      .benitem  img {
+            width: 90px;
+           padding: 5px 5px 5px 5px;
+           
+        }
+       .benitem p {
+            font-weight:400;
+            color: #ffffff;
+            font-size:20px;
+            text-align: center;
+            padding-top:25px;
+        }
+
+ .benitem p b {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 17px;
+            
+         }
+
+      .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
