@@ -11722,11 +11722,18 @@ outline: 0;
 }
 
 
+.bluesec1{
+    background-color:#4c7ffe;
+      border-radius:20px;
+    }
+
+
 .bluesec{
     background-color:#0f5fc2;
       border-top-right-radius: 20px;
        border-top-left-radius:20px;
 }
+
 
 
 
@@ -11761,3 +11768,39 @@ outline: 0;
             font-weight: 400;
             font-size: 90%;
         }
+
+
+
+
+.benitem1 img {
+    width:140px!important;}
+
+@media only screen and (max-width:750px ){
+    
+.benitem1{
+    text-align:center;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .benitem1 img {
+    width:140px!important;
+    padding: 5px 5px 5px 5px;
+    float:center;
+}
+    
+}
+
+@media only screen and (min-width: 751px) {
+    .benitem1 img {
+    width:140px!important;
+    padding: 5px 5px 5px 5px;
+    float:left;
+}
+    
+}
