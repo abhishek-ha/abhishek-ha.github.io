@@ -11721,22 +11721,15 @@ button :focus {
 outline: 0;
 }
 
-
 .bluesec1{
-    background-color:#4c7ffe;
+    background-color:#0f5fc2;
       border-radius:20px;
     }
-
-
 .bluesec{
     background-color:#0f5fc2;
       border-top-right-radius: 20px;
        border-top-left-radius:20px;
 }
-
-
-
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -11756,15 +11749,13 @@ outline: 0;
             text-align: center;
             padding-top:25px;
         }
-
- .benitem p b {
+   .benitem p b {
             font-weight: 600;
             color: #ffffff;
             font-size: 17px;
             
          }
-
-      .benitem  p.sub {
+    .benitem  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
@@ -11787,10 +11778,8 @@ outline: 0;
     width:140px!important;
     padding: 5px 5px 5px 5px;
     float:center;
+}    
 }
-    
-}
-
 @media only screen and (min-width: 751px) {
     .benitem1 img {
     width:140px!important;
@@ -11798,4 +11787,15 @@ outline: 0;
     float:left;
 }
     
+}
+.agent-about img {
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    box-shadow:0 0 30px rgb(255 255 255);
+}
+
+
+.card-title{
+    font-size:16px;
+    font-weight:600;
 }
