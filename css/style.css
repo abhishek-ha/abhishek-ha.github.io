@@ -11783,10 +11783,6 @@ outline: 0;
             font-weight: 400;
             font-size: 90%;
         }
-
-
-
-
 .benitem1 img {
     width:140px!important;}
 
@@ -11809,17 +11805,28 @@ outline: 0;
     width:140px!important;
     padding: 5px 5px 5px 5px;
     float:left;
-}
-    
+}    
 }
 .agent-about img {
     border-top-left-radius:15px;
     border-top-right-radius:15px;
     box-shadow:0 0 30px rgb(255 255 255);
 }
-
-
 .card-title{
     font-size:16px;
     font-weight:600;
+}
+
+
+@media only screen and (max-width:400px) {
+.strip1{
+    display: none;
+} 
+}
+
+@media only screen and (min-width:400px) {
+.strip2{
+    display:none;
+    
+}
 }
