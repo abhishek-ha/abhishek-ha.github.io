@@ -11274,23 +11274,16 @@ transform:translateY(-50%);}
      padding-top: 0;
      padding-bottom: 0;   
 }
-
-
-
 @media only screen (max-width: 768.50px){
  .navbar-light .navbar-brand {
      color: #2196F3;
      margin: auto;
 }
     }
-
-
-
- .navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
      color: #000000;
      font-weight: 500;
      font-size: 18px;
-
 }
  .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
      color: #1ebdc2;
@@ -11333,23 +11326,14 @@ transform:translateY(-50%);}
     text-decoration: none;
     background-color: #2196F3;
 }
-
-
 .navbar-expand-lg .navbar-nav .dropdown-menu{
      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
      width: 240px;
      }
-
 .dropdown-menu{
     margin-right: 20%!important;
 
 }
-
-
-
-
-
-
 .navbar-toggler{
     outline: none !important;
 }
@@ -11359,7 +11343,6 @@ transform:translateY(-50%);}
 .megamenu-li {
     position: static;
 }
-
 .megamenu {
     position: absolute;
     width: 100%;
@@ -11373,9 +11356,6 @@ transform:translateY(-50%);}
 .megamenu i{
     width: 20px;
 }
-
-
-
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -11429,8 +11409,6 @@ transform:translateY(-50%);}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
-
-
 }
 
 /* Add styles to the form container */
@@ -11493,17 +11471,12 @@ transform:translateY(-50%);}
     border-radius: 20px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 .wecare {
     color: #666;
     font-weight: 350;
     font-size: 17px;
     line-height: 30px;
 }
-
-
-
-
 .post-slide{
     overflow: hidden;
     margin-right: 15px;
@@ -11795,8 +11768,6 @@ outline: 0;
     font-size:16px;
     font-weight:600;
 }
-
-
 @media only screen and (max-width:400px) {
 .strip1{
     display: none;
@@ -11811,12 +11782,9 @@ outline: 0;
     height:488px;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
 }
-
 .agent ul li{
     font-weight:400;
 }
-
-
 
 #myBtn {
   display: none;
