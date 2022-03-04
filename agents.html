@@ -58,6 +58,8 @@
   font-size: 70px;
   color:transparent;
  }
+
+
 </style>
 </head>
   <body>
@@ -84,7 +86,7 @@
   <div class="container py-5">
         <div class="row pt-5">
 <div class="col-md-6 py-5">
-  <h1 class="head pt-6" style="font-size:30px; line-height:40px; font-weight:700;"><span> India's Largest Primary Care Network </span></h1> 
+  <h2 class="head pt-5" style="font-weight:700;color:#0f5fc2;"><span> India's Largest Primary Care Network </span></h2> 
     <!--  <h5 class="text-white"> The most rewarding program for insurance agents and their customers. </h5>  -->
      <h5 class="pt-4"> Grow Your  Business Limitlessly with HealthAssure Next Gen Agency Partner Program(ACE) </h5>
      <button class="btn btn-class border-blue px-4 mt-5" data-toggle="modal" data-target="#exampleModal"> Join Now </button>
@@ -269,7 +271,7 @@ care needs at a single entry point effectively and seamlessly. </b></p>
                             Connect <br> With our Exclusive<br> Community for Smart
                             Care
                         </h2>
-                        <a href="#" class="btn-class border-green connect mt-5" onclick="advisorclick();">Connect With Us</a>
+                        <a href="#" class="btn-class border-green connect mt-5" data-toggle="modal" data-target="#exampleModal">Connect With Us</a>
                     </div>
                 </div>
             </div>
@@ -342,27 +344,22 @@ care needs at a single entry point effectively and seamlessly. </b></p>
 
 
 
-<div class="container pt-7" id="explorebenefits">
+<!-- <div class="container pt-7" id="explorebenefits">
         <div class="row pt-2">
              <div class="col-12 text-center">
                         <h2 class="head"> Benefits of Associating with HealthAssure</h2>
                         <p class="subhead"> Get associated with us</p>
                         <div class="line"></div>
-    <!-- <p class="pt-3  mx-auto" >HealthAssure  ACE program is one of the fastest program in healthcare creating micro enterpreneurs,creating a eco-system where enterpreneurs can earn along with providing affordable healthcare to their network and loved ones.
-     HealthAssure provides instant service to people preexisting dieses upto 85 yeardsof age without discremnatetory pricing
-we cover all age groups at uniform price for all our services. </p> -->
-                    </div>
+                  </div>
        </div>
-
-<div class="row py-5">
+      <div class="row py-5">
     <div class=" col ">
 <div class="agent-circle  ">
      <img src="images/high-revenue1.png" class="img-fluid ">
   </div>
        <h2 class="head3 text-center pt-3"> High Revenue Sharing Model</h2>
 </div>
-
- <div class="col">
+<div class="col">
 <div class="agent-circle">
      <img src="images/personal-assistance1.png" class="img-fluid ">
    </div>
@@ -389,7 +386,7 @@ we cover all age groups at uniform price for all our services. </p> -->
 </div>
    
 </div>
- </div>
+ </div> -->
 
 
 <section  class="bggrey">
@@ -708,12 +705,8 @@ new business avenue's from exisiting customers.
  </div>
  <button type="submit" class="btn btn-class border-green btn-lg btn-block mx-auto">Submit</button>
 </form>
-
-             
-                
-            </div>
-            
-        </div>
+ </div>
+    </div>
 </div>
 
   
@@ -723,7 +716,7 @@ new business avenue's from exisiting customers.
 
 
 
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -753,6 +746,30 @@ $('.navbar-light .dmenu').hover(function () {
     });
 });
 
+</script>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 
 
