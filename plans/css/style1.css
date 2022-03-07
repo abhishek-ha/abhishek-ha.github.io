@@ -5006,7 +5006,7 @@ a:hover{
 
 .service-sod{
      background-color:#fcfcfc;
-    height:411px;
+    height:382px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9364,6 +9364,25 @@ h4{color:#444}
     margin:auto;
     border: 1px solid #0a8943;
 }
+
+
+.slider {
+    max-width: 164rem!important;
+    margin-bottom: 2rem;
+    padding: 1.3rem 16.5rem 6.3rem 16.5rem!important;
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 50.4%!important;
+    background-position: bottom 0px right 7.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
 
 
 
