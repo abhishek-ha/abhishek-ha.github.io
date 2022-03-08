@@ -254,8 +254,7 @@
         });
     }
 
-
-    $.fn.carousel = function (param) {
+ $.fn.carousel = function (param) {
         var config;
         var totalNum;
         var $target;
