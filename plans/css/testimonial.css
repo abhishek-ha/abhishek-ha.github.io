@@ -2,5 +2,39 @@
 
 
 
+@media only screen and (max-width:768px){
+.testimonial__text {
+    order: 1;
+    flex: initial;
+    margin-right: 0;
+    margin-top:4rem!important;
+    text-align: center;
+}
+.slider__buttons {
+    top:450px!important;
+}
+.slider{
+    background-size:80%!important;
+}
+}
+
+
+
+@media only screen and (max-width:350px){
+    .slider__slide {
+    flex: 1 0 100%;
+    margin-right: 17.5rem!important;
+    width:200px!important;
+}
+
+
+
+
+
+}
+
+
+
+
 
 
