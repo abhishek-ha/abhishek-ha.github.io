@@ -4432,6 +4432,8 @@ form.search-form-opened .btn.submit {
 .form-horizontal .form-group .form-control-static {
   margin-top: 1px;
 }
+
+
 .form-control {
   display: block;
   width: 100%;
@@ -9324,8 +9326,8 @@ input[type="checkbox" i]{
     color:#fff;
 }
 .login-form-2{
-    padding:8%;
-    background:#f3f6f7;
+    padding:4% 8%;
+    background:#ffffff;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-2 h3{
@@ -9363,3 +9365,11 @@ input[type="checkbox" i]{
 }
 
 
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ccc!important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
