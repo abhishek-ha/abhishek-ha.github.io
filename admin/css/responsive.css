@@ -339,7 +339,7 @@
 @media (min-width: 992px) {
   .sidemenu-closed.sidemenu-closed-hidelogo .page-header.navbar .page-logo {
     padding: 10px !important;
-    width: 45px;
+    width:50px;
   }
   .sidemenu-closed.sidemenu-closed-hidelogo
     .page-header.navbar
