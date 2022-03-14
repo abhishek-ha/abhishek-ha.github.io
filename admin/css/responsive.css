@@ -399,7 +399,8 @@
   }
   .sidemenu-closed .sidemenu-container,
   .sidemenu-closed .sidemenu-container .sidemenu.sidemenu-closed {
-    width: 45px !important;
+    width:50px !important;
+    height:100%;
   }
   .sidemenu-closed
     .sidemenu-container
