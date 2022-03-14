@@ -9363,9 +9363,6 @@ input[type="checkbox" i]{
 .modal.show .modal-dialog{
   margin-right:-20px;
 }
-
-
-
 .form-control:focus {
     color: #212529;
     background-color: #fff;
@@ -9373,3 +9370,92 @@ input[type="checkbox" i]{
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
+
+@media (min-width:900px) {
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index:100002; /* Sit on top */
+/*  padding-top:50px;*/ /* Location of the box */
+  left: 0;
+  top: 0;
+  width:40%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left:61.2%;
+  overflow:hidden;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:100%;
+  overflow:hidden;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} 
+  }
+
+
+
+  @media (max-width:899px) {
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top:50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ overflow:hidden;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:100%;
+  overflow:hidden;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+  }
+
