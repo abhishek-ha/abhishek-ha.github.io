@@ -9403,7 +9403,7 @@ input[type="checkbox" i]{
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size:35px;
   font-weight: bold;
 }
 .close:hover,
@@ -9456,6 +9456,12 @@ input[type="checkbox" i]{
   text-decoration: none;
   cursor: pointer;
 }
-  
-  }
+   }
+
+.sidebar h3{
+  font-size:18px!important;
+  font-weight:500!important;
+}
+
+
 
