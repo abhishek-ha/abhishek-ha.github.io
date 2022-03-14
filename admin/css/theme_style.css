@@ -9357,3 +9357,9 @@ input[type="checkbox" i]{
 .form-label{
   font-size:13px;
 }
+
+.modal.show .modal-dialog{
+  margin-right:-20px;
+}
+
+

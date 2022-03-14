@@ -32,6 +32,54 @@
 
 
 
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 40%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left:60%;
+  overflow-x: hidden;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width:100%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+
+
+
 </head>
 <!-- END HEAD -->
 
@@ -195,7 +243,7 @@
 										
 										</div>
 										<label for="Name" class="form-label pt-3">Case</label>
-<div class="col-lg-1 col-md-2 col-sm-3">
+                                      <div class="col-lg-1 col-md-2 col-sm-3">
 										
 										<label for="HC" class="form-label form-label1 px-2" >HC</label><input type="checkbox"  
 										placeholder="" >
@@ -209,7 +257,7 @@
 										 <label for="TN" class="form-label form-label1 px-2"> TN </label><input type="checkbox" placeholder="">
 										</div>
 
-<div class="col-lg-2 col-md-3 col-sm-4 ">
+                                      <div class="col-lg-2 col-md-3 col-sm-4 ">
 										<button class="btn btn-primary">Search </button> <button class="btn btn-light">Clear </button>
 										</div>
 									</div>
@@ -217,7 +265,7 @@
                    	<div class="card-head">
 									<header>DOCTORS LIST</header>
 									<div class="float-end " style="margin-right: 30px;">
-							<button class="btn btn-primary"><i class="fas fa-plus"></i>  Add Doctor</button>
+							<button class="btn btn-primary" id="myBtn"><i class="fas fa-plus"></i>  Add Doctor</button>
 										
 									</div>
 								</div>
@@ -241,7 +289,7 @@
 												
 		<tr>
 		<td><img src="img/doc/doc1.jpg" width="30px" class="img-circle"></td>
-		<td><a href="#">Avanish Kumar Shukla </a> </td>
+		<td><a href="#" >Avanish Kumar Shukla </a> </td>
 		<td>Jens Brincker</td>
 		<td> Hindi/English </td>
 		<td> Jens Brincker </td>
@@ -797,6 +845,112 @@
 			</div>
 		</div>
 		<!-- end footer -->
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+   <h3> Add Doctor </h3> <span class="close">&times;</span>
+  
+
+ <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"> Name</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"> Phone </label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+<div class="col-md-6">
+    <label for="inputEmail4" class="form-label"> Email </label>
+    <input type="email" class="form-control" >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label"> MCI No </label>
+    <input type="email" class="form-control" placeholder="MCI No" >
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Type </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+ 
+ <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Age </label>
+    <input type="password" class="form-control" placeholder="Age">
+  </div>
+
+
+ <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Practice Place </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+
+ <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Experience </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+
+   <div class="col-md-6">
+    <label for="inputPassword4" class="form-label"> Qualification </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+
+
+   <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Language </label>
+    <select class="form-select">
+    	<option> Hindi </option>
+    	<option> English </option>
+    	<option> Tamil </option>
+    	<option> Punjabi </option>
+    	<option> Gujrati </option>
+    	<option> Marathi </option>
+    	
+
+    </select>
+  </div>
+
+<div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Agency </label>
+    <select class="form-select">
+    	<option> Agency1 </option>
+    	<option> Agency2 </option>
+    	<option> Agency3 </option>
+    	<option> Agency4 </option>
+    	<option> Agency5 </option>
+    	<option> Agency6 </option>
+    	
+
+    </select>
+  </div>
+
+
+   <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">	Specilisation </label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+<div class="col-12">
+    <button type="submit" class="btn btn-primary"> Submit </button>
+  </div>
+</form>
+
+
+
+
+  </div>
+
+</div>
+
+
+
 	</div>
 	<!-- start js include path -->
 	<script src="assets/bundles/jquery/jquery.min.js"></script>
@@ -821,5 +975,37 @@
 	<script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
 	<script src="assets/data/apex-home.js"></script>
 	<!-- end js include path -->
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
 </body>
 </html>
