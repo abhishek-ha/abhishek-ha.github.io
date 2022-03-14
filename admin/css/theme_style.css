@@ -9351,7 +9351,9 @@ input[type="checkbox" i]{
     text-decoration:none;
     color:#6777ef;
 }
-
 .form-label1{
   vertical-align: middle!important;
+}
+.form-label{
+  font-size:13px;
 }
