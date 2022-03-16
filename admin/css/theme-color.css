@@ -290,7 +290,7 @@
 
 /* White sidebar color */
 .white-sidebar-color .sidemenu-container {
-  background-color:#030518;
+  background-color:#32374a;
 }
 .white-sidebar-color .sidemenu-container .sidemenu > li.active.open > a,
 .white-sidebar-color .sidemenu-container .sidemenu > li.active > a,
@@ -306,9 +306,10 @@
   .sidemenu
   > li.active
   > a {
-  background-color: #f4f6f9;
+  background-color:#252939;
   border-top-color: transparent;
-  color: #4680ff;
+  color: #ffffff;
+  border-color: #528ff0;
 }
 /* .white-sidebar-color .sidemenu-container .sidemenu>li>a{
 	color: #555;
@@ -331,7 +332,7 @@
   > a {
   background-color: #f4f6f9;
   border-top-color: transparent;
-  color: #4680ff;
+  color: #555;
 }
 .white-sidebar-color .user-panel,
 .white-sidebar-color .txtOnline,
@@ -2072,7 +2073,7 @@
   background: #1880c9;
 }
 .logo-indigo .page-header.navbar .page-logo {
-  background: #6673fc;
+  background: #2e3345;
 }
 .logo-cyan .page-header.navbar .page-logo {
   background: #4abad2;
