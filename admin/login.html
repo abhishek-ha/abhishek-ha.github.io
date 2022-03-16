@@ -28,30 +28,41 @@
 	<link href="css/theme-color.css" rel="stylesheet" type="text/css" />
     <!-- favicon -->
 	<link rel="shortcut icon" href="image/favicon.png">
+
+<style type="text/css">
+	body{
+		background-color:#ffffff;
+	}
+
+	label{
+		font-size:14px;
+		margin-bottom:8px;
+	}
+	</style>
 </head>
 
 <body>
-	<div class="container-login100 page-background"> 
-      <div class="container login-container">
+<section > 
+<div class="container login-container">
             <div class="row">
-                <div class="col-md-6 login-form-2 mx-auto">
+                <div class="col-md-4  mx-auto">
                     <div class="text-center">
-                    <img src="image/logo.png" style="width:250px;">	
+                    <img src="image/logo.png" class="py-4" style="width:230px;">	
                     </div>
                     
-                    <h2 class="text-center py-3"><b> Login </b></h2>
-<form>
+                    <h3 class="text-center py-3"> Sign in to HealthAssure </h3>
+<form class="login-form-2">
 
                         <div class="form-group">
-                        	<label for="Your Email">Email</label>
-                            <input type="email" class="form-control" placeholder=" Email *" value="" required />
+                        	<label for="Your Email"> Username or email address</label>
+                            <input type="email" class="form-control" placeholder=" Username or email address *" value="" required />
                         </div>
                         <div class="form-group">
                         	<label for="Your Email"> Password </label>
                             <input type="password" class="form-control" placeholder="Password" value="" required />
                         </div>
                         <div class="form-group text-center">
-                            <a href="index.html"><input type="submit" class="btn btn-primary px-4 py-2" value="Login" /> </a>
+                            <a href="index.html"><input type="submit" class="btn btn-success btn-block px-4 py-2 w-100" value="Login" /> </a>
                         </div>
 
                         </form>
@@ -59,12 +70,19 @@
                         <div class="form-group text-center">
                          <a href="reset.html" class="btnForgetPwd" value="Login">Forget Password?</a>
                         </div>
-                    </form>
+                  
                 </div>
             </div>
         </div>
 
-</div>
+
+
+
+</section>
+
+	
+    
+
 
 
 	<!-- start js include path -->
