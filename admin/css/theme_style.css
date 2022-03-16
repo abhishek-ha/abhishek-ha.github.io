@@ -4453,7 +4453,7 @@ form.search-form-opened .btn.submit {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   outline: 0 !important;
-  box-shadow: none !important;
+ /* box-shadow: none !important;*/
 }
 select[multiple],
 select[size],
@@ -9281,11 +9281,10 @@ input[type="checkbox" i]{
   padding-top:8px;
 }
 
-
-
 .login-container{
-    margin-top: 5%;
-    margin-bottom: 5%;
+  padding-top:5%;
+  /*  margin-top: 5%;*/
+   /* margin-bottom: 5%;*/
 }
 .login-logo{
     position: relative;
@@ -9361,10 +9360,11 @@ input[type="checkbox" i]{
 .modal.show .modal-dialog{
   margin-right:-20px;
 }
+
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border: 1px solid #ccc!important;
+    border: 1px solid #6777ef!important;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
