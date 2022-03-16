@@ -3151,8 +3151,8 @@ form.search-form-opened .btn.submit {
   > li
   > a
   > i {
-  font-size: 18px;
-  margin-right: 5px;
+  font-size: 20px;
+  margin-right: 10px;
   text-shadow: none;
   float: left;
   line-height: 24px;
@@ -9282,7 +9282,7 @@ input[type="checkbox" i]{
 }
 
 .login-container{
-  padding-top:5%;
+  padding-top:1.5%;
   /*  margin-top: 5%;*/
    /* margin-bottom: 5%;*/
 }
@@ -9457,6 +9457,11 @@ input[type="checkbox" i]{
   font-size:18px!important;
   font-weight:500!important;
   margin:6px 5px!important;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #f9f9f9;
 }
 
 
