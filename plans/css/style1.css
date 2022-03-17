@@ -52,7 +52,8 @@ a:hover{
             width: 190px;
             padding-top:20px;
         }
-        .text-blue {
+
+  .text-blue {
             color: #448aff;
         }
        .f-poppins {
@@ -398,6 +399,12 @@ a:hover{
                 padding: 20px 20px 0px 02px;
             }
 
+
+             .logo1 {
+                width:170px;
+                padding: 20px 20px 0px 02px;
+            }
+
             .item3 {
                 font-size: 85%;
                  margin: 8px;
@@ -422,6 +429,13 @@ a:hover{
     padding-bottom:6rem!important;
 }
 
+
+@media only screen and (min-width:601px){
+      .logo1 {
+                width:200px;
+                padding: 20px 20px 0px 02px;
+            }
+}
 
 
 
