@@ -4748,7 +4748,21 @@ body[ng-controller] .modal {
   -o-border-radius: 2px;
   border-radius: 2px;
   border: 0;
+    animation: fadeInRight 1s ease-in-out;
 }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 .modal .modal-content .modal-title {
   font-weight: 400;
 }
