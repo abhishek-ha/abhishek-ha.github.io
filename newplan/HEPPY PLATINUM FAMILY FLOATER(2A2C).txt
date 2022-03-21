@@ -1,0 +1,239 @@
+
+
+
+<div align="center" style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";">
+    <table style="border: none;">
+        <tbody>
+            <tr>
+                <td style="padding:.75pt .75pt .75pt .75pt;">
+                    <div align="center" style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";">
+                        <table style="border: none;width:100.0%;">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">
+										
+										<span style="font-size:16px;font-family:"Times New Roman","serif";">
+										<img width="602" src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardimg_2020.jpg" alt="image">
+										</span></p>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td style="width:99.32%;padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">
+										<img width="174" src="https://live.healthassure.in/Products/images/Emailer/healthpass_emailer_05_02.jpg" align="right" alt="image" style="float: right; text-align: right; display: inline-block; "><strong><span style="font-size:16px;font-family:"Times New Roman","serif";color:#257FAB;">
+										<p style="margin: 0cm 0cm 0.0001pt; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif;"><span style="font-size: 16px; font-family: "Times New Roman", serif;">Dear&nbsp;<span style="color: rgb(83, 144, 30);">[CUSTOMERNAME],</span></span></p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<p style="margin: 0cm 0cm 10pt; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif;"><span style="font-size: 16px; font-family: "Times New Roman", serif;">Greetings from HealthAssure!</span><br>
+                                        </p>
+                                        <p style="margin: 0cm 0cm 10pt; line-height: normal; font-size: 15px; font-family: Calibri, sans-serif;"><span style="font-size: 16px; font-family: "Times New Roman", serif;">Congratulations !!</span><br>
+                                        </p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">Your&nbsp;</span><strong><span style="font-family:Nunito;color:black;">HEPPY PLATINUM FAMILY&nbsp;</span></strong><span style="font-size:16px;font-family:"Times New Roman","serif";">Plan from <strong> HealthAssure is active.&nbsp;</strong></span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></strong></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">You&nbsp;may access your plan &amp; avail services using the below Login credentials:&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></p>
+                                        <table style="border: none;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:.75pt .75pt .75pt .75pt;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";color:#60A1C1;">UserName: [USERNAME]<br>&nbsp;<br>&nbsp;Password: [PASSWORD]</span></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";"><br>&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">Your&nbsp;</span><strong><span style="font-family:Nunito;color:black;">HEPPY PLATINUM FAMILY</span></strong><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;plan includes benefits as mentioned below:</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></p>
+                                        <table style="border-collapse:collapse;border:none;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 37.8pt;border: 1pt solid windowtext;background: rgb(0, 32, 96);padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:white; font-size:16px;font-family:"Times New Roman","serif";">
+S.No</span></p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;background: rgb(0, 32, 96);padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:white; font-size:16px;font-family:"Times New Roman","serif";">
+Services</span></p>
+                                                    </td>
+                                                    <td style="width: 212.65pt;border-top: 1pt solid windowtext;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-image: initial;border-left: none;background: rgb(0, 32, 96);padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:white; font-size:16px;font-family:"Times New Roman","serif";">
+Benefits included</span></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">1</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Tele Doctor Consultations</span></strong></p>
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:#333333;">- General Practitioners</span></p>
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:#333333;">- Ayurveda</span></p>
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:#333333;">- Homeopathy</span></p>
+                                                        
+                                                    </td>
+                                                    <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">Unlimited</p>
+                                                    </td>
+                                                    
+                                                </tr>
+                            
+                                                             <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">2</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Diagnostic Flexi Wallet</span></strong></p>
+                                                    </td>
+                                                    <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">INR 7500</p>
+                                                    </td>
+                                                
+                                                <tr>
+                                                    <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">3</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Pharmacy Flexi wallet</span></strong></p>
+                                                    </td>
+                                                   <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">INR 2500</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr>
+                                                    <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">4</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Doctor Consultation GP (Face-to-Face)</span></strong></p>
+                                                    </td>
+                                                   <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">Unlimited</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">5</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Specialist Consultations</span></strong></p>
+                                                    </td>
+                                                    <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">4 Credits</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 37.8pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";">6</p>
+                                                    </td>
+                                                    <td style="width: 191.35pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="color:#333333;">Fitness Coach</span></strong></p>
+                                                    </td>
+                                                    <td style="width: 212.65pt;border-top: none;border-left: none;border-bottom: 1pt solid windowtext;border-right: 1pt solid windowtext;padding: 0cm 5.4pt;vertical-align: top;">
+                                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="color:#333333;">Unlimited</span></p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">You can avail above services only for <strong>&ldquo;Self&rdquo;&amp; Three &ldquo;Dependents&rdquo;</strong></span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></strong></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";"><strong><span style="font-size:16px;line-height:107%;font-family:"Times New Roman","serif";">Terms &amp; Conditions &ndash;&nbsp;</span></strong><a href="https://live.healthassure.in/Products/Files/KEY_TERMS_CONDITIONS_HA.pdf" target="_blank" title="https://live.healthassure.in/products//files/key_terms_conditions_ha.pdf"><span style="font-family:"Segoe UI","sans-serif";">https://live.healthassure.in/Products//Files/KEY_TERMS_CONDITIONS_HA.pdf</span></a></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";">You can also send an email at support@healthassure.in or call us at 022-61676633 for assistance / support requirement.</span></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:.75pt .75pt .75pt .75pt;">
+                    <div align="center" style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";">
+                        <table style="border: none;">
+                            <tbody>
+                            <p style="margin-top:0cm;margin-right:0cm;margin-bottom:    .0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";text-align:center;"><strong><span style="font-size:16px;font-family:"Times New Roman","serif";">How to avail the services?</span></strong></p>
+                                <tr>  <td colspan="9">  <br>  <font color="#257FAB">Click on the login button to access your account and experience  <br>  HealthAssure today!  </font>  </td>  <td colspan="3" align="center">  <a href="https://www.healthassure.in/Products"><img height="40px" width="100px" src="https://www.healthassure.in/Products/images/Emailer/login.png"></a>  </td>  </tr>
+                                <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;"><br></td>
+                                </tr>
+                                <tr>  <td colspan="9">  <font color="#4392AD" size="4px"><b>DOWNLOAD THE&nbsp;</b></font><b><font color="#679048" size="4px"><b>HEALTHASSURE APP&nbsp;</b></font><b><font color="#4392AD" size="4px"><b>NOW!</b>  <br>  For Android user <a href="https://play.google.com/store/apps/details?id=com.healthassure"></a></font><a href="https://play.google.com/store/apps/details?id=com.healthassure"><font color="#233BED">Click here.</font></a>   <br>  <font color="#4392AD">For IOS user <a href="https://itunes.apple.com/in/app/healthpass-doctors-health/id1397803100?mt=8"></a></font><a href="https://itunes.apple.com/in/app/healthpass-doctors-health/id1397803100?mt=8"><font color="#233BED">Click here.</font></a><font color="#233BED">  <br>  </font>  </b></b></td>  <td colspan="3" align="center">  <a href="https://play.google.com/store/apps/details?id=com.healthassure"><img src="https://www.healthassure.in/Products/images/Emailer/googleplay.png" width="114" height="40" alt=""></a>  <br>  <a href="https://itunes.apple.com/in/app/healthpass-doctors-health/id1397803100?mt=8"><img src="https://www.healthassure.in/Products/images/Emailer/appleicon.png" width="114" height="40" alt=""></a>  <br>  </td>  </tr>
+                                
+                                
+                                <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;"><br></td>
+                                </tr>
+
+<tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:16px;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">For any assistance, please write to us @&nbsp;</span><a href="mailto:support@healthassure.in" target="_other"><span style="font-size:16px;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;">support@healthassure.in</span></a><span style="font-size:16px;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">&nbsp;or call us @ 022-61676633(Mon-Sat, 8am to 6pm)</span></p>
+                                    </td>
+                                </tr>
+                                
+                                
+                                
+                                
+
+<tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:16px;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">&nbsp;</span></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><strong><span style="font-size:16px;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">User Guide</span></strong><span style="font-size:16px;line-height:107%;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">: Kindly click on the below link/here to know how to use the HA app to avail the services -&nbsp;</span><a href="https://www.youtube.com/watch?v=rtUcjxAdjkI" target="_blank" title="https://www.youtube.com/watch?v=rtucjxadjki"><span style="font-size:14px;line-height:107%;font-family:&quot;Segoe UI&quot;,&quot;sans-serif&quot;;">https://www.youtube.com/watch?v=rtUcjxAdjkI</span></a></p>
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:16px;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;color:#3A88AB;">&nbsp;</span></p>
+                                    </td>
+                                </tr>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";"><br> <strong><span style="color:#4392AD;">What&nbsp;</span><span style="color:#679048;">HEALTHASSURE&nbsp;</span><span style="color:#4392AD;">Also Offers</span></strong></span></p>
+                                    </td>
+                                </tr>
+                                
+                               <tr>  <td colspan="1" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon1.png"><br><font color="#4392AD"><b>DIAGNOSTICS</b></font></td>  <td colspan="2" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon2.png"><br><font color="#4392AD"><b>DOCTOR</b></font></td>  <td colspan="2" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon3.png"><br><font color="#4392AD"><b>OPHTHAL</b></font></td>  <td colspan="2" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon4.png"><br><font color="#4392AD"><b>GYNAEC</b></font></td>  <td colspan="2" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon5.png"><br><font color="#4392AD"><b>DENTAL</b></font></td>  <td colspan="2" align="center"><img src="https://www.healthassure.in/Products/images/Emailer/EmailerEdwardicon6.png"><br><font color="#4392AD"><b>TELE-DOCTOR</b></font></td>  </tr> 
+								
+                                
+                                
+                                
+                                
+                                
+							   <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";"><br> <strong><span style="color:#4392AD;">Access a range of&nbsp;</span></strong><span style="color:#679048;">Healthcare Services and more&hellip;</span></span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;">
+                                        <p style="margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;margin-left:0cm;line-height:normal;font-size:15px;font-family:"Calibri","sans-serif";"><span style="font-size:16px;font-family:"Times New Roman","serif";"><br>&nbsp;</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" style="background:#4392AD;padding:.75pt .75pt .75pt .75pt;"><br></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" style="padding:.75pt .75pt .75pt .75pt;"><br></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                    <td style="border:none;"><br></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p style="margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";">&nbsp;</p>
+
