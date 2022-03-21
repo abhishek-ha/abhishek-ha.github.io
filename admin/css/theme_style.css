@@ -9458,8 +9458,6 @@ input[type="checkbox" i]{
   font-weight:500!important;
   margin:6px 5px!important;
 }
-
-
 .table-striped>tbody>tr:nth-of-type(odd) {
     --bs-table-accent-bg: #f9f9f9;
 }

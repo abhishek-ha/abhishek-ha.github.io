@@ -3393,3 +3393,25 @@
 .header-green .navbar-custom {
   background: #33b76e;
 }
+
+label{
+  font-size:13px;
+  margin-bottom:5px!important;
+  color:#212529!important;
+  }
+::placeholder {
+  color:color:#212529!important;
+  opacity: 1; /* Firefox */
+}
+input::-webkit-input-placeholder {
+color:color:#212529!important;
+}
+ input:-moz-placeholder { /* Firefox 18- */
+color:color:#212529!important;  
+}
+ input::-moz-placeholder {  /* Firefox 19+ */
+color:color:#212529!important;  
+}
+ input:-ms-input-placeholder {  
+color:color:#212529!important;  
+}
