@@ -4748,7 +4748,7 @@ body[ng-controller] .modal {
   -o-border-radius: 2px;
   border-radius: 2px;
   border: 0;
-    animation: fadeInRight 1s ease-in-out;
+  /*animation: fadeInRight 1s ease-in-out;*/
 }
 
 @keyframes fadeInRight {
