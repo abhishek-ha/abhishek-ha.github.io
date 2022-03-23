@@ -10376,7 +10376,15 @@ h4{color:#444}
     height: 58%!important;
 }
 
-
+@media only screen and (max-width:400px) {
+.strip1{
+    display: none;
+} 
+}
+@media only screen and (min-width:400px) {
+.strip2{
+    display:none;  
+}
 
 
 
