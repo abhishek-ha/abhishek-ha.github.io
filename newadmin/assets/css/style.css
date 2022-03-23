@@ -14,3 +14,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .main-menu .navbar-header .navbar-brand .brand-logo img {
     max-width: 20px;
 }
+.demo-inline-spacing>* {
+    margin-right: 1.5rem;
+    margin-top:0px;
+}
