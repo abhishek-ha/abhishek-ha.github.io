@@ -18,3 +18,46 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     margin-right: 1.5rem;
     margin-top:0px;
 }
+
+.form-control {
+    display: block;
+    padding: 0.571rem 1rem;
+    font-size: 1rem;
+    background-clip: padding-box;
+    border: 1px solid #c2bfcb;
+    appearance: none;
+    border-radius: 0.357rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-select {
+    display: block;
+    -moz-padding-start: calc(1rem - 3px);
+    color: #6E6B7B;
+    background-color: #FFF;
+    background-image: url(data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%23d8d6de\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-down\'%3e%3cpolyline points=\'6 9 12 15 18 9\'%3e%3c/polyline%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 15px 14px;
+    border: 1px solid #c2bfcb;
+    border-radius: 0.357rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    appearance: none;
+}
+
+.form-check-input {
+    width: 1.285rem;
+    height: 1.285rem;
+    margin-top: 0.0825rem;
+    vertical-align: top;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #c2bfcb;
+    appearance: none;
+    -webkit-print-color-adjust:exact;
+    color-adjust: exact;
+}
