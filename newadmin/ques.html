@@ -81,7 +81,7 @@
       <div class="shadow-bottom"></div>
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-        <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard </span></a>
+<li class=" nav-item"><a class="d-flex align-items-center" href="doctor-dashboard.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard </span></a>
           </li>
         <li class=" nav-item"><a class="d-flex align-items-center" href="ques.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Ques </span></a>
           </li>
@@ -734,10 +734,8 @@
     <script src="app-assets/js/scripts/pages/modal-edit-user.min.js"></script>
     <script src="app-assets/js/scripts/pages/app-user-view-account.min.js"></script>
     <script src="app-assets/js/scripts/pages/app-user-view.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
-        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+ <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
     <!-- END: Page JS-->
  <script>
@@ -750,7 +748,9 @@
 
     <script >
 $(document).ready(function() {
-    $('#example').DataTable();
+    $('#example').DataTable( {
+        "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
+    } );
 } );
  </script>
 </body>

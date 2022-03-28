@@ -1,14 +1,10 @@
 /*================================================================================
 	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-	Version: 2.0
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
-================================================================================
-
 NOTE:
 ------
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
 
 
 .main-menu .navbar-header .navbar-brand .brand-logo img {
@@ -18,7 +14,6 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     margin-right: 1.5rem;
     margin-top:0px;
 }
-
 .form-control {
     display: block;
     padding: 0.571rem 1rem;
@@ -30,7 +25,6 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 .form-select {
     display: block;
     -moz-padding-start: calc(1rem - 3px);
@@ -46,7 +40,6 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     appearance: none;
 }
-
 .form-check-input {
     width: 1.285rem;
     height: 1.285rem;
@@ -73,10 +66,41 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     transition: all .2s;
     z-index: 1;
 }
-
-
 @media (min-width: 576px){
 .modal-slide-in .modal-dialog.sidebar-lg {
     width: 35rem;
 }
 }
+@media (min-width: 1200px){
+.h2, h2 {
+    font-size:19px;
+}
+}
+ .count{
+    font-weight:600;
+    font-size:16px;
+    color: #7367f0;
+ }
+.navigation {
+    font-size: 1.1rem;
+    font-family: Montserrat,Helvetica,Arial,serif;
+    font-weight:450;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+}
+
+p{
+    font-size:13px;
+}
+
+p a {
+    font-size:13px;
+}
+
+/*.card:hover {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px 0 #ebe9f1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    z-index: 1;
+}*/

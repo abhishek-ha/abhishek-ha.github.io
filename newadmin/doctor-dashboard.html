@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title> Doctor Dashboard | HealthAssure </title>
+
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.html">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/favicon.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/semi-dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/charts/chart-apex.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.min.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+<!-- <style>
+  body{
+    font-family: 'Noto Sans', sans-serif;
+  }
+</style> -->
+
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+ 
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+      <div class="navbar-container d-flex content">
+        <div class="bookmark-wrapper d-flex align-items-center">
+          <ul class="nav navbar-nav d-xl-none">
+            <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon" data-feather="menu"></i></a></li>
+          </ul>
+       </div>
+        <ul class="nav navbar-nav align-items-center ms-auto">
+        <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">Avanish Shukla </span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a class="dropdown-item" href="doctor-profile.html"><i class="me-50" data-feather="user"></i> Profile</a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="me-50" data-feather="settings"></i> Settings</a>
+              <a class="dropdown-item" href="login.html"><i class="me-50" data-feather="power"></i> Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+  <!-- END: Header-->
+  <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item me-auto"><a class="navbar-brand" href="index.html"><span class="brand-logo">
+            <img src="app-assets/images/favicon.png">
+                </span>
+              <h2 class="brand-text">HealthAssure</h2></a></li>
+          <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+<li class=" nav-item"><a class="d-flex align-items-center" href="doctor-dashboard.html"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard </span></a>
+          </li>
+        <li class=" nav-item"><a class="d-flex align-items-center" href="ques.html"><i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">Ques </span></a>
+          </li>
+    </ul>
+      </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+      <div class="content-overlay"></div>
+      <div class="header-navbar-shadow"></div>
+      <div class="content-wrapper container-xxl p-0">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+<section id="dashboard-ecommerce">
+       <!-- Stats Horizontal Card -->
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 col-12 ">
+      <div class="card ">
+        <div class="card-header">
+<div class="avatar bg-light-primary p-50 m-0">
+            <div class="avatar-content">
+              <i class="fas fa-2x fa-user-md"></i>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="fw-bolder mb-0">Total Patients</h2>
+            <p class="count">1000+</p>
+            <p class="card-text">Till Today </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-header">
+           <div class="avatar bg-light-success p-50 m-0">
+            <div class="avatar-content">
+             <i class="fas fa-2x  fa-file-medical text-primary"></i>
+            </div>
+          </div>
+          <div>
+            <h2 class="fw-bolder mb-0">Today Patients</h2>
+             <p class="count">12+</p>
+            <p class="card-text"> 25 March 2022 </p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+ <div class="col-lg-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-header">
+           <div class="avatar bg-light-success p-50 m-0">
+            <div class="avatar-content">
+              <i class="fas fa-2x fa-clock text-primary"></i>
+            </div>
+          </div>
+          <div>
+            <h2 class="fw-bolder mb-0">Today Appoinments </h2>
+             <p class="count">18+</p>
+            <p class="card-text"> 25 March 2022 </p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+ <!-- Donut Chart Starts-->
+    <div class="col-xl-4 col-12">
+      <div class="card">
+        <div class="card-header flex-column align-items-start">
+          <h4 class="card-title mb-75">Patients Summary </h4>
+         <!--  <span class="card-subtitle text-muted">Spending on various categories </span> -->
+        </div>
+        <div class="card-body">
+          <div id="donut-chart"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Donut Chart Ends-->
+
+
+     <!-- Donut Chart Starts-->
+    <div class="col-xl-8 col-12">
+      <div class="card" >
+        <div class="row">
+                  <!-- Transaction Card -->
+    <div class="col-lg-6 col-md-6 col-12 mt-2 ">
+      <div class="card card-transaction">
+      <div class="card-body bg-light rounded py-1">
+        <h4 class="card-title">Today Appoinments</h4>
+           <div class="row">
+            <div class="col-lg-8">
+              <p><b> Name/Diagnosis </b> </p>
+           </div>
+             <div class="col-lg-4">
+              <p><b> Time </b> </p>
+           </div>
+         </div>
+
+ <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b> Sameer </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> OnGoing </a></b> </p>
+           </div>
+          </div>
+
+           <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b> Neelmani </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+                <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> 12:30 PM </a></b> </p>
+           </div>
+          </div>
+           <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b> Pritam </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+               <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> 12:45 PM </a></b> </p>
+           </div>
+          </div>
+          <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b> Atul </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+                 <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> 1:50 PM </a></b> </p>
+           </div>
+          </div>
+       <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b> Vivek </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+             <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> 1:55 PM </a></b> </p>
+           </div>
+          </div>
+          <div class="row">
+         <div class="col-lg-8">
+              <p><a href="#"><b>Vivek Kumar </b> </a> <br> <span> Health Checkup </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p style="background-color:#cbd6f4; padding:4px;"><b><a href="#"> 2:10 PM </a></b></p>
+           </div>
+          </div>
+          </div>
+      </div>
+    </div>
+ <div class="col-lg-6 col-md-6 col-12 mt-2">
+      <div class="card card-transaction">
+        <div class="card-body bg-light rounded py-1 pb-2">
+       <h4 class="card-title">Next Patient Details </h4>
+         <div class="row">
+            <div class="col-lg-2">
+               <div class="avatar bg-light-primary circle float-start">
+                <div class="avatar-content">
+                  <i class="fas fa-2x fa-user text-primary"></i>
+                </div>
+              </div>
+           </div>
+            <div class="col-lg-6">
+              <p><b><a href="#"> Ramesh </a> </b><br> Health Checkup</p>
+
+           </div>
+             <div class="col-lg-4">
+              <p><b> Patient Id </b><br> 3830475 </p>
+           </div>
+         </div>
+
+ <div class="row">
+         <div class="col-lg-4">
+              <p><a href="#"><b> DOB </b> </a> <br> <span> 01/07/1990 </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p><b> Sex </b><br> <span> Male </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p><b> Weight </b><br> <span> 96 Kg </span> </p>
+           </div>
+          </div>
+          <div class="row">
+         <div class="col-lg-4">
+              <p><a href="#"><b>Last App </b> </a> <br> <span>15 Jan </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p><b>Height </b><br> <span>172 cm </span> </p>
+           </div>
+            <div class="col-lg-4">
+              <p><b>Reg Date </b><br> <span>1 Jan 2020 </span> </p>
+           </div>
+          </div>
+      <div class="row">
+            <h5> <b><a href=""> Patient History </a></b></h5>
+         <div class="col-lg-12 ">
+             <button class="btn btn-outline-warning btn-sm" style="font-size:12px;">Asthma </button>
+        <button class="btn btn-outline-primary btn-sm"style="font-size:12px;">Hypertension</button>
+          <button class="btn btn-outline-info btn-sm"style="font-size:12px;">Fever </button>
+           </div>
+          </div>
+      <div class="row pt-1">
+        <div class="col-lg-12 ">
+             <button class="btn btn-primary btn-sm" style="font-size:12px;"><i class="fas fa-phone-alt"></i> +9112345678 </button>
+        <button class="btn btn-outline-primary btn-sm"style="font-size:12px;"><i class="far fa-folder"></i> Documents</button>
+          <button class="btn btn-outline-primary btn-sm mt-1"style="font-size:12px;"><i class="far fa-comment"></i> Chat </button>
+           </div>
+          </div>
+         <div class="row pt-1">
+        <div class="col-lg-12 ">
+    <p><b> <a href="#">Last Prescriptions</a> </b></p>
+          </div>
+          </div>
+       </div>
+      </div>
+    </div>
+</div>
+     </div>
+    </div>
+    <!-- Donut Chart Ends-->
+
+
+
+ <div class="col-xl-12 col-12">
+      <div class="card" >
+        <div class="row">
+
+<div class="col-lg-6 col-md-6 col-12 mt-2">
+      <div class="card card-transaction">
+        <div class="card-body bg-light rounded py-1">
+       <h4 class="card-title">Patients Review </h4>
+         <div class="row">
+
+          <div class="row avg-sessions pt-50">
+            <div class="col-12">
+              <p class="mb-50"> Excellent </p>
+              <div class="progress progress-bar-primary" style="height: 6px">
+  <div class="progress-bar" role="progressbar" aria-valuenow="50"aria-valuemin="50" aria-valuemax="100" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <p class="mb-50"> Great </p>
+              <div class="progress progress-bar-warning" style="height: 6px">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                  aria-valuemin="60" aria-valuemax="100" style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="mb-50">Good </p>
+              <div class="progress progress-bar-danger" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="70"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="mb-50">Average </p>
+              <div class="progress progress-bar-success" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="90"
+                  aria-valuemax="100"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-lg-6 col-md-6 col-12 mt-2">
+      <div class="card card-transaction">
+        <div class="card-body bg-light rounded py-1 pb-3">
+       <h4 class="card-title">Appoinment Request </h4>
+
+
+         <div class="row">
+            <div class="col-lg-2">
+               <div class="avatar bg-light-primary circle float-start">
+                <div class="avatar-content">
+                  <i class="fas fa-2x fa-user text-primary"></i>
+                </div>
+              </div>
+           </div>
+            <div class="col-lg-4">
+              <p><b><a href="#"> Ramesh </a> </b><br> Health Checkup</p>
+
+           </div>
+             <div class="col-lg-6">
+             <button class="btn btn-success"><i class="fas fa-check-circle"></i> </button>
+             <button class="btn btn-danger"><i class="fas fa-times-circle"></i> </button>
+             <button class="btn btn-primary"><i class="far fa-comment"></i> </button>
+           </div>
+         </div>
+
+          <div class="row">
+            <div class="col-lg-2">
+               <div class="avatar bg-light-primary circle float-start">
+                <div class="avatar-content">
+                  <i class="fas fa-2x fa-user text-primary"></i>
+                </div>
+              </div>
+           </div>
+            <div class="col-lg-4">
+              <p><b><a href="#"> Atul </a> </b><br> Cold</p>
+
+           </div>
+             <div class="col-lg-6">
+             <button class="btn btn-success"><i class="fas fa-check-circle"></i> </button>
+             <button class="btn btn-danger"><i class="fas fa-times-circle"></i> </button>
+             <button class="btn btn-primary"><i class="far fa-comment"></i> </button>
+           </div>
+         </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+    </div>
+    <!-- Donut Chart Ends-->
+ </div>
+  <!--/ Stats Horizontal Card -->
+</section>
+<!-- Dashboard Ecommerce ends -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+
+  <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+      <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT  &copy; 2021<a class="ms-25" href="#" target="_blank"> HealthAssure </a><span class="d-none d-sm-inline-block">, All rights Reserved</span></span> </p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/toastr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="app-assets/js/core/app-menu.min.js"></script>
+    <script src="app-assets/js/core/app.min.js"></script>
+    <script src="app-assets/js/scripts/customizer.min.js"></script>
+    <!-- END: Theme JS-->
+
+       <script src="app-assets/js/scripts/charts/chart-apex.min.js"></script>
+
+    <!-- BEGIN: Page JS-->
+    <script src="app-assets/js/scripts/pages/dashboard-ecommerce.min.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+      $(window).on('load',  function(){
+        if (feather) {
+          feather.replace({ width: 14, height: 14 });
+        }
+      })
+    </script>
+  </body>
+  <!-- END: Body-->
+</html>
