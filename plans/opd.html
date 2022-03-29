@@ -917,7 +917,7 @@ selector { property:value; }
         <input type="text" class="form-control form-control1" placeholder="Email" id="email">
     </div>
   <div class="btn">
-        <input type="submit" class="btn btn-primary btn-lg mt-4" value="Download">
+        <input type="submit" class="btn btn-primary btn-lg mt-4" onclick="redirect()" value="Download">
     </div>
   </form>
 
@@ -1015,18 +1015,18 @@ selector { property:value; }
         }
     </script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     document.getElementById("downloadbtn").onclick = function () {
         location.href = "https://www.healthassure.in/products/Files/HealthAssure-opd-plans-tnc.pdf";
     };
-</script>
+</script> -->
 
 <script type="text/javascript">
     
   function validate(){
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var email = document.getElementById("email").value;
+  var name = document.getElementById("#name").value;
+  var phone = document.getElementById("#phone").value;
+  var email = document.getElementById("#email").value;
   var error_message = document.getElementById("error_message");
   
   error_message.style.padding = "10px";
@@ -1045,13 +1045,28 @@ selector { property:value; }
     text = "Please Enter valid Email";
     error_message.innerHTML = text;
     return false;
+     alert("Form Submitted Successfully!");
   }
 
-  alert("Form Submitted Successfully!");
+  
+
+  function redirect()
+{
+    
+    window.location.href="https://www.healthassure.in/products/Files/StartAssure-Platinum.pdf";
+}
  return true;
 }
 </script>
 
+
+<!-- <script type="text/javascript" language="javascript">
+function redirect()
+{
+    window.location.href="https://www.healthassure.in/products/Files/StartAssure-Platinum.pdf";
+}
+</script>
+ -->
 
 </body>
 
