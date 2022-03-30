@@ -299,6 +299,14 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                            class=' btn-class  pgreenbtn' onclick='closemodalcallback()' >" +
         "                                            Ok" +
         "                                        </button>" +
+        "                                       <button id='okbtnclosemodal' type='submit' style='margin-top: 10px;background-color: green;display: none;' data-dismiss='modal' value='OK'" +
+        "                                            class=' btn-class  pgreenbtn' onclick='closemodalcallbackwithbuyplan()' >" +
+        "                                            Buy now" +
+        "                                        </button>" +
+        "                                        <button id='downloadpdfbtnclosemodal' type='submit' style='margin-top: 10px;background-color: green;display: none;' data-dismiss='modal' value='OK'" +
+        "                                            class=' btn-class  pgreenbtn' onclick='closemodalcallbackwithdownloadpdf()' >" +
+        "                                            Buy now" +
+        "                                        </button>" +
         "                                    </div>" +
         "                                </div>" +
         "                            </div>" +
@@ -331,7 +339,22 @@ function closemodalcallback() {
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].value = '';
     }
+    if ((plancode != null && plancode != '') || (downloadpdflink != null && downloadpdflink != '')) {
+        $('body').append("<iframe src='https://momagic.g2afse.com/success.php?offer_id=7357&afstatus=1' height='1' width='1' />");
+        $('body').append("<img src='https://momagic88.gotrackier.com/pixel?adid=623869fc39eb933fd52b2844'")
+        OpenBuyPlanPopup(defoultSource1, plancode, '');
+    }
+}
 
+function closemodalcallbackwithdownloadpdf(){
+    window.open(downloadpdflink);
+}
+
+function closemodalcallbackwithbuyplan() {
+    closemodalcallback();
+    if (plancode != null && plancode != '') {
+        OpenBuyPlanPopup(defoultSource1, plancode, '');
+    }
 }
 
 try {
@@ -347,12 +370,22 @@ try {
 } catch { }
 var defoultSource1 = null;
 var showotppopup = true;
-function CallBackModalPopup(defoultSource, showotppopup1 = true) {
+var plancode = null;
+var downloadpdflink = null;
+function CallBackModalPopup(defoultSource, showotppopup1 = true, plancode1 = null, downloadpdflink1 = null) {
     openmodalcallback();
     $('#CallBackformdiv').show();
     $('#otpapp').hide();
     defoultSource1 = defoultSource;
     showotppopup = showotppopup1;
+    plancode = plancode1;
+    downloadpdflink = downloadpdflink1;
+    if (plancode1 != null && plancode1 != '') {
+        $('#okbtnclosemodal').show();
+    }
+    if (downloadpdflink != null && downloadpdflink != '') {
+        $('#downloadpdfbtnclosemodal').show();
+    }
 }
 
 $("#CallbackAdvisorformsubmit").submit(function (event) {
