@@ -897,27 +897,23 @@ selector { property:value; }
         </button>
       </div>
       <div class="modal-body">
-
-
- <div id="error_message">
-     
-  </div>
-  <form action="" id="myform" onsubmit = "return validate();">
+<div id="error_message">
+ </div>
+  <form action="" id="myform" onsubmit="return validate();">
     <div class="input_field">
          <label for="Name"> Name </label>
-        <input type="text" class="form-control form-control1" placeholder="Name" id="name">
+        <input type="text" class="form-control form-control1" placeholder="Name" id="name" required>
     </div>
-   
-    <div class="input_field">
-        <label for="Name"> Phone </label>
-        <input type="text" class="form-control form-control1" placeholder="Phone" id="phone">
+   <div class="input_field">
+     <label for="Name"> Phone </label>
+        <input type="text" class="form-control form-control1" placeholder="Phone" id="phone" required>
     </div>
     <div class="input_field">
-         <label for="Name"> Email </label>
-        <input type="text" class="form-control form-control1" placeholder="Email" id="email">
+        <label for="Name"> Email </label>
+    <input type="email" class="form-control form-control1" placeholder="Email" id="email" required>
     </div>
   <div class="btn">
-        <input type="submit" class="btn btn-primary btn-lg mt-4" onclick="redirect()" value="Download">
+    <input type="submit" class="btn btn-primary btn-lg mt-4"  value="Download">
     </div>
   </form>
 
@@ -1045,18 +1041,11 @@ selector { property:value; }
     text = "Please Enter valid Email";
     error_message.innerHTML = text;
     return false;
-     alert("Form Submitted Successfully!");
-  }
-
-  
-
-  function redirect()
-{
-    
-    window.location.href="https://www.healthassure.in/products/Files/StartAssure-Platinum.pdf";
+    }
+  alert("Form Submitted Successfully!");
+  return true;
 }
- return true;
-}
+
 </script>
 
 
