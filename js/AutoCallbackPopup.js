@@ -34,7 +34,12 @@ function getUrlVarsAutoPopUp(url = window.location.href) {
     setTimeout(OpenHelpPopup, 16000);
     function OpenHelpPopup() {
         if (IsOpenHelpPopup) {
-            $('#AutoCallbackPopupModal').modal('show');
+            try {
+                $('#AutoCallbackPopupModal').modal('show');
+            } catch {
+                jQuery.noConflict();
+                $('#AutoCallbackPopupModal').modal('show');
+            }
             IsOpenHelpPopup = false;
         }
     }
