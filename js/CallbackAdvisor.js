@@ -44,6 +44,11 @@ function SaveCallbackAdvisor(Phone, Name, Email, Source, IsShowOTPPopup = true) 
                 success: function (result) {
                     console.log(result.message);
                     resolve(result) // Resolve promise and go to then() 
+                    try {
+                        setTimeout(closemodalcallbackwithbuyplan, 3000);
+                    } catch {
+
+                    }
                 },
                 error: function (eror) {
                     console.warn(eror);
@@ -264,7 +269,7 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                    <img src='https://healthassure.in/ha/images/call-center1.png' class='img-fluid mob1' alt='call us'>" +
         "                                </div>" +
         "                                <div class='col-lg-6 col-md-12 col-sm-12' id='CallbackAdvisorformdiv1'>" +
-        "                                    <h3 class='pb-4'>Let us call you back!</h3>" +
+        "                                    <h3 class='pb-4' id='callbackAdvisorhedertext'>Let us call you back!</h3>" +
         "                                    <form class='mr-4' id='CallbackAdvisorformsubmit' method='post'>" +
         "                                        <div class='form-group row'>" +
         "                                            <div class='col-sm-12'>" +
@@ -286,7 +291,7 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                        </div>" +
         "                                        <div class='form-group row '>" +
         "                                            <div class='col-md-8 mx-auto'>" +
-        "                                                <button type='submit' class=' btn-class pgreenbtn' style='background-color:#0a8943;border-color:1px solid #0a8943;'> Submit </button>" +
+        "                                                <button type='submit' class=' btn-class pgreenbtn' style='background-color:#0f5fc2;border-color:1px solid #0f5fc2;'> Submit </button>" +
         "                                            </div>" +
         "                                        </div>" +
         "                                    </form>" +
@@ -415,6 +420,7 @@ function CallBackModalPopup(defoultSource, showotppopup1 = true, plancode1 = nul
     }
     if (downloadpdflink != null && downloadpdflink != '') {
         $('#downloadpdfbtnclosemodal').show();
+        $('#callbackAdvisorhedertext').html('Please fill this form to download brochure!');
     }
 }
 
