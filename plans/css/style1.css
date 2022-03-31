@@ -10319,7 +10319,7 @@ h4{color:#444}
     margin:auto;
     border: 1px solid #0a8943;
 }
-.slider {
+/*.slider {
     max-width: 164rem!important;
     margin-bottom: 2rem;
     padding: 1.3rem 16.5rem 6.3rem 16.5rem!important;
@@ -10332,7 +10332,7 @@ h4{color:#444}
     align-items: center;
     position: relative;
     overflow: hidden;
-}
+}*/
 .heading-bdr{
     background-color:#ffffff;
     color:#0f5fc2;
