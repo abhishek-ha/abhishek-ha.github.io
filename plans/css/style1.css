@@ -41,16 +41,13 @@ a:hover{
     width: 150px;
     margin: auto;
 }
-
-
 .pdlr{
     padding-left: 3%;
     padding-right: 3%;
 }
-
-      .logo {
-            width: 190px;
-            padding-top:20px;
+.logo {
+        width: 190px;
+        padding-top:20px;
         }
 
   .text-blue {
@@ -297,8 +294,7 @@ a:hover{
  .plancard h4{
            text-align:left;
         }
-
- .plancard  img {
+          .plancard  img {
             width: 120px;
             background-color: rgba(74, 78, 238, 0.01);
             padding: 25px 25px 5px 25px;
@@ -337,12 +333,10 @@ a:hover{
      .member-card img {
             width: 50px;
         }
-
-        .member-card img.logo1 {
+       .member-card img.logo1 {
             width: 130px;
         }
-
-        .member-card img.logo2 {
+         .member-card img.logo2 {
             width: 65px;
             margin-top: 15px;
         }
