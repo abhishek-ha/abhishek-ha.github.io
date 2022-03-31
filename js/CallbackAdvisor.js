@@ -127,7 +127,7 @@ function VarifyOTPforValidation(otp, mobileno) {
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js';
+    s1.src = 'https://cdn.jsdelivr.net/npm/vue@2';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
@@ -350,10 +350,18 @@ function closemodalcallbackwithdownloadpdf(){
 }
 
 function closemodalcallbackwithbuyplan() {
-    closemodalcallback();
     if (plancode != null && plancode != '') {
-        OpenBuyPlanPopup(defoultSource1, plancode, '');
+        try {
+            var Vars = getUrlVars();
+            BuyOPDPlan($('#callbackAdvisorName1').val(), $('#callbackAdvisorEmail1').val(), $('#callbackAdvisorPhone1').val(), '1998-01-01', 'Male', plancode, '', SourceValue, Vars["utm_source"], Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"]).then(function (result) {
+                console.log("successful buy plan");
+            }).catch(function (error) {
+                console.warn(error);
+            });
+        } catch (e) { console.log(e); debugger; }
+        //OpenBuyPlanPopup(defoultSource1, plancode, '');
     }
+    closemodalcallback();
 }
 
 try {
@@ -362,11 +370,34 @@ try {
         methods: {
             inputenter(id) {
                 const inputs = document.querySelectorAll('#otp > *[id]');
-                for (let i = 0; i < inputs.length; i++) { inputs[i].addEventListener('keydown', function (event) { if (event.key === "Backspace") { inputs[i].value = ''; if (i !== 0) inputs[i - 1].focus(); } else { if (i === inputs.length - 1 && inputs[i].value !== '') { return true; } else if (event.keyCode > 47 && event.keyCode < 58) { inputs[i].value = event.key; if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } else if (event.keyCode > 64 && event.keyCode < 91) { inputs[i].value = String.fromCharCode(event.keyCode); if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault(); } } }); }
+                for (let i = 0; i < inputs.length; i++)
+                {
+                    inputs[i].addEventListener('keydown', function (event)
+                    {
+                        if (event.key === "Backspace") {
+                            inputs[i].value = '';
+                            if (i !== 0) inputs[i - 1].focus();
+                        } else {
+                            if (i === inputs.length - 1 && inputs[i].value !== '')
+                            { return true; }
+                            else if (event.keyCode > 47 && event.keyCode < 58)
+                            {
+                                inputs[i].value = event.key;
+                                if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+                            }
+                            else if (event.keyCode > 64 && event.keyCode < 91)
+                            {
+                                inputs[i].value = String.fromCharCode(event.keyCode);
+                                if (i !== inputs.length - 1) inputs[i + 1].focus();
+                                event.preventDefault();
+                            }
+                        }
+                    });
+                }
             }
         }
     });
-} catch { }
+} catch (e) { console.log(e); debugger; }
 var defoultSource1 = null;
 var showotppopup = true;
 var plancode = null;
