@@ -35,6 +35,14 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- END: Custom CSS-->
+<style>
+  .otpinput{
+    width:40px;
+    height:40px;
+    float:left;
+    margin:5px;
+  }
+   </style>
 
   </head>
   <!-- END: Head-->
@@ -75,49 +83,51 @@
       <img src="app-assets/images/logo.png" class="img-fluid" style="width:70%;">
         </a>
 
-        <h4 class="card-title mb-1">Welcome to HealthAssure! </h4>
-       <form class="#" method="POST">
+        <h4 class="card-title mb-1"> Welcome to HealthAssure! </h4>
+       <form class="" method="POST">
           <div class="mb-1">
-            <label for="login-email" class="form-label">Username or email address</label>
-  <input type="text" class="form-control" placeholder="Username or email address" autofocus />
-          </div>
-
-
-
-
-         <!--  <div class="mb-1">
-            <div class="d-flex justify-content-between">
-              <label class="form-label" for="login-password">Password</label>
-              <a href="password-reset.html">
-                <small>Forgot Password?</small>
-              </a>
-            </div>
-            <div class="input-group input-group-merge form-password-toggle">
-        <input type="password" class="form-control form-control-merge" placeholder="Password" />
-              <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
-            </div>
-          </div> -->
-
-          
-          <div class="mb-1">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="remember-me" tabindex="3" />
-              <label class="form-check-label" for="remember-me"> Remember Me </label>
-            </div>
-          </div>
+            <label for="login-email" class="form-label"> Please Enter Mobile No</label>
+  <input type="text" class="form-control" placeholder="Please Enter Mobile No" autofocus required />
+</div>
+  
           <a href="index.html"><button class="btn btn-primary w-100" tabindex="4">Sign in</button></a>
+          <p class="text-center mt-2"> <span>New on our platform? </span>
+          <a href="#"> <span> Create an account </span> </a>
+        </p>
         </form>
 
-        <p class="text-center mt-2">
+
+        <form class="d-none">
+        <div class="pt-1 pb-2  " style="padding-left:40px;">
+    <input type="text" name="" class="form-control otpinput ">
+        <input type="text" name="" class="form-control otpinput" maxlength="1">
+            <input type="text" name="" class="form-control otpinput" maxlength="1">
+                <input type="text" name="" class="form-control otpinput" maxlength="1">
+                    <input type="text" name="" class="form-control otpinput" maxlength="1">
+                        <input type="text" name="" class="form-control otpinput" maxlength="1">
+                   </div>
+          <div class="row pb-1 " style="padding-left:40px;">
+            <div class="col-md-6">
+             <p> Time Left: 2:30</p> 
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-primary">Validate </button>
+          </div>
+         </div>  
+
+        </form>
+
+         
+
+     <!--    <p class="text-center mt-2">
           <span>New on our platform?</span>
-          <a href="#"> <span>Create an account</span> </a>
-        </p>
+          <a href="#"> <span>Create an account</span></a>
+        </p> -->
 
        <!--  <div class="divider my-2">
           <div class="divider-text">or</div>
         </div> -->
-
-       <!--  <div class="auth-footer-btn d-flex justify-content-center">
+     <!--  <div class="auth-footer-btn d-flex justify-content-center">
           <a href="#" class="btn btn-facebook">
             <i data-feather="facebook"></i>
           </a>
@@ -127,8 +137,7 @@
           <a href="#" class="btn btn-google">
             <i data-feather="mail"></i>
           </a>
-         
-        </div> -->
+       </div> -->
       </div>
     </div>
     <!-- /Login basic -->
