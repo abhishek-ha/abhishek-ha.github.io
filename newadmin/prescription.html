@@ -41,6 +41,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- END: Custom CSS-->
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <!-- END: Head-->
 
@@ -110,19 +113,27 @@
     <!-- Invoice Add Left starts -->
     <div class="col-xl-12 col-md-12 col-12">
       <div class="card invoice-preview-card">
-        <div class="row px-3 py-3">
-          <div class="col-xl-3">
-            <h3>Dr. Riten Singh </h3>
-            <p>riten.singh@healthassure.in </p>
-             <p class="para"><b>Specialist In:</b> <a href="#" style="font-weight:600;">
-        Family Physician, General Surgery, Surgical Gastroenterology </a> </p>
-          </div>
-            <div class="col-xl-9">
+        <div class="row px-2 py-3">
 
+ <div class="col-xl-3 p-0 ps-xl-2 mt-xl-0 mt-2">
+              <p class="mb-1" style="font-size:18px;"><b>Dr. Riten Singh </b> </p>
+              <p>MBBS, MS GEN, SURGERY, DNB(SURG GASTRO), MBA, BUMS<br><span><b>Specialist In:</b> <a href="#" style="font-weight:600;">
+        Family Physician, General Surgery, Surgical Gastroenterology</a> </span><br> <span>Email: riten.singh@healthassure.in </span> </p>
+    </div>
 
-            
+        
+            <div class="col-xl-9" >
+             <div class="row">
+              <div class="col-xl-12">
+                <img src="app-assets/images/logo.png" class="float-end w-25" >
+              </div>
+              <div class="col-xl-12">
+              <p class="float-end"><b> Address: </b> BPTP Park Centra, 802,<br> 8th Floor, Tower A, Sector 30,<br>  Gurugram, Haryana 122001</p>
+               </div>
+              </div>
           </div>
-       </div>
+        </div>
+
 
 
         <!-- Header starts -->
@@ -166,7 +177,163 @@
      <!-- Address and Contact starts -->
         <div class="card-body invoice-padding pt-0">
           <div class="row row-bill-to invoice-spacing">
-            <div class="col-xl-8 mb-lg-1 col-bill-to ps-0">
+
+ <div class="col-xl-9 offset-xl-3">
+                  <form  class="row ">
+              <div class="col-md-6 col-lg-3 pb-1">
+                <label for="todoTitleAdd" class="form-label">Patient Name </label>
+            <input type="text" class=" form-control" placeholder="Sameer Ale" readonly />
+              </div>
+              <div class="col-md-6 col-lg-3 pb-1">
+                 <label for="todoTitleAdd" class="form-label">Consultation type </label>
+          <input type="text" class=" form-control" placeholder="Tele" readonly />
+              </div>
+  <div class="col-md-6 col-lg-3 pb-1">
+                 <label for="Age" class="form-label">Age </label>
+            <input type="text" class=" form-control" placeholder="30" readonly />
+              </div>
+              <div class="col-md-6 col-lg-3 pb-1">
+                 <label for="Age" class="form-label">Center </label>
+            <input type="text" class=" form-control" placeholder="Gurugram" readonly />
+              </div>
+ <div class="col-md-12 col-lg-12 pb-1">
+                 <label for="Age" class="form-label">Clinical Diagnosis(History & symtoms ) </label>
+            <textarea class="form-control" placeholder="Clinical Diagnosis(History & symtoms )"> </textarea>
+              </div>
+            <div class="col-md-12 col-lg-12 pb-1">
+                 <label for="Age" class="form-label">Additional Advices </label>
+            <textarea class="form-control" placeholder="Additional Advices"> </textarea>
+              </div>
+
+
+<div class="col-md-12 col-lg-12 pb-1">
+                 <label for="Age" class="form-label">Diagnostic Tests </label>
+            <textarea class="form-control" placeholder="Additional Advices"> </textarea>
+              </div>
+              </form>
+              <form class="source-item">
+  <div data-repeater-list="group-a">
+              <div class="repeater-wrapper" data-repeater-item>
+            <div class="row">
+             <div class="col-12 d-flex product-details-border position-relative pe-0">
+                    <div class="row w-100 pe-lg-0 pe-1 py-2">
+                      <div class="col-lg-4 col-12 mb-lg-0 mb-2 mt-lg-0 mt-2">
+                      <label for="Age" class="form-label">Drug </label>
+                      <input type="text" class="form-control"  name="" placeholder="Medicine Name">
+                     </div>
+                     <div class="col-lg-4 col-12 mb-lg-0 mb-2 mt-lg-0 mt-2">
+                      <label for="Age" class="form-label"> Dosage </label>
+                      <input type="text" class="form-control"  name="" placeholder="Dosage">
+                     </div> 
+
+                     <div class="col-lg-4 col-12 mb-lg-0 mb-2 mt-lg-0 mt-2">
+                      <label for="Age" class="form-label"> Dosage </label>
+                      <input type="text" class="form-control"  name="" placeholder="Dosage">
+                     </div> 
+                      <div class="col-lg-3 col-12 my-lg-0 my-2">
+                        <p class="card-text col-title mb-md-2 mb-0">Cost</p>
+                        <input type="text" class="form-control" value="24" placeholder="24" />
+                        <div class="mt-2">
+                          <span>Discount:</span>
+                          <span class="discount">0%</span>
+                          <span class="tax-1 ms-50" data-bs-toggle="tooltip" data-bs-placement="top" title="Tax 1"
+                            >0%</span
+                          >
+                          <span class="tax-2 ms-50" data-bs-toggle="tooltip" data-bs-placement="top" title="Tax 2"
+                            >0%</span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-12 my-lg-0 my-2">
+                        <p class="card-text col-title mb-md-2 mb-0">Qty</p>
+                        <input type="number" class="form-control" value="1" placeholder="1" />
+                      </div>
+                      <div class="col-lg-2 col-12 mt-lg-0 mt-2">
+                        <p class="card-text col-title mb-md-50 mb-0">Price</p>
+                        <p class="card-text mb-0">$24.00</p>
+                      </div>
+                    </div>
+      <div class="d-flex flex-column align-items-center justify-content-between border-start invoice-product-actions py-50 px-25">
+                      <i data-feather="x" class="cursor-pointer font-medium-3" data-repeater-delete></i>
+                      <div class="dropdown">
+                        <i
+                          class="cursor-pointer more-options-dropdown me-0"
+                          data-feather="settings"
+                          id="dropdownMenuButton"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                        </i>
+                        <div
+                          class="dropdown-menu dropdown-menu-end item-options-menu p-50"
+                          aria-labelledby="dropdownMenuButton"
+                        >
+                          <div class="mb-1">
+                            <label for="discount-input" class="form-label">Discount(%)</label>
+                            <input type="number" class="form-control" id="discount-input" />
+                          </div>
+                          <div class="form-row mt-50">
+                            <div class="mb-1 col-md-6">
+                              <label for="tax-1-input" class="form-label">Tax 1</label>
+                              <select name="tax-1-input" id="tax-1-input" class="form-select tax-select">
+                                <option value="0%" selected>0%</option>
+                                <option value="1%">1%</option>
+                                <option value="10%">10%</option>
+                                <option value="18%">18%</option>
+                                <option value="40%">40%</option>
+                              </select>
+                            </div>
+                            <div class="mb-1 col-md-6">
+                              <label for="tax-2-input" class="form-label">Tax 2</label>
+                              <select name="tax-2-input" id="tax-2-input" class="form-select tax-select">
+                                <option value="0%" selected>0%</option>
+                                <option value="1%">1%</option>
+                                <option value="10%">10%</option>
+                                <option value="18%">18%</option>
+                                <option value="40%">40%</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="dropdown-divider my-1"></div>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-primary btn-apply-changes">Apply</button>
+                            <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+             </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-12 px-0">
+                <button type="button" class="btn btn-primary btn-sm btn-add-new" data-repeater-create>
+                  <i data-feather="plus" class="me-25"></i>
+                  <span class="align-middle">Add Item</span>
+                </button>
+              </div>
+            </div>
+          </form>
+
+
+           <div class="col-md-6 col-lg-6 mt-2">
+                <button type="submit" class="btn btn-primary add-todo-item me-1"> <i class="fas fa-edit"></i> Edit  </button>  <button type="submit" class="btn btn-success add-todo-item me-1"> <i class="fas fa-check-circle"></i> Save  </button>
+                 <button type="submit" class="btn btn-danger add-todo-item me-1"> <i class="fas fa-times"></i> Clear  </button>
+              </div>
+
+
+
+
+
+
+
+                 
+               </div>
+
+           <!--  <div class="col-xl-8 mb-lg-1 col-bill-to ps-0">
               <h6 class="invoice-to-title">Invoice To:</h6>
               <div class="invoice-customer">
                 <select class="invoiceto form-select">
@@ -176,7 +343,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-xl-4 p-0 ps-xl-2 mt-xl-0 mt-2">
+      <div class="col-xl-4 p-0 ps-xl-2 mt-xl-0 mt-2">
               <h6 class="mb-2">Payment Details:</h6>
               <table>
                 <tbody>
@@ -202,18 +369,20 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- Address and Contact ends -->
 
         <!-- Product Details starts -->
         <div class="card-body invoice-padding invoice-product-details">
+
+
           <form class="source-item">
-            <div data-repeater-list="group-a">
+  <div data-repeater-list="group-a">
               <div class="repeater-wrapper" data-repeater-item>
-                <div class="row">
-                  <div class="col-12 d-flex product-details-border position-relative pe-0">
+            <div class="row">
+             <div class="col-12 d-flex product-details-border position-relative pe-0">
                     <div class="row w-100 pe-lg-0 pe-1 py-2">
                       <div class="col-lg-5 col-12 mb-lg-0 mb-2 mt-lg-0 mt-2">
                         <p class="card-text col-title mb-md-50 mb-0">Item</p>
@@ -301,7 +470,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+               </div>
             </div>
             <div class="row mt-1">
               <div class="col-12 px-0">
