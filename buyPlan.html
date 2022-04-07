@@ -12,6 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471644001"></script>
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
@@ -35,19 +36,23 @@
         html {
             overflow-x: hidden !important;
         }
-       div {
+
+        div {
             background-color: transparent;
         }
+
         .modal-header {
             padding: 0px 0px 0px 0px;
         }
-         .close {
+
+        .close {
             color: #000000 !important;
             float: right;
             font-size: 30px;
             font-weight: bold;
             padding: 10px 0px 0px 0px;
         }
+
         .pb-4 {
             padding-bottom: 1.5rem;
         }
@@ -98,16 +103,16 @@
             background-color: #ffffff !important;
         }
 
-        .thankyouss h3 {
-            font-size: 23px;
-            font-weight: 600;
-            padding-top: 50px;
-        }
+            .thankyouss h3 {
+                font-size: 23px;
+                font-weight: 600;
+                padding-top: 50px;
+            }
 
-        .thankyouss p {
-            font-size: 16px;
-            font-weight: 500;
-        }
+            .thankyouss p {
+                font-size: 16px;
+                font-weight: 500;
+            }
 
         .iconcheck img {
             margin-top: -50px;
@@ -137,7 +142,8 @@
                 border-radius: 10px;
                 box-sizing: border-box;
             }
-           .modelbuypopup {
+
+            .modelbuypopup {
                 width: 92%;
                 margin-left: 4%;
                 margin-right: 4%;
@@ -475,6 +481,14 @@
                     });
                     console.log('*****************************cuberoot**********************');
                 }
+                try {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-471644001/C4KFCL-H068DEOHu8uAB',
+                        'value': 1999.0,
+                        'currency': 'INR',
+                        'transaction_id': ''
+                    });
+                } catch { console.log('error in https://www.googletagmanager.com/gtag'); }
             } catch { console.log('error'); }
         }
         function closebuyplanpopup() {
