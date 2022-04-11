@@ -168,9 +168,9 @@ function VarifyOTPforValidation(otp, mobileno) {
         "            }" +
         "" +
         "            .card {" +
-        "                width: 430px;" +
+        "                width: 400px;" +
         "                border: none;" +
-        "                height: 330px;" +
+        "                height: 300px;" +
         "                box-shadow: 0px 5px 20px 0px #6F1667;" +
         "                z-index: 1;" +
         "                display: flex;" +
@@ -220,11 +220,11 @@ function VarifyOTPforValidation(otp, mobileno) {
         "        </style>" +
         "        <div id='callbackpopup' class='modal'>" +
         "            <div class='modal-content1'>" +
-        "                <div id='otpapp' class='modal-dialog-centered'>  " +
+        "                <div id='otpapp' class='modal-dialog-centered' >" +
         "                    <div class='container height-100 d-flex justify-content-center align-items-center'>" +
         "                        <div class='position-relative'>" +
         "                            <div class='card p-2 text-center'>" +
-        "                                <h6>  Please enter the one time password  <span class='px-4 ml-3' onclick='closemodalcallback()'><i class='fa  fa-times' aria-hidden='true'></i></span> <br> </h6>" +
+        "                                <h6>Please enter the one time password <br> </h6>" +
         "                                <div> <span> sent to +91******</span> <small id='mobilenotext1'>4343</small> </div>" +
         "                                <div id='otp' class='inputs d-flex flex-row justify-content-center mt-2'> <input" +
         "                                        class='m-2 text-center form-control rounded heightwidth1' type='text' id='input1'" +
