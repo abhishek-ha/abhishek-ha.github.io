@@ -147,6 +147,17 @@ a:hover{
     background-color: #000000!important;
     border-color: #000000!important;
 }
+.btn-success {
+    color: #ffffff!important;
+    background-color: #218838!important;
+    border-color: #0f5fc2!important;
+}
+.btn-success:hover {
+    color: #ffffff!important;
+    background-color: #000000!important;
+    border-color: #000000!important;
+}
+
 
 .bg04 {
             background: url('../images/4.svg') bottom right no-repeat;
@@ -10522,6 +10533,28 @@ h4{color:#444}
     text-decoration: none;
      cursor: pointer;
 }
+
+
+.btn6 {
+    background:#0a8943;
+    color: #ffffff!important;
+    border-radius: 50px;
+    width:215px;
+    font-size:16px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left:0px;
+   border:1px solid #0a8943;
+}
+.btn5:hover{
+    background: #000000!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+     cursor: pointer;
+}
+
 
 
 .dashedborder{
