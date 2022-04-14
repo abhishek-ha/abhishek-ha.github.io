@@ -146,7 +146,6 @@ selector { property:value; }
     </noscript>
     <!-- End Facebook Pixel Code -->
 
-
 <!-- Hotjar Tracking Code for https://healthassure.in/plans/startassure-fitassure.html -->
 <script>
     (function(h,o,t,j,a,r){
@@ -167,7 +166,7 @@ selector { property:value; }
                     <a href="https://healthassure.in/"><img src="images/logo.png" class=" logo1"></a>
                 </div>
                 <div class="col-md-6 pt-4  float-right col-6">
-                    <a href="https://healthassure.in/" class="float-right px-2 "><img src="images/sodexo-logo.png"> </a>
+                    <a href="https://healthassure.in/" class="float-right px-2 "><img src="images/sodexo-white.png"> </a>
                 </div>
               </div>
         <div class="row">
@@ -176,8 +175,8 @@ selector { property:value; }
      <h2 class="pl-2 startassu pb-4"> <span style="color:#004182; font-size:23px;">Family Plan Rs. <del class="text-danger">&#8377; 7000/- </del> &nbsp; &#8377; 999/- </span></h2>
 <p  style="font-size:15px;font-weight:500;color:#484a4c;"> Cover Daily health Benefits Worth &#8377; 70,000 icluding In & Out  of Pocket Medical Expenses. </p>
     <div class="mt-5">
- <button type="submit" class="btn btn-primary btn-block" style="font-size:17px;"> Request Callback </button>
- <button type="submit" class="btn btn-success btn-block" style="font-size:17px;"> Try 1 Month Free </button>
+ <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="advisorclick();" style="font-size:18px;"> Request Callback </button>
+ <button type="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style="font-size:18px;"> Try 1 Month Free </button>
   </div>
 </div>
 
@@ -738,6 +737,59 @@ selector { property:value; }
         </div>
     </section>
 
+
+
+
+  <!-- Modal -->
+    <div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content px-3 py-4" style="background-color:#e6f3fa;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="font-size:20px;font-weight:600;"> Get 1 Month Free Access</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="RegistrationformId" action="">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="text" id="firstname" class="form-control" placeholder="First Name" required>
+                        </div> <div class="form-group">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Gender">Gender</label>
+                            <select class="form-select form-control" id="Gender">
+                                <option value="male"> Male</option>
+                                <option value="female"> Female</option>
+                                <option value="other"> Other </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Mobile No</label>
+                            <input type="text" id="mobileno" class="form-control" placeholder="Mobile No" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" id="emailid" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Voucher Code </label>
+                            <input type="text" id="vouchercode" class="form-control" placeholder="Enter Voucher Code" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn4"> Back </button> <button type="submit" class="btn btn-success btn5">Continue </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 <script src="js/testimonial.js"></script>
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -745,6 +797,20 @@ selector { property:value; }
 
   <script src="../js/CallbackAdvisor.js"></script>
     <script src="../js/buyplansui.js"></script>
+
+
+  <script>
+        $("#RegistrationformId").submit(function (ev) {
+            ev.preventDefault();
+            try {
+                var url = "http://uat.healthassure.in/Products/Member/AccessCodeApi?firstname=" + $('#firstname').val() + "&&lastname=" + $('#lastname').val() + "&&gender=" + $('#Gender').val() + "&&mobileno=" + $('#mobileno').val() + "&&emailid=" + $('#emailid').val() + "&&accesscode=" + $('#vouchercode').val();
+                window.open(url, "_blank");
+            } catch (e) { debugger; console.log(e) };
+        });
+    </script>
+
+
+
 
   <script>
   $(document).ready(function () {
