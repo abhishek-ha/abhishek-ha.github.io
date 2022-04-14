@@ -872,7 +872,7 @@ selector { property:value; }
             ev.preventDefault();
             try {
                 var url = "http://uat.healthassure.in/Products/Member/AccessCodeApi?firstname=" + $('#firstname').val() + "&&lastname=" + $('#lastname').val() + "&&gender=" + $('#Gender').val() + "&&mobileno=" + $('#mobileno').val() + "&&emailid=" + $('#emailid').val() + "&&accesscode=" + $('#vouchercode').val();
-                window.open(url, "_blank");
+                window.open(url, "_parent");
             } catch (e) { debugger; console.log(e) };
         });
     </script>
