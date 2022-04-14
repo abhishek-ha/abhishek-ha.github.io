@@ -150,7 +150,7 @@ a:hover{
 .btn-success {
     color: #ffffff!important;
     background-color: #218838!important;
-    border-color: #0f5fc2!important;
+    border-color: #218838!important;
 }
 .btn-success:hover {
     color: #ffffff!important;
@@ -433,24 +433,19 @@ a:hover{
     padding-top:6rem!important;
     padding-bottom:6rem!important;
 }
-
-
 @media only screen and (min-width:601px){
       .logo1 {
                 width:200px;
                 padding: 20px 20px 0px 02px;
             }
 }
-
 @media only screen and (max-width:800px){
-
-      .offer{
+   .offer{
         display: none;
          }
 .h-90{
     height:100%!important;
 }
-
 .btn {
     display: inline-block;
     font-weight: 600;
@@ -470,14 +465,11 @@ a:hover{
     border-radius:10px!important;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 }
-
 @media only screen and (min-width:801px){
     .h-90{
     height:90%!important;
 }
-
 .btn {
     display: inline-block;
     font-weight: 500;
@@ -494,7 +486,7 @@ a:hover{
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1.1rem;
-    border-radius:none!important;
+    border-radius:0px!important;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 }
