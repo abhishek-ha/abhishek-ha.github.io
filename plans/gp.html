@@ -754,6 +754,41 @@ selector { property:value; }
         </div>
     </section>
 
+<!-- Modal -->
+    <div class="modal fade " id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered rounded">
+            <div class="modal-content px-4 bg-lgrey rounded py-4">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel"><b>Please enter your details </b> </h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="Name"> Name </label>
+                            <input type="text" id="name" class="form-control form-control1" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone"> Phone </label>
+                            <input type="text" class="form-control form-control1" id="phone" name="phone" pattern="[0123456789][0-9]{9}" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Email"> Email </label>
+                            <input type="text" class="form-control form-control1" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <button type="submit" id="downloadbtn" class="btn btn-primary btn-lg mt-4"> <i class="fa fa-download" aria-hidden="true"></i> Download </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -778,7 +813,7 @@ selector { property:value; }
     <script src="../js/AutoCallbackPopup.js"></script>
     <script src="../js/buyplansui.js"></script>
 
-  <script>
+ <script>
   $(document).ready(function () {
             $('.navbar-light .dmenu').hover(function () {
                 $(this).find('.sm-menu').first().stop(true, true).slideDown(300);
@@ -786,9 +821,7 @@ selector { property:value; }
                 $(this).find('.sm-menu').first().stop(true, true).slideUp(210)
             });
         });
-
-
-   $("#CallbackAdvisorform").submit(function (event) {
+  $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
                 $('#AdvisorEmail').val(), 'HomePage').then(function (result) {
@@ -797,8 +830,7 @@ selector { property:value; }
                     $('#Advisormessagediv').show();
                 });
         });
-
-        function advisorclick() {
+    function advisorclick() {
             CallBackModalPopup('HomePage',false);
             $('#Advisorformdiv').show();
             $('#Advisormessagediv').hide();
@@ -806,12 +838,10 @@ selector { property:value; }
             $('#AdvisorName').val('');
             $('#AdvisorEmail').val('');
         }
-
-      function advisorclick() {
-            CallBackModalPopup('startassure-elite',false);
-         
-        }
-    </script>
+     function advisorclick() {
+            CallBackModalPopup('GP',false);
+ }
+</script>
     <script type="text/javascript">
         function downloadb() {
             console.log("checking");
@@ -832,8 +862,5 @@ selector { property:value; }
             location.href = "https://www.healthassure.in/products/Files/StartAssure-GP.pdf";
         };
     </script>
-
-
 </body>
-
 </html>
