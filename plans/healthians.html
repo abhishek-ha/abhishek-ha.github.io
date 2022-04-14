@@ -740,7 +740,7 @@ selector { property:value; }
 
 
 
-  <!-- Modal -->
+     <!-- Modal -->
     <div class="modal fade  " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content px-3 py-4" style="background-color:#e6f3fa;">
@@ -754,10 +754,10 @@ selector { property:value; }
                     <form id="RegistrationformId" action="">
                         <div class="form-group">
                             <label for="exampleInputEmail1">First Name</label>
-                            <input type="text" id="firstname" class="form-control" placeholder="First Name" required>
+                            <input type="text" id="firstname" autocomplete="off" class="form-control" placeholder="First Name" required>
                         </div> <div class="form-group">
                             <label for="exampleInputEmail1">Last Name</label>
-                            <input type="text" id="lastname" class="form-control" placeholder="Last Name" required>
+                            <input type="text" id="lastname" autocomplete="off" class="form-control" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
                             <label for="Gender">Gender</label>
@@ -769,23 +769,22 @@ selector { property:value; }
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Mobile No</label>
-                            <input type="text" id="mobileno" class="form-control" placeholder="Mobile No" required>
+                            <input type="text" id="mobileno" class="form-control" placeholder="Mobile No" autocomplete="off" pattern="[789][0-9]{9}" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" id="emailid" class="form-control" placeholder="Email" required>
+                            <input type="email" autocomplete="off" id="emailid" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Enter Voucher Code </label>
-                            <input type="text" id="vouchercode" class="form-control" placeholder="Enter Voucher Code" required>
+                            <input type="text" autocomplete="off" id="vouchercode" class="form-control" placeholder="Enter Voucher Code" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn4"> Back </button> <button type="submit" class="btn btn-success btn5">Continue </button>
+                        <button  class="btn btn-primary btn4" data-dismiss="modal"> Back </button> <button type="submit" class="btn btn-success btn5">Continue </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 
 
 
