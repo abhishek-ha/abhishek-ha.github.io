@@ -75,7 +75,6 @@ a:hover{
     padding: 10px;
     border-radius: 10px;
 }
-
 .box4{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -105,7 +104,6 @@ a:hover{
   font-size: 70px;
   color: #99acc0;
  }
-
 .bg-blue{
  background-color:#004182;
 }
@@ -135,7 +133,6 @@ a:hover{
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 .btn-primary {
     color: #ffffff!important;
     background-color: #0f5fc2!important;
@@ -159,8 +156,6 @@ a:hover{
     border-color: #000000!important;
     cursor:pointer!important;
 }
-
-
 .bg04 {
             background: url('../images/4.svg') bottom right no-repeat;
         }
@@ -199,8 +194,7 @@ a:hover{
             display: inline-block;
             font-weight: bold;
         }
-
-        .item2 .item-card label {
+   .item2 .item-card label {
             font-size: 1.25em;
         }
       .work .num {
@@ -265,8 +259,7 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
- .item31 {
+.item31 {
             text-align: center;
             color: #5336ca;
            background-color: #ffffff;
@@ -314,55 +307,55 @@ a:hover{
             border-radius: 10px;
             margin-bottom: 0;
         }
-       .plancard  p {
+   .plancard  p {
             font-weight: 500;
             color: #212121;
             font-size: 14px;
         }
-      .plancard  p.sub {
+  .plancard  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
-        .plancard ul li{
+    .plancard ul li{
             text-align:left;
             line-height: 20px;
             margin-bottom:10px;
        }
-      .btn-o {
+ .btn-o {
             background-color: #f43f54;
             color: #fafafa;
         }
-      .store img {
+  .store img {
             width: 150px;
             margin-top: 15px;
         }
-        .yt {
+  .yt {
             display: inline-flex;
         }
-        .yt a {
+   .yt a {
             text-decoration: none;
         }
     
-     .member-card img {
+.member-card img {
             width: 50px;
         }
-       .member-card img.logo1 {
+ .member-card img.logo1 {
             width: 130px;
         }
-         .member-card img.logo2 {
+  .member-card img.logo2 {
             width: 65px;
             margin-top: 15px;
         }
-          .cbg {
+   .cbg {
             position: absolute;
             right: -70px;
             top: 50px;
             width: 45%;
         }
-       .bb {
+  .bb {
             background: url('../images/bb.png') bottom center no-repeat;
         }
-        .tnc {
+  .tnc {
             text-decoration: none;
             color: #212121;
             font-size:12px;
@@ -370,7 +363,7 @@ a:hover{
             margin-top:10px;
             font-weight:500;
         }
-         .tnc1 {
+   .tnc1 {
             text-decoration: none;
             color: #212121;
             font-size:9px;
@@ -378,7 +371,7 @@ a:hover{
             font-weight:500;
             margin-bottom:1px;
         }
-         .tnc2 {
+   .tnc2 {
     text-decoration: none;
     color: #212121;
     font-size: 12px;
@@ -405,23 +398,18 @@ a:hover{
                 width: 47%;
                 padding: 20px 20px 0px 02px;
             }
-
-
-             .logo1 {
+ .logo1 {
                 width:170px;
                 padding: 20px 20px 0px 02px;
             }
-
-            .item3 {
+ .item3 {
                 font-size: 85%;
                  margin: 8px;
             }
-
-            .w48 {
+  .w48 {
                 width: 100%;
             }
-
-            .cbg {
+ .cbg {
                 right: -25px;
             }
 
@@ -8351,7 +8339,6 @@ a:hover{
 }
 }
 
-
 @media only screen and (min-width: 1800px){
  .pt-bnr {
     padding-top:270px;
@@ -8379,7 +8366,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -8388,7 +8374,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -8396,24 +8381,19 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
     margin-top: 90px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
      margin-top: 90px;
  }
-
 .startassu{
     font-size:40px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
 }
-
-
 .service-fiassure{
       background-color:#fcfcfc;
       height:459px;
@@ -8441,7 +8421,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:414px;
