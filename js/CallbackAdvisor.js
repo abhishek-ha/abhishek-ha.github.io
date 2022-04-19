@@ -402,7 +402,7 @@ try {
             }
         }
     });
-} catch (e) { console.log(e); debugger; }
+} catch (e) { console.log(e);  }
 var defoultSource1 = null;
 var showotppopup = true;
 var plancode = null;

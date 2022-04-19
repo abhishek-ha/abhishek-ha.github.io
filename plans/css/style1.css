@@ -6914,10 +6914,10 @@ a:hover{
 }
 .gromo{
      background-color:#fcfcfc;
-    height:490px;
+     height:475px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
+    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
@@ -6939,9 +6939,7 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
 }
-
 @media only screen and (min-width: 1300px){
  .pt-bnr {
     padding-top: 220px;
@@ -6952,7 +6950,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -6968,7 +6966,6 @@ a:hover{
     background-size: 100%;
      min-height: 725px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -7008,7 +7005,7 @@ a:hover{
     margin-top:-51%;
     width:60%;
 }
- .val{
+.val{
    padding-right:15px!important; 
    padding-top:6px;
  }
@@ -7053,11 +7050,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
 .service{
      background-color:#fcfcfc;
     padding:6px;
@@ -7172,7 +7164,6 @@ a:hover{
     cursor: pointer;
     margin-top:128px!important;
 }
-
 .service-sod{
      background-color:#fcfcfc;
     height:436px;
@@ -7204,13 +7195,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -7236,7 +7220,6 @@ a:hover{
            font-size:15px;
          line-height: 22px;
       }
-
 .service-fiassure{
      background-color:#fcfcfc;
     height:460px;
@@ -7428,8 +7411,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:419px;
@@ -7671,8 +7652,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -7680,7 +7660,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -7689,7 +7668,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -7698,7 +7676,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -7706,19 +7683,16 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
     margin-top: 90px;
     padding-bottom:80px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
      margin-top: 90px;
      
  }
-
 .startassu{
     font-size:40px;
      font-weight:700!important;
@@ -7832,8 +7806,6 @@ a:hover{
 }
 }
 
-
-
 @media only screen and (min-width: 1600px){
  .pt-bnr {
     padding-top: 270px;
@@ -7843,8 +7815,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -7852,7 +7823,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -7861,7 +7831,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -7870,7 +7839,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -7878,20 +7846,16 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
-
 .banner{
     padding-top: 40px;
     margin-top: 90px;
     padding-bottom:80px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
      margin-top: 90px;
      padding-bottom:20px!important;
  }
-
 .startassu{
     font-size:40px;
      font-weight:700!important;
@@ -7900,7 +7864,6 @@ a:hover{
 .val{
     padding-top:0px;
 }
-
 .sodexo-plan{
      background-color:#fcfcfc;
     height:416px;
@@ -7963,8 +7926,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:414px;
@@ -8176,7 +8137,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -8203,10 +8163,8 @@ a:hover{
      margin-top: 90px;
      padding-bottom:20px!important;
  }
-
 .startassu{
-    font-size:40px;
-     
+    font-size:40px;    
 }
 .val{
     padding-top:0px;
@@ -8281,8 +8239,6 @@ a:hover{
     min-height:190px;
     padding:6px;
 }
-
-
 .service2{
     background-color:#e6f3fa;
     padding:6px;
@@ -8399,8 +8355,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -8408,7 +8363,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -8509,11 +8463,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
 }
 
 
@@ -8526,8 +8475,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -8535,7 +8483,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -8544,7 +8491,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -8562,7 +8508,6 @@ a:hover{
 }
 }
 
-
 @media only screen and (min-width: 2000px){
  .pt-bnr {
     padding-top: 270px;
@@ -8572,8 +8517,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -8581,7 +8525,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -8590,7 +8533,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -8599,7 +8541,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -8646,8 +8587,7 @@ a:hover{
  .pdb{
     padding-bottom:45px;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -8655,7 +8595,6 @@ a:hover{
     background-size: 100%;
      min-height: 721px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
