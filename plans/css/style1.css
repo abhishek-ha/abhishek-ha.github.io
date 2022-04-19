@@ -1836,6 +1836,13 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+.stamp{
+    padding-top:40px;
+}
+
+
+
 .service{
     background-color:#fcfcfc;
     padding:6px;
@@ -2280,13 +2287,11 @@ a:hover{
             font-weight: 600;
            font-size: 15px;
             }
-
-  .benitem1  p.sub {
+.benitem1  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
-
-   .val{
+  .val{
     padding-top:0px; 
 }
    .val p{
@@ -2397,6 +2402,13 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+.stamp{
+    padding-top:40px;
+}
+
+
+
 .service .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -2413,7 +2425,6 @@ a:hover{
     cursor: pointer;
     margin-top:2px;
 }
-
 .service .buybtn:hover{
    background-color:#026cf0;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
@@ -2555,6 +2566,9 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+.stamp{
+    padding-top:40px;
+}
 .service-fiassure{
      background-color:#fcfcfc;
     height:622px;
@@ -2587,7 +2601,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .gromo{
      background-color:#fcfcfc;
     height:557px;
@@ -2651,7 +2664,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .val{
     padding-top:10px;
 }
@@ -2759,16 +2771,13 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
 }
-
 .offer1 img{
     margin-top:-22%;
     width:30%;
-
 }
 .benitem {
             text-align: center;
@@ -2903,6 +2912,12 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+.stamp{
+    padding-top:40px;
+}
+
+
+
 .service{
     padding:6px;
     margin:auto;
@@ -3114,8 +3129,7 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
-  .head {
+.head {
             font-family: 'Poppins', sans-serif;
             font-size: 32px;
         }
@@ -3148,12 +3162,11 @@ a:hover{
             margin:4px;
            padding:5px;
         }
-      .benitem  img {
+.benitem  img {
             width: 90px;
            padding: 5px 5px 5px 5px;
-           
-        }
-        .benitem p {
+     }
+.benitem p {
             font-weight: 400;
             color: #ffffff;
             font-size: 13px;
@@ -3205,6 +3218,9 @@ a:hover{
     margin-left:23%;
     margin-right: auto;
     position:relative;
+}
+.stamp{
+    padding-top:40px;
 }
 
 .service{
@@ -3558,6 +3574,11 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+.stamp{
+    padding-top:40px;
+}
+
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -4449,7 +4470,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:372px;
@@ -4458,7 +4478,7 @@ a:hover{
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
-    margin-top:10px;
+    margin-top:120px;
 }
 .sodexo-plan2 .buybtn{
    background-color:#0f5fc2;
@@ -4487,6 +4507,12 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+.stamp{
+    padding-top:40px;
+}
+
+
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -7038,6 +7064,12 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+.stamp{
+    padding-top:150px;
+}
+
+
 .service{
      background-color:#fcfcfc;
     padding:6px;
@@ -7398,6 +7430,9 @@ a:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
+}
+.stamp{
+    padding-top:150px;
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
