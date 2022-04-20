@@ -4510,6 +4510,7 @@ a:hover{
 
 .stamp{
     padding-top:40px;
+    width:80%;
 }
 
 
@@ -5023,7 +5024,6 @@ a:hover{
     padding: 8px 0;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .right-arrow {
     display: inline-block;
     position: relative;
@@ -5034,9 +5034,7 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -5044,7 +5042,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -5053,7 +5050,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -5062,7 +5058,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -5074,11 +5069,9 @@ a:hover{
     padding-top: 40px;
     padding-bottom:20px;
  }
-
-  .banner1{
+ .banner1{
     padding-top: 40px;
  }
-
 .startassu{
     font-size:60px;
      font-weight:700!important;
@@ -5146,17 +5139,14 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
 }
-
 
 @media only screen and (min-width: 850px){
  .pt-bnr {
     padding-top: 100px;
     text-align: center;
     }
-
- .head {
+.head {
             font-size: 32px;
         }
 
@@ -5177,8 +5167,7 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
- .pdb{
+.pdb{
     padding-bottom:15px;
 }
  .fitassurebg{
@@ -5189,7 +5178,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -5198,7 +5186,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -5207,7 +5194,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -5569,7 +5555,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
 .gromo{
      background-color:#fcfcfc;
     height:515px;
@@ -5633,8 +5618,7 @@ a:hover{
 .head {
             font-size: 40px;
         }
-
- .pt-bnr {
+.pt-bnr {
     padding-top: 100px;
     text-align: center;
     }
@@ -5697,7 +5681,6 @@ a:hover{
   .val{
     padding-top:0px;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:492px;
@@ -5735,12 +5718,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
-
 .service{
    padding:6px;
     margin:auto;
@@ -5848,7 +5825,6 @@ a:hover{
     cursor: pointer;
     margin-top:41px;
 }
-
 .service-fiassure{
      background-color:#fcfcfc;
     height:455px;
@@ -5901,8 +5877,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 }
 @media only screen and (min-width: 1000px){
 
@@ -6010,11 +5984,18 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -1079px;
-    margin-left:0%;
+    margin-top: -1012px;
+    margin-left: 19%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
+
+.stamp{
+    padding-top:110px;
+    width:80%;
+}
+
 .service{
   padding:6px;
     margin:auto;
@@ -6738,11 +6719,20 @@ a:hover{
    cursor:pointer;
 }
 .sodexo-plan2img{
-    margin-top: -1019px;
-    margin-left:6%;
+    margin-top: -994px;
+    margin-left: 17%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
+
+.stamp{
+    padding-top:110px;
+    width:80%;
+}
+
+
+
 .service-sod{
      background-color:#fcfcfc;
     height:453px;
@@ -7059,17 +7049,16 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -991px;
-    margin-left:7%;
+    margin-top:-963px;
+    margin-left:18%;
     margin-right: auto;
     position:relative;
+    width:63%;
 }
-
 .stamp{
     padding-top:150px;
+    width:80%;
 }
-
-
 .service{
      background-color:#fcfcfc;
     padding:6px;
@@ -7442,7 +7431,7 @@ a:hover{
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
-    margin-top:10px;
+    margin-top:50px;
 }
 .sodexo-plan2 .buybtn{
    background-color:#0f5fc2;
@@ -7466,10 +7455,11 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -996px;
-    margin-left:7%;
+    margin-top: -960px;
+    margin-left: 18%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
 .service{
      background-color:#fcfcfc;
@@ -7822,10 +7812,11 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -996px;
-    margin-left:7%;
+    margin-top:-950px;
+    margin-left:17%;
     margin-right: auto;
     position:relative;
+    width: 63%;
 }
 }
 
@@ -7981,10 +7972,11 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -996px;
-    margin-left:7%;
+    margin-top: -949px;
+    margin-left: 18%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
 .service{
      background-color:#fcfcfc;
@@ -8224,10 +8216,11 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -996px;
-    margin-left:7%;
+    margin-top:-949px;
+    margin-left: 18%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
 .service{
     background-color:#e6f3fa;
@@ -8481,13 +8474,13 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -996px;
-    margin-left:7%;
+    margin-top: -949px;
+    margin-left: 18%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 63%;
 }
 }
-
 
 @media only screen and (min-width: 1900px){
  .pt-bnr {
