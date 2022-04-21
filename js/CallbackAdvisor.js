@@ -297,9 +297,9 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                    </form>" +
         "                                </div>" +
         "                                <div class='col-md-6 pt-5' id='callbackAdvisormessagediv1' style='display: none;'>" +
-        "                                    <h3 class='text-center'> Thank you for your interest !!</h3>" +
+        "                                    <h3 class='text-center' style='font-size:24px;'> Thank you for your interest !!</h3>" +
         "                                    <p class='text-center pt-2' id='callbackAmessageId1'><b></b></p>" +
-        "                                    <div class='col-md-8   mx-auto'>" +
+        "                                    <div class='col-md-8  text-center mx-auto'>" +
         "                                        <button type='submit' style='background-color: green;' data-dismiss='modal' value='OK'" +
         "                                            class=' btn-class  pgreenbtn' onclick='closemodalcallback()' >" +
         "                                            Ok" +
