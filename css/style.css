@@ -9541,8 +9541,6 @@ h1{
     width: 250px;
     text-align: center;
 }
-
-
 .custom-shape-divider-bottom-1630575888 {
     bottom: 0;
     left: 0;
@@ -9574,7 +9572,6 @@ h1{
     line-height: 22px;
     color: #666;
 }
-
 .fingr-wrapper{
     padding: 30px;
     min-height: 480px;
@@ -9585,8 +9582,6 @@ h1{
     margin-bottom: 20px; 
     display: block;
 }
-
-
 .card-info a.border-btn{
     border: 2px solid #2e2751;
     padding: 7px 13px 7px 13px;
@@ -9597,37 +9592,28 @@ h1{
     font-size: 15px;
     margin-bottom: 10px;
 }
-
-
 .border-blue:hover{
     background-color: #0863bd !important;
     color: #ffffff;
 }
-
-
 .border-blue1:hover{
     background-color: #0863bd !important;
     color: #ffffff;
 }
-
 .two-btn-wrapper {
     column-gap: 8px;
 }
-
 .head {
   color: #231f20;
     font-size: 25px;
     font-weight: 700;
 }
-
 .subhead {
    font-size: 17px;
     font-weight: 350;
     color: #414143;
     line-height:25px;
 }
-
-
 .start-service-section {
     background: url(../images/start-section-background.png);
     background-position: left top;
@@ -9683,7 +9669,6 @@ h1{
     width: 52px;
     border: none;
 }
-
 .start-service-section{
     background: url(../images/start-section-background.png);
     background-position: left top;
@@ -9710,10 +9695,9 @@ h1{
     font-size: 28px;
     font-weight: 500;
     padding-left: 20px;
-
 }
 .addr,  .phone, .mail{
-    color: white;
+    color:#ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
