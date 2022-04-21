@@ -10608,7 +10608,7 @@ li {
 
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff!important;
     column-gap: 20px;
 }
 .footer-16 p{
