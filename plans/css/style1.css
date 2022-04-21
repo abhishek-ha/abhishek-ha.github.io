@@ -4507,13 +4507,10 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
 .stamp{
     padding-top:170px;
     width:80%;
 }
-
-
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -4531,8 +4528,8 @@ a:hover{
       .benitem  img {
             width: 80px;
            padding: 2px 2px;
-           
-        }
+           }
+
        .benitem p {
             font-weight: 400;
             color: #ffffff;
@@ -4541,19 +4538,17 @@ a:hover{
             padding-left:5px;
             padding-top:10px;
         }
-
 .benitem p b {
            font-weight: 600;
             color: #ffffff;
            font-size: 15px;
          line-height: 24px;
        }
-
-      .benitem  p.sub {
+.benitem  p.sub {
             font-weight: 400;
             font-size: 90%;
         }
-  .val{
+        .val{
     padding-top:0px;
 }
 .service{
@@ -4726,8 +4721,7 @@ a:hover{
         font-size: 32px;
         font-weight:800;
         }
-
-  .head1 {
+.head1 {
            font-size: 35px;
             font-weight: 600;
             line-height: 37px;
