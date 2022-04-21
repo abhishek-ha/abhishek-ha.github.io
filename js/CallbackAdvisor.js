@@ -290,7 +290,7 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                            </div>" +
         "                                        </div>" +
         "                                        <div class='form-group row '>" +
-        "                                            <div class='col-md-8 mx-auto'>" +
+        "                                            <div class='col-md-8 mx-auto text-center'>" +
         "                                                <button type='submit' class=' btn-class pgreenbtn' style='background-color:#0f5fc2;border-color:1px solid #0f5fc2;'> Submit </button>" +
         "                                            </div>" +
         "                                        </div>" +
