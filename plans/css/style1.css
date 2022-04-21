@@ -4509,7 +4509,7 @@ a:hover{
 }
 
 .stamp{
-    padding-top:40px;
+    padding-top:170px;
     width:80%;
 }
 
@@ -11562,7 +11562,6 @@ h4{color:#444}
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    cursor:pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
