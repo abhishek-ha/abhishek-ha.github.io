@@ -357,9 +357,15 @@ function closemodalcallbackwithdownloadpdf(){
 function closemodalcallbackwithbuyplan() {
     if (plancode != null && plancode != '') {
         try {
+            gtag_report_conversionbegincheckout();
+        } catch {}
+        try {
             var Vars = getUrlVars();
             BuyOPDPlan($('#callbackAdvisorName1').val(), $('#callbackAdvisorEmail1').val(), $('#callbackAdvisorPhone1').val(), '1998-01-01', 'Male', plancode, '', SourceValue, Vars["utm_source"], Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"]).then(function (result) {
                 console.log("successful buy plan");
+                try {
+                    gtag_report_conversionPurchase();
+                } catch {}
             }).catch(function (error) {
                 console.warn(error);
             });
