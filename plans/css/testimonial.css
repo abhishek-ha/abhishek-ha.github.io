@@ -587,6 +587,56 @@
 }
 }
 
+@media only screen and (min-width:1500px) {
+   .slider__buttons {
+    flex: 0 0 auto;
+    width: 11.2rem;
+    height: 5.6rem;
+    box-shadow: var(--box-shadow-2);
+    display: flex;
+    position: absolute;
+    bottom: 8.5%;
+    right:40%;
+    top:285px;
+}
+ .testimonial__img {
+    flex: initial;
+    width:42%!important;
+}
+.testimonial__text  {
+      order:  1;
+     flex:  initial;
+      margin-right: -5.8%;
+   margin-top: 4rem!important;
+   padding-left:200px;
+}
+}
+
+@media only screen and (min-width:1600px) {
+   .slider__buttons {
+    flex: 0 0 auto;
+    width: 11.2rem;
+    height: 5.6rem;
+    box-shadow: var(--box-shadow-2);
+    display: flex;
+    position: absolute;
+    bottom: 8.5%;
+    right:40%;
+    top:280px;
+}
+ .testimonial__img {
+    flex: initial;
+    width:42%!important;
+}
+.testimonial__text  {
+      order:  1;
+     flex:  initial;
+      margin-right: -5.8%;
+   margin-top: 4rem!important;
+   padding-left:200px;
+}
+}
+
 
 
 
