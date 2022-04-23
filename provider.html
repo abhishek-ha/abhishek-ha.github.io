@@ -23,19 +23,73 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 
-
-<style >
+<style>
     body{
         background-color: transparent;
     }
 
-    .active:after {
-  content: "\2212";
+.accordion {
+    max-width:100%;
+    height:auto;
+   /* background: linear-gradient(to bottom right, #FFF, #f7f7f7);*/
+  /*  background:#004182;*/
+    margin: 0 auto;
+    border-radius: 3px;
+    /*box-shadow: 0 10px 15px -20px rgba(0, 0, 0, 0.3), 0 30px 45px -30px rgba(0, 0, 0, 0.3), 0 80px 55px -30px rgba(0, 0, 0, 0.1);*/
+}
+.heading {
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 1px solid #e7e7e7;
+    letter-spacing: 0.8px;
+    padding: 15px;
+    cursor: pointer;  
+    background-color:#0f5fc2;
+}
+.heading:nth-last-child(2){
+    border-bottom:0; 
+}
+.heading:hover {
+    background: #004182;
+    border-radius: 0;
+}
+.heading:first-child:hover {
+    border-radius: 3px 3px 0 0;
+}
+.heading:nth-last-child(2):hover{
+    border-radius:0 0 3px 3px;
+}
+.heading::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    border-top: 7px solid #f5f5f5;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    float: right;
+    transform: rotate(0);
+    transition: all 0.5s;
+    margin-top: 5px;
+}
+.active.heading::before {
+    transform: rotate(-180deg);
+}
+.not-active.heading::before {
+    transform: rotate(0deg);
+}
+.contents {
+    display: none;
+    background: #FFFAFA;
+    padding: 15px;
+    color: #7f8fa4;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 </style>
-
-      </head>
+</head>
   <body>
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top mob1">
@@ -90,47 +144,40 @@
         </div>
     </div>
 </nav>
-<section >
 
+<section style="background-color:#f9f9f9;">
 <div class="container">
         <div class="row ">
             <div class="col-md-6 pt-8">
                 <h2 class="head"> Partner with us &<br><span class="text-green">Grow your business </span></h2>
-                <div class="desc">
-                <p >HealthAssure is India's Biggest HMO Working with almost all leading Insurance Companies and a number of corporates.We Partner with more than 6700 diagnostic centers,Labs,hospitals and clinics to deliver seamless experience to our customer.  </p>
+                <div class="desc pt-4">
+                <p>HealthAssure is India's Biggest HMO Working with almost all leading Insurance Companies and a number of corporates.We Partner with more than 6700 diagnostic centers,Labs,hospitals and clinics to deliver seamless experience to our customer.  </p>
                 </div>
             </div>
 
 <div class="col-md-6">
    <img src="images/health-provider.png" class="img-fluid">
 </div>
-
-  </div>
+</div>
     </div>
 </section>
 
 <section class="bg-white">
     <div class="container">
         <div class="row">
-          
-    <div class="col-md-12 text-right assured-business">
-
-                <img src="images/assured-business.png" class="img-fluid w-75">
+           <div class="col-md-12 text-right assured-business">
+  <img src="images/assured-business.png" class="img-fluid w-75">
           </div>
         </div>
         <div class="row">
             <div class="col-md-5">
                 <h2 class="head"> Get More and <br> Assured Business</h2>
-                
-            </div>
+         </div>
              <div class="col-md-5  provider1">
                 <p> Utilize your available bandwidth to increase your business with us,Get surety on business,pricing & payments.</p>
-                
-            </div>
-            
-        </div>
-        
-    </div>
+         </div>
+       </div>
+   </div>
     </section>
 
 
@@ -176,143 +223,47 @@
                                 <span class="year"><img src="images/hereit5.png" class="img-fluid">  </span></div>
                             <div class="timeline-content mt-4 h-111">
                                 <h3 class="title"> Partner starts receiving the bookings initiated by Health Assure </h3>
-                              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
-
 </section>
 
 
 
-
-
-
-
-<section class="faq">
+<section>
     <div class="container">
+         <h2 class="text-center head py-4"> FAQ's </h2>
+         <div class="line mb-5"></div>
         <div class="row">
-            <div class="col-md-12 text-center pt-5">
-                    <h2 class="head"> FAQ's </h2>
-            
-            <div class="line mb-5"> </div>
-                
+            <div class="col-lg-4">
+                <img src="images/faq.png" class="img-fluid">
             </div>
-            
-        </div>
-        <div class="row mb-5">
-
-
-<div class="col-md-12">
-    <h4> Are Online Consultations legal? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-    <h4> Are Patients comfortable in consulting online ? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-
-    <h4> How long is an online consultation on Practo ? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-
-    <h4> How will I receive Payments ? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-    <h4> How quickly do i have to respond to patients ? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-    <h4> Will I receive consultations at midnight ?</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-<h4> What happens if I'm  unable to diagnose a patient online patient online ? </h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-    
-</div>
-
-<!--  <div class="col-md-6">
-    <img src="images/faq.png" class="img-fluid">
-     </div>  -->
-            
-        </div>
-        
+      <div class="col-lg-8">
+       <div class="accordion">
+              <div class="heading"> Are Online Consultations legal? </div>
+                <div class="contents">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+       <div class="heading"> Are Patients comfortable in consulting online ? </div>
+                <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+ <div class="heading"> How long is an online consultation on HealthAssure ? </div>
+                <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      <div class="heading"> How will I receive Payments ?</div>
+                <div class="contents">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div class="heading"> How quickly do i have to respond to patients ? </div>
+                <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div class="heading"> Will I receive consultations at midnight ? </div>
+                <div class="contents"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+          </div>
+          </div>
+       </div>
     </div>
-
 </section>
 
 
 
-
-
-
-
-<!-- <section class="faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center pt-5">
-                    <h2 class="head"> FAQ's </h2>
-            
-            <div class="line mb-5"> </div>
-                
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-
-<button class="accordion border-bottom">Are Online Consultations legal?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion border-bottom"> Are Patients comfortable in consulting online ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion border-bottom"> How long is an online consultation on Practo ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion border-bottom"> How will I receive Payments ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<button class="accordion border-bottom"> How quickly do i have to respond to patients ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-
-<button class="accordion border-bottom"> Will I receive consultations at midnight ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion border-bottom"> What happens if I'm  unable to diagnose a patient online patient online ?</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
- </div>
-
- <div class="col-md-6">
-    <img src="images/faq.png" class="img-fluid">
-     
- </div>
-            
-        </div>
-        
-    </div>
-
-</section> -->
-
-
-    <div class="container pt-7 ">
+ <div class="container pt-7 ">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h2 class="head"> How to Get Started </h2>
@@ -332,17 +283,14 @@
                         <div class="getstarted">
                          <img src="images/lets-talk.png" class="img-fluid  ">
                      </div>
-
-                    <h5 class="pt-3"> Let's Talk</h5>
+              <h5 class="pt-3"> Let's Talk</h5>
                     <p>Our outreach team will get back to you discuss your practice. </p>
-                    
-                </div>
+              </div>
                     <div class="col-md-4  text-center">
                          <div class="getstarted">
                         <img src="images/get-onboarded.png" class="img-fluid ">
                     </div>
-
-                    <h5 class="pt-3"> Get Onboarded</h5>
+             <h5 class="pt-3"> Get Onboarded</h5>
                     <p> Join our family through an instant verification and onboarding procedure.</p>
               </div>
           </div>
@@ -357,28 +305,31 @@
     
 </div>
 </div>
-<div class="row " style="background-image:url('images/healthcarepartner.png');background-position:left;background-repeat: no-repeat; background-size:90%;height: 700px;">
-    <div class="col-md-6 offset-md-5" >
+<div class="row">
 
+ <div class="col-md-6">
+    <img src="images/partner-change.png" class="img-fluid">
+    </div>
 
-        <form class="bgblue pt-5 pb-4 pl-4 pr-4 radius1 ml-2 formspace mt-5 formb">
+ <div class="col-md-6 " >
+     <form class="bgblue pt-5 pb-4 pl-4 pr-4 radius1 ml-2 formspace mt-5 formb">
     <h2 class="text-white text-center pb-4 pt-1">Join Our Exclusive Team</h2>
      <div class="form-group">
     <input type="email" class="form-control formrds" autocomplete="off" placeholder="Email *" required>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-12">
     <input type="text" class="form-control formrds"  autocomplete="off"   placeholder="Name *" required>
     </div>
-    <div class="form-group col-md-6">
-        <input type="text" class="form-control formrds"  autocomplete="off"   maxlength="14" pattern="[789][0-9]{9}" placeholder="Mobile *"required>
+    <div class="form-group col-md-12">
+        <input type="text" class="form-control formrds"  autocomplete="off"   maxlength="14" pattern="[56789][0-9]{9}" placeholder="Mobile *"required>
     </div>
   </div>
 <button type="submit" class="btn btn-class border-green btn-lg btn-block">Submit</button>
 </form>
   </div>
- 
-    </div>
+
+ </div>
    </div>
      </section>
     
@@ -529,26 +480,41 @@ $('.navbar-light .dmenu').hover(function () {
     });
 });
 
+   </script>
+   <script>
 
-        
+(function($) {
+    'use strict';
+    
+    jQuery(document).on('ready', function(){
+    
+            $('a.page-scroll').on('click', function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top - 50
+                }, 1500);
+                e.preventDefault();
+            });     
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+    });     
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
+                
+})(jQuery);
 
 
+   </script>
 
+   <script >
+        $(document).ready(function(){
+       $(".accordion").on("click", ".heading", function() {
+
+       $(this).toggleClass("active").next().slideToggle();
+
+       $(".contents").not($(this).next()).slideUp(300);
+                    
+       $(this).siblings().removeClass("active");
+       });
+      });
     </script>
 
 

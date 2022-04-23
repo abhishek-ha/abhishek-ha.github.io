@@ -45,7 +45,7 @@ html{
     color: #666;
 }*/
 .desc p{
-    font-size:17!important;
+    font-size:17px!important;
     font-weight:300 ;
     line-height: 24px;
 }
@@ -5670,7 +5670,7 @@ h1{
     font-size: 500;
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
@@ -9955,7 +9955,7 @@ h1{
     font-size: 500;
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
@@ -10217,7 +10217,7 @@ h1{
     font-size: 500;
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
@@ -10487,7 +10487,7 @@ h1{
     font-size: 500;
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
@@ -10764,7 +10764,7 @@ h1{
     font-size: 500;
 }
 .addr,  .phone, .mail{
-    color: white;
+    color: #ffffff;
     column-gap: 20px;
 }
 .footer-16 p{
