@@ -11586,10 +11586,7 @@ h4{color:#444}
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    padding:5px;
+     padding:5px;
     margin-top:20px;
     border-top-left-radius:0px;
     border-bottom-left-radius:8px;
