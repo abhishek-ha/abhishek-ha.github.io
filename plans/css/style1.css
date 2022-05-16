@@ -1357,6 +1357,47 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:421px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
+    margin-top: -990px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+
 .service{
     background-color:#fcfcfc;
     padding:6px;
@@ -1681,7 +1722,6 @@ a:hover{
             font-family: 'Poppins', sans-serif;
             font-size: 28px;
         }
-
 .pl-109{
     padding-left: 109px;
 }
@@ -1743,13 +1783,10 @@ a:hover{
             font-weight: 400;
             font-size: 90%;
         }
-
-
-   .benitem1{
+.benitem1{
           margin:4px;
          padding: 5px;
          max-width:300px;
-        
         }
       .benitem1  img {
         width: 90px;
@@ -2104,6 +2141,11 @@ a:hover{
     cursor: pointer;
     margin-top:52%;
 }
+
+
+
+
+
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:622px;
@@ -2141,6 +2183,45 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:622px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:50px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
+    margin-top:-1380px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
 }
 
 
@@ -2153,7 +2234,6 @@ a:hover{
     font-size: 18px!important;
     font-weight: 600;
 }
-
 .pdb{
     padding-bottom: 10px;
 }
@@ -2329,6 +2409,19 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+.service{
+    background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   min-height:560px;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
+  margin-top:15px;
+  width:310px;
+}
+
 .sodexo-plan1{
      background-color:#fcfcfc;
     height:490px;
@@ -2360,17 +2453,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-.service{
-    background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:560px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:15px;
-  width:310px;
-}
+
+
+
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:421px;
@@ -2403,12 +2488,41 @@ a:hover{
    color:#ffffff!important;
 }
 
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:421px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .stamp{
     padding-top:40px;
 }
-
-
-
 .service .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -2529,6 +2643,10 @@ a:hover{
    background-color:#026cf0;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
+
+
+
+
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:556px;
@@ -2561,6 +2679,47 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
+    margin-top: -1271px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+
+
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:556px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:70px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
     margin-top: -1271px;
     margin-left: auto;
     margin-right: auto;
@@ -2800,7 +2959,6 @@ a:hover{
             padding-left:5px;
             padding-top:10px;
         }
-
 .benitem p b {
             font-weight: 700;
             color: #ffffff;
@@ -2907,6 +3065,44 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
+    margin-top: -1153px;
+    margin-left:2%;
+    margin-right: auto;
+    position:relative;
+}
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:492px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:80px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
     margin-top: -1153px;
     margin-left:2%;
     margin-right: auto;
@@ -3219,6 +3415,50 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+
+
+
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:492px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.scashkaro .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
+    margin-top: -1019px;
+    margin-left:23%;
+    margin-right: auto;
+    position:relative;
+}
+
+
 .stamp{
     padding-top:40px;
 }
@@ -3501,7 +3741,7 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.sodexo-plan.buybtn:hover{
+.sodexo-plan .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -3574,6 +3814,52 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+
+
+
+
+.cashkaro{
+     background-color:#fcfcfc;
+    height:472px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:80px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.cashkaroimg{
+    margin-top: -1108px;
+    margin-left:10%;
+    margin-right: auto;
+    position:relative;
+}
+
+
+
+
 
 .stamp{
     padding-top:40px;
