@@ -27,7 +27,7 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
      <link rel="stylesheet" type="text/css" href="css/style1.css">
-      <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+    
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"> 
@@ -35,6 +35,10 @@
 
  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+
+
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -345,7 +349,7 @@ selector { property:value; }
   </div>
 </div>
 
- <div class="col-md-4 col-lg-2 col-xl-2 col-xxl-2 col-8 mx-auto">
+ <div class="col-md-4 col-lg-2 col-xl-2 col-xxl-2 col-8 mx-auto strip1">
     <img src="images/cashkaro-stamp.png" class="img-fluid stamp">
   <!--   <img src="images/no-creditcard.png" class="img-fluid pt-1"> -->
     </div> 
@@ -400,7 +404,7 @@ selector { property:value; }
     </section>
 
  <section  class="mob-hidden">
-    <img src="images/strip1.png" class="img-fluid strip1">
+    <img src="images/strip1.png" class="img-fluid strip1" style="width:100%;">
 </section>
 
 
@@ -468,10 +472,10 @@ selector { property:value; }
         <div class="row">
       <div class="col-md-6 col-sm-6 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="row pt-2 benitem">
-                        <div class="col-md-4 text-center ">
+                        <div class="col-md-4 col-4 text-center ">
                             <img src="images/bell.png">
                         </div>
-                        <div class="col-md-8 text-white">
+                        <div class="col-md-8 col-4 text-white">
                             <p class="pl-1"><b> Subscribe </b> <br> and start using from day 1</p>
                         </div>
                     </div>
@@ -577,13 +581,6 @@ selector { property:value; }
     </div>
 
 </section>
-
-
-
-
-
-
-
 
   <section class="bg-lgrey mob-hidden">
     <div class="container py-5">
@@ -1140,8 +1137,8 @@ $(document).ready(function(){
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         infinite: true,
         dots: true
       }
