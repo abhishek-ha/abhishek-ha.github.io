@@ -153,6 +153,12 @@
             text-align: center;
             line-height: 36px;
         }
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 48%;
+}
+
+
     </style>
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -186,16 +192,67 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
+
+      <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W443NMX"
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 999;">
+</head>
+<body>
+  
+
+ <section class="bg2">
+        <div class="container">
+            <div class="row py-5 px-3 px-md-0">
+                <div class="col-12">
+                    <img src="images/logo.png" class="logo img-fluid" />
+                    
+                </div>
+                <div class="col-12 col-md-6 my-5">
+                    <h1 class="f-poppins f-50 my-5">
+                        We are building India's best health plans for day-to-day health
+                        expenses.
+                    </h1>
+                   
+                    <div >
+                        <h6 class="f-poppins mb-4">Let's find out the if we have the plan that's right for you.</h6>
+                        <form autocomplete="off" >
+                            <div >
+                              
+            <input type="text" class="rounded px-4 py-2 mb-4 d-inline-block w48" placeholder="Full Name" id="FullName" onkeypress="return FullNameValidation(this, event)" maxlength="100">
+            <input type="text" class="rounded px-4 py-2 mb-4 d-inline-block w48" placeholder="Mobile Number" id="MobileNo" maxlength="10">
+
+                             
+                            </div>
+        <div class="autocomplete" style="margin-bottom:20px">
+<input type="number" class="rounded px-4 py-2 mb-4 d-inline-block w48" placeholder="Enter Age" id="birthyear"  maxlength="4" oninput="validity.valid||(value='');">
+<input id="txtCity" type="text" class="rounded px-4 py-2 mb-4 d- w48" name="city" placeholder="Enter city" onkeydown="getcityList()" >
+                            </div>
+
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary text-uppercase py-2" id="submit-Leads">
+                                    Request a call
+                                    back
+                                </button>
+                            </div>
+                        </form>
+                        <div id="IdMessage">  </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/005.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+   <!--  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 999;">
         <div class="container mt-2 mb-2">
             <a class="navbar-brand logo mdcenter" href="https://healthassure.in/"><img src="images/logo.png" width="180px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav"
@@ -214,8 +271,8 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <section>
+    </nav> -->
+   <!--  <section>
         <div class="container">
             <div class="row  px-3 px-md-0">
                 <div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 banner">
@@ -223,7 +280,7 @@
                     <p class="thead1 pl-2 mb-2" style="font-size:18px;margin-bottom:1px;">Secure your family’s out-of-pocket <br> medical expenses with <span style="color:#0f5fc2;"><b>FitAssure </b> </span> </p>
                     <p class="thead1 pl-2 pb-4 pt-1" style="font-size:18px;margin-bottom:1px;"> Starting at just <span style="color:#0f5fc2;"><b> &#8377; 167/month </b></span> </p>
 
-                    <!-- <h2  class="startassu">  </h2> -->
+              
                     <div class="row">
                         <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-6 col-sm-12">
                             <a href="javascript:BuyopdPans('FitAssure',true,'HAOPDR003-53')">
@@ -241,11 +298,11 @@
     <p class="text-center"> Fill your details below:</p>
 
   <div class="form-group">
-  <!--   <label for="Name">Name</label> -->
+
     <input type="text" class="form-control" placeholder=" Full Name" required>
  </div>
    <div class="form-group">
-   <!--  <label for="Phone">Phone</label> -->
+   
     <input type="text" class="form-control" placeholder="Phone"required>
     <div class="row pt-1 d-none">
         <div class="col-md-3">
@@ -264,7 +321,7 @@
     </div>
  </div>
    <div class="form-group">
-<!--     <label for="Email">Email</label> -->
+
     <input type="email" class="form-control" placeholder="Email"required>
  </div>
 
@@ -276,7 +333,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="bluesec" id="benefits">
         <div class="container-fluid">
@@ -1037,12 +1094,203 @@
         };
     </script>
 
-    <!--<script type="text/javascript" language="javascript">
-    function redirect()
-    {
-    window.location.href="https://www.healthassure.in/products/Files/StartAssure-Platinum.pdf";
+<script>
+    
+<script type="text/javascript">
+    var citysArr =  [];
+
+    function getcityList() {
+        autocomplete(document.getElementById("txtCity"), citysArr);
     }
-    </script> -->
+
+    $.ajax({
+        url: "/Products/OPD/CityData",
+        type: "GET",
+        data: { action: this.title },
+        success: function (data) {
+
+            if (data.length > 0) {
+                citysArr = data.split('\r\n');
+            }
+        }
+    });
+    
+    function FullNameValidation(txt, e) {
+        var arr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ";
+        var code;
+        if (window.event)
+            code = e.keyCode;
+        else
+            code = e.which;
+        var char = keychar = String.fromCharCode(code);
+        if (arr.indexOf(char) == -1)
+            return false;
+
+    }
+
+    $(function () {
+        $('#submit-Leads').click(function () {
+
+            var FullName = $("#FullName").val();
+            var MobileNo = $("#MobileNo").val();
+            var birthyear = $("#birthyear").val();
+            var Cityname = $("#txtCity").val();
+
+            if ($('#FullName').val() == "") {
+                swal("Please Enter Name");
+                return false;
+            }
+            if (!$('#MobileNo').val().match('[0-9]{10}')) {
+                swal("Please put 10 digit mobile number");
+                return false;
+            }
+            if ($('#birthyear').val()=="") {
+                swal("Please Enter Age");
+                return false;
+            }
+            if ($('#txtCity').val()=="") {
+                swal("Please select city");
+                return false;
+            }
+
+            $.ajax({
+                url: "/Products/OPD/NiYo?FullName=" + FullName + "&MobileNo=" + MobileNo + "&birthyear=" + birthyear + "&Cityname=" + Cityname,
+                type: "POST",
+                dataType: "json",
+                success: function (Message) {
+                    if (Message == "success") {
+                        $('#FullName').val('');
+                        $('#MobileNo').val('');
+                        $('#RequestCallback_Popup').show();
+                        $('#RequestCallback_Popup').modal();
+                         window.stop();
+                    }
+                    else {
+                        swal("Oops..", "Please try again!", "error");
+                        location.reload();
+                    }
+                }
+
+
+            });
+        });
+
+
+    });
+
+
+    $('#PopupClose').click(function () {
+        location.reload();
+    });
+    $('#close').click(function () {
+        location.reload();
+    });
+   
+  
+
+    function autocomplete(inp, arr) {       
+        /*the autocomplete function takes two arguments,
+        the text field element and an array of possible autocompleted values:*/
+        var currentFocus;
+        /*execute a function when someone writes in the text field:*/
+        inp.addEventListener("input", function (e) {
+            var a, b, i, val = this.value;
+            /*close any already open lists of autocompleted values*/
+            closeAllLists();
+            if (!val) { return false; }
+            currentFocus = -1;
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+            /*for each item in the array...*/
+            for (i = 0; i < arr.length; i++) {
+                /*check if the item starts with the same letters as the text field value:*/
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    /*create a DIV element for each matching element:*/
+                    b = document.createElement("DIV");
+                    /*make the matching letters bold:*/
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    /*insert a input field that will hold the current array item's value:*/
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    /*execute a function when someone clicks on the item value (DIV element):*/
+                    b.addEventListener("click", function (e) {
+                        /*insert the value for the autocomplete text field:*/
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        /*close the list of autocompleted values,
+                        (or any other open lists of autocompleted values:*/
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+        /*execute a function presses a key on the keyboard:*/
+        inp.addEventListener("keydown", function (e) {
+            var x = document.getElementById(this.id + "autocomplete-list");
+            if (x) x = x.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+                /*If the arrow DOWN key is pressed,
+                increase the currentFocus variable:*/
+                currentFocus++;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 38) { //up
+                /*If the arrow UP key is pressed,
+                decrease the currentFocus variable:*/
+                currentFocus--;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 13) {
+                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                e.preventDefault();
+                if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (x) x[currentFocus].click();
+                }
+            }
+        });
+        function addActive(x) {
+            /*a function to classify an item as "active":*/
+            if (!x) return false;
+            /*start by removing the "active" class on all items:*/
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            /*add class "autocomplete-active":*/
+            x[currentFocus].classList.add("autocomplete-active");
+        }
+        function removeActive(x) {
+            /*a function to remove the "active" class from all autocomplete items:*/
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("autocomplete-active");
+            }
+        }
+        function closeAllLists(elmnt) {
+            /*close all autocomplete lists in the document,
+            except the one passed as an argument:*/
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+                if (elmnt != x[i] && elmnt != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                }
+            }
+        }
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+        });
+    }
+
+</script>
+
+
+
+
+</script>
 
 </body>
 
