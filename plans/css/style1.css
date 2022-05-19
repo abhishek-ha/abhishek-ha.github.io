@@ -863,7 +863,6 @@ a:hover{
     margin: 50px auto;
     line-height: 2px;
 }
-
 #generic_price_table_home .divider span{
     width: 100%;
     display: table;
@@ -950,7 +949,6 @@ a:hover{
     border-bottom: 10px solid transparent;
     border-left: 10px solid #0f5fc2;
 }
-
  @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
 
 
@@ -1038,18 +1036,15 @@ a:hover{
      width: 100%;
      margin-top: 25px
  }
-
- .bbb_viewed_price {
+.bbb_viewed_price {
      font-size: 16px;
      color: #000000;
      font-weight: 500
  }
-
- .bbb_viewed_item.discount .bbb_viewed_price {
+.bbb_viewed_item.discount .bbb_viewed_price {
      color: #df3b3b
  }
-
- .bbb_viewed_price span {
+.bbb_viewed_price span {
      position: relative;
      font-size: 12px;
      font-weight: 400;
@@ -1165,8 +1160,6 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 12px;
@@ -1188,7 +1181,6 @@ a:hover{
             font-family: 'Poppins', sans-serif;
             font-size: 28px;
         }
-
 .pl-109{
     padding-left: 109px;
 }
@@ -1198,7 +1190,6 @@ a:hover{
 .pl-123{
     padding-left: 123px;
 }
-
 .pl-88 {
     padding-left:75px!important;
 }
@@ -1216,7 +1207,6 @@ a:hover{
     padding-bottom:20px;
     padding-top:5px;
 }
-
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -1246,8 +1236,7 @@ a:hover{
             font-weight: 600;
             color: #ffffff;
             font-size: 15px;
-            
-        }
+             }
   .benitem  p.sub {
             font-weight: 400;
             font-size: 90%;
@@ -1256,7 +1245,6 @@ a:hover{
     padding-top:3px;
     padding-right:15px;
 }
-
 .sodexo-plan{
      background-color:#fcfcfc;
     height:343px;
@@ -1410,9 +1398,6 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
 }
-
-
-
 .service{
     background-color:#fcfcfc;
     padding:6px;
@@ -1601,6 +1586,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
 .service-sod{
      background-color:#fcfcfc;
     height:615px;
@@ -1632,6 +1620,48 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+.fitassure-plus{
+     background-color:#fcfcfc;
+    height:555px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus  .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
+
+
+
+
 
 .servicebox{
      background-color:#fcfcfc;
@@ -2079,6 +2109,10 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
+
 .service-sod{
      background-color:#fcfcfc;
     height:555px;
@@ -2110,6 +2144,46 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
+
+.fitassure-plus{
+     background-color:#fcfcfc;
+    height:555px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus  .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
 .servicebox{
      background-color:#fcfcfc;
     padding:6px;
