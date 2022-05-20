@@ -8252,7 +8252,7 @@ a:hover{
 
 .fitassure-plus{
      background-color:#fcfcfc;
-    height:540px;
+    height:560px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -8547,7 +8547,7 @@ a:hover{
 
 .fitassure-plus{
      background-color:#fcfcfc;
-    height:541px;
+    height:560px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -10180,6 +10180,20 @@ a:hover{
 .pt-9{
     padding-top: 8rem;
 }
+.pt-9-5{
+    padding-top: 9rem;
+}
+.pt-10{
+    padding-top: 10.8rem;
+}
+
+.pt-14{
+    padding-top: 14.9rem;
+}
+
+
+
+
 .pb-6{
     padding-bottom:5rem;
 }
