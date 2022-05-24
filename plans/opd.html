@@ -984,13 +984,14 @@
         $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'OPD',false).then(function (result) {
+                $('#AdvisorEmail').val(), 'OPD', false).then(function (result) {
                     $('#AmessageId').html(result.message);
                     $('#Advisorformdiv').hide();
                     $('#Advisormessagediv').show();
                      $('#AdvisorPhone').val('');
                     $('#AdvisorName').val('');
                     $('#AdvisorEmail').val('');
+
                 });
         });
 
