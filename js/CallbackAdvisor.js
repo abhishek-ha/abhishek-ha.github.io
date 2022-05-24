@@ -280,7 +280,7 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                                        <div class='form-group row'>" +
         "                                            <div class='col-sm-12'>" +
         "                                                <input type='text' class='form-control ' id='callbackAdvisorPhone1'" +
-        "                                                    placeholder='Phone *' pattern='[789][0-9]{9}' required>" +
+        "                                                    placeholder='Phone *' pattern='[6789][0-9]{9}' required>" +
         "                                            </div>" +
         "                                        </div>" +
         "                                        <div class='form-group row'>" +

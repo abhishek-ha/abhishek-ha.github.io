@@ -259,7 +259,7 @@
    <div class="form-group">
     <input type="text" class="form-control" id="AdvisorPhone" pattern="[0123456789][0-9]{9}"
     maxlength="10" placeholder="Phone"required>
-    <div class="row pt-1 d-none">
+   <!--  <div class="row pt-1 d-none">
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="">
         </div>
@@ -272,8 +272,9 @@
         <div class="col-md-3">
             <input type="text" class="form-control" placeholder="">
         </div>
+        </div> -->
+
         
-    </div>
  </div>
    <div class="form-group">
 
@@ -997,7 +998,7 @@
         $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'HomePage').then(function (result) {
+                $('#AdvisorEmail').val(), 'OPD',false).then(function (result) {
                     $('#AmessageId').html(result.message);
                     $('#Advisorformdiv').hide();
                     $('#Advisormessagediv').show();
@@ -1005,7 +1006,7 @@
         });
 
         function advisorclick() {
-            CallBackModalPopup('HomePage', false);
+            CallBackModalPopup('OPD', false);
             $('#Advisorformdiv').show();
             $('#Advisormessagediv').hide();
             $('#AdvisorPhone').val('');
@@ -1048,6 +1049,43 @@
             location.href = "https://www.healthassure.in/products/Files/HealthAssure-opd-plans-tnc.pdf";
         };
     </script>
+
+
+
+
+
+ <script>
+
+   $("#CallbackAdvisorform").submit(function (event) {
+            event.preventDefault();
+            SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
+                $('#AdvisorEmail').val(), 'StartAssureElite').then(function (result) {
+                    $('#AmessageId').html(result.message);
+                    $('#Advisorformdiv').hide();
+                    $('#Advisormessagediv').show();
+                });
+        });
+
+        function advisorclick() {
+            CallBackModalPopup('StartAssureElite',false);
+            $('#Advisorformdiv').show();
+            $('#Advisormessagediv').hide();
+            $('#AdvisorPhone').val('');
+            $('#AdvisorName').val('');
+            $('#AdvisorEmail').val('');
+        }
+
+
+
+
+     function advisorclick() {
+            CallBackModalPopup('startassure-elite',false);
+         
+        }
+    </script>
+
+
+
 
 </body>
 
