@@ -273,15 +273,11 @@
             <input type="text" class="form-control" placeholder="">
         </div>
         </div> -->
-
-        
- </div>
+   </div>
    <div class="form-group">
-
-    <input type="email" class="form-control" id="AdvisorEmail" placeholder="Email"required>
+    <input type="email" class="form-control" id="AdvisorEmail"  placeholder="Email"required>
  </div>
-
- <div class="text-center">
+  <div class="text-center">
  <button type="submit" class="btn2" style="font-size:17px;"> Request Call Back </button>
   </div>
 </form>
@@ -986,6 +982,8 @@
     <script src="../js/CallbackAdvisor.js"></script>
     <script src="../js/AutoCallbackPopup.js"></script>
     <script src="../js/buyplansui.js"></script>
+
+    
     <script>
         $(document).ready(function () {
             $('.navbar-light .dmenu').hover(function () {
@@ -998,7 +996,7 @@
         $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'OPD',false).then(function (result) {
+                $('#AdvisorEmail').val(), 'HomePage').then(function (result) {
                     $('#AmessageId').html(result.message);
                     $('#Advisorformdiv').hide();
                     $('#Advisormessagediv').show();
@@ -1006,7 +1004,7 @@
         });
 
         function advisorclick() {
-            CallBackModalPopup('OPD', false);
+            CallBackModalPopup('HomePage', false);
             $('#Advisorformdiv').show();
             $('#Advisormessagediv').hide();
             $('#AdvisorPhone').val('');
@@ -1049,43 +1047,6 @@
             location.href = "https://www.healthassure.in/products/Files/HealthAssure-opd-plans-tnc.pdf";
         };
     </script>
-
-
-
-
-
- <script>
-
-   $("#CallbackAdvisorform").submit(function (event) {
-            event.preventDefault();
-            SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'StartAssureElite').then(function (result) {
-                    $('#AmessageId').html(result.message);
-                    $('#Advisorformdiv').hide();
-                    $('#Advisormessagediv').show();
-                });
-        });
-
-        function advisorclick() {
-            CallBackModalPopup('StartAssureElite',false);
-            $('#Advisorformdiv').show();
-            $('#Advisormessagediv').hide();
-            $('#AdvisorPhone').val('');
-            $('#AdvisorName').val('');
-            $('#AdvisorEmail').val('');
-        }
-
-
-
-
-     function advisorclick() {
-            CallBackModalPopup('startassure-elite',false);
-         
-        }
-    </script>
-
-
-
 
 </body>
 
