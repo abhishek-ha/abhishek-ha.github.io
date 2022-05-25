@@ -254,26 +254,13 @@
    <div class="form-group">
     <input type="text" class="form-control" id="AdvisorPhone" pattern="[0123456789][0-9]{9}"
     maxlength="10" placeholder="Phone"required>
-   <!--  <div class="row pt-1 d-none">
-        <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="">
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="">
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="">
-        </div>
-        <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="">
-        </div>
-        </div> -->
-   </div>
+  </div>
    <div class="form-group">
     <input type="email" class="form-control" id="AdvisorEmail"  placeholder="Email"required>
  </div>
   <div class="text-center">
- <button type="submit" onclick="requestcallback();" class="btn2" style="font-size:17px;"> Request Call Back </button>
+ <button type="submit" class="btn2" style="font-size:17px;"> Request Call Back 
+ </button>
   </div>
 </form>
 
@@ -987,15 +974,9 @@
 
                 });
         });
-
         
-function requestcallback(){
-      $('#Thankyoupopup1').html(result.message);
 
-}
-
-
-        function advisorclick() {
+  function advisorclick() {
             CallBackModalPopup('OPD', false);
             $('#Advisorformdiv').show();
             $('#Advisormessagediv').hide();
