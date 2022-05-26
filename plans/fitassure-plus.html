@@ -1068,7 +1068,7 @@ Terms & Conditions </a> </p>
  $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
-                $('#AdvisorEmail').val(), 'Sodexo').then(function (result) {
+                $('#AdvisorEmail').val(), 'Fitassure-Plus').then(function (result) {
                     $('#AmessageId').html(result.message);
                     $('#Advisorformdiv').hide();
                     $('#Advisormessagediv').show();

@@ -1,0 +1,57 @@
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     box-sizing: border-box;
+ }
+
+body{
+	font-size: 14px;
+	line-height: 20px;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+html{
+     overflow-x: hidden!important;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.pharmacybox{
+	background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+
+.pharmacybox h3{
+font-size: 20px;
+}
+
+.pharmacybox p{
+	font-size: 14px;
+	color:#d1b6b4;
+}
+
+.btn{
+	padding: 7px 15px 7px 15px;
+}
+
+.border-radius{border-radius:20px;}
+
