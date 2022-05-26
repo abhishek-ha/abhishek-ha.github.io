@@ -78,6 +78,9 @@ font-size: 14px;
 .btn-radius{
     border-radius:10px;
 }
+.checkout p{
+    font-size: 12px;
+}
 
 }
 
@@ -86,7 +89,7 @@ font-size: 14px;
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-radius: 20px;
-    padding:15px;
+    padding:10px;
     margin:10px;
 }
 .pharmacybox h3{
@@ -108,16 +111,18 @@ font-size: 12px;
     user-select: none;
      border: 1px solid transparent;
     padding: 2px 15px 2px 15px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn-radius{
-    border-radius:10px;
+    border-radius:13px;
 }
-
-
+.checkout p{
+    font-size: 12px;
+    font-weight:500;
+}
 }
 
 
@@ -487,16 +492,22 @@ font-size: 20px;
     color:#d1b6b4;
 }
 }
-@media only screen and max-width(500px){
-    .rowr{
-        padding-right:5px!important;
-        padding-left: 5px!important;
-    }
 
-.rowl{
-        padding-left: 5px;
-    }
+
+@media only screen and (max-width: 400px) {
+    .mob{
+        display: none!important;
 }
+}
+@media only screen and (min-width: 400.50px) {
+    .desk{
+       display: none!important;
+}
+
+}
+
+
+
 .pharmacyboxinput{
       box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
       border-radius:20px;
