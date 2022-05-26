@@ -32,8 +32,98 @@ html{
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.pharmacybox{
-	background-color: #ffffff;
+.border-radius{
+    border-radius:20px;
+}
+
+.checkoutbtn{
+    background-color: #008390;
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 14px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     border: 1px solid transparent;
+    padding: 7px 15px 7px 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-radius{
+    border-radius:10px;
+}
+
+}
+
+@media only screen and (min-width: 301px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 12px;
+}
+.pharmacybox p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     border: 1px solid transparent;
+    padding: 2px 15px 2px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-radius{
+    border-radius:10px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 350px) {
+  .pharmacybox{
+    background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-radius: 20px;
     padding:15px;
@@ -41,17 +131,384 @@ html{
 }
 
 .pharmacybox h3{
+font-size: 15px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+}
+
+
+
+
+
+@media only screen and (min-width: 400px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 15px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 450px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
 font-size: 20px;
 }
-
 .pharmacybox p{
-	font-size: 14px;
-	color:#d1b6b4;
+    font-size: 14px;
+    color:#d1b6b4;
 }
 
-.btn{
-	padding: 7px 15px 7px 15px;
 }
 
-.border-radius{border-radius:20px;}
+
+
+@media only screen and (min-width: 500px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+
+@media only screen and (min-width: 650px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 700px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 750px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:14px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 800px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 850px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 900px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:16px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 1100px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+
+@media only screen and (min-width: 1240px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:17px;
+}
+.pharmacybox p{
+    font-size: 13px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 1400px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+
+
+@media only screen and (min-width: 1500px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 1700px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+
+@media only screen and (min-width: 1800px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+@media only screen and max-width(500px){
+    .rowr{
+        padding-right:5px!important;
+        padding-left: 5px!important;
+    }
+
+.rowl{
+        padding-left: 5px;
+    }
+}
+.pharmacyboxinput{
+      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+      border-radius:20px;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 18px;
+     border-top-right-radius: 18px;
+     background-color: #ffffff;
+}
+
+
+
 

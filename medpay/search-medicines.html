@@ -11,27 +11,28 @@
 <body>
 	<div class="container py-3">
 		<div class="row">
-          <div class="col-lg-9 col-9">
-          	<div class="row">
-            	<div class="col-lg-4 col-sm-6 col-6 py-1">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6 py-1 rowr">
 				<form>
 					<select class="form-control">
-						<option> Gurugram sec-30 </option>
-						<option> Gurugram sec-35 </option>
-						<option> Gurugram sec-40 </option>
+						<option> Gurugram (122001) </option>
+						<option> Gurugram (122001) </option>
+						<option> Gurugram (122001) </option>
 				   </select>
 			  	</form>
 		    </div>
-         <div class="col-lg-4 col-sm-6 col-6 py-1">
+         <div class="col-lg-3 col-md-3 col-sm-6 col-6 py-1 ">
 				<input type="text" class="form-control" placeholder="Enter the Pincode" name="">
 		  </div>
-			<div class="col-lg-4 py-1">
-				<input type="text" class="form-control" placeholder="Search Medicines" name="">
-		</div>	
-        	</div>
-		 </div>
-			<div class="col-lg-3 col-3 py-1">
-			<p>	<i class="fas fa-2x fa-cart-arrow-down"></i> <span style="vertical-align:top;"> Cart 2 Items </span> </p>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-6 py-1">
+				<div class="input-group mb-3 pharmacyboxinput">
+  <input type="text" class="form-control pharmacyboxinput" placeholder="Search Medicines">
+  <div class="input-group-append">
+    <span class="input-group-text"> <i class="fas fa-search text-primary"></i></span>
+  </div>
+</div>
+</div>
+   	<div class="col-lg-3 col-3 py-1">
+			<p>	<i class="fas fa-2x fa-cart-arrow-down"></i> <span class="text-primary" style="vertical-align:top;"> Cart 2 Items </span> </p>
 		</div>
        </div>
     </div>
@@ -39,16 +40,15 @@
     <div class="container border border-radius">
       <div class="row">
       	<div class="col-lg-12 py-3 ">
-      		<h5 class="pl-3"> Showing all 4 Results for Pharmac</h5>
+      		<h6 class="pl-3"> Showing all 4 Results for Pharmac </h6>
       	</div>
 
-
-    		<div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+   <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
     			<div class="pharmacybox">
-    				<div class="row py-3">
+    				<div class="row pt-2">
     					<div class="col-lg-9 col-md-9 col-9 pl-4">
     						<h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-    						<p> OMEGA PHARMACEUTICALS PVT LTD </p>
+    						<p class="mb-0"> ACRON PHARMACEUTICALS  </p>
     						<p>Strip  | <span class="text-warning"> Rx Required </span> </p>
     						
     					</div>
@@ -56,7 +56,7 @@
                       	<div class="float-right">
                   <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
 
-                      	<button class="btn btn-primary">Add </button>
+                      	<button class="btn btn-primary btn-radius">Add </button>
 	</div>
                     </div>
     			   </div>
@@ -65,10 +65,10 @@
 
     		  <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
     			<div class="pharmacybox">
-    				<div class="row py-3">
+    				<div class="row pt-2">
     					<div class="col-lg-9 col-md-9 col-9 pl-4">
     						<h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-    						<p> OMEGA PHARMACEUTICALS PVT LTD </p>
+    						<p class="mb-0"> ACRON PHARMACEUTICALS  </p>
     						<p>Strip  | <span class="text-warning"> Rx Required </span> </p>
     						
     					</div>
@@ -76,7 +76,7 @@
                       	<div class="float-right">
                   <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
 
-                      	<button class="btn btn-primary">Add </button>
+                      	<button class="btn btn-primary btn-radius">Add </button>
 	</div>
                     </div>
     			   </div>
@@ -85,10 +85,10 @@
 
     		  <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
     			<div class="pharmacybox">
-    				<div class="row py-3">
+    				<div class="row pt-2">
     					<div class="col-lg-9 col-md-9 col-9 pl-4">
     						<h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-    						<p> OMEGA PHARMACEUTICALS PVT LTD </p>
+    						<p class="mb-0"> ACRON PHARMACEUTICALS  </p>
     						<p>Strip  | <span class="text-warning"> Rx Required </span> </p>
     						
     					</div>
@@ -96,7 +96,7 @@
                       	<div class="float-right">
                   <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
 
-                      	<button class="btn btn-primary">Add </button>
+                      	<button class="btn btn-primary btn-radius">Add </button>
 	</div>
                     </div>
     			   </div>
@@ -105,28 +105,36 @@
 
     		  <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
     			<div class="pharmacybox">
-    				<div class="row py-3">
+    				<div class="row pt-2">
     					<div class="col-lg-9 col-md-9 col-9 pl-4">
     						<h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-    						<p> OMEGA PHARMACEUTICALS PVT LTD </p>
+    						<p class="mb-0"> ACRON PHARMACEUTICALS  </p>
     						<p>Strip  | <span class="text-warning"> Rx Required </span> </p>
     				   </div>
                       <div class="col-lg-3 col-md-3 col-3 ">
                       	<div class="float-right">
-                  <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
-
-                      	<button class="btn btn-primary">Add </button>
-	</div>
+<p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
+     	<button class="btn btn-primary btn-radius">Add </button>
+	                  </div>
                     </div>
     			   </div>
     			  </div>
     		  </div>
+        </div>
+        <div class="row pt-2" style="background-color:#f36523;">
+        	<div class="col-lg-8 col-8">
+        		<h6 class="text-white">2 Items</h6>
+        		<h6 class="text-white">Total- <i class="fas fa-rupee-sign"></i> 2730 </h6>
+        	</div>
+        	<div class="col-lg-4 col-4 pt-2">
+        		<button class="btn btn-success btn-radius float-right checkoutbtn"> Checkout </button>
+        		
+        	</div>
+        	
+        </div>
 
 
 
-
-
-          </div>
      </div>
 
 
