@@ -136,10 +136,10 @@ font-size: 12px;
 }
 
 .pharmacybox h3{
-font-size: 15px;
+font-size: 12px;
 }
 .pharmacybox p{
-    font-size: 12px;
+    font-size: 10px;
     color:#d1b6b4;
 }
 }
@@ -156,13 +156,15 @@ font-size: 15px;
     padding:15px;
     margin:10px;
 }
+
 .pharmacybox h3{
-font-size: 15px;
+font-size: 12px;
 }
 .pharmacybox p{
-    font-size: 12px;
+    font-size: 10px;
     color:#d1b6b4;
 }
+
 }
 
 
@@ -175,16 +177,13 @@ font-size: 15px;
     margin:10px;
 }
 .pharmacybox h3{
-font-size: 20px;
+font-size: 12px;
 }
 .pharmacybox p{
-    font-size: 14px;
+    font-size: 10px;
     color:#d1b6b4;
 }
-
 }
-
-
 
 @media only screen and (min-width: 500px) {
   .pharmacybox{
@@ -366,7 +365,6 @@ font-size: 20px;
 }
 
 
-
 @media only screen and (min-width: 1240px) {
   .pharmacybox{
     background-color: #ffffff;
@@ -494,22 +492,19 @@ font-size: 20px;
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     .mob{
         display: none!important;
 }
 }
-@media only screen and (min-width: 400.50px) {
+@media only screen and (min-width: 500.50px) {
     .desk{
        display: none!important;
 }
-
 }
 
-
-
 .pharmacyboxinput{
-      box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+      box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%);
       border-radius:20px;
 }
 .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
