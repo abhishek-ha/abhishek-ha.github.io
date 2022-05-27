@@ -1525,6 +1525,9 @@ a:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
+
+
+
 .service-fiassure{
      background-color:#fcfcfc;
     height:727px;
@@ -1556,6 +1559,47 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:727px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-nonhospicash .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
 .gromo{
      background-color:#fcfcfc;
     height:727px;
@@ -2036,6 +2080,11 @@ a:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
 }
+
+
+
+
+
 .service-fiassure{
      background-color:#fcfcfc;
     height:685px;
@@ -2067,6 +2116,46 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:643px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-nonhospicash .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
 .gromo{
      background-color:#fcfcfc;
     height:595px;
@@ -2800,6 +2889,9 @@ a:hover{
 .stamp{
     padding-top:40px;
 }
+
+
+
 .service-fiassure{
      background-color:#fcfcfc;
     height:622px;
@@ -2832,6 +2924,43 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:601px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:100%;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-nonhospicash .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
 .gromo{
      background-color:#fcfcfc;
     height:557px;
@@ -2934,9 +3063,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
 .val{
     padding-top:10px;
 }
@@ -3381,6 +3507,9 @@ a:hover{
     cursor: pointer;
     margin-top:14px;
 }
+
+
+
 .service-fiassure{
     background-color:#fcfcfc;
     height:622px;
@@ -3408,6 +3537,39 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+.fitassure-nonhospicash{
+    background-color:#fcfcfc;
+    height:601px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:373px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
 .gromo{
     background-color:#fcfcfc;
     height:552px;
@@ -3768,6 +3930,10 @@ a:hover{
     cursor: pointer;
     margin-top:39px;
 }
+
+
+
+
 .service-fiassure{
      background-color:#fcfcfc;
      height:559px;
@@ -3795,6 +3961,40 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+     height:559px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:385px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
 
 .gromo{
      background-color:#fcfcfc;
@@ -4227,6 +4427,9 @@ a:hover{
     cursor: pointer;
     margin-top:15px;
 }
+
+
+
 .service-fiassure{
      background-color:#fcfcfc;
    height:580px;
@@ -4254,6 +4457,37 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+   height:580px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:385px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
 .gromo{
      background-color:#fcfcfc;
    height:580px;
@@ -4579,6 +4813,38 @@ a:hover{
     cursor: pointer;
     margin-top:39px;
 }
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+   height:580px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:385px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
+
 }
 
 
@@ -4864,6 +5130,8 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
+
+
 .service-fiassure{
      background-color:#fcfcfc;
     height:614px;
@@ -4890,6 +5158,39 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
+
 .gromo{
      background-color:#fcfcfc;
     height:614px;
@@ -5346,6 +5647,35 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:576px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
 .gromo{
      background-color:#fcfcfc;
     height:509px;
@@ -5614,6 +5944,38 @@ a:hover{
     margin-top:2px;
 }
 
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:459px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+   width:410px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
 .gromo{
      background-color:#fcfcfc;
     height:457px;
@@ -5769,6 +6131,37 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height: 456px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
 .gromo{
      background-color:#fcfcfc;
     height: 456px;
@@ -5958,7 +6351,7 @@ a:hover{
  }
 
 .startassu{
-    font-size:60px;
+    font-size:30px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-bottom:40px;
@@ -6251,6 +6644,37 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:458px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
 .gromo{
      background-color:#fcfcfc;
     height:515px;
@@ -6340,12 +6764,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
 }
 
 @media only screen and (min-width: 950px){
@@ -6452,11 +6870,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
 .cashkaro{
      background-color:#fcfcfc;
     height:492px;
@@ -6494,11 +6907,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
 .service{
    padding:6px;
     margin:auto;
@@ -6771,8 +7179,6 @@ a:hover{
     position: relative;
     width: 63%;
 }
-
-
 .cashkaro{
      background-color:#fcfcfc;
     height:486px;
@@ -6949,6 +7355,36 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:468px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
 .gromo{
      background-color:#fcfcfc;
     height:475px;
@@ -7925,6 +8361,35 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:468px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
 .gromo{
      background-color:#fcfcfc;
      height:475px;
@@ -8373,6 +8838,36 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:459px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+
+
 .gromo{
      background-color:#fcfcfc;
     height:439px;
@@ -8811,6 +9306,36 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+
+
+.fitassure-nonhospicash{
+     background-color:#fcfcfc;
+    height:459px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
 .gromo{
     background-color:#fcfcfc;
     height:438px;
