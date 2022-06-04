@@ -42,8 +42,8 @@ function getUrlVars1(url = window.location.href) {
     return vars;
 }
 var Vars1 = getUrlVars1();
-function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false) {
-    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content']);
+function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false, IsVarifyEmail = false, EmailDomain = "") {
+    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain);
     openmodal();
 }
 
