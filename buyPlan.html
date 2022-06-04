@@ -466,8 +466,8 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 " style="margin-top: 30px;">
                             <div class='card1 p-2 text-center pt-2'>
-                                <h6> Please enter the one time password <span class='px-4 ml-3'
-                                        onclick='closebuyplanpopup()'><i class='fa fa-times'></i></span> </h6>
+                                <span class="close"><a style="border: radius 0;margin: 0px 10px 0px 0px !important;" href="javascript:closebuyplanpopup()">&times;</a></span>
+                                <h6> Please enter the one time password  </h6>
                                 <div> <span> sent to </span> <small id='emailidtext1'>demo</small> </div>
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
@@ -528,7 +528,7 @@
         var IsVarifyEmail = Vars["IsVarifyEmail"];
         var EmailDomain = Vars["EmailDomain"];
         if (EmailDomain != null && EmailDomain != '') {
-            $('#EmailerrortoolTip').html("your domain should be " + EmailDomain);
+            $('#EmailerrortoolTip').html('Please use ' + EmailDomain + ' as your mail id domain');
         }
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
@@ -563,6 +563,10 @@
         });
         function closeform() {
             var phn = $('#CustomerPhone').val();
+            if (EmailDomain != null && EmailDomain == '@accenture.com') {
+                closebuyplanpopup();
+                return;
+            }
             if (phn == null || phn == '' || phn.length <= 9) {
                 closebuyplanpopup();
             } else {
@@ -659,7 +663,11 @@
             $('#congratulationsdiv').hide();
             $('#loadding').hide();
             $('#buyplanformdiv').hide();
-            $('#Thankyoupopup').show();
+            if (EmailDomain != null && EmailDomain == '@accenture.com') {
+                closebuyplanpopup();
+            } else {
+                $('#Thankyoupopup').show();
+            }
             try {
                 if (PTitle.toLowerCase().includes('startassure')) {
                     fbq('track', 'SubmitApplication');
@@ -692,11 +700,11 @@
         function VarifyEmailDomain(emailid, domain) {
             if (domain != null && domain != '') {
                 if (emailid.toLowerCase().endsWith(domain.toLowerCase())) {
-                    $('#EmailerrortoolTip').html("your domain should be " + domain);
+                    $('#EmailerrortoolTip').html('Please use ' + domain + ' as your mail id domain');
                     $('#CustomerEmail').css('border-color', '#ced4da');
                     return true;
                 } else {
-                    $('#EmailerrortoolTip').html(' Invalid Email domain, please enter domain ' + domain);
+                    $('#EmailerrortoolTip').html('Invalid domain. Please use ' + domain + ' as email domain');
                     $('#CustomerEmail').css('border-color', 'red');
                     $('#CustomerEmail').focus();
                     return false;
