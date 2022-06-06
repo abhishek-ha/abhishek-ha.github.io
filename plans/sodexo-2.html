@@ -120,21 +120,41 @@ selector { property:value; }
     box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 
 }
-.btn-success{
-    color: #fff;
-    box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
-}
 .btn-success {
-    color:#0f5fc2!important;
-    background-color: #f9f9f9!important;
-    border-color: #f9f9f9!important;
+      color: #ffffff!important;
+      background-color:#0f5fc2!important;
+      border-color: #0f5fc2!important;
+       box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
 .btn-success:hover{
-     color: #ffffff!important;
-    background-color:#0f5fc2!important;
+    color:#0f5fc2!important;
+    background-color: #f9f9f9!important;
     border-color: #0f5fc2!important;
     box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
+
+
+.plan ul li ul li:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    margin-left:5px;
+    font-size: 7px;
+}
+.plan ul li ul li {
+    color: #000000;
+    letter-spacing: 0.5px;
+    margin-left: 3px;
+    margin-right: 7px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    text-indent: -10px;
+    padding-left: 10px;
+}
+
+
 
 </style>
 
@@ -209,8 +229,8 @@ selector { property:value; }
            <h2 class="pl-2 startassu" style="padding-bottom:0px;"> <span style="color:#0f5fc2; font-size:21px;"> India's First Cashless OPD Health Plan </span> </h2> 
           </div>
     </div>
- <h2 class="pl-2 startassu pb-3" style="margin-top:-20px;"> <span style="color:##0f5fc2; font-size:23px;">Family Plan Rs. <del class="text-danger">&#8377; 70000/- </del> &nbsp; &#8377; 999/- </span> </h2>
-<p  class="pb-5" style="font-size:15px;font-weight:500;color:#484a4c;"> Cover Daily health Benefits Worth &#8377; 70,000 including In & Out  of Pocket Medical Expenses. </p>
+<p  class="pb-2" style="font-size:15px;font-weight:500;color:#484a4c;">  Get daily health benefits worth &#8377; 70,000 for out-of-pocket medical expenses. </p>
+ <h2 class="pl-1 startassu pb-3" style="margin-top:-20px;"> <span style="color:##0f5fc2; font-size:23px;">Family Plan <del class="text-danger">&#8377; 70000/- </del> &nbsp; &#8377; 999/- </span> </h2> 
 <div class="row">
             <div class="col-md-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
                 <div class="row pt-1 ">
@@ -218,7 +238,7 @@ selector { property:value; }
                         <img src="images/doctor-consults-icon1.png" style="width:40px;">
                     </div>
                      <div class="col-md-9 col-9">
-                        <p class="pl-1"><b> Free </b> 24x7 Doctor Consults </p>
+                        <p class="pl-1"><b> Free </b> Online Doctor Consults within 4 Minutes </p>
                      </div>
                 </div>
             </div>
@@ -241,7 +261,7 @@ selector { property:value; }
                        <img src="images/yoga-icon1.png"style="width:40px;">
                   </div>
                      <div class="col-md-9 col-9">
-                        <p class="pl-1"><b>Free</b> 1:1 Sessions with Wellness Coaches </p>
+                        <p class="pl-1"><b>Free</b> 1:1 Session for fitness and nutrition </p>
                      </div>
                 </div>
             </div>
@@ -258,9 +278,9 @@ selector { property:value; }
         </div>
       
  <div class="mt-5">
- <button type="submit" class="btn btn-primary  btn-block " onclick="advisorclick();" style="font-size:18px; padding:9px; font-weight:600;"> Request Callback </button>
- <button type="submit" class="btn btn-success w-100 mt-4" data-toggle="modal" data-target="#exampleModal" style="font-size:18px;padding:9px; font-weight:600;"> Try 1 Month Free </button>
-  </div>
+     <button type="submit" class="btn btn-success w-100 " data-toggle="modal" data-target="#exampleModal" style="font-size:18px;padding:9px; font-weight:600;"> Try 1 Month Free </button>
+<button type="submit" class="btn btn-primary  btn-block mt-4" onclick="advisorclick();" style="font-size:18px; padding:9px; font-weight:600;"> Request Callback </button>
+</div>
 </div>
 
  <div class="col-md-4 col-lg-2 col-xl-2 col-xxl-2 col-8 mx-auto">
@@ -282,10 +302,20 @@ selector { property:value; }
               <ul class="pt-3">
                  <li> <b> ₹ 2000  </b> Free Lab  Test & Scans  </li>
                  <li> <b> ₹ 2000 </b> Daily Cash to cover Hospital stays upto 30 days till Age 55 </li>
-                 <li><b> Free  </b> Online 24x7 Doctor Consults </li>
+                 <li><b> Free  </b> Online 24x7 Doctor Consults 
+<ul style="border-top: none;list-style-type:bullet;" class="pt-2">
+    <li> Family physician 24x7</li>
+    <li> 15+ Specialties covered </li>
+</ul>
+                 </li>
                 <li><b> Free  </b> 1:1 Sessions with Wellness Coaches </li>
                 <li><b> Free  </b> Home Delivery Of Medicines at upto 15% Off*</li>
-                <li> <b> Free  </b> Care Team To Co-ordinate All Appointments & Get upto 50% Discounts </li>
+                <li> <b> Free  </b> Care Team To Co-ordinate All Appointments & Get upto 50% Discounts
+<ul style="border-top: none;" class="pt-2">
+                    <li> at 6000+ in network centers</li>
+                    <li> Upto 50% discount </li>
+                </ul>
+                 </li>
                     <li> More benefits on HealthAssure app </li>
               </ul>
            </div>
