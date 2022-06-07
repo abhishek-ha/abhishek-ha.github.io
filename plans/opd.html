@@ -284,10 +284,10 @@
                             <input type="email" class="form-control" id="callbackAdvisorEmail11" placeholder="Email"
                                 required>
                         </div>
-                  <div class="form-group">
+                  <!--<div class="form-group">
                             <input type="text" class="form-control" id="pincode" placeholder="Pin Code"
                                 required>
-                        </div>
+                        </div>-->
 
                         <div class="text-center">
                             <button type="submit" class="btn2" style="font-size:17px;"> Request Call Back
@@ -1112,10 +1112,7 @@
         $("#CallbackAdvisorformsubmit11").submit(function (event) {
             event.preventDefault();
             debugger;
-            SaveCallbackAdvisor($('#callbackAdvisorPhone11').val(), 
-                $('#callbackAdvisorName11').val(),
-                 $('#pincode').val(),
-
+            SaveCallbackAdvisor($('#callbackAdvisorPhone11').val(),$('#callbackAdvisorName11').val(),
                 $('#callbackAdvisorEmail11').val(), 'OPDPage', false).then(function (result) {
                     alert(" Thank you for your interest !! ");
                     $('#AmessageId').html(result.message);
