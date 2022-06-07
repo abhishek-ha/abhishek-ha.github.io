@@ -1112,10 +1112,7 @@
         $("#CallbackAdvisorformsubmit11").submit(function (event) {
             event.preventDefault();
             debugger;
-            SaveCallbackAdvisor($('#callbackAdvisorPhone11').val(), 
-                $('#callbackAdvisorName11').val(),
-                 $('#pincode').val(),
-
+            SaveCallbackAdvisor($('#callbackAdvisorPhone11').val(),$('#callbackAdvisorName11').val(),
                 $('#callbackAdvisorEmail11').val(), 'OPDPage', false).then(function (result) {
                     alert(" Thank you for your interest !! ");
                     $('#AmessageId').html(result.message);
