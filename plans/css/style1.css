@@ -2540,7 +2540,9 @@ a:hover{
     font-family: 'Poppins', sans-serif;
      padding-bottom:20px;
      padding-top:10px;
+     line-height:18px;
 }
+
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -8387,6 +8389,7 @@ a:hover{
     font-family: 'Poppins', sans-serif;
      padding-bottom:50px;
      padding-top:8px;
+     line-height: 45px;
 }
 .sodexo-plan{
      background-color:#fcfcfc;
