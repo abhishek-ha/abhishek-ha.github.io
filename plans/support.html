@@ -30,8 +30,6 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
             <![endif]-->
 
-
-    <script defer src="https://widget.tochat.be/bundle.js?key=8a754010-0780-4681-b327-c688c3cf5446"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- Google Tag Manager -->
     <script>
@@ -189,13 +187,30 @@
       box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
 .btn-success:hover{
-   
-     color:#0f5fc2!important;
+   color:#0f5fc2!important;
     background-color: #f9f9f9!important;
     border-color: #0f5fc2!important;
     box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2em + 1rem + 2px);
+    padding: .375rem 1.5rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+textarea .form-control :-ms-input-placeholder{
+        color: #000000!important;
 
+    }
 
 
 </style>
@@ -261,7 +276,7 @@
             </div>
         </div>
     </nav> -->
-    <section style="background-image:url('images/bg-health.png');background-size:100%; height:auto; background-repeat:no-repeat;background-color:#f9f9f9; z-index:20;">
+    <section >
         <div class="container">
 <div class="row pt-4 pb-7">
                 <div class="col-md-6 col-6 col-lg-6">
@@ -275,400 +290,47 @@
 
 
   <div class="row mt-5">
-         <div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 mb-5">
-     <div class="row">
-     <div class="col-10 col-md-12 col-sm-12 col-lg-12 col-xl-12 mb-2">
-         <h2 class="pl-2 accenturehead" style="padding-bottom:0px;">Exclusive Cashless OPD Family Plans </h2>
-         </div>
-</div>
-<div class="row pt-5">
-            <div class="col-md-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="row px-2 py-2 ">
-                    <div class="col-md-3  col-3">
-                        <img src="images/doctor-consults-icon1.png" style="width:40px;">
-                    </div>
-                     <div class="col-md-9 col-9">
-                        <p class="pl-1"> 24x7 Doctor Consults </p>
-                     </div>
-                </div>
-            </div>
-<div class="col-md-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="row px-2 py-2">
-                    <div class="col-md-3 col-3">
-                      <img src="images/labtest-icon1.png"style="width:40px;">
-                   </div>
-                     <div class="col-md-9 col-9">
-                    <p class="pl-1"> Lab Tests & Scans At Centers Near You </p>
-                     </div>
-                </div>
-            </div>
-            </div>
-    
-     <div class="row pt-4">
-            <div class="col-md-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="row px-2 py-2">
-                    <div class="col-md-3 col-3">
-                       <img src="images/flexi-wallet.png"style="width:40px;">
-                  </div>
-                     <div class="col-md-9 col-9">
-                    <p class="pl-1"> Flexi wallet to cater your healthcare needs </p>
-                     </div>
-                </div>
-            </div>
-              <div class="col-md-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-               <div class="row px-2 py-2">
-                    <div class="col-md-3 col-3">
-                       <img src="images/medicine.png" style="width:40px;">
-                  </div>
-                     <div class="col-md-9 col-9">
-                        <p class="pl-1"> Upto 20% Off on Medicines Delivery </p>
-                     </div>
-                </div>
-            </div>
-        </div>
-      
- <div class="mt-5">
-    <a href="#benefits"> <button type="submit" class="btn btn-success w-100 "  style="font-size:18px;padding:9px; font-weight:600;"> Explore Benefits </button>
-    </a>
+         <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xl-6 mb-5">
 
- <!-- <button type="submit" class="btn btn-primary  btn-block mt-4" onclick="advisorclick();" style="font-size:18px; padding:9px; font-weight:600;"> Request Callback </button> -->
- 
-  </div>
-</div>
+            <img src="images/support.png" class="img-fluid">
+   </div>
 
-<div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 col-xxl-5  mob mx-auto">
-      
-   <form class="bg-lgrey py-5 px-5" id="CallbackAdvisorformsubmit11" method="post">
-                        <h3 class="text-center subhead">Contact us </h3>
+<div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xl-6 col-xxl-6  mob mx-auto">
+
+ <form class="bg-lgrey py-5 px-5" id="CallbackAdvisorformsubmit11" method="post"> <h3 class="text-center subhead"> Raise a Customer support Ticket </h3>
                         <p class="text-center"> Fill your details below:</p>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full Name" id="callbackAdvisorName11"
-                                required>
+                          <div class="form-group">
+                             <label for="Customer/Employee Name" class="pl-2">Customer/Employee Name </label>
+                            <input type="text" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="callbackAdvisorPhone11"
-                                pattern="[0123456789][0-9]{9}" maxlength="10" placeholder="Phone" required>
+                     <div class="form-group">
+                         <label for="Customer/Employee Name" class="pl-2">Customer/Employee id </label>
+                            <input type="text" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="callbackAdvisorEmail11" placeholder="Email"
-                                required>
+                       <div class="form-group">
+                        <label for="Customer/Employee Name" class="pl-2"> MSME Name/Policy Number </label>
+                            <input type="text" class="form-control" required>
                         </div>
-                  <div class="text-center">
-                            <button type="submit" class="btn2" style="font-size:17px;"> Request Call Back
-                            </button>
+                     <div class="form-group">
+                         <label for="Customer/Employee Name" class="pl-2">Email Id </label>
+                            <input type="text" class="form-control" required>
                         </div>
-                    </form>
+                      <div class="form-group">
+                        <label for="Customer/Employee Name" class="pl-2">Subject </label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                      <div class="form-group">
+    <textarea class="form-control" type="text" placeholder="Description"> </textarea> </div>
+      <div class="text-center">
+        <button type="submit" class="btn2 " style="font-size:17px;"> Submit </button>
+                        </div>
+                    </form> 
 
-
-
-
-
-                </div>
+                 </div>
             </div>
 
-
-
-
-   <!--  <div class="row  px-3 py-4 px-md-0">
-            <div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 ">
-                    <h2 class="pl-2 startassu pb-2"> <span style="color:#0f5fc2;"> Apki Daily Health Ki Insurance </span>  </h2>
-                    <p class="thead1 pl-2 mb-2" style="font-size:18px;margin-bottom:1px;">Secure your family’s out-of-pocket <br> medical expenses with <span style="color:#0f5fc2;"><b>HealthAssure Plans </b> </span> </p>
-                  
-                    <div class="row">
-                        <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-6 col-sm-12">
-                       
-                            <a href="#benefits"><p class="pl-3 pt-1 text-primary" style="font-size:16px;"><b> Explore Benefits <i class="fa fa-chevron-right" aria-hidden="true"></i> </b> </p></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 pt-3 mob">
-                    <img src="images/main-doctor1.png" class="img-fluid">
-                </div>
-            </div> -->
         </div>
     </section>
-
-  
-  
-
-   <section class="bringing-section" id="benefits">
-        <div class="container pb-4 px-3 px-md-0 mt-3">
-            <div class="row">
-                <div class="col-md-12 col-lg-12">
-<!--<h2 class="head pb-4 pt-5 ">HealthAssure <span style="color:#0f5fc2;">Plans </span></h2> -->
-                </div>
-                <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5">
-                    <div class="accenture">
-                        <div class="row plan">
-                            <div class="col-md-6 pt-2 col-5">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Standard </b> </p>
-                            </div>
-                            <div class="col-md-6 col-7 val">
-                                <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                                <p class="tnc2"><b> Upto 6 Family Members </b></p>
-                                <p class="tnc1"> (No Age Limit)</p>
-                            </div>
-                            <ul class="pt-3">
-                                <p class="pl-2"><b> Plan benefits :</b></p>
-<li><b> ₹ 3500 </b> wallet amount can be used across
-<ul style="border-top: none;list-style-type:bullet;"> 
-<li> Face to Face Doctor Consults^ </li>
-<li> Lab  Test & Scans </li>
-</ul>
-</li>
-<li><b> Free </b> Online 24x7 Doctor Consults (GP & Specialists) </li>
-<li><b>Free </b> Home Delivery Of Medicines upto 20% Off* </li>
-<li> Upto 50% Discounts in Health Assure Dental Network </li>
-                            </ul>
-                        </div>
-                        <div class="row pt-5">
-                            <div class="col-lg-12 col-12">
-                               <p class="tnc mb-0">^ Upto 2 reimbursement allowed (Max 500 each) for out of network doctors</p>
-                            </div>
-                            <div class="col-md-6 pl-4 mt-5">
-                               <a href="https://www.healthassure.in/Products/files/aceenture-tnc.pdf" class="tnc" target="_blank" style="font-weight:600;"> *Terms & conditions </a>
-                                <p class="tnc1 pl-2">(Excl. GST) </p>
-                            </div>
-                            <div class="col-md-6 " style="padding-top:7px;">
-                                <a href="javascript:OpenBuyPlanPopup('Accenture-Standard','PLANACC01','',false,true,'@accenture.com')"  class="buybtn float-end">  <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br />  <span style="font-size:20px; font-weight:500;"> &#8377; <del> 7500 </del> &nbsp;  2000/-</span>  </a>
-                            </div>
-                        </div>
-                    </div>
-            <a href="https://www.healthassure.in/Products/files/accenture-faq.pdf" target="_blank"> <p class="pl-4 pt-2" style="font-size:12px;letter-spacing:0.5px;"> &nbsp;<span style="color:#0f5fc2; font-weight:600;font-size:12px;"> Frequently Asked Questions </span> </p> </a>
-                </div>
-
-  <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5">
-                    <div class="accenture">
-                        <div class="row plan">
-                            <div class="col-md-6 pt-2 col-5">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Silver </b> </p>
-                            </div>
-                            <div class="col-md-6 col-7 val">
-                                <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                                <p class="tnc2"><b> Upto 6 Family Members </b></p>
-                                <p class="tnc1"> (No Age Limit)</p>
-                            </div>
-                            <ul class="pt-3">
-                                <p class="pl-2"><b> Plan benefits :</b></p>
-                    <li><b> ₹ 5000 </b> wallet amount can be used across
-<ul style="border-top: none;list-style-type:bullet;"> 
-<li> Face to Face Doctor Consults^ </li>
-<li> Lab  Test & Scans </li>
-<li> Pharmcy <span style="font-size:12px;"> (Max upto ₹ 500 ) </span> </li>
-</ul>
-</li>
-<li><b> Free </b> Online 24x7 Doctor Consults (GP & Specialists) </li>
-      <!--<li><b> Free</b> 1:1 Sessions with Wellness Coaches </li>-->
-                <li><b>Free </b> Home Delivery Of Medicines upto 20% Off*</li>
-                    <li> Upto 50% Discounts in Health Assure Dental Network </li>
-                         </ul>
-                        </div>
-                         <div class="row pt-3">
-                             <div class="col-lg-12 col-12">
-                               <p class="tnc mb-0"> ^ Upto 4 reimbursement allowed (Max 500 each) for out of network doctors</p>
-                            </div>
-                            <div class="col-md-6 pl-4 mt-5">
-                                <a href="https://www.healthassure.in/Products/files/aceenture-tnc.pdf" class="tnc" target="_blank" style="font-weight:600;"> *Terms & conditions </a>
-                                <p class="tnc1 pl-2">(Excl. GST) </p>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="javascript:OpenBuyPlanPopup('Accenture-Silver','PLANACC02','',false,true,'@accenture.com')" class="buybtn float-end">  <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br />  <span style="font-size:20px; font-weight:500;"> &#8377; <del> 12500 </del> &nbsp;  3500/-</span>  </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://www.healthassure.in/Products/files/accenture-faq.pdf" target="_blank"> <p class="pl-4 pt-2" style="font-size:12px;letter-spacing:0.5px;"> &nbsp;<span style="color:#0f5fc2; font-weight:600;font-size:12px;"> Frequently Asked Questions </span> </p> </a>
-                </div>
-
-
-                <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5 ">
-                    <div class="accenture">
-                        <div class="row plan">
-                            <div class="col-md-6 pt-2 col-5">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Gold </b> </p>
-                            </div>
-                            <div class="col-md-6 col-7 val">
-                                <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                                <p class="tnc2"><b> Upto 6 Family Members </b></p>
-                                <p class="tnc1"> (No Age Limit)</p>
-                            </div>
-                            <ul class="pt-3">
-                                <p class="pl-2"><b> Plan benefits :</b></p>
-<li><b> ₹ 7500 </b> wallet amount can be used across
-<ul style="border-top: none;list-style-type:bullet;"> 
-<li> Face to Face Doctor Consults^ </li>
-<li> Lab  Test & Scans </li>
-<li> Pharmcy <span style="font-size:12px;"> (Max upto ₹ 1000 ) </span> </li>
-</ul>
-</li>
-<li><b> Free </b> Online 24x7 Doctor Consults (GP & Specialists) </li>
-<li><b>Free </b> Home Delivery Of Medicines upto 20% Off*</li>
-<li>  Upto 50% Discounts in Health Assure Dental Network </li>
-                            </ul>
-                        </div>
-       <div class="row pt-3">
-         <div class="col-lg-12 col-12">
-                               <p class="tnc mb-0">^ Upto 6 reimbursement allowed (Max 500 each) for out of network doctors</p>
-                            </div>
-                            <div class="col-md-6 pl-4 mt-5">
-                                <a href="https://www.healthassure.in/Products/files/aceenture-tnc.pdf" class="tnc" target="_blank" style="font-weight:600;"> *Terms & conditions </a>
-                                <p class="tnc1 pl-2">(Excl. GST) </p>
-                            </div>
-                      <div class="col-md-6">
-                        <a href="javascript:OpenBuyPlanPopup('Accenture-Gold','PLANACC03','',false,true,'@accenture.com')" class="buybtn float-end">  <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br />  <span style="font-size:20px; font-weight:500;"> &#8377; <del> 15000 </del> &nbsp;  5000/-</span>  </a>
-                            </div>
-
-                            <!-- <div class="col-md-6 pt-2">
-                                <a href="javascript:OpenBuyPlanPopup('Fitassure - hospicash','HAOPDR003-53','')" class="buybtn float-end">  <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br />  <span style="font-size:20px; font-weight:500;"> &#8377; <del> 15000 </del> &nbsp;  5000/-</span>  </a>
-                            </div> -->
-
-                        </div>
-                  </div>
-
-<a href="https://www.healthassure.in/Products/files/accenture-faq.pdf" target="_blank"> <p class="pl-4 pt-2" style="font-size:12px;letter-spacing:0.5px;"> &nbsp;<span style="color:#0f5fc2; font-weight:600;font-size:12px;"> Frequently Asked Questions </span> </p> 
-</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pt-5   bg-lgrey">
-        <div class="container">
-            <div class="row">
-                <div class="col-12  pt-5">
-            <h1 class="head text-center"> 20 Lakh+ people like you trust on us! </h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-testimonials pb-5 bg-lgrey">
-        <div class="slider">
-            <div class="slider__slides">
-                <div class="slider__slide slider__slide--1">
-                    <figure class="testimonial slider__slide-content">
-
-                        <div class="testimonial__img">
-                            <img class="testimonial__photo img-fluid" src="images/rajnish-review.jpg" alt="Rajnish review" style="width:240px;border-radius: 50%;">
-                        </div>
-
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p>
-                                I have taken FitAssure Plan from Healthassure and I must tell you that it is one of the best health care company in India. I have taken multiple doctor visits from Dr Priya Jain and It was a great experience
-                            </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name"> Rajnish Prajapat </span>
-
-                            </cite>
-                        </blockquote>
-
-                    </figure>
-                </div>
-
-                <div class="slider__slide slider__slide--2">
-                    <figure class="testimonial slider__slide-content">
-                        <div class="testimonial__img">
-                            <img class="testimonial__photo img-fluid" src="images/avanish-shukla.jpg" alt="John Tarkpor" style="width:240px;border-radius: 50%;">
-                        </div>
-
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p> I just want to say thank you so much for all cashless services without any added stress or trauma. I have taken 3 diagnostics without paying a rupee and it just takes 5 minutes to connect a specialized doctor using the app.  I will certainly recommend HealthAssure very highly to friends and family in the future. </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name"> Avanish Shukla </span>
-                            </cite>
-                        </blockquote>
-                    </figure>
-                </div>
-                <div class="slider__slide slider__slide--2">
-                    <figure class="testimonial slider__slide-content">
-                        <div class="testimonial__img">
-                            <img class="testimonial__photo img-fluid" src="images/ramesh-review.jpg" alt="John Tarkpor" style="width:240px;border-radius: 50%;">
-                        </div>
-
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p> Excellent service and the charges are very minimal. Appreciate the reports were received on the same day. I wish they continue to provide this kind of service in future. Live cast of reports is very unique and very helpful. Thanks </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name"> Ramesh Yadav </span>
-                            </cite>
-                        </blockquote>
-                    </figure>
-                </div>
-                <div class="slider__slide slider__slide--2">
-                    <figure class="testimonial slider__slide-content">
-                        <div class="testimonial__img">
-                <img class="testimonial__photo img-fluid" src="images/jagdish-review.jpg" alt="John Tarkpor" style="width:240px;border-radius: 50%;">
-                        </div>
-
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p> I took HealthAssure Plan for my parents as they required regular doctor consultants and checkups. I must say it is very cost-effective and the way the care team helped us book checkups regularly is fantastic. I have become one of the loyal customers of HealthAssure. Thank You Team HealthAssure. </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name">Jagdish </span>
-
-                            </cite>
-                        </blockquote>
-
-                    </figure>
-                </div>
-                <div class="slider__slide slider__slide--2">
-                    <figure class="testimonial slider__slide-content">
-                        <div class="testimonial__img">
-                            <img class="testimonial__photo img-fluid" src="images/ritika-gautan-review.jpg" alt="John Tarkpor" style="width:240px;border-radius: 50%;">
-                        </div>
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p> I joined yoga classes recently and was surprised to learn that I do not have to pay any fee for my classes under HealthAssure Plan. Great initiative to encourage customers to resort to proactive instead of reactive healthcare treatments. I have taken regular live sessions for almost 3 weeks. </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name">Ritika Gautam </span>
-
-                            </cite>
-                        </blockquote>
-
-                    </figure>
-                </div>
-                <div class="slider__slide slider__slide--2">
-                    <figure class="testimonial slider__slide-content">
-                        <div class="testimonial__img">
-                            <img class="testimonial__photo img-fluid" src="images/ramesh-review.jpg" alt="John Tarkpor" style="width:240px;border-radius: 50%;">
-                        </div>
-
-                        <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
-                            <p> <b> 5/5 recommend!</b></p>
-                            <p> Excellent service and the charges are very minimal. Appreciate the reports were received on the same day. I wish they continue to provide this kind of service in future. Live cast of reports is very unique and very helpful. Thanks </p>
-                            <cite class="testimonial__cite">
-                                <span class="testimonial__cite--name"> Ramesh Yadav </span>
-
-                            </cite>
-                        </blockquote>
-
-                    </figure>
-                </div>
-            </div>
-
-            <div class="slider__buttons">
-                <div class="slider__button slider__button--prev">
-                    <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
-                        <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" />
-                    </svg>
-                </div>
-                <div class="slider__button slider__button--next">
-                    <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
-                        <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <section class="py-5 px-3 px-md-0 ">
         <div class="container">
