@@ -539,8 +539,35 @@ font-size: 20px;
 }
 #submit {
     border:none;
-    height:25px;    
+    height:25px; 
 }
+
+.btn-secondary{
+    background-color: #004182;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 20px 8px 20px;
+    width: 150px;
+}
+
+
+.btn-secondary:hover{
+    background-color: #f27024;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 20px 8px 20px;
+    width: 150px;
+    border: 1px solid #f27024;
+}
+
+.shadow1{
+    background-color: #fcfcfc; 
+    color: #000000;padding: 10px; 
+    border-radius: 0px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+
+
 
 
 
