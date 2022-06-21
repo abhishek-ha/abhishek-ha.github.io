@@ -52,7 +52,7 @@ html{
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -63,6 +63,15 @@ font-size: 14px;
     font-size: 12px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    min-height: 300px;
+    border-radius: 15px;
+}
+
+
 
 .btn-radius{
     border-radius:10px;
@@ -87,15 +96,13 @@ font-size: 14px;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
-
 }
 
 @media only screen and (min-width: 301px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:10px;
     margin:10px;
 }
@@ -103,6 +110,22 @@ font-size: 14px;
 font-size: 11.5px;
 }
 .pharmacybox p{
+    font-size: 9.5px;
+    color:#d1b6b4;
+}
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:10px;
+    margin:10px;
+    min-height: 200px;
+}
+.pharmacybox1 h3{
+font-size: 11.5px;
+}
+.pharmacybox1 p{
     font-size: 9.5px;
     color:#d1b6b4;
 }
@@ -141,13 +164,10 @@ font-size: 11.5px;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 .btn-outline-primary {
     color: #007bff;
     border-color: #007bff;
 }
-
-
 .btn-radius{
     border-radius:13px;
 }
@@ -161,7 +181,7 @@ font-size: 11.5px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -172,13 +192,29 @@ font-size: 12px;
     font-size: 10px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+
 }
 
 @media only screen and (min-width: 400px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -189,14 +225,30 @@ font-size: 12px;
     font-size: 10px;
     color:#d1b6b4;
 }
+
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
 }
 
+}
 
 @media only screen and (min-width: 450px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -207,13 +259,32 @@ font-size: 12px;
     font-size: 10px;
     color:#d1b6b4;
 }
+
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+
+
+
 }
 
 @media only screen and (min-width: 500px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -224,13 +295,31 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+
+ .pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 
 @media only screen and (min-width: 600px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -241,13 +330,30 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 
 @media only screen and (min-width: 650px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -258,13 +364,29 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
 }
 
 @media only screen and (min-width: 700px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -272,6 +394,20 @@ font-size: 20px;
 font-size: 20px;
 }
 .pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+ .pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
     font-size: 14px;
     color:#d1b6b4;
 }
@@ -281,7 +417,7 @@ font-size: 20px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -292,13 +428,30 @@ font-size:14px;
     font-size: 12px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size:14px;
+}
+.pharmacybox1 p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+
+
 }
 
 @media only screen and (min-width: 800px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -309,13 +462,30 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 
 @media only screen and (min-width: 850px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -326,13 +496,29 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
 }
 
 @media only screen and (min-width: 900px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -343,13 +529,29 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
 }
 
 @media only screen and (min-width: 1000px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -360,13 +562,29 @@ font-size:16px;
     font-size: 14px;
     color:#d1b6b4;
 }
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size:16px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 
 @media only screen and (min-width: 1100px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -377,12 +595,28 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 @media only screen and (min-width: 1240px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -393,12 +627,29 @@ font-size: 20px;
     font-size: 14px;
     color:#d1b6b4;
 }
+
+  .pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
 }
 @media only screen and (min-width: 1300px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -409,13 +660,32 @@ font-size:17px;
     font-size: 13px;
     color:#d1b6b4;
 }
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+    min-height: 170px;
+}
+
+.pharmacybox1 h3{
+font-size:17px;
+}
+
+.pharmacybox1 p{
+    font-size: 13px;
+    color:#d1b6b4;
+}
+
 }
 
 @media only screen and (min-width: 1400px) {
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -431,7 +701,7 @@ font-size: 20px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -447,7 +717,7 @@ font-size: 20px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -464,7 +734,7 @@ font-size: 20px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -480,7 +750,7 @@ font-size: 20px;
   .pharmacybox{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    border-radius: 20px;
+    border-radius: 15px;
     padding:15px;
     margin:10px;
 }
@@ -492,6 +762,7 @@ font-size: 20px;
     color:#d1b6b4;
 }
 }
+
 @media only screen and (max-width: 500px) {
     .mob{
         display: none!important;
@@ -549,8 +820,6 @@ font-size: 20px;
     padding: 8px 20px 8px 20px;
     width: 150px;
 }
-
-
 .btn-secondary:hover{
     background-color: #f27024;
     border-radius: 0px;
@@ -559,13 +828,15 @@ font-size: 20px;
     width: 150px;
     border: 1px solid #f27024;
 }
-
 .shadow1{
     background-color: #fcfcfc; 
     color: #000000;padding: 10px; 
     border-radius: 0px;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
 }
+
+
+
 
 
 
