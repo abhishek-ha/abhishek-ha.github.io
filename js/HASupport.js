@@ -14,7 +14,6 @@ function SupportRaisedTicket(Name, MobileNo, Email, PolicyNo, Subject, Descripti
                 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
             },
             success: function (result) {
-                debugger;
                 console.warn(result.message);
                 if (result.status) {
                     resolve(result) // Resolve promise and go to then()
@@ -23,7 +22,6 @@ function SupportRaisedTicket(Name, MobileNo, Email, PolicyNo, Subject, Descripti
                 }
             },
             error: function (eror) {
-                debugger;
                 console.warn(eror);
                 reject(err) // Reject the promise and go to catch()
             }
