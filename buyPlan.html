@@ -12,16 +12,20 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471644001"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        try {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        } catch (e) {
+            console.log(e);
+        }
     </script>
     <style>
         body {
@@ -391,20 +395,20 @@
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerName">Name</label>
                         <input type="text" id="CustomerName" class="form-control" placeholder="Name *"
-                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
+                               title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerEmail">Email</label>
                         <input type="email" class="form-control" id="CustomerEmail"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" class="form-control"
-                            title="Please Enter Valid Email ID" placeholder="Email *" required />
+                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" class="form-control"
+                               title="Please Enter Valid Email ID" placeholder="Email *" required />
                         <div id="EmailerrortoolTip" class="toolTip"></div>
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerPhone">Phone</label>
                         <input type="tel" name="CustomerPhone" maxlength="10" id="CustomerPhone"
-                            pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number" class="form-control"
-                            placeholder="Phone *" required />
+                               pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number" class="form-control"
+                               placeholder="Phone *" required />
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerDOB">DOB</label>
@@ -413,18 +417,23 @@
                     <div class="form-check" style="margin-top: 20px;">
                         <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
                         <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio1" checked="checked" value="Male">
+                               id="inlineRadio1" checked="checked" value="Male">
                         <label class="form-check-label" for="inlineRadio1">Male</label>
                         <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio2" value="Female">
+                               id="inlineRadio2" value="Female">
                         <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                    <div class="form-group" style="margin-left: 8px; display: none;" id="IEnableTCdiv">
+                        <input type="checkbox" id="IsTCAccepted" />
+                        <label class="form-check-label">I agree to the <a href="https://www.healthassure.in/Products/files/aceenture-tnc.pdf" target="_blank"> *Terms & conditions </a></label>
                     </div>
                     <div class="form-group">
                         <!--  <button style="margin-top: 15px;" id="Placeorder" class="btn btn-primary btn-block mb-2">Place
-                        order</button> -->
+        order</button> -->
                         <div class=" text-center" style="margin-top:20px;">
                             <button class="btn btn-success btn-lg mr-2 " id="Placeorder" style="margin-bottom:5px;">
-                                Place Order </button>
+                                Place Order
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -491,6 +500,13 @@
     </div>
     <script src="js/buyplans.min.js"></script>
     <script>
+        $('#IsTCAccepted').click(function (e) {
+            if (this.checked) {
+                $("#Placeorder").prop('disabled', false);
+            } else {
+                $("#Placeorder").prop('disabled', true);
+            }
+        });
         $('#congratulationsdiv').hide();
         $('#loadding').hide();
         function getUrlVars(url = window.location.href) {
@@ -513,6 +529,10 @@
         var EmailDomain = Vars["EmailDomain"];
         if (EmailDomain != null && EmailDomain != '') {
             $('#EmailerrortoolTip').html('Please use ' + EmailDomain + ' as your mail id domain');
+            if (EmailDomain == '@accenture.com') {
+                $("#IEnableTCdiv").show();
+                $("#Placeorder").prop('disabled', true);
+            }
         }
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
