@@ -1219,7 +1219,7 @@ blockquote {
     border-bottom: 1px solid #eaeaea; }
 
 .main-content {
-  margin-left: 240px;
+
   background: #ecf0fa;
   padding: calc(10px + 24px) calc(24px / 2) 1px calc(24px / 2); }
   .main-content .main-content-inner {
