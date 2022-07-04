@@ -89,10 +89,7 @@ select:focus {
 .get-bonus {
     margin-left: 154px;
 }
-.pic {
-    width: 230px;
-    height: 110px;
-}
+
 #progressbar {
     position: absolute;
     left: 35px;
