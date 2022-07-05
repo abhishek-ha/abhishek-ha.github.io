@@ -586,9 +586,7 @@ selector { property:value; }
                 $(this).find('.sm-menu').first().stop(true, true).slideUp(210)
             });
         });
-
-
-   $("#CallbackAdvisorform").submit(function (event) {
+    $("#CallbackAdvisorform").submit(function (event) {
             event.preventDefault();
             SaveCallbackAdvisor($('#AdvisorPhone').val(), $('#AdvisorName').val(),
                 $('#AdvisorEmail').val(), 'HomePage').then(function (result) {

@@ -12,7 +12,7 @@ style.innerHTML = `
   background-repeat: no-repeat;
   background-position: right .75rem center;
   background-size: 16px 12px;
-  width:310px!important;
+  width:100%!important;
 
 }
 .multiselect-dropdown span.optext, .multiselect-dropdown span.placeholder{
