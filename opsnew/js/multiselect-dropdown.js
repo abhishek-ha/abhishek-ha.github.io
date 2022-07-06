@@ -122,6 +122,7 @@ function MultiselectDropdown(options){
     txtAll:'All',
     txtRemove: 'Remove',
     txtSearch:'search',
+    
     ...options
   };
   function newEl(tag,attrs){
