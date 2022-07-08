@@ -3397,12 +3397,12 @@ a:hover{
     padding-top:0px;
  }
 .startassu{
-    font-size:35px;
+   font-size:28px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
-     padding-bottom:20px;
-     padding-top:10px;
-     line-height:18px;
+    padding-top:10px;
+    line-height: 22px;
+    line-height: 30px;
 }
 
 .thead1{
@@ -4770,11 +4770,12 @@ a:hover{
     padding-top: 10px;
  }
 .startassu{
-    font-size:40px;
+    font-size:28px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-top:10px;
     line-height: 22px;
+    line-height: 30px;
 }
 .service-sod{
      background-color:#fcfcfc;
