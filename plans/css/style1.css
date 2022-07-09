@@ -50,14 +50,19 @@ a:hover{
         padding-top:20px;
         }
 
-  .text-blue {
+.logo-text p{
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+.text-blue {
             color: #448aff;
         }
-       .f-poppins {
+.f-poppins {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
         }
-     .f-50 {
+.f-50 {
             font-size: 35px;
         }
 .specialist{
@@ -411,7 +416,7 @@ a:hover{
             }
  .cbg {
                 right: -25px;
-            }
+}
 
             .wrapper2 p,
             .wrapper2 label {
@@ -1121,8 +1126,6 @@ a:hover{
 }*/
 
 
-
-
 @media only screen and (max-width:300px){
  .pt-bnr {
     padding-top: 200px;
@@ -1619,12 +1622,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:615px;
@@ -1656,8 +1653,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -1689,11 +1684,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
 .accenture{
      background-color:#fcfcfc;
     height:647px;
@@ -1838,6 +1828,14 @@ a:hover{
 }
 
 
+.logo-text h3{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
 }
 
 
@@ -1878,6 +1876,9 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
+
+
+
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 12px;
@@ -2559,6 +2560,22 @@ a:hover{
     font-size: 18px!important;
     font-weight: 600;
 }
+
+.logo-text h3{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 .pdb{
     padding-bottom: 10px;
 }
@@ -3355,6 +3372,15 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
+
+.logo-text h3 {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
       font-size: 13px;
@@ -4740,6 +4766,16 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
+
+.logo-text h3 {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
+
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
        font-size: 13px;
@@ -6400,6 +6436,15 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
+
+.logo-text h3 {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 13px;
@@ -8430,6 +8475,16 @@ a:hover{
  .head {
             font-size: 40px;
         }
+
+.logo-text h3 {
+    font-size: 22px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+
+        
 
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
