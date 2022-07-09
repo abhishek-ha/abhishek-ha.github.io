@@ -2305,7 +2305,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:727px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3974,7 +3974,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:601px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4141,11 +4141,11 @@ a:hover{
     padding-top: 10px;
  }
 .startassu{
-    font-size:40px;
+    font-size:28px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-top:10px;
-    line-height: 22px;
+    line-height: 33px;
 }
 .service-sod{
      background-color:#fcfcfc;
@@ -4387,7 +4387,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:671px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4811,7 +4811,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:599px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -8052,7 +8052,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:639px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9319,12 +9319,14 @@ a:hover{
  }
 
 .startassu{
-    font-size:40px;
+    font-size:35px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-bottom:40px;
     padding-top:24px;
+    line-height: 40px;
 }
+
 .thead1{
     letter-spacing: 1px;
     font-size:24px;
@@ -9686,10 +9688,9 @@ a:hover{
     font-size: 25px;
 }
 
-
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:613px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9924,6 +9925,7 @@ a:hover{
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
      padding-bottom:50px;
+     line-height: 54px;
 }
 .thead1{
     letter-spacing: 1px;
@@ -10238,7 +10240,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:612px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -10246,6 +10248,7 @@ a:hover{
     border-radius:10px;
     margin-top:10px;
 }
+
 .tradeindia .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -10560,7 +10563,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:614px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11178,7 +11181,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:564px;
+    height:597px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11838,7 +11841,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:599px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -12212,7 +12215,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:599px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -12586,7 +12589,7 @@ a:hover{
 
 .tradeindia{
      background-color:#fcfcfc;
-    height:615px;
+    height:599px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -15861,7 +15864,7 @@ h4{color:#444}
     padding-bottom:6px;
     font-size:14px;
    text-indent: -10px;
-    padding-left:10px;
+    padding-left:18px;
 
 }
 .plan ul li:before {
@@ -15960,7 +15963,7 @@ h4{color:#444}
     }
 .navbar-light .navbar-nav .nav-link {
      color: #000000;
-     font-weight: 500;
+     font-weight: 600;
      font-size: 18px;
 }
  .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
