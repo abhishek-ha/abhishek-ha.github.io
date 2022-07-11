@@ -6,8 +6,7 @@
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
-$("<style id='myStyle' type='text/css'> #preload { margin-top: 17%;height: 150px; width: 150px;border-radius: 50%; border: 2px solid #e5e5e5;animation: 0.8s pre linear infinite;} @keyframes pre {0% {transform: rotate(0deg);border-top: 2px solid mediumseagreen;}100% {transform: rotate(360deg);border-top: 2px solid green;}}</style>").appendTo("head");
-//
+$("<style type='text/css'>.preloader1 { top:0; bottom:0; left:0; right:0; position:absolute; margin:auto; width: 100px; height: 100px; border-radius: 100%; border: 4px solid white; border-top: 4px solid #0f5fc2; order-right: 4px solid #0f5fc2; border-bottom: 4px solid #0f5fc2; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite;}@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); }}@-webkit-keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>").appendTo("head");
 $('body').append("<div style=' background-color: rgba(0, 0, 0, 0.5);'>" +
     "        <style>" +
     "            .modal-body {" +
@@ -148,8 +147,7 @@ $('body').append("<div style=' background-color: rgba(0, 0, 0, 0.5);'>" +
     "                            </div>" +
     "                        </div>" +
     "                    </div>" +
-    "                </div></div> <div class='modal-dialog modal-dialog-centered modal-lg' style='overflow: hidden;display: none;' id='loadding'>" +
-    "                    <div style='background-color:white;' class='modal-content'><div><center><div id='preload'></div></center></div> </div>  </div></div>");
+    "                </div></div> </div></div> <div style='display: none;' id='Lodingdivid' class='preloader1'></div>");
 try {
     var app = new Vue({
         el: '#otpapp',
@@ -180,16 +178,15 @@ try {
     });
 } catch (e) { console.log(e); }
 
-//ShowLoding(true);
 function ShowLoding(flag) {
     if (flag) {
         $('#otpapp').hide();
         $('#Thankyouformdiv').hide();
-        $('#loadding').show();
+        $('#Lodingdivid').show();
         openmodalcallback();
     } else {
         closemodalcallback();
-        $('#loadding').hide();
+        $('#Lodingdivid').hide();
     }
 }
 
@@ -222,11 +219,12 @@ function checkSecond(sec) {
     return sec;
 }
 
-var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/"
+var ProductApiBaseUrl = "https://uat.healthassure.in/ProductApi/"
 var RenewalOPDObj = null;
 var timerFName = 'timer1';
 function RenewalOPDPlan(username, planCode, relation, couponCode, policyNo) {
     return new Promise(function (resolve, reject) {
+        ShowLoding(true);
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/RenewalOPDPlanRequest",
@@ -236,6 +234,7 @@ function RenewalOPDPlan(username, planCode, relation, couponCode, policyNo) {
                 if (result.status) {
                     RenewalOPDObj = result;
                     $('#otpapp').show();
+                    ShowLoding(false);
                     openmodalcallback();
                     $('#mobilenotext1').html(result.results.user.mobileNo.slice(result.results.user.mobileNo.length - 4));
                     $('#' + timerFName).html('00:00');
@@ -276,7 +275,7 @@ function OpnOPDPaymentPopUp(result, ProductApiBaseUrl) {
                 "order_id": result.results.razorpayOrder.id,
                 "handler": function (response) {
                     try {
-                        //ShowLoding(true);
+                        ShowLoding(true);
                     } catch { }
                     $.ajax({
                         type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/RenewalOPDPlanConformation",
@@ -286,7 +285,7 @@ function OpnOPDPaymentPopUp(result, ProductApiBaseUrl) {
                             if (res.status) {
                                 resolve(res) // Resolve promise and go to then() 
                                 try {
-                                    //ShowLoding(false);
+                                    ShowLoding(false);
                                     //opningPaymentSuccesspage();
                                 } catch { }
                             } else {
@@ -306,6 +305,7 @@ function OpnOPDPaymentPopUp(result, ProductApiBaseUrl) {
                 "modal": {
                     "ondismiss": function () {
                         try {
+                            ShowLoding(false);
                             userClosePaymentPopup();
                         } catch { }
                     }
@@ -339,7 +339,8 @@ $('#VarifyOTPbtn').click(function () {
         $('#VarifyOTPbtn').html('Verified');
         $('#message').html('');
         OpnOPDPaymentPopUp(RenewalOPDObj, ProductApiBaseUrl).then(function (resu) {
-            $('#Thankyouformdiv').show();
+            //$('#Thankyouformdiv').show();
+            window.open("thankyou.html", "_parent");
         }).catch(function (err) {
             $('#message').html(err.message);
         });
@@ -379,6 +380,7 @@ function VarifyOTPforValidation(otp, mobileno) {
 
 function GetOPDPlanForRenewal(policyNo) {
     return new Promise(function (resolve, reject) {
+        ShowLoding(true);
         $.ajax({
             type: "GET",
             url: ProductApiBaseUrl + "api/UserOPDPlans/GetOPDPlanForRenewal?policyNo=" + policyNo,
@@ -390,6 +392,7 @@ function GetOPDPlanForRenewal(policyNo) {
             },
             success: function (result) {
                 console.warn(result.message);
+                ShowLoding(false);
                 if (result.status) {
                     resolve(result) // Resolve promise and go to then() 
                 } else {
@@ -397,6 +400,7 @@ function GetOPDPlanForRenewal(policyNo) {
                 }
             },
             error: function (eror) {
+                ShowLoding(false);
                 console.warn(eror);
                 reject(eror) // Reject the promise and go to catch()
             }
