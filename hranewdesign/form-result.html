@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Status Report Result</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="custom-container mt-5">
+      <div class="form-report">
+        <div class="report-heading text-center">
+          <h2>Hello, <span id="UserName">Astasambhu</span></h2>
+          <p class="health-score-text">Here is your Health Score</p>
+
+          <div class="retake-section">
+            <a href="#" class="retake-link">Retake HRA</a>
+          </div>
+        </div>
+        <div class="report-result">
+          <div class="report-progresBar">
+            <div id="chart"></div>
+          </div>
+          <div class="report-result-text">
+            <h2 class="report-result-heading">Fair Result!</h2>
+            <div class="score-level">
+              <div>
+                <img src="./images/body.svg" class="me-3" alt="" />
+                <div class="score">
+                  <p>100</p>
+                  <p>Body</p>
+                </div>
+              </div>
+              <div>
+                <img src="./images/lifeStyle1.svg" class="me-3" alt="" />
+                <div class="score">
+                  <p>32</p>
+                  <p>LifeStyle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="report-download">
+            <button class="download-btn mt-2">
+              <i class="fa-solid fa-download me-2"></i> Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/custom.js"></script>
+
+    <script>
+      var options = {
+        series: [40],
+        chart: {
+          height: 200,
+          type: "radialBar",
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: "60%",
+            },
+            dataLabels: {
+              show: true,
+              name: {
+                offsetY: -10,
+                show: true,
+                color: "#FFFFFF",
+                fontSize: "17px",
+              },
+              value: {
+                formatter: function (val) {
+                  return parseInt(val);
+                },
+                color: "#FFFFFF",
+                fontSize: "26px",
+                show: true,
+              },
+            },
+          },
+        },
+        labels: ["Score"],
+        colors: ["#FFFFFF"],
+        fill: {
+          colors: ["#7b65bb"],
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+  </body>
+</html>
