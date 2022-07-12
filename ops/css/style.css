@@ -738,9 +738,6 @@ font-size: 20px;
     margin-bottom: 10px;
     padding: 6px 5px;
 }
-
-
-
 .scrollbar::-webkit-scrollbar {
     width: 4px;
     background-color: #008391;
@@ -829,6 +826,7 @@ font-size: 20px;
     width: 150px;
     border: 1px solid #f27024;
 }
+
 .shadow1{
     background-color: #fcfcfc; 
     color: #000000;padding: 10px; 
