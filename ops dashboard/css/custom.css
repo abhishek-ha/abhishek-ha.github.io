@@ -429,3 +429,37 @@
 .float-none {
   float: none !important;
 }
+
+
+.btn-radius {
+    border-radius: 13px;
+}
+.border-radius {
+    border-radius: 20px;
+}
+.border {
+    border: 1px solid #dee2e6!important;
+}
+
+.form-control{
+  border-radius:0px;
+}
+
+
+.btn-green {
+    color: #fff;
+    background-color: #008391!important;
+    border-color: #008391!important;
+    font-weight: 600;
+}
+
+.btn1{
+  width: 100px;
+  margin: 10px;
+}
+
+.btn-green:hover {
+    color: #fff;
+    background-color: #008391!important;
+    border-color: #008391!important;
+}
