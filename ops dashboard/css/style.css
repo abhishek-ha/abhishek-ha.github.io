@@ -1,0 +1,928 @@
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     box-sizing: border-box;
+ }
+
+body{
+	font-size: 13px;
+	line-height: 20px;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+html{
+     overflow-x: hidden!important;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.border-radius{
+    border-radius:20px;
+}
+.checkoutbtn{
+    background-color: #008391;
+}
+.line {
+    height: 3px;
+    width: 75px;
+    background-color: #d1b6b4;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.pbold{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000!important;
+}
+@media only screen and (max-width: 300px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 14px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    min-height: 300px;
+    border-radius: 15px;
+}
+.btn-radius{
+    border-radius:10px;
+}
+.checkout p{
+    font-size: 12px;
+}
+.prescription-btn {
+    display: inline-block;
+    font-weight: 400;
+   /* color: #ffffff;*/
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     border: 1px solid transparent;
+    padding: 5px 15px 5px 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+}
+
+@media only screen and (min-width: 301px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:10px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 11.5px;
+}
+.pharmacybox p{
+    font-size: 9.5px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:10px;
+    margin:5px;
+    min-height: 160px;
+}
+.pharmacybox1 h3{
+font-size: 11.5px;
+}
+.pharmacybox1 p{
+    font-size: 9.5px;
+    color:#d1b6b4;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     border: 1px solid transparent;
+    padding: 2px 15px 2px 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.prescription-btn {
+    display: inline-block;
+    font-weight: 400;
+   /* color: #ffffff;*/
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+     border: 1px solid transparent;
+    padding: 2px 15px 2px 15px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+.btn-radius{
+    border-radius:13px;
+}
+.checkout p{
+    font-size: 12px;
+    font-weight:500;
+}
+}
+
+@media only screen and (min-width: 350px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 12px;
+}
+.pharmacybox p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 400px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 12px;
+}
+.pharmacybox p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 450px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 12px;
+}
+.pharmacybox p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 12px;
+}
+.pharmacybox1 p{
+    font-size: 10px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 500px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
+}
+
+@media only screen and (min-width: 600px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
+}
+
+@media only screen and (min-width: 650px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+}
+
+@media only screen and (min-width: 700px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+ .pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 750px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:14px;
+}
+.pharmacybox p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+    min-height: 165px;
+}
+.pharmacybox1 h3{
+font-size:14px;
+}
+.pharmacybox1 p{
+    font-size: 12px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 800px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 850px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+}
+
+@media only screen and (min-width: 900px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:16px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+}
+.pharmacybox1 h3{
+font-size:16px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
+}
+
+@media only screen and (min-width: 1100px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
+}
+@media only screen and (min-width: 1240px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+  .pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox1 h3{
+font-size: 20px;
+}
+.pharmacybox1 p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+
+
+}
+@media only screen and (min-width: 1300px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size:16px;
+}
+.pharmacybox p{
+    font-size: 13px;
+    color:#d1b6b4;
+}
+.pharmacybox1{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:5px;
+    min-height: 170px;
+}
+.pharmacybox1 h3{
+font-size:17px;
+}
+.pharmacybox1 p{
+    font-size: 13px;
+    color:#d1b6b4;
+}
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+@media only screen and (min-width: 1500px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+@media only screen and (min-width: 1600px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (min-width: 1700px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+@media only screen and (min-width: 1800px) {
+  .pharmacybox{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding:15px;
+    margin:10px;
+}
+.pharmacybox h3{
+font-size: 20px;
+}
+.pharmacybox p{
+    font-size: 14px;
+    color:#d1b6b4;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .mob{
+        display: none!important;
+}
+}
+@media only screen and (min-width: 500.50px) {
+    .desk{
+       display: none!important;
+}
+}
+
+.pharmacyboxinput{
+      box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%);
+      border-radius:20px;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 18px;
+     border-top-right-radius: 18px;
+     background-color: #ffffff;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #008391!important;
+    border-color: #008391!important;
+}
+#minus , #plus{
+    height:20px;
+    width:20px;
+ border:1px black solid;
+    border-radius:50%; 
+}
+#minus:hover{
+    background-color:red;    
+    border:none;
+}
+#plus:hover{
+    background-color:green;
+    border:none;
+}
+#numberPlace {
+    margin-left:5px;
+    margin-right:5px;
+}
+#submit {
+    border:none;
+    height:25px; 
+}
+
+.btn-secondary{
+    background-color: #004182;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 20px 8px 20px;
+    width: 150px;
+}
+.btn-secondary:hover{
+    background-color: #f27024;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 8px 20px 8px 20px;
+    width: 150px;
+    border: 1px solid #f27024;
+}
+.shadow1{
+    background-color: #fcfcfc; 
+    color: #000000;padding: 10px; 
+    border-radius: 0px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+}
+.btn-orange{
+    background-color: #f27024;
+    color: #ffffff!important;
+}
+
+.head{
+    font-size: 30px;
+}
+
+.subhead{
+    font-size: 20px;
+}
+
+.description {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 0px;
+    position: relative;
+    z-index: 2;
+    min-height: 260px;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    margin-top: 10px;
+}
+
+
+
+.tabs{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+}
+.tabs .tabs-list{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.tabs .tabs-list li{
+    width:100px;
+    float:left;
+    margin:0px;
+    margin-right:2px;
+    padding:10px 5px;
+    text-align: center;
+    background-color:cornflowerblue;
+    border-radius:3px;
+}
+.tabs .tabs-list li:hover{
+    cursor:pointer;
+}
+.tabs .tabs-list li a{
+    text-decoration: none;
+    color:white;
+}
+
+/* Tab content section */
+.tabs .tab{
+    display:none;
+    width:96%;
+    min-height:250px;
+    height:auto;
+    border-radius:3px;
+    padding:20px 15px;
+    background-color:#ffffff;
+    color:darkslategray;
+    clear:both;
+}
+.tabs .tab h3{
+    border-bottom:3px solid cornflowerblue;
+    letter-spacing:1px;
+    font-weight:normal;
+    padding:5px;
+}
+.tabs .tab p{
+    line-height:20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.appointment{
+    font-size: 11px!important;
+}
+
+
+/* When active state */
+.active{
+    display:block !important;
+}
+.tabs .tabs-list li.active{
+    background-color:lavender !important;
+    color:black !important;
+}
+.active a{
+    color:black !important;
+}
+
+/* media query */
+@media screen and (max-width:360px){
+    .tabs{
+        margin:0;
+        width:96%;
+    }
+    .tabs .tabs-list li{
+        width:80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

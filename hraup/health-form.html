@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Status Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="custom-container mt-2">
+        <div class="patient-health-section">
+            <div class="row gy-0">
+                <div class="col-md-3 my-3">
+                    <div class="card left-card">
+                        <div class="card-body">
+                            <div>
+                                <div class="patient-name">
+                                    <div class="patient-img me-3">
+                                        <img src="./images/user.png" class="img-fluid" alt="">
+                                    </div>
+                                    <p> Sameer Ale </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 style="font-family: Poppins-Medium;" class="mt-4">Your Health</h3>
+                            </div>
+
+                            <div class="mt-4">
+                                <ul class="ps-2">
+                                    <li class="active">
+                                        <img src="./images/start-button.png" class="me-2" alt="start">
+                                        <span>Start</span>
+                                    </li>
+                                    <li>
+                                        <img src="./images/employee.png" class="me-2" alt="Details">
+                                        <span>Details</span>
+                                    </li>
+                                    <li>
+                                        <img src="./images/healthcare.png" class="me-2" alt="Health">
+                                        <span>Diagnostic</span>
+                                    </li>
+                                    <li>
+                                        <img src="./images/diagnostic-tool.png" class="me-2" alt="diagnostic">
+                                        <span>Health</span>
+                                    </li>
+                                    <li>
+                                        <img src="./images/check.png" class="me-2" alt="Finish">
+                                        <span>Finish</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 my-3">
+                    <div class="card h-100 right-card">
+                        
+                        <div class="card-body">
+                            <form class="patient-health-form">
+
+                                <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa-solid fa-backward-fast"></i></button>
+                                
+                                <div class="tab age-tab">
+                                    <h2>What is Your Age</h2>
+                                    <div class="my-2 mt-4">
+                                        <span id="ageDec" onclick="decInSlider('showAge', 1, 100) "><i class="fa-solid fa-minus"></i></span>
+                                        <input class="sliderRange" type="range" id="showAgeSlider"  value="0" min="1" max="100" onChange="rangeSlide(this.value, 1, 100)" onmousemove="rangeSlide(this.value, 1, 100)">
+                                        <span id="ageInc" onclick="addInSlider('showAge', 1, 100) "><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+
+                                    <span class="mt-3 me-2" id="showAge">1</span><span class="mt-3">Yr's</span>     
+                                </div>
+
+                                <div class="tab gender-tab">
+                                    <h2>Gender</h2>
+                                    <div class="select-gender">
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="gender" value="male">
+                                                <span><img src="./images/man.png" class="me-2" alt="">Male</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="gender">
+                                                <span><img src="./images/woman.png" alt=""> Female</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="gender" value="male">
+                                                <span><img src="./images/transgender.png" alt=""> Others</span>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="tab height-tab">
+                                    <h2>My Height Is</h2>
+                                    <div class="my-2 mt-4">
+                                        <span id="heightDec" onclick="decInHeight() "><i class="fa-solid fa-minus"></i></span>
+                                        <input class="sliderRange" id="showHeightSlider" type="range"  value="0" min="12" max="120" onchange="heightSlide(this.value, 12, 120)" onmousemove="heightSlide(this.value, 12, 120)">
+                                        <span id="heightInc" onclick="addInHeight() "><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+
+                                    <span id="showFeet">1</span><span>'</span><span id="showInch">0</span><span>"</span>
+                                </div>
+
+                                <div class="tab weight-tab">
+                                    
+                                    <h2>My Weight Is</h2>
+                                    <div class="my-2 mt-4">
+                                        <span id="weightDec" onclick="decInSlider('showWeight', 1, 100) "><i class="fa-solid fa-minus"></i></span>
+                                        <input class="sliderRange" id="showWeightSlider" type="range"  value="0" min="1" max="100" onChange="weightSlide(this.value, 1, 100)" onmousemove="weightSlide(this.value, 1, 100)">
+                                        <span id="weightInc" onclick="addInSlider('showWeight', 1, 100) "><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+
+                                    <span class="mt-3 me-2" id="showWeight">1</span><span class="mt-3">Kg</span>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Most recent random blood sugar/fasting blood sugar</h2>
+        
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>Below 70 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>70 – 110 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>110 - 126 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>>126 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>I don't remember</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="bloodsugar">
+                                                <span>I have never had my FBS tested</span>
+                                            </label>
+                                        </div>
+
+                                </div>
+
+                                <div class="tab" style="width: fit-content;margin: 0 auto">
+                                    <h2>Most recent blood presure reading</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="pressurereading">
+                                            <span>I don’t remember</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="pressurereading">
+                                            <span>I have never had my Blood pressure measured</span>
+                                        </label>
+                                    </div>
+                                    <p class="my-3 text-end" style="color: #FFFFFF;">* (Avg - 130/90 mm of Hg)</p>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Recent/Today's cholesterol level</h2>
+                                    <div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="cholesterollevel">
+                                                <span> < 200mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="cholesterollevel">
+                                                <span>200 to 239 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="cholesterollevel">
+                                                <span>>240 mg / dL</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="cholesterollevel">
+                                                <span>I don’t remember</span>
+                                            </label>
+                                        </div>
+                                        <div class="ck-button">
+                                            <label>
+                                                <input type="radio" name="cholesterollevel">
+                                                <span>I have never had my cholesterol level tested</span>
+                                            </label>
+                                        </div>
+                                        <p class="my-3" style="color: #FFFFFF;">(Avg - Below 200 mg/dL)</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Any family history of diabetes?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="diabeteshistory">
+                                            <span><img src="./images/single-parent.png" class="me-2" alt="Single-parent"> Single parent</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="diabeteshistory">
+                                            <span><img src="./images/bothparent.png" class="me-2" alt="both-parent"> Both parents</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="diabeteshistory" value="male">
+                                            <span><img src="./images/no-family.png" class="me-2" alt="No-family"> I have no family history</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Any family history of hypertension?</h2>
+                                    
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="hypertensionhistory">
+                                            <span><img src="./images/single-parent.png" class="me-2" alt="Single-parent"> Single parent</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="hypertensionhistory">
+                                            <span><img src="./images/bothparent.png" class="me-2" alt="both-parent"> Both parents</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="hypertensionhistory">
+                                            <span><img src="./images/no-family.png" class="me-2" alt="no-family-icon"> I have no family history</span>
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="tab">
+                                    <h2>Any health issue?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="healthhealth">
+                                            <span><img src="./images/diabetes-test.png" class="me-2" alt="">Diabetes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="healthhealth">
+                                            <span><img src="./images/hypertension.png" class="me-2" alt="">Hypertension</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="gehealthhealthnder">
+                                            <span><img src="./images/cholesterol.png" class="me-2" alt="">Hyperlipidemia/ High Cholesterol</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="healthhealth">
+                                            <span><img src="./images/asthma.png" class="me-2" alt="">Asthma</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="healthhealth">
+                                            <span><img src="./images/cancel.png" class="me-2" alt="">None of the above</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Have you ever been diagnosed with any of the following disease/condition(s)?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/Arthritis.png" class="me-2" alt="">Arthritis</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/Anemia.png" class="me-2" alt="">Anemia</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/cholesterol.png" class="me-2" alt="">Cholesterol</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/diabetes-test.png" class="me-2" alt="">Diabetes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/depression.png" class="me-2" alt="">Depression</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/cancer.png" class="me-2" alt="">Cancer</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span><img src="./images/cholesterol.png" class="me-2" alt="">High cholesterol</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="checkbox" name="healthhealth">
+                                            <span><img src="./images/cancel.png" class="me-2" alt="">None of the above</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Taking any treatment for Diabetes?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="treatmentForDiabetes">
+                                            <span>Yes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="treatmentForDiabetes">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Does Diabetes affect your routinelife at work/home?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="routinelife">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="routinelife">
+                                            <span>Yes, most times</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="routinelife">
+                                            <span>Sometimes</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Taking any treatment for hypertension?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            <span>Yes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="gender">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Does hypertension affect your routinelife at work/home?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="hypertensionAffect">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button" name="hypertensionAffect">
+                                        <label>
+                                            <input type="radio">
+                                            <span>Yes, most times</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="hypertensionAffect">
+                                            <span>Sometimes</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Taking regular treatment for cholesterol?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="cholesterol">
+                                            <span>Yes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="cholesterol">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Have you modified your lifestyle for cholesterol?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="cholesterol">
+                                            <span>Yes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="cholesterol">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Any previous asthmatic attack?<br>(More than two)</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="asthmatic">
+                                            <span>Yes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="asthmatic">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Do you smoke?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smoke">
+                                            <span>I do not smoke</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smoke">
+                                            <span>I smoke once in a while / at parties / at social gatherings</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smoke">
+                                            <span>I smoke a few times a week</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smoke">
+                                            <span>I smoke everyday </span>
+                                        </label>
+                                    </div>
+
+                                    <button id="skipButton">Skip Question</button>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Per day sticks?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smokecount">
+                                            <span>1 to 10</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smokecount">
+                                            <span>More than 10</span>
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Per week sticks?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smokecount">
+                                            <span>Less than 20</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="smokecount">
+                                            <span>Less than 20</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab">
+                                    <h2>Your best physical activity?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="physical">
+                                            <span>I exercise more than 4 times a week, 30 minutes or more</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="physical">
+                                            <span>I exercise few times a week</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="physical">
+                                            <span>I do only regular routine activities/ I do not exercise at all</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Your best dietary practice?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="dietary">
+                                            <span><img src="./images/vegetarian-food.png" class="me-2" alt="">Vegetarian</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="dietary">
+                                            <span><img src="./images/chicken.png" style="width: 32px; height:32px" class="me-2" alt="">Non Vegetarian</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Your eating habits?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>I take all 3 meals regularly</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>I take 5 small meals at frequent intervals</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>I often skip my meals</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Have you felt anxious, nervous or restless in previous month?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>Always</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>Few times</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eatinghabits">
+                                            <span>Never</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Have you felt depressed or sad in previous month?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Most of the time</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Sometimes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Never</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab">
+                                    <h2>Have you felt overwhelmed with stress from responsibilities, situations or relationships?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Most of the time</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Sometimes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="depressed">
+                                            <span>Never</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Your dosage for eating fried & junk food?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eating">
+                                            <span>Almost Everyday</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eating">
+                                            <span>Sometimes</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="eating">
+                                            <span>Rarely</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="tab">
+                                    <h2>Your alcohol drinking behavior?</h2>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I do not drink alcohol</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I drink alcohol once in a while / at parties / at social gatherings</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I drink alcohol 2-3 times a week</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I drink 1-2 pegs of alcohol everyday</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I drink 3 or more pegs of alcohol everyday</span>
+                                        </label>
+                                    </div>
+                                    <div class="ck-button">
+                                        <label>
+                                            <input type="radio" name="alcoholdrinking">
+                                            <span>I used to drink alcohol but do not drink anymore</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="tab successful-tab">
+                                    <h2>SUCCESSFUL</h2>
+                                    <div class="done-img text-center mt-5">
+                                        <img src="./images/done.png" alt="">
+                                    </div>
+                                </div>
+
+                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+
+                                <div class="card-bottom-logo">
+                                    <img src="./images/healthassure-logo.png" alt="">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>

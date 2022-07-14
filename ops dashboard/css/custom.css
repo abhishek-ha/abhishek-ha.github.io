@@ -319,69 +319,55 @@
 .py-2 {
   padding-bottom: 0.5rem !important;
 }
-
 .pl-2,
 .px-2 {
   padding-left: 0.5rem !important;
 }
-
 .p-3 {
   padding: 1rem !important;
 }
-
 .pt-3,
 .py-3 {
   padding-top: 1rem !important;
 }
-
 .pr-3,
 .px-3 {
   padding-right: 1rem !important;
 }
-
 .pb-3,
 .py-3 {
   padding-bottom: 1rem !important;
 }
-
 .pl-3,
 .px-3 {
   padding-left: 1rem !important;
 }
-
 .p-4 {
   padding: 1.5rem !important;
 }
-
 .pt-4,
 .py-4 {
   padding-top: 1.5rem !important;
 }
-
 .pr-4,
 .px-4 {
   padding-right: 1.5rem !important;
 }
-
 .pb-4,
 .py-4 {
   padding-bottom: 1.5rem !important;
 }
-
 .pl-4,
 .px-4 {
   padding-left: 1.5rem !important;
 }
-
 .p-5 {
   padding: 3rem !important;
 }
-
 .pt-5,
 .py-5 {
   padding-top: 3rem !important;
 }
-
 .pr-5,
 .px-5 {
   padding-right: 3rem !important;
@@ -391,12 +377,10 @@
 .py-5 {
   padding-bottom: 3rem !important;
 }
-
 .pl-5,
 .px-5 {
   padding-left: 3rem !important;
 }
-
 .m-auto {
   margin: auto !important;
 }
@@ -408,7 +392,6 @@
 .mx-auto {
   margin-right: auto !important;
 }
-
 .mb-auto,
 .my-auto {
   margin-bottom: auto !important;
@@ -417,20 +400,15 @@
 .mx-auto {
   margin-left: auto !important;
 }
-
 .float-left {
   float: left !important;
 }
-
 .float-right {
   float: right !important;
 }
-
 .float-none {
   float: none !important;
 }
-
-
 .btn-radius {
     border-radius: 13px;
 }
@@ -444,22 +422,20 @@
 .form-control{
   border-radius:0px;
 }
-
-
 .btn-green {
     color: #fff;
     background-color: #008391!important;
     border-color: #008391!important;
     font-weight: 600;
 }
-
 .btn1{
   width: 100px;
   margin: 10px;
 }
-
 .btn-green:hover {
     color: #fff;
     background-color: #008391!important;
     border-color: #008391!important;
 }
+
+

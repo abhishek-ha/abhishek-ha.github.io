@@ -27,10 +27,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" type="text/css" href="css/testimonial.css">
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     <style>
         body {
             font-family: 'Rubik', sans-serif !important;
@@ -44,78 +47,67 @@
                 property: value;
             }
         }
-
         @media only screen and (min-width: 1200px) {
             .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 40px !important;
             }
         }
-
-        @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: 1300px) {
             .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
         }
-
-        @media only screen and (min-width: 1400px) {
+   @media only screen and (min-width: 1400px) {
             .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
         }
-
-        @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1600px) {
             .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 50px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
         }
-
-        @media only screen and (min-width:1800px) {
+   @media only screen and (min-width:1800px) {
             .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 60px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
         }
-
-        .form-control {
+     .form-control {
             display: block;
             width: 100%;
             height: calc(2em + 1rem + 2px);
@@ -129,37 +121,59 @@
             border: 1px solid #ced4da;
             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
-
-        .renew h3 {
+ .renew h3 {
             font-size: 22px;
             font-weight: 600;
             color: #000000;
         }
-
-        .renew p {
+ .renew p {
             font-size: 15px;
             font-weight: 600;
             color: #000000;
         }
-
-        .btn {
+ .btn {
             font-size: 15px;
             font-weight: 600;
         }
 
-        .modal-content {
-            position: relative;
-            background-color: #ffffff !important;
-            margin: auto;
-            padding: 0;
-            border: 0px solid #888;
-            width: 100%;
-            height: 100%;
-            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-            animation-name: animatetop;
-            animation-duration: 0.4s;
+.modal-content {
+ position: relative;
+background-color: #ffffff !important;
+margin: auto;
+padding: 0;
+border: 0px solid #888;
+width: 100%;
+height: 100%;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+animation-name: animatetop;
+animation-duration: 0.4s;
         }
-    </style>
+.lead { font-size: 1.5rem; 
+    font-weight: 300; 
+    text-align: left; 
+}
+ .outer-box {
+      display: flex;
+      flex-direction: column;
+      align-items:left;
+   
+    }
+ .main-box {
+    width: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+  .tip {
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 6px;
+       width:200px;
+      min-height: 65px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+</style>
 
 
 
@@ -214,10 +228,6 @@
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
-
-
-
-
 </head>
 
 <body>
@@ -243,16 +253,31 @@
                     <img src="images/renew-policy.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-8 col-xl-8 banner1">
-                    <form id="RenewPolicyformid" class="bg-lgrey pt-8 pb-5 px-5 mt-5"
+                    <form id="RenewPolicyformid"  class="bg-lgrey pt-8 pb-5 px-5 mt-5"
                           style="box-shadow: 0 3px 10px rgb(0 0 0 / 20%);">
                         <h3 class="head1 "> Your HealthAssure Plan Expires Soon! </h3>
-                        <p class="pb-5 text-center"> Renew now to continue availing benefits! </p>
+                        <p class="pb-5 text-center"><b> Renew now to continue availing benefits! </b> </p>
                         <div class="form-group row">
-                            <label for="Policy No" class="col-sm-2 col-lg-2 "><b> Policy No.: </b> </label>
-                            <div class="col-sm-10 col-lg-10">
+        <label for="Policy No" class="col-sm-2 col-lg-2 pt-3"><b> Policy No.</b>  </label>
+                            <div class="col-lg-1 col-sm-1 pt-3">
+                                <div class="outer-box">
+      <div class="main-box">
+        <div class="main"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> </div>
+        <div class="tip">
+     <span>You can view your policy number on our Retail App or refer to COI pdf
+          </span>
+        </div>
+      </div>
+     </div>
+ </div>
 
-                                <input type="text" id="RenewPolicyNo" class="form-control" required>
-                                <div class="text-center mt-3">
+            <div class="col-sm-9 col-lg-9">
+     <input type="text" id="RenewPolicyNo" class="form-control"  required>
+    <div> 
+    <p id="policyInvalidMessage"> Please enter Valid policy no</p>    
+    </div>
+      
+                                <div class="mt-4">
                                     <button class="btn btn-primary btn1 px-5" type="submit" style="font-size:18px;">
                                         Submit
                                     </button>
@@ -371,8 +396,8 @@
                             <div class="d-flex footer_quick_links">
                                 <ul>
                                     <li><a href="https://healthassure.in/">Home</a></li>
-                                    <li><a href="#benefits">Plans</a></li>
-                                    <li><a href="javascript:void(0);" onclick="advisorclick();">Contact </a></li>
+                                    <!-- <li><a href="#benefits">Plans</a></li> -->
+                                    <li><a href="https://beta.healthassure.in/contact-us">Contact </a></li>
 
                                     </li>
                                 </ul>
@@ -392,14 +417,8 @@
 
                 </div>
             </div>
-            <div class="footer">
-                <p class="text-center white f-14 mb-0 mt-5">
-                    Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf"
-                                                                             target="_blank">Return Policy </a>| <a href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">
-                        Terms &
-                        Conditions
-                    </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf"
-                              target="_blank">Privacy Policy</a>
+<div class="footer">
+<p class="text-center white f-14 mb-0 mt-5"> Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf" target="_blank">Return Policy </a>| <a href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">Terms & Conditions </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf" target="_blank">Privacy Policy </a>
                 </p>
             </div>
         </div>
@@ -416,6 +435,8 @@
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="../js/RenewalOPDPlan.min.js"></script>
+
+    
     <script>
         $(document).ready(function () {
             $('.navbar-light .dmenu').hover(function () {
@@ -424,9 +445,11 @@
                 $(this).find('.sm-menu').first().stop(true, true).slideUp(210)
             });
         });
+
         $('#RenewNewbtnClick').click(function (e) {
             RenewalOPDPlanRequest($('#PolicyNo').val());
         });
+        $('#policyInvalidMessage').html('');
         $('#RenewPolicyformid').submit(function (ev) {
             ev.preventDefault();
             GetOPDPlanForRenewal($('#RenewPolicyNo').val()).then(function (result) {
@@ -444,11 +467,29 @@
                 $('#PolicyDetailsection').show();
             }).catch(function (err) {
                 console.warn(err);
-                alert(err.message);
+                //alert(err.message);
+                $('#policyInvalidMessage').html(err.message);
             });
         });
     </script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="bubbleBox.min.js"></script>
+
+
+ <script>
+    $(function () {
+      addBubbleAll('.main-box', '.tip', {
+        direction: 'top',
+        offsetX: 20,
+        fadeInDelay: 0,
+        fadeInTime: 100,
+        fadeOutDelay: 0,
+        fadeOutTime: 0,
+      })
+    })
+ </script>   
 </body>
 
 </html>
