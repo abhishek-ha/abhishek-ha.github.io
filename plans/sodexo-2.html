@@ -910,6 +910,10 @@ selector { property:value; }
         $("#RegistrationformId").submit(function (ev) {
             ev.preventDefault();
             try {
+                SaveCallbackAdvisor($('#mobileno').val(), $('#firstname').val() + " " + $('#lastname').val(),
+                    $('#emailid').val(), 'sodexo-free-trails', false).then(function (result) {
+                        console.log(result.message);
+                    });
                 var url = "http://live.healthassure.in/Products/Member/AccessCodeApi?firstname=" + $('#firstname').val() + "&&lastname=" + $('#lastname').val() + "&&gender=" + $('#Gender').val() + "&&mobileno=" + $('#mobileno').val() + "&&emailid=" + $('#emailid').val() + "&&accesscode=" + $('#vouchercode').val();
                 window.open(url, "_blank");
             } catch (e) { debugger; console.log(e) };
