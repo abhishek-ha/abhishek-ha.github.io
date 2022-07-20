@@ -1,20 +1,6 @@
 (function () {
-    $('body').prepend("<div style=' background-color: rgba(0, 0, 0, 0.5);'> <style>" +
-        "            .modal-body {" +
-        "                padding: 2px 16px;" +
-        "            }" +
-        "            .modal-content {" +
-        "                position: relative;" +
-        "                background-color: rgba(0, 0, 0, 0.5);" +
-        "                margin: auto;" +
-        "                padding: 0;" +
-        "                border: 0px solid #888;" +
-        "                width: 100%;" +
-        "                height: 100%;" +
-        "                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" +
-        "                animation-name: animatetop;" +
-        "                animation-duration: 0.4s" +
-        "            }" +
+    $('body').prepend("<div style=' background-color: rgba(0, 0, 0, 0.5);'> <style>"
+        +".popup-wrapper{display:none;position:absolute;z-index:999;padding-top:10px;padding-bottom:30px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.4)}@media only screen and (max-width:600px){.popup-content,.popup-content1{margin:auto;padding:20px 20px 70px;border:0 solid #888;width:70%;position:relative;min-height:84%}}@media only screen and (min-width:601px){.popup-content,.popup-content1{margin:auto auto 30px;padding:20px 20px 70px;border:0 solid #888;width:40%;position:relative;min-height:84%}}"+
         "            @keyframes animatetop {" +
         "                from {" +
         "                    top: -300px;" +
@@ -27,8 +13,8 @@
         "                }" +
         "            }" +
         "        </style>" +
-        "        <div id='buyplanpopup' class='modal' >" +
-        "            <div class='modal-content'>" +
+        "        <div id='buyplanpopup' class='popup-wrapper' >" +
+        "            <div class='popup-content'>" +
         "<iframe id='BuyPlaniframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' ></iframe> </div></div></div>");
 })();
 function getUrlVars1(url = window.location.href) {
