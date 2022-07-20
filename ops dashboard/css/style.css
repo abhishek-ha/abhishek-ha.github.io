@@ -142,7 +142,6 @@ font-size: 11.5px;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
 .prescription-btn {
     display: inline-block;
     font-weight: 400;
@@ -633,7 +632,7 @@ font-size: 20px;
     margin:10px;
 }
 .pharmacybox h3{
-font-size:16px;
+font-size:14px;
 }
 .pharmacybox p{
     font-size: 13px;
