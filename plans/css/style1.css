@@ -153,7 +153,6 @@ a:hover{
     color: #ffffff!important;
     background-color: #218838!important;
     border-color: #218838!important;
-
 }
 .btn-success:hover {
     color: #ffffff!important;
@@ -245,8 +244,7 @@ a:hover{
             text-align: center;
             color: #5336ca;
             margin: 5px;
-           background-color: #ffffff;
-         
+           background-color: #ffffff;  
         }
       .item3 img {
             width: 100px;
@@ -340,8 +338,7 @@ a:hover{
    .yt a {
             text-decoration: none;
         }
-    
-.member-card img {
+    .member-card img {
             width: 50px;
         }
  .member-card img.logo1 {
@@ -398,8 +395,7 @@ a:hover{
             /*.item2 {
                 width: 50%;
             } */
-
-            .logo {
+       .logo {
                 width: 47%;
                 padding: 20px 20px 0px 02px;
             }
@@ -1126,6 +1122,12 @@ a:hover{
 }*/
 
 
+
+
+
+
+
+
 @media only screen and (max-width:300px){
  .pt-bnr {
     padding-top: 200px;
@@ -1310,7 +1312,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:739px;
@@ -1684,6 +1685,71 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+
+.merabima{
+     background-color:#fcfcfc;
+    height:672px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:672px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .accenture{
      background-color:#fcfcfc;
     height:647px;
@@ -1826,8 +1892,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
 .logo-text h3{
     font-size: 15px;
     font-family: 'Inter', sans-serif; 
@@ -1835,8 +1899,14 @@ a:hover{
     font-weight: 600;
     text-align: center;
 }
+.remark{
+    font-size: 12px;
+     font-weight: 600;
+}
 
 }
+
+
 
 
 @media only screen and (min-width:301px){
@@ -1844,6 +1914,10 @@ a:hover{
     padding-top: 200px;
     text-align: center;
     }
+.remark{
+    font-size: 12px;
+}
+
     .subhead{
     font-size: 18px!important;
     font-weight: 600;
@@ -1876,9 +1950,6 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
-
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 12px;
@@ -2303,7 +2374,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .tradeindia{
      background-color:#fcfcfc;
     height:727px;
@@ -2335,8 +2405,68 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
+.merabima{
+     background-color:#fcfcfc;
+    height:645px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:679px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .accenture{
      background-color:#fcfcfc;
     height:620px;
@@ -2448,7 +2578,6 @@ a:hover{
     cursor: pointer;
     margin-top:52%;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:700px;
@@ -2459,7 +2588,6 @@ a:hover{
     border-radius:10px;
     margin-top:50px;
 }
-
 .sodexo-plan2 .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
@@ -2487,7 +2615,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
 .cashkaro{
      background-color:#fcfcfc;
     height:610px;
@@ -2531,23 +2658,18 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
-
 .accenturehead{
     color: #0f5fc2;
     font-weight: 700!important;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
-
 .cashkarohead1{
     color: #0f5fc2;
     font-weight: 700!important;
     font-family: 'Poppins', sans-serif;
     font-size:15px;
 }
-
 }
 
 
@@ -2568,14 +2690,6 @@ a:hover{
     font-weight: 600;
     text-align: center;
 }
-
-
-
-
-
-
-
-
 .pdb{
     padding-bottom: 10px;
 }
@@ -3081,14 +3195,9 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-
-
 .stamp{
     padding-top:40px;
 }
-
-
-
 .service-fiassure{
      background-color:#fcfcfc;
     height:622px;
@@ -3153,7 +3262,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .gromo{
      background-color:#fcfcfc;
     height:557px;
@@ -3186,8 +3294,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:513px;
@@ -3219,7 +3325,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -3253,7 +3358,68 @@ a:hover{
 }
 
 
-
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .accenture{
      background-color:#fcfcfc;
     height:579px;
@@ -3285,8 +3451,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .fitassure-plus{
      background-color:#fcfcfc;
     height:668px;
@@ -3329,12 +3493,6 @@ a:hover{
 }
 }
 
-
-
-
-
-
-
 @media only screen and (min-width: 375px){
  .pt-bnr {
     padding-top:200px;
@@ -3372,7 +3530,6 @@ a:hover{
     color: #f2f1f6;
     letter-spacing:.5px;
 }
-
 .logo-text h3 {
     font-size: 16px;
     font-family: 'Inter', sans-serif; 
@@ -3430,7 +3587,6 @@ a:hover{
     line-height: 22px;
     line-height: 30px;
 }
-
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -3640,7 +3796,6 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
-
 .cashkarohead1{
     color: #0f5fc2;
     font-weight: 700!important;
@@ -3800,14 +3955,12 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2img{
     margin-top: -1610px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
 }
-
 .cashkaro{
      background-color:#fcfcfc;
     height:569px;
@@ -3845,7 +3998,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
 .cashkarohead{
     color: #0f5fc2;
     font-weight: 700!important;
@@ -3858,14 +4010,9 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-
-
 .stamp{
     padding-top:40px;
 }
-
-
-
 .service-fiassure{
      background-color:#fcfcfc;
     height:622px;
@@ -3930,7 +4077,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .gromo{
      background-color:#fcfcfc;
     height:557px;
@@ -3963,8 +4109,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:513px;
@@ -3996,8 +4140,69 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+.merabima{
+     background-color:#fcfcfc;
+    height:549px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
-
+.merabima1{
+     background-color:#fcfcfc;
+    height:568px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:601px;
@@ -4029,7 +4234,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .accenture{
      background-color:#fcfcfc;
     height:579px;
@@ -4105,6 +4309,12 @@ a:hover{
 }
 
 @media only screen and (min-width: 400px){
+
+.remark{
+    font-size: 12px;
+    font-weight: 600;
+}
+
  .pt-bnr {
     padding-top: 200px;
     text-align: center;
@@ -4206,7 +4416,68 @@ a:hover{
 }
 
 
-
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -4238,7 +4509,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .accenture{
      background-color:#fcfcfc;
     height:547px;
@@ -4409,41 +4679,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-.tradeindia{
-     background-color:#fcfcfc;
-    height:671px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.tradeindia .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.tradeindia .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
-
-
 .cashkaro{
      background-color:#fcfcfc;
     height:522px;
@@ -4774,8 +5009,6 @@ a:hover{
     font-weight: 600;
     text-align: center;
 }
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
        font-size: 13px;
@@ -4845,6 +5078,68 @@ a:hover{
    color:#ffffff!important;
 }
 
+.merabima{
+     background-color:#fcfcfc;
+    height:547px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:545px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:599px;
@@ -4876,8 +5171,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .accenture{
      background-color:#fcfcfc;
     height:547px;
@@ -5776,6 +6069,68 @@ a:hover{
 }
 
 
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -5926,9 +6281,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:490px;
@@ -5961,9 +6313,12 @@ a:hover{
    color:#ffffff!important;
 }
 
-.tradeindia{
+
+
+
+.merabima{
      background-color:#fcfcfc;
-    height:615px;
+    height:547px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -5971,7 +6326,7 @@ a:hover{
     border-radius:10px;
     margin-top:10px;
 }
-.tradeindia .buybtn{
+.merabima .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
     right:0px; 
@@ -5987,12 +6342,43 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-.tradeindia .buybtn:hover{
+.merabima .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
 
+.merabima1{
+     background-color:#fcfcfc;
+    height:545px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .accenture{
      background-color:#fcfcfc;
     height:493px;
@@ -7092,6 +7478,69 @@ a:hover{
     margin-top:2px;
 }
 
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
 .tradeindia{
      background-color:#fcfcfc;
@@ -7128,6 +7577,12 @@ a:hover{
 }
 
 @media only screen and (min-width: 700px){
+
+.remark{
+    font-size: 13px;
+     font-weight: 600;
+}
+
  .pt-bnr {
     padding-top: 100px;
     text-align: center;
@@ -7220,9 +7675,6 @@ a:hover{
      padding-bottom:30px;
       padding-top:20px;
 }
-
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:431px;
@@ -7254,7 +7706,72 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
+
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
 .tradeindia{
      background-color:#fcfcfc;
@@ -8087,14 +8604,74 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .fitassure-plusimg{
     margin-top: -1148px;
     margin-left:23%;
     margin-right: auto;
     position:relative;
 }
-
+.merabima{
+     background-color:#fcfcfc;
+    height:484px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:484px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:639px;
@@ -8126,13 +8703,7 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
 }
-
-
 @media only screen and (min-width: 800px){
  .pt-bnr {
     padding-top: 100px;
@@ -8144,24 +8715,18 @@ a:hover{
 .head {
             font-size: 32px;
         }
-
-
 .head1 { font-size:35px;
           font-weight:600;
          line-height:45px;
         }
-
-        .head1 span {
+.head1 span {
             font-size:40px;
             font-weight:900;
             color:#0f5fc2;
         }
-
- .pdb{
+.pdb{
     padding-bottom:15px;
 }
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 13px;
@@ -8310,6 +8875,74 @@ a:hover{
     margin-top:2px;
 }
 
+
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -8404,16 +9037,13 @@ a:hover{
     background-origin: border-box;
      background-size: 100%;
 }
-
 .banner{
     padding-top: 40px;
      padding-bottom:20px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
-
 .startassu{
     font-size:60px;
      font-weight:700!important;
@@ -8431,6 +9061,74 @@ a:hover{
 }
 
 
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -8462,7 +9160,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 }
 
 
@@ -8471,8 +9168,7 @@ a:hover{
     padding-top: 100px;
     text-align: center;
     }
-
- .head {
+.head {
             font-size: 40px;
         }
 
@@ -8483,9 +9179,6 @@ a:hover{
     font-weight: 600;
     text-align: center;
 }
-
-        
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 16px;
@@ -8522,7 +9215,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -8531,7 +9223,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -8542,11 +9233,9 @@ a:hover{
 .banner{
     padding-top: 40px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
-
 .startassu{
     font-size:30px;
      font-weight:700!important;
@@ -8626,7 +9315,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:477px;
@@ -8664,7 +9352,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
 .cashkaro{
      background-color:#fcfcfc;
     height:372px;
@@ -8759,7 +9446,6 @@ a:hover{
     margin-right:9px;
     cursor: pointer;
     margin-top: 33px;
-
 }
 .service3{
    padding:6px;
@@ -8923,6 +9609,68 @@ a:hover{
    color:#ffffff!important;
 }
 
+.merabima{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:615px;
@@ -8954,9 +9702,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .accenture{
      background-color:#fcfcfc;
     height:473px;
@@ -9502,7 +10247,7 @@ a:hover{
     cursor: pointer;
     margin-top:15px;
 }
-.service: hover{
+.service:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
@@ -9610,8 +10355,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .fitassure-nonhospicash{
      background-color:#fcfcfc;
     height:468px;
@@ -9638,8 +10381,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .gromo{
      background-color:#fcfcfc;
     height:475px;
@@ -9742,7 +10483,71 @@ a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
 }
+.merabima{
+     background-color:#fcfcfc;
+    height:560px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:560px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:613px;
@@ -9774,8 +10579,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 }
 
 @media only screen and (min-width: 1050px){
@@ -9880,9 +10683,6 @@ a:hover{
     margin-right: auto;
     position:relative;
 }
-
-
-
 .cashkaro{
      background-color:#fcfcfc;
     height:492px;
@@ -10095,7 +10895,7 @@ a:hover{
     cursor: pointer;
     margin-top: 33px;
 }
-.service: hover{
+.service:hover{
     background-color:#fafafa;
     box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
@@ -10293,6 +11093,70 @@ a:hover{
    color:#ffffff!important;
 }
 
+
+.merabima{
+     background-color:#fcfcfc;
+    height:540px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:540px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:612px;
@@ -10616,6 +11480,74 @@ a:hover{
 }
 
 
+
+.merabima{
+     background-color:#fcfcfc;
+    height:520px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:520px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:614px;
@@ -10647,8 +11579,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .accenture{
      background-color:#fcfcfc;
     height:518px;
@@ -10833,8 +11763,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .fitassure-nonhospicash{
      background-color:#fcfcfc;
     height:468px;
@@ -11197,11 +12125,6 @@ a:hover{
     cursor: pointer;
     margin-top:128px!important;
 }
-
-
-
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:436px;
@@ -11229,6 +12152,69 @@ a:hover{
     margin-top:2px;
 }
 .service-sod.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima{
+    background-color:#fcfcfc;
+    height:504px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.merabima1{
+     background-color:#fcfcfc;
+    height:503px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -11265,11 +12251,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
 .accenture{
      background-color:#fcfcfc;
     height:503px;
@@ -11340,7 +12321,6 @@ a:hover{
     position:relative;
     width:63%;
 }
-
 .benitem {
             text-align: center;
             color: #5336ca;
@@ -11623,7 +12603,6 @@ a:hover{
     position: relative;
     width: 63%;
 }
-
 .fitassure-plus{
      background-color:#fcfcfc;
     height:537px;
@@ -11865,8 +12844,6 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .fitassure-nonhospicash{
      background-color:#fcfcfc;
     height:459px;
@@ -11893,7 +12870,71 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+.merabima{
+     background-color:#fcfcfc;
+    height:505px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:505px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:599px;
@@ -11925,9 +12966,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .accenture{
      background-color:#fcfcfc;
     height:503px;
@@ -11959,8 +12997,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .gromo{
     background-color:#fcfcfc;
     height:438px;
@@ -12153,9 +13189,6 @@ a:hover{
     position:relative;
     width: 63%;
 }
-
-
-
 .fitassure-plus{
      background-color:#fcfcfc;
     height:483px;
@@ -12194,10 +13227,6 @@ a:hover{
     position:relative;
     width:63%;
 }
-
-
-
-
 .cashkaro{
      background-color:#fcfcfc;
     height:414px;
@@ -12277,6 +13306,74 @@ a:hover{
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
+}
+
+.merabima{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .tradeindia .buybtn{
    background-color:#0f5fc2;
@@ -12421,9 +13518,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:491px;
@@ -12455,7 +13549,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2img{
     margin-top: -1188px;
     margin-left: 18%;
@@ -12463,7 +13556,6 @@ a:hover{
     position: relative;
     width: 63%;
 }
-
 .cashkaro{
      background-color:#fcfcfc;
     height:414px;
@@ -12640,8 +13732,71 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
+.merabima{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
 
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia{
      background-color:#fcfcfc;
     height:599px;
@@ -12673,7 +13828,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .accenture{
      background-color:#fcfcfc;
     height:476px;
@@ -12705,10 +13859,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
 }
 
 
@@ -13072,6 +14222,69 @@ a:hover{
     margin-right: auto;
     position: relative;
     width: 63%;
+}
+.merabima{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+.merabima1{
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 }
 
