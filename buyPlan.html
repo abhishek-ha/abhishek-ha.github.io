@@ -773,7 +773,7 @@
         }
         function opningPaymentSuccesspage() {
             //$('#congratulationsdiv').show();
-            OpenbuyPlanThankyouPage();
+            OpenbuyPlanThankyouPage(PTitle);
             closebuyplanpopup();
             $('#buyplanformdiv').hide();
             console.log('opningPaymentSuccesspage');
@@ -1017,7 +1017,7 @@
         }
         function OpenbuyPlanThankyouPage(PlanName){
             var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
-            window.open(url, "_blank");
+            window.open(url, "_parent");
         }
     </script>
 </body>
