@@ -541,19 +541,21 @@
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerEmail">Email</label>
                         <input type="email" class="form-control form-control121" id="CustomerEmail"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" class="form-control form-control121"
-                            title="Please Enter Valid Email ID" placeholder="Email *" required />
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                            class="form-control form-control121" title="Please Enter Valid Email ID"
+                            placeholder="Email *" required />
                         <div id="EmailerrortoolTip" class="toolTip"></div>
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerPhone">Phone</label>
                         <input type="tel" name="CustomerPhone" maxlength="10" id="CustomerPhone"
-                            pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number" class="form-control form-control121"
-                            placeholder="Phone *" required />
+                            pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
+                            class="form-control form-control121" placeholder="Phone *" required />
                     </div>
                     <div class="form-group">
                         <label class="form-label pl-1" for="CustomerDOB">DOB</label>
-                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB" min="1920-01-01" />
+                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
+                            min="1920-01-01" />
                     </div>
                     <div class="form-check" style="margin-top: 20px;">
                         <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
@@ -585,14 +587,15 @@
 
         <div class="row thankyouss" id="Thankyoupopup" style="display:none;">
             <div class="col-lg-6 pl-1">
-                <img src="images/call-center1.png" class="img-responsive mob1 " alt="call us" style="width:90%">
+                <img src="images/thankyouimg.png" class="img-responsive mob1 " alt="call us" style="width:90%">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mx-auto ">
-                <h3 class="text-center"> <span style="font-weight:600;"> Thank you </span> <span style="font-weight:400;">  for showing interest in HealthAssure Plans. </span> </h3>
+                <h3 class="text-center"> <span style="font-weight:600;"> Thank you </span> <span
+                        style="font-weight:400;"> for showing interest in HealthAssure Plans. </span> </h3>
                 <p class="text-center pt-2"> Our advisor will contact you shortly. </p>
                 <div class="col-md-12   mx-auto text-center">
                     <button type="submit" data-dismiss="modal" onclick="closebuyplanpopup()" value="OK"
-                        class=" btn btn-success btn-class  pgreenbtn btnyellow" id="button"> Ok </button>
+                        class=" btn btn-success btn-class  pgreenbtn btnyellow" id="button"> OK </button>
                     <br>
                     <br>
                 </div>
@@ -1015,7 +1018,7 @@
                 });
             });
         }
-        function OpenbuyPlanThankyouPage(PlanName){
+        function OpenbuyPlanThankyouPage(PlanName) {
             var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
             window.open(url, "_parent");
         }
