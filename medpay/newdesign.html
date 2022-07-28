@@ -38,23 +38,24 @@ input::-webkit-inner-spin-button {
 .input-group .button-minus,
 .input-group .button-plus {
   font-weight: bold;
-  height: 30px;
+  height: 28px;
   padding: 0;
-  width: 30px;
+  width: 28px;
   position: relative;
 }
 .input-group .quantity-field {
   position: relative;
-  height: 30px;
+  height: 25px;
   left: -6px;
   text-align: center;
-  width: 38px;
+  width: 32px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 12.5px;
   margin: 0 0 5px;
   resize: vertical;
-  border-radius: 30px;
+  border-radius: 0px;
   z-index: 4;
+  margin-top: 3px;
 }
 .button-plus {
   left: -13px;
@@ -64,6 +65,20 @@ input[type="number"] {
   -moz-appearance: textfield;
   -webkit-appearance: none;
 }
+
+label {
+    display: inline-block;
+    margin-bottom:2px;
+}
+
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
 </style>
 </head>
 <body>
@@ -71,9 +86,31 @@ input[type="number"] {
 <div class="container mt-5">
   <div class="row">
   <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-      <h4 class="pl-3 pt-3 pb-1" style="font-size:16px;font-weight: 500;"> Add/Edit Items</h4>
+      <h4 class="pl-3 pt-3 pb-1" style="font-size:16px;font-weight: 500;">Create Order </h4>
+      <div class="row">
+        <div class="col-lg-7">
+            <button class="btn btn-primary" style="float:left;"> View Prescription  <i class="fa-solid fa-circle-down"></i>   </button>
+          
+ </div>
+          <div class="col-lg-5">
+               <div class="drop_box" style="float:left; margin-left:5px;">
+     <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+      <button class="btn btn-primary">Upload <i class="fa-solid fa-prescription"></i> </button>
+    </div>
+          
+    </div>
+        
+      </div>
       
-      <button class="btn btn-primary"> View Prescription <i class="fa-solid fa-prescription"></i> </button>
+        
+      
+  
+  
+    
+
+
+
+    
       <div class="row pt-3  ">
         <div class="col-lg-12 col-md-12 col-12  scrollbar">
           <img src="images/prescription-img.jpg" class="img-fluid">
@@ -102,12 +139,12 @@ input[type="number"] {
 
   <div class="form-group row">
     
-    <div class="col-sm-6">
-      <label for="1" style=""> 1. </label>
-      <input type="text" class="form-control" placeholder="Search">
+    <div class="col-sm-6" style="padding-top: 24px;">
+   <label  style="float: left; padding-top:5px;"> 1. </label> 
+       <input type="text" class="form-control" placeholder="Search" style="float: left; width: 94%; margin-left:2%;"> 
     </div>
    <div class="col-lg-3">
-      <label for="Qty" class=" col-form-label"> Quantity </label>
+      <label for="Qty" > Quantity </label>
    <div class="input-group">
   <input type="button" value="-" class="button-minus" data-field="quantity">
   <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
@@ -115,39 +152,54 @@ input[type="number"] {
 </div>
     </div>
 
-   <div class="col-lg-1 float-left">
-      <label for="Total Price" class=" col-form-label">Price</label>
-     <button class="btn btn-primary"> 157 </button>
+   <div class="col-lg-2 float-left">
+      <label for="Total Price" >Price</label>
+   <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 150</p>
     </div>
-    <div class="col-sm-1" style="padding-top: 32px;">
+    <div class="col-sm-1" style="padding-top: 20px;">
     <button class="btn btn-danger"> <i class="fa-solid fa-xmark"></i> </button>
   
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-<div class="form-group row pt-2">
-    
-    <div class="col-sm-4">
-      <label for="Total QTY" class=" col-form-label">Total QTY</label>
-    <button class="btn btn-primary"> 4 </button>
+<div class="form-group row">
+   <div class="col-sm-6" style="padding-top: 24px;">
+   <label  style="float: left; padding-top:5px;"> 2. </label> 
+       <input type="text" class="form-control" placeholder="Search" style="float: left; width: 94%; margin-left:2%;"> 
     </div>
-  <div class="col-sm-5">
-  <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add More Items </button>
+   <div class="col-lg-3">
+      <label for="Qty" > Quantity </label>
+   <div class="input-group">
+  <input type="button" value="-" class="button-minus" data-field="quantity">
+  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+  <input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+    </div>
+
+   <div class="col-lg-2 float-left">
+      <label for="Total Price" >Price</label>
+   <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 70 </p>
+    </div>
+    <div class="col-sm-1" style="padding-top: 20px;">
+    <button class="btn btn-danger"> <i class="fa-solid fa-xmark"></i> </button>
+  </div>
+</div>
+
+
+<div class="form-group row">
+     <div class="col-sm-2">
+      <label for="Total QTY" class=" col-form-label">Total QTY</label>
+      <p class="amount"> 4 </p>
+    </div>
+  <div class="col-sm-4" style="padding-top:30px;">
+  <button class="btn btn-primary"> Add More Items </button>
  </div>
  <div class="col-sm-3">
   <label for="Total QTY" class=" col-form-label">Total Price </label>
-     <button class="btn btn-primary"> 4150 </button>
+     <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 910 </p>
     </div>
 
-    <div class="col-xl-12 col-lg-12 col-md-12 mt-5">
+    <div class="col-xl-3 col-lg-3 col-md-3" style="padding-top:30px;">
       <button class="btn btn-blue"> Place Order </button>
       
     </div>
@@ -223,8 +275,9 @@ input[type="number"] {
       <label for="inputPassword4"> Landmark </label>
       <input type="text" class="form-control" placeholder="Near Star mall">
     </div>
-    <div class="col-lg-12 mt-3">
+    <div class="col-lg-12 text-center mt-4">
       <button class="btn btn-blue"> Submit </button>
+     <button class="btn btn-danger ml-4"> Cancel </button> 
       
     </div>
   </div>
@@ -291,13 +344,39 @@ $('.input-group').on('click', '.button-minus', function(e) {
   decrementValue(e);
 });
 
+</script>
 
 
+<script >
+  
+
+const dropArea = document.querySelector(".drop_box"),
+  button = dropArea.querySelector("button"),
+  dragText = dropArea.querySelector("header"),
+  input = dropArea.querySelector("input");
+let file;
+var filename;
+
+button.onclick = () => {
+  input.click();
+};
+
+input.addEventListener("change", function (e) {
+  var fileName = e.target.files[0].name;
+  let filedata = `
+    <form action="" method="post">
+    <div class="form">
+    <h4>${fileName}</h4>
+    <input type="email" placeholder="Enter email upload file">
+    <button class="btn">Upload</button>
+    </div>
+    </form>`;
+  dropArea.innerHTML = filedata;
+});
 
 
 
 </script>
-
 
 
 

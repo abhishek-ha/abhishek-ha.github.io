@@ -5,23 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Ops Dashboard </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link href="css/form5-tabs.css" rel="stylesheet" type="text/css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style >
-  
-.nav-tabs > li {
+  .nav-tabs > li {
     float:none;
     display:inline-block;
     zoom:1;
     font-weight: 600;
+    font-size: 14px;
+}
+.nav-tabs {
+    /*text-align:center;*/
+    border-bottom: none;
+/*    background-color: #eeeeee;*/
+    padding: 10px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #ffffff;
+    background-color: #EA7663;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+ cursor: pointer;
+ border-radius: 20px;
+ width: 140px;
+ text-align: center;
 }
 
-.nav-tabs {
-    text-align:center;
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #000000;
+    background-color: #eeeeee;
+     border-radius: 20px;
 }
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 7px 15px;
+     width: 140px;
+ text-align: center;
+}
+
 </style>
 
 
@@ -71,8 +102,8 @@
     <input type="text" class="form-control"  placeholder="Search by Email/Mobile/Employee Code/Name" required>
   </div>
   <div class="col-lg-12 col-md-12 text-center mt-3">
-     <button type="submit" class="btn btn-green btn-radius btn1"> Search </button>
-     <button type="reset" class="btn btn-danger btn-radius btn1"> Reset </button>
+     <button type="submit" class="btn searchbtn"> Search </button>
+     <button type="reset" class="btn resetbtn"> Reset </button>
   </div>
     </form>
   
@@ -81,295 +112,332 @@
     </div>
 </div>
 
-
-
 <div class="container">
- <ul class="nav nav-tabs">
+  <div class="row">
+    <div class="col-lg-12 col-md-12" style="margin-bottom: 20px;">
+      <ul class="nav nav-tabs">
     <li class="active"> <a data-toggle="tab" href="#home"> User Details</a></li>
     <li><a data-toggle="tab" href="#menu1"> Result </a></li>
       </ul>
+ </div>
+ </div>
+  </div>
 
-  <div class="tab-content">
+<div class="container border border-radius ">
+ <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <div class="row border border-radius my-5 mx-3">
+
+     <div class="row border border-radius my-5 mx-3">
              <form class="pt-5 pb-5">
-  <div class="form-group col-lg-4">
-    <label for="Username"> Username </label>
-    <input type="text" class="form-control"  placeholder="Username">
-  </div>
-  <div class="form-group col-lg-4">
-    <label for="Mobile"> Mobile </label>
-    <input type="text" class="form-control"  placeholder="Mobile">
+  <div class="form-group col-lg-3">
+    <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Member Name : </span></p>
+    <p> Sameer Ale </p>
+   </div>
+
+  <div class="form-group col-lg-3">
+  <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Mobile : </span></p>
+    <p>0123456789 </p>
   </div>
 
-  <div class="form-group col-lg-4">
-    <label for="Email"> Email </label>
-    <input type="password" class="form-control" placeholder="Email">
+  <div class="form-group col-lg-3">
+     <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Email : </span></p>
+    <p> sameer.ale@healthassure.in </p>
+  </div>
+
+  <div class="form-group col-lg-3">
+     <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Emp Id : </span> </p>
+    <p> 9999999999 </p>
+  </div>
+
+</form>
+ </div>
+
+<div class="row" style="margin-bottom: 40px;">
+
+
+   <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+          <div class="pharmacybox">
+            <div class="row pt-2">
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name: <span> Max Bupa eConsult </span></h3>
+                 <h3 class="my-2"> Gender:<span> Male </span> </h3>
+                  <h3 class="my-2"> Plan Name: <span> FitAssure Hospicash </span></h3>
+                  
+                  <h3 class="my-2"> Plan Start Date:<span>  01 Jan 2022 </span> </h3>
+                </div>
+               <div class="col-lg-6 col-md-6 col-6 pl-4">
+               
+                 <h3 class="my-2"> Member Plan Id:<span>  HAOPD 23163 </span> </h3>
+                 <h3 class="my-2"> Date of Birth:<span>  01 Jan 1990 </span> </h3>
+                  <h3 class="my-2"> Emp No: <span> 437568723 </span> </h3>
+                   <h3 class="my-2"> Status: Active </h3>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-4 mt-3">
+          <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
+
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+                  <button class="btn btn-primary btn-radius">View Plan
+                  </button>
+                 </div>
+          </div>
+            </div>
+          </div>
+
+
+
+ <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+          <div class="pharmacybox">
+            <div class="row pt-2">
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name: <span> Max Bupa eConsult </span></h3>
+                 <h3 class="my-2"> Gender:<span> Male </span> </h3>
+                  <h3 class="my-2"> Plan Name: <span> FitAssure Hospicash </span></h3>
+                  
+                  <h3 class="my-2"> Plan Start Date:<span>  01 Jan 2022 </span> </h3>
+                </div>
+               <div class="col-lg-6 col-md-6 col-6 pl-4">
+               
+                 <h3 class="my-2"> Member Plan Id:<span>  HAOPD 23163 </span> </h3>
+                 <h3 class="my-2"> Date of Birth:<span>  01 Jan 1990 </span> </h3>
+                  <h3 class="my-2"> Emp No: <span> 437568723 </span> </h3>
+                   <h3 class="my-2"> Status: Active </h3>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-4 mt-3">
+          <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
+
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+          </div>
+            </div>
+          </div>
+
+
+           <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+          <div class="pharmacybox">
+            <div class="row pt-2">
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name: <span> Max Bupa eConsult </span></h3>
+                 <h3 class="my-2"> Gender:<span> Male </span> </h3>
+                  <h3 class="my-2"> Plan Name: <span> FitAssure Hospicash </span></h3>
+                  
+                  <h3 class="my-2"> Plan Start Date:<span>  01 Jan 2022 </span> </h3>
+                </div>
+               <div class="col-lg-6 col-md-6 col-6 pl-4">
+               
+                 <h3 class="my-2"> Member Plan Id:<span>  HAOPD 23163 </span> </h3>
+                 <h3 class="my-2"> Date of Birth:<span>  01 Jan 1990 </span> </h3>
+                  <h3 class="my-2"> Emp No: <span> 437568723 </span> </h3>
+                   <h3 class="my-2"> Status: Active </h3>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-4 mt-3">
+          <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
+
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+          </div>
+            </div>
+          </div>
+
+
+ <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
+          <div class="pharmacybox">
+            <div class="row pt-2">
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name: <span> Max Bupa eConsult </span></h3>
+                 <h3 class="my-2"> Gender:<span> Male </span> </h3>
+                  <h3 class="my-2"> Plan Name: <span> FitAssure Hospicash </span></h3>
+                  
+                  <h3 class="my-2"> Plan Start Date:<span>  01 Jan 2022 </span> </h3>
+                </div>
+               <div class="col-lg-6 col-md-6 col-6 pl-4">
+               
+                 <h3 class="my-2"> Member Plan Id:<span>  HAOPD 23163 </span> </h3>
+                 <h3 class="my-2"> Date of Birth:<span>  01 Jan 1990 </span> </h3>
+                  <h3 class="my-2"> Emp No: <span> 437568723 </span> </h3>
+                   <h3 class="my-2"> Status: Active </h3>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-4 mt-3">
+          <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
+
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+          </div>
+            </div>
+          </div>
+
+ </div>
+
+
+ </div>
+
+
+
+  <div id="menu1" class="tab-pane fade">
+
+     <div class="row border border-radius my-5 mx-3">
+             <form class="pt-5 pb-5">
+  <div class="form-group col-lg-3">
+    <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Member Name : </span></p>
+    <p> Sameer Ale </p>
+   </div>
+   
+  <div class="form-group col-lg-3">
+  <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Mobile : </span></p>
+    <p>0123456789 </p>
+  </div>
+
+  <div class="form-group col-lg-3">
+     <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Email : </span></p>
+    <p> sameer.ale@healthassure.in </p>
+  </div>
+
+  <div class="form-group col-lg-3">
+     <p style="margin-bottom:0px;"> <span style="font-weight:600;font-size: 15px;">Emp Id : </span> </p>
+    <p> 9999999999 </p>
   </div>
 
 </form>
  </div>
 
 <div class="row">
-   <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+   <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
           <div class="pharmacybox">
             <div class="row pt-2">
-              <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Client Name: </h3>
-                 <h3 class="my-2"> Gender: </h3>
-                  <h3 class="my-2"> Plan Name: </h3>
-                   <h3 class="my-2"> Date of Birth: </h3>
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name:<span> Max Bupa </span> </h3>
+                 <h3 class="my-2"> Gender:<span> Male </span></h3>
+                   <h3 class="my-2"> No. Of Calls:<span> 1</span> </h3>
+                   <h3 class="my-2"> Last call For:<span> Test Call </span> </h3>
                 </div>
 
-                  <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Member Name: </h3>
-                 <h3 class="my-2"> Member Plan Id: </h3>
-                  <h3 class="my-2"> Emp No: </h3>
-                   <h3 class="my-2"> Status: Active </h3>
+                  <div class="col-lg-6 col-md-6 col-6 pl-4">
+                    <h3 class="my-2"> Plan Name:<span> Max Indian Bank</span> </h3>
+                  <h3 class="my-2"> Case No.:<span> HA28072022IFFDD </span> </h3>
+                  <h3 class="my-2"> Member Plan Id:<span> 72022IFFDD </span> </h3>
+                  <h3 class="my-2"> Status:<span> Closed </span> </h3>
+                 
+                
                 </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-                  <button class="btn btn-primary btn-radius"> Update Call Log
-                  </button>
+                <div class="col-lg-12 col-sm-12 col-md-12 mt-2">
+                <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
+
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
                  </div>
-
-               <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Call History
-                  </button>
-             </div>
-
-
-                <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Unlocked
-                  </button>
-               </div>
-                      
-             </div>
-            </div>
-          </div>
-
-           <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="pharmacybox">
-            <div class="row pt-2">
-              <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Client Name: </h3>
-                 <h3 class="my-2"> Gender: </h3>
-                  <h3 class="my-2"> Plan Name: </h3>
-                   <h3 class="my-2"> Date of Birth: </h3>
-                </div>
-
-                  <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Member Name: </h3>
-                 <h3 class="my-2"> Member Plan Id: </h3>
-                  <h3 class="my-2"> Emp No: </h3>
-                   <h3 class="my-2"> Status: Active </h3>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-                  <button class="btn btn-primary btn-radius"> Update Call Log
-                  </button>
-                 </div>
-
-               <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Call History
-                  </button>
-             </div>
-           <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Unlocked
-                  </button>
-               </div>
-           </div>
-            </div>
-          </div>
-
-           <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="pharmacybox">
-            <div class="row pt-2">
-              <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Client Name: </h3>
-                 <h3 class="my-2"> Gender: </h3>
-                  <h3 class="my-2"> Plan Name: </h3>
-                   <h3 class="my-2"> Date of Birth: </h3>
-                </div>
-
-                  <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Member Name: </h3>
-                 <h3 class="my-2"> Member Plan Id: </h3>
-                  <h3 class="my-2"> Emp No: </h3>
-                   <h3 class="my-2"> Status: Active </h3>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-                  <button class="btn btn-primary btn-radius"> Update Call Log
-                  </button>
-                 </div>
-
-               <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Call History
-                  </button>
-             </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Unlocked
-                  </button>
-               </div>
-                      
-             </div>
-            </div>
-          </div>
-
-
-           <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="pharmacybox">
-            <div class="row pt-2">
-              <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Client Name: </h3>
-                 <h3 class="my-2"> Gender: </h3>
-                  <h3 class="my-2"> Plan Name: </h3>
-                   <h3 class="my-2"> Date of Birth: </h3>
-                </div>
-
-                  <div class="col-lg-5 col-md-6 col-6 pl-4">
-                <h3 class="my-2"> Member Name: </h3>
-                 <h3 class="my-2"> Member Plan Id: </h3>
-                  <h3 class="my-2"> Emp No: </h3>
-                   <h3 class="my-2"> Status: Active </h3>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-                  <button class="btn btn-primary btn-radius"> Update Call Log
-                  </button>
-                 </div>
-            <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Call History
-                  </button>
-             </div>
-       <div class="col-lg-4 col-sm-12 col-md-4 mt-2">
-               <button class="btn btn-primary btn-radius"> Unlocked
-                  </button>
-               </div>
-                      
-             </div>
-            </div>
-          </div>
-
-          
-
-        
-
-        </div>
-
-
-    </div>
-    <div id="menu1" class="tab-pane fade">
-
-
-<div class="row border border-radius my-5 mx-3">
-             <form class="py-3">
-  <div class="form-group col-lg-4">
-    <label for="Username"> Username </label>
-    <input type="text" class="form-control"  placeholder="Username">
-  </div>
-  <div class="form-group col-lg-4">
-    <label for="Mobile"> Mobile </label>
-    <input type="text" class="form-control"  placeholder="Mobile">
-  </div>
-
-  <div class="form-group col-lg-4">
-    <label for="Email"> Email </label>
-    <input type="password" class="form-control" placeholder="Email">
-  </div>
-
-</form>
  </div>
+            </div>
+          </div>
 
 
-      <div class="row">
-   <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
           <div class="pharmacybox">
             <div class="row pt-2">
-              <div class="col-lg-9 col-md-9 col-9 pl-4">
-                <h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-                <p class="mb-0"> ACRON PHARMACEUTICALS  </p>
-                <p>Strip  | <span class="text-warning"> Rx Required </span> </p>
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name:<span> Max Bupa </span> </h3>
+                 <h3 class="my-2"> Gender:<span> Male </span></h3>
+                   <h3 class="my-2"> No. Of Calls:<span> 1</span> </h3>
+                   <h3 class="my-2"> Last call For:<span> Test Call </span> </h3>
+                </div>
+
+                  <div class="col-lg-6 col-md-6 col-6 pl-4">
+                    <h3 class="my-2"> Plan Name:<span> Max Indian Bank</span> </h3>
+                  <h3 class="my-2"> Case No.:<span> HA28072022IFFDD </span> </h3>
+                  <h3 class="my-2"> Member Plan Id:<span> 72022IFFDD </span> </h3>
+                  <h3 class="my-2"> Status:<span> Closed </span> </h3>
+                 
                 
-              </div>
-                      <div class="col-lg-3 col-md-3 col-3 ">
-                        <div class="float-right">
-                  <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-12 mt-2">
+                <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
 
-                        <button class="btn btn-primary btn-radius">Add </button>
-  </div>
-                    </div>
-             </div>
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+ </div>
             </div>
           </div>
 
-          <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+
+<div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
           <div class="pharmacybox">
             <div class="row pt-2">
-              <div class="col-lg-9 col-md-9 col-9 pl-4">
-                <h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-                <p class="mb-0"> ACRON PHARMACEUTICALS  </p>
-                <p>Strip | <span class="text-warning"> Rx Required </span> </p>
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name:<span> Max Bupa </span> </h3>
+                 <h3 class="my-2"> Gender:<span> Male </span></h3>
+                   <h3 class="my-2"> No. Of Calls:<span> 1</span> </h3>
+                   <h3 class="my-2"> Last call For:<span> Test Call </span> </h3>
+                </div>
+
+                  <div class="col-lg-6 col-md-6 col-6 pl-4">
+                    <h3 class="my-2"> Plan Name:<span> Max Indian Bank</span> </h3>
+                  <h3 class="my-2"> Case No.:<span> HA28072022IFFDD </span> </h3>
+                  <h3 class="my-2"> Member Plan Id:<span> 72022IFFDD </span> </h3>
+                  <h3 class="my-2"> Status:<span> Closed </span> </h3>
+                 
                 
-              </div>
-                      <div class="col-lg-3 col-md-3 col-3 ">
-                        <div class="float-right">
-                  <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-12 mt-2">
+                <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
 
-                        <button class="btn btn-primary btn-radius">Add </button>
-  </div>
-                    </div>
-             </div>
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+ </div>
             </div>
           </div>
 
-        <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+
+<div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6 mt-4">
           <div class="pharmacybox">
             <div class="row pt-2">
-              <div class="col-lg-9 col-md-9 col-9 pl-4">
-                <h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-                <p class="mb-0"> ACRON PHARMACEUTICALS  </p>
-                <p>Strip  | <span class="text-warning"> Rx Required </span> </p>
+              <div class="col-lg-6 col-md-6 col-6 pl-4">
+                <h3 class="my-2"> Client Name:<span> Max Bupa </span> </h3>
+                 <h3 class="my-2"> Gender:<span> Male </span></h3>
+                   <h3 class="my-2"> No. Of Calls:<span> 1</span> </h3>
+                   <h3 class="my-2"> Last call For:<span> Test Call </span> </h3>
+                </div>
+
+                  <div class="col-lg-6 col-md-6 col-6 pl-4">
+                    <h3 class="my-2"> Plan Name:<span> Max Indian Bank</span> </h3>
+                  <h3 class="my-2"> Case No.:<span> HA28072022IFFDD </span> </h3>
+                  <h3 class="my-2"> Member Plan Id:<span> 72022IFFDD </span> </h3>
+                  <h3 class="my-2"> Status:<span> Closed </span> </h3>
+                 
                 
-              </div>
-                      <div class="col-lg-3 col-md-3 col-3 ">
-                        <div class="float-right">
-                  <p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-md-12 mt-2">
+                <button class="btn btn-primary btn-radius"> Unlocked </button>
+          <button class="btn btn-primary btn-radius"> Call History </button>
+       <button class="btn btn-primary btn-radius"> Send Credentials </button>
 
-                        <button class="btn btn-primary btn-radius">Add </button>
-  </div>
-                    </div>
-             </div>
+          <button class="btn btn-primary btn-radius"> Update Call Log </button>
+          <button class="btn btn-primary btn-radius">View Plan </button>
+                 </div>
+ </div>
             </div>
           </div>
-
-          <div class="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-          <div class="pharmacybox">
-            <div class="row pt-2">
-              <div class="col-lg-9 col-md-9 col-9 pl-4">
-                <h3> Oftum(Omega Pharmaceuticals) 250mg </h3>
-                <p class="mb-0"> ACRON PHARMACEUTICALS  </p>
-                <p>Strip  | <span class="text-warning"> Rx Required </span> </p>
-               </div>
-                      <div class="col-lg-3 col-md-3 col-3 ">
-                        <div class="float-right">
-<p  class="text-dark"><i class="fas fa-rupee-sign"></i> 88/-<span style="vertical-align:top;"> * </span></p>
-      <button class="btn btn-primary btn-radius">Add </button>
-                    </div>
-                    </div>
-             </div>
-            </div>
-          </div>
-        </div>
-    </div>
- 
-   
-  </div>
+ </div>
+ </div>
+ </div>
 </div>
 
-
-
-
-
-            
-  
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.9.1.js" type="text/javascript" ></script>
