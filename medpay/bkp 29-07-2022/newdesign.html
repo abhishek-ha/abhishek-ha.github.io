@@ -79,9 +79,6 @@ label {
 
 
 
-
-
-
 </style>
 </head>
 <body>
@@ -100,13 +97,23 @@ label {
      <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
       <button class="btn btn-primary">Upload <i class="fa-solid fa-prescription"></i> </button>
     </div>
- </div>
-        </div>
-        <div class="row pt-3">
+          
+    </div>
+        
+      </div>
+      
+        
+      
+  
+  
+    
+
+
+
+    
+      <div class="row pt-3  ">
         <div class="col-lg-12 col-md-12 col-12  scrollbar">
-          <a class="workspace" href="images/prescription-img.jpg">
-          <img src="images/prescription-img.jpg">
-        </a>
+          <img src="images/prescription-img.jpg" class="img-fluid">
      </div>
    </div>
  </div>
@@ -278,7 +285,20 @@ label {
     
   </div>
 </div>
-</div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+       
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -354,11 +374,8 @@ input.addEventListener("change", function (e) {
   dropArea.innerHTML = filedata;
 });
 
-</script>
 
-<script type="text/javascript" src="jquery.mk.magnifier.js"></script>
-<script>
-$('.workspace').mkMagnifier({width:300,height:460,ratio:1.65,magnifier_radius:90});
+
 </script>
 
 
