@@ -20,8 +20,7 @@
     width: 100%;
     
         padding: 5rem 0 9.3rem 5rem;
-    background-image: url(../images/pattern-curve.svg);
-     background-repeat: no-repeat;
+ background-repeat: no-repeat;
      background-position: bottom left;
      display: flex;
      justify-content: center;
@@ -140,7 +139,7 @@
     max-width: 144rem;
     margin-bottom: 2rem;
     padding: 2.3rem 16.5rem;
-    background-image: url(../images/pattern-bg.svg);
+   
     background-repeat: no-repeat;
     background-size: 48.4%;
     background-position: bottom 0px right 7.3rem;
