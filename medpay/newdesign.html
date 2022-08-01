@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Pharmacy </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+  
+
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-group input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 28px;
+  width: auto;
+  transition: all 300ms ease;
+  border-radius: 30px;
+  z-index: 5;
+}
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 28px;
+  padding: 0;
+  width: 28px;
+  position: relative;
+}
+.input-group .quantity-field {
+  position: relative;
+  height: 25px;
+  left: -6px;
+  text-align: center;
+  width: 32px;
+  display: inline-block;
+  font-size: 12.5px;
+  margin: 0 0 5px;
+  resize: vertical;
+  border-radius: 0px;
+  z-index: 4;
+  margin-top: 3px;
+}
+.button-plus {
+  left: -13px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom:2px;
+}
+
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+  <div class="col-xl-4 col-lg-4 col-md-4 col-12">
+      <h4 class="pl-3 pt-3 pb-1" style="font-size:16px;font-weight: 500;">Create Order </h4>
+      <div class="row">
+        <div class="col-lg-7">
+            <button class="btn btn-primary" style="float:left;"> View Prescription  <i class="fa-solid fa-circle-down"></i>   </button>
+          
+ </div>
+          <div class="col-lg-5">
+               <div class="drop_box" style="float:left; margin-left:5px;">
+     <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+      <button class="btn btn-primary">Upload <i class="fa-solid fa-prescription"></i> </button>
+    </div>
+ </div>
+        </div>
+        <div class="row pt-3">
+        <div class="col-lg-12 col-md-12 col-12  scrollbar">
+          <a class="workspace" href="images/prescription-img.jpg">
+          <img src="images/prescription-img.jpg">
+        </a>
+     </div>
+   </div>
+ </div>
+
+<div class="col-xl-8 col-lg-8 col-md-8 col-12">
+  <h4 class="pl-3 pt-3 pb-1" style="font-size:16px;font-weight: 500;"> Cart </h4>
+ <form class="border border-radius shadow py-4 px-4">
+
+
+  <div class="form-group row">
+    <label for="Check Availbility" class="col-sm-3 col-form-label">Check Availbility </label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" placeholder="Enter Pincode" >
+    </div>
+     <div class="col-sm-2 pt-1">
+          <button type="submit" class="btn btn-primary"> Validate </button>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="form-group row">
+    
+    <div class="col-sm-6" style="padding-top: 24px;">
+   <label  style="float: left; padding-top:5px;"> 1. </label> 
+       <input type="text" class="form-control" placeholder="Search" style="float: left; width: 94%; margin-left:2%;"> 
+    </div>
+   <div class="col-lg-3">
+      <label for="Qty" > Quantity </label>
+   <div class="input-group">
+  <input type="button" value="-" class="button-minus" data-field="quantity">
+  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+  <input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+    </div>
+
+   <div class="col-lg-2 float-left">
+      <label for="Total Price" >Price</label>
+   <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 150</p>
+    </div>
+    <div class="col-sm-1" style="padding-top: 20px;">
+    <button class="btn btn-danger"> <i class="fa-solid fa-xmark"></i> </button>
+  
+</div>
+</div>
+
+<div class="form-group row">
+   <div class="col-sm-6" style="padding-top: 24px;">
+   <label  style="float: left; padding-top:5px;"> 2. </label> 
+       <input type="text" class="form-control" placeholder="Search" style="float: left; width: 94%; margin-left:2%;"> 
+    </div>
+   <div class="col-lg-3">
+      <label for="Qty" > Quantity </label>
+   <div class="input-group">
+  <input type="button" value="-" class="button-minus" data-field="quantity">
+  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+  <input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+    </div>
+
+   <div class="col-lg-2 float-left">
+      <label for="Total Price" >Price</label>
+   <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 70 </p>
+    </div>
+    <div class="col-sm-1" style="padding-top: 20px;">
+    <button class="btn btn-danger"> <i class="fa-solid fa-xmark"></i> </button>
+  </div>
+</div>
+
+
+<div class="form-group row">
+     <div class="col-sm-2">
+      <label for="Total QTY" class=" col-form-label">Total QTY</label>
+      <p class="amount"> 4 </p>
+    </div>
+  <div class="col-sm-4" style="padding-top:30px;">
+  <button class="btn btn-primary"> Add More Items </button>
+ </div>
+ <div class="col-sm-3">
+  <label for="Total QTY" class=" col-form-label">Total Price </label>
+     <p class="amount"><i class="fa-solid fa-indian-rupee-sign"></i> 910 </p>
+    </div>
+
+    <div class="col-xl-3 col-lg-3 col-md-3" style="padding-top:30px;">
+      <button class="btn btn-blue"> Place Order </button>
+      
+    </div>
+  
+   
+</div>
+</form>
+
+</div>
+ </div>
+
+<div class="row my-5 mx-1">
+  <div class="col-lg-12 py-5" style="box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);">
+    <h3> Fill Your Information </h3>
+     <div style="border-top:4px solid #457e70;width: 100px;margin-bottom: 20px;">
+     </div>
+ <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">First Name</label>
+      <input type="text" class="form-control" placeholder="Sameer ">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"> Last Name</label>
+      <input type="text" class="form-control" placeholder="Ale">
+    </div>
+  </div>
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"> Mobile No </label>
+      <input type="text" class="form-control" placeholder="8287234369">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"> Email </label>
+      <input type="text" class="form-control" placeholder="sameer.ale@healthassure.in">
+    </div>
+  </div>
+
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"> Select Relation </label>
+     <select class="form-control">
+      <option> Self </option>
+          <option> Spouse </option>
+          <option> Father </option>
+     </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"> Date of Birth </label>
+      <input type="date" class="form-control" placeholder="DD/MM/YYYY">
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"> Address </label>
+      <input type="text" class="form-control" placeholder="BPTP Park Centra, 802, 8th Floor, Tower A, Sector 30, Gurugram, Haryana 122001">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"> State </label>
+      <input type="text" class="form-control" placeholder="Haryana">
+    </div>
+  </div>
+ <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4"> City </label>
+      <input type="text" class="form-control" placeholder="Gurugram">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4"> Landmark </label>
+      <input type="text" class="form-control" placeholder="Near Star mall">
+    </div>
+    <div class="col-lg-12 text-center mt-4">
+      <button class="btn btn-blue"> Submit </button>
+     <button class="btn btn-danger ml-4"> Cancel </button> 
+      
+    </div>
+  </div>
+</form>
+    
+  </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+<script>
+  
+
+
+
+
+function incrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal)) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+function decrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal) && currentVal > 0) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+$('.input-group').on('click', '.button-plus', function(e) {
+  incrementValue(e);
+});
+
+$('.input-group').on('click', '.button-minus', function(e) {
+  decrementValue(e);
+});
+
+</script>
+
+
+<script >
+  
+
+const dropArea = document.querySelector(".drop_box"),
+  button = dropArea.querySelector("button"),
+  dragText = dropArea.querySelector("header"),
+  input = dropArea.querySelector("input");
+let file;
+var filename;
+
+button.onclick = () => {
+  input.click();
+};
+
+input.addEventListener("change", function (e) {
+  var fileName = e.target.files[0].name;
+  let filedata = `
+    <form action="" method="post">
+    <div class="form">
+    <h4>${fileName}</h4>
+    <input type="email" placeholder="Enter email upload file">
+    <button class="btn">Upload</button>
+    </div>
+    </form>`;
+  dropArea.innerHTML = filedata;
+});
+
+</script>
+
+<script type="text/javascript" src="jquery.mk.magnifier.js"></script>
+<script>
+$('.workspace').mkMagnifier({width:300,height:460,ratio:1.65,magnifier_radius:90});
+</script>
+
+
+
+</body>
+</html>
