@@ -1122,14 +1122,12 @@ a:hover{
 }*/
 
 
-
-
-
-
-
-
 @media only screen and (max-width:300px){
- .pt-bnr {
+.sodexolrmargin{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.pt-bnr {
     padding-top: 200px;
     text-align: center;
     }
@@ -1323,7 +1321,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -1716,7 +1714,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .merabima1{
      background-color:#fcfcfc;
     height:733px;
@@ -1852,7 +1849,6 @@ a:hover{
     cursor: pointer;
     margin-top:52%;
 }
-
 .fitassure-plus{
      background-color:#fcfcfc;
     height:809px;
@@ -1908,6 +1904,12 @@ a:hover{
 
 
 @media only screen and (min-width:301px){
+.sodexolrmargin{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
  .pt-bnr {
     padding-top: 200px;
     text-align: center;
@@ -2578,7 +2580,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:700px;
+    height:682px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2587,10 +2589,10 @@ a:hover{
     margin-top:50px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
-    width:150px;
+    width:134px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
@@ -2917,7 +2919,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -3115,7 +3117,7 @@ a:hover{
     margin-top:70px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -3135,14 +3137,12 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2img{
     margin-top: -1554px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
 }
-
 .cashkaro{
      background-color:#fcfcfc;
     height:569px;
@@ -3354,8 +3354,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .merabima{
      background-color:#fcfcfc;
     height:630px;
@@ -3736,7 +3734,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -3924,7 +3922,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:658px;
+    height:601px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3933,7 +3931,7 @@ a:hover{
     margin-top:70px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -4651,7 +4649,7 @@ a:hover{
     margin-top:100px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -5304,7 +5302,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:591px;
+    height:535px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -5313,7 +5311,7 @@ a:hover{
     margin-top:100px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -5737,7 +5735,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -6460,7 +6458,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -6886,7 +6884,7 @@ a:hover{
     margin-top:80px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -7334,7 +7332,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -7887,7 +7885,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -8205,7 +8203,11 @@ a:hover{
 
 
 @media only screen and (min-width: 750px){
- .pt-bnr {
+.sodexolrmargin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.pt-bnr {
     padding-top: 100px;
     text-align: center;
     }
@@ -8232,7 +8234,6 @@ a:hover{
     padding: 10px 8px 8px 8px;
     transition: all 0.3s ease-in-out 0s;
 }
-
 .right-arrow {
     display: inline-block;
     position: relative;
@@ -8243,8 +8244,7 @@ a:hover{
      margin-bottom: 2px;
      text-align: left!important;
 }
-
- .fitassurebg{
+.fitassurebg{
     background-image: url('../images/fitassure.jpg');
     background-repeat: no-repeat;
     background-position:100%;
@@ -8252,7 +8252,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -8261,7 +8260,6 @@ a:hover{
     background-size: 100%;
     min-height: 425px;
 }
-
 .totalassureassurebg{
     background-image: url('../images/totalassure.jpg');
     background-repeat: no-repeat;
@@ -8281,12 +8279,10 @@ a:hover{
     padding-top: 40px;
      padding-bottom:20px;
  }
-
-  .banner1{
+.banner1{
     padding-top:40px;
     margin-top:90px;
  }
-
 .startassu{
     font-size:35px;
      font-weight:700!important;
@@ -8541,7 +8537,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -9090,12 +9086,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
 .merabima1{
      background-color:#fcfcfc;
     height:630px;
@@ -9162,6 +9152,7 @@ a:hover{
 
 
 @media only screen and (min-width: 900px){
+
 .pt-bnr {
     padding-top: 100px;
     text-align: center;
@@ -9324,7 +9315,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -9842,7 +9833,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -10066,6 +10057,13 @@ a:hover{
 }
 }
 @media only screen and (min-width: 1000px){
+
+.sodexolrmargin{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
 .head {
             font-size: 40px;
         }
@@ -10149,7 +10147,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -10171,7 +10169,7 @@ a:hover{
 }
 
 .sodexo-plan2img{
-    margin-top: -1309px;
+    margin-top: -1269px;
     margin-left: 19%;
     margin-right: auto;
     position: relative;
@@ -10512,9 +10510,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .merabima1{
      background-color:#fcfcfc;
     height:580px;
@@ -10655,7 +10650,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -10804,7 +10799,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -11193,6 +11188,12 @@ a:hover{
 
 
 @media only screen and (min-width: 1200px){
+.sodexolrmargin{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
  .pt-bnr {
     padding-top: 230px;
     text-align:right;
@@ -11209,7 +11210,6 @@ a:hover{
     background-size: 100%;
    min-height: 685px;
 }
-
 .optimaassureassurebg{
     background-image: url('../images/optimaassure.jpg');
     background-repeat: no-repeat;
@@ -11314,7 +11314,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .sodexo-plan2{
      background-color:#fcfcfc;
     height:513px;
@@ -11327,7 +11326,7 @@ a:hover{
 }
 
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#ffffff!important; 
     right:0px; 
     width:150px;
@@ -11435,16 +11434,12 @@ a:hover{
     padding-top:110px;
     width:80%;
 }
-
 .accenturehead{
     color: #0f5fc2;
     font-weight: 700!important;
     font-family: 'Poppins', sans-serif;
     font-size: 27px;
 }
-
-
-
 .service-sod{
      background-color:#fcfcfc;
     height:452px;
@@ -11809,6 +11804,10 @@ a:hover{
 }
 }
 @media only screen and (min-width: 1300px){
+    .sodexolrmargin{
+    margin-left: 40px;
+    margin-right: 40px;
+}
  .pt-bnr {
     padding-top: 220px;
     text-align:right;
@@ -11921,7 +11920,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:513px;
+    height:498px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11930,7 +11929,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -11951,7 +11950,7 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top:-1250px;
+    margin-top:-1223px;
     margin-left:18%;
     margin-right: auto;
     position:relative;
@@ -12419,6 +12418,12 @@ a:hover{
 }
 
 @media only screen and (min-width: 1400px){
+
+ .sodexolrmargin{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+    
  .pt-bnr {
     padding-top: 240px;
     text-align:right;
@@ -12557,7 +12562,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:513px;
+    height:477px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -12566,7 +12571,7 @@ a:hover{
     margin-top:50px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -13143,7 +13148,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:491px;
+    height:471px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -13152,7 +13157,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -13286,7 +13291,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .tradeindia{
      background-color:#fcfcfc;
     height:599px;
@@ -13297,7 +13301,6 @@ a:hover{
     border-radius:10px;
     margin-top:10px;
 }
-
 .merabima{
      background-color:#fcfcfc;
     height:614px;
@@ -13329,11 +13332,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
 .merabima1{
      background-color:#fcfcfc;
     height:614px;
@@ -13510,7 +13508,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:491px;
+    height:450px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -13519,7 +13517,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -13540,7 +13538,7 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top: -1188px;
+    margin-top: -1157px;
     margin-left: 18%;
     margin-right: auto;
     position: relative;
@@ -13919,7 +13917,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:491px;
+    height:450px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -13928,7 +13926,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
@@ -13949,7 +13947,7 @@ a:hover{
    color:#ffffff!important;
 }
 .sodexo-plan2img{
-    margin-top:-1188px;
+    margin-top:-1169px;
     margin-left: 18%;
     margin-right: auto;
     position: relative;
@@ -14177,7 +14175,7 @@ a:hover{
 }
 .sodexo-plan2{
      background-color:#fcfcfc;
-    height:491px;
+    height:450px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -14186,7 +14184,7 @@ a:hover{
     margin-top:10px;
 }
 .sodexo-plan2 .buybtn{
-   background-color:#0f5fc2;
+   background-color:#199cda;
     color:#EFEDD8; 
     right:0px; 
     width:150px;
