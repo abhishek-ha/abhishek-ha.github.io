@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			window.onbeforeunload = confirmExit;
+			function confirmExit(){
+			  	alert("Alert-Did you save your stuff?");
+			  	console.log("Log-Did you save your stuff?");
+			    //return "Did you save your stuff?"
+			    return true;
+			}
+		</script>		
+		
+	</head>
+	<body>
+		<p>This is  a test Page</p>
+	</body>
+</html>

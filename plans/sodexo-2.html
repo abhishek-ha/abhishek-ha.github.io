@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
@@ -36,6 +36,22 @@
  <script defer src="https://widget.tochat.be/bundle.js?key=8a754010-0780-4681-b327-c688c3cf5446"></script>
 
 <style>
+
+body{
+ font-family: 'Source Sans Pro', sans-serif!important;
+}
+
+@media only screen and (min-width: 300px){
+.startassu {
+   font-family: 'Source Sans Pro', sans-serif!important;
+    
+  }
+
+.head{
+    font-family: 'Source Sans Pro', sans-serif!important;
+}
+
+}
 /* Chrome, Safari, and also the Edge Browser and Firefox */
 @media and (-webkit-min-device-pixel-ratio:0) {
 selector { property:value; }
@@ -117,21 +133,20 @@ selector { property:value; }
 }
 .btn-primary:hover{
        color: #ffffff!important;
-    background-color:#0f5fc2!important;
-    border-color: #0f5fc2!important;
+    background-color:#199cda!important;
+    border-color: #199cda!important;
     box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
-
 }
 .btn-success {
       color: #ffffff!important;
-      background-color:#0f5fc2!important;
-      border-color: #0f5fc2!important;
+      background-color:#199cda!important;
+      border-color: #199cda!important;
        box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
 .btn-success:hover{
     color:#0f5fc2!important;
     background-color: #f9f9f9!important;
-    border-color: #0f5fc2!important;
+    border-color: #199cda!important;
     box-shadow: 0px 0px 8px rgb(140 140 140 / 99%) !important;
 }
 .plan ul li ul li:before {
@@ -153,7 +168,11 @@ selector { property:value; }
     text-indent: -10px;
     padding-left: 10px;
 }
-
+.bluesec {
+    background-color: #199cda;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
 </style>
 
 <!-- Global site tag (gtag.js) - Google Ads: 471644001 -->
@@ -208,30 +227,27 @@ selector { property:value; }
 </script>
 
 </head>
-
-
 <body>
-
 <section style="background-image:url('images/bg-health.png');background-size:100%; height:auto; background-repeat:no-repeat;background-color:#f9f9f9; z-index:20;">
-    <div class="container">
-          <div class="row pt-4 pb-5">
+    <div class="container-fluid ">
+          <div class="row pt-4 pb-5 sodexolrmargin">
                 <div class="col-md-6 col-6 col-lg-6">
                     <a href="https://healthassure.in/"><img src="images/logo.png" class=" logo1"></a>
                 </div>
-                <div class="col-md-6 pt-4  float-right col-6">
+                <div class="col-md-6 col-6 pt-4  float-right col-6">
                     <a href="https://healthassure.in/" class="float-right px-2 "><img src="images/sodexo-white.png"> </a>
                 </div>
               </div>
-        <div class="row mt-4">
+        <div class="row mt-4 sodexolrmargin">
             
  <div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 mb-2" id="benefits">
     <div class="row">
-        <div class="col-10 col-md-12 col-sm-12 col-lg-12 col-xl-12">
-           <h2 class="pl-2 startassu" style="padding-bottom:0px;"> <span style="color:#0f5fc2; font-size:21px;"> India's First Cashless OPD Health Plan </span> </h2> 
+        <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12 pt-8">
+           <h2 class="pl-2 startassu" style="padding-bottom:0px;"> <span style="color:#199cda; font-size:21px;"> India's First Cashless OPD Health Plan </span> </h2> 
           </div>
     </div>
     <div class="row">
-        <div class="col-9 col-md-12 col-sm-12 col-lg-12 col-xl-12">
+        <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12">
             <p  class="pb-2 pt-2" style="font-size:15px;font-weight:500;color:#484a4c;">  Get daily health benefits worth &#8377; 50,000 for out-of-pocket medical expenses. </p>
         </div>
       </div>
@@ -245,7 +261,7 @@ selector { property:value; }
                         <img src="images/doctor-consults-icon1.png" style="width:40px;">
                     </div>
                      <div class="col-md-9 col-9">
-                        <p class="pl-1"><b> Free </b> Online Doctor Consults within 4 Minutes </p>
+                        <p class="pl-1"><span style="color:#2A295C;"><b> Free </b></span> Online Doctor Consults within 4 Minutes </p>
                      </div>
                 </div>
             </div>
@@ -255,7 +271,7 @@ selector { property:value; }
                       <img src="images/medicine.png"style="width:40px;">
                    </div>
                      <div class="col-md-9 col-9">
-                    <p class="pl-1"> <b>Free </b> Home Delivery Of Medicines upto 15% Off </p>
+                    <p class="pl-1"> <span style="color:#2A295C;"><b> Free </b></span> Home Delivery Of Medicines upto 15% Off </p>
                      </div>
                 </div>
             </div>
@@ -268,7 +284,7 @@ selector { property:value; }
                        <img src="images/yoga-icon1.png"style="width:40px;">
                   </div>
                      <div class="col-md-9 col-9">
-                        <p class="pl-1"><b>Free</b> 1:1 Session for fitness and nutrition </p>
+                        <p class="pl-1"><span style="color:#2A295C;"><b> Free </b></span> 1:1 Session for fitness and nutrition </p>
                      </div>
                 </div>
             </div>
@@ -278,7 +294,7 @@ selector { property:value; }
                        <img src="images/careteam.png" style="width:40px;">
                   </div>
                   <div class="col-md-9 col-9">
-                        <p class="pl-1"> <b>Free </b> Care Team To Co-ordinate All Appointments </p>
+                        <p class="pl-1"> <span style="color:#2A295C;"><b> Free </b></span> Care Team To Co-ordinate All Appointments </p>
                      </div>
                      <!-- <div class="col-md-9 col-9">
                         <p class="pl-1"> <b>100% </b> Cashless benefits </p>
@@ -310,17 +326,17 @@ selector { property:value; }
                  <p class="tnc2"><b> Upto 4 Family Members </b></p>
            </div> 
               <ul class="pt-3">
-                 <li> <b> ₹ 2000  </b> Free Lab  Test & Scans  </li>
-                 <li> <b> ₹ 2000 </b> Daily Cash to cover Hospital stays upto 15 days till Age 55 </li>
-                 <li><b> Free  </b> Online 24x7 Doctor Consults 
+                 <li> <span style="color:#2A295C;"><b> ₹ 2000 </b></span>  Free Lab  Test & Scans  </li>
+                 <li> <span style="color:#2A295C;"><b> ₹ 2000 </b></span> Daily Cash to cover Hospital stays upto 15 days till Age 55 </li>
+                 <li><span style="color:#2A295C;"><b> Free </b></span>  Online 24x7 Doctor Consults 
 <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
     <li> Family physician 24x7</li>
     <li> 15+ Specialties covered </li>
 </ul>
                  </li>
-                <li><b> Free  </b> 1:1 Session for fitness and nutrition </li>
-                <li><b> Free  </b> Home Delivery of Medicines upto 15% Off </li>
-                <li> <b> Free  </b> Care Team To Co-ordinate All Appointments & Get upto 50% Discounts <ul style="border-top: none;" class="pt-2">
+                <li><span style="color:#2A295C;"><b> Free </b></span>  1:1 Session for fitness and nutrition </li>
+                <li><span style="color:#2A295C;"><b> Free </b></span>  Home Delivery of Medicines upto 15% Off </li>
+                <li> <span style="color:#2A295C;"><b> Free </b></span>  Care Team To Co-ordinate All Appointments & Get upto 50% Discounts <ul style="border-top: none;" class="pt-2">
                     <li> at 6000+ in network centers</li>
                     <li> Upto 50% discount </li>
                 </ul>
@@ -328,11 +344,11 @@ selector { property:value; }
               </ul>
            </div>
 <div class="row pt-5">
-    <div class="col-md-6 pl-4 pt-4">
+    <div class="col-md-6 col-6 pl-4 pt-4">
         <a href="https://www.healthassure.in/products/Files/Sodexo-v03.pdf" class="tnc" target="_blank">*Terms & Conditions </a>  
           <p class="tnc1 pl-2">(Excl. GST) </p>  
     </div>
-    <div class="col-md-6 ">
+    <div class="col-md-6 col-6">
          <a href="javascript:OpenBuyPlanPopup('Fitassure Sodexo','SODFIT01','')"     class="buybtn float-end">  <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br/>  <span style="font-size:20px; font-weight:500;"> &#8377; <del> 1999 </del> &nbsp;  999/-</span>  </a> 
     </div>
     </div>
