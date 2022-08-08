@@ -4304,8 +4304,8 @@ a:hover{
 }
 }
 
-@media only screen and(min-width: 390px){
-   .sodexo-plan2{
+@media only screen and (min-width: 390px){
+  .sodexo-plan2{
      background-color:#fcfcfc;
     height:601px;
     padding:6px;
@@ -4343,13 +4343,6 @@ a:hover{
     position:relative;
 }
 }
-
-
-
-
-
-
-
 
 
 @media only screen and (min-width: 400px){
