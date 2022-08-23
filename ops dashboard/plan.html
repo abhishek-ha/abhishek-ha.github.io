@@ -18,11 +18,11 @@
  </head>
 <body>
 <div class="container" style="margin-top:70px;">
-<div class="row py-5" style="background-color:#eeeeee;">
-  <div class="col-lg-3 col-md-3 col-sm-12">
+<div class="row py-5 mx-1" style="background-color:#13447e;">
+  <div class="col-lg-2 col-md-2 col-sm-12">
     <form>
   <div class="form-group">
-    <label for="exampleInputEmail1"> Switch Plan</label>
+    <label for="Switch Plan" class="text-white"> Switch Plan</label>
     <select class="form-control">
       <option selected>TotalAssure </option>
       <option>OptimaAssure </option>
@@ -31,44 +31,44 @@
   </div>
 </form>
  </div>
- <div class="col-lg-9 col-md-9 col-sm-12">
+ <div class="col-lg-10 col-md-10 col-sm-12">
   <div class="row plandetail">
-    <div class="col-lg-3 col-md-3 col-sm-12">
+    <div class="col-lg-3 col-md-3 col-sm-6  col">
       <h6> Total credits </h6>
        <p> 0 </p>
        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
       <h6> # of person </h6>
        <p> 5 </p>
        </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
       <h6> Price </h6>
        <p> ₹ 3999 </p>
        </div>
 
 
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
       <h6> Start date </h6>
        <p> 10 Feb 2022 </p>
        </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-20 col">
       <h6> End date </h6>
        <p> 10 Feb 2023 <span style="font-size:11px;"> (182 daye left) </span> </p>
        </div>
+     </div>
+     <div class="row">
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+   <button class="btn walletbtn" data-toggle="modal" data-target="#updatewallet"> Wallet </button>
+    </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12">
-   <button class="btn btn-primary" data-toggle="modal" data-target="#updatewallet"> Wallet </button>
-      
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+       <button class="btn walletbtn" data-toggle="modal" data-target="#credit"> Credit </button>
        </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-12">
-       <button class="btn btn-primary" data-toggle="modal" data-target="#credit"> Credit </button>
-       </div>
-
-        <div class="col-lg-3 col-md-3 col-sm-12">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#renewplan">Renew Plan </button>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+      <button class="btn walletbtn" data-toggle="modal" data-target="#renewplan">Renew Plan </button>
      </div>
     </div>
    </div>
@@ -76,14 +76,14 @@
 
 
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
           <img src="images/doctor-consultation.png" class="img-responsive">
 
       </div>
-        <a href="#" data-toggle="modal" data-target="#doctorconsultation"><div class="col-lg-8">
+        <a href="#" data-toggle="modal" data-target="#doctorconsultation"><div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Doctor Consultation </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -91,13 +91,15 @@
       </div>
       </div>
    </div>
- <div class="col-lg-3">
+ <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
-             <img src="images/specialist-consultation.png" class="img-responsive">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+     <div class="border-circle">
+          <i class="fa-solid fa-user-doctor icon "></i>
+            </div>
       </div>
-        <a href="#" data-toggle="modal" data-target="#specialistconsultation"> <div class="col-lg-8">
+        <a href="#" data-toggle="modal" data-target="#specialistconsultation"> <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Specialist Consultation </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -106,28 +108,31 @@
       </div>
    </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
-           <img src="images/diagnostic.png" class="img-responsive">
-      </div>
-       <a href="#" data-toggle="modal" data-target="#diagnostic"> <div class="col-lg-8">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+              <div class="border-circle">
+        <i class="fa-solid fa-vials icon"></i>
+            </div>
+ </div>
+       <a href="#" data-toggle="modal" data-target="#diagnostic"> <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Diagnostics </h6>
-          <p> Rs.1060/6000 (Wallet)</p>
+          <p> Rs.1060/6000(Wallet) </p>
       </div>
     </a>
       </div>
       </div>
    </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
            <img src="images/doc24x7.png" class="img-responsive">
       </div>
-        <a href="#" data-toggle="modal" data-target="#Doc24x7"> <div class="col-lg-8">
+        <a href="#" data-toggle="modal" data-target="#Doc24x7"> 
+          <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> HA Doc24x7 </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -135,17 +140,16 @@
       </div>
       </div>
    </div>
-</div>
-<div class="row ">
-    <div class="col-lg-3">
+
+    <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
             <div class="border-circle">
-          <i class="fa-solid fa-person-running icon text-primary"></i>
+          <i class="fa-solid fa-person-running icon "></i>
             </div>
       </div>
-       <a href="#" data-toggle="modal" data-target="#Doc24x7"> <div class="col-lg-8">
+       <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Wellness Coach </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -154,16 +158,15 @@
       </div>
    </div>
 
- <div class="col-lg-3">
+ <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
             <div class="border-circle">
-
-               <i class="fa-solid fa-virus-covid text-primary icon"></i>
+               <i class="fa-solid fa-virus-covid  icon"></i>
             </div>
       </div>
-      <a href="#" data-toggle="modal" data-target="#Doc24x7"> <div class="col-lg-8">
+      <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Covid 19 Test </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -172,15 +175,15 @@
       </div>
    </div>
 
-    <div class="col-lg-3">
+    <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
             <div class="border-circle">
-             <i class="fa-solid fa-capsules icon text-primary"></i>
+             <i class="fa-solid fa-capsules icon"></i>
             </div>
       </div>
-       <a href="#" data-toggle="modal" data-target="#Doc24x7"> <div class="col-lg-8">
+       <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Pharmacy </h6>
           <p> Balance : Wallet 0 </p>
       </div>
@@ -189,15 +192,15 @@
       </div>
    </div> 
 
-<div class="col-lg-3">
+<div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4   pt-3">
             <div class="border-circle">
-              <i class="fa-solid fa-hospital-user icon text-primary"></i>
+              <i class="fa-solid fa-hospital-user icon "></i>
             </div>
       </div>
-      <a href="#" data-toggle="modal" data-target="#Doc24x7"><div class="col-lg-8">
+      <a href="#"><div class="col-lg-8 col-sm-8 col-xs-8 ">
           <h6> Doctor Coach </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -206,15 +209,15 @@
       </div>
    </div> 
 
-   <div class="col-lg-3">
+   <div class="col-lg-3  col-md-4 col-sm-6">
       <div class="benefit">
         <div class="row">
-          <div class="col-lg-4  pt-3">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
             <div class="border-circle">
-              <i class="fa-solid fa-hands-holding-child icon text-primary"></i>
+              <i class="fa-solid fa-hands-holding-child icon "></i>
         </div>
       </div>
-      <a href="#" data-toggle="modal" data-target="#Doc24x7"><div class="col-lg-8">
+      <a href="#" ><div class="col-lg-8 col-sm-8 col-xs-8">
           <h6> Home Care </h6>
           <p> Unlimited Credit </p>
       </div>
@@ -224,9 +227,6 @@
    </div> 
 </div>
 </div>
-
- 
-
 
  <div class="modal right fade consultation" id="doctorconsultation" tabindex="-1" role="dialog" aria-labelledby="doctorconsultation">
     <div class="modal-dialog" role="document">
@@ -238,8 +238,7 @@
         </div>
    <div class="modal-body">
          <div class="row">
-
-<div class="col-lg-6">
+           <div class="col-lg-6">
             <div class="consultationbox">
                <div class="border-circle1">
              <i class="fa-solid fa-user-doctor icon text-primary"></i>
@@ -268,15 +267,13 @@
 <div class="modal right fade" id="specialistconsultation" tabindex="-1" role="dialog" aria-labelledby="specialistconsultation">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="myModalLabel2"> Specialist Consultation </h4>
         </div>
         
    <div class="modal-body">
-
-<div class="col-lg-6">
+      <div class="col-lg-6">
             <div class="consultationbox">
                <div class="border-circle1">
              <i class="fa-solid fa-tooth icon text-primary"></i>
@@ -294,9 +291,7 @@
              <p> Unlimited Credit </p>
           </div>
            </div>
-
-
-           <div class="col-lg-6">
+         <div class="col-lg-6">
             <div class="consultationbox">
                 <div class="border-circle1">
             <i class="fa-solid fa-children icon text-primary"></i>
@@ -307,8 +302,9 @@
            </div>
  <div class="col-lg-6">
             <div class="consultationbox">
-                <div class="border-circle1">
-            <i class="fa-solid fa-eye icon text-primary"></i>
+                <div class="">
+                  <img src="images/gynaecologist-consultation.png" class="img-fluid">
+            <!-- <i class="fa-solid fa-eye icon text-primary"></i> -->
            </div>
              <h3> Gynaec </h3>
              <p> Unlimited Credit </p>
@@ -353,14 +349,10 @@
    <input type="text" name="" placeholder="Search Your Health Package" class="form-control form-control121">
    </div>
   </form>
-
 </div>
 
  <div class="row mx-2">
-
-
-
-    <div class="form-group col-lg-6  col-md-6  ">
+ <div class="form-group col-lg-6  col-md-6  ">
     <div class="diagnostic  border ">
       <div class="row">
         <div class="col-lg-12 col-sm-12">
@@ -368,17 +360,32 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-  <a data-toggle="collapse" data-parent="#bs-collapse" href="#one"> <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
-    <span style="padding-left:6px;"> <i class="fa-solid fa-angle-down"></i> </span>
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#one"> <input type="checkbox" class="form-check-input mt-4" style="float:left;"> <span class="healthtestlabel">  HealthAssure Basic Profile </span>
+    <span style="padding-left:20px;"> <i class="fa-solid fa-angle-down"></i> </span>
    <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
         </a>
       </h4>
                     </div>
                     <div id="one" class="panel-collapse collapse">
                         <div class="panel-body">
-   Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
-    Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
-                        </div>
+   <div class="row testpackage">
+    <div class="col-lg-6 col-md-6">
+      <h3> Pathology</h3>
+           <p> 1. Overall<p>
+           <p>  CBC </p>
+       <p> Urine Analysis </p>
+       <p> 2. Diabetes </p>
+       <p> Fasting Blood Sugar </p>
+       <p> 3. Infection </p>
+       <p> ESR </p>
+    </div>
+    <div class="col-lg-6 col-md-6">
+       <h3> Consultation </h3>
+       <p> 1. Overall </p>
+       <p> Physician Consultation </p>
+      </div>
+    </div>
+      </div>
                     </div>
                   </div>
                 </div>
@@ -412,8 +419,7 @@
                   </div>
                 </div>
               </div>
-
-   </div>
+            </div>
  </div>
  </div>
 
@@ -426,7 +432,8 @@
                 <div class="panel">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-  <a data-toggle="collapse" data-parent="#bs-collapse" href="#three"> <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#three"> 
+    <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
     <span style="padding-left:6px;"> <i class="fa-solid fa-angle-down"></i> </span>
    <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
         </a>

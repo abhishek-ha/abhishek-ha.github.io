@@ -750,14 +750,32 @@ font-size: 20px;
 }
 .btn-primary {
     color: #fff;
-    background-color: #008391!important;
-    border-color: #008391!important;
+    background-color:#81cdf0!important;
+    border-color: #81cdf0!important;
+    font-weight: 600;
 }
 .btn-primary:hover {
     color: #fff;
     background-color: #13447e!important;
     border-color: #008391;
 }
+
+.walletbtn {
+    color: #fff;
+    background-color:#81cdf0!important;
+    border-color: #81cdf0!important;
+    font-weight: 600;
+    width: 125px;
+}
+.walletbtn:hover {
+    color: #fff;
+    background-color: #13447e!important;
+    border-color: #008391;
+}
+
+
+
+
 .btn-secondary{
     background-color: #004182;
     border-radius: 0px;
@@ -927,16 +945,7 @@ font-size: 20px;
     background-size:cover;
     background-repeat: no-repeat;
 }
-.col {
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 19%;
-  float: left;
-  margin-left: 1px;
-  margin-right: 1px;
-}
+
 .list-group-item {
     position: relative;
     display: block;
@@ -1050,16 +1059,17 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .benefit{
-    background-color: #efeded;
+    background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
-    min-height: 105px;
+    min-height: 110px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
+.benefit img{
+    width: 70px;   
+}
 .consultbox{
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
@@ -1073,43 +1083,47 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     font-size: 15px;
     font-weight: 600;
 }
-
-
-
 .plandetail h6{
     font-size: 15px;
     font-weight: 600;
+    color: #ffffff;
 }
-
 .plandetail p{
     font-weight: 600;
+    color: #ffffff;
+    font-size: 11px;
 }
 .benefit h6{
     font-size: 15px;
     font-weight: 600;
+    color: #3d5e7a;
 }
+.benefit p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #3d5e7a;
+}
+
 .border-circle .icon{
-    font-size: 32px;
-    margin: 10px;
+    font-size: 30px;
+    margin: 10px 10px 10px 13px;
+    color: #3d5e7a;
 }
 .border-circle{
     border-radius: 50%;
-    border: 2px solid #1168c7;
+    border: 2px solid #3d5e7a;
 }
-
-
 .border-circle1 .icon{
     font-size: 25px;
     margin: 10px;
+    color: #3d5e7a;
 }
 .border-circle1{
     border-radius: 50%;
-    border: 2px solid #1168c7;
+    border: 2px solid #3d5e7a;
     width: 60px;
     margin: auto;
 }
-
-
 .modal.left .modal-dialog,
     .modal.right .modal-dialog {
         position: fixed;
@@ -1126,8 +1140,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
         height: 100%;
         overflow-y: auto;
     }
-    
-    .modal.left .modal-body,
+  .modal.left .modal-body,
     .modal.right .modal-body {
         padding: 15px 15px 30px;
     }
@@ -1140,8 +1153,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
              -o-transition: opacity 0.3s linear, right 0.3s ease-out;
                 transition: opacity 0.3s linear, right 0.3s ease-out;
     }
-    
-    .modal.right.fade.in .modal-dialog {
+ .modal.right.fade.in .modal-dialog {
         right: 0;
     }
     .modal-content {
@@ -1169,6 +1181,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .healthtestlabel{
     padding-left: 5px;
     font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
 }
 .bluetext{
     color: #428bca;
@@ -1176,3 +1190,99 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .fontb{
     font-weight: 600;
 }
+.testpackage h3{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.testpackage p{
+    font-size: 11.5px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.text-white{
+    color: #ffffff;
+}
+
+.text-primary1{
+    color: #3d5e7a;
+}
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+ width: 19%;
+  float: left;
+  margin-left: 1px;
+  margin-right: 1px;
+   flex: 1 0 0%;
+}
+
+}
+
+
+@media only screen and (max-width: 999px) {
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  width: 30%;
+  float: left;
+  margin-left: 1px;
+  margin-right: 1px;
+ 
+}
+}
+
+
+
+@media only screen and (max-width: 300px) {
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  width: 100%;
+  float: left;
+  margin-left: 1px;
+  margin-right: 1px;
+ 
+}
+}
+
+
+
+@media only screen and (max-width: 350px) {
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  width: 48%;
+  float: left;
+  margin-left: 1px;
+  margin-right: 1px;
+ 
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
