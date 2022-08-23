@@ -8,13 +8,13 @@
     s0.parentNode.insertBefore(s1, s0);
 })();
 
-function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content) {
+function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content) {
     return new Promise(function (resolve, reject) {
         var BaseUrl = "https://live.healthassure.in/ProductApi/"
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'PartnerOPDPlanApiKey': '14UGczJo0lYOe5ilSzlT2cvLTj1lymz2lRWaBCwIQMd=pnIKeTDBAYApRXj6xO' };
         $.ajax({
             type: "POST", url: BaseUrl + "api/OPDPlans/OPDPlansPurchase",
-            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content }),
+            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, PartnerOrderId: PartnerOrderId, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
