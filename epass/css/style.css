@@ -17,3 +17,33 @@ body {
 html{
      overflow-x:hidden!important;
 }
+
+.head{
+font-weight: 700;
+font-size:28px ;
+line-height:26.5px ;
+}
+.btn-primary1{
+    background-color:#0E5FC1 ;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+
+}
+
+.btn-grey{
+    background-color: #C0C0C0;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 150px;
+    float: right;
+}
+.box{
+    background-color: #eeeeee;
+    
+}
