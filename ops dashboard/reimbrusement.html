@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Reimbrusement </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!--<link href="css/form5-tabs.css" rel="stylesheet" type="text/css">-->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ </head>
+<body>
+<div class="container" style="margin-top:70px;">
+<div class="row py-5 mx-1" style="background-color:#13447e;">
+  <div class="col-lg-2 col-md-2 col-sm-12">
+    <form>
+  <div class="form-group">
+    <label for="Switch Plan" class="text-white"> Switch Plan</label>
+    <select class="form-control">
+      <option selected>TotalAssure </option>
+      <option>OptimaAssure </option>
+      <option>FitAssure </option>
+    </select>
+  </div>
+</form>
+ </div>
+ <div class="col-lg-10 col-md-10 col-sm-12">
+  <div class="row plandetail">
+    <div class="col-lg-3 col-md-3 col-sm-6  col">
+      <h6> Total credits </h6>
+       <p> 0 </p>
+       </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
+      <h6> # of person </h6>
+       <p> 5 </p>
+       </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
+      <h6> Price </h6>
+       <p> ₹ 3999 </p>
+       </div>
+
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col">
+      <h6> Start date </h6>
+       <p> 10 Feb 2022 </p>
+       </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-12 col-20 col">
+      <h6> End date </h6>
+       <p> 10 Feb 2023 <span style="font-size:11px;"> (182 daye left) </span> </p>
+       </div>
+     </div>
+     <div class="row">
+  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+   <button class="btn walletbtn" data-toggle="modal" data-target="#updatewallet"> Wallet </button>
+    </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+       <button class="btn walletbtn" data-toggle="modal" data-target="#credit"> Credit </button>
+       </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 mt-1">
+      <button class="btn walletbtn" data-toggle="modal" data-target="#renewplan">Renew Plan </button>
+     </div>
+    </div>
+   </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+          <img src="images/doctor-consultation.png" class="img-responsive">
+
+      </div>
+        <a href="#" data-toggle="modal" data-target="#doctorconsultation"><div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Doctor Consultation </h6>
+          <p> Unlimited Credit </p>
+      </div>
+      </a>
+      </div>
+      </div>
+   </div>
+ <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+     <div class="border-circle">
+          <i class="fa-solid fa-user-doctor icon "></i>
+            </div>
+      </div>
+        <a href="#" data-toggle="modal" data-target="#specialistconsultation"> <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Specialist Consultation </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+    <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+              <div class="border-circle">
+        <i class="fa-solid fa-vials icon"></i>
+            </div>
+ </div>
+       <a href="#" data-toggle="modal" data-target="#diagnostic"> <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Diagnostics </h6>
+          <p> Rs.1060/6000(Wallet) </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+    <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+           <img src="images/doc24x7.png" class="img-responsive">
+      </div>
+        <a href="#" data-toggle="modal" data-target="#Doc24x7"> 
+          <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> HA Doc24x7 </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+
+ <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+           <img src="images/doc24x7.png" class="img-responsive">
+      </div>
+        <a href="#" data-toggle="modal" data-target="#Doc24x7"> 
+          <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> HA Doc24x7 </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+   
+
+    <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+            <div class="border-circle">
+          <i class="fa-solid fa-person-running icon "></i>
+            </div>
+      </div>
+       <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Wellness Coach </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+ <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+            <div class="border-circle">
+               <i class="fa-solid fa-virus-covid  icon"></i>
+            </div>
+      </div>
+      <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Covid 19 Test </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div>
+
+    <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+            <div class="border-circle">
+             <i class="fa-solid fa-capsules icon"></i>
+            </div>
+      </div>
+       <a href="#"> <div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Pharmacy </h6>
+          <p> Balance : Wallet 0 </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div> 
+
+<div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4   pt-3">
+            <div class="border-circle">
+              <i class="fa-solid fa-hospital-user icon "></i>
+            </div>
+      </div>
+      <a href="#"><div class="col-lg-8 col-sm-8 col-xs-8 ">
+          <h6> Doctor Coach </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div> 
+
+   <div class="col-lg-3  col-md-4 col-sm-6">
+      <div class="benefit">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-xs-4  pt-3">
+            <div class="border-circle">
+              <i class="fa-solid fa-hands-holding-child icon "></i>
+        </div>
+      </div>
+      <a href="#" ><div class="col-lg-8 col-sm-8 col-xs-8">
+          <h6> Home Care </h6>
+          <p> Unlimited Credit </p>
+      </div>
+    </a>
+      </div>
+      </div>
+   </div> 
+</div>
+</div>
+
+ <div class="modal right fade consultation" id="doctorconsultation" tabindex="-1" role="dialog" aria-labelledby="doctorconsultation">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2"> Doctor Consultation </h4>
+        </div>
+   <div class="modal-body">
+         <div class="row">
+           <div class="col-lg-6">
+            <div class="consultationbox">
+               <div class="border-circle1">
+             <i class="fa-solid fa-user-doctor icon text-primary"></i>
+            </div>
+          <h3> Doctor Consultation Premium </h3>
+          <p> Unlimited Credit </p>
+           </div>
+           </div>
+          <div class="col-lg-6">
+            <div class="consultationbox">
+                <div class="border-circle1">
+             <i class="fa-solid fa-stethoscope icon text-primary"></i>
+           </div>
+             <h3> General Physician </h3>
+          <p> Unlimited Credit </p>
+           </div>
+           </div>
+     </div>
+    </div>
+ </div>  <!-- modal-content -->
+    </div>   <!-- modal-dialog -->
+  </div> 
+
+
+
+<div class="modal right fade" id="specialistconsultation" tabindex="-1" role="dialog" aria-labelledby="specialistconsultation">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2"> Specialist Consultation </h4>
+        </div>
+        
+   <div class="modal-body">
+      <div class="col-lg-6">
+            <div class="consultationbox">
+               <div class="border-circle1">
+             <i class="fa-solid fa-tooth icon text-primary"></i>
+            </div>
+          <h3> Dentist </h3>
+          <p> Unlimited Credit </p>
+           </div>
+           </div>
+          <div class="col-lg-6">
+            <div class="consultationbox">
+                <div class="border-circle1">
+            <i class="fa-solid fa-eye icon text-primary"></i>
+           </div>
+             <h3> Opthal </h3>
+             <p> Unlimited Credit </p>
+          </div>
+           </div>
+         <div class="col-lg-6">
+            <div class="consultationbox">
+                <div class="border-circle1">
+            <i class="fa-solid fa-children icon text-primary"></i>
+           </div>
+             <h3> Pediatric </h3>
+             <p> Unlimited Credit </p>
+          </div>
+           </div>
+ <div class="col-lg-6">
+            <div class="consultationbox">
+                <div class="">
+                  <img src="images/gynaecologist-consultation.png" class="img-fluid">
+            <!-- <i class="fa-solid fa-eye icon text-primary"></i> -->
+           </div>
+             <h3> Gynaec </h3>
+             <p> Unlimited Credit </p>
+          </div>
+           </div>
+ <div class="col-lg-6">
+            <div class="consultationbox">
+                <div class="border-circle1">
+           <i class="fa-solid fa-person-running icon text-primary"></i>
+           </div>
+             <h3> Dietitian </h3>
+             <p> Unlimited Credit </p>
+          </div>
+           </div>
+      </div>
+      </div>  <!-- modal-content -->
+    </div>   <!-- modal-dialog -->
+  </div> 
+
+<div class="modal right fade" id="diagnostic" tabindex="-1" role="dialog" aria-labelledby="diagnostic">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2"> Diagnostics </h4>
+        </div>
+   <div class="modal-body">
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="nav nav-tabs">
+    <li class="active"> <a data-toggle="tab" href="#healthpackage"> Health Packages  </a></li>
+    <li><a data-toggle="tab" href="#result"> Health Tests </a></li>
+      </ul>
+    </div>
+    <div class="col-lg-12">
+      <div class="tab-content">
+       <div id="healthpackage" class="tab-pane fade in active">
+         <div class="row  my-5 mx-1">
+             <form class="pt-5 pb-5">
+  <div class="form-group col-lg-12 col-md-12">
+    <label> Select a Health package for yourself or your family.</label>
+   <input type="text" name="" placeholder="Search Your Health Package" class="form-control form-control121">
+   </div>
+  </form>
+</div>
+
+ <div class="row mx-2">
+ <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border ">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+<div class="panel-group wrap" id="bs-collapse">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#one"> <input type="checkbox" class="form-check-input mt-4" style="float:left;"> <span class="healthtestlabel">  HealthAssure Basic Profile </span>
+    <span style="padding-left:20px;"> <i class="fa-solid fa-angle-down"></i> </span>
+   <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
+        </a>
+      </h4>
+                    </div>
+                    <div id="one" class="panel-collapse collapse">
+                        <div class="panel-body">
+   <div class="row testpackage">
+    <div class="col-lg-6 col-md-6">
+      <h3> Pathology</h3>
+           <p> 1. Overall<p>
+           <p>  CBC </p>
+       <p> Urine Analysis </p>
+       <p> 2. Diabetes </p>
+       <p> Fasting Blood Sugar </p>
+       <p> 3. Infection </p>
+       <p> ESR </p>
+    </div>
+    <div class="col-lg-6 col-md-6">
+       <h3> Consultation </h3>
+       <p> 1. Overall </p>
+       <p> Physician Consultation </p>
+      </div>
+    </div>
+      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+   </div>
+ </div>
+ </div>
+
+ 
+ <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border ">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+<div class="panel-group wrap" id="bs-collapse">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#two"> <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
+    <span style="padding-left:6px;"> <i class="fa-solid fa-angle-down"></i> </span>
+   <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
+        </a>
+      </h4>
+                    </div>
+                    <div id="two" class="panel-collapse collapse">
+                        <div class="panel-body">
+   Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+    Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ </div>
+ </div>
+
+
+  <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border ">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+<div class="panel-group wrap" id="bs-collapse">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#three"> 
+    <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
+    <span style="padding-left:6px;"> <i class="fa-solid fa-angle-down"></i> </span>
+   <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
+        </a>
+      </h4>
+                    </div>
+                    <div id="three" class="panel-collapse collapse">
+                        <div class="panel-body">
+   Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+    Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+   </div>
+ </div>
+ </div>
+
+  <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border ">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+<div class="panel-group wrap" id="bs-collapse">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+  <a data-toggle="collapse" data-parent="#bs-collapse" href="#four"> <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Health Pack Gold- Male </span>
+    <span style="padding-left:6px;"> <i class="fa-solid fa-angle-down"></i> </span>
+   <p class="precaution bluetext"> <span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span></p>
+        </a>
+      </h4>
+                    </div>
+                    <div id="four" class="panel-collapse collapse">
+                        <div class="panel-body">
+   Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+    Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+   </div>
+ </div>
+ </div>
+
+
+
+   
+ <div class="col-lg-12 col-md-12 ">
+  <button class="btn btn-primary">Book Appoinment </button>
+   </div>
+        
+ </div>
+</div>
+
+<div id="result" class="tab-pane fade">
+ <div class="row my-5 mx-1">
+             <form class="pt-5 pb-5">
+  <div class="form-group col-lg-12 col-md-12">
+    <label> Select one or more tests for yourself or your family. </label>
+   <input type="text" name="" placeholder="Search Your Test" class="form-control form-control121">
+   </div>
+  </form>
+ </div>
+ <div class="row mx-2">
+
+   <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border">
+  <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Quantiferone Gold Test </span><span> <i class="fa-solid fa-indian-rupee-sign"></i> 2300 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 2500</del> </span>
+   <p class="precaution">Fasting Required -  <span class="bluetext"> No </span> </p>
+   </div>
+   </div>
+
+   <div class="form-group col-lg-6  col-md-6">
+    <div class="diagnostic  border">
+   <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> CBC </span><span> <i class="fa-solid fa-indian-rupee-sign"></i> 200 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 500 </del> </span>
+  <p class="precaution">Fasting Required -  <span class="bluetext"> No </span> </p>
+   </div>
+ </div>
+
+
+ <div class="form-group col-lg-6  col-md-6  ">
+    <div class="diagnostic  border">
+  <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> Serum Potassium </span><span> <i class="fa-solid fa-indian-rupee-sign"></i> 70 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 400</del> </span>
+   <p class="precaution">Fasting Required -  <span class="bluetext"> No </span> </p>
+   </div>
+   </div>
+
+   <div class="form-group col-lg-6  col-md-6">
+    <div class="diagnostic  border">
+   <input type="checkbox" class="form-check-input mt-4"><span class="healthtestlabel"> CYSTATIN </span><span> <i class="fa-solid fa-indian-rupee-sign"></i> 1200 </span> <span> <i class="fa-solid fa-indian-rupee-sign"></i> <del> 1200 </del> </span>
+  <p class="precaution"> Fasting Required -  <span class="bluetext"> No </span> </p>
+   </div>
+ </div>
+ <div class="col-lg-12 col-md-12 ">
+  <button class="btn btn-primary">Book Appoinment </button>
+   </div>
+        
+ </div>
+</div>
+</div>
+</div>
+      </div>
+     </div>
+     </div>  <!-- modal-content -->
+    </div>   <!-- modal-dialog -->
+  </div>
+
+
+
+  <div class="modal right fade" id="Doc24x7" tabindex="-1" role="dialog" aria-labelledby="Doc24x7">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel2"> HA Doc24x7 </h4>
+        </div>
+   <div class="modal-body scrollbar">
+         <div class="row ">
+ <form class="pt-3 pb-5">
+  <div class="form-group col-lg-12 col-md-12">
+    <label> Search Doctors, Specialities </label>
+   <input type="text" name="" placeholder="Search Doctors, Specialities" class="form-control form-control121">
+   </div>
+  </form>
+
+          <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/cough-fever.png" class="img-fluid">
+              <h3> Cough & Fever </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/general-physiciantele.png" class="img-fluid">
+              <h3> General Physician </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/gynaecologist.png" class="img-fluid">
+              <h3>  Gynaecologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/ent.png" class="img-fluid">
+              <h3> ENT </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/diabetologist.png" class="img-fluid">
+              <h3>  Diabetologist </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+         <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/dermatologist.png" class="img-fluid">
+              <h3>  Dermatologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+      <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/mental-health.png" class="img-fluid">
+              <h3>  Mental Health  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/dietician.png" class="img-fluid">
+              <h3>  Dietician  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/slogist.png" class="img-fluid">
+              <h3>  Sexologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+         <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/homeopathy.png" class="img-fluid">
+              <h3>  Homeopathy  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+         <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/child-specialist.png" class="img-fluid">
+              <h3>  Child Specialist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/cardiologist.png" class="img-fluid">
+              <h3>  Cardiologist </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+<div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/physiotherapy.png" class="img-fluid">
+              <h3>   Physiotherapy   </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/urologist.png" class="img-fluid">
+              <h3> Urologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/orthopaedics.png" class="img-fluid">
+              <h3> Orthopaedics </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/dentist.png" class="img-fluid">
+              <h3> Dentist </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/ayurvedic.png" class="img-fluid">
+              <h3>  Ayurvedic  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/gastroentrologist.png" class="img-fluid">
+              <h3>  Gastroenterologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/oncologist.png" class="img-fluid">
+              <h3>  Oncologist  </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/child-allergy.png" class="img-fluid">
+              <h3> Child Allergy </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/neurologist.png" class="img-fluid">
+              <h3> Neurologist </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+            <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/rheumatology.png" class="img-fluid">
+              <h3> Rheumatology </h3>
+              <p> Free </p>
+           </div>
+           </div>
+
+           <div class="col-lg-6">
+            <div class="consultationbox">
+              <img src="images/eye-doctors.png" class="img-fluid">
+              <h3>  Eye Doctors  </h3>
+              <p> Offline </p>
+           </div>
+           </div>
+
+
+          </div>
+     </div>
+
+      </div>  
+    </div>  
+  </div>  
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="updatewallet" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Update Wallet</h4>
+        </div>
+        <div class="modal-body">
+          <p> You Want to <button class="btn btn-primary">Add </button> <button class="btn btn-primary"> Less </button> </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="credit" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Update Plan Credits </h4>
+        </div>
+        <div class="modal-body">
+          <p> No Credits Available in plan </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="modal fade" id="packagedetail" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Package Details </h4>
+        </div>
+        <div class="modal-body">
+          <p> No Credits Available in plan </p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="renewplan" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Renew Plan </h4>
+        </div>
+        <div class="modal-body">
+          <p> You Want to <button class="btn btn-primary">Add </button> <button class="btn btn-primary"> Less </button> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js" type="text/javascript" ></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+
+
+<script >
+   $(document).ready(function () {
+            $('.collapse.in').prev('.panel-heading').addClass('active');
+            $('#accordion, #bs-collapse')
+                .on('show.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').addClass('active');
+                })
+                .on('hide.bs.collapse', function (a) {
+                    $(a.target).prev('.panel-heading').removeClass('active');
+                });
+        });
+
+</script>
+
+
+
+ </body>
+</html>
