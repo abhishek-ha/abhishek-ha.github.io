@@ -93,7 +93,7 @@ input[type="text"] {
     width: 90%;
     padding-left: 5px;
     padding-right: 5px;
-    height: 30px;
+    height: 20px;
     background-color: #f7f7ff;
     border: 1px solid rgba(136, 158, 168, 0.2);
     margin-left: 2%;
@@ -103,12 +103,12 @@ input::placeholder {
 }
 .form-select {
 	padding: 10px 15px 10px 15px;
-    width: 95%;
-    height: 54px;
-   display: block;
-   background-color: #f7f7ff;
-   border-color: rgba(136, 158, 168, 0.2);  
-   margin-left: 1%; 
+    width: 92%;
+    height: 42px;
+    display: block;
+    background-color: #f7f7ff;
+    border-color: rgba(136, 158, 168, 0.2);
+    margin-left: 2%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -156,8 +156,8 @@ input::placeholder {
 }
 .w-100{
     width: 100%;
-     margin-bottom: 10px; 
-     margin-top: 10px;
+     margin-bottom: 5px; 
+     margin-top: 5px;
      margin-left: 2%;
 }
 .popup-content {
@@ -168,7 +168,7 @@ input::placeholder {
      width: 50%;
     position:relative;
     padding-bottom: 70px;
-    min-height: 380px;
+    min-height: 400px;
     margin-bottom: 30px;
 }
 .popup-content1 {
@@ -179,7 +179,7 @@ input::placeholder {
     width: 50%;
     position:relative;
     padding-bottom: 70px;
-    min-height: 380px;
+    min-height: 400px;
       margin-bottom: 30px;
 }
 }
@@ -190,7 +190,7 @@ input::placeholder {
 <!-- Trigger/Open The Modal -->
 <button id="myBtn" class="btn1" style="margin-top:50px; margin-bottom:50px;width: 250px;"> Popup 1 </button>
 
-<button id="myBtn1" class="btn2" style="margin-top:50px; margin-bottom:50px;"> Popup 2 </button>
+<!-- <button id="myBtn1" class="btn2" style="margin-top:50px; margin-bottom:50px;"> Popup 2 </button> -->
 
 
 
@@ -202,19 +202,16 @@ input::placeholder {
     <h3 style="font-size:24px;margin-bottom: 5px;margin-left: 2%;"><span style="font-weight:600;">  Please enter </span><span style="font-weight:400;">  your details .....</span> </h3>
     <div style="border-top:4px solid #457e70;width: 100px;margin-left: 2%; margin-bottom: 20px;">
    </div>
-   <div class="w-48" style=" float: left;">
+   <div class="w-100" style=" float: left;">
    	<input type="text" name="" placeholder="Your Name">
   </div>
- <div class="w-48" style=" float: left;">
+ <div class="w-100" style=" float: left;">
     <input type="text" name="" placeholder="Your Phone">
   </div>
-<div class="w-48" style="float: left;">
+<div class="w-100" style="float: left;">
    	<input type="text" name="" placeholder="Your Email ">
   </div>
-
-
-
-  <div class="w-48" style="float: left;">
+ <div class="w-100" style="float: left;">
    	<input type="text" name="" placeholder="DOB (dd-mm-yyyy)">
   </div>
 <div class="w-100" style=" float: left;">
@@ -226,7 +223,7 @@ input::placeholder {
   	</select>
    </div>
  <div class="w-48" style=" float: left;margin-left: 2%;">
-   	<button class="btn btn1"> Place Order </button>
+   	<button class="btn btn1" id="myBtn1"> Place Order </button>
   </div>
 </div>
 </div>
@@ -238,12 +235,11 @@ input::placeholder {
 <div id="contentPopup1" class="popup-wrapper">
  <!-- Modal content -->
   <div class="popup-content1">
-    <!-- <span class="close">X</span> -->
-    <div style="width:48%; float: left; margin-bottom: 10px; margin-top: 20px;">
-   <img src="images/thankyou.png" style="width:80%;">
-  </div>
+     <span class="close">X</span> 
+   
 <div style="width:50%; float: left; margin-bottom: 10px; margin-top: 20px;">
- 	<h3 style="font-size:25px;margin-bottom: 10px;"> <span style="font-weight:600;">  Thank You </span> <span style="font-weight:300;"> for showing interest in HealthAssure Plans </span> </h3>
+ <p style="font-size:25px;margin-bottom: 10px;">Name: Sameer Ale  </p>
+ <p style="font-size:25px;margin-bottom: 10px;">Email: Sameer Ale  </p>
  	<p style="font-size:17px;color: #211c1e;margin-bottom: 20px;"> Our advisor will contact you shortly</p>
    	<button class="btn btn2"> OK </button>
   </div>
@@ -251,16 +247,9 @@ input::placeholder {
 </div>
 
 
-
-
-
-
-
-
 <script>
 // Get the contentPopup
 var contentPopup = document.getElementById('contentPopup');
-
 // Get the button that opens the contentPopup
 var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the contentPopup
