@@ -1,8 +1,8 @@
 function PasswordValidation(password) {
     return new Promise(function (resolve, reject) {
         var href = new URL(window.location.href);
-        var userId = href.searchParams.get("UserId");
-        var source = href.searchParams.get("Source");
+        var userId = href.searchParams.get("U");
+        var source = href.searchParams.get("S");
         if (userId == null || userId == "" || source == null || source == "") {
             reject("invalid Url")
             return;
@@ -10,7 +10,7 @@ function PasswordValidation(password) {
         let userpass = { NewPassword: password, UserId: userId, Source: source };
         $.ajax({
             type: "POST",
-            url: "https://uat.healthassure.in/productapi/api/User/ChangingPassword",
+            url: "https://live.healthassure.in/productapi/api/User/ChangingPassword",
             dataType: "json",
             data: JSON.stringify(userpass),
             headers: {
