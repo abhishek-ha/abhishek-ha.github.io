@@ -17,6 +17,13 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, de
             data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content }),
             dataType: "json", headers: headers,
             success: function (result) {
+                if (PlanCode == "HAOPDR003-60") {
+                    try {
+                        ShowLoding(false);
+                        opningPaymentSuccesspage();
+                        return;
+                    } catch { }
+                }
                 if (result.status) {
                     var options = {
                         "key": result.results.razorpayKey,

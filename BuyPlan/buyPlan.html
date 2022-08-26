@@ -696,6 +696,7 @@
                 }).catch(function (error) {
                     console.warn(error);
                     $('#Placeorder').html('Place order');
+                    EventReactNative('FAILURE');
                 });
             }
         });
@@ -711,6 +712,7 @@
             debugger;
             $('#buyplanformdiv').hide();
             $('#congratulationsdiv').show();
+            EventReactNative('SUCCESSFUL');
             console.log('opningPaymentSuccesspage');
         }
         function closebuyplanpopup() {
@@ -721,6 +723,7 @@
             $('#loadding').hide();
             $('#buyplanformdiv').hide();
             closebuyplanpopup();
+            EventReactNative('CANCELLED');
         }
         function ShowLoding(flag = true) {
             if (flag) {
@@ -791,6 +794,7 @@
                 }).catch(function (error) {
                     console.warn(error);
                     $('#Placeorder').html('Place order');
+                    EventReactNative('FAILURE');
                 });
             }).catch(function (err) {
                 $('#message').html(err.message);
@@ -913,6 +917,13 @@
         function OpenbuyPlanThankyouPage(PlanName) {
             var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
             window.open(url, "_parent");
+        }
+        function EventReactNative(Message) {
+            try {
+                console.log("EventReactNative:- " + Message);
+                window.postMessage(Message, "*");
+                window.ReactNativeWebView.postMessage(Message);
+            } catch (e) { console.log(e); }
         }
     </script>
 </body>
