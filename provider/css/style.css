@@ -46,7 +46,7 @@ margin-left: 10px;
 }
 .small-logo{
     width: 85px;
-   height: 45px;
+  /* height: 45px;*/
    margin-left: 10px;
 }
 .google-mapimg{
@@ -68,8 +68,8 @@ margin-left: 10px;
     font-size: 12px;
 }
 .map-border span img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 .rating{
     border: 1px solid #FFA237;
@@ -86,8 +86,8 @@ margin-left: 10px;
     font-size: 12px;
 }
 .rating span img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 .countbox{
     background: #FFFFFF;
