@@ -9,6 +9,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
 
@@ -25,20 +29,102 @@
 	<div class="col-xl-7 col-lg-7 col-md-7 col-12">
 		<button class="btn btn-primary1"> Male </button><button class="btn btn-primary1"> Female </button>
 		<div class="row">
-			<div class="col-lg-12 col-xl-12 col-md-12 col-12 pt-3">
-				<div>
-					
+			<div class="col-lg-12 mt-4 ">
+				<div class="box">
+					<p> Appoinment Status </p>
+			<button class="btn btn-secondary">Appoinment Requested   </button>
+			<div class="row">
+				<div class="col-lg-12">
+				<p>Appoinment Time </p>
 				</div>
-				<p>Appoinment Status </p>
-					<button class="btn btn-grey"> Appoinment Requested </button>
-			 </div>
+				<div class="col-lg-6">
+				<p>	<i class="fa-solid fa-calendar-check"></i> Saturday, 12 June </p>
+			   </div>
+              <div class="col-lg-6">
+					<p> <i class="fa-solid fa-clock"></i> 11:00 - 12:00 </p>
+			  </div>
+			  <div class="col-lg-12 col-md-12">
+			  	<p> Center Location</p>
+			  </div>
+			  <div class="col-lg-2">
+			  	<img src="images/apollo-logo.png" class="img-fluid">
+			  	
+			  </div>
+			  <div class="col-lg-10">
+			  	<p> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar Pradesh 201301  <img src="images/google-map.png"width="20"> Location </p>
+			  	
+			  </div>
+            </div>
+            </div>
+				
+			</div>
+
+			<div class="col-lg-12 mt-2">
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Check Tests Covered
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+</div>
+				
+			</div>
+
 	</div>
 </div>
 	<div class="col-xl-5 col-lg-5 col-md-5 col-12 pt-5">
 		<img src="images/consult.png" class="img-fluid">
 		</div>
+
+<div class="col-lg-12 col-md-12 mt-3">
+	<div class="border border-radius">
+		<h3 class="text-center"> Waiting for Center to accept Your Request </h3>
+		
+	</div>
+	
+</div>
+
 	</div>
 </div>
+
+
+<script >
+	
+(function($) {
+	'use strict';
+	
+	jQuery(document).on('ready', function(){
+	
+			$('a.page-scroll').on('click', function(e){
+				var anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $(anchor.attr('href')).offset().top - 50
+				}, 1500);
+				e.preventDefault();
+			});		
+
+	}); 	
+
+				
+})(jQuery);
+
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 
 
 </body>

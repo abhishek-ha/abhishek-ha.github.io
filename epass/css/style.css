@@ -45,5 +45,32 @@ line-height:26.5px ;
 }
 .box{
     background-color: #eeeeee;
-    
+    padding: 15px;
 }
+.box p{
+    font-size: 14px;
+}
+
+.box .btn{
+    border-radius: 20px;
+
+}
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #0E5FC1;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-item:first-of-type .accordion-button {
+   border-radius: 20px;
+}
+
+.accordion-item:last-of-type {
+  border-radius: 20px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+      border-radius: 20px;
+     color: #ffffff;
+    background-color: #0E5FC1;
+}
+
+
