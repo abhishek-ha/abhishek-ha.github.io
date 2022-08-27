@@ -27,12 +27,23 @@ html{
     color: #495057;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: 0px;
+    border-radius: 5px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    box-shadow: 0 2px 8px -3px rgb(0 0 0 / 75%);
+    
     height: 38px;
     background-color: #ffffff;
 }
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow:none;
+    border: 1px solid #80bdff;
+}
+
+
 .form-control121{
     border-radius: 40px;
     height: 42px;
@@ -1272,17 +1283,4 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
  
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

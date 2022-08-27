@@ -15,14 +15,15 @@ html{
      overflow-x: hidden!important;
 }
 .searchprovider{
-   background: #FFFFFF;
+background: #FFFFFF;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-margin-top: 15px;
-min-height: 290px;
+margin-top: 20px;
+min-height: 300px;
 }
+
 .searchprovider h3{
-   font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
@@ -35,7 +36,7 @@ margin-left: 10px;
     margin-left: 10px;
 }
 .searchprovider span{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
 }
 .searchprovider p{
@@ -46,7 +47,7 @@ margin-left: 10px;
 }
 .small-logo{
     width: 85px;
-   height: 45px;
+  /* height: 45px;*/
    margin-left: 10px;
 }
 .google-mapimg{
@@ -61,15 +62,15 @@ margin-left: 10px;
     color: #7CC7A0;
     margin-left: 21px;
     margin-right: 4px;
-    padding: 4px;
+    padding: 2px;
     float: left;
 }
 .map-border span{
     font-size: 12px;
 }
 .map-border span img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 .rating{
     border: 1px solid #FFA237;
@@ -80,21 +81,21 @@ margin-left: 10px;
     float: left;
     margin-left: 4px;
     margin-right: 4px;
-    padding: 4px;
+    padding: 2px;
 }
 .rating span{
     font-size: 12px;
 }
 .rating span img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 .countbox{
     background: #FFFFFF;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 7px;
+    margin-right: 8px;
     margin-top: 5px;
     padding: 4px;
      width: 155px;
