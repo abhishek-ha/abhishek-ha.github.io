@@ -1,8 +1,8 @@
 function PasswordValidation(password) {
     return new Promise(function (resolve, reject) {
         var href = new URL(window.location.href);
-        var userId = href.searchParams.get("U");
-        var source = href.searchParams.get("S");
+        var userId = href.searchParams.get("UserId");
+        var source = href.searchParams.get("Source");
         if (userId == null || userId == "" || source == null || source == "") {
             reject("invalid Url")
             return;
