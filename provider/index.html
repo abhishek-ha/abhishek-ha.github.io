@@ -15,6 +15,10 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
+
+
+
   </head>
 
   <body>
@@ -34,7 +38,30 @@
      </div>
   
         <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-          <img src="images/hospital.png" class="img-fluid">
+          <div class="slideshow-container">
+
+<div class="mySlides">
+<img src="images/hospital.png" class="myslidesimg" >
+ </div>
+<div class="mySlides">
+<img src="images/hospital1.png" class="myslidesimg" >
+  </div>
+<div class="mySlides">
+ <img src="images/hospital2.png" class="myslidesimg" >
+</div>
+<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a> -->
+
+<div style="text-align:center;margin-top:-30px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+
+
+         <!--  <img src="images/hospital.png" class="img-fluid"> -->
        </div>
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -205,27 +232,41 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
  </div>
 </div>
 
 
-  
-
-  
- 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="js/bootstrap.min.js"></script>
+
+<script>
+       let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+ </script>
     
    
   </body>
