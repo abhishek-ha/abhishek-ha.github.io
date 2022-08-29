@@ -90,6 +90,11 @@ margin-left: 10px;
     width: 20px;
     height: 20px;
 }
+
+
+
+
+
 .countbox{
     background: #FFFFFF;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -101,6 +106,12 @@ margin-left: 10px;
      width: 155px;
      float: left;
 }
+
+.countbox img{
+    width: 29px!important;
+    height: 20px!important;
+}
+
 .countbox p{
     font-family: 'Poppins';
     font-style: normal;
@@ -112,10 +123,12 @@ margin-left: 10px;
     margin-bottom: 0px;
     margin-left: 0px;
 }
-.countbox img{
-    width: 29px;
-    height: 20px;
-}
+
+
+
+
+
+
 
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -126,9 +139,9 @@ img {vertical-align: middle;}
 }
 .myslidesimg{
     width: 100%;
+    border-top-right-radius:13px;
   
 }
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -168,8 +181,8 @@ img {vertical-align: middle;}
 }
 .dot {
   cursor: pointer;
-  height: 8px;
-  width: 8px;
+  height: 7.76px;
+  width: 7.76px;
   margin: 0 2px;
   background-color: #ffffff;
   border-radius: 50%;
@@ -177,7 +190,9 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+    background: #7DC7A0;
+border: 1px solid #FFFFFF;
+
 }
 .fade {
   animation-name: fade;
@@ -190,6 +205,93 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+@media only screen and (max-width: 300px) {
+   .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+
+@media only screen and (min-width: 301px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ 
+}
+
+
+
+
+@media only screen and (min-width: 350px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+
+@media only screen and (min-width: 375px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ 
+}
+
+
+@media only screen and (min-width: 422px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ 
+}
+
+
+
+@media only screen and (min-width: 422px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1240px) {
+    .addressbox{
+    padding-right: 0px;
+}
+.sliderbox{
+    padding-left: 0px;
+}
+ 
+}
+
+
 
 
 
