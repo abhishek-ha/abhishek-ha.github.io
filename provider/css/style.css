@@ -150,8 +150,6 @@ margin-left: 10px;
     padding-left: 7.5px!important;
     padding-right: 7.5px!important;
 }
-
-
 .mySlides {display: none;}
 .mySlides2 {display: none}
 img {vertical-align: middle;}
@@ -213,7 +211,7 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-    background: #7DC7A0;
+    background: transparent;
 border: 1px solid #FFFFFF;
 
 }
