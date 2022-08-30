@@ -129,6 +129,7 @@ margin-left: 10px;
     border-radius: 10px;
     padding: 4px;
     max-width: 155px;  
+    margin-top: 8px;
 }
 .countbox1 img{
     width: 29px!important;
@@ -236,7 +237,6 @@ border: 1px solid #FFFFFF;
 }
  }
 
-
 @media only screen and (min-width: 301px) {
     .addressbox{
     padding-right: 15px;
@@ -244,11 +244,7 @@ border: 1px solid #FFFFFF;
 .sliderbox{
     padding-left: 15px;
 }
- 
-}
-
-
-
+ }
 
 @media only screen and (min-width: 350px) {
     .addressbox{
@@ -267,9 +263,7 @@ border: 1px solid #FFFFFF;
 .sliderbox{
     padding-left: 15px;
 }
- 
-}
-
+ }
 
 @media only screen and (min-width: 422px) {
     .addressbox{
@@ -278,10 +272,7 @@ border: 1px solid #FFFFFF;
 .sliderbox{
     padding-left: 15px;
 }
- 
 }
-
-
 
 @media only screen and (min-width: 422px) {
     .addressbox{
@@ -292,7 +283,6 @@ border: 1px solid #FFFFFF;
 }
  }
 
-
 @media only screen and (min-width: 1240px) {
     .addressbox{
     padding-right: 0px;
@@ -301,6 +291,13 @@ border: 1px solid #FFFFFF;
     padding-left: 0px;
 } 
 }
+.mx-left{
+    margin-left: 12.8px;
+    margin-right: 12.8px;
+}
+
+
+
 
 
 
