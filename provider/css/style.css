@@ -19,7 +19,7 @@ background: #FFFFFF;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 margin-top: 20px;
-min-height: 300px;
+/*min-height: 295px;*/
 }
 
 .searchprovider h3{
@@ -51,9 +51,12 @@ margin-left: 10px;
    margin-left: 10px;
 }
 .google-mapimg{
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 11px;
+    margin-bottom: 3px;
 }
+
+@media only screen and (max-width: 600px) {
 .map-border{
     border: 1px solid #7CC7A0;
     border-radius: 27px; 
@@ -64,6 +67,7 @@ margin-left: 10px;
     margin-right: 4px;
     padding: 2px;
     float: left;
+     margin-top: 10px;
 }
 .map-border span{
     font-size: 12px;
@@ -75,13 +79,14 @@ margin-left: 10px;
 .rating{
     border: 1px solid #FFA237;
     border-radius: 27px; 
-    min-width: 125px; 
+    min-width: 128px; 
     text-align: center; 
     color: #FFA237;
     float: left;
     margin-left: 4px;
     margin-right: 4px;
-    padding: 2px;
+    padding: 1px 0px 3px 1px;
+     margin-top: 10px;
 }
 .rating span{
     font-size: 12px;
@@ -89,6 +94,49 @@ margin-left: 10px;
 .rating span img{
     width: 20px;
     height: 20px;
+}
+}
+
+@media only screen and (min-width: 601px) {
+.map-border{
+    border: 1px solid #7CC7A0;
+    border-radius: 27px; 
+    min-width: 110px; 
+    text-align: center; 
+    color: #7CC7A0;
+    margin-left: 21px;
+    margin-right: 4px;
+    padding: 2px;
+    float: left;
+   
+}
+.map-border span{
+    font-size: 12px;
+}
+.map-border span img{
+    width: 20px;
+    height: 24px;
+}
+.rating{
+    border: 1px solid #FFA237;
+    border-radius: 27px; 
+    min-width: 126px; 
+    text-align: center; 
+    color: #FFA237;
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 1px 0px 2px 1px;
+}
+.rating span{
+    font-size: 12px;
+    padding-right: 4px;
+}
+.rating span img{
+    width: 23px;
+    height: 23px;
+    padding-left: 0.6px;
+}
 }
 .countbox{
     background: #FFFFFF;
@@ -101,6 +149,10 @@ margin-left: 10px;
      width: 155px;
      float: left;
 }
+.countbox img{
+    width: 29px!important;
+    height: 20px!important;
+}
 .countbox p{
     font-family: 'Poppins';
     font-style: normal;
@@ -112,9 +164,189 @@ margin-left: 10px;
     margin-bottom: 0px;
     margin-left: 0px;
 }
-.countbox img{
-    width: 29px;
-    height: 20px;
+.countbox1{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 4px;
+    max-width: 155px;  
+    margin-top: 8px;
 }
+.countbox1 img{
+    width: 28px!important;
+    height: 20px!important;
+    margin-left: 8px;
+}
+.countbox1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #5B5B5B;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.col-space1{
+    padding-left: 7.5px!important;
+    padding-right: 7.5px!important;
+}
+.mySlides {display: none;}
+.mySlides2 {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.myslidesimg{
+    width: 100%;
+    border-top-right-radius:13px;
+  
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 7.76px;
+  width: 7.76px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background: transparent;
+border: 1px solid #FFFFFF;
+
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media only screen and (max-width: 300px) {
+   .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+@media only screen and (min-width: 301px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+@media only screen and (min-width: 350px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+
+@media only screen and (min-width: 375px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+@media only screen and (min-width: 422px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+}
+
+@media only screen and (min-width: 422px) {
+    .addressbox{
+    padding-right: 15px;
+}
+.sliderbox{
+    padding-left: 15px;
+}
+ }
+
+@media only screen and (min-width: 1240px) {
+    .addressbox{
+    padding-right: 0px;
+}
+.sliderbox{
+    padding-left: 0px;
+} 
+}
+.mx-left{
+    margin-left: 12.8px;
+    margin-right: 12.8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
