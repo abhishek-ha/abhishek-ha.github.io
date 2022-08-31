@@ -22,7 +22,96 @@ a{
     text-decoration: none;
 }
 
-.head{
+
+@media only screen and (max-width: 300px){
+
+    .head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+}
+
+
+@media only screen and (min-width: 301px){
+
+    .head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+}
+
+
+
+
+@media only screen and (min-width: 375px){
+
+    .head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+}
+
+
+@media only screen and (min-width: 422px){
+
+    .head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+}
+
+
+@media only screen and (min-width: 422px){
+
+    .head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+}
+
+
+
+
+
+
+
+
+/*.head{
 font-weight: 700;
 font-size:28px ;
 line-height:26.5px ;
@@ -33,7 +122,7 @@ line-height:26.5px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
+*/
 .bold{
     font-weight: 700;
 }
@@ -112,18 +201,42 @@ line-height:26.5px ;
     margin-bottom: 10px;
 }
 .box p{
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 22px;
 }
 
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
 .docbox .doctname{
+font-size: 15px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #0E5FC1;
+
+}
+.docbox .designation{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+.docbox1{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0E5FC1;
+}
+.docbox1 .doctname{
 font-size: 14px;
 font-weight: 600;
 line-height: 15px;
@@ -132,32 +245,15 @@ text-align: left;
 color: #0E5FC1;
 
 }
-
-.docbox .designation{
+.docbox1 .designation{
     font-size: 14px;
     font-weight: 600;
 }
 
 
-.accordion-button:not(.collapsed) {
-    color: #ffffff;
-    background-color: #0E5FC1;
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
-}
-.accordion-item:first-of-type .accordion-button {
-   border-radius: 20px;
-}
 
-.accordion-item:last-of-type {
-  border-radius: 20px;
-}
-.accordion-item:last-of-type .accordion-button.collapsed {
-      border-radius: 20px;      
-      color: #ffffff;
-    background-color: #0E5FC1;
-    border-bottom-right-radius: 0px!important;
-    border-bottom-left-radius: 0px!important;
-}
+
+
 .footer{
     background-color: #1e66ba;
     background-image: url(../images/footerbg);
@@ -172,7 +268,7 @@ color: #0E5FC1;
 }
 .footer p{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
 }
 .footer ul li{
     list-style-type: none;
@@ -222,6 +318,14 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
+
+.accordion{
+background-color: #fffefb;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .accordion ul li{
     font-size: 14px;
     line-height: 20px;
@@ -243,7 +347,6 @@ ul{
     font-weight: 600;
     min-width: 228px;
 }
-
 .btn-reports:hover{
     background-color:#0C55AD;
     color: #ffffff;
@@ -255,32 +358,156 @@ ul{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%); 
     border-radius: 5px; 
-
-}
-
-.accordion-button:not(.collapsed)::after {
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
-    transform: rotate(-180deg);
 }
 
 
 
-.accordion-button::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+   /* margin: 0 30px 10px 30px;*/
+    overflow: hidden;
+    position: relative;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+#accordion .panel-title a.collapsed{ 
+    background-color: #1f67bb;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: fontawesome;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #1f67bb;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+@media only screen and (max-width: 700px){
+
+
+    #accordion .panel-title a{
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    background: #1f67bb;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+}
+
+}
+@media only screen and (min-width: 700px){
+   #accordion .panel-title a{
+    display: block;
+    padding: 15px 20px;
+    margin: 0;
+    background: #1f67bb;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+}
+
+
+
+
+
+
+#accordion .panel-title a.collapsed:before{
+content: "\f107";
+    font-family: fontawesome;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #1f67bb;
+
+    /*content: "\f106";
+    background: #ababab;
+    border: 4px solid #626262;*/
+}
+
+
+
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
     content: "";
-    background-image: url(../images/down-arrow.png);
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
+    width: 17px;
+    height: 7px;
+   /* background: #fff;*/
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+/*#accordion .panel-title a.collapsed:after{
+    width: 19px;
+    background: #ababab;
+}*/
+#accordion .panel-body{
+   /* border-left: 3px solid #fe7725;*/
+    border-top: none;
+    background: #fff;
+    /*font-size: 15px;*/
+    color: #1c2336;
+    line-height: 27px;
+    position: relative;
+}
+#accordion .panel-body:before{
+    content: "";
+    height: 3px;
+    width: 50%;
+   /* background: #fe7725;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#accordion .panel-body p{
+  padding: 10px;
 }
 
-.accordion-button:not(.collapsed)::after {
-    background-image: url(../images/up-arrow-white.png);
-    transform: rotate(-180deg);
+.centerlogo{
+    max-width: 100px;
 }
+
+/*Button Section Start */
+.appoinmentbtn{
+    background-color: ;
+    color: ;
+    border-radius: 20px;
+}
+
+
+
+
+/*Button Section End */
+
+
 
 
 
