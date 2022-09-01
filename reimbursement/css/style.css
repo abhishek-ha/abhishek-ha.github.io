@@ -1091,6 +1091,17 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+    .selected span {
+    border-radius: 74px;
+    border: 2px solid #ffffff;
+    padding: 7px 10px;
+    font-size: 28px;
+}
+
+
+
+
 .selected img{
     width: 70px;   
 }
