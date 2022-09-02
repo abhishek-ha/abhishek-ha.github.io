@@ -73,27 +73,30 @@
                             <div class="col-md-6 col-lg-3 my-3">
                                 <h2>ACCESSCODE</h2>
                                 <div class="mt-3">
-                                    <input type="text" class="form-control" id="AccessCode" name="AccessCode" onchange="AccessCodeTextonchange(this);">
+                                    <input type="text" class="form-control" id="AccessCode" name="AccessCode"
+                                        onchange="AccessCodeTextonchange(this);">
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 my-3">
                                 <h2>VARIANT</h2>
                                 <div class="mt-3">
                                     <select id="PlansDroupdown" class="form-select"
-                                    onchange="PlansDroupdownonchange(this);">
-                                    <option disabled="" selected="">Select</option>
-                                </select>
+                                        onchange="PlansDroupdownonchange(this);">
+                                        <option disabled="" selected="">Select</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 my-3">
                                 <h2>COVERAGE</h2>
                                 <div class="d-flex mt-3">
                                     <div class="me-5">
-                                        <input disabled type="radio" class="form-check-input" id="Plan-self" name="Plancoverage">
+                                        <input disabled type="radio" class="form-check-input" id="Plan-self"
+                                            name="Plancoverage">
                                         <label for="self">Self</label>
                                     </div>
                                     <div>
-                                        <input disabled type="radio" class="form-check-input" id="Plan-family" name="Plancoverage">
+                                        <input disabled type="radio" class="form-check-input" id="Plan-family"
+                                            name="Plancoverage">
                                         <label for="family">Family</label>
                                     </div>
                                 </div>
@@ -106,20 +109,20 @@
                 <div class="card" style="background-image: url('./images/transparentbackground.png');">
                     <div class="card-body">
                         <h2 class="card-title">Self</h2>
-                        <form>
+                        <form id="RegisterUserform">
                             <div class="row">
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">First Name</label>
                                         <input class="form-control" type="text" placeholder="Enter First Name"
-                                            id="txtFirstName" name="FirstName" maxlength="100">
+                                            id="SelfFirstName" name="FirstName" maxlength="100">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Last Name</label>
                                         <input class="form-control" type="text" placeholder="Enter Last Name"
-                                            id="txtLastName" name="LastName" maxlength="100">
+                                            id="SelfLastName" name="LastName" maxlength="100">
 
                                     </div>
                                 </div>
@@ -128,15 +131,18 @@
                                         <label class="mb-2">Gender</label>
                                         <div class="d-flex">
                                             <div class="me-3">
-                                                <input type="radio" class="form-check-input" name="gender" id="male">
+                                                <input type="radio" class="form-check-input" name="Selfgender" id="male"
+                                                    value="Male">
                                                 <label for="male">Male</label>
                                             </div>
                                             <div class="me-3">
-                                                <input type="radio" class="form-check-input" name="gender" id="female">
+                                                <input type="radio" class="form-check-input" name="Selfgender"
+                                                    id="female" value="Female">
                                                 <label for="female">Female</label>
                                             </div>
                                             <div class="me-3">
-                                                <input type="radio" class="form-check-input" name="gender" id="other">
+                                                <input type="radio" class="form-check-input" name="Selfgender"
+                                                    id="other" value="Other">
                                                 <label for="other">Other</label>
                                             </div>
                                         </div>
@@ -145,14 +151,14 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">DOB</label>
-                                        <input class="form-control" type="date" id="Dob">
+                                        <input class="form-control" type="date" id="SelfDob">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Mobile No</label>
                                         <input class="form-control" type="text" placeholder="Enter Mobile No"
-                                            id="txtMobileNo" name="MobileNo">
+                                            id="SelfMobileNo" name="SelfMobileNo">
 
                                     </div>
                                 </div>
@@ -160,7 +166,7 @@
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Email Id</label>
                                         <input class="form-control" type="text" placeholder="Enter Email ID"
-                                            id="emailId" name="EmailId">
+                                            id="SelfEmailId" name="SelfEmailId">
 
                                     </div>
                                 </div>
@@ -168,7 +174,7 @@
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Pin Code</label>
                                         <input class="form-control" type="text" placeholder="Enter Pin Code"
-                                            id="txtPinCode" name="Pincode">
+                                            id="SelfPincode" name="SelfPincode">
 
                                     </div>
                                 </div>
@@ -176,73 +182,105 @@
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Address</label>
                                         <input class="form-control" type="text" placeholder="Enter Address"
-                                            id="txtAddress" name="Address">
+                                            id="SelfAddress" name="SelfAddress">
 
                                     </div>
                                 </div>
                                 <div class="col-12 mt-5">
                                     <div class="row">
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member1div">
                                             <h3>Member 1</h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" id="MemberName1" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" class="form-control">
+                                                <input type="date" id="MemberDOB1" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2">Relation</label>
-                                                <select class="form-select">
-                                                    <option disabled="" selected="">Relation</option>
-                                                    <option value="son">Son</option>
-                                                    <option value="daughter">Daughter</option>
-                                                    <option value="spouse">Spouse</option>
-                                                </select>
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="male" value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member2div">
                                             <h3>Member 2</h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" id="MemberName2" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" class="form-control">
+                                                <input type="date" id="MemberDOB2" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2">Relation</label>
-                                                <select class="form-select">
-                                                    <option disabled="" selected="">Relation</option>
-                                                    <option value="son">Son</option>
-                                                    <option value="daughter">Daughter</option>
-                                                    <option value="spouse">Spouse</option>
-                                                </select>
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="male" value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 col-lg-4">
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member3div">
                                             <h3>Member 3</h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
-                                                <input type="text" class="form-control">
+                                                <input type="text" id="MemberName3" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" class="form-control">
+                                                <input type="date" id="MemberDOB3" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2">Relation</label>
-                                                <select class="form-select">
-                                                    <option disabled="" selected="">Relation</option>
-                                                    <option value="son">Son</option>
-                                                    <option value="daughter">Daughter</option>
-                                                    <option value="spouse">Spouse</option>
-                                                </select>
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="male" value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="col-md-12 text-center my-4">
@@ -284,8 +322,12 @@
                 });
                 if (result.results.plans[0].relCount == 0) {
                     $('#Plan-self').attr('checked', true);
+                    $('#Member1div').hide();
+                    $('#Member2div').hide();
+                    $('#Member3div').hide();
                 } else {
                     $('#Plan-family').attr('checked', true);
+                    $('#Member1div').show()
                 }
             }).catch(function (error) {
                 PlansDroupdownEmpty();
@@ -296,12 +338,30 @@
             });
         }
         function PlansDroupdownonchange(event) {
+            RelCount = parseInt($('#PlansDroupdown :selected').attr("RelCount"), 10);
             if ($('#PlansDroupdown :selected').attr("RelCount") == 0) {
                 $('#Plan-family').attr('checked', false);
                 $('#Plan-self').attr('checked', true);
+                $('#Member1div').hide();
+                $('#Member2div').hide();
+                $('#Member3div').hide();
             } else {
                 $('#Plan-self').attr('checked', false);
                 $('#Plan-family').attr('checked', true);
+                if (RelCount == 1) {
+                    $('#Member1div').show();
+                    $('#Member2div').hide();
+                    $('#Member3div').hide();
+                }
+                if (RelCount == 2) {
+                    $('#Member2div').show();
+                    $('#Member3div').hide();
+                }
+                if (RelCount == 3) {
+                    $('#Member1div').show();
+                    $('#Member2div').show();
+                    $('#Member3div').show();
+                }
             }
         }
         function PlansDroupdownEmpty() {
@@ -310,10 +370,48 @@
         }
         $('#RegisterUserform').submit(function (e) {
             e.preventDefault();
-            //txtLastName txtFirstName gender Dob EmailId MobileNo Address Pincode
+            var Relations = [];
+            var MemberName1 = $('#MemberName1').val();
+            var MemberDOB1 = $('#MemberDOB1').val();
+            var MemberName2 = $('#MemberName2').val();
+            var MemberDOB2 = $('#MemberDOB2').val();
+            var MemberName3 = $('#MemberName3').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
+            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="Membergender1"]:checked').val() });
+            }
+            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="Membergender2"]:checked').val() });
+            }
+            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="Membergender3"]:checked').val() });
+            }
+            var UserAddress = { "Address": $('#SelfAddress').val(), "PinCode": $('#SelfPincode').val() };
+            CreateOrderOPDPlans($('#SelfFirstName').val() + ' ' + $('#SelfLastName').val(), $('#SelfEmailId').val(), $('#SelfMobileNo').val(), $('#SelfDob').val(), $('input[type="radio"][name="Selfgender"]:checked').val(),
+                $('#PlansDroupdown :selected').val(), Relations, UserAddress).then(function (result) {
+                    alert("Payemnt Link sent");
+                    RegistrationFormEmpty();
+                }).catch(function (error) {
+                    PlansDroupdownEmpty();
+                    if (error.subCode == 408) {
+                        alert(error.message);
+                    }
+                    console.warn(error);
+                });
         });
-
-        //$('input[type="radio"][name="Plancoverage"]:checked').val()
+        function RegistrationFormEmpty() {
+            $('#MemberName1').val('');
+            $('#MemberDOB1').val('');
+            $('#MemberName2').val('');
+            $('#MemberDOB2').val('');
+            $('#MemberName3').val('');
+            $('#MemberDOB3').val('');
+            $('#SelfFirstName').val('');
+            $('#SelfLastName').val('');
+            $('#SelfEmailId').val('');
+            $('#SelfMobileNo').val('');
+            $('#SelfDob').val('');
+        }
     </script>
 </body>
 
