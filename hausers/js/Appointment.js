@@ -44,7 +44,7 @@ function LoadData(Appointmentid) {
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 if (data.results.reportSavePath != null) {
                     console.log(data.results.reportSavePath)
-                    $("#btnViewReports").text('<button class="btn btn-reports" onclick="ViewRepots(' + data.results.reportSavePath + ')"> View Reports </button>');
+                    $("#btnViewReports").html('<button class="btn btn-reports" onclick="javascript:ViewRepots(' + data.results.reportSavePath + ')"> View Reports </button>');
                 }
 
                 if (data.results.providerImage == null) {
@@ -75,7 +75,7 @@ function LoadData(Appointmentid) {
                     $("#btnstatusname").css("background-color", "Blue");
                     $("#dvForRequestImage").show();
                 }
-                else if (data.results.statusname == 'Completed') {
+                else if (data.results.statusname == 'Completed' || data.results.statusname =='Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").css("background-color", "Green");
                     $("#dvForCompletedImage").show();
