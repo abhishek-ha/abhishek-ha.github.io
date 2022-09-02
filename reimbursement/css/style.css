@@ -1081,6 +1081,30 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .benefit img{
     width: 70px;   
 }
+.selected {
+    background-color: #005af0;
+    color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    min-height: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .selected span {
+    border-radius: 74px;
+    border: 2px solid #ffffff;
+    padding: 7px 10px;
+    font-size: 28px;
+}
+
+
+
+
+.selected img{
+    width: 70px;   
+}
 .consultbox{
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
