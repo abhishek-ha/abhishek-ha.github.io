@@ -29,10 +29,50 @@
     tr:nth-child(even) {
       background-color: #dddddd;
     }
+
+    .preloader1 {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      position: absolute;
+      margin: auto;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      border: 4px solid white;
+      border-top: 4px solid #0f5fc2;
+      border-right: 4px solid #0f5fc2;
+      border-bottom: 4px solid #0f5fc2;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
 
 <body>
+  <div style='display: none;' id='Lodingdivid' class='preloader1'></div>
   <div class="landing-page-container">
     <div class="landing-page-header">
       <div class="custom-container d-flex justify-content-between align-items-center">
@@ -191,11 +231,12 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <div class="col-3">
+                  <!-- <div class="col-3">
                     <h4>Relations</h4>
-                  </div>
+                  </div> -->
                   <div class="col-9">
-                    <table style="display: none;" id="Relationstable">
+                    <h4>Relations</h4>
+                    <table id="Relationstable">
                       <thead>
                         <tr>
                           <th class="empid">Name</th>
@@ -279,35 +320,37 @@
           </div>
         </div>
         <div class="text-center my-4">
-          <button class="btn btn-secondary" disabled id="Submitpaymentbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            style="padding: 4px 17px;">Verify Your Details</button>
+          <button class="btn btn-secondary" disabled id="Submitpaymentbtn" data-bs-toggle="modal"
+            style="padding: 4px 17px;" data-bs-backdrop="static" data-bs-keyboard="false">Verify Your Details</button>
         </div>
         <!-- <div class="text-center my-4">
                     <button class="btn btn-secondary" id="confirmPayBtn" style="display: none;">CONFIRM & PAY</button>
                 </div> -->
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="OTPPopupModal" tabindex="-1" aria-labelledby="OTPPopupModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content" style="border: 0;width: 350px;max-width: 350px;margin: 0 auto;">
           <div class="modal-header justify-content-end" style="border: 0;">
-            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <!-- <h5 class="modal-title" id="OTPPopupModalLabel"></h5> -->
             <button type="button" class="btn btn-cancel" data-bs-dismiss="modal" aria-label="Close"
-              style="padding: 3px 10px;font-size: 1.3rem;">
+              style="padding: 3px 10px;font-size: 1.3rem;" onclick="Otppopupclose()" id="Otppopupclosebtn">
               Cancel
             </button>
           </div>
           <div class="modal-body my-3" style="padding: 5px 10px;">
             <div>
               <input type="text" class="form-control" placeholder="Enter OTP"
-                style="width: 300px;max-width: 300px;margin:0 auto">
+                style="width: 300px;max-width: 300px;margin:0 auto" id="OTP">
+              <span style="color: red;font-weight: bold;margin-left: 15px;" id="OtpMessage"></span>
             </div>
           </div>
           <div class="modal-footer flex-column justify-content-center" style="border: 0;">
-            <button type="button" class="btn btn-primary mb-2" style="padding: 4px 13px;font-size: 1.4REM;">Verify
+            <button type="button" class="btn btn-primary mb-2" style="padding: 4px 13px;font-size: 1.4REM;"
+              id="btnSubmitOTP">Verify
               OTP</button>
             <div class="mb-3 mt-3">
-              <a href="#" style="font-size: 1.4rem;color:#da7422;">Resend OTP</a>
+              <a href="javascript:SendOTPforvarification()" style="font-size: 1.4rem;color:#da7422;">Resend OTP</a>
             </div>
           </div>
         </div>
@@ -324,56 +367,151 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/InsuranceAgent.js"></script>
   <script>
+    var IsotpVerified = 'N';
+    var plan = null;
+    ShowLoding(true);
     var href = new URL(window.location.href);
     var TransactionId = href.searchParams.get("TransactionId");
-    GetTransactionDetails(TransactionId).then(function (result) {
-      var plan = result.results.plan;
-      $('#PlanName').html(plan);
-      var PlanServices = "";
-      $.each(plan.services, function (key, p) {
-        if (p.isUnLimited.toUpperCase() == 'Y') {
-          PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Unlimited</span></p>";
+    if (TransactionId != null && TransactionId != "" && TransactionId != "null") {
+      ShowLoding(true);
+      GetTransactionDetails(TransactionId).then(function (result) {
+        plan = result.results.plan;
+        $('#PlanName').html(plan);
+        var PlanServices = "";
+        $.each(plan.services, function (key, p) {
+          if (p.isUnLimited.toUpperCase() == 'Y') {
+            PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Unlimited</span></p>";
+          }
+          else if (parseInt(p.totalWalletAmount, 10) > 0) {
+            PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Wallet : " + p.totalWalletAmount + "</span></p>";
+          }
+          else if (parseInt(p.totalCredits, 10) > 0) {
+            PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Credits : " + p.totalCredits + "</span></p>";
+          }
+        });
+        $('#PlanServices').html(PlanServices);
+        $('#UserEmailId').html(plan.email);
+        $('#COVERAGE').html(parseInt(plan.relCount, 10) > 0 ? 'Family' : 'Self');
+        $('#customername').html(plan.fullName);
+        $('#customergender').html(plan.gender);
+        $('#customerDOB').html(plan.dob);
+        $('#customerMOBILENO').html(plan.phoneNo);
+        $('#customerEamilId').html(plan.email);
+        if (plan.userAddress != null && plan.userAddress != undefined) {
+          $('#customerAddress').html(plan.userAddress.Address);
+          $('#customerPinCode').html(plan.userAddress.PinCode);
         }
-        else if (parseInt(p.totalWalletAmount, 10) > 0) {
-          PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Wallet : " + p.totalWalletAmount + "</span></p>";
+        $('#PlanAmount').html(plan.planAmount);
+        $('#ServiceTaxAmount').html(plan.serviceTaxAmount);
+        $('#PlanAmountWithGST').html(plan.planAmountWithGST);
+        var RelationDetails = "";
+        $.each(plan.relationDetails, function (key, r) {
+          RelationDetails += "<tr><td>" + r.Name + "</td><td>" + r.Gender + "</td><td>" + r.DoB + "</td></tr>"
+        });
+        if (RelationDetails != "") {
+          $('#Relationstbody').html(RelationDetails);
+          $('#RelationsTable').show();
         }
-        else if (parseInt(p.totalCredits, 10) > 0) {
-          PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Credits : " + p.totalCredits + "</span></p>";
+        ShowLoding(false);
+      }).catch(function (error) {
+        ShowLoding(false);
+        if (error.subCode == 408) {
+          alert(error.message);
         }
+        console.warn(error);
       });
-      $('#PlanServices').html(PlanServices);
-      $('#UserEmailId').html(plan.email);
-      $('#COVERAGE').html(parseInt(plan.relCount, 10) > 0 ? 'Family' : 'Self');
-      $('#customername').html(plan.fullName);
-      $('#customergender').html(plan.gender);
-      $('#customerDOB').html(plan.dob);
-      $('#customerMOBILENO').html(plan.phoneNo);
-      $('#customerAddress').html(plan.userAddress.address);
-      $('#customerPinCode').html(plan.userAddress.pinCode);
-      $('#PlanAmount').html(plan.planAmount);
-      $('#ServiceTaxAmount').html(plan.serviceTaxAmount);
-      $('#PlanAmountWithGST').html(plan.planAmountWithGST);
-      var RelationDetails = "";
-      $.each(plan.relationDetails, function (key, r) {
-        RelationDetails += "<tr><td>" + r.name + "</td><td>" + r.gender + "</td><td>" + r.dob + "</td></tr>"
-      });
-      if (RelationDetails != "") {
-        $('#Relationstbody').html(RelationDetails);
-        $('#RelationsTable').show();
-      }
-    }).catch(function (error) {
-      if (error.subCode == 408) {
-        alert(error.message);
-      }
-      console.warn(error);
-    });
+    } else {
+      alert('Inavlid URL');
+    }
+
     $('#IsTCAccepted').click(function (e) {
-      debugger;
-      if (this.checked) {
+      IsSubmitpaymentbtnEnabled(this.checked)
+    });
+    function IsSubmitpaymentbtnEnabled(flag) {
+      if (flag) {
         $("#Submitpaymentbtn").prop('disabled', false);
       } else {
         $("#Submitpaymentbtn").prop('disabled', true);
       }
+    }
+
+    $().ready(function () {
+      $('#OTPPopupModal').modal({
+        backdrop: 'static',
+        keyboard: false
+      })
+    });
+    function ShowLoding(flag = true) {
+      if (flag) {
+        $('#Lodingdivid').show();
+      } else {
+        $('#Lodingdivid').hide();
+      }
+    }
+    function Otppopupclose() {
+      $('#OtpMessage').html('');
+      $('#Submitpaymentbtn').text('Verify Your Details');
+      IsSubmitpaymentbtnEnabled(true);
+    }
+
+    $('#Submitpaymentbtn').click(function () {
+      if (IsotpVerified == 'Y') {
+        $('#Submitpaymentbtn').text('Loding....');
+        IsSubmitpaymentbtnEnabled(false);
+        BuyOPDPlan(plan.transactionId, plan.paymentOrder.key, plan.paymentOrder.amount, plan.paymentOrder.id, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
+
+        }).catch(function (err) {
+          console.log(err);
+        });
+      } else if (IsotpVerified == 'D') {
+        alert('Payment has been done');
+      } else {
+        SendOTPforvarification();
+      }
+    });
+    function opningPaymentSuccesspage() {
+      OpenbuyPlanThankyouPage(plan.planName);
+    }
+    function opningPaymentfailedpage(){
+      IsotpVerified = 'F'
+      IsSubmitpaymentbtnEnabled(false);
+      $('#Submitpaymentbtn').text('Failed');
+    }
+    function OpenbuyPlanThankyouPage(PlanName) {
+      IsotpVerified = 'D'
+      IsSubmitpaymentbtnEnabled(false);
+      $('#Submitpaymentbtn').text('Done');
+      var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
+      window.open(url, "_parent");
+    }
+    function SendOTPforvarification() {
+      $('#OtpMessage').html('');
+      $('#Submitpaymentbtn').text('Loding....');
+      IsSubmitpaymentbtnEnabled(false);
+      GetOTPForEmailId($('#customerEamilId').text(), '', $('#customerMOBILENO').text()).then(function (result) {
+        $('#OTPPopupModal').modal('show');
+      }).catch(function (error) {
+        $('#OtpMessage').html(error.message);
+        if (error.subCode == 408) {
+          alert(error.message);
+        }
+      });
+    }
+
+    $('#btnSubmitOTP').click(function () {
+      $('#OtpMessage').html('');
+      VerifyEmailId($('#customerMOBILENO').text(), $('#OTP').val(), $('#customerEamilId').text(), '').then(function (result) {
+        $('#OTPPopupModal').modal('hide');
+        $('#OTP').val("");
+        $('#Submitpaymentbtn').text('Confirm and pay');
+        IsSubmitpaymentbtnEnabled(true);
+        IsotpVerified = 'Y';
+      }).catch(function (error) {
+        $('#OtpMessage').html(error.message);
+        if (error.subCode == 408) {
+          alert(error.message);
+        }
+      });
     });
   </script>
 </body>
