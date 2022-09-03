@@ -131,7 +131,7 @@
                                         <label class="mb-2">Gender</label>
                                         <div class="d-flex">
                                             <div class="me-3">
-                                                <input type="radio" class="form-check-input" name="Selfgender" id="male"
+                                                <input type="radio" class="form-check-input" checked name="Selfgender" id="male"
                                                     value="Male">
                                                 <label for="male">Male</label>
                                             </div>
@@ -151,14 +151,14 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">DOB</label>
-                                        <input class="form-control" type="date" id="SelfDob" required>
+                                        <input class="form-control" type="date" id="SelfDob" min="1920-01-01" max="2021-01-01" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Mobile No</label>
-                                        <input class="form-control" type="number" placeholder="Enter Mobile No"
-                                            id="SelfMobileNo" name="SelfMobileNo" required>
+                                        <input class="form-control" type="number" placeholder="Enter Mobile No" pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
+                                            id="SelfMobileNo" name="SelfMobileNo" maxlength="10" required>
 
                                     </div>
                                 </div>
@@ -196,14 +196,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB1" class="form-control">
+                                                <input type="date" id="MemberDOB1" min="1920-01-01" max="2021-01-01" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender1" id="male" value="Male">
+                                                            name="Membergender1" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -227,14 +227,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB2" class="form-control">
+                                                <input type="date" id="MemberDOB2" min="1920-01-01" max="2021-01-01" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender2" id="male" value="Male">
+                                                            name="Membergender2" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -258,14 +258,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB3" class="form-control">
+                                                <input type="date" id="MemberDOB3" min="1920-01-01" max="2021-01-01"  class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender3" id="male" value="Male">
+                                                            name="Membergender3" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -371,10 +371,11 @@
                     $('#Member3div').hide();
                 }
                 if (RelCount == 2) {
+                    $('#Member1div').show();
                     $('#Member2div').show();
                     $('#Member3div').hide();
                 }
-                if (RelCount == 3) {
+                if (RelCount > 2) {
                     $('#Member1div').show();
                     $('#Member2div').show();
                     $('#Member3div').show();
@@ -388,6 +389,7 @@
         $('#RegisterUserform').submit(function (e) {
             e.preventDefault();
             $("#formsubmitbtn").text('Loding...');
+            $('#paymentlinkdiv').hide();
             IsSubmitbtnEnabled(false);
             var Relations = [];
             var MemberName1 = $('#MemberName1').val();

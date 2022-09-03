@@ -155,11 +155,11 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             "currency": "INR",
             "name": "HealthAssure",
             "description": description,
-            "image": APiBaseURL + "image/logo/halogo.png",
+            "image": APiBaseURL + "/image/logo/halogo.png",
             "order_id": order_id,
             "handler": function (response) {
                 $.ajax({
-                    type: "POST", url: APiBaseURL + "api/OPDPlans/OPDPlansPurchaseConformation",
+                    type: "POST", url: APiBaseURL + "/api/OPDPlans/OPDPlansPurchaseConformation",
                     data: JSON.stringify({ TransactionId: TransactionId, Message: "Payment Success", OrderId: order_id, Signature: response.razorpay_signature, RefId: response.razorpay_payment_id, Status: 'Success' }),
                     dataType: "json", headers: headers,
                     success: function (res) {

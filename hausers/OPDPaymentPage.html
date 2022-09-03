@@ -371,7 +371,7 @@
     var plan = null;
     ShowLoding(true);
     var href = new URL(window.location.href);
-    var TransactionId = href.searchParams.get("TransactionId");
+    var TransactionId = href.searchParams.get("id");
     if (TransactionId != null && TransactionId != "" && TransactionId != "null") {
       ShowLoding(true);
       GetTransactionDetails(TransactionId).then(function (result) {
@@ -458,7 +458,7 @@
       if (IsotpVerified == 'Y') {
         $('#Submitpaymentbtn').text('Loding....');
         IsSubmitpaymentbtnEnabled(false);
-        BuyOPDPlan(plan.transactionId, plan.paymentOrder.key, plan.paymentOrder.amount, plan.paymentOrder.id, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
+        BuyOPDPlan(plan.transactionId, plan.paymentGatewaykey, plan.planAmountWithGST+"00", plan.paymentOrderId, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
 
         }).catch(function (err) {
           console.log(err);
@@ -472,7 +472,7 @@
     function opningPaymentSuccesspage() {
       OpenbuyPlanThankyouPage(plan.planName);
     }
-    function opningPaymentfailedpage(){
+    function opningPaymentfailedpage() {
       IsotpVerified = 'F'
       IsSubmitpaymentbtnEnabled(false);
       $('#Submitpaymentbtn').text('Failed');
