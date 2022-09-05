@@ -68,6 +68,10 @@
         transform: rotate(360deg);
       }
     }
+
+    .vertical-center {
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -77,7 +81,7 @@
     <div class="landing-page-header">
       <div class="custom-container d-flex justify-content-between align-items-center">
         <div class="header-heading">
-          <h2 class="mb-0">HEALTHASSURE ACE POTRAL</h2>
+          <h2 class="mb-0">Kuzalin Services Private Limited</h2>
         </div>
         <div>
           <img src="./images/favicon.png" alt="logo">
@@ -87,10 +91,10 @@
     <div class="landin-page-main-section">
       <div class="custom-container d-flex justify-content-between align-items-center">
         <div class="main-section-top-left">
-          <h2>Explore Plan</h2>
+          <h2>HEALTHASSURE SALES PORTAL</h2>
         </div>
         <div class="main-section-top-right d-flex align-items-center">
-          <span class="me-2">Power By</span>
+          <span class="me-2">Powered By</span>
           <img src="./images/healthassure-logo.png" alt="">
         </div>
       </div>
@@ -111,27 +115,27 @@
               <div class="accordion-body">
                 <div class="row mb-3">
                   <div class="col-3">
-                    <h3>Product Name</h3>
+                    <h3><b>Plan Name</b></h3>
                   </div>
                   <div class="col-9">
-                    <p>Retail OPD products by HealthAssure</p>
+                    <p id="PlanName"></p>
                   </div>
                 </div>
                 <div class="row mb-3">
-                  <div class="col-3">
-                    <h3 id="PlanName"></h3>
+                  <div class="col-3 vertical-center">
+                    <h3><b>Benefits</b></h3>
                   </div>
-                  <div class="col-9" id="PlanServices">
+                  <div class="col-9" id="PlanBenefits">
                   </div>
                 </div>
-                <div class="row mb-3">
+                <!-- <div class="row mb-3">
                   <div class="col-3">
                     <h3>Email Id</h3>
                   </div>
                   <div class="col-9">
                     <p id="UserEmailId"></p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -314,6 +318,10 @@
                   <li>I have 7 days of freelook period from the date of issuance to cancel the policy incase i am not
                     satisfied with the Terms & Conditions of the plan and no cancellations will be entertained post that
                   </li>
+                  <li>
+                    Click <a href="https://live.healthassure.in/Products/files/TnC-ultima-grand.pdf">
+                      [https://live.healthassure.in/Products/files/TnC-ultima-grand.pdf]</a> to refer to detailed T&C
+                  </li>
                 </ul>
               </div>
             </div>
@@ -340,7 +348,7 @@
           </div>
           <div class="modal-body my-3" style="padding: 5px 10px;">
             <div>
-              <input type="text" class="form-control" placeholder="Enter OTP"
+              <input type="text" class="form-control" placeholder="Enter OTP" maxlength="6"
                 style="width: 300px;max-width: 300px;margin:0 auto" id="OTP">
               <span style="color: red;font-weight: bold;margin-left: 15px;" id="OtpMessage"></span>
             </div>
@@ -376,9 +384,11 @@
       ShowLoding(true);
       GetTransactionDetails(TransactionId).then(function (result) {
         plan = result.results.plan;
-        $('#PlanName').html(plan);
-        var PlanServices = "";
-        $.each(plan.services, function (key, p) {
+        $('#PlanName').html(plan.planName);
+        if (plan.planBenefits != null && plan.planBenefits != '' && plan.planBenefits != undefined) {
+          $('#PlanBenefits').html(plan.planBenefits);
+        }
+        /*$.each(plan.services, function (key, p) {
           if (p.isUnLimited.toUpperCase() == 'Y') {
             PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Unlimited</span></p>";
           }
@@ -388,8 +398,7 @@
           else if (parseInt(p.totalCredits, 10) > 0) {
             PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Credits : " + p.totalCredits + "</span></p>";
           }
-        });
-        $('#PlanServices').html(PlanServices);
+        });*/
         $('#UserEmailId').html(plan.email);
         $('#COVERAGE').html(parseInt(plan.relCount, 10) > 0 ? 'Family' : 'Self');
         $('#customername').html(plan.fullName);
@@ -408,7 +417,7 @@
         $.each(plan.relationDetails, function (key, r) {
           RelationDetails += "<tr><td>" + r.Name + "</td><td>" + r.Gender + "</td><td>" + r.DoB + "</td></tr>"
         });
-        if (RelationDetails != "") {
+        if (RelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
           $('#Relationstbody').html(RelationDetails);
           $('#RelationsTable').show();
         }
@@ -458,7 +467,7 @@
       if (IsotpVerified == 'Y') {
         $('#Submitpaymentbtn').text('Loding....');
         IsSubmitpaymentbtnEnabled(false);
-        BuyOPDPlan(plan.transactionId, plan.paymentGatewaykey, plan.planAmountWithGST+"00", plan.paymentOrderId, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
+        BuyOPDPlan(plan.transactionId, plan.paymentGatewaykey, plan.planAmountWithGST + "00", plan.paymentOrderId, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
 
         }).catch(function (err) {
           console.log(err);
@@ -488,7 +497,7 @@
       $('#OtpMessage').html('');
       $('#Submitpaymentbtn').text('Loding....');
       IsSubmitpaymentbtnEnabled(false);
-      GetOTPForEmailId($('#customerEamilId').text(), '', $('#customerMOBILENO').text()).then(function (result) {
+      GetOTPForEmailId($('#customerEamilId').text(), '', $('#customerMOBILENO').text(), plan.planCode).then(function (result) {
         $('#OTPPopupModal').modal('show');
       }).catch(function (error) {
         $('#OtpMessage').html(error.message);

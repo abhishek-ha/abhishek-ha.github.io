@@ -1,5 +1,5 @@
 // JavaScript source code
-const APiBaseURL = 'https://localhost:44301';
+const APiBaseURL = 'https://live.healthassure.in/ProductApi';
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
@@ -119,11 +119,11 @@ function VerifyEmailId(MobileNumbar, OTP, EmailId, Source) {
     });
 }
 
-function GetOTPForEmailId(Emailid, Source, MobileNo) {
+function GetOTPForEmailId(Emailid, Source, MobileNo, PlanCode) {
     return new Promise(function (resolve, reject) {
         $.ajax({
             type: "GET",
-            url: APiBaseURL + '/api/User/GetOTPForEmailId?EmailId=' + Emailid + '&Source=' + Source + '&MobileNo=' + MobileNo + '&TriggerType=LOGINOTP',
+            url: APiBaseURL + '/api/User/GetOTPForEmailId?EmailId=' + Emailid + '&Source=' + Source + '&MobileNo=' + MobileNo + '&TriggerType=PLANPURCHASEVERIFYOTP' + '&PlanCode=' + PlanCode,
             dataType: "json",
             headers: {
                 'Accept': 'application/json',
