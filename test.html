@@ -6,11 +6,20 @@
 </head>
 
 <body>
-    <button onclick="javascript:BuyOPDPlan('Deepak', 'deepak@uqwg.wrf', '573483834', '2000-01-01', 'male', 'SURAK01')">button</button/>
-
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="js/buyplans.js"></script> 
-    <!-- <script src="https://live.healthassure.in/buyplan/js/buyplansui.js"></script> -->
+   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+   <script src="https://www.healthassure.in/js/buyplansui.js"></script>
+  <script>
+       OpenBuyPlanPopup("Happy Gold", "HAOPDR004");
+  </script>
+    <!-- <script src="https://live.healthassure.in/buyplan/js/buyplanPayment.js"></script>
+    <script>
+        //TransactionId, razorpaykey, amount, order_id, description, Name, Email, MobileNo, image, Cname
+        BuyOPDPlan('HA342220220903123004','rzp_live_s9OlOps8piWMKx','100','order_KDKyE8P8FSSPSm', 'OPD', 'Deepak','DEEPAK@gmai.com', '7073896297','https://live.healthassure.in/ProductApi/image/logo/halogo.png','Healthassure').then(function (res) {
+            //console.log(res.message);
+        }).catch(function (err) {
+            console.log(err);
+        });
+    </script>  -->
 </body>
 
 </html>

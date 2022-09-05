@@ -115,14 +115,14 @@
                                     <div class="form-group mb-4">
                                         <label class="mb-2">First Name</label>
                                         <input class="form-control" type="text" placeholder="Enter First Name"
-                                            id="SelfFirstName" name="FirstName" maxlength="100">
+                                            id="SelfFirstName" name="FirstName" maxlength="100" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Last Name</label>
                                         <input class="form-control" type="text" placeholder="Enter Last Name"
-                                            id="SelfLastName" name="LastName" maxlength="100">
+                                            id="SelfLastName" name="LastName" maxlength="100" required>
 
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
                                         <label class="mb-2">Gender</label>
                                         <div class="d-flex">
                                             <div class="me-3">
-                                                <input type="radio" class="form-check-input" name="Selfgender" id="male"
+                                                <input type="radio" class="form-check-input" checked name="Selfgender" id="male"
                                                     value="Male">
                                                 <label for="male">Male</label>
                                             </div>
@@ -151,30 +151,30 @@
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">DOB</label>
-                                        <input class="form-control" type="date" id="SelfDob">
+                                        <input class="form-control" type="date" id="SelfDob" min="1920-01-01" max="2021-01-01" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Mobile No</label>
-                                        <input class="form-control" type="text" placeholder="Enter Mobile No"
-                                            id="SelfMobileNo" name="SelfMobileNo">
+                                        <input class="form-control" type="number" placeholder="Enter Mobile No" pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
+                                            id="SelfMobileNo" name="SelfMobileNo" maxlength="10" required>
 
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Email Id</label>
-                                        <input class="form-control" type="text" placeholder="Enter Email ID"
-                                            id="SelfEmailId" name="SelfEmailId">
+                                        <input class="form-control" type="email" placeholder="Enter Email ID"
+                                            id="SelfEmailId" name="SelfEmailId" required>
 
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Pin Code</label>
-                                        <input class="form-control" type="text" placeholder="Enter Pin Code"
-                                            id="SelfPincode" name="SelfPincode">
+                                        <input class="form-control" type="number" placeholder="Enter Pin Code"
+                                            id="SelfPincode" name="SelfPincode" maxlength="6" minlength="5" required>
 
                                     </div>
                                 </div>
@@ -182,11 +182,11 @@
                                     <div class="form-group mb-4">
                                         <label class="mb-2">Address</label>
                                         <input class="form-control" type="text" placeholder="Enter Address"
-                                            id="SelfAddress" name="SelfAddress">
+                                            id="SelfAddress" name="SelfAddress" required>
 
                                     </div>
                                 </div>
-                                <div class="col-12 mt-5">
+                                <div class="col-12">
                                     <div class="row">
                                         <div class="col-md-6 col-lg-4" style="display: none;" id="Member1div">
                                             <h3>Member 1</h3>
@@ -196,14 +196,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB1" class="form-control">
+                                                <input type="date" id="MemberDOB1" min="1920-01-01" max="2021-01-01" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender1" id="male" value="Male">
+                                                            name="Membergender1" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -227,14 +227,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB2" class="form-control">
+                                                <input type="date" id="MemberDOB2" min="1920-01-01" max="2021-01-01" class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender2" id="male" value="Male">
+                                                            name="Membergender2" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -258,14 +258,14 @@
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">DOB</label>
-                                                <input type="date" id="MemberDOB3" class="form-control">
+                                                <input type="date" id="MemberDOB3" min="1920-01-01" max="2021-01-01"  class="form-control">
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Gender</label>
                                                 <div class="d-flex">
                                                     <div class="me-3">
                                                         <input type="radio" class="form-check-input"
-                                                            name="Membergender3" id="male" value="Male">
+                                                            name="Membergender3" id="male" checked value="Male">
                                                         <label for="male">Male</label>
                                                     </div>
                                                     <div class="me-3">
@@ -283,8 +283,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6 col-lg-8" id="paymentlinkdiv">
+                                    <img src="images/True.png" alt="True" height="30" width="30">
+                                    <span style="color: #70C248;">Payment link sent successfuly</span>
+                                    <p><a id="paymentlinkid"
+                                            href=""></a><input type="button"
+                                            id="paymentlinkbtn"
+                                            style="background-color: transparent;border-radius: 0px;border-color: transparent;"
+                                            value="Copy"></button></p>
+                                </div>
                                 <div class="col-md-12 text-center my-4">
-                                    <button class="btn btn-primary">Submit</button>
+                                    <button class="btn btn-primary" id="formsubmitbtn">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -303,11 +312,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/InsuranceAgent.js"></script>
     <script>
+        $('#paymentlinkdiv').hide();
         function ShowLoding(flag = true) {
             if (flag) {
                 $('#loadding').show();
             } else {
                 $('#loadding').hide();
+            }
+        }
+        function IsSubmitbtnEnabled(flag) {
+            if (flag) {
+                $("#formsubmitbtn").prop('disabled', false);
+            } else {
+                $("#formsubmitbtn").prop('disabled', true);
             }
         }
         function AccessCodeTextonchange(event) {
@@ -354,10 +371,11 @@
                     $('#Member3div').hide();
                 }
                 if (RelCount == 2) {
+                    $('#Member1div').show();
                     $('#Member2div').show();
                     $('#Member3div').hide();
                 }
-                if (RelCount == 3) {
+                if (RelCount > 2) {
                     $('#Member1div').show();
                     $('#Member2div').show();
                     $('#Member3div').show();
@@ -370,6 +388,9 @@
         }
         $('#RegisterUserform').submit(function (e) {
             e.preventDefault();
+            $("#formsubmitbtn").text('Loding...');
+            $('#paymentlinkdiv').hide();
+            IsSubmitbtnEnabled(false);
             var Relations = [];
             var MemberName1 = $('#MemberName1').val();
             var MemberDOB1 = $('#MemberDOB1').val();
@@ -389,15 +410,25 @@
             var UserAddress = { "Address": $('#SelfAddress').val(), "PinCode": $('#SelfPincode').val() };
             CreateOrderOPDPlans($('#SelfFirstName').val() + ' ' + $('#SelfLastName').val(), $('#SelfEmailId').val(), $('#SelfMobileNo').val(), $('#SelfDob').val(), $('input[type="radio"][name="Selfgender"]:checked').val(),
                 $('#PlansDroupdown :selected').val(), Relations, UserAddress).then(function (result) {
-                    alert("Payemnt Link sent");
+                    $('#paymentlinkdiv').show();
+                    $("#formsubmitbtn").text('Submit');
+                    IsSubmitbtnEnabled(true);
                     RegistrationFormEmpty();
+                    $('#paymentlinkid').text(result.results.paymentLink);
+                    document.getElementById("paymentlinkid").setAttribute('href', result.results.paymentLink);
                 }).catch(function (error) {
+                    $("#formsubmitbtn").text('Submit');
+                    IsSubmitbtnEnabled(true);
                     PlansDroupdownEmpty();
                     if (error.subCode == 408) {
                         alert(error.message);
                     }
                     console.warn(error);
                 });
+        });
+        $('#paymentlinkbtn').click(function () {
+            navigator.clipboard.writeText($('#paymentlinkid').text());
+            $('#paymentlinkbtn').val('Copied');
         });
         function RegistrationFormEmpty() {
             $('#MemberName1').val('');
@@ -411,6 +442,8 @@
             $('#SelfEmailId').val('');
             $('#SelfMobileNo').val('');
             $('#SelfDob').val('');
+            $('#SelfPincode').val('');
+            $('#SelfAddress').val('');
         }
     </script>
 </body>
