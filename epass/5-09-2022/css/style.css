@@ -10,8 +10,8 @@
 body {
         font-family: 'Poppins', sans-serif!important;
         font-family: 'Rubik', sans-serif !important;
-        overflow-x:hidden!important;
-        font-size: 15px;
+            overflow-x:hidden!important;
+            font-size: 15px;
         }
 
 html{
@@ -502,15 +502,6 @@ content: "\f107";
 
 
 /*Button Section End */
-
-.trainername{
-       font-size: 15px;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #0E5FC1;
-}
 
 
 
