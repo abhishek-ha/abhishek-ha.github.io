@@ -1081,14 +1081,6 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .benefit img{
     width: 70px;   
 }
-.benefit span {
-    border-radius: 74px;
-    border: 2px solid #005af0;
-    padding: 7px 10px;
-    font-size: 28px;
-    color: #005af0;
-}
-
 .selected {
     background-color: #005af0;
     color: #ffffff;
