@@ -10,8 +10,8 @@
 body {
         font-family: 'Poppins', sans-serif!important;
         font-family: 'Rubik', sans-serif !important;
-            overflow-x:hidden!important;
-            font-size: 15px;
+        overflow-x:hidden!important;
+        font-size: 15px;
         }
 
 html{
@@ -279,6 +279,16 @@ background-color: #ffffff;
     background-repeat: no-repeat;
 
 }
+
+.footerbtm{
+     background-color: #ffffff;
+    background-image: url('../images/footerup.png');
+    width: 100%;
+    background-position: bottom;
+    padding: 15px;
+    background-repeat: no-repeat;
+
+}
 .footer h3{
     color: #ffffff;
     font-size: 22px;
@@ -298,8 +308,6 @@ background-color: #ffffff;
 .footer ul li a{
     color: #ffffff;
 }
-
-
 }
 @media only screen and (min-width: 700px){
    #accordion .panel-title a{
@@ -316,7 +324,6 @@ background-color: #ffffff;
     border-radius: 30px;
     text-decoration: none;
 }
-
 .footer{
     background-color: #1e66ba;
     background-image: url('../images/footerbg.png');
@@ -345,8 +352,6 @@ background-color: #ffffff;
 .footer ul li a{
     color: #ffffff;
 }
-
-
 }
 #accordion .panel-title a.collapsed:before{
 content: "\f107";
@@ -499,9 +504,20 @@ content: "\f107";
     color: #000000;
     border-radius: 20px;
 }
-
-
 /*Button Section End */
+.trainername{
+       font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0E5FC1;
+}
+
+.w-60{
+    width:60%!important;
+}
+
 
 
 
