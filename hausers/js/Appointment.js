@@ -1,16 +1,17 @@
-
+var reportsPath = '';
 var href = new URL(window.location.href);
-var Appointmentid = href.searchParams.get("Appointmentid");
+var Appointmentid = href.searchParams.get("AppointmentId");
 function maplocation(lat, long) {
     window.open('https://maps.google.com/?q=' + lat + ',' + lat);
 }
-function ViewRepots(reportSavePath) {
-    window.location.replace(reportSavePath);
-}
+
+$('#btnViewReports').click(function () {
+    window.open(reportsPath);
+});
 
 function LoadData(Appointmentid) {
     $.ajax({
-        url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -25,7 +26,6 @@ function LoadData(Appointmentid) {
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
-                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
@@ -43,8 +43,7 @@ function LoadData(Appointmentid) {
                 $("#txtProviderEmail").html('<i class="fa-solid fa-envelope"></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 if (data.results.reportSavePath != null) {
-                    console.log(data.results.reportSavePath)
-                    $("#btnViewReports").html('<button class="btn btn-reports" onclick="javascript:ViewRepots(' + data.results.reportSavePath + ')"> View Reports </button>');
+                    reportsPath = data.results.reportSavePath;
                 }
 
                 if (data.results.providerImage == null) {
@@ -60,10 +59,23 @@ function LoadData(Appointmentid) {
                     $("#dvPreprationForCheckup").hide();
                 }
                 if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
-                    $("#dvTestListBtn").show();
-                    $.each(data.results.coveredTests, function (key, value) {
-                        $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i> Advance Health Checkup <a href="#">' + value.testName + ' </a> </li>');
-                    });
+                    if (data.results.coveredTests.length = 1) {
+                        $.each(data.results.coveredTests, function (key, value) {
+                            // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
+                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
+                        });
+                    }
+                    else {
+                        $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
+                        $("#dvTestListBtn").show();
+                        $.each(data.results.coveredTests, function (key, value) {
+                            $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
+                        });
+                    }
+
+                }
+                else {
+                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
@@ -75,7 +87,7 @@ function LoadData(Appointmentid) {
                     $("#btnstatusname").css("background-color", "Blue");
                     $("#dvForRequestImage").show();
                 }
-                else if (data.results.statusname == 'Completed' || data.results.statusname =='Closed') {
+                else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").css("background-color", "Green");
                     $("#dvForCompletedImage").show();
@@ -112,7 +124,11 @@ $(function () {
     $("#dvForRequestImage").hide();
     $("#dvForCompletedImage").hide();
     $("#dvCaseNo").hide();
-    if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
+    debugger;
+    if (Appointmentid != undefined && Appointmentid != null) {
+        debugger;
+        LoadData(Appointmentid);
+    }
     else {
         window.location.replace("404.html");
     }

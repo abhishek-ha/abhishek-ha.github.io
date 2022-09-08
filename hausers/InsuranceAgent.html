@@ -71,10 +71,11 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 my-3">
-                                <h2>ACCESSCODE</h2>
+                                <h2>PARTNERCODE</h2>
                                 <div class="mt-3">
                                     <input type="text" class="form-control" id="AccessCode" name="AccessCode"
                                         onchange="AccessCodeTextonchange(this);">
+                                    <span id="PartnerName"></span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-3 my-3">
@@ -191,7 +192,7 @@
                                 <div class="col-12">
                                     <div class="row">
                                         <div class="col-md-6 col-lg-4" style="display: none;" id="Member1div">
-                                            <h3><b>Member 1</b></h3>
+                                            <h3><b>Adult</b></h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
                                                 <input type="text" id="MemberName1" class="form-control">
@@ -223,7 +224,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-4" style="display: none;" id="Member2div">
-                                            <h3><b>Member 2</b></h3>
+                                            <h3><b>Child 1</b></h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
                                                 <input type="text" id="MemberName2" class="form-control">
@@ -255,7 +256,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-lg-4" style="display: none;" id="Member3div">
-                                            <h3><b>Member 3</b></h3>
+                                            <h3><b>Child 2</b></h3>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2">Name</label>
                                                 <input type="text" id="MemberName3" class="form-control">
@@ -338,8 +339,13 @@
             GetPartnerPlanDetails(event.value).then(function (result) {
                 $("#PlansDroupdown").empty();
                 $.each(result.results.plans, function (key, p) {
-                    $('#PlansDroupdown').append('<option RelCount="' + p.relCount + '" value="' + p.planCode + '">' + p.planName + '</option>');
+                    $("#PartnerName").text(p.partnerName);
+                    $('#PlansDroupdown').append('<option AgeTo="' + p.ageTo + '" AgeFrom="' + p.ageFrom + '" RelCount="' + p.relCount + '" value="' + p.planCode + '">' + p.planName + '</option>');
                 });
+                $('#SelfDob').attr('min', result.results.plans[0].ageTo);
+                $('#SelfDob').attr('max', result.results.plans[0].ageFrom);
+                $('#MemberDOB1').attr('min', result.results.plans[0].ageTo);
+                $('#MemberDOB1').attr('max', result.results.plans[0].ageFrom);
                 if (result.results.plans[0].relCount == 0) {
                     $('#Plan-self').attr('checked', true);
                     $('#Member1div').hide();
@@ -374,6 +380,12 @@
         }
         function PlansDroupdownonchange(event) {
             RelCount = parseInt($('#PlansDroupdown :selected').attr("RelCount"), 10);
+            var AgeTo = $('#PlansDroupdown :selected').attr("AgeTo");
+            var AgeFrom = $('#PlansDroupdown :selected').attr("AgeFrom");
+            $('#SelfDob').attr('min', AgeTo);
+            $('#SelfDob').attr('max', AgeFrom);
+            $('#MemberDOB1').attr('min', AgeTo);
+            $('#MemberDOB1').attr('max', AgeFrom);
             if ($('#PlansDroupdown :selected').attr("RelCount") == 0) {
                 $('#Plan-family').attr('checked', false);
                 $('#Plan-self').attr('checked', true);
