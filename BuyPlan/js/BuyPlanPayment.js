@@ -15,9 +15,10 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
         if (Cname == '' || Cname == null || Cname == undefined) {
             Cname = 'HealthAssure';
         }
-        if (Cname == 'Renewbuy') {
+        if (Cname == 'RenewBuy' || Cname == 'Renewbuy') {
             logo = 'https://www.renewbuy.com/assets/rb-home/logo_rb.png';
             color = '#fc8704';
+            Cname = 'RenewBuy';
         } else {
             logo = 'https://live.healthassure.in/ProductApi/image/logo/halogo.png';
             color = '#3399cc';
@@ -29,7 +30,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             "amount": amount,
             "currency": "INR",
             "name": Cname,
-            "description": description,
+            "description": description?.replaceAll('%20',' '),
             "image": logo,
             "order_id": order_id,
             "handler": function (response) {
