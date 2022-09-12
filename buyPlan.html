@@ -696,7 +696,11 @@
             CustomerPhone_val = $('#CustomerPhone').val();
             var UtmSource = Vars["utm_source"];
             if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
-                UtmSource = PTitle;
+                //UtmSource = PTitle;
+                UtmSource="Plans Page";
+                if (Vars["PlanCode"] == "HAOPDR003-60") {
+                    UtmSource="7 Days Free Trial";
+                }
             }
             if (IsVarifyEmail != null && IsVarifyEmail == "true") {
                 SendOTPPopup($('#CustomerEmail').val());
