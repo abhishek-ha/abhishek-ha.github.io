@@ -294,7 +294,8 @@
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+              <div class="accordion-body" id="PlanTnCAsHtml">
+                
                 <ul>
                   <li>The prices mentioned above are exclusive of taxes</li>
                   <li>Discount on pharmacy would be applicable post wallet exhaustion</li>
@@ -399,6 +400,9 @@
         $('#PlanName').html(plan.planName);
         if (plan.planBenefits != null && plan.planBenefits != '' && plan.planBenefits != undefined) {
           $('#PlanBenefits').html(plan.planBenefits);
+        }
+        if (plan.planTnCAsHtml != null && plan.planTnCAsHtml != '' && plan.planTnCAsHtml != undefined) {
+          $('#PlanTnCAsHtml').html(plan.planTnCAsHtml);
         }
         /*$.each(plan.services, function (key, p) {
           if (p.isUnLimited.toUpperCase() == 'Y') {
