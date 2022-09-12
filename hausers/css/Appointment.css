@@ -137,12 +137,51 @@ line-height:26.5px ;
     font-size: 15px;
     line-height: 22px;
 }
+
+
+
+@media only screen and (max-width: 600px) {
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
     padding: 10px;
     border: 2px solid #0E5FC1;
+}
+
+.docbox p{
+    font-size: 9px;
+}
+.docbox .doctname{
+font-size: 15px;
+font-weight: 600;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: #0E5FC1;
+}
+.docbox .designation{
+    font-size: 15px;
+    font-weight: 600;
+}  
+}
+
+
+@media only screen and (min-width: 600px) {
+    .box p{
+    font-size: 15px;
+    line-height: 22px;
+}
+.docbox{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0E5FC1;
+}
+
+.docbox p{
+    font-size: 15px;
 }
 .docbox .doctname{
 font-size: 15px;
@@ -156,6 +195,17 @@ color: #0E5FC1;
     font-size: 15px;
     font-weight: 600;
 }
+  
+}
+
+
+
+
+
+
+
+
+
 .docbox1{
     background-color: #ffffff;
     border-radius: 20px;
