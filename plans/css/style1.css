@@ -272,23 +272,23 @@ a:hover{
            max-width:300px;
            margin-top:10px;
         }
-      .item31 img {
+.item31 img {
             width: 120px;
             background-color: rgba(74, 78, 238, 0.01);
             padding: 25px 25px 5px 25px;
             border-radius: 10px;
             margin-bottom: 0;
         }
-       .item31 p {
+.item31 p {
             font-weight: 500;
             color: #212121;
             font-size: 14px;
         }
-      .item31 p.sub {
+.item31 p.sub {
             font-weight: 400;
             font-size: 90%;
         }
-    .plancard {
+.plancard {
            color: #000000;
             background-color: #ffffff;
             box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
@@ -2006,6 +2006,11 @@ a:hover{
     font-size: 12px;
      font-weight: 600;
 }
+.inrspace{
+    padding-top: 3rem;
+}
+
+
 }
 
 
@@ -2014,6 +2019,11 @@ a:hover{
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.inrspace{
+    padding-top: 3rem;
+}
+
 .pt-bnr {
     padding-top: 200px;
     text-align: center;
@@ -2544,12 +2554,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .brandingwala1{
      background-color:#fcfcfc;
-    height:549px;
+    height:640px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2578,14 +2585,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
 .brandingwala2{
      background-color:#fcfcfc;
-    height:549px;
+    height:631px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -5522,7 +5524,7 @@ a:hover{
 
 .brandingwala{
      background-color:#fcfcfc;
-    height:546px;
+    height:522px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9605,10 +9607,9 @@ a:hover{
    color:#ffffff!important;
 }
 
-
 .brandingwala2{
      background-color:#fcfcfc;
-    height:588px;
+    height:567px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11272,17 +11273,17 @@ a:hover{
 }
 @media only screen and (min-width: 1000px){
 
+ .inrspace{
+    padding-top: 0.4rem;
+}
 .sodexolrmargin{
     margin-left: 25px;
     margin-right: 25px;
 }
-
-
 .head {
             font-size: 40px;
         }
-
- .pt-bnr {
+.pt-bnr {
     padding-top: 100px;
     text-align:right;
         }
@@ -11695,7 +11696,7 @@ a:hover{
 
 .brandingwala{
      background-color:#fcfcfc;
-    height:666px;
+    height:535px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11724,16 +11725,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
-
 .brandingwala1{
      background-color:#fcfcfc;
-    height:666px;
+    height:535px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11762,12 +11756,9 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .brandingwala2{
      background-color:#fcfcfc;
-    height:666px;
+    height:546px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -12617,6 +12608,10 @@ a:hover{
     margin-right: 30px;
 }
 
+.inrspace{
+    padding-top: 1.5rem;
+}
+
 
  .pt-bnr {
     padding-top: 230px;
@@ -12927,8 +12922,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .brandingwala1{
      background-color:#fcfcfc;
     height:546px;
@@ -12991,10 +12984,6 @@ a:hover{
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
 .merabima{
      background-color:#fcfcfc;
     height:516px;
@@ -13326,6 +13315,11 @@ a:hover{
 }
 }
 @media only screen and (min-width: 1300px){
+
+.inrspace{
+    padding-top:3rem;
+}
+
     .sodexolrmargin{
     margin-left: 40px;
     margin-right: 40px;
@@ -19336,9 +19330,6 @@ h4{color:#444}
         text-align: left;
     }
 }
-
-
-
 
 .progress {
   width: 150px;
