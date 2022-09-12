@@ -348,6 +348,9 @@ background-color: #ffffff;
 .footer ul li a{
     color: #ffffff;
 }
+.footer p a{
+    color: #ffffff!important;
+}
 
 
 }
