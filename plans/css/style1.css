@@ -9802,7 +9802,7 @@ a:hover{
     padding-top: 40px;
  }
 .startassu{
-    font-size:60px;
+    font-size:32px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
      padding-bottom:40px;
@@ -9894,11 +9894,9 @@ a:hover{
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .brandingwala{
      background-color:#fcfcfc;
-    height:666px;
+    height:568px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9930,7 +9928,7 @@ a:hover{
 
 .brandingwala1{
      background-color:#fcfcfc;
-    height:666px;
+    height:568px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9961,7 +9959,7 @@ a:hover{
 }
 .brandingwala2{
      background-color:#fcfcfc;
-    height:666px;
+    height:568px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
