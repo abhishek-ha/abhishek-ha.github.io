@@ -36,27 +36,20 @@
 .shadow-none {
   box-shadow: none !important;
 }
-
 .w-25 {
   width: 25% !important;
 }
-
 .w-50 {
   width: 50% !important;
 }
-
 .w-75 {
   width: 75% !important;
 }
-
 .w-100 {
   width: 100% !important;
-}
-
-.w-auto {
+}.w-auto {
   width: auto !important;
 }
-
 .h-25 {
   height: 25% !important;
 }
@@ -580,7 +573,29 @@
             transform: rotate(0deg);
             transition: all 0.5s;
         }
-
-        .panel-group {
+.panel-group {
     margin-bottom: 0px;
 }
+
+.boxdesign{
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px -3px rgb(0 0 0 / 75%);
+  padding: 10px;
+  max-width:150px ;
+  text-align: center;
+}
+
+.boxdesign img{
+  width: 100px;
+}
+
+.boxdesign h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f5fc2;
+}
+
+.boxdesign p{
+  font-size: 14px;
+}
+
