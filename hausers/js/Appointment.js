@@ -22,6 +22,7 @@ function LoadData(Appointmentid) {
         success: function (data) {
             console.log('success');
             if (data.status && data.results != null) {
+                document.title = ' DI-Appointment ' + data.results.statusname ;
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
@@ -49,7 +50,7 @@ function LoadData(Appointmentid) {
                 if (data.results.providerImage == null) {
                     $("#imgProviderImage").hide();
                 } else {
-                    $("#imgProviderImage").html('<img src="' + data.results.providerImage + 'images/apollo-logo.png" class="img-fluid">');
+                    $("#imgProviderImage").html('<img src="' + data.results.providerImage + 'images/apollo-logo.png" class="img-fluid" alt="">');
                 }
                 if (data.results.PointOfContact == null) {
                     $("#dvPointOfContact").hide();
@@ -84,7 +85,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Blue");
+                    $("#btnstatusname").css("background-color", "gray");
                     $("#dvForRequestImage").show();
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {

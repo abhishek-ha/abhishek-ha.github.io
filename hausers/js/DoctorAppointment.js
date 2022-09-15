@@ -40,7 +40,7 @@ function LoadData(Appointmentid) {
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
                 $("#btnPaymentSettlementMode").html('<i class="fa-solid fa-box-archive"></i> ' + data.results.paymentSettlementMode);
-                $("#txtProviderName").text(data.results.providerName);
+                $("#txtProviderName").text(data.results.serviceName);
                 $("#txtProviderMobile").html('<i class="fa-solid fa-phone"></i> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-solid fa-envelope"></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
@@ -86,7 +86,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Blue");
+                    $("#btnstatusname").css("background-color", "Gray");
                     $("#dvForRequestImage").show();
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname =='Closed') {
