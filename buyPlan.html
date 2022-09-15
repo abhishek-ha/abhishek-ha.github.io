@@ -761,9 +761,8 @@
             </div>
         </div>
     </div>
-    <script src="js/buyplans.js"></script>
+    <script src="js/buyplans.min.js"></script>
     <script>
-        debugger;
         $('#IsTCAccepted').click(function (e) {
             if (this.checked) {
                 $("#Placeorder").prop('disabled', false);
@@ -1198,7 +1197,7 @@
             var MemberName2 = $('#MemberName2').val();
             var MemberDOB2 = $('#MemberDOB2').val();
             var MemberName3 = $('#MemberName3').val();
-            var MemberDOB3 = $('#MemberDOB2').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
             if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
                 Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="MemberGender1"]:checked').val() });
             }
