@@ -98,7 +98,7 @@ line-height:26.5px ;
     font-weight: 700;
 }
 .logo{
-    width: 100px;
+    width: 55px;
     float: right;
 }
 .box{
@@ -551,6 +551,11 @@ content: "\f107";
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+}
+
+.btn-w120{
+    width: 120px;
+    cursor: pointer;
 }
 
 
