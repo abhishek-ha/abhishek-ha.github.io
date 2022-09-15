@@ -581,18 +581,22 @@
   background-color: #ffffff;
   box-shadow: 0 2px 8px -3px rgb(0 0 0 / 75%);
   padding: 10px;
-  max-width:150px ;
+  width:150px ;
   text-align: center;
+  height: 122px;
 }
 
 .boxdesign img{
   width: 100px;
+   /*transform: rotateY(180deg);*/
 }
 
 .boxdesign h4{
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   color: #0f5fc2;
+  margin-top: -58px;
+  margin-left: 10px;
 }
 
 .boxdesign p{

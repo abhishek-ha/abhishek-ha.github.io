@@ -414,6 +414,30 @@ content: "\f107";
     font-weight: 600;
     line-height: 18px;
 }
+
+.paymentduebtn{
+    background-color:#0BA9BB; 
+    color:#ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+     min-width: 180px;
+}
+.paymentduebtn:hover{
+    background-color:#1f67bb;
+    color:#ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+
+
+
+
+
 .btn-success {
     color: #fff;
     background-color: #28a745;
@@ -467,6 +491,22 @@ content: "\f107";
     border-radius: 20px;
     border: 1px solid #F5720A;
 }
+.btn-green{
+    background-color:#63C292;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #63C292;
+     font-size: 12px;
+     font-weight: 600;
+     min-width: 180px;
+}
+.btn-green:hover{
+    background-color:#f42415;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #F5720A;
+}
+
 .btn-primary1{
     background-color:#0E5FC1 ;
     color: #ffffff;
