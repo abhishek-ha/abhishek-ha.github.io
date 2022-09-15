@@ -553,6 +553,11 @@ content: "\f107";
     border-radius: 20px;
 }
 
+.btn-w120{
+    width: 120px;
+    cursor: pointer;
+}
+
 
 /*Button Section End */
 
