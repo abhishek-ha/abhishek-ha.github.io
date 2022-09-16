@@ -1,6 +1,6 @@
 (function () {
     $('body').prepend("<div style=' background-color: rgba(0, 0, 0, 0.5);'> <style>"
-        +".popup-wrapper{display:none;position:fixed;z-index:99999;padding-top:10px;padding-bottom:30px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.4)}@media only screen and (max-width:600px){.popup-content{margin:auto auto 30px;padding:20px 20px 70px;border:0 solid #888;width:40%;position:relative;min-height:84%}}@media only screen and (min-width:601px){.popup-content,.popup-content1{margin:auto auto 30px;padding:20px 20px 70px;border:0 solid #888;width:40%;position:relative;min-height:84%}}"+
+        + ".popup-wrapper{display:none;position:fixed;z-index:99999;padding-top:10px;padding-bottom:30px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,.4)}@media only screen and (max-width:600px){.popup-content{margin:auto auto 30px;padding:20px 20px 70px;border:0 solid #888;width:40%;position:relative;min-height:84%}}@media only screen and (min-width:601px){.popup-content,.popup-content1{margin:auto auto 30px;padding:20px 20px 70px;border:0 solid #888;width:40%;position:relative;min-height:84%}}" +
         "            @keyframes animatetop {" +
         "                from {" +
         "                    top: -300px;" +
@@ -28,8 +28,8 @@ function getUrlVars1(url = window.location.href) {
     return vars;
 }
 var Vars1 = getUrlVars1();
-function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false, IsVarifyEmail = false, EmailDomain = "") {
-    $('#BuyPlaniframe').attr('src', 'https://healthassure.in/buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain);
+function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false, IsVarifyEmail = false, EmailDomain = "", IsVarifyEmailPhoneTNC = false, IsEnableMembersAddtion = false) {
+    $('#BuyPlaniframe').attr('src', 'https://healthassure.in/buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain + '&IsVarifyEmailPhoneTNC=' + IsVarifyEmailPhoneTNC + '&IsEnableMembersAddtion=' + IsEnableMembersAddtion);
     openmodal();
 }
 
