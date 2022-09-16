@@ -609,7 +609,7 @@
                         <label class="form-check-label" for="inlineRadio2">Female</label>
                     </div>
                     <div class="addmembermodal" id="Membersdiv" style="display: none;">
-                        <button class="accordion" type="button" style="margin-top:20px;"> Adult </button>
+                        <button class="accordion" type="button" style="margin-top:20px;"> Member1 </button>
                         <div class="panel">
                             <div class="form-group">
                                 <label class="form-label pl-2px" for="CustomerName">Name</label>
@@ -632,7 +632,7 @@
                                 <label class="form-check-label" for="MemberGender1">Female</label>
                             </div>
                         </div>
-                        <button type="button" type="button" class="accordion">Child</button>
+                        <button type="button" type="button" class="accordion">Member2</button>
                         <div class="panel">
                             <div class="form-group">
                                 <label class="form-label pl-2px" for="CustomerName">Name</label>
@@ -656,7 +656,7 @@
                             </div>
                         </div>
 
-                        <button type="button" type="button" class="accordion"> Child </button>
+                        <button type="button" type="button" class="accordion"> Member3 </button>
                         <div class="panel">
                             <div class="form-group">
                                 <label class="form-label pl-2px" for="CustomerName">Name</label>
@@ -724,7 +724,7 @@
                                 <span class="close"><a style="border: radius 0;margin: 0px 10px 0px 0px !important;"
                                         href="javascript:closebuyplanpopup()">&times;</a></span>
                                 <h6> Please enter the one time password </h6>
-                                <div> <span> sent to </span> <small id='emailidtext1'>demo</small> </div>
+                                <div> <span> OTP sent to </span> <small id='emailidtext1'>demo</small> </div>
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
                                         <div id='otp' class='inputs justify-content-center mt-2 otpboxspace'>
@@ -812,6 +812,13 @@
             event.preventDefault();
             if (!VarifyEmailDomain($('#CustomerEmail').val(), EmailDomain)) {
                 return false;
+            }
+            if (IsEnableMembersAddtion == 'true') {
+                var rel = GetRelations();
+                if (rel.length < 3) {
+                    alert('Please fill up member details');
+                    return;
+                }
             }
             $('#Placeorder').html('Processing...');
             var CustomerDOB = $('#CustomerDOB').val();
@@ -1050,7 +1057,11 @@
             $('#congratulationsdiv').hide();
             $('#buyplanformdiv').hide();
             $('#otpapp').show();
-            $('#emailidtext1').html(Email);
+            if (MobileNo == undefined || MobileNo == '') {
+                $('#emailidtext1').html(Email);
+            } else {
+                $('#emailidtext1').html(Email + ' & ' + MobileNo);
+            }
             GetEmailOTPforValidation(Email, MobileNo, TriggerType, PlanCode).then(function (result) {
                 $('#' + timerFName).html('00:00');
                 var leftover = result.results.otpExpiryTime;
