@@ -36,7 +36,7 @@ function GetPartnerPlanDetails(PartnerCode) {
     });
 }
 
-function CreateOrderOPDPlans(Name, Email, MobileNo, DOB, Gender, PlanCode, Relations, UserAddress) {
+function CreateOrderOPDPlans(Name, Email, MobileNo, DOB, Gender, PlanCode, Relations, UserAddress, OPDPartnerDetailsId) {
     return new Promise(function (resolve, reject) {
         $.ajax({
             type: "POST",
@@ -47,7 +47,7 @@ function CreateOrderOPDPlans(Name, Email, MobileNo, DOB, Gender, PlanCode, Relat
                 'Content-Type': 'application/json',
                 'PartnerOPDPlanApiKey': '14UGczJo0lYOe5ilSzlT2cvLTj1lymz2lRWaBCwIQMd=pnIKeTDBAYApRXj6xO'
             },
-            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, Relations: Relations, UserAddress: UserAddress, IsSendPaymentLink: true }),
+            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, Relations: Relations, UserAddress: UserAddress, IsSendPaymentLink: true, PartnerOrderId: OPDPartnerDetailsId }),
             success: function (result) {
                 console.warn(result.message);
                 if (result.status) {

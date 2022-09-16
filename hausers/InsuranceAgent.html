@@ -340,7 +340,7 @@
                 $("#PlansDroupdown").empty();
                 $.each(result.results.plans, function (key, p) {
                     $("#PartnerName").text(p.partnerName);
-                    $('#PlansDroupdown').append('<option AgeTo="' + p.ageTo + '" AgeFrom="' + p.ageFrom + '" RelCount="' + p.relCount + '" value="' + p.planCode + '">' + p.planName + '</option>');
+                    $('#PlansDroupdown').append('<option OPDPartnerDetailsId="' + p.opdPartnerDetailsId + '" AgeTo="' + p.ageTo + '" AgeFrom="' + p.ageFrom + '" RelCount="' + p.relCount + '" value="' + p.planCode + '">' + p.planName + '</option>');
                 });
                 $('#SelfDob').attr('min', result.results.plans[0].ageTo);
                 $('#SelfDob').attr('max', result.results.plans[0].ageFrom);
@@ -437,9 +437,10 @@
             if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
                 Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="Membergender3"]:checked').val() });
             }
+            var OPDPartnerDetailsId = $('#PlansDroupdown :selected').attr("OPDPartnerDetailsId");
             var UserAddress = { "Address": $('#SelfAddress').val(), "PinCode": $('#SelfPincode').val() };
             CreateOrderOPDPlans($('#SelfFirstName').val() + ' ' + $('#SelfLastName').val(), $('#SelfEmailId').val(), $('#SelfMobileNo').val(), $('#SelfDob').val(), $('input[type="radio"][name="Selfgender"]:checked').val(),
-                $('#PlansDroupdown :selected').val(), Relations, UserAddress).then(function (result) {
+                $('#PlansDroupdown :selected').val(), Relations, UserAddress, OPDPartnerDetailsId).then(function (result) {
                     $('#paymentlinkdiv').show();
                     $("#formsubmitbtn").text('Submit');
                     IsSubmitbtnEnabled(true);
