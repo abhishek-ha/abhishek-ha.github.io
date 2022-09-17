@@ -102,6 +102,7 @@
         <p class="text-end"><span class="me-2">Helpline number :</span><span>022 6167-6633</span></p>
       </div>
       <div class="custom-container mt-5">
+        <p style="margin-left: 15px;">Application Number: <strong id="ApplicationNumber"></strong></p>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item mb-3">
             <h2 class="accordion-header" id="headingOne">
@@ -398,6 +399,7 @@
       GetTransactionDetails(TransactionId).then(function (result) {
         plan = result.results.plan;
         $('#PlanName').html(plan.planName);
+        $('#ApplicationNumber').text(plan.transactionId);
         if (plan.planBenefits != null && plan.planBenefits != '' && plan.planBenefits != undefined) {
           $('#PlanBenefits').html(plan.planBenefits);
         }

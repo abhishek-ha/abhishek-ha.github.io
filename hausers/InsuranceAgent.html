@@ -295,6 +295,7 @@
                                     <p><a id="paymentlinkid" href=""></a><input type="button" id="paymentlinkbtn"
                                             style="background-color: transparent;border-radius: 0px;border-color: transparent;"
                                             value="Copy"></button></p>
+                                    <p style="margin-left: 5px;">Application Number: <strong id="ApplicationNumber"></strong></p>       
                                 </div>
                                 <div class="col-md-12 text-center my-4">
                                     <button class="btn btn-primary" id="formsubmitbtn">Submit</button>
@@ -447,6 +448,7 @@
                     RegistrationFormEmpty();
                     $('#paymentlinkid').text(result.results.paymentLink);
                     document.getElementById("paymentlinkid").setAttribute('href', result.results.paymentLink);
+                    $('#ApplicationNumber').text(result.results.transaction.transactionId);
                 }).catch(function (error) {
                     $("#formsubmitbtn").text('Submit');
                     IsSubmitbtnEnabled(true);
