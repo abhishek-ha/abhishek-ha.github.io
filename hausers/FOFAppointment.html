@@ -34,7 +34,7 @@
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-12">
 					<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge"
-						class="btn btn-primary1"> Female </button>
+						class="btn btn-primary1 ml-20"> Female </button>
 					<div class="row">
 						<div class="col-lg-12 mt-4 ">
 							<div class="box pt-4">
@@ -44,48 +44,41 @@
 									<div class="col-lg-12 mt-3">
 										<h4> Appoinment Date </h4>
 									</div>
-									<div class="col-lg-6">
-										<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday,
-											12
-											June </p>
-									</div>
-									<div class="col-lg-6">
-										<p id="txtAppointmentTime"> <i class="fa-solid fa-clock"></i> 11:00 - 12:00 </p>
+			<div class="col-lg-6 col-6">
+<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday,
+	12 June </p>
+		</div>
+									<div class="col-lg-6 col-6">
+									<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
 									</div>
 									<div class="col-lg-12 col-md-12">
 										<h4> Center Location </h4>
 									</div>
-									<div class="col-lg-2" id="imgProviderImage">
+									<div class="col-lg-2 col-3" id="imgProviderImage">
 										<img src="images/apollo-logo.png" class="img-fluid">
 									</div>
-									<div class="col-lg-10">
-										<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar
-											Pradesh 201301 <img src="images/google-map.png" width="15"> Location </p>
+									<div class="col-lg-10 col-9">
+<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar Pradesh 201301 <img src="images/google-map.png" width="15"> Location </p>
 									</div>
-									<div class="col-lg-12 mt-3">
+									<div class="col-lg-12 ">
 										<h4> Appointment For </h4>
-										<p id="txtplanName"><i class="fa-solid fa-circle-check text-success"></i> Annual
-											Health Checkup <a href="#">(10 Tests Covered) </a> </p>
-
-									</div>
+<p id="txtplanName"><i class="fa-solid fa-circle-check text-success"></i> Annual
+		Health Checkup <a href="#">(10 Tests Covered) </a> </p>
+                                  </div>
 								</div>
 								<div class="col-lg-12 mt-2" id="dvTestListBtn">
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">
-														Check Tests Covered </a>
-												</h4>
+					<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title">
+<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Tests Covered </a> </h4>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
 												aria-labelledby="headingOne">
 												<div class="panel-body">
 
-													<div class="accordion ">
-														<ul id="ulTest" type="none">
+										<div class="accordion ">
+											<ul id="ulTest" type="none">
 														</ul>
 													</div>
 												</div>
@@ -95,7 +88,7 @@
 								</div>
 								<div id="dvCaseNo">
 									<h4 class="mb-0 pt-4 pb-2"> Case Id </h4>
-									<button id="btnCaseNo" class="btn btn-primary1">APPOLO345676 </button>
+<button id="btnCaseNo" class="btn btn-primary1"> APPOLO345676 </button>
 								</div>
 							</div>
 						</div>
@@ -103,16 +96,16 @@
 				</div>
 
 				<div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-5 ">
-					<img src="images/doctor-visit.png" class="img-fluid w-75 float-end">
+					<img src="images/doctor-visit.png" class="img-fluid w-75">
 				</div>
 
 				<div class="col-lg-12 col-md-12 mt-3">
 					<div class="border border-radius" id="dvForCancelImage">
-						<h3 class="text-center pt-5"><b> Sorry, your appointment has been cancelled </b></h3>
+<h3 class="text-center pt-5"><b>Sorry, your appointment has been cancelled</b></h3>
 						<p class="text-center"> We request you to please schedule an appointment again! </p>
 						<div class="row">
 							<div class="col-lg-12 col-md-12 text-center">
-								<img src="images/calender.png" class="img-fluid w-15 mb-4" />
+				<img src="images/calender.png" class="img-fluid w-15 mb-4" />
 							</div>
 						</div>
 					</div>
@@ -152,43 +145,21 @@
 										<div class="col-lg-12 ">
 											<div id="dvDurationForTest">
 												<h4> Duration for Test </h4>
-												<p id="txtDurationForTest"> <i class="fa-solid fa-clock"></i> Under 45
+<p id="txtDurationForTest"> <i class="fa-regular fa-clock"></i> Under 45
 													Mins </p>
 											</div>
 											<div id="dvPointOfContact">
-												<h4 class="pt-2"> Point Of Contact </h4>
+					<h4 class="pt-2"> Point Of Contact </h4>
 												<div class="docbox">
-													<p class="pt-2"> <i class="fa-solid fa-2x fa-user-doctor text-primary pl-3"></i> <span id="txtPointOfContact" class="doctname ml-5"> Dr. Sameer Ale </span> <span class="designation"> General Doctor </span></p>
+<p class="pt-2"> <i class="fa-solid fa-2x fa-user-doctor text-primary pl-3"></i> <span id="txtPointOfContact" class="doctname ml-5"> Dr. Sameer Ale </span> <span class="designation"> General Doctor </span></p>
 												</div>
 											</div>
-											<h4 class="pt-4"> Fasting Required </h4>
-											<button id="btnFasting" class="btn btn-primary1"> Yes </button>
-											<h4 class="pt-4 mb-0"> Payment Mode </h4>
-											<p id="txtPaymentMode"> <i class="fa-solid fa-box-archive"></i> Prepaid </p>
-											<div id="dvPreprationForCheckup">
-												<h4> Prepration For Checkup </h4>
-												<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the
-													printing and typesetting industry.
-													Lorem
-													Ipsum has been the industry's standard dummy text ever since the
-													1500s, when
-													an
-													unknown printer took a galley of type and scrambled it to make a
-													type
-													specimen
-													book. Lorem Ipsum is simply dummy text of the printing and
-													typesetting
-													industry.
-													Lorem Ipsum has been the industry's standard dummy text ever since
-													the
-													1500s,
-													when an unknown printer took a galley of type and scrambled it to
-													make a
-													type
-													specimen book. It has survived not only five centuries, but also the
-													leap
-													into
-													electronic typesetting, remaining essentially unchanged. </p>
+						<h4 class="pt-4"> Fasting Required </h4>
+				<button id="btnFasting" class="btn btn-primary1"> Yes </button>
+							<h4 class="pt-4 mb-0"> Payment Mode </h4>
+<p id="txtPaymentMode"> <img src="images/wallet.png" width="15px"> Prepaid </p><div id="dvPreprationForCheckup">
+<h4> Prepration For Checkup </h4>
+<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 											</div>
 										</div>
 									</div>
@@ -208,27 +179,21 @@
 											<h4> Technician </h4>
 											<button id="btnTechnician" class="btn btn-success"> Female </button>
 											<h4> Payment Settlement Mode</h4>
-											<p id="btnPaymentSettlementMode"> <i class="fa-solid fa-box-archive"></i>
+	<p id="btnPaymentSettlementMode"> <img src="images/wallet.png" width="15px">
 												Credit </p>
 											<h4> Report Sharing with Customer </h4>
 											<button id="btnReportSharing" class="btn btn-secondary"> No </button>
 											<h4> Appointment Recieved By at Centre</h4>
 											<div class="docbox">
 												<div class="row">
-													<div class="col-lg-3 pt-2">
-														<img src="images/users.png" class="img-fluid">
+								<div class="col-lg-3 col-3 pt-2">
+							<img src="images/users.png" class="img-fluid w-75">
 													</div>
-													<div class="col-lg-9">
-														<p class="pt-2 mb-0"> <span id="txtProviderName"
-																class="doctname"> Mr. Abhishek Singh
-															</span>
-														</p>
-														<p id="txtProviderMobile" class="mb-0"> <i
-																class="fa-solid fa-phone"></i> +91- 995544888
-														</p>
-														<p id="txtProviderEmail"> <i class="fa-solid fa-envelope"></i>
-															support@healthassure.in </p>
-													</div>
+<div class="col-lg-9 col-9">
+<p class="pt-2 mb-0"> <span id="txtProviderName" class="doctname"> Mr. Abhishek Singh </span> </p>
+		<p id="txtProviderMobile" class="mb-0"> <i class="fa-solid fa-phone"></i> +91- 995544888 </p>
+<p id="txtProviderEmail"> <i class="fa-regular fa-envelope"></i> support@healthassure.in </p>
+				</div>
 												</div>
 											</div>
 										</div>
@@ -255,10 +220,10 @@
 					<div class="col-lg-4">
 						<div class="row">
 							<div class="col-lg-6">
-								<p> <i class="fa-solid fa-envelope"></i> Support@healthassure.in </p>
+			<p> <i class="fa-regular fa-envelope"></i> support@healthassure.in </p>
 							</div>
 							<div class="col-lg-6">
-								<p> <i class="fa-solid fa-phone-volume"></i> 912261676600/33</p>
+					<p> <img src="images/email.png" width="10px"> 912261676600/33</p>
 							</div>
 							<div class="col-lg-9 offset-lg-3 ">
 								<ul>
@@ -275,17 +240,13 @@
 						</div>
 
 					</div>
-
-
-					<div class="col-lg-4 text-center">
+      <div class="col-lg-4 text-center">
 						<h3> Download Now </h3>
 						<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank"><img src="images/playstore.png" class="img-fluid w-40"></a>
     	                <a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485" target="_blank"><img src="images/appstore.png" class="img-fluid w-40"> </a>
     	
 					</div>
-
-
-				</div>
+                </div>
 			</div>
 
 		</section>

@@ -34,6 +34,22 @@ font-size:20px ;
 line-height:26.5px ;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 40px;
+    }   
+}
+
+
+@media only screen and (min-width: 601px) {
+    .logo{
+        width: 60px;
+    }   
+}
+
+
+
 .bold{
     font-weight: 700;
 }
@@ -74,10 +90,6 @@ line-height:26.5px ;
     border-radius: 20px;
 }
 
-.logo{
-    width: 150px;
-    float: right;
-}
 .box{
     background: rgba(12, 85, 173, 0.03);
     padding: 15px;
@@ -137,8 +149,6 @@ color: #0E5FC1;
     font-size: 14px;
     font-weight: 600;
 }
-
-
 .accordion-button:not(.collapsed) {
     color: #ffffff;
     background-color: #0E5FC1;
@@ -164,7 +174,6 @@ color: #0E5FC1;
     width: 100%;
     background-position: center;
     padding: 15px;
-
 }
 .footer h3{
     color: #ffffff;
@@ -243,7 +252,6 @@ ul{
     font-weight: 600;
     min-width: 228px;
 }
-
 .btn-reports:hover{
     background-color:#0C55AD;
     color: #ffffff;
@@ -255,8 +263,11 @@ ul{
     background-color: #ffffff;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%); 
     border-radius: 5px; 
-
 }
+.ml-20{
+    margin-left: 20px;
+}
+
 
 
  

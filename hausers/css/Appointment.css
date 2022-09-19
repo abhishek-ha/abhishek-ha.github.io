@@ -97,10 +97,23 @@ line-height:26.5px ;
 .bold{
     font-weight: 700;
 }
-.logo{
-    width: 55px;
-    float: right;
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        width: 82px;
+    }   
 }
+
+
+@media only screen and (min-width: 601px) {
+    .logo{
+        width: 120px;
+    }   
+}
+
+
+
+
 .box{
     background: rgba(12, 85, 173, 0.03);
     padding: 10px 15px 10px 15px;
@@ -321,7 +334,7 @@ background-color: #ffffff;
     border-radius: 20px;
 }
 .footer{
-    background-color: #1e66ba;
+    background-color: #0e5fc1;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
@@ -453,6 +466,7 @@ content: "\f107";
     font-weight: 600;
     line-height: 18px;
      min-width: 180px;
+     text-transform: uppercase;
 }
 .appoinmentbtn:hover{
     background-color:#1f67bb;
@@ -493,6 +507,7 @@ content: "\f107";
     font-size: 12px;
     min-width: 180px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -508,6 +523,7 @@ content: "\f107";
      font-size: 12px;
      font-weight: 600;
      min-width: 180px;
+     text-transform: uppercase;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -525,6 +541,7 @@ content: "\f107";
     font-size: 12px;
      font-weight: 600;
 }
+
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
@@ -557,9 +574,11 @@ content: "\f107";
     width: 120px;
     cursor: pointer;
 }
-
-
 /*Button Section End */
+
+.ml-20{
+    margin-left: 20px;
+}
 
 
 

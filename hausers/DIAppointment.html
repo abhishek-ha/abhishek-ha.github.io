@@ -15,6 +15,42 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
 		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0px 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 2px;
+}
+</style>
+
 
 </head>
 
@@ -23,17 +59,16 @@
 	<div id="body">
 		<div class="container mt-5">
 			<div class="row">
-				<div class="col-xl-10 col-lg-10 col-md-10 col-9">
+				<div class="col-xl-10 col-lg-10 col-md-10 col-8">
 					<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
 				</div>
-				<div class="col-xl-2 col-lg-2 col-md-2 col-3 float-end">
+				<div class="col-xl-2 col-lg-2 col-md-2 col-4 float-end">
 					<img src="images/logo.png" class="img-fluid logo ">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-					<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge"
-						class="btn btn-primary1"> Female </button>
+	<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge" class="btn btn-primary1 ml-20"> Female </button>
 					<div class="row">
 						<div class="col-lg-12 mt-4 ">
 							<div class="box pt-4">
@@ -43,11 +78,11 @@
 									<div class="col-lg-12 mt-3">
 										<h4> Appoinment Date </h4>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-12">
 							<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday, 12 June </p>
 									</div>
-									<div class="col-lg-6">
-										<p id="txtAppointmentTime"> <i class="fa-solid fa-clock"></i> 11:00 - 12:00 </p>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+										<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
 									</div>
 									<div class="col-lg-12 col-md-12">
 										<h4> Center Location </h4>
@@ -67,22 +102,89 @@ Health Checkup <a href="#">(10 Tests Covered) </a> </p>
 									</div>
 							</div>
 								<div class="col-lg-12 mt-2" id="dvTestListBtn">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+<button class="accordion" style="margin-top:20px;"> Adult </button>
+<div class="panel">
+<div class="form-group">
+        <label class="form-label pl-2px" for="CustomerName">Name</label>
+                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
+                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
+                    </div>
+
+        <div class="form-group">
+            <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
+                            min="1920-01-01" />
+                    </div>
+ <div class="form-check" style="margin-top: 10px;">
+                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio1" checked="checked" value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio2" value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+</div>
+<button class="accordion">Child</button>
+<div class="panel">
+  <div class="form-group">
+        <label class="form-label pl-2px" for="CustomerName">Name</label>
+                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
+                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
+                    </div>
+
+        <div class="form-group">
+            <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
+                            min="1920-01-01" />
+                    </div>
+ <div class="form-check" style="margin-top: 10px;">
+                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio1" checked="checked" value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio2" value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+</div>
+
+<button class="accordion"> Child </button>
+<div class="panel">
+ <div class="form-group">
+       <label class="form-label pl-2px" for="CustomerName">Name</label> 
+                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
+                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
+                    </div>
+
+        <div class="form-group">
+            <label class="form-label pl-2px" for="CustomerDOB">DOB</label> 
+                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
+                            min="1920-01-01" />
+                    </div>
+ <div class="form-check" style="margin-top: 10px;">
+                        <label class="form-label pl-1" for="CustomerDOB">Gender</label>
+                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio1" checked="checked" value="Male">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
+                            id="inlineRadio2" value="Female">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+</div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">
-														Check Tests Covered </a>
-												</h4>
+<a role="button" data-toggle="collapse" data-parent="#accordion"
+href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Tests Covered </a> </h4>
 											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-
-													<div class="accordion ">
-														<ul id="ulTest" type="none">
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"aria-labelledby="headingOne">
+		<div class="panel-body">
+                      <div class="accordion">
+													<ul id="ulTest" type="none">
 														</ul>
 													</div>
 												</div>
@@ -134,7 +236,7 @@ Health Checkup <a href="#">(10 Tests Covered) </a> </p>
 					</div>
 					<div class="col-lg-12 col-md-12 mt-3">
 						<div class="instructbox" id="dvForRequestImage">
-							<h3 class="text-center pt-5"> Waiting for Center to accept Your Request </h3>
+							<h3 class="text-center pt-5"> Waiting for center to accept your request </h3>
 							<p class="text-center"> We will notify you shortly! </p>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 text-center">
@@ -143,14 +245,13 @@ Health Checkup <a href="#">(10 Tests Covered) </a> </p>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
+					<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
 								<div class="box">
 									<div class="row">
 										<div class="col-lg-12 ">
 											<div id="dvDurationForTest">
 												<h4> Duration for Test </h4>
-												<p id="txtDurationForTest"> <i class="fa-solid fa-clock"></i> Under 45
-													Mins </p>
+<p id="txtDurationForTest"> <i class="fa-solid fa-clock "> </i> Under 45 Mins </p>
 											</div>
 											<div id="dvPointOfContact">
 												<h4 class="pt-2"> Point Of Contact </h4>
@@ -160,10 +261,10 @@ id="txtPointOfContact" class="doctname"> Dr. Sameer Ale
 </span> <span class="designation"> General Doctor </span></p>
 												</div>
 											</div>
-			<h4 class="pt-4"> Fasting Required </h4>
+			<h4> Fasting Required </h4>
 	<button id="btnFasting" class="btn btn-primary1"> Yes </button>
 					<h4 class="pt-4 mb-0"> Payment Mode </h4>
-<p id="txtPaymentMode"> <i class="fa-solid fa-box-archive"></i> Prepaid </p>
+<p id="txtPaymentMode"> <img src="images/wallet.png" width="15px"> Prepaid </p>
 				<div id="dvPreprationForCheckup">
 					<h4> Prepration For Checkup </h4>
 		<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the
@@ -187,15 +288,14 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 											<h4> Technician </h4>
 											<button id="btnTechnician" class="btn btn-success"> Female </button>
 											<h4> Payment Settlement Mode</h4>
-											<p id="btnPaymentSettlementMode"> <i class="fa-solid fa-box-archive"></i>
-												Credit </p>
+<p id="btnPaymentSettlementMode"> <img src="images/wallet.png" width="15px"> Credit</p>
 											<h4> Report Sharing with Customer </h4>
 											<button id="btnReportSharing" class="btn btn-secondary"> No </button>
 											<h4> Appointment Recieved By at Centre</h4>
 											<div class="docbox">
 												<div class="row">
-													<div class="col-lg-3 pt-2 col-3">
-														<img src="images/users.png" class="img-fluid">
+												<div class="col-lg-3 pt-2 col-3">
+														<img src="images/users.png" class="img-fluid w-75">
 													</div>
 													<div class="col-lg-9 col-9">
 														<p class="pt-2 mb-0"> <span id="txtProviderName"
@@ -205,8 +305,8 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 														<p id="txtProviderMobile" class="mb-0"> <i
 																class="fa-solid fa-phone"></i> +91- 995544888
 														</p>
-														<p id="txtProviderEmail"> <i class="fa-solid fa-envelope"></i>
-															support@healthassure.in </p>
+				<p id="txtProviderEmail"> <i class="fa-regular fa-envelope"></i>
+					support@healthassure.in </p>
 													</div>
 												</div>
 											</div>
@@ -233,13 +333,13 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="row">
-							<div class="col-lg-6 col-md-6 col-12">
-			<p> <i class="fa-solid fa-envelope"></i><a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+			<p> <i class="fa-regular fa-envelope"></i> <a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
 							</div>
-							<div class="col-lg-6 col-md-6 col-12">
-								<p> <i class="fa-solid fa-phone-volume"></i> 912261676600/33</p>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+								<p> <img src="images/email.png" width="10px"> 912261676600/33 </p>
 							</div>
-							<div class="col-lg-9 offset-lg-3 ">
+							<div class="col-lg-9 offset-lg-3 col-sm-6 ">
 								<ul>
 									<li><a href="https://twitter.com/healthassure1"> <i class="fa-brands fa-twitter"
 												target="blank"></i> </a> </li>
@@ -281,6 +381,24 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 		crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/Appointment.js"></script>
+
+
+	 <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 
 </body>

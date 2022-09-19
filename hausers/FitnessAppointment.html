@@ -12,9 +12,56 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
 		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<style type="text/css">
+.accordion {
+  background-color: #1f67bb;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 26px;
+  text-align: center;
+}
+.active, .accordion:hover {
+ background-color: #1f67bb;
+}
+.accordion:after {
+	content: "\f107";
+	    font-family: fontawesome;
+  /* content: '\f078';*/
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #ffffff;
+  padding: 0px 7px 0px 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.active:after {
+  content: "\f106";
+font-family: fontawesome;
+}
+.panel {
+  padding: 0px 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 2px;
+}
+</style>
+
 
 
 </head>
@@ -23,62 +70,62 @@
 
 	<div class="container mt-5">
 		<div class="row">
-			<div class="col-xl-9 col-lg-9 col-md-9 col-7">
+			<div class="col-xl-9 col-lg-9 col-md-9 col-8">
 				<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
 			</div>
-			<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end pb-3">
+			<div class="col-xl-3 col-lg-3 col-md-3 col-4 float-end">
 				<img src="images/logo.png" class="img-fluid logo ">
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-				<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge" class="btn btn-primary1"> Female </button>
+				<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge" class="btn btn-primary1 ml-20"> Female </button>
 				<div class="row">
 					<div class="col-lg-12 mt-4 ">
 						<div class="box pt-4">
 							<h4> Appoinment Status </h4>
-							<button id="btnstatusname" class="btn btn-red"> Appoinment Confirmed </button>
+	<button id="btnstatusname" class="btn btn-red"> Appoinment Confirmed </button>
 							<div class="row">
 								<div class="col-lg-12 mt-3">
 									<h4> Appoinment Date </h4>
 								</div>
-								<div class="col-lg-6">
-									<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday, 12 June </p>
+								<div class="col-lg-6 col-6">
+			<p id="txtAppointmentDate"><img src="images/calendar-black.png" width="15"> Saturday, 12 June </p>
 								</div>
-								<div class="col-lg-6">
-									<p id="txtAppointmentTime"> <i class="fa-solid fa-clock"></i> 11:00 AM - 12:00 PM </p>
+								<div class="col-lg-6 col-6">
+									<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 AM - 12:00 PM </p>
 								</div>
-								<div class="col-lg-12 mt-3" id="dvSessionLink">
+								<div class="col-lg-12 " id="dvSessionLink">
 									<h4> Appointment Details </h4>
-									<p><img src="images/appoinmenticon.png"> <span id="joinLink" class="pl-3">Live Sessions Online <a
-												href="#"> <i class="fa-solid fa-link"></i> Join Now </a></span> </p>
+		<p><img src="images/appoinmenticon.png"> <span id="joinLink" class="pl-3">Live Sessions (Online) <a href="#"> <i class="fa-solid fa-link"></i> Join Now </a></span> </p>
 								</div>
 
-								<div class="col-lg-12 mt-3">
+								<div class="col-lg-12 ">
 									<h4> Appointment For </h4>
-									<p id="txtplanName"> <i class="fa-solid fa-circle-check text-success"></i><span class="pl-3"> Back
-											Body Workout </span> </p>
-
-								</div>
+	<p id="txtplanName"> <i class="fa-solid fa-circle-check text-success"></i>
+		<span class="pl-3"> Back Body Workout </span> </p>
+</div>
 							</div>
 							<div class="row">
 								<div class="col-lg-12 mt-2" id="dvTestListBtn">
-									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<button class="accordion" style="margin-top:20px;"> View Appoinment Details </button>
+<div class="panel">
+	<ul id="ulTest" class="mt-4 px-3" type="none"> 
+	</ul>
+</div>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne">
-														View Appoinment Details </a>
-												</h4>
-											</div>
+<a role="button" data-toggle="collapse" data-parent="#accordion"
+href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> View Appoinment Details </a> </h4> </div>
 											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
 												aria-labelledby="headingOne">
 												<div class="panel-body">
 
 													<div class="accordion shadow">
-														<ul id="ulTest" type="none">
+													<ul id="ulTest" type="none">
 														</ul>
 													</div>
 												</div>
@@ -104,7 +151,7 @@
 						</div>
 						<div class="col-lg-12 ">
 							<h4> Duration for Test </h4>
-							<p id="txtDurationForTest"> <i class="fa-solid fa-clock"></i> Under 45 Mins </p>
+							<p id="txtDurationForTest"> <i class="fa-regular fa-clock"></i> Under 45 Mins </p>
 							<h4 class="py-4 mb-0"> Before You Go </h4>
 							<p> 1. Workout sessions not not advised for users suffering or recovering from any injuries,
 								cardiac issues, breathing issues, chronic illnesses etc. Please workout in consultation
@@ -143,12 +190,12 @@
 				<div class="col-xl-4 col-lg-4 col-md-6">
 					<div class="row">
 						<div class="col-lg-6 col-md-6  col-sm-6 col-12">
-							<p> <i class="fa-solid fa-envelope"></i> <a href="mailto:support@healthassure.in"> support@healthassure.in </a> </p>
+							<p> <i class="fa-regular fa-envelope"></i> <a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
 						</div>
 						<div class="col-lg-6 col-md-6   col-sm-6 col-12">
-							<p> <i class="fa-solid fa-phone-volume"></i> 02261676633</p>
+							<p> <img src="images/email.png" width="10px">02261676633 </p>
 						</div>
-						<div class="col-lg-9 offset-lg-3 ">
+						<div class="col-lg-9 offset-lg-3">
 							<ul>
 								<li><a href="https://twitter.com/healthassure1"> <i class="fa-brands fa-twitter"
 											target="blank"></i> </a> </li>
@@ -176,6 +223,24 @@
 		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/fitness.js"></script>
+
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
 
 </html>
