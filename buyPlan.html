@@ -599,6 +599,11 @@
                         <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
                             min="1920-01-01" />
                     </div>
+                    <div class="form-group" id="IsEnableAgent" style="display: none;">
+                        <label class="form-label pl-1" for="CustomerDOB">Agent Id</label>
+                        <input type="text" id="AgentId" class="form-control form-control121" placeholder="Agent Id"
+                            maxlength="15" />
+                    </div>
                     <div class="form-check" style="margin-top: 20px;">
                         <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
                         <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
@@ -783,6 +788,10 @@
             return vars;
         }
         var Vars = getUrlVars();
+        var IsEnableAgent = Vars["IsEnableAgent"];
+        if (IsEnableAgent == 'true') {
+            $('#IsEnableAgent').show();
+        }
         var PTitle = Vars["PopupTitle"].replace("%20", " ").replace("%20", " ");
         $('#buyplanpopuptitle').html(PTitle);
         var CustomerPhone_val = null;
@@ -841,7 +850,12 @@
                 SendOTPPopup($('#CustomerEmail').val(), $('#CustomerPhone').val(), "LANDINGPAGEPLANPURCHASEVERIFYOTP", Vars["PlanCode"]);
             } else {
                 var Relations = GetRelations();
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations).then(function (result) {
+                var AgentId = $('#AgentId').val();
+                var Agent = null;
+                if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                    Agent = { AgentId: AgentId };
+                }
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1036,7 +1050,12 @@
                     }
                 }
                 var Relations = GetRelations();
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations).then(function (result) {
+                var AgentId = $('#AgentId').val();
+                var Agent = null;
+                if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                    Agent = { AgentId: AgentId };
+                }
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');

@@ -39,7 +39,7 @@ function LoadData(Appointmentid) {
                     $('#dvSideImage').html('<img src="images/fitness.png" class="img-fluid w-75 float-end"></img>');
                     $('#joinLink').html('Live Sessions Online <a href="' + data.results.joinLink + '"> <i class="fa-solid fa-link"></i> Join Now </a>')
                     $("#dvSessionLink").show();//dvSideImage consult
-                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
+                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.subServiceDetails);
                     $("#dvTestListBtn").show();
                     $.each(data.results.coveredTests, function (key, value) {
                         $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
@@ -64,7 +64,11 @@ function LoadData(Appointmentid) {
 }
 
 $(function () {debugger;
-if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
+if (Appointmentid != undefined && Appointmentid != null) { 
+    LoadData(Appointmentid);
+    $('body').show();
+
+ }
     else {
         window.location.replace("404.html");
     }

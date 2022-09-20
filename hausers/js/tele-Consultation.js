@@ -73,7 +73,10 @@ $(function () {debugger;
     $("#dvCompleted").hide();
     $("#dvConfirmed").hide();
 
-if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
+if (Appointmentid != undefined && Appointmentid != null) { 
+    LoadData(Appointmentid); 
+    $('body').show();
+}
     else {
         window.location.replace("404.html");
     }

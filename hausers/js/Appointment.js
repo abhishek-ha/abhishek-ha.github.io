@@ -27,7 +27,8 @@ function LoadData(Appointmentid) {
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
-                $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
+                // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
+                $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" width="15">Location </a>');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
@@ -80,22 +81,22 @@ function LoadData(Appointmentid) {
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Red");
+                    $("#btnstatusname").attr('class', 'btn btn-red');
                     $("#dvForCancelImage").show();
                 }
                 else if (data.results.statusname == 'Requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "gray");
+                    $("#btnstatusname").attr('class', 'btn btn-grey');
                     $("#dvForRequestImage").show();
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Green");
+                    $("#btnstatusname").attr('class', 'btn btn-success');
                     $("#dvForCompletedImage").show();
                 }
                 else if (data.results.statusname == 'Confirmed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Orange");
+                    $("#btnstatusname").attr('class', 'btn btn-orange');
                     $("#dvAppointmentConfirmed").show();
                     $("#dvForConfirm").show();;
                 }
@@ -129,6 +130,7 @@ $(function () {
     if (Appointmentid != undefined && Appointmentid != null) {
         debugger;
         LoadData(Appointmentid);
+        $('body').show();
     }
     else {
         window.location.replace("404.html");
