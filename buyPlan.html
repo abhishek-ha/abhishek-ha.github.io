@@ -693,7 +693,7 @@
                     </div>
                     <div class="form-group">
                         <!--  <button style="margin-top: 15px;" id="Placeorder" class="btn btn-primary btn-block mb-2">Place
-        order</button> -->
+                    order</button> -->
                         <div class=" text-center" style="margin-top:20px;">
                             <button class="placeorderbtn" id="Placeorder" style="margin-bottom:5px;">
                                 Place Order
@@ -765,276 +765,255 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="js/buyplans.min.js"></script>
-    <script>
-        $('#IsTCAccepted').click(function (e) {
-            if (this.checked) {
-                $("#Placeorder").prop('disabled', false);
-            } else {
-                $("#Placeorder").prop('disabled', true);
+
+        <div id="Reviewformdiv" class="col-lg-4 col-md-4 col-sm-4 model-medium" style="overflow: hidden;display:none;">
+            <div class="modal-header">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3 style="font-size:24px;">
+                        <span id="Reviewplanpopuptitle">
+                            <span style="font-weight:600;">
+                                Review details...
+                            </span>
+                        </span>
+                        <span></span> <span class="close">
+                            <a style="border: radius 0;" href="javascript:closeReviewform()">&times;</a>
+                        </span>
+                    </h3>
+                    <div style="border-top:4px solid #457e70;width: 100px; margin-bottom: 5px;">
+                    </div>
+                </div>
+            </div>
+            <form method="post" id="ReviewformCoupon" style="margin-top: 15px;margin-bottom: 15px;">
+                <div class="form-group">
+                    <!--<label class="form-label pl-1" for="CoupanCode">Coupan Code</label>-->
+                    <input type="text" id="CoupanCode" class="form-control121" placeholder="Coupan Code"
+                        title="Coupon Code" required
+                        style="width: 60%; height: 50%; border-radius: 5px 0px 0px 5px;margin-top: 2px;" />
+                    <button class="placeorderbtn" id="btnApplyCoupan"
+                        style="width:35%;height:38px;border-radius:5px; padding: 9px 16px;">
+                        Apply Coupon
+                    </button>
+                    <span id="invalidMessage" style="font-weight: bold;color:red;margin-left: 5px"></span>
+                    <hr />
+                </div>
+            </form>
+            <form method="post" id="Reviewform" style="margin-top: 15px;margin-bottom: 15px;">
+                <div class="form-group">
+                    <label class="form-label pl-1" for="PlanAmount ">Plan Amount</label>
+                    : <span id="PlanAmount"></span>
+                </div>
+                <div class="form-group" id="discdtls" style="overflow: hidden;display:none;">
+                    <label class="form-label pl-1" for="Coupan Discount">Coupon Discount</label>
+                    : <span id="CouponDiscount"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label pl-1" for="GSTAmount ">GST Amount</label>
+                    : <span id="GSTAmount"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label pl-1" for="TotalAmount">Total</label>
+                    : <span id="TotalAmount"></span>
+                    <input type="hidden" value="" id="hdnTotalAmount">
+                </div>
+
+                <div class="form-group">
+                    <div class=" text-center" style="margin-top:20px;">
+                        <button class="placeorderbtn" id="AftReviewPayNow" style="margin-bottom:5px;">
+                            Pay Now
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="js/buyplans.min.js"></script>
+        <script>
+            $('#IsTCAccepted').click(function (e) {
+                if (this.checked) {
+                    $("#Placeorder").prop('disabled', false);
+                } else {
+                    $("#Placeorder").prop('disabled', true);
+                }
+            });
+            $('#congratulationsdiv').hide();
+            $('#loadding').hide();
+            function getUrlVars(url = window.location.href) {
+                var vars = [], hash;
+                var hashes = url.slice(url.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
             }
-        });
-        $('#congratulationsdiv').hide();
-        $('#loadding').hide();
-        function getUrlVars(url = window.location.href) {
-            var vars = [], hash;
-            var hashes = url.slice(url.indexOf('?') + 1).split('&');
-            for (var i = 0; i < hashes.length; i++) {
-                hash = hashes[i].split('=');
-                vars.push(hash[0]);
-                vars[hash[0]] = hash[1];
+            var Vars = getUrlVars();
+            var IsEnableAgent = Vars["IsEnableAgent"];
+            if (IsEnableAgent == 'true') {
+                $('#IsEnableAgent').show();
             }
-            return vars;
-        }
-        var Vars = getUrlVars();
-        var IsEnableAgent = Vars["IsEnableAgent"];
-        if (IsEnableAgent == 'true') {
-            $('#IsEnableAgent').show();
-        }
-        var PTitle = Vars["PopupTitle"].replace("%20", " ").replace("%20", " ");
-        $('#buyplanpopuptitle').html(PTitle);
-        var CustomerPhone_val = null;
-        var timerFName = 'timer1';
-        //$('#buyplanpopuptitle1').html(PTitle);
-        var IsVarifyEmail = Vars["IsVarifyEmail"];
-        var EmailDomain = Vars["EmailDomain"];
-        if (EmailDomain != null && EmailDomain != '') {
-            $('#EmailerrortoolTip').html('Please use ' + EmailDomain + ' as your mail id domain');
-            if (EmailDomain == '@accenture.com') {
+            var PTitle = Vars["PopupTitle"].replace("%20", " ").replace("%20", " ");
+            $('#buyplanpopuptitle').html(PTitle);
+            var CustomerPhone_val = null;
+            var timerFName = 'timer1';
+            //$('#buyplanpopuptitle1').html(PTitle);
+            var IsVarifyEmail = Vars["IsVarifyEmail"];
+            var EmailDomain = Vars["EmailDomain"];
+            if (EmailDomain != null && EmailDomain != '') {
+                $('#EmailerrortoolTip').html('Please use ' + EmailDomain + ' as your mail id domain');
+                if (EmailDomain == '@accenture.com') {
+                    $("#IEnableTCdiv").show();
+                    $("#Placeorder").prop('disabled', true);
+                }
+            }
+            var IsVarifyEmailPhoneTNC = Vars["IsVarifyEmailPhoneTNC"];
+            if (IsVarifyEmailPhoneTNC == "true") {
                 $("#IEnableTCdiv").show();
                 $("#Placeorder").prop('disabled', true);
+                $("#IdTnChref").text('Good Health Declaration');
+                $("#IdTnChref").prop('href', "https://live.healthassure.in/Products/files/Good-health-Declaration.pdf");
             }
-        }
-        var IsVarifyEmailPhoneTNC = Vars["IsVarifyEmailPhoneTNC"];
-        if (IsVarifyEmailPhoneTNC == "true") {
-            $("#IEnableTCdiv").show();
-            $("#Placeorder").prop('disabled', true);
-            $("#IdTnChref").text('Good Health Declaration');
-            $("#IdTnChref").prop('href', "https://live.healthassure.in/Products/files/Good-health-Declaration.pdf");
-        }
-        var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
-        if (IsEnableMembersAddtion == 'true') {
-            $('#Membersdiv').show();
-        }
-        $('#buyplanform').submit(function (event) {
-            event.preventDefault();
-            if (!VarifyEmailDomain($('#CustomerEmail').val(), EmailDomain)) {
-                return false;
-            }
+            var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
             if (IsEnableMembersAddtion == 'true') {
-                var rel = GetRelations();
-                if (rel.length < 3) {
-                    alert('Please fill up member details');
-                    return;
-                }
+                $('#Membersdiv').show();
             }
-            $('#Placeorder').html('Processing...');
-            var CustomerDOB = $('#CustomerDOB').val();
-            if (CustomerDOB == null || CustomerDOB == '') {
-                CustomerDOB = '2000-01-01';
-            }
-            CustomerPhone_val = $('#CustomerPhone').val();
-            var UtmSource = Vars["utm_source"];
-            if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
-                //UtmSource = PTitle;
-                UtmSource = "Plans Page";
-                if (Vars["PlanCode"] == "HAOPDR003-60") {
-                    UtmSource = "7 Days Free Trial";
-                }
-            }
-            if (IsVarifyEmail != null && IsVarifyEmail == "true") {
-                SendOTPPopup($('#CustomerEmail').val());
-            }
-            else if (IsVarifyEmailPhoneTNC == "true") {
-                SendOTPPopup($('#CustomerEmail').val(), $('#CustomerPhone').val(), "LANDINGPAGEPLANPURCHASEVERIFYOTP", Vars["PlanCode"]);
-            } else {
-                var Relations = GetRelations();
-                var AgentId = $('#AgentId').val();
-                var Agent = null;
-                if (AgentId != null && AgentId != '' && AgentId != undefined) {
-                    Agent = { AgentId: AgentId };
-                }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
-                    $('#CustomerName').val('');
-                    $('#CustomerEmail').val('');
-                    $('#CustomerPhone').val('');
-                    $('#CustomerDOB').val('');
-                    console.log("successful buy plan");
-                    $('#Placeorder').html('Place order');
+            $('#buyplanform').submit(function (event) {
+                event.preventDefault();
+                $('#TotalAmount').text('');
+                $('#hdnTotalAmount').val('');
+                GetOPDPlanReview(Vars["PlanCode"]).then(function (result) {
+                    $('#Reviewformdiv').show();
+                    $('#buyplanformdiv').hide();
+                    $('#PlanAmount').text(result.results.planAmount);
+                    $('#GSTAmount').text(result.results.gstAmount);
+                    $('#TotalAmount').text(result.results.totalAmount);
+                    $('#hdnTotalAmount').val(result.results.totalAmount);
                 }).catch(function (error) {
                     console.warn(error);
-                    $('#Placeorder').html('Place order');
-                });
-            }
-        });
-        function closeform() {
-            var phn = $('#CustomerPhone').val();
-            if (EmailDomain != null && EmailDomain == '@accenture.com') {
-                closebuyplanpopup();
-                return;
-            }
-            if (phn == null || phn == '' || phn.length <= 9) {
-                closebuyplanpopup();
-            } else {
-                var CustomerDOB = $('#CustomerDOB').val();
-                if (CustomerDOB == null || CustomerDOB == '') {
-                    CustomerDOB = '2000-01-01';
-                }
-                SubmitLeads($('#CustomerPhone').val(), $('#CustomerName').val(), $('#CustomerEmail').val(), CustomerDOB, PTitle).then(function (result) {
-                    closebuyplanpopup();
-                });
-            }
-        }
-
-        function SubmitLeads(Phone, Name, Email, dob, Source) {
-            return new Promise(function (resolve, reject) {
-                var UtmSource = Vars["utm_source"];
-                if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
-                    UtmSource = Source;
-                }
-                let AdvisorObj = {
-                    mobileNo: Phone, name: Name, dob: dob, email: Email, utmSource: UtmSource, utmMedium: Vars["utm_medium"], utmCampaign: Vars["utm_campaign"], utmTerm: Vars["utm_term"],
-                    utmContent: Vars["utm_content"], status: "Fresh Lead", gender: $('input[type="radio"][name="CustomerGender"]:checked').val()
-                };
-                var replacer = function (key, value) {
-                    if (value === undefined || value == "undefined") {
-                        return null;
-                    }
-                    return value;
-                };
-                $.ajax({
-                    type: "POST",
-                    url: "https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
-                    data: JSON.stringify(AdvisorObj, replacer),
-                    dataType: "json",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    success: function (result) {
-                        console.log(result.message);
-                        resolve(result) // Resolve promise and go to then() 
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                        reject(eror) // Reject the promise and go to catch()
-                    }
+                    alert(error.message);
                 });
             });
-        }
+            function closeform() {
+                var phn = $('#CustomerPhone').val();
+                if (EmailDomain != null && EmailDomain == '@accenture.com') {
+                    closebuyplanpopup();
+                    return;
+                }
+                if (phn == null || phn == '' || phn.length <= 9) {
+                    closebuyplanpopup();
+                } else {
+                    var CustomerDOB = $('#CustomerDOB').val();
+                    if (CustomerDOB == null || CustomerDOB == '') {
+                        CustomerDOB = '2000-01-01';
+                    }
+                    SubmitLeads($('#CustomerPhone').val(), $('#CustomerName').val(), $('#CustomerEmail').val(), CustomerDOB, PTitle).then(function (result) {
+                        closebuyplanpopup();
+                    });
+                }
+            }
 
-        function opningPaymentpage() {
-            $('#buyplanformdiv').hide();
-            $('#Placeorder').html('Place order');
-        }
-        function opningPaymentSuccesspage() {
-            //$('#congratulationsdiv').show();
-            OpenbuyPlanThankyouPage(PTitle);
-            closebuyplanpopup();
-            $('#buyplanformdiv').hide();
-            console.log('opningPaymentSuccesspage');
-            try {
-                /*var IsUserTracker = Vars["IsUserTracker"];
-                if (IsUserTracker) {
-                    $('body').append('<iframe src="https://epromotion.in/healthassure" height="0" width="0" frameborder="0"></iframe>');
-                }*/
-                if (Vars["utm_source"].toLowerCase() == 'cuberoot') {
-                    console.log(Vars["utm_source"]);
-                    console.log(CustomerPhone_val);
+            $('#Reviewform').submit(function (event) {
+                debugger;
+                event.preventDefault();
+                OpenPaymentPage();
+                $("#Reviewformdiv").hide();
+            });
+
+            $('#ReviewformCoupon').submit(function (event) {
+                debugger;
+                event.preventDefault();
+                GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val()).then(function (result) {
+                    $('#discdtls').show();
+                    $('#CouponDiscount').text(result.results.discountAmount);
+                    //$('#PlanAmount').text(result.results.finalAmount);
+                    $('#GSTAmount').text(parseInt(result.results.finalAmount * .18));
+                    $('#TotalAmount').text(parseInt(result.results.finalAmount + (result.results.finalAmount * .18)));
+                    $('#invalidMessage').text(result.message);
+                    document.getElementById('invalidMessage').setAttribute("style", "color:green;font-weight: bold;");
+                }).catch(function (error) {
+                    console.warn(error);
+                    $('#discdtls').hide();
+                    $('#TotalAmount').text($('#hdnTotalAmount').val());
+                    document.getElementById('invalidMessage').setAttribute("style", "color:red;font-weight: bold;");
+                    $('#invalidMessage').text(error.message);
+                });
+            });
+
+            function GetOPDPlanReview(PlanCode = null) {
+                debugger;
+                return new Promise(function (resolve, reject) {
+                    if (PlanCode == undefined || PlanCode == '') {
+                        PlanCode = null;
+                    }
                     $.ajax({
                         type: "GET",
-                        url: "https://epromotion.in/healthassure/?phone=" + CustomerPhone_val,
+                        url: "https://live.healthassure.in/ProductApi/api/OPDPlans/GetOPDPlanBuyReview?PlanCode=" + PlanCode,
                         dataType: "json",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                        },
                         success: function (result) {
-                            console.warn(result);
+                            console.warn(result.message);
+                            if (result.status) {
+                                resolve(result) // Resolve promise and go to then()
+                            } else {
+                                reject(result) // Reject the promise and go to catch()
+                            }
                         },
                         error: function (eror) {
                             console.warn(eror);
+                            reject(err) // Reject the promise and go to catch()
                         }
                     });
-                    console.log('*****************************cuberoot**********************');
-                }
-                try {
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-471644001/C4KFCL-H068DEOHu8uAB',
-                        'value': 1999.0,
-                        'currency': 'INR',
-                        'transaction_id': ''
+                });
+            }
+
+            function GetOPDPlanCouponDetails(CouponCode = null, TotalAmount = null, MobileNo = null) {
+                debugger;
+                return new Promise(function (resolve, reject) {
+                    if (MobileNo == undefined || MobileNo == '') {
+                        MobileNo = null;
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "https://live.healthassure.in/ProductApi/api/Coupon/ApplyCoupon",
+                        dataType: "json",
+                        data: JSON.stringify({ CouponCode: CouponCode, Amount: TotalAmount, MobileNo: MobileNo }),
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                        },
+                        success: function (result) {
+                            console.warn(result.message);
+                            if (result.status) {
+                                resolve(result) // Resolve promise and go to then()
+                            } else {
+                                reject(result) // Reject the promise and go to catch()
+                            }
+                        },
+                        error: function (eror) {
+                            console.warn(eror);
+                            document.getElementById('invalidMessage').setAttribute("style", "color:red;font-weight: bold;");
+                            $('#invalidMessage').text('InValid Coupon code');
+                            reject(err) // Reject the promise and go to catch()
+                        }
                     });
-                } catch { console.log('error in https://www.googletagmanager.com/gtag'); }
-            } catch { console.log('error'); }
-        }
-        function closebuyplanpopup() {
-            parent.postMessage("closebuyplanpopup", "*");
-        }
-        function userClosePaymentPopup() {
-            $('#congratulationsdiv').hide();
-            $('#loadding').hide();
-            $('#buyplanformdiv').hide();
-            if (EmailDomain != null && EmailDomain == '@accenture.com') {
-                closebuyplanpopup();
-            } else {
-                $('#Thankyoupopup').show();
+                });
             }
-            try {
-                if (PTitle.toLowerCase().includes('startassure')) {
-                    fbq('track', 'SubmitApplication');
-                    console.log(' track SubmitApplication');
-                }
-            } catch { }
-        }
-        function ShowLoding(flag = true) {
-            if (flag) {
-                $('#loadding').show();
-            } else {
-                $('#loadding').hide();
-            }
-        }
 
-        $(function () {
-            var dtToday = new Date();
-
-            var month = dtToday.getMonth() + 1;
-            var day = dtToday.getDate();
-            var year = dtToday.getFullYear();
-
-            if (month < 10)
-                month = '0' + month.toString();
-            if (day < 10)
-                day = '0' + day.toString();
-            var maxDate = year + '-' + month + '-' + day;
-            $('#CustomerDOB').attr('max', maxDate);
-        });
-        function VarifyEmailDomain(emailid, domain) {
-            if (domain != null && domain != '') {
-                if (emailid.toLowerCase().endsWith(domain.toLowerCase())) {
-                    $('#EmailerrortoolTip').html('Please use ' + domain + ' as your mail id domain');
-                    $('#CustomerEmail').css('border-color', '#ced4da');
-                    return true;
-                } else {
-                    $('#EmailerrortoolTip').html('Invalid domain. Please use ' + domain + ' as email domain');
-                    $('#CustomerEmail').css('border-color', 'red');
-                    $('#CustomerEmail').focus();
+            function OpenPaymentPage() {
+                if (!VarifyEmailDomain($('#CustomerEmail').val(), EmailDomain)) {
                     return false;
                 }
-            }
-            return true;
-        }
-        function VarifyOTPbuttonClick() {
-            var otp = '';
-            const inputs = document.querySelectorAll('#otp > *[id]');
-            for (let i = 0; i < inputs.length; i++) {
-                otp = otp + inputs[i].value;
-            }
-            var MobileNumbar1 = null;
-            if (IsVarifyEmailPhoneTNC == "true") {
-                MobileNumbar1 = $('#CustomerPhone').val();
-            }
-            VarifyEmailOTPforValidation(otp, $('#CustomerEmail').val(), MobileNumbar1).then(function (res) {
-                $('#VarifyOTPbutton').html('Verified');
-                $('#message').html('');
-                $('#otpapp').hide();
+                if (IsEnableMembersAddtion == 'true') {
+                    var rel = GetRelations();
+                    if (rel.length < 3) {
+                        alert('Please fill up member details');
+                        return;
+                    }
+                }
                 $('#Placeorder').html('Processing...');
                 var CustomerDOB = $('#CustomerDOB').val();
                 if (CustomerDOB == null || CustomerDOB == '') {
@@ -1049,197 +1028,390 @@
                         UtmSource = "7 Days Free Trial";
                     }
                 }
-                var Relations = GetRelations();
-                var AgentId = $('#AgentId').val();
-                var Agent = null;
-                if (AgentId != null && AgentId != '' && AgentId != undefined) {
-                    Agent = { AgentId: AgentId };
+                if (IsVarifyEmail != null && IsVarifyEmail == "true") {
+                    SendOTPPopup($('#CustomerEmail').val());
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                else if (IsVarifyEmailPhoneTNC == "true") {
+                    SendOTPPopup($('#CustomerEmail').val(), $('#CustomerPhone').val(), "LANDINGPAGEPLANPURCHASEVERIFYOTP", Vars["PlanCode"]);
+                } else {
+                    var Relations = GetRelations();
+                    var AgentId = $('#AgentId').val();
+                    var Agent = null;
+                    if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                        Agent = { AgentId: AgentId };
+                    }
+                    BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                        $('#CustomerName').val('');
+                        $('#CustomerEmail').val('');
+                        $('#CustomerPhone').val('');
+                        $('#CustomerDOB').val('');
+                        console.log("successful buy plan");
+                        $('#Placeorder').html('Place order');
+                    }).catch(function (error) {
+                        console.warn(error);
+                        $('#Placeorder').html('Place order');
+                    });
+                }
+            }
+            function closeReviewform() {
+                closeform();
+                $("#Reviewformdiv").hide();
+            }
+
+            function SubmitLeads(Phone, Name, Email, dob, Source) {
+                return new Promise(function (resolve, reject) {
+                    var UtmSource = Vars["utm_source"];
+                    if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
+                        UtmSource = Source;
+                    }
+                    let AdvisorObj = {
+                        mobileNo: Phone, name: Name, dob: dob, email: Email, utmSource: UtmSource, utmMedium: Vars["utm_medium"], utmCampaign: Vars["utm_campaign"], utmTerm: Vars["utm_term"],
+                        utmContent: Vars["utm_content"], status: "Fresh Lead", gender: $('input[type="radio"][name="CustomerGender"]:checked').val()
+                    };
+                    var replacer = function (key, value) {
+                        if (value === undefined || value == "undefined") {
+                            return null;
+                        }
+                        return value;
+                    };
+                    $.ajax({
+                        type: "POST",
+                        url: "https://live.healthassure.in/ProductApi/api/User/CallbackAdvisor",
+                        data: JSON.stringify(AdvisorObj, replacer),
+                        dataType: "json",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        success: function (result) {
+                            console.log(result.message);
+                            resolve(result) // Resolve promise and go to then()
+                        },
+                        error: function (eror) {
+                            console.warn(eror);
+                            reject(eror) // Reject the promise and go to catch()
+                        }
+                    });
+                });
+            }
+
+            function opningPaymentpage() {
+                $('#buyplanformdiv').hide();
+                $('#Placeorder').html('Place order');
+            }
+            function opningPaymentSuccesspage() {
+                //$('#congratulationsdiv').show();
+                OpenbuyPlanThankyouPage(PTitle);
+                closebuyplanpopup();
+                $('#buyplanformdiv').hide();
+                console.log('opningPaymentSuccesspage');
+                try {
+                    /*var IsUserTracker = Vars["IsUserTracker"];
+                    if (IsUserTracker) {
+                        $('body').append('<iframe src="https://epromotion.in/healthassure" height="0" width="0" frameborder="0"></iframe>');
+                    }*/
+                    if (Vars["utm_source"].toLowerCase() == 'cuberoot') {
+                        console.log(Vars["utm_source"]);
+                        console.log(CustomerPhone_val);
+                        $.ajax({
+                            type: "GET",
+                            url: "https://epromotion.in/healthassure/?phone=" + CustomerPhone_val,
+                            dataType: "json",
+                            success: function (result) {
+                                console.warn(result);
+                            },
+                            error: function (eror) {
+                                console.warn(eror);
+                            }
+                        });
+                        console.log('*****************************cuberoot**********************');
+                    }
+                    try {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-471644001/C4KFCL-H068DEOHu8uAB',
+                            'value': 1999.0,
+                            'currency': 'INR',
+                            'transaction_id': ''
+                        });
+                    } catch { console.log('error in https://www.googletagmanager.com/gtag'); }
+                } catch { console.log('error'); }
+            }
+            function closebuyplanpopup() {
+                parent.postMessage("closebuyplanpopup", "*");
+            }
+            function userClosePaymentPopup() {
+                $('#congratulationsdiv').hide();
+                $('#loadding').hide();
+                $('#buyplanformdiv').hide();
+                if (EmailDomain != null && EmailDomain == '@accenture.com') {
+                    closebuyplanpopup();
+                } else {
+                    $('#Thankyoupopup').show();
+                }
+                try {
+                    if (PTitle.toLowerCase().includes('startassure')) {
+                        fbq('track', 'SubmitApplication');
+                        console.log(' track SubmitApplication');
+                    }
+                } catch { }
+            }
+            function ShowLoding(flag = true) {
+                if (flag) {
+                    $('#loadding').show();
+                } else {
+                    $('#loadding').hide();
+                }
+            }
+
+            $(function () {
+                var dtToday = new Date();
+
+                var month = dtToday.getMonth() + 1;
+                var day = dtToday.getDate();
+                var year = dtToday.getFullYear();
+
+                if (month < 10)
+                    month = '0' + month.toString();
+                if (day < 10)
+                    day = '0' + day.toString();
+                var maxDate = year + '-' + month + '-' + day;
+                $('#CustomerDOB').attr('max', maxDate);
+            });
+            function VarifyEmailDomain(emailid, domain) {
+                if (domain != null && domain != '') {
+                    if (emailid.toLowerCase().endsWith(domain.toLowerCase())) {
+                        $('#EmailerrortoolTip').html('Please use ' + domain + ' as your mail id domain');
+                        $('#CustomerEmail').css('border-color', '#ced4da');
+                        return true;
+                    } else {
+                        $('#EmailerrortoolTip').html('Invalid domain. Please use ' + domain + ' as email domain');
+                        $('#CustomerEmail').css('border-color', 'red');
+                        $('#CustomerEmail').focus();
+                        return false;
+                    }
+                }
+                return true;
+            }
+            function VarifyOTPbuttonClick() {
+                var otp = '';
+                const inputs = document.querySelectorAll('#otp > *[id]');
+                for (let i = 0; i < inputs.length; i++) {
+                    otp = otp + inputs[i].value;
+                }
+                var MobileNumbar1 = null;
+                if (IsVarifyEmailPhoneTNC == "true") {
+                    MobileNumbar1 = $('#CustomerPhone').val();
+                }
+                VarifyEmailOTPforValidation(otp, $('#CustomerEmail').val(), MobileNumbar1).then(function (res) {
+                    $('#VarifyOTPbutton').html('Verified');
+                    $('#message').html('');
                     $('#otpapp').hide();
-                    $('#CustomerName').val('');
-                    $('#CustomerEmail').val('');
-                    $('#CustomerPhone').val('');
-                    $('#CustomerDOB').val('');
-                    $('#VarifyOTPbutton').html('Validate');
-                    console.log("successful buy plan");
-                    $('#Placeorder').html('Place order');
+                    $('#Placeorder').html('Processing...');
+                    var CustomerDOB = $('#CustomerDOB').val();
+                    if (CustomerDOB == null || CustomerDOB == '') {
+                        CustomerDOB = '2000-01-01';
+                    }
+                    CustomerPhone_val = $('#CustomerPhone').val();
+                    var UtmSource = Vars["utm_source"];
+                    if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
+                        //UtmSource = PTitle;
+                        UtmSource = "Plans Page";
+                        if (Vars["PlanCode"] == "HAOPDR003-60") {
+                            UtmSource = "7 Days Free Trial";
+                        }
+                    }
+                    var Relations = GetRelations();
+                    var AgentId = $('#AgentId').val();
+                    var Agent = null;
+                    if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                        Agent = { AgentId: AgentId };
+                    }
+                    BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                        $('#otpapp').hide();
+                        $('#CustomerName').val('');
+                        $('#CustomerEmail').val('');
+                        $('#CustomerPhone').val('');
+                        $('#CustomerDOB').val('');
+                        $('#VarifyOTPbutton').html('Validate');
+                        console.log("successful buy plan");
+                        $('#Placeorder').html('Place order');
+                    }).catch(function (error) {
+                        console.warn(error);
+                        $('#Placeorder').html('Place order');
+                    });
+                }).catch(function (err) {
+                    $('#message').html(err.message);
+                });
+            }
+            function SendOTPPopup(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
+                $('#Reviewformdiv').hide();
+                $('#congratulationsdiv').hide();
+                $('#buyplanformdiv').hide();
+                $('#otpapp').show();
+                if (MobileNo == undefined || MobileNo == '') {
+                    $('#emailidtext1').html(Email);
+                } else {
+                    $('#emailidtext1').html(Email + ' & ' + MobileNo);
+                }
+                GetEmailOTPforValidation(Email, MobileNo, TriggerType, PlanCode).then(function (result) {
+                    $('#' + timerFName).html('00:00');
+                    var leftover = result.results.otpExpiryTime;
+                    var minutes = Math.floor(leftover / 60);
+                    leftover = leftover - (minutes * 60);
+                    $('#' + timerFName).html(minutes + ':' + leftover);
+                    startTimer1();
+                    $('#otptextFeild1').html(' Resend OTP');
                 }).catch(function (error) {
                     console.warn(error);
-                    $('#Placeorder').html('Place order');
                 });
-            }).catch(function (err) {
-                $('#message').html(err.message);
-            });
-        }
-        function SendOTPPopup(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
-            $('#congratulationsdiv').hide();
-            $('#buyplanformdiv').hide();
-            $('#otpapp').show();
-            if (MobileNo == undefined || MobileNo == '') {
-                $('#emailidtext1').html(Email);
-            } else {
-                $('#emailidtext1').html(Email + ' & ' + MobileNo);
             }
-            GetEmailOTPforValidation(Email, MobileNo, TriggerType, PlanCode).then(function (result) {
-                $('#' + timerFName).html('00:00');
-                var leftover = result.results.otpExpiryTime;
-                var minutes = Math.floor(leftover / 60);
-                leftover = leftover - (minutes * 60);
-                $('#' + timerFName).html(minutes + ':' + leftover);
-                startTimer1();
-                $('#otptextFeild1').html(' Resend OTP');
-            }).catch(function (error) {
-                console.warn(error);
-            });
-        }
-        try {
-            var app = new Vue({
-                el: '#otpapp',
-                methods: {
-                    inputenter(id) {
-                        const inputs = document.querySelectorAll('#otp > *[id]');
-                        for (let i = 0; i < inputs.length; i++) {
-                            inputs[i].addEventListener('keydown', function (event) {
-                                if (event.key === "Backspace") {
-                                    inputs[i].value = '';
-                                    if (i !== 0) inputs[i - 1].focus();
-                                } else {
-                                    if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
-                                    else if (event.keyCode > 47 && event.keyCode < 58) {
-                                        inputs[i].value = event.key;
-                                        if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+            try {
+                var app = new Vue({
+                    el: '#otpapp',
+                    methods: {
+                        inputenter(id) {
+                            const inputs = document.querySelectorAll('#otp > *[id]');
+                            for (let i = 0; i < inputs.length; i++) {
+                                inputs[i].addEventListener('keydown', function (event) {
+                                    if (event.key === "Backspace") {
+                                        inputs[i].value = '';
+                                        if (i !== 0) inputs[i - 1].focus();
+                                    } else {
+                                        if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
+                                        else if (event.keyCode > 47 && event.keyCode < 58) {
+                                            inputs[i].value = event.key;
+                                            if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+                                        }
+                                        else if (event.keyCode > 64 && event.keyCode < 91) {
+                                            inputs[i].value = String.fromCharCode(event.keyCode);
+                                            if (i !== inputs.length - 1) inputs[i + 1].focus();
+                                            event.preventDefault();
+                                        }
                                     }
-                                    else if (event.keyCode > 64 && event.keyCode < 91) {
-                                        inputs[i].value = String.fromCharCode(event.keyCode);
-                                        if (i !== inputs.length - 1) inputs[i + 1].focus();
-                                        event.preventDefault();
-                                    }
-                                }
-                            });
+                                });
+                            }
                         }
-                    }
-                }
-            });
-        } catch (e) { console.log(e); }
-        function startTimer1() {
-            var presentTime = document.getElementById(timerFName).innerHTML;
-            var timeArray = presentTime.split(/[:]+/);
-            var m = timeArray[0];
-            var s = checkSecond1((timeArray[1] - 1));
-            if (s == 59) { m = m - 1 }
-            if (m < 0) { return }
-            document.getElementById(timerFName).innerHTML = m + ":" + s;
-            setTimeout(startTimer1, 1000);
-        }
-        function checkSecond1(sec) {
-            if (sec < 10 && sec >= 0) { sec = "0" + sec }; // add zero in front of numbers < 10
-            if (sec < 0) { sec = "59" };
-            return sec;
-        }
-        function GetEmailOTPforValidation(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
-            return new Promise(function (resolve, reject) {
-                if (MobileNo == undefined || MobileNo == '') {
-                    MobileNo = null;
-                }
-                if (TriggerType == undefined || TriggerType == '') {
-                    TriggerType = null;
-                }
-                if (PlanCode == undefined || PlanCode == '') {
-                    PlanCode = null;
-                }
-                $.ajax({
-                    type: "GET",
-                    url: "https://live.healthassure.in/ProductApi/api/User/GetOTPForEmailId?Emailid=" + Email + "&Source=" + PTitle + "&MobileNo=" + MobileNo + "&TriggerType=" + TriggerType + "&PlanCode=" + PlanCode,
-                    dataType: "json",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
-                    },
-                    success: function (result) {
-                        console.warn(result.message);
-                        if (result.status) {
-                            resolve(result) // Resolve promise and go to then() 
-                        } else {
-                            reject(result) // Reject the promise and go to catch()
-                        }
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                        reject(err) // Reject the promise and go to catch()
                     }
                 });
-            });
-        }
-        function VarifyEmailOTPforValidation(otp, Email, MobileNumbar = null) {
-            return new Promise(function (resolve, reject) {
-                if (MobileNumbar == undefined || MobileNumbar == '') {
-                    MobileNumbar = null;
-                }
-                $.ajax({
-                    type: "POST",
-                    url: "https://live.healthassure.in/ProductApi/api/User/VerifyEmailId",
-                    dataType: "json",
-                    data: JSON.stringify({ EmailId: Email, OTP: otp, MobileNumbar: MobileNumbar }),
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
-                    },
-                    success: function (result) {
-                        console.warn(result.message);
-                        if (result.status) {
-                            resolve(result) // Resolve promise and go to then() 
-                        } else {
-                            reject(result) // Reject the promise and go to catch()
-                        }
-                    },
-                    error: function (eror) {
-                        console.warn(eror);
-                        reject(err) // Reject the promise and go to catch()
+            } catch (e) { console.log(e); }
+            function startTimer1() {
+                var presentTime = document.getElementById(timerFName).innerHTML;
+                var timeArray = presentTime.split(/[:]+/);
+                var m = timeArray[0];
+                var s = checkSecond1((timeArray[1] - 1));
+                if (s == 59) { m = m - 1 }
+                if (m < 0) { return }
+                document.getElementById(timerFName).innerHTML = m + ":" + s;
+                setTimeout(startTimer1, 1000);
+            }
+            function checkSecond1(sec) {
+                if (sec < 10 && sec >= 0) { sec = "0" + sec }; // add zero in front of numbers < 10
+                if (sec < 0) { sec = "59" };
+                return sec;
+            }
+            function GetEmailOTPforValidation(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
+                return new Promise(function (resolve, reject) {
+                    if (MobileNo == undefined || MobileNo == '') {
+                        MobileNo = null;
                     }
+                    if (TriggerType == undefined || TriggerType == '') {
+                        TriggerType = null;
+                    }
+                    if (PlanCode == undefined || PlanCode == '') {
+                        PlanCode = null;
+                    }
+                    $.ajax({
+                        type: "GET",
+                        url: "https://live.healthassure.in/ProductApi/api/User/GetOTPForEmailId?Emailid=" + Email + "&Source=" + PTitle + "&MobileNo=" + MobileNo + "&TriggerType=" + TriggerType + "&PlanCode=" + PlanCode,
+                        dataType: "json",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                        },
+                        success: function (result) {
+                            console.warn(result.message);
+                            if (result.status) {
+                                resolve(result) // Resolve promise and go to then()
+                            } else {
+                                reject(result) // Reject the promise and go to catch()
+                            }
+                        },
+                        error: function (eror) {
+                            console.warn(eror);
+                            reject(err) // Reject the promise and go to catch()
+                        }
+                    });
                 });
-            });
-        }
-        function OpenbuyPlanThankyouPage(PlanName) {
-            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
-            window.open(url, "_parent");
-        }
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+            }
+            function VarifyEmailOTPforValidation(otp, Email, MobileNumbar = null) {
+                return new Promise(function (resolve, reject) {
+                    if (MobileNumbar == undefined || MobileNumbar == '') {
+                        MobileNumbar = null;
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "https://live.healthassure.in/ProductApi/api/User/VerifyEmailId",
+                        dataType: "json",
+                        data: JSON.stringify({ EmailId: Email, OTP: otp, MobileNumbar: MobileNumbar }),
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                        },
+                        success: function (result) {
+                            console.warn(result.message);
+                            if (result.status) {
+                                resolve(result) // Resolve promise and go to then()
+                            } else {
+                                reject(result) // Reject the promise and go to catch()
+                            }
+                        },
+                        error: function (eror) {
+                            console.warn(eror);
+                            reject(err) // Reject the promise and go to catch()
+                        }
+                    });
+                });
+            }
+            function OpenbuyPlanThankyouPage(PlanName) {
+                var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
+                window.open(url, "_parent");
+            }
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+            function GetRelations() {
+                var Relations = [];
+                var MemberName1 = $('#MemberName1').val();
+                var MemberDOB1 = $('#MemberDOB1').val();
+                var MemberName2 = $('#MemberName2').val();
+                var MemberDOB2 = $('#MemberDOB2').val();
+                var MemberName3 = $('#MemberName3').val();
+                var MemberDOB3 = $('#MemberDOB3').val();
+                if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                    Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="MemberGender1"]:checked').val() });
                 }
-            });
-        }
-        function GetRelations() {
-            var Relations = [];
-            var MemberName1 = $('#MemberName1').val();
-            var MemberDOB1 = $('#MemberDOB1').val();
-            var MemberName2 = $('#MemberName2').val();
-            var MemberDOB2 = $('#MemberDOB2').val();
-            var MemberName3 = $('#MemberName3').val();
-            var MemberDOB3 = $('#MemberDOB3').val();
-            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
-                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="MemberGender1"]:checked').val() });
+                if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                    Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="MemberGender2"]:checked').val() });
+                }
+                if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                    Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="MemberGender3"]:checked').val() });
+                }
+                return Relations;
             }
-            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
-                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="MemberGender2"]:checked').val() });
-            }
-            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
-                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="MemberGender3"]:checked').val() });
-            }
-            return Relations;
-        }
-    </script>
+        </script>
 </body>
 
 </html>

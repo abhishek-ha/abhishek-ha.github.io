@@ -29,7 +29,7 @@ function getUrlVars1(url = window.location.href) {
 }
 var Vars1 = getUrlVars1();
 function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false, IsVarifyEmail = false, EmailDomain = "", IsVarifyEmailPhoneTNC = false, IsEnableMembersAddtion = false, IsEnableAgent = false) {
-    $('#BuyPlaniframe').attr('src', '../buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain + '&IsVarifyEmailPhoneTNC=' + IsVarifyEmailPhoneTNC + '&IsEnableMembersAddtion=' + IsEnableMembersAddtion + '&IsEnableAgent=' + IsEnableAgent);
+    $('#BuyPlaniframe').attr('src', 'https://healthassure.in/buyPlan.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain + '&IsVarifyEmailPhoneTNC=' + IsVarifyEmailPhoneTNC + '&IsEnableMembersAddtion=' + IsEnableMembersAddtion + '&IsEnableAgent=' + IsEnableAgent);
     openmodal();
 }
 
