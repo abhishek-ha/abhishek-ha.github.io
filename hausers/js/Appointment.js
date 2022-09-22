@@ -25,15 +25,15 @@ function LoadData(Appointmentid) {
                 document.title = ' DI-Appointment ' + data.results.statusname ;
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" width="15"> ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html('<i class="fa-regular fa-clock"></i> ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" width="15">Location </a>');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
-                $("#txtDurationForTest").html('<i class="fa-solid fa-clock"></i>' + data.results.durationforTest);
+                $("#txtDurationForTest").html('<i class="fa-regular fa-clock"></i>' + data.results.durationforTest);
                 $("#txtPaymentMode").html('<i class="fa-solid fa-box-archive"></i> ' + data.results.paymentMode);
                 $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);

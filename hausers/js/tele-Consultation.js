@@ -28,7 +28,7 @@ function LoadData(Appointmentid) {
                 $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
                  $("#btnAge").text(data.results.memberAge + ' Years');
-                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
+                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.subServiceDetails);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
