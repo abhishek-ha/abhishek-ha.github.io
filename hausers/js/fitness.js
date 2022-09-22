@@ -19,18 +19,17 @@ function LoadData(Appointmentid) {
                  if (statusName == 'Cancelled') {
                     $("#dvCancel").show();
                     $("#dvConfirm").hide();
-                    $("#btnstatusname").css("background-color", "Red");
+                    $("#btnstatusname").attr("class", "btn btn-red");
                 } else if (statusName == 'Confirmed'){
                     $("#dvCancel").hide();
                     $("#dvConfirm").show();
-                    $("#btnstatusname").css("background-color", "Orange");
+                    $("#btnstatusname").attr("class", "btn btn-orange");
                     }
-            
                 $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" width="15">  ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html('<i class="fa-regular fa-clock"></i> ' + data.results.appointmentTime);
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#txtDurationForTest").html('<i class="fa-solid fa-clock"></i> Under ' + data.results.durationforTest);
                 $("#txtPointOfContact").text(data.results.PointOfContact);

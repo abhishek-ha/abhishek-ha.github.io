@@ -33,7 +33,7 @@ function LoadData(Appointmentid) {
                     reportsPath = data.results.reportSavePath;
                 }
                 if (statusName == 'Cancelled') {
-                    $("#btnstatusname").css("background-color", "Red");
+                    $("#btnstatusname").attr("class", "btn btn-red");
                      $("#dvCancelled").show();
                 }
                 else if (statusName == 'Requested') {
@@ -46,7 +46,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (statusName == 'Confirmed') {
                     $("#txtTrainerName").html('<span class="trainername">' + data.results.pointOfContact + '</span> ');
-                    $("#btnstatusname").css("background-color", "Orange");
+                    $("#btnstatusname").attr("class", "btn btn-orange");
                     $("#dvConfirmed").show();
                 }
                 else {
