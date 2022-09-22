@@ -15,41 +15,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
 		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style type="text/css">
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-.active:after {
-  content: "\2212";
-}
-.panel {
-  padding: 0px 0px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  margin-bottom: 2px;
-}
-</style>
+
 
 
 </head>
@@ -59,141 +25,66 @@
 	<div id="body">
 		<div class="container mt-5">
 			<div class="row">
-				<div class="col-xl-10 col-lg-10 col-md-10 col-8">
+				<div class="col-xl-9 col-lg-9 col-md-3 col-7">
 					<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
 				</div>
-				<div class="col-xl-2 col-lg-2 col-md-2 col-4 float-end">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end">
 					<img src="images/logo.png" class="img-fluid logo ">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-6">
-	<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge" class="btn btn-primary1 "> Female </button>
+					<div class="row">
+						<div class="col-xl-2 col-lg-2 col-md-3 col-6">
+	<button id="btnGender" class="btn btn-primary1"> Male </button>	
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-3 col-6">
+	<button id="btnAge" class="btn btn-primary1 "> Female </button>
+						</div>
+				</div>
+	
 					<div class="row">
 						<div class="col-lg-12 mt-4 ">
 							<div class="box pt-4">
 								<h4> Appoinment Status </h4>
 <button id="btnstatusname" class="btn btn-green"> Appoinment Confirmed </button>
 								<div class="row">
-									<div class="col-lg-12 mt-3">
+									<div class="col-lg-12 mt-1">
 										<h4> Appoinment Date </h4>
 									</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
 			<p id="txtAppointmentDate"> <img src="images/calendar-black.png" width="15"> Saturday, 12 June </p>
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-12">
-										<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
 									</div>
 									<div class="col-lg-12 col-md-12">
 										<h4> Center Location </h4>
 									</div>
-									<div class="col-lg-2 col-3" id="imgProviderImage">
-										<img src="images/apollo-logo.png" class="img-fluid">
+		<div class="col-lg-2 col-3" id="imgProviderImage">
+			<img src="images/apollo-logo.png" class="img-fluid">
 									</div>
-									<div class="col-lg-10 col-9">
-										<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar
-											Pradesh 201301 <img src="images/google-map.png" width="15"> Location </p>
-									</div>
+			<div class="col-lg-10 col-9">
+<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar Pradesh 201301 <img src="images/google-map.png" width="15"> Location </p>
+			</div>
 									<div class="col-lg-12">
 										<h4> Appointment For </h4>
-<p id="txtplanName"><i class="fa-solid fa-circle-check text-success"></i> Annual
-Health Checkup <a href="#">(10 Tests Covered) </a> </p>
+<p id="txtplanName"><i class="fa-solid fa-circle-check text-success"></i> Annual Health Checkup <a href="#"> (10 Tests Covered) </a> </p>
 
 									</div>
 							</div>
-								<div class="col-lg-12 mt-2" id="dvTestListBtn">
-
-
-<button class="accordion" style="margin-top:20px;"> Adult </button>
+					<div class="col-lg-12" id="dvTestListBtn">
+<button class="accordion"> View Appoinment Details </button>
 <div class="panel">
-<div class="form-group">
-        <label class="form-label pl-2px" for="CustomerName">Name</label>
-                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
-                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
-                    </div>
-
-        <div class="form-group">
-            <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
-                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
-                            min="1920-01-01" />
-                    </div>
- <div class="form-check" style="margin-top: 10px;">
-                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
-                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio1" checked="checked" value="Male">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
-                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio2" value="Female">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
-</div>
-<button class="accordion">Child</button>
-<div class="panel">
-  <div class="form-group">
-        <label class="form-label pl-2px" for="CustomerName">Name</label>
-                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
-                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
-                    </div>
-
-        <div class="form-group">
-            <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
-                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
-                            min="1920-01-01" />
-                    </div>
- <div class="form-check" style="margin-top: 10px;">
-                        <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
-                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio1" checked="checked" value="Male">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
-                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio2" value="Female">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
+	<ul id="ulTest" class="mt-4 px-3" type="none"> 
+	</ul>
 </div>
 
-<button class="accordion"> Child </button>
-<div class="panel">
- <div class="form-group">
-       <label class="form-label pl-2px" for="CustomerName">Name</label> 
-                        <input type="text" id="CustomerName" class="form-control121" placeholder="Name *"
-                            title="Please Enter Character Only" pattern="[a-zA-Z ]*" required />
-                    </div>
 
-        <div class="form-group">
-            <label class="form-label pl-2px" for="CustomerDOB">DOB</label> 
-                        <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
-                            min="1920-01-01" />
-                    </div>
- <div class="form-check" style="margin-top: 10px;">
-                        <label class="form-label pl-1" for="CustomerDOB">Gender</label>
-                        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio1" checked="checked" value="Male">
-                        <label class="form-check-label" for="inlineRadio1">Male</label>
-                        <input style="margin-left: 20px;" class="form-check-input" type="radio" name="CustomerGender"
-                            id="inlineRadio2" value="Female">
-                        <label class="form-check-label" for="inlineRadio2">Female</label>
-                    </div>
-</div>
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-<a role="button" data-toggle="collapse" data-parent="#accordion"
-href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Tests Covered </a> </h4>
-											</div>
-<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"aria-labelledby="headingOne">
-		<div class="panel-body">
-                      <div class="accordion">
-													<ul id="ulTest" type="none">
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+
 								</div>
 								<div id="dvCaseNo">
-									<h4 class="mb-0 pt-4 pb-2"> Case Id </h4>
+					<h4 class="mb-0 pt-4 pb-2"> Case Id </h4>
 									<button id="btnCaseNo" class="btn btn-primary1">APPOLO345676 </button>
 								</div>
 							</div>
@@ -216,7 +107,7 @@ href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Test
 						</div>
 					</div>
 
-					<div class="col-lg-12 col-md-12 mt-3" id="dvForCompletedImage">
+					<div class="col-lg-12 col-md-12" id="dvForCompletedImage">
 						<div class="instructbox">
 							<h3 class="text-center pt-5"><b> Thankyou for choosing us </b></h3>
 							<p class="text-center"> Your appointment was completed successfully! Please find your
@@ -245,7 +136,7 @@ href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Test
 							</div>
 						</div>
 						<div class="row">
-					<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
+			<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
 								<div class="box">
 									<div class="row">
 										<div class="col-lg-12 ">
@@ -254,7 +145,7 @@ href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Test
 <p id="txtDurationForTest"> <i class="fa-solid fa-clock "> </i> Under 45 Mins </p>
 											</div>
 											<div id="dvPointOfContact">
-												<h4 class="pt-2"> Point Of Contact </h4>
+							<h4 class="pt-2"> Point Of Contact </h4>
 						<div class="docbox">
 <p class="pt-2"> <i class="fa-solid fa-2x fa-user-doctor"></i> <span
 id="txtPointOfContact" class="doctname"> Dr. Sameer Ale
@@ -263,7 +154,7 @@ id="txtPointOfContact" class="doctname"> Dr. Sameer Ale
 											</div>
 			<h4> Fasting Required </h4>
 	<button id="btnFasting" class="btn btn-primary1"> Yes </button>
-					<h4 class="pt-4 mb-0"> Payment Mode </h4>
+					<h4 class="pt-3 mb-0"> Payment Mode </h4>
 <p id="txtPaymentMode"> <img src="images/wallet.png" width="15px"> Prepaid </p>
 				<div id="dvPreprationForCheckup">
 					<h4> Prepration For Checkup </h4>
@@ -277,17 +168,16 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="row " id="dvAppointmentConfirmed">
-									<div class="box1 px-5">
+									<div class="box1 ">
 										<div class="col-lg-12">
-											<h3> For Centre Use only </h3>
-											<h4 class="mb-0 "> Case Id </h4>
-											<button id="btnCaseNoConfirmed" class="btn btn-primary1">APPOLO345676
-											</button>
+							<h3> For Centre Use only </h3>
+								<h4 class="mb-0 "> Case Id </h4>
+<button id="btnCaseNoConfirmed" class="btn btn-primary1">APPOLO345676 </button>
 											<h4> Breakfast Centre </h4>
-											<button id="btnBreakfastCentre" class="btn btn-success"> Yes </button>
+<button id="btnBreakfastCentre" class="btn btn-success"> Yes </button>
 											<h4> Technician </h4>
-											<button id="btnTechnician" class="btn btn-success"> Female </button>
-											<h4> Payment Settlement Mode</h4>
+<button id="btnTechnician" class="btn btn-success"> Female </button>
+									<h4> Payment Settlement Mode</h4>
 <p id="btnPaymentSettlementMode"> <img src="images/wallet.png" width="15px"> Credit</p>
 											<h4> Report Sharing with Customer </h4>
 											<button id="btnReportSharing" class="btn btn-secondary"> No </button>
@@ -330,11 +220,11 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 					</div>
 					<div class="col-lg-4 col-md-6">
 						<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-12">
 			<p> <i class="fa-regular fa-envelope"></i> <a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-12">
-								<p> <img src="images/email.png" width="10px"> 912261676600/33 </p>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-12">
+								<p> <img src="images/email.png" width="12px"> 912261676600/33 </p>
 							</div>
 							<div class="col-lg-9 offset-lg-3 col-sm-6 ">
 								<ul>
