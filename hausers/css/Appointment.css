@@ -99,92 +99,7 @@ line-height:26.5px ;
 }
 
 
-@media only screen and (min-width: 700px){
-   #accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 30px;
-    text-decoration: none;
-}
-.footer{
-    background-color: #1e66ba;
-    background-image: url('../images/footerbg.png');
-    width: 100%;
-    background-position: contain;
-    padding: 15px;
-    background-repeat: no-repeat;
 
-}
-.footer h3{
-    color: #ffffff;
-    font-size: 22px;
-}
-.footer p{
-    color: #ffffff;
-    font-size: 12px;
-}
-.footer ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #ffffff;
-    margin: 5px;
-    text-align: center;
-}
-.footer ul li a{
-    color: #ffffff;
-}
-}
-#accordion .panel-title a.collapsed:before{
-content: "\f107";
-    font-family: fontawesome;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    border-radius: 50%;
-    background: #1f67bb;
-}
-#accordion .panel-title a:after,
-#accordion .panel-title a.collapsed:after{
-    content: "";
-    width: 17px;
-    height: 7px;
-    position: absolute;
-    top: 22px;
-    right: 0;
-}
-#accordion .panel-body{
-   /* border-left: 3px solid #fe7725;*/
-    border-top: none;
-    background: #fff;
-    /*font-size: 15px;*/
-    color: #1c2336;
-    line-height: 27px;
-    position: relative;
-}
-#accordion .panel-body:before{
-    content: "";
-    height: 3px;
-    width: 50%;
-   /* background: #fe7725;*/
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-#accordion .panel-body p{
-  padding: 10px;
-}
-.ml-20{
-    margin-left: 20px;
-}
 
 
 @media only screen and (max-width: 300px) {
@@ -204,19 +119,6 @@ content: "\f107";
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -384,9 +286,6 @@ content: "\f107";
     font-size: 9px;
     font-weight: 600;
 }
-
-
-
 .box1{
     padding-left: 15px!important;
     padding-right: 5px!important;
@@ -450,6 +349,53 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
+
+.accordion {
+  background-color: #1f67bb;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 26px;
+  text-align: center;
+}
+.active, .accordion:hover {
+ background-color: #1f67bb;
+}
+.accordion:after {
+    content: "\f107";
+        font-family: fontawesome;
+  /* content: '\f078';*/
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #ffffff;
+  padding: 0px 7px 0px 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.active:after {
+  content: "\f106";
+font-family: fontawesome;
+}
+.panel {
+  padding: 0px 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 2px;
+}
+
+
+
 }
 
 
@@ -472,19 +418,7 @@ ul{
     line-height: 22px;
     text-align: center;
 }
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
-}
+
 .footer{
     background-color: #0e5fc1;
     background-image: url('../images/footerbg.png');
@@ -547,7 +481,6 @@ ul{
     border-radius: 20px;
     min-width: 87px;
 }
-
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
@@ -558,8 +491,6 @@ ul{
     border-radius: 20px;
     min-width: 87px;
 }
-
-
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -622,8 +553,7 @@ ul{
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
-  
+    border-radius: 20px; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -734,9 +664,50 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
+.accordion {
+  background-color: #1f67bb;
+  color: #ffffff;
+  cursor: pointer;
+padding: 11px 5px 8px 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 5px;
+  transition: 0.4s;
+  border-radius: 26px;
+  text-align: center;
+}
+.active, .accordion:hover {
+ background-color: #1f67bb;
+}
+.accordion:after {
+    content: "\f107";
+    font-family: fontawesome;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #ffffff;
+  padding: 0px 3px 0px 3px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.active:after {
+  content: "\f106";
+font-family: fontawesome;
+}
+.panel {
+  padding: 0px 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 2px;
 }
 
-
+}
 
 
 @media only screen and (min-width: 350px) {
@@ -997,6 +968,52 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
+
+
+.accordion {
+  background-color: #1f67bb;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 26px;
+  text-align: center;
+}
+.active, .accordion:hover {
+ background-color: #1f67bb;
+}
+.accordion:after {
+    content: "\f107";
+        font-family: fontawesome;
+  /* content: '\f078';*/
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 2px solid #ffffff;
+  padding: 0px 7px 0px 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.active:after {
+  content: "\f106";
+font-family: fontawesome;
+}
+.panel {
+  padding: 0px 0px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 2px;
+}
+
 }
 
 
