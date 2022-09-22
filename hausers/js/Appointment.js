@@ -25,24 +25,24 @@ function LoadData(Appointmentid) {
                 document.title = ' DI-Appointment ' + data.results.statusname ;
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" width="15"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-regular fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html(' <i class="fa-regular fa-clock boxicon"></i>  ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" width="15">Location </a>');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
-                $("#txtDurationForTest").html('<i class="fa-regular fa-clock"></i>' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" width="15"> ' + data.results.paymentMode);
+                $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode);
                 $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" width="15"> ' + data.results.paymentSettlementMode);
+                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentSettlementMode);
                 $("#txtProviderName").text(data.results.providerName);
-                $("#txtProviderMobile").html('<i class="fa-solid fa-phone"></i> ' + data.results.providerMobile);
-                $("#txtProviderEmail").html('<i class="fa-solid fa-envelope"></i> ' + data.results.providerEmail);
+                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
+                $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
@@ -70,6 +70,7 @@ function LoadData(Appointmentid) {
                     else {
                         $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                         $("#dvTestListBtn").show();
+
                         $.each(data.results.coveredTests, function (key, value) {
                             $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
                         });
@@ -119,7 +120,7 @@ function LoadData(Appointmentid) {
 }
 
 $(function () {
-    $("#dvTestListBtn").hide();
+    $("#dvTestListBtn").show();
     $("#dvAppointmentConfirmed").hide();
     $("#dvForConfirm").hide();
     $("#dvForCancelImage").hide();
