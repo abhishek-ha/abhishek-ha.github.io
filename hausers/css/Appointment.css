@@ -475,11 +475,12 @@ font-family: fontawesome;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 12px;
-    font-weight: 600;
+    min-width: 68px;
+    font-size: 10px;
     cursor: pointer;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
     border-radius: 20px;
-    min-width: 87px;
 }
 .btn-secondary {
     color: #fff;
@@ -489,7 +490,12 @@ font-family: fontawesome;
     font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
-    min-width: 87px;
+   min-width: 68px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
+    border-radius: 20px;
 }
 .btn-reports{
     background-color:transparent;
@@ -512,11 +518,11 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-       font-size: 8px;
+       font-size: 5px;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 3px 5px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -608,10 +614,12 @@ font-family: fontawesome;
     line-height: 28px;
 }
 .box1 h4{
-    font-size: 15px;
+    font-size: 9px;
     font-weight: 600;
-    margin-bottom: 4px;
-    margin-top: 8px;
+      margin-bottom: 4px;
+}
+.box1 p{
+font-size: 8px;
 }
 
 .docbox{
