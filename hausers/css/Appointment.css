@@ -333,27 +333,30 @@ font-family: fontawesome;
 .consultimg{
     padding-top: 50px;
 }
-
-
 }
 
 
 
 @media only screen and (min-width: 301px) {
-
+    .email{
+        width: 8px;
+        padding-right: 2px;
+    }
+.footercol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
 .footerlogo{
     width: 100%;
     padding-top: 16px;
 }
-
-    .head{
+.head{
 font-weight: 700;
 font-size:16px ;
 line-height:26.5px ;
 }
-
 .sub-heading{
-    font-weight: 700;
+font-weight: 700;
 font-size:20px ;
 line-height:26.5px ;
 }
@@ -374,7 +377,6 @@ line-height:26.5px ;
     line-height: 22px;
     text-align: center;
 }
-
 .footer{
     background-color: #0e5fc1;
     background-image: url('../images/footerbg.png');
@@ -383,21 +385,25 @@ line-height:26.5px ;
     padding: 15px;
     background-repeat: no-repeat;
 }
+.footer .fa{
+    font-size: 7px;
+}
 .footer h3{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 8px;
+    margin-bottom: 0px;
 }
 .footer p{
     color: #ffffff;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 5px;
+    line-height: 6px;
 }
 .footer ul li{
     list-style-type: none;
     float: left;
-    font-size: 14px;
+    font-size: 8px;
     color: #ffffff;
-    margin: 5px;
+    margin: 3px;
     text-align: center;
 }
 .footer ul li a{
@@ -476,7 +482,7 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 80px;
+  min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 5px 3px 5px 3px;
@@ -491,10 +497,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 5px;
+    min-width: 110px;
     font-weight: 600;
-    min-width: 180px;
     text-transform: uppercase;
+    padding: 2px 3px 2px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -534,7 +541,20 @@ line-height:26.5px ;
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
+    font-size: 5px;
+    min-width: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 3px 5px 3px;
+     border-radius: 20px;
+}
+.btn-grey:hover{
+    background-color: #0E5FC1;
+    color: #ffffff;
     border-radius: 20px;
+    font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
 }
 .btn-w120{
     width: 120px;
@@ -542,7 +562,7 @@ line-height:26.5px ;
 }
 .box{
     background: rgba(12, 85, 173, 0.03);
-    padding: 10px 15px 10px 15px;
+     padding: 10px 7px 10px 7px;
 }
 .boxicon{
     width: 10px;
@@ -552,7 +572,6 @@ line-height:26.5px ;
     line-height: 10px;
       margin-bottom: 4px;
 }
-
 .box h4{
     font-size: 9px;
     font-weight: 600;
@@ -563,9 +582,10 @@ line-height:26.5px ;
     padding-right: 15px;
 }
 .box1 h3{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 17px;
+    margin-bottom: 5px;
 }
 .box1 h4{
     font-size: 9px;
@@ -879,7 +899,17 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 5px;
+    min-width: 115px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 3px 5px 3px;
 }
+.btn-grey:hover{
+    background-color: #0E5FC1;
+    color: #ffffff;
+}
+
 .btn-w120{
     width: 120px;
     cursor: pointer;
@@ -1018,6 +1048,10 @@ font-family: fontawesome;
 .consultimg{
     padding-top: 70px;
 }
+.mt-minus{
+    margin-top: -10px;
+}
+
 }
 
 @media only screen and (min-width: 422px) {
@@ -1164,9 +1198,9 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
-    min-width: 180px;
+    min-width: 80px;
     text-transform: uppercase;
 }
 .btn-red:hover{
@@ -1215,7 +1249,7 @@ line-height:26.5px ;
 }
 .box{
     background: rgba(12, 85, 173, 0.03);
-    padding: 10px 15px 10px 15px;
+   padding: 10px 7px 10px 7px;
 }
 .boxicon{
     width: 10px;
@@ -1325,7 +1359,7 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -2468,9 +2502,7 @@ font-family: fontawesome;
     font-size: 14px;
     line-height: 16px;
 }
-.box .btn{
-    border-radius: 20px;
-}
+
 .box h4{
     font-size: 14px;
     font-weight: 600;
@@ -2663,14 +2695,35 @@ font-family: fontawesome;
 .appoinmentbtn{
     background-color:#C0C0C0 ;
     color:#000000;
+      color: #ffffff;
+    border-radius: 20px;
+    margin: 5px;
+     min-width: 180px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 6px 5px 6px;
+}
+.appoinmentbtn:hover{
+    background-color:#1f67bb;
+    color:#ffffff;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
-     min-width: 180px;
-     text-transform: uppercase;
+    cursor: pointer;
 }
-.appoinmentbtn:hover{
+.requestedbtn{
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 5px;
+     min-width: 180px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 6px 5px 6px;
+}
+.requestedbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
     border-radius: 20px;
@@ -2685,8 +2738,8 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
-    min-width: 87px;
-    font-size: 12px;
+     min-width: 87px;
+    font-size: 11px;
     font-weight: 600;
     padding: 5px 6px 5px 6px;
 }
@@ -2697,7 +2750,7 @@ font-family: fontawesome;
     border-radius: 20px;
     margin: 5px;
     min-width: 87px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     padding: 5px 6px 5px 6px;
 }
@@ -2722,7 +2775,7 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 12px;
+    font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2738,10 +2791,11 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     min-width: 180px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -2753,24 +2807,23 @@ font-family: fontawesome;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 5px;
-    min-width: 87px;
-    font-size: 12px;
+    margin: 0px;
+    min-width: 80px;
+    font-size: 11px;
     font-weight: 600;
     padding: 5px 6px 5px 6px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
-   
+    border-radius: 20px;   
 }
 .btn-blue{
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 14px;
+    font-size: 11px;
 }
 .btn-blue:hover{
     background-color:#F5720A;
@@ -2783,7 +2836,24 @@ font-family: fontawesome;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
 }
+
+.btn-grey:hover{
+    background-color: #0E5FC1;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
+}
+
+
+
 .btn-w120{
     width: 120px;
     cursor: pointer;
@@ -2802,6 +2872,8 @@ font-family: fontawesome;
 .box h4{
     font-size: 14px;
     font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 15px;
 }
 .box1{
     padding-left: 15px;
@@ -2816,7 +2888,7 @@ font-family: fontawesome;
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
-    margin-top: 8px;
+    margin-top: 15px;
 }
 .box1 p{
     font-size: 14px;
@@ -2916,8 +2988,13 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 50px;
+    padding-top: 60px;
 }
+.mt-minus{
+    margin-top: -10px;
+}
+
+
 
 }
 
