@@ -28,7 +28,7 @@ function LoadData(Appointmentid) {
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html(' <i class="fa-regular fa-clock boxicon"></i>  ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
-                $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" width="15">Location </a>');
+                $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
@@ -92,7 +92,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-success');
+                    $("#btnstatusname").attr('class', 'btn btn-grey');
                     $("#dvForCompletedImage").show();
                 }
                 else if (data.results.statusname == 'Confirmed') {
