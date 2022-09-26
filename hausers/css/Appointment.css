@@ -597,7 +597,6 @@ line-height:26.5px ;
 font-size: 8px;
 margin-bottom: 4px;
 }
-
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
@@ -710,13 +709,11 @@ line-height:26.5px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
-    .head{
+.head{
 font-weight: 700;
 font-size:16px ;
 line-height:26.5px ;
 }
-
 .sub-heading{
     font-weight: 700;
 font-size:20px ;
@@ -747,14 +744,18 @@ line-height:26.5px ;
     padding: 15px;
     background-repeat: no-repeat;
 }
+.footercol {
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+
+.footer .fa{
+    font-size: 7px;
+}
 .footer h3{
     color: #ffffff;
-    font-size: 22px;
-}
-.footer p{
-    color: #ffffff;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 8px;
+    margin-bottom: 0px;
 }
 .footer ul li{
     list-style-type: none;
@@ -767,6 +768,12 @@ line-height:26.5px ;
 .footer ul li a{
     color: #ffffff;
 }
+.footer p {
+    color: #ffffff;
+    font-size: 5px;
+    line-height: 6px;
+}
+
 .footer p a{
     color: #ffffff!important;
 }
@@ -909,7 +916,6 @@ line-height:26.5px ;
     background-color: #0E5FC1;
     color: #ffffff;
 }
-
 .btn-w120{
     width: 120px;
     cursor: pointer;
@@ -926,7 +932,6 @@ line-height:26.5px ;
     line-height: 10px;
       margin-bottom: 4px;
 }
-
 .box h4{
     font-size: 9px;
     font-weight: 600;
@@ -952,7 +957,6 @@ line-height:26.5px ;
 font-size: 8px;
 margin-bottom: 4px;
 }
-
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
@@ -1051,7 +1055,6 @@ font-family: fontawesome;
 .mt-minus{
     margin-top: -10px;
 }
-
 }
 
 @media only screen and (min-width: 422px) {
@@ -1063,14 +1066,12 @@ font-weight: 700;
 font-size:18px ;
 line-height:26.5px ;
 }
-
 .sub-heading{
     font-weight: 700;
 font-size:20px ;
 line-height:26.5px ;
 }
-
-   .logo{
+.logo{
         width: 120px;
     }
 .instructbox{
@@ -1108,14 +1109,23 @@ line-height:26.5px ;
     padding: 15px;
     background-repeat: no-repeat;
 }
+.footercol {
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+
+.footer .fa{
+    font-size: 7px;
+}
 .footer h3{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 8px;
+    margin-bottom: 0px;
 }
-.footer p{
+.footer p {
     color: #ffffff;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 5px;
+    line-height: 6px;
 }
 .footer ul li{
     list-style-type: none;
@@ -1182,10 +1192,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10px;
+    font-size: 8px;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
+     padding: 2px 5px 2px 5px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2002,12 +2013,11 @@ font-family: fontawesome;
 }
 }
 
-
 @media only screen and (min-width: 1000px) {
     .footerlogo{
     width: 100%;
 }
-   .logo{
+ .logo{
         width: 130px;
     }
 .instructbox{
@@ -2045,14 +2055,34 @@ font-family: fontawesome;
     padding: 15px;
     background-repeat: no-repeat;
 }
+.footercol {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+.footer .fa{
+    font-size: 10px;
+}
 .footer h3{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
-.footer p{
+.footer p {
     color: #ffffff;
-    font-size: 13px;
+    font-size: 9px;
+    line-height: 13px;
 }
+.email {
+    width: 10px;
+    padding-right: 2px;
+}
+.footer p a{
+    color: #ffffff!important;
+    font-size: 9px;
+}
+
+
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -2666,15 +2696,33 @@ font-family: fontawesome;
     padding: 15px;
     background-repeat: no-repeat;
 }
+.footercol {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.footer .fa{
+    font-size: 13px;
+}
 .footer h3{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 6px;
 }
-.footer p{
+.footer p {
     color: #ffffff;
     font-size: 13px;
-    line-height: 21px;
+    line-height: 17px;
 }
+.email {
+    width: 13px;
+    padding-right: 2px;
+}
+.footer p a{
+    color: #ffffff!important;
+    font-size: 13px;
+    line-height: 17px;
+}
+
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -2775,10 +2823,12 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 11px;
+    font-size: 12px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2791,11 +2841,12 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 12px;
     min-width: 180px;
+    font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+  padding: 5px 6px 5px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -2841,6 +2892,7 @@ font-family: fontawesome;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 5px 10px 5px 10px;
 }
 
 .btn-grey:hover{
@@ -2851,9 +2903,6 @@ font-family: fontawesome;
     min-width: 180px;
     font-weight: 600;
 }
-
-
-
 .btn-w120{
     width: 120px;
     cursor: pointer;
