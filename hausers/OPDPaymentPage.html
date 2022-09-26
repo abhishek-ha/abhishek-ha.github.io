@@ -246,6 +246,7 @@
                           <th class="empid">Name</th>
                           <th class="fname">Gender</th>
                           <th class="lname">DOB</th>
+                          <th class="lname">Relation</th>
                         </tr>
                       </thead>
                       <tbody id="Relationstbody">
@@ -296,7 +297,7 @@
             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body" id="PlanTnCAsHtml">
-                
+
                 <ul>
                   <li>The prices mentioned above are exclusive of taxes</li>
                   <li>Discount on pharmacy would be applicable post wallet exhaustion</li>
@@ -433,7 +434,7 @@
         $('#PlanAmountWithGST').html(plan.planAmountWithGST);
         var RelationDetails = "";
         $.each(plan.relationDetails, function (key, r) {
-          RelationDetails += "<tr><td>" + r.Name + "</td><td>" + r.Gender + "</td><td>" + r.DoB + "</td></tr>"
+          RelationDetails += "<tr><td>" + r.Name + "</td><td>" + r.Gender + "</td><td>" + r.DoB + "</td><td>" + r.RelationName + "</td></tr>"
         });
         if (RelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
           $('#Relationstbody').html(RelationDetails);
