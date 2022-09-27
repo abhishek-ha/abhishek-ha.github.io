@@ -1669,7 +1669,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .brandingwala{
      background-color:#fcfcfc;
     height:651px;
@@ -1734,11 +1733,37 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:651px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala1{
      background-color:#fcfcfc;
     height:677px;
@@ -1801,8 +1826,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .merabima{
      background-color:#fcfcfc;
     height:717px;
@@ -2020,8 +2043,6 @@ div {
 .inrspace{
     padding-top: 3rem;
 }
-
-
 }
 
 
@@ -2030,11 +2051,9 @@ div {
     margin-left: 0px;
     margin-right: 0px;
 }
-
 .inrspace{
     padding-top: 3rem;
 }
-
 .pt-bnr {
     padding-top: 200px;
     text-align: center;
@@ -2104,7 +2123,6 @@ div {
 .pl-123{
     padding-left: 123px;
 }
-
 .pl-88 {
     padding-left:75px!important;
 }
@@ -2563,9 +2581,37 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:622px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:630px;
@@ -3631,14 +3677,42 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:524px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .tradeindia .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .brandingwala{
      background-color:#fcfcfc;
     height:666px;
@@ -3670,7 +3744,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .brandingwala1{
      background-color:#fcfcfc;
     height:666px;
@@ -3734,7 +3807,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .merabima{
      background-color:#fcfcfc;
     height:630px;
@@ -4551,6 +4623,40 @@ div {
 }
 
 
+.ebix1{
+     background-color:#fcfcfc;
+    height:542px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
 .brandingwala{
      background-color:#fcfcfc;
     height:546px;
@@ -4851,7 +4957,7 @@ div {
 
 .ebix{
      background-color:#fcfcfc;
-    height:651px;
+    height:540px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -4882,7 +4988,37 @@ div {
 }
 
 
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:523px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 }
 
 
@@ -4995,7 +5131,7 @@ div {
 
 .ebix{
      background-color:#fcfcfc;
-    height:651px;
+    height:530px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -5020,6 +5156,37 @@ div {
     margin-top:2px;
 }
 .ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.ebix1{
+     background-color:#fcfcfc;
+   height:520px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -5713,6 +5880,38 @@ div {
     margin-top:2px;
 }
 .ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+.ebix1{
+     background-color:#fcfcfc;
+    height:521px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -6423,11 +6622,12 @@ div {
     padding-top: 40px;
  }
 .startassu{
-    font-size:40px;
+    font-size:35px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
     padding-bottom:20px;
      padding-top:10px;
+     line-height: 45px;
 }
 .thead1{
     letter-spacing: 1px;
@@ -6802,8 +7002,6 @@ div {
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .ebix{
      background-color:#fcfcfc;
     height:521px;
@@ -6836,6 +7034,38 @@ div {
    color:#ffffff!important;
 }
 
+
+.ebix1{
+     background-color:#fcfcfc;
+    height:521px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:546px;
@@ -8769,7 +8999,7 @@ div {
     padding-top: 40px;
  }
 .startassu{
-    font-size:60px;
+    font-size:36px;
      font-weight:700!important;
     font-family: 'Poppins', sans-serif;
      padding-bottom:30px;
@@ -8809,7 +9039,7 @@ div {
 
 .ebix{
      background-color:#fcfcfc;
-    height:479px;
+   height:551px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -8834,6 +9064,37 @@ div {
     margin-top:2px;
 }
 .ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.ebix1{
+     background-color:#fcfcfc;
+    height:551px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -9812,7 +10073,7 @@ div {
 }
 .ebix{
      background-color:#fcfcfc;
-    height:564px;
+    height:437px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -9841,9 +10102,37 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
+.ebix1{
+     background-color:#fcfcfc;
+     height:437px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:567px;
@@ -9875,8 +10164,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .brandingwala1{
      background-color:#fcfcfc;
     height:568px;
@@ -10207,7 +10494,7 @@ div {
 
 .ebix{
      background-color:#fcfcfc;
-    height:564px;
+   height:437px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -10237,6 +10524,37 @@ div {
    color:#ffffff!important;
 }
 
+.ebix1{
+     background-color:#fcfcfc;
+    height:437px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:568px;
@@ -10433,8 +10751,6 @@ div {
 .head {
             font-size: 32px;
         }
-
-
 #generic_price_table .generic_content .generic_feature_list ul li{
     font-family: "Lato",sans-serif;
     font-size: 16px;
@@ -10505,7 +10821,6 @@ div {
 .offer1 img{
     margin-top:-22%;
     width:30%;
-
 }
 .merabima{
      background-color:#fcfcfc;
@@ -11049,10 +11364,9 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .ebix{
      background-color:#fcfcfc;
-    height:564px;
+    height:436px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -11077,6 +11391,37 @@ div {
     margin-top:2px;
 }
 .ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.ebix1{
+     background-color:#fcfcfc;
+      height:436px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -12088,9 +12433,37 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:514px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:535px;
@@ -12821,7 +13194,37 @@ div {
    color:#ffffff!important;
 }
 
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:514px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:666px;
@@ -13294,10 +13697,9 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .ebix{
      background-color:#fcfcfc;
-    height:514px;
+     height:535px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -13326,6 +13728,40 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+
+.ebix1{
+     background-color:#fcfcfc;
+    height:535px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
 .brandingwala{
      background-color:#fcfcfc;
     height:546px;
@@ -14122,6 +14558,41 @@ div {
     margin-top:2px;
 }
 .ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+.ebix1{
+     background-color:#fcfcfc;
+    height:520px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
    background-color:#0860cc;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
@@ -14953,7 +15424,7 @@ div {
 
 .ebix{
      background-color:#fcfcfc;
-    height:520px;
+    height:521px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -14982,9 +15453,37 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
+.ebix1{
+     background-color:#fcfcfc;
+    height:521px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
      background-color:#fcfcfc;
     height:546px;
@@ -15016,8 +15515,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .brandingwala1{
      background-color:#fcfcfc;
     height:546px;
@@ -15080,7 +15577,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
 .merabima{
      background-color:#fcfcfc;
     height:505px;
