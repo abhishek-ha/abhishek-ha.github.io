@@ -82,10 +82,31 @@ function GetTransactionDetails(TransactionId) {
                 } else {
                     reject(result) // Reject the promise and go to catch()
                 }
+            }
+        });
+    });
+}
+
+function UpdateTransactionDetais(OpdPayment) {
+    return new Promise(function (resolve, reject) {
+        debugger;
+        $.ajax({
+            type: "POST", 
+            url: APiBaseURL + '/api/OPDPlans/UpdateOPDPaymentDetail',
+            dataType: "json",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
             },
-            error: function (eror) {
-                console.warn(eror);
-                reject(err) // Reject the promise and go to catch()
+            data: JSON.stringify(OpdPayment),
+            success: function (result) {
+                console.warn(result.message);
+                if (result.status) {
+                    resolve(result) // Resolve promise and go to then()
+                } else {
+                    reject(result) // Reject the promise and go to catch()
+                }
             }
         });
     });
