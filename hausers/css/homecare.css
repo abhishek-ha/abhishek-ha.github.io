@@ -23,7 +23,14 @@ a{
 .bold{
     font-weight: 700;
 }
+.w-80{
+    width: 80%;
+}
+
 @media only screen and (max-width: 300px) {
+    .w-80{
+    width: 100%;
+}
 
 .footerlogo{
     width: 100%;
@@ -285,7 +292,6 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
-
 .accordion {
   background-color: #1f67bb;
   color: #ffffff;
@@ -337,7 +343,15 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 301px) {
-    .email{
+
+.mt-minus {
+    margin-top: -10px;
+}
+
+.w-80{
+    width: 100%;
+}
+ .email{
         width: 8px;
         padding-right: 2px;
     }
@@ -368,13 +382,14 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
+    font-size: 13px;
     line-height: 22px;
     text-align: center;
+    font-weight: 600;
 }
 .footer{
     background-color: #0e5fc1;
@@ -481,10 +496,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-  min-width: 100px;
+    min-width: 105px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 3px 3px 2px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -497,10 +512,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 5px;
-    min-width: 110px;
+     min-width: 105px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 2px 3px;
+    padding: 3px 3px 2px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -541,10 +556,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     font-size: 5px;
-    min-width: 80px;
+    min-width: 105px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 3px 3px 2px 3px;
+   /* padding: 5px 3px 5px 3px;*/
      border-radius: 20px;
 }
 .btn-grey:hover{
@@ -568,7 +584,7 @@ line-height:26.5px ;
 }
 .box p{
     font-size: 5px;
-    line-height: 10px;
+    line-height: 8px;
       margin-bottom: 4px;
 }
 .box h4{
@@ -641,7 +657,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-   width: 30%!important;
+   width: 40%!important;
 }
 ul{
     padding-left: 0px;
@@ -689,7 +705,7 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 }
 
@@ -731,7 +747,7 @@ line-height:26.5px ;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
+    font-size: 13px;
     line-height: 22px;
     text-align: center;
 }
@@ -910,7 +926,7 @@ line-height:26.5px ;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 3px 3px 2px 3px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -1002,7 +1018,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-   width: 30%!important;
+   width: 35%!important;
 }
 ul{
     padding-left: 0px;
@@ -1050,7 +1066,7 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .mt-minus{
     margin-top: -10px;
@@ -1080,13 +1096,14 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
+    font-size: 13px;
     line-height: 22px;
     text-align: center;
+    font-weight: 600;
 }
 #accordion .panel-title a{
     display: block;
@@ -1386,7 +1403,7 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 }
 
@@ -1886,6 +1903,9 @@ font-family: fontawesome;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    padding: 5px 3px 5px 3px;
+    font-size: 8px;
+    min-width: 150px;
 }
 .btn-w120{
     width: 120px;
@@ -1968,7 +1988,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-    width: 15%!important;
+    width: 18%!important;
 }
 ul{
     padding-left: 0px;
@@ -2020,7 +2040,11 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1000px) {
-    .footerlogo{
+
+.w-80{
+    width: 80%;
+}
+.footerlogo{
     width: 100%;
 }
  .logo{
@@ -2036,7 +2060,7 @@ font-family: fontawesome;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
     text-align: center;
 }
@@ -2214,6 +2238,7 @@ font-family: fontawesome;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    min-width: 166px;
 }
 .btn-w120{
     width: 120px;

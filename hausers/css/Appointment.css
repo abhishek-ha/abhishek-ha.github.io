@@ -337,6 +337,11 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 301px) {
+
+.mt-minus{
+    margin-top: -10px;
+}
+    
     .email{
         width: 8px;
         padding-right: 2px;
@@ -747,7 +752,6 @@ line-height:26.5px ;
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
-
 .footer .fa{
     font-size: 7px;
 }
@@ -759,7 +763,7 @@ line-height:26.5px ;
 .footer ul li{
     list-style-type: none;
     float: left;
-    font-size: 14px;
+    font-size: 7px;
     color: #ffffff;
     margin: 5px;
     text-align: center;
@@ -772,7 +776,6 @@ line-height:26.5px ;
     font-size: 5px;
     line-height: 6px;
 }
-
 .footer p a{
     color: #ffffff!important;
 }

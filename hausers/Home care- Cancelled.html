@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Homecare  | Requested </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Homecare  | Cancelled </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/homecare.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 
 <section class="footerbtm">
 <div class="container mt-3">
-<div class="row">
+<div class="row ">
 				<div class="col-xl-9 col-lg-9 col-md-9 col-7">
 					<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
 				</div>
@@ -34,50 +34,95 @@
 						</div>
 				</div>
 		<div class="row">
-			<div class="col-lg-12 mt-4">
-				<div class="box">
+			<div class="col-lg-12 mt-3">
+				<div class="box ">
 					<h4> Appoinment Status </h4>
-		<button class="btn btn-grey">Appoinment Requested  </button>
+			<button class="btn btn-red">Appoinment Cancelled </button>
 			<div class="row">
-				<div class="col-lg-12 ">
-				<h4> Appoinment Date </h4>
+				<div class="col-lg-12">
+				<h4>Estimated Date </h4>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-			<p id="txtAppointmentDate"> <img src="images/calendar-black.png" class="boxicon"> Saturday, 12 June </p>
+			<p id="txtAppointmentDate"> <img src="images/calendar-black.png" width="15"> Saturday, 12 June </p>
 									</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-6">
-<p id="txtAppointmentTime"> <img src="images/clock.png" class="boxicon"> 02:00 PM - 2:30 PM </p>
+<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
 									</div>
-            <div class="col-lg-12 col-md-12 ">
-			  	<h4> Customer Address </h4>
+              
+			  <div class="col-lg-12 col-md-12 ">
+			  	<h4> Delivery At </h4>
 			  </div>
-<div class="col-lg-12 col-12">
-<p> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar Pradesh 201301  <img src="images/google-map.png" class="boxicon"> Location </p>
+<div class="col-lg-12 col-8">
+<p> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar Pradesh 201301  <img src="images/google-map.png" width="15"> Location </p>
 			 </div>
 		<div class="col-lg-12 ">
-			 	<h4> Appoinment For </h4>
+			 	<h4> View Order Details </h4>
 <p><i class="fa-solid fa-circle-check text-success"></i> <span class="pl-3"> 10+ Medicines Order </span></p> 
 </div>
             </div>
-               </div>
-			     </div>
-                   </div>
-                      </div>
-	<div class="col-xl-6 col-lg-6 col-md-6 col-6">
-		<img src="images/homecare.png"  class="img-fluid w-80 consultimg float-end">
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+ <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
+ View Order Details </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                           
+ <div class="accordion shadow">
+ <ul type="none"> 
+  	<li><i class="fa-solid fa-circle-check text-success"></i> Advance Health Checkup <a href="#"> (10 Tests Covered) </a> </li>
+       	<li><i class="fa-solid fa-circle-check text-success"></i> Heart Healt Checkup   <a href="#"> (21 Tests Covered) </a> </li>
+       	<li><i class="fa-solid fa-circle-check text-success"></i> Health Assure Checkup <a href="#"> (2 Tests Covered) </a> </li>
+       	<li><i class="fa-solid fa-circle-check text-success"></i> Advance Health Checkup <a href="#"> (10 Tests Covered) </a> </li>
+       	<li><i class="fa-solid fa-circle-check text-success"></i> Advance Health Checkup <a href="#"> (10 Tests Covered) </a> </li>
+       	<li><i class="fa-solid fa-circle-check text-success"></i> Advance Health Checkup <a href="#"> (10 Tests Covered) </a> </li>
+     </ul>
+       </div>
+  </div>
+                    </div>
+
+                </div>
+             </div>
+<div class="col-lg-12">
+	 	<h4> Prescription </h4>
+	 	<p><img src="images/epass.png" width="20"> my prescription.pdf </p>
+</div>
+  </div>
+			</div>
+</div>
+
+</div>
+	<div class="col-xl-6 col-lg-6 col-md-6 col-6 pt-5">
+		<img src="images/homecare.png"  class="img-fluid ">
+		<div class="row mt-5">
+			<div class="box1 ">
+  <div class="col-lg-12">
+	<h3> For Centre Use only </h3>
+	<h4 class="mb-0 "> Case Id </h4>
+<button class="btn btn-primary1"> ORDER0345676 </button>
+	<h4> Order Amount </h4>
+	<p> <i class="fa-solid fa-indian-rupee-sign"></i> 5000 </p>
+	
 	</div>
+</div>
+</div>
+		</div>
+
+
 <div class="col-lg-12 col-md-12 mt-3">
 	<div class="instructbox">
-		<h3 class="text-center pt-5"> Waiting for centre to accept your request </h3>
-<p>We will notify you shortly! </p>
+		<h3 class="text-center pt-5"> Sorry Your Appoinment has been cancelled </h3>
+<p class="text-center"> We Request you to please schedule an appoinment again </p>
 		<div class="row">
 			<div class="col-lg-12 col-md-12 text-center my-4">
-		<img src="images/request.png" class="img-fluid w-15 mb-4"/>
-					
+					<img src="images/calender.png" class="img-fluid w-15 mb-4"/>
 			</div>
 	</div>
-	
-</div>
+	</div>
 	</div>
 </div>
 </div>
