@@ -170,89 +170,178 @@
             <div id="cusromerDetails" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>RELATION</h4>
+                <div id="PanelShow">
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>RELATION</h4>
+                    </div>
+                    <div class="col-9">
+                      <p>Self</p>
+                    </div>
                   </div>
-                  <div class="col-9">
-                    <p>Self</p>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>NAME</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customername"></p>
+                    </div>
                   </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>NAME</h4>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>GENDER</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customergender"></p>
+                    </div>
                   </div>
-                  <div class="col-9">
-                    <p id="customername"></p>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>DOB</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customerDOB"></p>
+                    </div>
                   </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>GENDER</h4>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>MOBILENO</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customerMOBILENO"></p>
+                    </div>
                   </div>
-                  <div class="col-9">
-                    <p id="customergender"></p>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>EMAIL ID</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customerEamilId"></p>
+                    </div>
                   </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>DOB</h4>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>ADDRESS</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customerAddress"></p>
+                    </div>
                   </div>
-                  <div class="col-9">
-                    <p id="customerDOB"></p>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>PINCODE</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="customerPinCode"></p>
+                    </div>
                   </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>MOBILENO</h4>
-                  </div>
-                  <div class="col-9">
-                    <p id="customerMOBILENO"></p>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>EMAIL ID</h4>
-                  </div>
-                  <div class="col-9">
-                    <p id="customerEamilId"></p>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>ADDRESS</h4>
-                  </div>
-                  <div class="col-9">
-                    <p id="customerAddress"></p>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <div class="col-3">
-                    <h4>PINCODE</h4>
-                  </div>
-                  <div class="col-9">
-                    <p id="customerPinCode"></p>
-                  </div>
-                </div>
-                <div class="row mb-2">
-                  <!-- <div class="col-3">
-                    <h4>Relations</h4>
-                  </div> -->
-                  <div class="col-9">
-                    <h4>Relations</h4>
-                    <table id="Relationstable">
-                      <thead>
-                        <tr>
-                          <th class="empid">Name</th>
-                          <th class="fname">Gender</th>
-                          <th class="lname">DOB</th>
-                          <th class="lname">Relation</th>
-                        </tr>
-                      </thead>
-                      <tbody id="Relationstbody">
+                  <div class="row mb-2">
+                    <div class="col-9">
+                      <h4>Relations</h4>
+                      <table id="Relationstable">
+                        <thead>
+                          <tr>
+                            <th class="empid">Name</th>
+                            <th class="fname">Gender</th>
+                            <th class="lname">DOB</th>
+                            <th class="lname">Relation</th>
+                          </tr>
+                        </thead>
+                        <tbody id="Relationstbody">
 
-                      </tbody>
-                    </table>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div id="PanelUpdate" style="display: none;">
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>RELATION</h4>
+                    </div>
+                    <div class="col-9">
+                      <p>Self</p>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>NAME</h4>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="txtName" />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>GENDER</h4>
+                    </div>
+                    <div class="col-9">
+                      <select id="txtGen" name="txtGen" class="form-control">
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>DOB</h4>
+                    </div>
+                    <div class="col-9">
+                      <input type="date" class="form-control" id="txtDOB" />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>MOBILENO</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="txtMobile"></p>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>EMAIL ID</h4>
+                    </div>
+                    <div class="col-9">
+                      <p id="txtEmail"></p>
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>ADDRESS</h4>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="txtAddress" />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-3">
+                      <h4>PINCODE</h4>
+                    </div>
+                    <div class="col-9">
+                      <input type="text" class="form-control" id="txtPinCode" />
+                    </div>
+                  </div>
+                  <div class="row mb-2">
+                    <div class="col-9">
+                      <h4>Relations</h4>
+                      <table id="TextRelationstable">
+                        <thead>
+                          <tr>
+                            <th class="empid">Name</th>
+                            <th class="fname">Gender</th>
+                            <th class="lname">DOB</th>
+                            <th class="lname">Relation</th>
+                          </tr>
+                        </thead>
+                        <tbody id="TextRelationstbody">
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="row-mb-2">
+                  <div class="col-4">
+                    <button id="btnUpdate" onclick="Editbtnclick();" class="btn btn-primary btn-lg">Edit</button>
                   </div>
                 </div>
               </div>
@@ -390,8 +479,88 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/InsuranceAgent.js"></script>
   <script>
-    var IsotpVerified = 'N';
     var plan = null;
+    var IsUpdated = false;
+    function Editbtnclick() {
+      if (IsUpdated) {
+        UpdateTransaction();
+      } else {
+        $('#btnUpdate').text('Save');
+        $('#PanelShow').hide();
+        $('#PanelUpdate').show();
+        ViewTransactionDetails();
+      }
+    }
+    function ViewTransactionDetails() {
+      $('#txtName').val(plan.fullName);
+      $('#txtDOB').val(plan.dob);
+      //$('#txtGen').val(plan.gender);
+      $('#txtMobile').html(plan.phoneNo);
+      $('#txtEmail').html(plan.email);
+      $('#txtAddress').val(plan.userAddress.Address);
+      $('#txtPinCode').val(plan.userAddress.PinCode);
+      var txtRelationDetails = "";
+      var i = 1;
+      var relationlist = ['SON', 'DAUGHTER', 'HUSBAND', 'WIFE', 'FATHER', 'MOTHER', 'FATHER-IN-LAW', 'MOTHER-IN-LAW', 'OTHER', 'SIBLING'];
+      var genderlist = ['Male', 'Female', 'Other'];
+
+      $.each(genderlist, function (rkey, rl) {
+        if (rl.toUpperCase() == plan.gender.toUpperCase()) {
+          $('#txtGen').append('<option selected value="' + rl + '">' + rl + '</option>');
+        } else {
+          $('#txtGen').append('<option value="' + rl + '">' + rl + '</option>');
+        }
+      });
+      $.each(plan.relationDetails, function (key, r) {
+        var td1 = "t" + i + '1';
+        var td2 = "t" + i + '2';
+        var td3 = "t" + i + '3';
+        var td4 = "t" + i + '4';
+        var relationselect = '<select id="' + td4 + '" name="' + td4 + '" class="form-control">';
+        $.each(relationlist, function (rkey, rl) {
+          if (rl.toUpperCase() == r.RelationName.toUpperCase()) {
+            relationselect += '<option selected value="' + rl + '">' + rl + '</option>';
+          } else {
+            relationselect += '<option value="' + rl + '">' + rl + '</option>';
+          }
+        });
+        relationselect += '</select>';
+        var genderstr = '<select id="' + td2 + '" name="' + td2 + '" class="form-control">';
+        $.each(genderlist, function (rkey, rl) {
+          if (rl.toUpperCase() == r.Gender.toUpperCase()) {
+            genderstr += '<option selected value="' + rl + '">' + rl + '</option>';
+          } else {
+            genderstr += '<option value="' + rl + '">' + rl + '</option>';
+          }
+        });
+        genderstr += '</select>';
+        txtRelationDetails += "<tr><td><input class='form-control' type='text' id=" + td1 + " value='" + r.Name + "'/>" + "</td><td>" + genderstr + "</td><td><input class='form-control' type='Date' id=" + td3 + " value='" + r.DoB + "'/>" + "</td><td>" + relationselect + "</td></tr>";
+        i++;
+      });
+      if (txtRelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
+        $('#TextRelationstbody').html(txtRelationDetails);
+        $('#RelationsTable').show();
+      }
+      IsUpdated = true;
+    }
+    function UpdateTransaction() {
+      debugger;
+      var i = 1;
+      var Relations = [];
+      $.each(plan.relationDetails, function () {
+        Relations.push({ Name: $('#' + "t" + i + '1').val(), Gender: $('#' + "t" + i + '2').val(), DoB: $('#' + "t" + i + '3').val(), RelationName: $('#' + "t" + i + '4').val() });
+        i++;
+      });
+      var UserAddress = { Address: $('#txtAddress').val(), PinCode: $('#txtPinCode').val() };
+      var OpdPayment = { name: $('#txtName').val(), dob: $('#txtDOB').val(), gender: $('#txtGen').val(), Relations: Relations, TransactionId: plan.transactionId, UserAddress: UserAddress }
+      UpdateTransactionDetais(OpdPayment).then(function (res) {
+        IsUpdated = false;
+        alert('Record Updated Success');
+        window.location.reload();
+      });
+    }
+
+    var IsotpVerified = 'N';
     ShowLoding(true);
     var href = new URL(window.location.href);
     var TransactionId = href.searchParams.get("id");
