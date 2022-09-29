@@ -26,8 +26,8 @@ function LoadData(Appointmentid) {
                 document.title = ' Doctor Consultation ' + data.results.statusname ;
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" width="15"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-regular fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html('<img src="images/calendar-black.png"  class="boxicon"> ' + data.results.appointmentTime);
                 $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);

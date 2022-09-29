@@ -28,8 +28,8 @@ function LoadData(Appointmentid) {
                 $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" width="15">  ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-regular fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png"  class="boxicon">  ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html('<img src="images/clock.png" class="boxicon"> ' + data.results.appointmentTime);
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#txtDurationForTest").html('<i class="fa-solid fa-clock"></i> Under ' + data.results.durationforTest);
                 $("#txtPointOfContact").text(data.results.PointOfContact);

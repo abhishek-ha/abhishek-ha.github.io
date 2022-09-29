@@ -4,11 +4,9 @@ var Appointmentid = href.searchParams.get("AppointmentId");
 function maplocation(lat, long) {
     window.open('https://maps.google.com/?q=' + lat + ',' + lat);
 }
-
 $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
-
 function LoadData(Appointmentid) {
     $.ajax({
         url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
@@ -47,8 +45,7 @@ function LoadData(Appointmentid) {
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
-
-                if (data.results.providerImage == null) {
+              if (data.results.providerImage == null) {
                     $("#imgProviderImage").hide();
                 } else {
                     $("#imgProviderImage").html('<img src="' + data.results.providerImage + 'images/apollo-logo.png" class="img-fluid" alt="">');
@@ -75,8 +72,7 @@ function LoadData(Appointmentid) {
                             $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
                         });
                     }
-
-                }
+                   }
                 else {
                     $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
@@ -116,7 +112,6 @@ function LoadData(Appointmentid) {
             swal('Error occure');
         }
     });
-
 }
 
 $(function () {
