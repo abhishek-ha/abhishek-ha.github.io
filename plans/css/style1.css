@@ -19647,7 +19647,7 @@ li {
 }
 ._one h3{
     color: #fff;
-    font-size: 39px;
+    font-size: 39px!important;
     font-size: 500;
 }
 .addr,  .phone, .mail{
