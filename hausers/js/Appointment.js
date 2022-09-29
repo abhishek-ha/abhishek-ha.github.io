@@ -26,7 +26,7 @@ function LoadData(Appointmentid) {
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html(' <i class="fa-regular fa-clock boxicon"></i>  ' + data.results.appointmentTime);
+                $("#txtAppointmentTime").html(' <img src="images/clock.png" class="boxicon">  ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
                 $("#btnAge").text(data.results.memberAge + ' Years');

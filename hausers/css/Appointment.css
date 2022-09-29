@@ -489,7 +489,7 @@ line-height:26.5px ;
   min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+       padding: 2px 3px 2px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -852,7 +852,7 @@ line-height:26.5px ;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+       padding: 2px 3px 2px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -931,7 +931,7 @@ line-height:26.5px ;
     width: 10px;
 }
 .box p{
-    font-size: 5px;
+    font-size: 7px;
     line-height: 10px;
       margin-bottom: 4px;
 }
@@ -1198,7 +1198,7 @@ line-height:26.5px ;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-     padding: 2px 5px 2px 5px;
+     padding: 3px 5px 2px 5px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
