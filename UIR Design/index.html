@@ -15,7 +15,6 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <style >
   .accordion .item {
     border: none;
@@ -296,6 +295,18 @@ button.btn.btn-link i {
    </select>
   </div>
 
+<div class="form-group">
+    <label for="exampleFormControlInput1"> Reason for Refund </label>
+     <select class="form-control">
+      <option selected disabled> Reason for Refund </option>
+      <option> Service not available/Unable to book service </option>
+      <option> Slots Unavailable </option>
+      <option> Service Delayed </option>
+       <option> Customer denied service due to distance </option>
+        <option> Others - Please specify </option>
+   </select>
+  </div>
+
 <div class="accordion  d-none" id="accordionExample">
   <div class="item">
      <div class="item-header" id="headingOne">
@@ -342,42 +353,57 @@ button.btn.btn-link i {
     <input type="text" class="form-control" placeholder="Branch" required>
   </div>
     </div>
-      
-     </div>
+    </div>
   </div>
 </div>
 
-
-
-   <div class="form-group">
+ <div class="form-group">
      <div class="drop_box">
       <header>
         <h4>Select File here</h4>
       </header>
       <p>Files Supported: JPG, JPEG, PNG , PDF</p>
-      <input type="file" hidden accept=".jpg,.jpeg,.png,.zip,.pdf" id="fileID" style="display:none;" multiple required>
+      <input type="file" maxlength="5" hidden accept=".jpg,.jpeg,.png, .pdf" id="fileID" style="display:none;" multiple required>
       <button class="btn"> Upload Document </button>
     </div>
   </div>
 <div class="form-group text-center">
- <button class="btn2"> Submit </button>
+ <button class="btn2" data-toggle="modal" data-target="#exampleModal"> Submit </button>
     </div>
  </form>
  </div>
  </div>
      </div>
-
-      </div>  
+     </div>  
     </div>  
   </div>  
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 style="font-size:18px;"> UIR Request successfully created, to view requests please check HA-QUEUE </h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.9.1.js" type="text/javascript" ></script>
 
 <script src="js/bootstrap.min.js"></script>
-
-
-
 <script>
    $(document).ready(function () {
             $('.collapse.in').prev('.panel-heading').addClass('active');
@@ -385,11 +411,10 @@ button.btn.btn-link i {
                 .on('show.bs.collapse', function (a) {
                     $(a.target).prev('.panel-heading').addClass('active');
                 })
-                .on('hide.bs.collapse', function (a) {
+         .on('hide.bs.collapse', function (a) {
                     $(a.target).prev('.panel-heading').removeClass('active');
                 });
         });
-
 </script>
 
 <script>
@@ -399,7 +424,6 @@ const dropArea = document.querySelector(".drop_box"),
   input = dropArea.querySelector("input");
 let file;
 var filename;
-
 button.onclick = () => {
   input.click();
 };
@@ -409,16 +433,13 @@ input.addEventListener("change", function (e) {
   let filedata = `
     <form action="" method="post">
     <div class="form">
-    <h4>${fileName}</h4>
+    <h4> ${fileName} </h4>
     <input type="email" placeholder="Enter email upload file">
-    <button class="btn">Upload</button>
+    <button class="btn"> Upload </button>
     </div>
     </form>`;
   dropArea.innerHTML = filedata;
 });
 </script>
-
-
-
- </body>
+</body>
 </html>
