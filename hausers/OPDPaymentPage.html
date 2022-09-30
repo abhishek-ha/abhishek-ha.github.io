@@ -285,7 +285,7 @@
                       <h4>DOB</h4>
                     </div>
                     <div class="col-9">
-                      <input type="date" class="form-control" id="txtDOB" />
+                      <input type="date" class="form-control" id="txtDOB" min="1920-01-01" max="2021-01-01" required />
                     </div>
                   </div>
                   <div class="row mb-2">
@@ -293,7 +293,8 @@
                       <h4>MOBILENO</h4>
                     </div>
                     <div class="col-9">
-                      <p id="txtMobile"></p>
+                      <input type="number" pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
+                        class="form-control" id="txtMobile" />
                     </div>
                   </div>
                   <div class="row mb-2">
@@ -301,7 +302,7 @@
                       <h4>EMAIL ID</h4>
                     </div>
                     <div class="col-9">
-                      <p id="txtEmail"></p>
+                      <input type="email" class="form-control" id="txtEmail" />
                     </div>
                   </div>
                   <div class="row mb-2">
@@ -494,14 +495,16 @@
     function ViewTransactionDetails() {
       $('#txtName').val(plan.fullName);
       $('#txtDOB').val(plan.dob);
+      $('#txtDOB').attr('min', plan.ageTo);
+      $('#txtDOB').attr('max', plan.ageFrom);
       //$('#txtGen').val(plan.gender);
-      $('#txtMobile').html(plan.phoneNo);
-      $('#txtEmail').html(plan.email);
+      $('#txtMobile').val(plan.phoneNo);
+      $('#txtEmail').val(plan.email);
       $('#txtAddress').val(plan.userAddress.Address);
       $('#txtPinCode').val(plan.userAddress.PinCode);
       var txtRelationDetails = "";
       var i = 1;
-      var relationlist = ['SON', 'DAUGHTER', 'HUSBAND', 'WIFE', 'FATHER', 'MOTHER', 'FATHER-IN-LAW', 'MOTHER-IN-LAW', 'OTHER', 'SIBLING'];
+      var relationlist = ['SON', 'DAUGHTER','SPOUSE'];
       var genderlist = ['Male', 'Female', 'Other'];
 
       $.each(genderlist, function (rkey, rl) {
@@ -534,7 +537,14 @@
           }
         });
         genderstr += '</select>';
-        txtRelationDetails += "<tr><td><input class='form-control' type='text' id=" + td1 + " value='" + r.Name + "'/>" + "</td><td>" + genderstr + "</td><td><input class='form-control' type='Date' id=" + td3 + " value='" + r.DoB + "'/>" + "</td><td>" + relationselect + "</td></tr>";
+        var dbostr = '';
+        if (i === 1) {
+          dbostr = "<input class='form-control' type='Date' min='" + plan.ageTo + "' max='" + plan.ageFrom + "' required id=" + td3 + " value='" + r.DoB + "'/>";
+        }
+        else {
+          dbostr = "<input class='form-control' type='Date' min='1920-01-01' max='2021-01-01' required id=" + td3 + " value='" + r.DoB + "'/>";
+        }
+        txtRelationDetails += "<tr><td><input class='form-control' type='text' id=" + td1 + " value='" + r.Name + "'/>" + "</td><td>" + genderstr + "</td><td>" + dbostr + "</td><td>" + relationselect + "</td></tr>";
         i++;
       });
       if (txtRelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
@@ -544,7 +554,6 @@
       IsUpdated = true;
     }
     function UpdateTransaction() {
-      debugger;
       var i = 1;
       var Relations = [];
       $.each(plan.relationDetails, function () {
@@ -552,7 +561,7 @@
         i++;
       });
       var UserAddress = { Address: $('#txtAddress').val(), PinCode: $('#txtPinCode').val() };
-      var OpdPayment = { name: $('#txtName').val(), dob: $('#txtDOB').val(), gender: $('#txtGen').val(), Relations: Relations, TransactionId: plan.transactionId, UserAddress: UserAddress }
+      var OpdPayment = { name: $('#txtName').val(), dob: $('#txtDOB').val(), gender: $('#txtGen').val(), email: $('#txtEmail').val(), MobileNo: $('#txtMobile').val(), Relations: Relations, TransactionId: plan.transactionId, UserAddress: UserAddress }
       UpdateTransactionDetais(OpdPayment).then(function (res) {
         IsUpdated = false;
         alert('Record Updated Success');
