@@ -9,8 +9,7 @@
 
 body {
         font-family: 'Poppins', sans-serif!important;
-        font-family: 'Rubik', sans-serif !important;
-            overflow-x:hidden!important;
+        overflow-x:hidden!important;
             font-size: 15px;
         }
 
@@ -355,9 +354,9 @@ font-family: fontawesome;
     padding-top: 16px;
 }
 .head{
-font-weight: 700;
-font-size:16px ;
-line-height:26.5px ;
+font-weight: 800;
+font-size:13px ;
+line-height:18px;
 }
 .sub-heading{
 font-weight: 700;
@@ -489,7 +488,7 @@ line-height:26.5px ;
   min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-       padding: 2px 3px 2px 3px;
+           padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -568,12 +567,17 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
      padding: 10px 7px 10px 7px;
 }
-.boxicon{
+
+.boxicon1{
     width: 10px;
 }
+
+.boxicon{
+    width: 3px;
+}
 .box p{
-    font-size: 5px;
-    line-height: 10px;
+    font-size: 3px;
+    line-height: 6px;
       margin-bottom: 4px;
 }
 .box h4{
@@ -609,7 +613,7 @@ margin-bottom: 4px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 12px;
+    font-size: 11px;
 }
 .docbox .doctname{
 font-size: 13px;
@@ -655,7 +659,7 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-padding: 11px 5px 8px 5px;
+  padding: 9px 5px 7px 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -677,7 +681,7 @@ padding: 11px 5px 8px 5px;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -715,8 +719,8 @@ line-height:26.5px ;
 }
 .head{
 font-weight: 700;
-font-size:16px ;
-line-height:26.5px ;
+font-size:13px ;
+line-height:18px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -927,12 +931,15 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
     padding: 10px 7px 10px 7px;
 }
-.boxicon{
+.boxicon1{
     width: 10px;
 }
+.boxicon{
+    width: 2px;
+}
 .box p{
-    font-size: 7px;
-    line-height: 10px;
+    font-size: 3px;
+    line-height: 7px;
       margin-bottom: 4px;
 }
 .box h4{
@@ -1036,7 +1043,7 @@ padding: 11px 5px 8px 5px;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -1194,8 +1201,8 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 8px;
-    min-width: 80px;
+    font-size: 6px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
      padding: 3px 5px 2px 5px;
@@ -1264,11 +1271,15 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
    padding: 10px 7px 10px 7px;
 }
-.boxicon{
-    width: 10px;
+.boxicon1{
+    width: 12px;
 }
+.boxicon{
+    width: 5px;
+}
+
 .box p{
-    font-size: 8px;
+    font-size: 4px;
     line-height: 10px;
 }
 .box h4{
@@ -1337,6 +1348,11 @@ color: #0E5FC1;
     font-size: 14px;
     font-weight: 600;
 }
+
+.docbox1> .boxicon{
+    width: 5px;
+}
+
 .w-40{
     width: 40%!important;
 }
@@ -3051,6 +3067,7 @@ font-family: fontawesome;
     margin-top: -10px;
 }
 }
+
 
 
 

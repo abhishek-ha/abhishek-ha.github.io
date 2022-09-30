@@ -24,6 +24,7 @@ function LoadData(Appointmentid) {
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                // $("#txtAppointmentDate").attr('class','abc');
                 $("#txtAppointmentTime").html(' <img src="images/clock.png" class="boxicon">  ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
@@ -39,7 +40,7 @@ function LoadData(Appointmentid) {
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
                 $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentSettlementMode);
                 $("#txtProviderName").text(data.results.providerName);
-                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
+                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 if (data.results.reportSavePath != null) {
