@@ -6,11 +6,10 @@
      text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
      box-sizing: border-box;
  }
-
 body {
         font-family: 'Poppins', sans-serif!important;
         overflow-x:hidden!important;
-            font-size: 15px;
+        font-size: 15px;
         }
 
 html{
@@ -23,7 +22,16 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
-
+    .boxcol{
+    padding-left: 1px!important;
+    padding-right: 1px!important;
+}
+.p-10{
+      padding-left: 10px;
+    }
+.mt-minus{
+    margin-top: -10px;
+}
 .footerlogo{
     width: 100%;
 }
@@ -284,7 +292,6 @@ color: #0E5FC1;
 ul{
     padding-left: 0px;
 }
-
 .accordion {
   background-color: #1f67bb;
   color: #ffffff;
@@ -333,15 +340,19 @@ font-family: fontawesome;
 }
 }
 
-
-
 @media only screen and (min-width: 301px) {
-
+   
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
 .mt-minus{
     margin-top: -10px;
 }
-    
-    .email{
+.email{
         width: 8px;
         padding-right: 2px;
     }
@@ -393,7 +404,7 @@ line-height:26.5px ;
 }
 .footer h3{
     color: #ffffff;
-    font-size: 8px;
+    font-size: 7px;
     margin-bottom: 0px;
 }
 .footer p{
@@ -441,27 +452,23 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 68px;
-    font-size: 10px;
+    min-width: 60px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+   padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    font-size: 12px;
-    font-weight: 600;
+   font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
-   min-width: 68px;
-    font-size: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 2px 5px 2px 5px;
-    border-radius: 20px;
+    min-width: 60px;
+    font-size: 5px;
+    padding: 4px 3px 3px 3px; 
 }
 .btn-reports{
     background-color:transparent;
@@ -485,10 +492,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-  min-width: 100px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-           padding: 4px 3px 3px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -504,7 +511,7 @@ line-height:26.5px ;
     min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -518,9 +525,9 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 1px;
     min-width: 60px;
-    font-size: 10px;
+    font-size: 5px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -544,11 +551,11 @@ line-height:26.5px ;
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
-    font-size: 5px;
-    min-width: 80px;
+     font-size: 5px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 3px 3px;
      border-radius: 20px;
 }
 .btn-grey:hover{
@@ -567,23 +574,21 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
      padding: 10px 7px 10px 7px;
 }
-
 .boxicon1{
     width: 10px;
 }
-
 .boxicon{
-    width: 3px;
+    width: 5px;
 }
 .box p{
-    font-size: 3px;
-    line-height: 6px;
-      margin-bottom: 4px;
+    font-size: 5px;
+    line-height: 8px;
+    margin-bottom: 4px;
 }
 .box h4{
     font-size: 9px;
     font-weight: 600;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -659,11 +664,10 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-  padding: 9px 5px 7px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
-  text-align: left;
-  outline: none;
+ outline: none;
   font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
@@ -703,6 +707,13 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 350px) {
+   .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
 .footerlogo{
     width: 90%;
     padding-top: 4px;
@@ -810,25 +821,21 @@ line-height:26.5px ;
     background-color: #28a745;
     border-color: #28a745;
     min-width: 68px;
-    font-size: 10px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 20px;
-   min-width: 68px;
-    font-size: 10px;
+    min-width: 68px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -856,7 +863,7 @@ line-height:26.5px ;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-       padding: 2px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -868,11 +875,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 5px;
-    min-width: 115px;
+     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -886,9 +892,9 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 1px;
     min-width: 66px;
-    font-size: 10px;
+    font-size: 5px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+  padding: 4px 3px 3px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -913,11 +919,10 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    font-size: 5px;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -935,17 +940,17 @@ line-height:26.5px ;
     width: 10px;
 }
 .boxicon{
-    width: 2px;
+    width: 8px;
 }
 .box p{
-    font-size: 3px;
+    font-size: 6px;
     line-height: 7px;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box h4{
     font-size: 9px;
     font-weight: 600;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -1021,7 +1026,7 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-padding: 11px 5px 8px 5px;
+  padding: 11px 5px 8px 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -1063,18 +1068,25 @@ font-family: fontawesome;
     padding-top: 70px;
 }
 .mt-minus{
-    margin-top: -10px;
+    margin-top: -16px;
 }
 }
 
 @media only screen and (min-width: 422px) {
-    .footerlogo{
+  .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+ .footerlogo{
     width: 90%;
 }
 .head{
 font-weight: 700;
-font-size:18px ;
-line-height:26.5px ;
+font-size:14px ;
+line-height:24px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -1176,9 +1188,20 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 600;
     cursor: pointer;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
+    border-radius: 20px;
 }
 .btn-reports{
     background-color:transparent;
@@ -1202,7 +1225,7 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 6px;
-    min-width: 110px;
+    min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
      padding: 3px 5px 2px 5px;
@@ -1218,10 +1241,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 10px;
+    font-size: 6px;
+    min-width: 115px;
     font-weight: 600;
-    min-width: 80px;
     text-transform: uppercase;
+     padding: 3px 5px 2px 5px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -1235,9 +1259,9 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 0px;
     min-width: 68px;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 3px 5px 2px 5px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -1262,6 +1286,12 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 6px;
+    min-width: 115px;
+    font-weight: 600;
+    text-transform: uppercase;
+     padding: 3px 5px 2px 5px;
+     padding: 3px 5px 2px 5px;
 }
 .btn-w120{
     width: 120px;
@@ -1272,14 +1302,13 @@ line-height:26.5px ;
    padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 12px;
+    width: 8px;
 }
 .boxicon{
-    width: 5px;
+    width: 8px;
 }
-
 .box p{
-    font-size: 4px;
+    font-size: 8px;
     line-height: 10px;
 }
 .box h4{
@@ -1302,7 +1331,7 @@ line-height:26.5px ;
     margin-bottom: 8px;
 }
 .box1 p{
-    font-size: 10px;
+    font-size: 8px;
     line-height: 16px;
 }
 .docbox{
@@ -1313,7 +1342,7 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 13px;
+    font-size: 10px;
     margin-bottom: 4px;
 }
 .docbox .doctname{
@@ -1348,11 +1377,6 @@ color: #0E5FC1;
     font-size: 14px;
     font-weight: 600;
 }
-
-.docbox1> .boxicon{
-    width: 5px;
-}
-
 .w-40{
     width: 40%!important;
 }
@@ -1365,11 +1389,9 @@ ul{
 .accordion {
    background-color: #1f67bb;
   color: #ffffff;
-  cursor: pointer;
-  padding: 11px 5px 8px 5px;
+ padding: 11px 5px 8px 5px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 5px;
   transition: 0.4s;
@@ -1413,12 +1435,17 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 700px) {
-
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
 .footerlogo{
     width: 100%;
 }
-
-   .logo{
+.logo{
         width: 82px;
     }
 .instructbox{
@@ -1508,6 +1535,17 @@ font-family: fontawesome;
     font-weight: 600;
     cursor: pointer;
 }
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
+    border-radius: 20px;
+}
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -1533,6 +1571,7 @@ font-family: fontawesome;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1715,7 +1754,6 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
-
 .consultimg{
     padding-top: 50px;
 }
@@ -1723,12 +1761,17 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 750px) {
-
- .email{
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+.email{
         width: 10px;
         padding-right: 2px;
     }
-
 .footerlogo{
     width: 75%;
 }
@@ -1792,7 +1835,7 @@ font-family: fontawesome;
 }
 .footer p a{
     color: #ffffff!important;
-    font-size: 9px;
+    font-size: 8px;
 }
 .centerlogo{
     max-width: 100px;
@@ -1823,7 +1866,20 @@ font-family: fontawesome;
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
+    padding: 2px 5px 2px 5px;
 }
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+   padding: 2px 5px 2px 5px;
+    border-radius: 20px;
+}
+
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -1849,6 +1905,7 @@ font-family: fontawesome;
     min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
+     padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1915,10 +1972,13 @@ font-family: fontawesome;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 11px;
+    width: 13px;
+}
+.boxicon1{
+    width: 13px;
 }
 .box p{
-    font-size: 10px;
+    font-size: 13px;
     line-height: 16px;
 }
 .box h4{
@@ -1929,6 +1989,10 @@ font-family: fontawesome;
 .box1{
     padding-left: 0px;
     padding-right: 0px;
+}
+.box1 p{
+      font-size: 13px;
+    line-height: 16px;
 }
 .box1 h3{
     font-size: 15px;
@@ -2039,7 +2103,14 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1000px) {
-    .footerlogo{
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+.footerlogo{
     width: 100%;
 }
  .logo{
@@ -2084,7 +2155,6 @@ font-family: fontawesome;
     padding-left: 10px!important;
     padding-right: 10px!important;
 }
-
 .footer .fa{
     font-size: 10px;
 }
@@ -2106,8 +2176,6 @@ font-family: fontawesome;
     color: #ffffff!important;
     font-size: 9px;
 }
-
-
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -2148,9 +2216,21 @@ font-family: fontawesome;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     cursor: pointer;
+    padding: 5px 6px 5px 6px;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 6px 5px 6px;
+    border-radius: 20px;
 }
 .btn-reports{
     background-color:transparent;
@@ -2177,6 +2257,7 @@ font-family: fontawesome;
     min-width: 195px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2246,7 +2327,7 @@ font-family: fontawesome;
     width: 13px;
 }
 .box p{
-    font-size: 11px;
+    font-size: 13px;
     line-height: 16px;
 }
 .box h4{
@@ -2262,6 +2343,11 @@ font-family: fontawesome;
     font-weight: 700;
     line-height: 28px;
 }
+.box1 p{
+      font-size: 13px;
+    line-height: 16px;
+}
+
 .box1 h4{
     font-size: 14px;
     font-weight: 600;
@@ -2361,16 +2447,21 @@ font-family: fontawesome;
 .consultimg{
     padding-top: 50px;
 }
-
 }
 
 
 @media only screen and (min-width: 1200px) {
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
     .footerlogo{
     width: 100%;
 }
-
-   .logo{
+.logo{
         width: 130px;
     }
 .instructbox{
@@ -2485,6 +2576,7 @@ font-family: fontawesome;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2677,12 +2769,19 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1300px) {
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+
     .footerlogo{
     width: 100%;
     padding-top: 20px;
 }
-
-   .logo{
+.logo{
         width: 150px;
         float: right;
     }
@@ -2722,8 +2821,8 @@ font-family: fontawesome;
     background-repeat: no-repeat;
 }
 .footercol {
-    padding-left: 10px!important;
-    padding-right: 10px!important;
+    padding-left: 4px!important;
+    padding-right: 4px!important;
 }
 .footer .fa{
     font-size: 13px;
@@ -2747,7 +2846,6 @@ font-family: fontawesome;
     font-size: 13px;
     line-height: 17px;
 }
-
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -2964,7 +3062,7 @@ font-family: fontawesome;
     margin-top: 15px;
 }
 .box1 p{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
 }
 .docbox{

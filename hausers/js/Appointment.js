@@ -33,12 +33,12 @@ function LoadData(Appointmentid) {
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode);
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> '  + data.results.paymentMode);
                 $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentSettlementMode);
+                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode);
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
