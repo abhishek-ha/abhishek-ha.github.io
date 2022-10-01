@@ -200,13 +200,13 @@ function checkSecond(sec) {
 
 var timerFName = 'timer1';
 var UserSelfRegistrationId = '';
-function CreateUserWithAccessCode(accessCode, firstName, lastName, gender, mobileNumbar, emailId, dOB) {
+function CreateUserWithAccessCode(accessCode, firstName, lastName, gender, mobileNumbar, emailId, dOB, relative) {
     return new Promise(function (resolve, reject) {
         $.ajax({
             type: "POST",
             url: "https://live.healthassure.in/ProductApi/api/User/LogInWithAccessCode",
             dataType: "json",
-            data: JSON.stringify({ AccessCode: accessCode, FirstName: firstName, LastName: lastName, Gender: gender, MobileNumbar: mobileNumbar, EmailId: emailId, DOB: dOB }),
+            data: JSON.stringify({ AccessCode: accessCode, FirstName: firstName, LastName: lastName, Gender: gender, MobileNumbar: mobileNumbar, EmailId: emailId, DOB: dOB, Relations: relative }),
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
