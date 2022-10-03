@@ -19,6 +19,8 @@
             color: #212121;
             font-family: 'Rubik', sans-serif !important;
             overflow-x: hidden !important;
+            overflow-y: scroll;
+            max-height: 46em;
         }
 
         html {
@@ -247,14 +249,52 @@
             align-items: center;
         }
 
-        .card1 {
-            width: 380px;
-            border: none;
-            height: 330px;
-            box-shadow: 0px 5px 20px 0px #6F1667;
-            background-color: white;
-            z-index: 1;
-            margin: auto;
+        @media only screen and (max-width: 300px) {
+            .card1 {
+                width: 85%;
+                border: none;
+                height: 310px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 301px) {
+            .card1 {
+                width: 90%;
+                border: none;
+                height: 310px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            .card1 {
+                width: 60%;
+                border: none;
+                height: 280px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .card1 {
+                width: 40%;
+                border: none;
+                height: 270px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
         }
 
         .card1 h6 {
@@ -286,7 +326,9 @@
         }
 
         .heightwidth1 {
-            padding: 0px;
+            width: 40% !important;
+            margin-left: 30% !important;
+            margin-right: 30% !important;
         }
 
         .form-control:focus {
@@ -301,6 +343,7 @@
             border: 1px solid green;
             width: 35%;
             align-content: center;
+            padding: 8px 10px !important;
         }
 
         .content a {
@@ -312,34 +355,9 @@
             color: #6F1667;
         }
 
-        @media only screen and (max-width:300px) {
-            .otpboxspace {
-                margin-left: 0%;
-            }
-        }
+        .otpboxspace {
 
-        @media only screen and (min-width:301px) {
-            .otpboxspace {
-                margin-left: 4%;
-            }
-        }
-
-        @media only screen and (min-width:350px) {
-            .otpboxspace {
-                margin-left: 13%;
-            }
-        }
-
-        @media only screen and (min-width:400px) {
-            .otpboxspace {
-                margin-left: 16%;
-            }
-        }
-
-        @media only screen and (min-width: 501px) {
-            .otpboxspace {
-                margin-left: 14%;
-            }
+            justify-content: center;
         }
 
         .form-control121 {
@@ -465,6 +483,123 @@
             color: #ffffff;
             cursor: pointer;
         }
+
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0px 0px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 2px;
+        }
+
+        .plan-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        #Reviewformdiv .modal-body .plan-data p {
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+
+        .plan-data-label {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .coupon-code-section {
+            margin-bottom: 15px;
+        }
+
+        .coupon-code-input {
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px 0 0;
+        }
+
+        .coupon-code-input input {
+            width: 180px;
+            border-radius: 0;
+        }
+
+        .couponCode-success-text {
+            font-size: 13px;
+            color: hsl(106, 88%, 41%);
+        }
+
+        .couponCode-invalid-text {
+            color: #da7422;
+        }
+
+        .coupon-code-input button {
+            border: 0;
+            background-color: #5252a3;
+            padding: 0 20px;
+            margin-left: 2px;
+            color: #FFFFFF;
+        }
+
+        .coupon-code-input input:focus {
+            box-shadow: none;
+            outline: none;
+            border-color: #5252a3;
+        }
+
+        .Coupon-footer {
+            border-top: 0;
+            justify-content: center;
+        }
+
+        .Coupon-footer button {
+            background-color: #5252a3;
+            border: 0;
+            letter-spacing: 1px;
+            padding: 5px 15px;
+            color: #FFFFFF;
+            transition: .4s ease-in-out;
+            margin-bottom: 10px;
+            height: 35px;
+        }
+
+        .Coupon-footer button:hover {
+            background-color: #da7422
+        }
     </style>
 </head>
 
@@ -542,6 +677,11 @@
                         <input type="date" id="CustomerDOB" class="form-control form-control121" placeholder="DOB"
                             min="1920-01-01" />
                     </div>
+                    <div class="form-group" id="IsEnableAgent" style="display: none;">
+                        <label class="form-label pl-1" for="CustomerDOB">Agent Id</label>
+                        <input type="text" id="AgentId" class="form-control form-control121" placeholder="Agent Id"
+                            maxlength="15" />
+                    </div>
                     <div class="form-check" style="margin-top: 20px;">
                         <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
                         <input style="margin-left: 5px;" class="form-check-input" type="radio" name="CustomerGender"
@@ -551,15 +691,135 @@
                             id="inlineRadio2" value="Female">
                         <label class="form-check-label" for="inlineRadio2">Female</label>
                     </div>
+                    <div class="addmembermodal" id="Membersdiv" style="display: none;">
+                        <button class="accordion" type="button" style="margin-top:20px;"> Member1 </button>
+                        <div class="panel">
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                <input type="text" id="MemberName1" class="form-control121" placeholder="Name *"
+                                    title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                <input type="date" id="MemberDOB1" class="form-control form-control121"
+                                    placeholder="DOB" min="1920-01-01" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Relation</label>
+                                <select id="Relative1" name="Relative1" style="margin-left: 11px; width: 95%;"
+                                    class="form-control form-control121">
+                                    <option value="SON">SON</option>
+                                    <option value="DAUGHTER">DAUGHTER</option>
+                                    <option value="HUSBAND">HUSBAND</option>
+                                    <option value="WIFE">WIFE</option>
+                                    <option value="FATHER">FATHER</option>
+                                    <option value="MOTHER">MOTHER</option>
+                                    <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                    <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                    <option value="OTHER">OTHER</option>
+                                    <option value="SIBLING">SIBLING</option>
+                                </select>
+                            </div>
+                            <div class="form-check" style="margin-top: 10px;">
+                                <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                                <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                    name="MemberGender1" id="MemberGender1" checked="checked" value="Male">
+                                <label class="form-check-label" for="MemberGender1">Male</label>
+                                <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                    name="MemberGender1" id="MemberGender1" value="Female">
+                                <label class="form-check-label" for="MemberGender1">Female</label>
+                            </div>
+                        </div>
+                        <button type="button" type="button" class="accordion">Member2</button>
+                        <div class="panel">
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                <input type="text" id="MemberName2" class="form-control121" placeholder="Name *"
+                                    title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                <input type="date" id="MemberDOB2" class="form-control form-control121"
+                                    placeholder="DOB" min="1920-01-01" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Relation</label>
+                                <select id="Relative2" name="Relative2" style="margin-left: 11px; width: 95%;"
+                                    class="form-control form-control121">
+                                    <option value="SON">SON</option>
+                                    <option value="DAUGHTER">DAUGHTER</option>
+                                    <option value="HUSBAND">HUSBAND</option>
+                                    <option value="WIFE">WIFE</option>
+                                    <option value="FATHER">FATHER</option>
+                                    <option value="MOTHER">MOTHER</option>
+                                    <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                    <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                    <option value="OTHER">OTHER</option>
+                                    <option value="SIBLING">SIBLING</option>
+                                </select>
+                            </div>
+                            <div class="form-check" style="margin-top: 10px;">
+                                <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                                <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                    name="MemberGender2" id="MemberGender2" checked="checked" value="Male">
+                                <label class="form-check-label" for="MemberGender2">Male</label>
+                                <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                    name="MemberGender2" id="MemberGender2" value="Female">
+                                <label class="form-check-label" for="MemberGender2">Female</label>
+                            </div>
+                        </div>
+
+                        <button type="button" type="button" class="accordion"> Member3 </button>
+                        <div class="panel">
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                <input type="text" id="MemberName3" class="form-control121" placeholder="Name *"
+                                    title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                <input type="date" id="MemberDOB3" class="form-control form-control121"
+                                    placeholder="DOB" min="1920-01-01" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Relation</label>
+                                <select id="Relative3" name="Relative3" style="margin-left: 11px; width: 95%;"
+                                    class="form-control form-control121">
+                                    <option value="SON">SON</option>
+                                    <option value="DAUGHTER">DAUGHTER</option>
+                                    <option value="HUSBAND">HUSBAND</option>
+                                    <option value="WIFE">WIFE</option>
+                                    <option value="FATHER">FATHER</option>
+                                    <option value="MOTHER">MOTHER</option>
+                                    <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                    <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                    <option value="OTHER">OTHER</option>
+                                    <option value="SIBLING">SIBLING</option>
+                                </select>
+                            </div>
+                            <div class="form-check" style="margin-top: 10px;">
+                                <label class="form-label pl-1" for="CustomerDOB">Gender</label>
+                                <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                    name="MemberGender3" id="MemberGender3" checked="checked" value="Male">
+                                <label class="form-check-label" for="inlineRadio1">Male</label>
+                                <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                    name="MemberGender3" id="MemberGender3" value="Female">
+                                <label class="form-check-label" for="inlineRadio2">Female</label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group" style="margin-left: 8px; display: none;" id="IEnableTCdiv">
                         <input type="checkbox" id="IsTCAccepted" />
-                        <label class="form-check-label">I agree to the <a
+                        <label class="form-check-label">I agree to the <a id="IdTnChref"
                                 href="https://www.healthassure.in/Products/files/aceenture-tnc.pdf" target="_blank">
                                 *Terms & conditions </a></label>
                     </div>
                     <div class="form-group">
                         <!--  <button style="margin-top: 15px;" id="Placeorder" class="btn btn-primary btn-block mb-2">Place
-        order</button> -->
+                    order</button> -->
                         <div class=" text-center" style="margin-top:20px;">
                             <button class="placeorderbtn" id="Placeorder" style="margin-bottom:5px;">
                                 Place Order
@@ -586,7 +846,7 @@
                 </div>
             </div>
         </div>
-        <div id='otpapp' class='modal-dialog-centered' style="overflow: hidden;display: none;">
+        <div id='otpapp' class='modal-dialog-centered' style="overflow: hidden;display:none;">
             <div class='container height-100 d-flex justify-content-center align-items-center'>
                 <div>
                     <div class="row">
@@ -595,24 +855,10 @@
                                 <span class="close"><a style="border: radius 0;margin: 0px 10px 0px 0px !important;"
                                         href="javascript:closebuyplanpopup()">&times;</a></span>
                                 <h6> Please enter the one time password </h6>
-                                <div> <span> sent to </span> <small id='emailidtext1'>demo</small> </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
-                                        <div id='otp' class='inputs justify-content-center mt-2 otpboxspace'>
-                                            <input class='m-2 text-center form-control rounded heightwidth1' type='text'
-                                                id='input1' v-on:keyup='inputenter(1)' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(2)' type='text' id='input2' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(3)' type='text' id='input3' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(4)' type='text' id='input4' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(5)' type='text' id='input5' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(6)' type='text' id='input6' maxlength='1' />
-                                        </div>
-                                    </div>
+                                <div> <span> OTP sent to </span> <small id='emailidtext1'>demo</small> </div>
+                                <div id='otp' class='mx-auto text-center'>
+                                    <input class='m-2 text-center form-control rounded heightwidth1' type='number'
+                                        id='otpinputid' maxlength='6' />
                                 </div>
                                 <span> Time Left: <small id='timer1'>00:00</small></span>
                                 <span style='color: red;' id='message'></span>
@@ -621,7 +867,7 @@
                                 </div>
                                 <div class='mt-3 content d-flex justify-content-center align-items-center'> <span>Didn't
                                         get the code &nbsp </span> <a
-                                        href='javascript:SendOTPPopup($("#CustomerEmail").val())'
+                                        href='javascript:SendOTPPopup($("#CustomerEmail").val(),$("#CustomerPhone").val(), "LANDINGPAGEPLANPURCHASEVERIFYOTP", Vars["PlanCode"])'
                                         class='text-decoration-none ms-3'><small
                                             id='otptextFeild1'>Resend(1/3)</small></a>
                                 </div>
@@ -629,6 +875,70 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="Reviewformdiv" class="col-lg-4 col-md-4 col-sm-4 model-medium" style="overflow: hidden;display:none;">
+            <div class="modal-header">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3 style="font-size:24px;">
+                        <span id="Reviewplanpopuptitle">
+                            <span style="font-weight:600;">
+                                Your Order Summary
+                            </span>
+                        </span>
+                        <span></span> <span class="close">
+                            <a style="border: radius 0;" href="javascript:closeReviewform()">&times;</a>
+                        </span>
+                    </h3>
+                    <div style="border-top:4px solid #457e70;width: 100px; margin-bottom: 5px;">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="plan-data">
+                    <p class="plan-data-label">Plan Name </p>
+                    <p id="PlanName"></p>
+                </div>
+                <div class="plan-data">
+                    <p class="plan-data-label">Plan Amount </p>
+                    <p id="PlanAmount"></p>
+                </div>
+                <div class="plan-data">
+                    <p class="plan-data-label">CGST (9%)</p>
+                    <p id="PlanCGST"></p>
+                </div>
+                <div class="plan-data">
+                    <p class="plan-data-label">SGST (9%)</p>
+                    <p id="PlanSGST"></p>
+                </div>
+                <div class="plan-data">
+                    <p class="plan-data-label">Total Amount </p>
+                    <p id="TotalAmount"></p>
+                    <input type="hidden" id="hdnTotalAmount">
+                </div>
+                <div class="coupon-code-section">
+                    <div class="coupon-code-input">
+                        <div style="display: flex;align-items: center">
+                            <input type="text" id="CoupanCode" style="margin-left: -3px;" maxlength="15"
+                                placeholder="Coupon Code">
+                            <!-- <button style="background-color: transparent;border-radius: 0px;border-color: transparent"  id="btnApplyCoupan">Apply</button> -->
+                            <a style="border: radius 0;margin-left: 10px;" href="javascript:btnApplyCoupan()">Apply</a>
+                        </div>
+                        <div>
+                            <p id="CouponDiscount" class="mb-0"></p>
+                        </div>
+                    </div>
+                    <p id="invalidMessage"></p>
+                </div>
+
+                <div class="plan-data">
+                    <p class="plan-data-label">Grand Total </p>
+                    <p id="GrandTotalAmount"></p>
+                </div>
+            </div>
+            <div class="Coupon-footer text-center">
+                <button id="AftReviewPayNow">Proceed To Payment</button>
             </div>
         </div>
     </div>
@@ -654,11 +964,15 @@
             return vars;
         }
         var Vars = getUrlVars();
+        var IsEnableAgent = Vars["IsEnableAgent"];
+        if (IsEnableAgent == 'true') {
+            $('#IsEnableAgent').show();
+        }
         var PTitle = Vars["PopupTitle"].replace("%20", " ").replace("%20", " ");
         $('#buyplanpopuptitle').html(PTitle);
         var CustomerPhone_val = null;
         var timerFName = 'timer1';
-        $('#buyplanpopuptitle1').html(PTitle);
+        //$('#buyplanpopuptitle1').html(PTitle);
         var IsVarifyEmail = Vars["IsVarifyEmail"];
         var EmailDomain = Vars["EmailDomain"];
         if (EmailDomain != null && EmailDomain != '') {
@@ -668,8 +982,159 @@
                 $("#Placeorder").prop('disabled', true);
             }
         }
+        var IsVarifyEmailPhoneTNC = Vars["IsVarifyEmailPhoneTNC"];
+        if (IsVarifyEmailPhoneTNC == "true") {
+            $("#IEnableTCdiv").show();
+            $("#Placeorder").prop('disabled', true);
+            $("#IdTnChref").text('Good Health Declaration');
+            $("#IdTnChref").prop('href', "https://live.healthassure.in/Products/files/Good-health-Declaration.pdf");
+        }
+        var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
+        if (IsEnableMembersAddtion == 'true') {
+            $('#Membersdiv').show();
+        }
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
+            $('#TotalAmount').text('');
+            $('#hdnTotalAmount').val('');
+            if (IsEnableMembersAddtion == 'true') {
+                var rel = GetRelations();
+                if (rel.length < 3) {
+                    alert('Please fill up member details');
+                    return;
+                }
+            }
+            if (Vars["IsEnableApplyCoupon"] == 'true') {
+                GetOPDPlanReview(Vars["PlanCode"]).then(function (result) {
+                    $('#Reviewformdiv').show();
+                    $('#buyplanformdiv').hide();
+                    $('#PlanName').text(result.results.planName);
+                    $('#PlanAmount').text(result.results.planAmount);
+                    $('#PlanCGST').text(result.results.cgstAmount);
+                    $('#PlanSGST').text(result.results.sgstAmount);
+                    $('#TotalAmount').text(result.results.totalAmount);
+                    $('#hdnTotalAmount').val(result.results.totalAmount);
+                    $('#GrandTotalAmount').text(result.results.totalAmount);
+                }).catch(function (error) {
+                    console.warn(error);
+                    alert(error.message);
+                });
+            }
+            else {
+                OpenPaymentPage();
+            }
+        });
+        function closeform() {
+            var phn = $('#CustomerPhone').val();
+            if (EmailDomain != null && EmailDomain == '@accenture.com') {
+                closebuyplanpopup();
+                return;
+            }
+            if (phn == null || phn == '' || phn.length <= 9) {
+                closebuyplanpopup();
+            } else {
+                var CustomerDOB = $('#CustomerDOB').val();
+                if (CustomerDOB == null || CustomerDOB == '') {
+                    CustomerDOB = '2000-01-01';
+                }
+                closebuyplanpopup();
+            }
+        }
+
+        $('#AftReviewPayNow').click(function (event) {
+            event.preventDefault();
+            OpenPaymentPage();
+            $("#Reviewformdiv").hide();
+        });
+
+        function btnApplyCoupan () {
+            GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val()).then(function (result) {
+                $('#discdtls').show();
+                $('#CouponDiscount').text(result.results.discountAmount);
+                $('#PlanSGST').text(parseInt(result.results.finalAmount * .09));
+                $('#PlanCGST').text(parseInt(result.results.finalAmount * .09));
+                $('#TotalAmount').text(parseInt(result.results.finalAmount + (result.results.finalAmount * .18)));
+                $('#GrandTotalAmount').text(parseInt(result.results.finalAmount + (result.results.finalAmount * .18)));
+                $('#invalidMessage').text(result.message);
+                document.getElementById('invalidMessage').setAttribute("class", "couponCode-success-text mb-0");
+            }).catch(function (error) {
+                console.warn(error);
+                $('#discdtls').hide();
+                $('#TotalAmount').text($('#hdnTotalAmount').val());
+                $('#CouponDiscount').text('');
+                $('#PlanSGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
+                $('#PlanCGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
+                $('#GrandTotalAmount').text($('#hdnTotalAmount').val());
+                $('#invalidMessage').text($('#hdnTotalAmount').val());
+                document.getElementById('invalidMessage').setAttribute("class", "couponCode-invalid-text mb-0");
+                $('#invalidMessage').text(error.message);
+            });
+        }
+
+        function GetOPDPlanReview(PlanCode = null) {
+            return new Promise(function (resolve, reject) {
+                if (PlanCode == undefined || PlanCode == '') {
+                    PlanCode = null;
+                }
+                $.ajax({
+                    type: "GET",
+                    url: "https://live.healthassure.in/ProductApi/api/OPDPlans/GetOPDPlanBuyReview?PlanCode=" + PlanCode,
+                    dataType: "json",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                    },
+                    success: function (result) {
+                        console.warn(result.message);
+                        if (result.status) {
+                            resolve(result) // Resolve promise and go to then()
+                        } else {
+                            reject(result) // Reject the promise and go to catch()
+                        }
+                    },
+                    error: function (eror) {
+                        console.warn(eror);
+                        reject(err) // Reject the promise and go to catch()
+                    }
+                });
+            });
+        }
+
+        function GetOPDPlanCouponDetails(CouponCode = null, TotalAmount = null, MobileNo = null) {
+            return new Promise(function (resolve, reject) {
+                if (MobileNo == undefined || MobileNo == '') {
+                    MobileNo = null;
+                }
+                $.ajax({
+                    type: "POST",
+                    url: "https://live.healthassure.in/ProductApi/api/Coupon/ApplyCoupon",
+                    dataType: "json",
+                    data: JSON.stringify({ CouponCode: CouponCode, Amount: TotalAmount, MobileNo: MobileNo }),
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                    },
+                    success: function (result) {
+                        console.warn(result.message);
+                        if (result.status) {
+                            resolve(result) // Resolve promise and go to then()
+                        } else {
+                            reject(result) // Reject the promise and go to catch()
+                        }
+                    },
+                    error: function (eror) {
+                        console.warn(eror);
+                        document.getElementById('invalidMessage').setAttribute("style", "color:red;font-weight: bold;");
+                        $('#invalidMessage').text('InValid Coupon code');
+                        reject(err) // Reject the promise and go to catch()
+                    }
+                });
+            });
+        }
+
+        function OpenPaymentPage() {
             if (!VarifyEmailDomain($('#CustomerEmail').val(), EmailDomain)) {
                 return false;
             }
@@ -681,12 +1146,25 @@
             CustomerPhone_val = $('#CustomerPhone').val();
             var UtmSource = Vars["utm_source"];
             if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
-                UtmSource = PTitle;
+                //UtmSource = PTitle;
+                UtmSource = "Plans Page";
+                if (Vars["PlanCode"] == "HAOPDR003-60") {
+                    UtmSource = "7 Days Free Trial";
+                }
             }
             if (IsVarifyEmail != null && IsVarifyEmail == "true") {
                 SendOTPPopup($('#CustomerEmail').val());
+            }
+            else if (IsVarifyEmailPhoneTNC == "true") {
+                SendOTPPopup($('#CustomerEmail').val(), $('#CustomerPhone').val(), "LANDINGPAGEPLANPURCHASEVERIFYOTP", Vars["PlanCode"]);
             } else {
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["PartnerOrderId"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"]).then(function (result) {
+                var Relations = GetRelations();
+                var AgentId = $('#AgentId').val();
+                var Agent = null;
+                if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                    Agent = { AgentId: AgentId };
+                }
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -699,9 +1177,10 @@
                     EventReactNative('FAILURE');
                 });
             }
-        });
-        function closeform() {
-            closebuyplanpopup();
+        }
+        function closeReviewform() {
+            closeform();
+            $("#Reviewformdiv").hide();
         }
 
         function opningPaymentpage() {
@@ -709,8 +1188,11 @@
             $('#Placeorder').html('Place order');
         }
         function opningPaymentSuccesspage() {
-            debugger;
+            //$('#congratulationsdiv').show();
+            OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val);
+            closebuyplanpopup();
             $('#buyplanformdiv').hide();
+            console.log('opningPaymentSuccesspage')
             $('#congratulationsdiv').show();
             EventReactNative('SUCCESSFUL');
             console.log('opningPaymentSuccesspage');
@@ -763,12 +1245,12 @@
             return true;
         }
         function VarifyOTPbuttonClick() {
-            var otp = '';
-            const inputs = document.querySelectorAll('#otp > *[id]');
-            for (let i = 0; i < inputs.length; i++) {
-                otp = otp + inputs[i].value;
+            var otp = $('#otpinputid').val();
+            var MobileNumbar1 = null;
+            if (IsVarifyEmailPhoneTNC == "true") {
+                MobileNumbar1 = $('#CustomerPhone').val();
             }
-            VarifyEmailOTPforValidation(otp, $('#CustomerEmail').val()).then(function (res) {
+            VarifyEmailOTPforValidation(otp, $('#CustomerEmail').val(), MobileNumbar1).then(function (res) {
                 $('#VarifyOTPbutton').html('Verified');
                 $('#message').html('');
                 $('#otpapp').hide();
@@ -780,9 +1262,19 @@
                 CustomerPhone_val = $('#CustomerPhone').val();
                 var UtmSource = Vars["utm_source"];
                 if (Vars["utm_source"] == null || Vars["utm_source"] == "undefined") {
-                    UtmSource = PTitle;
+                    //UtmSource = PTitle;
+                    UtmSource = "Plans Page";
+                    if (Vars["PlanCode"] == "HAOPDR003-60") {
+                        UtmSource = "7 Days Free Trial";
+                    }
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], Vars["PartnerOrderId"], Vars["CouponCode"], PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"]).then(function (result) {
+                var Relations = GetRelations();
+                var AgentId = $('#AgentId').val();
+                var Agent = null;
+                if (AgentId != null && AgentId != '' && AgentId != undefined) {
+                    Agent = { AgentId: AgentId };
+                }
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
@@ -800,12 +1292,17 @@
                 $('#message').html(err.message);
             });
         }
-        function SendOTPPopup(Email) {
+        function SendOTPPopup(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
+            $('#Reviewformdiv').hide();
             $('#congratulationsdiv').hide();
             $('#buyplanformdiv').hide();
             $('#otpapp').show();
-            $('#emailidtext1').html(Email);
-            GetEmailOTPforValidation(Email).then(function (result) {
+            if (MobileNo == undefined || MobileNo == '') {
+                $('#emailidtext1').html(Email);
+            } else {
+                $('#emailidtext1').html(Email + ' & ' + MobileNo);
+            }
+            GetEmailOTPforValidation(Email, MobileNo, TriggerType, PlanCode).then(function (result) {
                 $('#' + timerFName).html('00:00');
                 var leftover = result.results.otpExpiryTime;
                 var minutes = Math.floor(leftover / 60);
@@ -861,11 +1358,20 @@
             if (sec < 0) { sec = "59" };
             return sec;
         }
-        function GetEmailOTPforValidation(Email) {
+        function GetEmailOTPforValidation(Email, MobileNo = null, TriggerType = null, PlanCode = null) {
             return new Promise(function (resolve, reject) {
+                if (MobileNo == undefined || MobileNo == '') {
+                    MobileNo = null;
+                }
+                if (TriggerType == undefined || TriggerType == '') {
+                    TriggerType = null;
+                }
+                if (PlanCode == undefined || PlanCode == '') {
+                    PlanCode = null;
+                }
                 $.ajax({
                     type: "GET",
-                    url: "https://live.healthassure.in/ProductApi/api/User/GetOTPForEmailId?Emailid=" + Email + "&Source=" + PTitle,
+                    url: "https://live.healthassure.in/ProductApi/api/User/GetOTPForEmailId?Emailid=" + Email + "&Source=" + PTitle + "&MobileNo=" + MobileNo + "&TriggerType=" + TriggerType + "&PlanCode=" + PlanCode,
                     dataType: "json",
                     headers: {
                         'Accept': 'application/json',
@@ -875,7 +1381,7 @@
                     success: function (result) {
                         console.warn(result.message);
                         if (result.status) {
-                            resolve(result) // Resolve promise and go to then() 
+                            resolve(result) // Resolve promise and go to then()
                         } else {
                             reject(result) // Reject the promise and go to catch()
                         }
@@ -887,13 +1393,16 @@
                 });
             });
         }
-        function VarifyEmailOTPforValidation(otp, Email) {
+        function VarifyEmailOTPforValidation(otp, Email, MobileNumbar = null) {
             return new Promise(function (resolve, reject) {
+                if (MobileNumbar == undefined || MobileNumbar == '') {
+                    MobileNumbar = null;
+                }
                 $.ajax({
                     type: "POST",
                     url: "https://live.healthassure.in/ProductApi/api/User/VerifyEmailId",
                     dataType: "json",
-                    data: JSON.stringify({ EmailId: Email, OTP: otp }),
+                    data: JSON.stringify({ EmailId: Email, OTP: otp, MobileNumbar: MobileNumbar }),
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',
@@ -902,7 +1411,7 @@
                     success: function (result) {
                         console.warn(result.message);
                         if (result.status) {
-                            resolve(result) // Resolve promise and go to then() 
+                            resolve(result) // Resolve promise and go to then()
                         } else {
                             reject(result) // Reject the promise and go to catch()
                         }
@@ -914,8 +1423,8 @@
                 });
             });
         }
-        function OpenbuyPlanThankyouPage(PlanName) {
-            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
+        function OpenbuyPlanThankyouPage(PlanName, MobileNo) {
+            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo;
             window.open(url, "_parent");
         }
         function EventReactNative(Message) {
@@ -924,6 +1433,42 @@
                 window.postMessage(Message, "*");
                 window.ReactNativeWebView.postMessage(Message);
             } catch (e) { console.log(e); }
+        }
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+        function GetRelations() {
+            var Relations = [];
+            var MemberName1 = $('#MemberName1').val();
+            var MemberDOB1 = $('#MemberDOB1').val();
+            var MemberName2 = $('#MemberName2').val();
+            var MemberDOB2 = $('#MemberDOB2').val();
+            var MemberName3 = $('#MemberName3').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
+            var Member1Relative = $('#Relative1').val()
+            var Member2Relative = $('#Relative2').val()
+            var Member3Relative = $('#Relative3').val()
+            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="MemberGender1"]:checked').val(), "RelationName": Member1Relative });
+            }
+            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="MemberGender2"]:checked').val(), "RelationName": Member2Relative });
+            }
+            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="MemberGender3"]:checked').val(), "RelationName": Member3Relative });
+            }
+            return Relations;
         }
     </script>
 </body>

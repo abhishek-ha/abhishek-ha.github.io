@@ -264,14 +264,52 @@
             align-items: center;
         }
 
-        .card1 {
-            width: 380px;
-            border: none;
-            height: 330px;
-            box-shadow: 0px 5px 20px 0px #6F1667;
-            background-color: white;
-            z-index: 1;
-            margin: auto;
+        @media only screen and (max-width: 300px) {
+            .card1 {
+                width: 85%;
+                border: none;
+                height: 310px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 301px) {
+            .card1 {
+                width: 90%;
+                border: none;
+                height: 310px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            .card1 {
+                width: 60%;
+                border: none;
+                height: 280px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .card1 {
+                width: 40%;
+                border: none;
+                height: 270px;
+                box-shadow: 0px 5px 20px 0px #6F1667;
+                background-color: white;
+                z-index: 1;
+                margin: auto;
+            }
         }
 
         .card1 h6 {
@@ -303,8 +341,9 @@
         }
 
         .heightwidth1 {
-            padding: 0px;
-            max-width: 40px;
+            width: 40% !important;
+            margin-left: 30% !important;
+            margin-right: 30% !important;
         }
 
         .form-control:focus {
@@ -319,6 +358,7 @@
             border: 1px solid green;
             width: 35%;
             align-content: center;
+            padding: 8px 10px !important;
         }
 
         .content a {
@@ -330,34 +370,9 @@
             color: #6F1667;
         }
 
-        @media only screen and (max-width:300px) {
-            .otpboxspace {
-                margin-left: 0%;
-            }
-        }
+        .otpboxspace {
 
-        @media only screen and (min-width:301px) {
-            .otpboxspace {
-                margin-left: 4%;
-            }
-        }
-
-        @media only screen and (min-width:350px) {
-            .otpboxspace {
-                margin-left: 13%;
-            }
-        }
-
-        @media only screen and (min-width:400px) {
-            .otpboxspace {
-                margin-left: 16%;
-            }
-        }
-
-        @media only screen and (min-width: 501px) {
-            .otpboxspace {
-                margin-left: 14%;
-            }
+            justify-content: center;
         }
 
         .form-control121 {
@@ -856,23 +871,9 @@
                                         href="javascript:closebuyplanpopup()">&times;</a></span>
                                 <h6> Please enter the one time password </h6>
                                 <div> <span> OTP sent to </span> <small id='emailidtext1'>demo</small> </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
-                                        <div id='otp' class='inputs justify-content-center mt-2 otpboxspace'>
-                                            <input class='m-2 text-center form-control rounded heightwidth1' type='text'
-                                                id='input1' v-on:keyup='inputenter(1)' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(2)' type='text' id='input2' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(3)' type='text' id='input3' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(4)' type='text' id='input4' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(5)' type='text' id='input5' maxlength='1' />
-                                            <input class='m-2 text-center form-control rounded heightwidth1'
-                                                v-on:keyup='inputenter(6)' type='text' id='input6' maxlength='1' />
-                                        </div>
-                                    </div>
+                                <div id='otp' class='mx-auto text-center'>
+                                    <input class='m-2 text-center form-control rounded heightwidth1' type='number'
+                                        id='otpinputid' maxlength='6' />
                                 </div>
                                 <span> Time Left: <small id='timer1'>00:00</small></span>
                                 <span style='color: red;' id='message'></span>
@@ -1063,7 +1064,7 @@
             $("#Reviewformdiv").hide();
         });
 
-        function btnApplyCoupan () {
+        function btnApplyCoupan() {
             GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val()).then(function (result) {
                 $('#discdtls').show();
                 $('#CouponDiscount').text(result.results.discountAmount);
@@ -1334,11 +1335,7 @@
             return true;
         }
         function VarifyOTPbuttonClick() {
-            var otp = '';
-            const inputs = document.querySelectorAll('#otp > *[id]');
-            for (let i = 0; i < inputs.length; i++) {
-                otp = otp + inputs[i].value;
-            }
+            var otp = $('#otpinputid').val();
             var MobileNumbar1 = null;
             if (IsVarifyEmailPhoneTNC == "true") {
                 MobileNumbar1 = $('#CustomerPhone').val();
