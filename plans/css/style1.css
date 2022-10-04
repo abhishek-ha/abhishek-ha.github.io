@@ -17638,10 +17638,6 @@ div {
 .pt-14{
     padding-top: 14.9rem;
 }
-
-
-
-
 .pb-6{
     padding-bottom:5rem;
 }
@@ -17654,7 +17650,6 @@ div {
 .pl-7{
     padding-left: 6rem;
 }
-
 .mt-6{
     margin-top: 4.3rem!important;
 }
@@ -17733,6 +17728,11 @@ li {
 }
 .footer-16 p{
     font-size: 15px;
+}
+
+.footer-16 h5{
+    font-size: 2rem;
+
 }
 
 @media only screen and (max-width: 575px){
