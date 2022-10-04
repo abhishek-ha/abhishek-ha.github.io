@@ -19,19 +19,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+          rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" type="text/css" href="css/testimonial.css">
 
     <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+                <![endif]-->
 
 
     <script defer src="https://widget.tochat.be/bundle.js?key=8a754010-0780-4681-b327-c688c3cf5446"></script>
@@ -206,6 +206,40 @@
             text-indent: -10px;
             padding-left: 10px;
         }
+
+        .accordion {
+            background-color: #fff;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #f4f4f4;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .panel {
+            padding: 0px 0px;
+            background-color: #e6f3fa;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 2px;
+        }
     </style>
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -243,7 +277,7 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W443NMX" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
+                style="display:none;visibility:hidden"></iframe>
     </noscript>
 
 </head>
@@ -257,15 +291,18 @@
                 <p> (A Unit of HealthAssure Private Limited) </p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile_nav"
-                aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mobile_nav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right">
                 </ul>
                 <ul class="navbar-nav navbar-light  float-end">
-                    <li class="nav-item"><a class="nav-link" href="https://healthassure.in/plans/trade-india.html"> Home
-                        </a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://healthassure.in/plans/trade-india.html">
+                            Home
+                        </a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#about"> About us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#benefits">Explore Plans</a></li>
                     <li class="nav-item"><a class="nav-link" href="#work"> How to use</a></li>
@@ -278,11 +315,18 @@
         <div class="container">
             <div class="row  px-3 px-md-0">
                 <div class="col-12 col-md-6 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 banner">
-                    <h2 class="pl-2 startassu pb-2"> <span style="color:#0f5fc2;"> Apki Daily Health Ki Assurance
-                        </span> </h2>
-                    <p class="thead1 pl-2 mb-2 pt-4" style="font-size:18px;margin-bottom:1px;">Secure your family’s
-                        out-of-pocket medical <br> expenses with <span style="color:#0f5fc2;"><b>Insta Protect OPD Plans
-                            </b> </span>
+                    <h2 class="pl-2 startassu pb-2">
+                        <span style="color:#0f5fc2;">
+                            Apki Daily Health Ki Assurance
+                        </span>
+                    </h2>
+                    <p class="thead1 pl-2 mb-2 pt-4" style="font-size:18px;margin-bottom:1px;">
+                        Secure your family’s
+                        out-of-pocket medical <br> expenses with <span style="color:#0f5fc2;">
+                            <b>
+                                Insta Protect OPD Plans
+                            </b>
+                        </span>
                     </p>
 
 
@@ -291,11 +335,14 @@
                         <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-6 col-sm-12">
 
                             <a href="#benefits">
-                                <p class="pl-3 pt-1 text-primary" style="font-size:16px;"><b> Explore Benefits <i
-                                            class="fa fa-chevron-right" aria-hidden="true"></i> </b> </p>
+                                <p class="pl-3 pt-1 text-primary" style="font-size:16px;">
+                                    <b>
+                                        Explore Benefits <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </b>
+                                </p>
                             </a>
                         </div>
-                   </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 banner1 mob">
                     <img src="images/main-doctor1.png" class="img-fluid">
@@ -306,7 +353,7 @@
 
 
 
- <section class="bluesec " id="benefits">
+    <section class="bluesec " id="benefits">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3 col-xxl-3">
@@ -365,8 +412,11 @@
                     <div class="tradeindia">
                         <div class="row plan">
                             <div class="col-md-6 pt-2 col-6">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Insta Protect OPD Silver
-                                    </b> </p>
+                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;">
+                                    <b>
+                                        Insta Protect OPD Silver
+                                    </b>
+                                </p>
                             </div>
                             <div class="col-md-6 col-6 val">
                                 <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
@@ -377,18 +427,29 @@
                                 <p class="pl-2"><b>OPD benefits :</b></p>
                                 <li><b> Free</b> Online 24x7 Doctor Consults </li>
                                 <li> <b> ₹ 1500 </b> Flexi Diagnostic Wallet </li>
-                                <li> Exclusive Discounted Platform Benefits:
+                                <li>
+                                    Exclusive Discounted Platform Benefits:
                                     <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
-                                        <li><span style="font-size:14px;"> Up to. 50% discount on routine Lab tests at
-                                                in-network centers </span></li>
-                                        <li><span style="font-size:14px;"> Up to 15% discount on home delivery of
-                                                prescription medicines ordered via HealthAssure Platform </span></li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to. 50% discount on routine Lab tests at
+                                                in-network centers
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to 15% discount on home delivery of
+                                                prescription medicines ordered via HealthAssure Platform
+                                            </span>
+                                        </li>
                                     </ul>
                                 </li>
                                 <p class="pl-2 pt-5"><b> *Insurance Benefits- Only for Primary Member </b></p>
-                                <p class="tnc2 pl-3 pb-1" style="text-align: left;"> EMI Protect- [In the event of
+                                <p class="tnc2 pl-3 pb-1" style="text-align: left;">
+                                    EMI Protect- [In the event of
                                     hospitalisation of the Loan Account Holder/ Primary Member, max. upto 6 EMIs in the
-                                    year are paid into the loan account by the Insurance Co.] </p>
+                                    year are paid into the loan account by the Insurance Co.]
+                                </p>
                                 <li> Rs 10,000 per EMI will be paid for every 3 days of Hospitalization </li>
                             </ul>
                         </div>
@@ -396,13 +457,16 @@
 
                             <div class="col-md-6 col-6 pl-4 mt-5">
                                 <a href="https://live.healthassure.in/Products/files/trade-india-tnc-document.pdf"
-                                    class="tnc" target="_blank">Terms & conditions</a>
-                               
+                                   class="tnc" target="_blank">Terms & conditions</a>
+
                             </div>
                             <div class="col-md-6 col-6 pt-5">
                                 <a href="" data-toggle="modal" data-target="#RegistrationModal"
-                                    class="buybtn float-end"> <span style="font-size:20px; font-weight:600;"> Proceed
-                                    </span> </a>
+                                   class="buybtn float-end">
+                                    <span style="font-size:20px; font-weight:600;">
+                                        Proceed
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -414,8 +478,11 @@
                     <div class="tradeindia">
                         <div class="row plan">
                             <div class="col-md-6 pt-2 col-5">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Insta Protect OPD Gold
-                                    </b> </p>
+                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;">
+                                    <b>
+                                        Insta Protect OPD Gold
+                                    </b>
+                                </p>
                             </div>
                             <div class="col-md-6 col-7 val">
                                 <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
@@ -427,31 +494,46 @@
                                 <li><b> Free</b> Online 24x7 Doctor Consults </li>
                                 <li> <b> ₹ 2000 </b> Flexi Diagnostic Wallet </li>
                                 <li> <b> ₹ 1000 </b> Pharmacy Wallet </li>
-                                <li> Exclusive Discounted Platform Benefits:
+                                <li>
+                                    Exclusive Discounted Platform Benefits:
                                     <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
-                                        <li><span style="font-size:14px;"> Up to. 50% discount on routine Lab tests at
-                                                in-network centers </span></li>
-                                        <li><span style="font-size:14px;"> Up to 15% discount on home delivery of
-                                                prescription medicines ordered via HealthAssure Platform </span></li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to. 50% discount on routine Lab tests at
+                                                in-network centers
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to 15% discount on home delivery of
+                                                prescription medicines ordered via HealthAssure Platform
+                                            </span>
+                                        </li>
                                     </ul>
                                 </li>
                                 <p class="pl-2 pt-1"><b> Insurance Benefits- Only for Primary Member </b></p>
-                                <p class="tnc2 pl-3 pb-1" style="text-align: left;"> EMI Protect- [In the event of
+                                <p class="tnc2 pl-3 pb-1" style="text-align: left;">
+                                    EMI Protect- [In the event of
                                     hospitalisation of the Loan Account Holder/ Primary Member, max. upto 6 EMIs in the
-                                    year are paid into the loan account by the Insurance Co.] </p>
+                                    year are paid into the loan account by the Insurance Co.]
+                                </p>
                                 <li> Rs 20,000 per EMI will be paid for every 3 days of Hospitalization </li>
                             </ul>
                         </div>
                         <div class="row pt-5">
                             <div class="col-md-6 col-6 pl-4 mt-5">
                                 <a href="https://live.healthassure.in/Products/files/trade-india-tnc-document.pdf"
-                                    class="tnc" target="_blank">*Terms & conditions</a>
-                                
+                                   class="tnc" target="_blank">*Terms & conditions</a>
+
                             </div>
                             <div class="col-md-6 col-6 pt-5">
                                 <a href="" data-toggle="modal" data-target="#RegistrationModal"
-                                    class="buybtn float-end"> <span style="font-size:20px; font-weight:600;"> &nbsp;
-                                        Proceed </span> </a>
+                                   class="buybtn float-end">
+                                    <span style="font-size:20px; font-weight:600;">
+                                        &nbsp;
+                                        Proceed
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -461,8 +543,12 @@
                     <div class="tradeindia">
                         <div class="row plan">
                             <div class="col-md-6 pt-2 col-6">
-                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;"><b> Insta Protect OPD
-                                        Platinum </b> </p>
+                                <p style="font-size:16px; padding-left:10px;color:#0f5fc2;">
+                                    <b>
+                                        Insta Protect OPD
+                                        Platinum
+                                    </b>
+                                </p>
                             </div>
                             <div class="col-md-6 col-6 val">
                                 <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
@@ -474,31 +560,45 @@
                                 <li><b> Free</b> Online 24x7 Doctor Consults </li>
                                 <li> <b> ₹ 3000 </b> Flexi Diagnostic Wallet </li>
                                 <li> <b> ₹ 1500 </b> Pharmacy Wallet </li>
-                                <li> Exclusive Discounted Platform Benefits:
+                                <li>
+                                    Exclusive Discounted Platform Benefits:
                                     <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
-                                        <li><span style="font-size:14px;"> Up to. 50% discount on routine Lab tests at
-                                                in-network centers </span></li>
-                                        <li><span style="font-size:14px;"> Up to 15% discount on home delivery of
-                                                prescription medicines ordered via HealthAssure Platform </span></li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to. 50% discount on routine Lab tests at
+                                                in-network centers
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span style="font-size:14px;">
+                                                Up to 15% discount on home delivery of
+                                                prescription medicines ordered via HealthAssure Platform
+                                            </span>
+                                        </li>
                                     </ul>
                                 </li>
                                 <p class="pl-2 pt-1"> <b> Insurance Benefits- Only for Primary Member </b></p>
-                                <p class="tnc2 pl-3 pb-1" style="text-align: left;"> EMI Protect- [In the event of
+                                <p class="tnc2 pl-3 pb-1" style="text-align: left;">
+                                    EMI Protect- [In the event of
                                     hospitalisation of the Loan Account Holder/ Primary Member, max. upto 6 EMIs in the
-                                    year are paid into the loan account by the Insurance Co.] </p>
+                                    year are paid into the loan account by the Insurance Co.]
+                                </p>
                                 <li> Rs 30,000 per EMI will be paid for every 3 days of Hospitalization </li>
                             </ul>
                         </div>
                         <div class="row pt-6">
                             <div class="col-md-6 col-6 pl-4 mt-3">
                                 <a href="https://live.healthassure.in/Products/files/trade-india-tnc-document.pdf" class="tnc"
-                                    target="_blank">*Terms & conditions</a>
-                               
+                                   target="_blank">*Terms & conditions</a>
+
                             </div>
                             <div class="col-md-6 col-6 pt-3">
                                 <a href="" data-toggle="modal" data-target="#RegistrationModal"
-                                    class="buybtn float-end"> <span style="font-size:20px; font-weight:600;">
-                                        Proceed</span> </a>
+                                   class="buybtn float-end">
+                                    <span style="font-size:20px; font-weight:600;">
+                                        Proceed
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -507,9 +607,11 @@
 
 
                 <div class="col-lg-12 col-md-12 col-sm-12 pt-5">
-                    <p class="pl-4 pt-2" style="font-size:13px;letter-spacing:0.5px;"> &nbsp; * The insurance cover is
+                    <p class="pl-4 pt-2" style="font-size:13px;letter-spacing:0.5px;">
+                        &nbsp; * The insurance cover is
                         under written by Care Health Insurance Limited. Benefits are as per opted by master policy
-                        holder(Kuzalin Services private Limited- A Unit of HealthAssure Private Limited) </p>
+                        holder(Kuzalin Services private Limited- A Unit of HealthAssure Private Limited)
+                    </p>
 
                 </div>
 
@@ -534,15 +636,13 @@
 
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/rajnish-review.jpg"
-                                alt="Rajnish review" style="width:240px;">
+                                 alt="Rajnish review" style="width:240px;">
                         </div>
 
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
                             <p>
                                 I have taken FitAssure Plan from Healthassure and I must tell you that it is one of the
@@ -562,20 +662,20 @@
                     <figure class="testimonial slider__slide-content">
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/avanish-shukla.jpg" alt="John Tarkpor"
-                                style="width:240px;">
+                                 style="width:240px;">
                         </div>
 
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
-                            <p> I just want to say thank you so much for all cashless services without any added stress
+                            <p>
+                                I just want to say thank you so much for all cashless services without any added stress
                                 or trauma. I have taken 3 diagnostics without paying a rupee and it just takes 5 minutes
                                 to connect a specialized doctor using the app. I will certainly recommend HealthAssure
-                                very highly to friends and family in the future. </p>
+                                very highly to friends and family in the future.
+                            </p>
                             <cite class="testimonial__cite">
                                 <span class="testimonial__cite--name"> Avanish Shukla </span>
                             </cite>
@@ -586,19 +686,19 @@
                     <figure class="testimonial slider__slide-content">
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/ramesh-review.jpg" alt="John Tarkpor"
-                                style="width:240px;">
+                                 style="width:240px;">
                         </div>
 
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
-                            <p> Excellent service and the charges are very minimal. Appreciate the reports were received
+                            <p>
+                                Excellent service and the charges are very minimal. Appreciate the reports were received
                                 on the same day. I wish they continue to provide this kind of service in future. Live
-                                cast of reports is very unique and very helpful. Thanks </p>
+                                cast of reports is very unique and very helpful. Thanks
+                            </p>
                             <cite class="testimonial__cite">
                                 <span class="testimonial__cite--name"> Ramesh Yadav </span>
                             </cite>
@@ -609,20 +709,20 @@
                     <figure class="testimonial slider__slide-content">
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/jagdish-review.jpg" alt="John Tarkpor"
-                                style="width:240px;">
+                                 style="width:240px;">
                         </div>
 
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
-                            <p> I took HealthAssure Plan for my parents as they required regular doctor consultants and
+                            <p>
+                                I took HealthAssure Plan for my parents as they required regular doctor consultants and
                                 checkups. I must say it is very cost-effective and the way the care team helped us book
                                 checkups regularly is fantastic. I have become one of the loyal customers of
-                                HealthAssure. Thank You Team HealthAssure. </p>
+                                HealthAssure. Thank You Team HealthAssure.
+                            </p>
                             <cite class="testimonial__cite">
                                 <span class="testimonial__cite--name">Jagdish </span>
 
@@ -635,19 +735,19 @@
                     <figure class="testimonial slider__slide-content">
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/ritika-gautan-review.jpg"
-                                alt="John Tarkpor" style="width:240px;">
+                                 alt="John Tarkpor" style="width:240px;">
                         </div>
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
-                            <p> I joined yoga classes recently and was surprised to learn that I do not have to pay any
+                            <p>
+                                I joined yoga classes recently and was surprised to learn that I do not have to pay any
                                 fee for my classes under HealthAssure Plan. Great initiative to encourage customers to
                                 resort to proactive instead of reactive healthcare treatments. I have taken regular live
-                                sessions for almost 3 weeks. </p>
+                                sessions for almost 3 weeks.
+                            </p>
                             <cite class="testimonial__cite">
                                 <span class="testimonial__cite--name">Ritika Gautam </span>
 
@@ -660,19 +760,19 @@
                     <figure class="testimonial slider__slide-content">
                         <div class="testimonial__img">
                             <img class="testimonial__photo img-fluid" src="images/ramesh-review.jpg" alt="John Tarkpor"
-                                style="width:240px;">
+                                 style="width:240px;">
                         </div>
 
                         <blockquote class="testimonial__text">
-                            <p> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i
-                                    class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> </p>
+                            <p>
+                                <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i> <i class="fa fa-star text-warning fa-2x" aria-hidden="true"></i>
+                            </p>
                             <p> <b> 5/5 recommend!</b></p>
-                            <p> Excellent service and the charges are very minimal. Appreciate the reports were received
+                            <p>
+                                Excellent service and the charges are very minimal. Appreciate the reports were received
                                 on the same day. I wish they continue to provide this kind of service in future. Live
-                                cast of reports is very unique and very helpful. Thanks </p>
+                                cast of reports is very unique and very helpful. Thanks
+                            </p>
                             <cite class="testimonial__cite">
                                 <span class="testimonial__cite--name"> Ramesh Yadav </span>
 
@@ -713,22 +813,26 @@
                                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                                     <div class="item31">
                                         <img src="images/healthcare1.png">
-                                        <p> Get the right advice from doctors anytime anywhere across 18+ specialities.
+                                        <p>
+                                            Get the right advice from doctors anytime anywhere across 18+ specialities.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                                     <div class="item31">
                                         <img src="images/i2.png">
-                                        <p> Get health tests, medicines and much more from the comfort of your house.
+                                        <p>
+                                            Get health tests, medicines and much more from the comfort of your house.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
                                     <div class="item31">
                                         <img src="images/bills.png">
-                                        <p> Guaranteed savings on your medical bills (upto 40%) at in network centers /
-                                            labs/pharmacy </p>
+                                        <p>
+                                            Guaranteed savings on your medical bills (upto 40%) at in network centers /
+                                            labs/pharmacy
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 col-xxl-3 mx-auto">
@@ -761,8 +865,10 @@
                     <div class="description">
                         <img src="images/labtest-blue.png">
                         <h3 class="pt-3 heading-bdr"><b> Lab Test & Scans </b> </h3>
-                        <p> Enjoy up to 50% discount on 5000+ in-network primary care centers & hospitals with FREE Home
-                            Sample pick-ups </p>
+                        <p>
+                            Enjoy up to 50% discount on 5000+ in-network primary care centers & hospitals with FREE Home
+                            Sample pick-ups
+                        </p>
                     </div>
                 </div>
 
@@ -770,8 +876,10 @@
                     <div class="description">
                         <img src="images/yoga2.png">
                         <h3 class="pt-3 heading-bdr"><b>Sessions with Experts </b> </h3>
-                        <p> Stay on top of your health with Unlimited Free Access to LIVE yoga, meditation, fitness,
-                            nutrition and therapy </p>
+                        <p>
+                            Stay on top of your health with Unlimited Free Access to LIVE yoga, meditation, fitness,
+                            nutrition and therapy
+                        </p>
                     </div>
                 </div>
 
@@ -779,8 +887,10 @@
                     <div class="description">
                         <img src="images/careteam-blue.png">
                         <h3 class="pt-3 heading-bdr"><b> Care Team </b> </h3>
-                        <p> Dedicated care team to answer health related questions and help you get the most out of your
-                            Plan. </p>
+                        <p>
+                            Dedicated care team to answer health related questions and help you get the most out of your
+                            Plan.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -839,7 +949,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center store d-flex align-items-center justify-content-center flex-wrap"
-                    id="about">
+                     id="about">
                     <div class="yt mx-4">
                         <a href="https://www.youtube.com/channel/UCbB5tHJTceHvr7Fp9Tk5qew" target="_blank">
                             <img class="" style="width: 50px; margin-top: 0;" src="images/youtube.png"><br>
@@ -945,7 +1055,7 @@
                                             <i class="fa fa-instagram"></i>
                                         </a>
                                         <a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home"
-                                            target="_blank"><i class="fa fa-linkedin"></i></a>
+                                           target="_blank"><i class="fa fa-linkedin"></i></a>
                                         <a href="https://twitter.com/healthassure1" target="_blank">
                                             <i class="fa fa-twitter"></i>
                                         </a>
@@ -967,8 +1077,12 @@
                                     </li>
                                 </ul>
                                 <ul class=" ml-3 pl-7">
-                                    <li> <a href="https://haapp.healthassure.in/Register/AboutUs" target="_blank">About
-                                            Us</a></li>
+                                    <li>
+                                        <a href="https://haapp.healthassure.in/Register/AboutUs" target="_blank">
+                                            About
+                                            Us
+                                        </a>
+                                    </li>
                                     <li><a href="https://healthassure.blog/" target="_blank">Blog</a></li>
 
                                 </ul>
@@ -980,13 +1094,11 @@
             </div>
             <div class="footer">
                 <p class="text-center white f-14 mb-0 mt-5">
-                    Copyright @ 2021 HealthAssure | All Rights Reserved | <a
-                        href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf"
-                        target="_blank">Return Policy </a>| <a
-                        href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">
+                    Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healthassure.in/products/ha/TC?P=Cancellation%20and%20Return%20Policy.pdf"
+                                                                             target="_blank">Return Policy </a>| <a href="http://www.healthassure.in/products/ha/TC?P=TermCon.pdf" target="_blank">
                         Terms & Conditions
                     </a> | <a href="http://www.healthassure.in/products/ha/TC?P=PrivacyPolicy.pdf"
-                        target="_blank">Privacy Policy</a>
+                              target="_blank">Privacy Policy</a>
                 </p>
             </div>
         </div>
@@ -1002,7 +1114,7 @@
             <p class="text-center pt-2"> Our advisor will contact you shortly. </p>
             <div class="col-md-12   mx-auto text-center">
                 <button type="submit" data-dismiss="modal" onclick="closebuyplanpopup()" value="OK"
-                    class=" btn btn-success btn-class  pgreenbtn" id="button">
+                        class=" btn btn-success btn-class  pgreenbtn" id="button">
                     Ok
                 </button>
                 <br>
@@ -1031,15 +1143,16 @@
                         <div class="form-group">
                             <label for="Phone"> Phone </label>
                             <input type="text" class="form-control form-control1" id="phone" name="phone"
-                                pattern="[0123456789][0-9]{9}" placeholder="Phone" required>
+                                   pattern="[0123456789][0-9]{9}" placeholder="Phone" required>
                         </div>
                         <div class="form-group">
                             <label for="Email"> Email </label>
                             <input type="text" class="form-control form-control1" id="email" name="email"
-                                placeholder="Email" required>
+                                   placeholder="Email" required>
                         </div>
-                        <button type="submit" id="downloadbtn" class="btn btn-primary btn-lg mt-4"> <i
-                                class="fa fa-download" aria-hidden="true"></i> Download </button>
+                        <button type="submit" id="downloadbtn" class="btn btn-primary btn-lg mt-4">
+                            <i class="fa fa-download" aria-hidden="true"></i> Download
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1048,12 +1161,14 @@
 
     <!-- Modal -->
     <div class="modal fade" id="RegistrationModal" tabindex="-1" aria-labelledby="RegistrationModalLabel"
-        aria-hidden="true">
+         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content px-3 py-4" style="background-color:#e6f3fa;">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="RegistrationModalLabel" style="font-size:20px;font-weight:600;"> Please
-                        enter your details... </h5>
+                    <h5 class="modal-title" id="RegistrationModalLabel" style="font-size:20px;font-weight:600;">
+                        Please
+                        enter your details...
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -1093,6 +1208,124 @@
                             <input type="date" autocomplete="off" id="CustomerDob" class="form-control" max="2005-07-13" min="1957-07-13" placeholder="DOB"
                                    required>
                         </div>
+                        <div class="addmembermodal" id="Membersdiv">
+                            <button class="accordion" type="button" style="margin-top:20px;"> Member1 </button>
+                            <div class="panel">
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                    <input type="text" id="MemberName1" class="form-control" placeholder="Name *"
+                                           title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                    <input type="date" id="MemberDOB1" class="form-control"
+                                           placeholder="DOB" min="1920-01-01" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Relation</label>
+                                    <select id="Relative1" name="Relative1" class="form-control">
+                                        <option value="SON">SON</option>
+                                        <option value="DAUGHTER">DAUGHTER</option>
+                                        <option value="HUSBAND">HUSBAND</option>
+                                        <option value="WIFE">WIFE</option>
+                                        <option value="FATHER">FATHER</option>
+                                        <option value="MOTHER">MOTHER</option>
+                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                        <option value="OTHER">OTHER</option>
+                                        <option value="SIBLING">SIBLING</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                                    <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                           name="MemberGender1" id="MemberGender1" checked="checked" value="Male">
+                                    <label style="margin-left: 30px;" for="MemberGender1">Male</label>
+                                    <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                           name="MemberGender1" id="MemberGender1" value="Female">
+                                    <label style="margin-left: 50px;" for="MemberGender1">Female</label>
+                                </div>
+                            </div>
+                            <button type="button" type="button" class="accordion">Member2</button>
+                            <div class="panel">
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                    <input type="text" id="MemberName2" class="form-control" placeholder="Name *"
+                                           title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                    <input type="date" id="MemberDOB2" class="form-control"
+                                           placeholder="DOB" min="1920-01-01" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Relation</label>
+                                    <select id="Relative2" name="Relative2" class="form-control">
+                                        <option value="SON">SON</option>
+                                        <option value="DAUGHTER">DAUGHTER</option>
+                                        <option value="HUSBAND">HUSBAND</option>
+                                        <option value="WIFE">WIFE</option>
+                                        <option value="FATHER">FATHER</option>
+                                        <option value="MOTHER">MOTHER</option>
+                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                        <option value="OTHER">OTHER</option>
+                                        <option value="SIBLING">SIBLING</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-label pl-1" for="CustomerDOB">Gender</label><br />
+                                    <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                           name="MemberGender2" id="MemberGender2" checked="checked" value="Male">
+                                    <label style="margin-left: 30px;" for="MemberGender2">Male</label>
+                                    <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                           name="MemberGender2" id="MemberGender2" value="Female">
+                                    <label style="margin-left: 50px;" for="MemberGender2">Female</label>
+                                </div>
+                            </div>
+
+                            <button type="button" type="button" class="accordion"> Member3 </button>
+                            <div class="panel">
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerName">Name</label>
+                                    <input type="text" id="MemberName3" class="form-control" placeholder="Name *"
+                                           title="Please Enter Character Only" pattern="[a-zA-Z ]*" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label pl-2px" for="CustomerDOB">DOB</label>
+                                    <input type="date" id="MemberDOB3" class="form-control"
+                                           placeholder="DOB" min="1920-01-01" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Relation</label>
+                                    <select id="Relative3" name="Relative3" class="form-control">
+                                        <option value="SON">SON</option>
+                                        <option value="DAUGHTER">DAUGHTER</option>
+                                        <option value="HUSBAND">HUSBAND</option>
+                                        <option value="WIFE">WIFE</option>
+                                        <option value="FATHER">FATHER</option>
+                                        <option value="MOTHER">MOTHER</option>
+                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                        <option value="OTHER">OTHER</option>
+                                        <option value="SIBLING">SIBLING</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-label pl-1" for="CustomerDOB">Gender</label>
+                                    <br />
+                                    <input style="margin-left: 5px;" class="form-check-input" type="radio"
+                                           name="MemberGender3" id="MemberGender3" checked="checked" value="Male">
+                                    <label style="margin-left: 30px;" for="inlineRadio1">Male</label>
+                                    <input style="margin-left: 20px;" class="form-check-input" type="radio"
+                                           name="MemberGender3" id="MemberGender3" value="Female">
+                                    <label style="margin-left: 50px;" for="inlineRadio2">Female</label>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Enter Voucher Code </label>
                             <input type="text" autocomplete="off" id="vouchercode" class="form-control"
@@ -1117,11 +1350,11 @@
     <script src="js/testimonial.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+            crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="../js/AccessCodeToCreateUser.js"></script>
     <script>
@@ -1139,15 +1372,56 @@
                 $("#SubmitRegistrationbrn").prop('disabled', true);
             }
         });
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        function GetRelations() {
+            var Relations = [];
+            var MemberName1 = $('#MemberName1').val();
+            var MemberDOB1 = $('#MemberDOB1').val();
+            var MemberName2 = $('#MemberName2').val();
+            var MemberDOB2 = $('#MemberDOB2').val();
+            var MemberName3 = $('#MemberName3').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
+            var Member1Relative = $('#Relative1').val()
+            var Member2Relative = $('#Relative2').val()
+            var Member3Relative = $('#Relative3').val()
+            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="MemberGender1"]:checked').val(), "RelationName": Member1Relative });
+            }
+            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="MemberGender2"]:checked').val(), "RelationName": Member2Relative });
+            }
+            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="MemberGender3"]:checked').val(), "RelationName": Member3Relative });
+            }
+            return Relations;
+        }
+
         $("#RegistrationformId").submit(function (ev) {
             ev.preventDefault();
-            CreateUserWithAccessCode($('#vouchercode').val(), $('#firstname').val(), $('#lastname').val(), $('#Gender').val(), $('#mobileno').val(), $('#emailid').val(), $('#CustomerDob').val()).then(function (res) {
+            var relations = GetRelations();
+            CreateUserWithAccessCode($('#vouchercode').val(), $('#firstname').val(), $('#lastname').val(), $('#Gender').val(), $('#mobileno').val(), $('#emailid').val(), $('#CustomerDob').val(), relations).then(function (res) {
                 $('#vouchercode').val('');
                 $('#firstname').val('');
                 $('#lastname').val('');
                 $('#Gender').val('');
                 $('#mobileno').val('');
                 $('#emailid').val('');
+                $('#Relative').val('');
                 $("#IsTCAccepted").removeAttr("checked");
             }).catch(function (err) {
                 alert(err.message)
@@ -1163,7 +1437,7 @@
             $('#name').value('');
             $('#phone').value('');
             $('#email').value('');
-        };    
+        };
     </script>
 </body>
 
