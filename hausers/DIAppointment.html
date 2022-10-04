@@ -7,10 +7,15 @@
 	<title> Diagnostic | Confirmed Stage </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/Appointment.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+		rel="stylesheet"> -->
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
 		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -32,22 +37,21 @@
 			<div class="row">
 				<div class="col-xl-6 col-lg-6 col-md-6 col-6 mt-minus">
 					<div class="row">
-						<div class="col-xl-2 col-lg-2 col-md-3 col-5">
+						<div class="col-xl-2 col-lg-2 col-md-2 col-3">
 	<button id="btnGender" class="btn btn-primary1"> Male </button>	
 						</div>
-						<div class="col-xl-2 col-lg-2 col-md-3 col-6">
+						<div class="col-xl-2 col-lg-2 col-md-2 col-6">
 	<button id="btnAge" class="btn btn-primary1 "> Female </button>
 						</div>
 				</div>
 	
 					<div class="row">
-						<div class="col-lg-12 mt-4">
+						<div class="col-lg-12 mt-3">
 							<div class="box">
 								<h4> Appoinment Status </h4>
-<button id="btnstatusname" class="btn btn-green"> Appoinment Confirmed 
-</button>
+<button id="btnstatusname" class="btn btn-green statusbtn"> Appoinment Confirmed </button>
 								<div class="row">
-									<div class="col-lg-12 mt-1">
+									<div class="col-lg-12 ">
 										<h4> Appoinment Date </h4>
 									</div>
 					<div class="col-lg-6 col-md-8 col-sm-8 col-8 boxcol p-10">
@@ -57,7 +61,7 @@
 <p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00 </p>
 									</div>
 									<div class="col-lg-12 col-md-12">
-										<h4 class="mb-0"> Center Location </h4>
+										<h4> Center Location </h4>
 									</div>
 		<div class="col-lg-2 col-3" id="imgProviderImage">
 			<img src="images/apollo-logo.png" class="img-fluid">
@@ -92,25 +96,25 @@
 				</div>
 
 				<div class="col-lg-12 col-md-12">
-					<div class="border border-radius" id="dvForCancelImage">
-						<h3 class="text-center pt-5 head"><b> Sorry, your appointment has been cancelled </b></h3>
+					<div class="instructbox" id="dvForCancelImage">
+						<h3 class="text-center pt-5"> Sorry, your appointment has been cancelled </h3>
 						<p class="text-center"> We request you to please schedule an appointment again! </p>
 						<div class="row">
 							<div class="col-lg-12 col-md-12 text-center">
-								<img src="images/calender.png" class="img-fluid w-15 mb-4" />
+								<img src="images/calender.png" class="img-fluid w-15 my-5" />
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-12 col-md-12 mt-3" id="dvForCompletedImage">
 						<div class="instructbox">
-							<h3 class="text-center pt-5"><b> Thankyou for choosing us </b></h3>
+							<h3 class=" pt-5"> Thankyou for choosing us </b></h3>
 							<p class="text-center"> Your appointment was completed successfully! Please find your
 								reports
 								below. </p>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 text-center">
-									<img src="images/appoinment-complete.png" class="img-fluid w-15 mb-4" />
+									<img src="images/appoinment-complete.png" class="img-fluid w-15 my-5" />
 									<div class="row">
 										<div class="col-lg-12 mb-4">
 											<button class="btn btn-reports" id="btnViewReports" > View Reports </button>
@@ -122,16 +126,16 @@
 					</div>
 					<div class="col-lg-12 col-md-12 mt-3">
 						<div class="instructbox" id="dvForRequestImage">
-							<h3 class="text-center pt-5"> Waiting for center to accept your request </h3>
+							<h3 class=" pt-5"> Waiting for center to accept your request </h3>
 							<p class="text-center"> We will notify you shortly! </p>
 							<div class="row">
 								<div class="col-lg-12 col-md-12 text-center">
-									<img src="images/request.png" class="img-fluid w-15 mb-4" />
+									<img src="images/request.png" class="img-fluid w-15 my-5" />
 								</div>
 							</div>
 						</div>
 						<div class="row">
-			<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
+			<div class="col-lg-6 col-md-6 col-6" id="dvForConfirm">
 								<div class="box">
 									<div class="row">
 										<div class="col-lg-12 ">
@@ -151,7 +155,7 @@ id="txtPointOfContact" class="doctname"> Dr. Sameer Ale
 			<h4> Fasting Required </h4>
 	<button id="btnFasting" class="btn btn-primary1">Yes </button>
 					<h4> Payment Mode </h4>
-<p id="txtPaymentMode"> <img src="images/wallet.png" width="15px"> Prepaid </p>
+<p id="txtPaymentMode" class="pt-2"> <img src="images/wallet.png" class="boxicon"> Prepaid </p>
 				<div id="dvPreprationForCheckup">
 					<h4> Prepration For Checkup </h4>
 		<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the
@@ -162,7 +166,7 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 								</div>
 							</div>
 
-							<div class="col-lg-6 col-md-6 col-12">
+							<div class="col-lg-6 col-md-6 col-6">
 								<div class="row " id="dvAppointmentConfirmed">
 									<div class="box1 ">
 										<div class="col-lg-12">
@@ -180,11 +184,11 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 								<h4 class="pb-2"> Appointment Recieved By at Centre</h4>
 											<div class="docbox">
 												<div class="row">
-												<div class="col-lg-3 pt-2 col-3">
-														<img src="images/users.png" class="img-fluid w-75">
+												<div class="col-lg-3  col-2 boxcol p-10">
+														<img src="images/users.png" class="img-fluid ">
 													</div>
-													<div class="col-lg-9 col-9">
-				<p class="pt-2 mb-0"> <span id="txtProviderName"
+													<div class="col-lg-9 col-10 boxcol">
+				<p class=" mb-0"> <span id="txtProviderName"
 																class="doctname"> Mr. Abhishek Singh
 															</span>
 														</p>
@@ -197,11 +201,7 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 										</div>
 									</div>
 								</div>
-
-
-
-								
-							</div>
+              </div>
 						</div>
 					</div>
 				</div>
@@ -218,10 +218,11 @@ printing and typesetting industry. Lorem Ipsum has been the industry's standard 
 	<h3 > www.healthassure.in </h3>
 	<p> 1st Floor, Excom House,North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai- 400072 </p>
 					</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 footercol ">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 footercol ">
 						<div class="row ms-2">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
-			<p class="mb-0"> <i class="fa-regular fa-envelope"></i> <a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
+			<p class="mb-0"> <i class="fa-regular fa-envelope"></i> 
+				<a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
 							</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
 								<p class="mb-0"> <img src="images/email.png" class="email" > 912261676600/33 </p>

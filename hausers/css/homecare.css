@@ -6,14 +6,11 @@
      text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
      box-sizing: border-box;
  }
-
-
 body {
-        font-family: 'Poppins', sans-serif!important;
+        font-family: 'PT Sans', sans-serif;
         overflow-x:hidden!important;
-            font-size: 15px;
+        font-size: 15px;
         }
-
 html{
      overflow-x:hidden!important;
 }
@@ -23,15 +20,22 @@ a{
 .bold{
     font-weight: 700;
 }
-.w-80{
-    width: 80%;
-}
-
 @media only screen and (max-width: 300px) {
-    .w-80{
-    width: 100%;
-}
 
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 12px!important;
+    }
+.mt-minus{
+    margin-top: -10px;
+}
+.email{
+        width: 8px;
+        padding-right: 2px;
+    }
 .footerlogo{
     width: 100%;
 }
@@ -147,7 +151,6 @@ line-height:26.5px ;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-       padding: 2px 3px 2px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -164,7 +167,7 @@ line-height:26.5px ;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-      padding: 2px 3px 2px 3px;
+    padding: 5px 3px 5px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -265,11 +268,6 @@ color: #0E5FC1;
     font-size: 15px;
     font-weight: 600;
 }
-.docbox .icon{
-    font-size: 10px;
-    padding-left: 5px;
-    color: #0d6efd;
-}
 .docbox1{
     background-color: #ffffff;
     border-radius: 20px;
@@ -346,18 +344,18 @@ font-family: fontawesome;
 }
 }
 
-
-
 @media only screen and (min-width: 301px) {
-
-.mt-minus {
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 12px!important;
+    }
+.mt-minus{
     margin-top: -10px;
 }
-
-.w-80{
-    width: 100%;
-}
- .email{
+.email{
         width: 8px;
         padding-right: 2px;
     }
@@ -370,9 +368,9 @@ font-family: fontawesome;
     padding-top: 16px;
 }
 .head{
-font-weight: 700;
-font-size:16px ;
-line-height:26.5px ;
+font-weight: 800;
+font-size:13px ;
+line-height:18px;
 }
 .sub-heading{
 font-weight: 700;
@@ -388,14 +386,13 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
-    font-weight: 600;
 }
 .footer{
     background-color: #0e5fc1;
@@ -410,7 +407,7 @@ line-height:26.5px ;
 }
 .footer h3{
     color: #ffffff;
-    font-size: 8px;
+    font-size: 7px;
     margin-bottom: 0px;
 }
 .footer p{
@@ -458,27 +455,23 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 68px;
-    font-size: 10px;
+    min-width: 60px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+   padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    font-size: 12px;
-    font-weight: 600;
+   font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
-   min-width: 68px;
-    font-size: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 2px 5px 2px 5px;
-    border-radius: 20px;
+    min-width: 60px;
+    font-size: 5px;
+    padding: 4px 3px 3px 3px; 
 }
 .btn-reports{
     background-color:transparent;
@@ -502,10 +495,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 105px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -518,10 +511,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 5px;
-     min-width: 105px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -535,9 +528,9 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 1px;
     min-width: 60px;
-    font-size: 10px;
+    font-size: 5px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -561,12 +554,11 @@ line-height:26.5px ;
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
-    font-size: 5px;
-    min-width: 105px;
+     font-size: 5px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
-   /* padding: 5px 3px 5px 3px;*/
+    padding: 4px 3px 3px 3px;
      border-radius: 20px;
 }
 .btn-grey:hover{
@@ -585,18 +577,21 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
      padding: 10px 7px 10px 7px;
 }
-.boxicon{
+.boxicon1{
     width: 10px;
+}
+.boxicon{
+    width: 5px;
 }
 .box p{
     font-size: 5px;
     line-height: 8px;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box h4{
     font-size: 9px;
     font-weight: 600;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -622,30 +617,23 @@ margin-bottom: 4px;
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 12px;
+    font-size: 11px;
 }
 .docbox .doctname{
-font-size: 10px;
+font-size: 13px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
-padding-left: 5px;
 }
 .docbox .designation{
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 23px;
-}
-.docbox .icon{
-    font-size: 11px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -670,7 +658,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-   width: 40%!important;
+   width: 30%!important;
 }
 ul{
     padding-left: 0px;
@@ -679,11 +667,10 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-padding: 11px 5px 8px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
-  text-align: left;
-  outline: none;
+ outline: none;
   font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
@@ -701,7 +688,7 @@ padding: 11px 5px 8px 5px;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -718,29 +705,27 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 50px;
+    padding-top: 70px;
 }
 }
 
 @media only screen and (min-width: 350px) {
+   .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
 .footerlogo{
     width: 90%;
     padding-top: 4px;
 }
- .head{
-font-weight: 700;
-font-size:20px ;
-line-height:26.5px ;
-}
-.sub-heading{
-    font-weight: 700;
-font-size:20px ;
-line-height:26.5px ;
-}
+
 .head{
 font-weight: 700;
-font-size:16px ;
-line-height:26.5px ;
+font-size:13px ;
+line-height:18px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -760,7 +745,7 @@ line-height:26.5px ;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
@@ -776,7 +761,6 @@ line-height:26.5px ;
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
-
 .footer .fa{
     font-size: 7px;
 }
@@ -788,7 +772,7 @@ line-height:26.5px ;
 .footer ul li{
     list-style-type: none;
     float: left;
-    font-size: 14px;
+    font-size: 7px;
     color: #ffffff;
     margin: 5px;
     text-align: center;
@@ -801,7 +785,6 @@ line-height:26.5px ;
     font-size: 5px;
     line-height: 6px;
 }
-
 .footer p a{
     color: #ffffff!important;
 }
@@ -832,25 +815,21 @@ line-height:26.5px ;
     background-color: #28a745;
     border-color: #28a745;
     min-width: 68px;
-    font-size: 10px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 20px;
     min-width: 68px;
-    font-size: 10px;
+    font-size: 5px;
     cursor: pointer;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -878,7 +857,7 @@ line-height:26.5px ;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -890,11 +869,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 5px;
-    min-width: 115px;
+     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 3px 5px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -907,10 +885,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 68px;
-    font-size: 10px;
+    min-width: 66px;
+    font-size: 5px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+  padding: 4px 3px 3px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -935,11 +913,10 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    font-size: 5px;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -953,18 +930,21 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
     padding: 10px 7px 10px 7px;
 }
+.boxicon1{
+    width: 9px;
+}
 .boxicon{
-    width: 10px;
+    width: 8px;
 }
 .box p{
-    font-size: 5px;
-    line-height: 10px;
-      margin-bottom: 4px;
+    font-size: 6px;
+    line-height: 7px;
+    margin-bottom: 4px;
 }
 .box h4{
     font-size: 9px;
     font-weight: 600;
-      margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -997,7 +977,7 @@ margin-bottom: 4px;
     font-size: 12px;
 }
 .docbox .doctname{
-font-size: 10px;
+font-size: 13px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
@@ -1005,14 +985,8 @@ text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 24px;
-}
-.docbox .icon{
-    font-size: 11px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -1037,7 +1011,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-   width: 35%!important;
+   width: 30%!important;
 }
 ul{
     padding-left: 0px;
@@ -1046,7 +1020,7 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-padding: 11px 5px 8px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
   text-align: left;
@@ -1068,7 +1042,7 @@ padding: 11px 5px 8px 5px;
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -1085,21 +1059,28 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 50px;
+    padding-top: 70px;
 }
 .mt-minus{
-    margin-top: -10px;
+    margin-top: -16px;
 }
 }
 
 @media only screen and (min-width: 422px) {
-    .footerlogo{
+  .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+ .footerlogo{
     width: 90%;
 }
 .head{
-font-weight: 700;
-font-size:18px ;
-line-height:26.5px ;
+font-weight: 600;
+font-size:13px ;
+line-height:24px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -1115,14 +1096,13 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 13px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
-    font-weight: 600;
 }
 #accordion .panel-title a{
     display: block;
@@ -1202,9 +1182,20 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 600;
     cursor: pointer;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
+    border-radius: 20px;
 }
 .btn-reports{
     background-color:transparent;
@@ -1227,8 +1218,8 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 8px;
-    min-width: 80px;
+    font-size: 6px;
+    min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
      padding: 3px 5px 2px 5px;
@@ -1244,10 +1235,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 10px;
+    font-size: 6px;
+    min-width: 115px;
     font-weight: 600;
-    min-width: 80px;
     text-transform: uppercase;
+     padding: 3px 5px 2px 5px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -1261,9 +1253,9 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 0px;
     min-width: 68px;
-    font-size: 10px;
+    font-size: 6px;
     font-weight: 600;
-    padding: 2px 5px 2px 5px;
+    padding: 3px 5px 2px 5px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -1288,6 +1280,12 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 6px;
+    min-width: 115px;
+    font-weight: 600;
+    text-transform: uppercase;
+     padding: 3px 5px 2px 5px;
+     padding: 3px 5px 2px 5px;
 }
 .btn-w120{
     width: 120px;
@@ -1297,8 +1295,11 @@ line-height:26.5px ;
     background: rgba(12, 85, 173, 0.03);
    padding: 10px 7px 10px 7px;
 }
+.boxicon1{
+    width: 8px;
+}
 .boxicon{
-    width: 10px;
+    width: 8px;
 }
 .box p{
     font-size: 8px;
@@ -1324,7 +1325,7 @@ line-height:26.5px ;
     margin-bottom: 8px;
 }
 .box1 p{
-    font-size: 10px;
+    font-size: 8px;
     line-height: 16px;
 }
 .docbox{
@@ -1335,26 +1336,21 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 13px;
+    font-size: 10px;
     margin-bottom: 4px;
 }
 .docbox .doctname{
-font-size: 12px;
-font-weight: 700;
+font-size: 13px;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
+margin-bottom: 4px;
 }
 .docbox .designation{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 24px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -1387,11 +1383,9 @@ ul{
 .accordion {
    background-color: #1f67bb;
   color: #ffffff;
-  cursor: pointer;
-  padding: 11px 5px 8px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 5px;
   transition: 0.4s;
@@ -1427,7 +1421,7 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .consultimg{
-    padding-top: 50px;
+    padding-top: 80px;
 }
 }
 
@@ -1435,12 +1429,28 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 700px) {
-
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
 .footerlogo{
     width: 100%;
 }
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
 
-   .logo{
+.logo{
         width: 82px;
     }
 .instructbox{
@@ -1530,6 +1540,17 @@ font-family: fontawesome;
     font-weight: 600;
     cursor: pointer;
 }
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
+    border-radius: 20px;
+}
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -1555,6 +1576,7 @@ font-family: fontawesome;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1656,22 +1678,16 @@ font-family: fontawesome;
     font-size: 15px;
 }
 .docbox .doctname{
-font-size: 12px;
-font-weight: 700;
+font-size: 15px;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 24px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -1743,7 +1759,6 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
-
 .consultimg{
     padding-top: 50px;
 }
@@ -1751,15 +1766,32 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 750px) {
-
- .email{
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+.email{
         width: 10px;
         padding-right: 2px;
     }
-
 .footerlogo{
     width: 75%;
 }
+
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
 .logo{
         width: 130px;
     }
@@ -1820,7 +1852,7 @@ font-family: fontawesome;
 }
 .footer p a{
     color: #ffffff!important;
-    font-size: 9px;
+    font-size: 8px;
 }
 .centerlogo{
     max-width: 100px;
@@ -1851,7 +1883,20 @@ font-family: fontawesome;
     font-size: 10px;
     font-weight: 600;
     cursor: pointer;
+    padding: 2px 5px 2px 5px;
 }
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+   padding: 2px 5px 2px 5px;
+    border-radius: 20px;
+}
+
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -1877,6 +1922,7 @@ font-family: fontawesome;
     min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
+     padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1933,9 +1979,6 @@ font-family: fontawesome;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    padding: 5px 3px 5px 3px;
-    font-size: 8px;
-    min-width: 150px;
 }
 .btn-w120{
     width: 120px;
@@ -1946,10 +1989,13 @@ font-family: fontawesome;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 11px;
+    width: 13px;
+}
+.boxicon1{
+    width: 13px;
 }
 .box p{
-    font-size: 10px;
+    font-size: 13px;
     line-height: 16px;
 }
 .box h4{
@@ -1960,6 +2006,10 @@ font-family: fontawesome;
 .box1{
     padding-left: 0px;
     padding-right: 0px;
+}
+.box1 p{
+      font-size: 13px;
+    line-height: 16px;
 }
 .box1 h3{
     font-size: 15px;
@@ -1985,21 +2035,15 @@ font-family: fontawesome;
 }
 .docbox .doctname{
 font-size: 13px;
-font-weight: 700;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 4px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -2024,7 +2068,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-    width: 18%!important;
+    width: 15%!important;
 }
 ul{
     padding-left: 0px;
@@ -2076,13 +2120,28 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1000px) {
-
-.w-80{
-    width: 80%;
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
 }
+.p-10{
+        padding-left: 10px!important;
+    }
 .footerlogo{
     width: 100%;
 }
+
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
  .logo{
         width: 130px;
     }
@@ -2096,7 +2155,7 @@ font-family: fontawesome;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
@@ -2125,7 +2184,6 @@ font-family: fontawesome;
     padding-left: 10px!important;
     padding-right: 10px!important;
 }
-
 .footer .fa{
     font-size: 10px;
 }
@@ -2147,8 +2205,6 @@ font-family: fontawesome;
     color: #ffffff!important;
     font-size: 9px;
 }
-
-
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -2189,9 +2245,21 @@ font-family: fontawesome;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     cursor: pointer;
+    padding: 5px 6px 5px 6px;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 6px 5px 6px;
+    border-radius: 20px;
 }
 .btn-reports{
     background-color:transparent;
@@ -2218,6 +2286,7 @@ font-family: fontawesome;
     min-width: 195px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2274,7 +2343,6 @@ font-family: fontawesome;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    min-width: 166px;
 }
 .btn-w120{
     width: 120px;
@@ -2288,7 +2356,7 @@ font-family: fontawesome;
     width: 13px;
 }
 .box p{
-    font-size: 11px;
+    font-size: 13px;
     line-height: 16px;
 }
 .box h4{
@@ -2304,6 +2372,11 @@ font-family: fontawesome;
     font-weight: 700;
     line-height: 28px;
 }
+.box1 p{
+      font-size: 13px;
+    line-height: 16px;
+}
+
 .box1 h4{
     font-size: 14px;
     font-weight: 600;
@@ -2318,25 +2391,19 @@ font-family: fontawesome;
 }
 .docbox p{
     font-size: 13px;
-    margin-top: 4px;
 }
 .docbox .doctname{
-font-size: 14px;
-font-weight: 700;
+font-size: 13px;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
+margin-bottom: 5px;
 }
 .docbox .designation{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 2px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -2409,16 +2476,33 @@ font-family: fontawesome;
 .consultimg{
     padding-top: 50px;
 }
-
 }
 
 
 @media only screen and (min-width: 1200px) {
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
     .footerlogo{
     width: 100%;
 }
 
-   .logo{
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.logo{
         width: 130px;
     }
 .instructbox{
@@ -2533,6 +2617,7 @@ font-family: fontawesome;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2638,22 +2723,16 @@ font-family: fontawesome;
     font-size: 15px;
 }
 .docbox .doctname{
-font-size: 12px;
-font-weight: 700;
+font-size: 15px;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 24px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -2731,12 +2810,31 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1300px) {
+    .boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
+}
+.p-10{
+        padding-left: 10px!important;
+    }
+
     .footerlogo{
     width: 100%;
     padding-top: 20px;
 }
 
-   .logo{
+.head{
+font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
+.logo{
         width: 150px;
         float: right;
     }
@@ -2750,7 +2848,7 @@ font-family: fontawesome;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
@@ -2776,8 +2874,8 @@ font-family: fontawesome;
     background-repeat: no-repeat;
 }
 .footercol {
-    padding-left: 10px!important;
-    padding-right: 10px!important;
+    padding-left: 4px!important;
+    padding-right: 4px!important;
 }
 .footer .fa{
     font-size: 13px;
@@ -2801,7 +2899,6 @@ font-family: fontawesome;
     font-size: 13px;
     line-height: 17px;
 }
-
 .footer ul li{
     list-style-type: none;
     float: left;
@@ -3018,7 +3115,7 @@ font-family: fontawesome;
     margin-top: 15px;
 }
 .box1 p{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
 }
 .docbox{
@@ -3034,21 +3131,16 @@ font-family: fontawesome;
 }
 .docbox .doctname{
 font-size: 14px;
-font-weight: 700;
+font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
+margin-bottom: 4px;
 }
 .docbox .designation{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    padding-left: 2px;
-}
-.docbox .icon{
-    font-size: 14px;
-    padding-left: 5px;
-    color: #0d6efd;
 }
 .docbox1{
     background-color: #ffffff;
@@ -3126,8 +3218,3 @@ font-family: fontawesome;
     margin-top: -10px;
 }
 }
-
-
-
-
-
