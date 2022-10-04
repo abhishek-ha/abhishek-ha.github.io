@@ -1164,7 +1164,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"],'', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1274,7 +1274,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"],'', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
