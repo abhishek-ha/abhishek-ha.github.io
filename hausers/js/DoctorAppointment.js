@@ -27,22 +27,22 @@ function LoadData(Appointmentid) {
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<img src="images/calendar-black.png"  class="boxicon"> ' + data.results.appointmentTime);
-                $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
+                $("#txtAppointmentTime").html('<img src="images/clock.png"  class="boxicon"> ' + data.results.appointmentTime);
+                $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="10" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
-                $("#txtDurationForTest").html('<i class="fa-regular fa-clock"></i>' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" width="15"> ' + data.results.paymentMode);
+                $("#txtDurationForTest").html('<img src="images/clock.png"  class="boxicon1">' + data.results.durationforTest);
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon1" > ' + data.results.paymentMode);
                 $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" width="15"> ' + data.results.paymentSettlementMode);
+                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode);
                 $("#txtProviderName").text(data.results.serviceName);
-                $("#txtProviderMobile").html('<i class="fa-solid fa-phone"></i> ' + data.results.providerMobile);
-                $("#txtProviderEmail").html('<i class="fa-solid fa-envelope"></i> ' + data.results.providerEmail);
+                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);
+                $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 debugger;
                 if (data.results.reportSavePath != null) {
@@ -81,22 +81,22 @@ function LoadData(Appointmentid) {
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Red");
+                    $("#btnstatusname").attr("class", "btn btn-red");
                     $("#dvForCancelImage").show();
                 }
                 else if (data.results.statusname == 'Requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Gray");
+                    $("#btnstatusname").atte("class", "btn btn-grey");
                     $("#dvForRequestImage").show();
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname =='Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Green");
+                    $("#btnstatusname").attr("class", "btn btn-success");
                     $("#dvForCompletedImage").show();
                 }
                 else if (data.results.statusname == 'Confirmed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").css("background-color", "Orange");
+                    $("#btnstatusname").attr("class", "btn btn-orange");
                     $("#dvAppointmentConfirmed").show();
                     $("#dvForConfirm").show();;
                 }
@@ -126,7 +126,10 @@ $(function () {
     $("#dvForRequestImage").hide();
     $("#dvForCompletedImage").hide();
     $("#dvCaseNo").hide();
-    if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
+    if (Appointmentid != undefined && Appointmentid != null) { 
+        LoadData(Appointmentid);
+         $("body").show();
+         }
     else {
         window.location.replace("404.html");
     }

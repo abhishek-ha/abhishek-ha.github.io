@@ -40,7 +40,7 @@ function LoadData(Appointmentid) {
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
                 $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode);
                 $("#txtProviderName").text(data.results.providerName);
-                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);
+                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
                 if (data.results.reportSavePath != null) {
@@ -79,7 +79,7 @@ function LoadData(Appointmentid) {
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-red');
+                    $("#btnstatusname").attr('class', 'btn btn-red statusbtn');
                     $("#dvForCancelImage").show();
                 }
                 else if (data.results.statusname == 'Requested') {
@@ -94,7 +94,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Confirmed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-orange');
+                    $("#btnstatusname").attr('class', 'btn btn-orange statusbtn');
                     $("#dvAppointmentConfirmed").show();
                     $("#dvForConfirm").show();;
                 }

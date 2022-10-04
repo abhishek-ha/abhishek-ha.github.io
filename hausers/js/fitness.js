@@ -19,11 +19,11 @@ function LoadData(Appointmentid) {
                  if (statusName == 'Cancelled') {
                     $("#dvCancel").show();
                     $("#dvConfirm").hide();
-                    $("#btnstatusname").attr("class", "btn btn-red");
+                    $("#btnstatusname").attr("class", "btn btn-red statusbtn");
                 } else if (statusName == 'Confirmed'){
                     $("#dvCancel").hide();
                     $("#dvConfirm").show();
-                    $("#btnstatusname").attr("class", "btn btn-orange");
+                    $("#btnstatusname").attr("class", "btn btn-orange statusbtn");
                     }
                 $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
@@ -31,7 +31,7 @@ function LoadData(Appointmentid) {
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png"  class="boxicon">  ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html('<img src="images/clock.png" class="boxicon"> ' + data.results.appointmentTime);
                 $("#btnAge").text(data.results.memberAge + ' Years');
-                $("#txtDurationForTest").html('<i class="fa-solid fa-clock"></i> Under ' + data.results.durationforTest);
+                $("#txtDurationForTest").html('<img src="images/clock.png" class="boxicon"> Under ' + data.results.durationforTest);
                 $("#txtPointOfContact").text(data.results.PointOfContact);
 
                 if (data.results.subFacilityName == 'WelnessCoach') {

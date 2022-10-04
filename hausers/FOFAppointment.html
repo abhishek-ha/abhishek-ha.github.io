@@ -4,13 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Confirmed Stage </title>
+	<title> Face To Face Consultation </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/Appointment.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
 		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -32,8 +31,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-					<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-6 mt-minus">
+						<div class="row">
 						<div class="col-xl-2 col-lg-2 col-md-3 col-5">
 	<button id="btnGender" class="btn btn-primary1"> Male </button>	
 						</div>
@@ -41,28 +40,24 @@
 	<button id="btnAge" class="btn btn-primary1 "> Female </button>
 						</div>
 				</div>
-
-					<div class="row">
-						<div class="col-lg-12 mt-4 ">
+	<div class="row">
+						<div class="col-lg-12 mt-3">
 							<div class="box ">
 								<h4> Appoinment Status </h4>
 								<button id="btnstatusname" class="btn btn-orange"> Appoinment Confirmed </button>
 								<div class="row">
-									<div class="col-lg-12 mt-3">
+									<div class="col-lg-12">
 										<h4> Appoinment Date </h4>
 									</div>
-									<div class="col-lg-6 col-6">
-	<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday, 12 June </p>
+									<div class="col-lg-6 col-md-8 col-sm-8 col-8 boxcol p-10">
+	<p id="txtAppointmentDate"> <img src="images/calendar-black.png" class="boxicon"> Saturday, 12 June </p>
 									</div>
-									<div class="col-lg-6 col-6">
-										<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00
-										</p>
+									<div class="col-lg-6 col-md-4 col-sm-4 col-4 boxcol">
+	<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 - 12:00  </p>
 									</div>
-									<div class="col-lg-12 col-md-12">
-										<h4> Center Location </h4>
-									</div>
-									<div class="col-lg-2 col-3" id="imgProviderImage">
-										<img src="images/apollo-logo.png" class="img-fluid">
+<div class="col-lg-12 col-md-12"> <h4> Center Location </h4> </div>
+		<div class="col-lg-2 col-3" id="imgProviderImage">
+		<img src="images/apollo-logo.png" class="img-fluid">
 									</div>
 									<div class="col-lg-10 col-9">
 										<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar
@@ -76,20 +71,17 @@
 								</div>
 								<div class="col-lg-12 mt-2" id="dvTestListBtn">
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseOne" aria-expanded="true"
-														aria-controls="collapseOne"> Check Tests Covered </a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-												aria-labelledby="headingOne">
-												<div class="panel-body">
-
-													<div class="accordion ">
-														<ul id="ulTest" type="none">
+							<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+<a role="button" data-toggle="collapse" data-parent="#accordion"
+href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Check Tests Covered </a> </h4>
+							</div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+aria-labelledby="headingOne">
+		<div class="panel-body">
+<div class="accordion ">
+			<ul id="ulTest" type="none">
 														</ul>
 													</div>
 												</div>
@@ -106,8 +98,8 @@
 					</div>
 				</div>
 
-				<div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-5 ">
-					<img src="images/doctor-visit.png" class="img-fluid w-75">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-6 ">
+					<img src="images/doctor-visit.png" class="img-fluid  float-end consultimg">
 				</div>
 
 				<div class="col-lg-12 col-md-12 mt-3">
@@ -123,8 +115,8 @@
 
 					<div class="col-lg-12 col-md-12 mt-3" id="dvForCompletedImage">
 						<div class="instructbox">
-							<h3 class="text-center pt-5"><b> Thankyou for choosing us </b></h3>
-							<p class="text-center"> Your appointment was completed successfully! Please find your
+		<h3 class=" pt-5"> Thankyou for choosing us </h3>
+	<p> Your appointment was completed successfully! Please find your
 								reports
 								below. </p>
 							<div class="row">
@@ -174,18 +166,18 @@
 											<h4 class="pt-4 mb-0"> Payment Mode </h4>
 											<p id="txtPaymentMode"> <img src="images/wallet.png" width="15px"> Prepaid
 											</p>
-											<div id="dvPreprationForCheckup">
-												<h4> Prepration For Checkup </h4>
-												<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the
-													printing and typesetting industry. Lorem Ipsum has been the
-													industry's standard dummy text ever since the 1500s, when an unknown
-													printer took a galley of type and scrambled it to make a type
-													specimen book. Lorem Ipsum is simply dummy text of the printing and
-													typesetting industry. Lorem Ipsum has been the industry's standard
-													dummy text ever since the 1500s, when an unknown printer took a
-													galley of type and scrambled it to make a type specimen book. It has
-													survived not only five centuries, but also the leap into electronic
-													typesetting, remaining essentially unchanged. </p>
+			<div id="dvPreprationForCheckup">
+						<h4> Prepration For Checkup </h4>
+<p id="txtPreprationForCheckup"> Lorem Ipsum is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has been the
+industry's standard dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type
+specimen book. Lorem Ipsum is simply dummy text of the printing and
+typesetting industry. Lorem Ipsum has been the industry's standard
+dummy text ever since the 1500s, when an unknown printer took a
+galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. </p>
 											</div>
 										</div>
 									</div>
@@ -194,9 +186,9 @@
 
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="row " id="dvAppointmentConfirmed">
-									<div class="box1 ms-5">
+									<div class="box1 ">
 										<div class="col-lg-12">
-											<h3> For Centre Use only </h3>
+					<h3> For Centre Use only </h3>
 											<h4 class="mb-0 "> Case Id </h4>
 											<button id="btnCaseNoConfirmed" class="btn btn-primary1">APPOLO345676
 											</button>
@@ -245,10 +237,11 @@
 	<h3 > www.healthassure.in </h3>
 	<p> 1st Floor, Excom House,North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai- 400072 </p>
 					</div>
-				<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 footercol ">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 footercol ">
 						<div class="row ms-2">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
-			<p class="mb-0"> <i class="fa-regular fa-envelope"></i> <a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
+			<p class="mb-0"> <i class="fa-regular fa-envelope"></i> 
+				<a href="mailto:support@healthassure.in" style="color:#ffffff;"> support@healthassure.in </a> </p>
 							</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
 								<p class="mb-0"> <img src="images/email.png" class="email" > 912261676600/33 </p>
@@ -272,12 +265,9 @@
 					<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank"></a><img src="images/playstore.png" class="img-fluid w-40"></a>
 					<a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485" target="_blank"></a><img src="images/appstore.png" class="img-fluid w-40"></a>
          </div>
-
-
-				</div>
+       </div>
 			</div>
-
-		</section>
+	</section>
 	</div>
 
 

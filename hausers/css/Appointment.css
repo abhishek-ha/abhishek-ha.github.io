@@ -7,7 +7,7 @@
      box-sizing: border-box;
  }
 body {
-        font-family: 'Poppins', sans-serif!important;
+        font-family: 'PT Sans', sans-serif;
         overflow-x:hidden!important;
         font-size: 15px;
         }
@@ -22,16 +22,23 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
-    .boxcol{
-    padding-left: 1px!important;
-    padding-right: 1px!important;
+.statusbtn{
+    margin-top: -10px;
+}
+.boxcol{
+    padding-left: 2px!important;
+    padding-right: 2px!important;
 }
 .p-10{
-      padding-left: 10px;
+        padding-left: 12px!important;
     }
 .mt-minus{
     margin-top: -10px;
 }
+.email{
+        width: 8px;
+        padding-right: 2px;
+    }
 .footerlogo{
     width: 100%;
 }
@@ -56,6 +63,7 @@ line-height:26.5px ;
 .instructbox h3{
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 }
 .instructbox p{
     font-size: 16px;
@@ -335,22 +343,34 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 8px;
+}
+.panel ul li a{
+    color: #000000;
+}
+.consultimg{
+    padding-top: 50px;
+    height: 200px;
+}
 .consultimg{
     padding-top: 50px;
 }
 }
 
 @media only screen and (min-width: 301px) {
-   
+    .statusbtn{
+    margin-top: -14px;
+}
 .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
 .p-10{
-        padding-left: 10px!important;
+        padding-left: 12px!important;
     }
 .mt-minus{
-    margin-top: -10px;
+    margin-top: -16px;
 }
 .email{
         width: 8px;
@@ -365,7 +385,7 @@ font-family: fontawesome;
     padding-top: 16px;
 }
 .head{
-font-weight: 800;
+font-weight: 600;
 font-size:13px ;
 line-height:18px;
 }
@@ -385,6 +405,7 @@ line-height:26.5px ;
 .instructbox h3{
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 }
 .instructbox p{
     font-size: 16px;
@@ -460,9 +481,9 @@ line-height:26.5px ;
     border-radius: 20px;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
    font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
@@ -492,15 +513,15 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 110px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
+    padding: 3px 3px 2px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
     color: #ffffff;
-    border: 1px solid #ff790f;   
 }
 .btn-red{
     background-color:#F44336;
@@ -516,15 +537,13 @@ line-height:26.5px ;
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-}
+  }
 .btn-primary1{
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 60px;
+    min-width: 35px;
     font-size: 5px;
     font-weight: 600;
     padding: 4px 3px 3px 3px;
@@ -581,12 +600,12 @@ line-height:26.5px ;
     width: 5px;
 }
 .box p{
-    font-size: 5px;
+    font-size: 6px;
     line-height: 8px;
     margin-bottom: 4px;
 }
 .box h4{
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -618,10 +637,10 @@ margin-bottom: 4px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 11px;
+    font-size: 5px;
 }
 .docbox .doctname{
-font-size: 13px;
+font-size: 8px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
@@ -680,11 +699,11 @@ ul{
     content: "\f107";
     font-family: fontawesome;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 400;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
@@ -701,12 +720,23 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 5px;
+    line-height: 8px;
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
-    padding-top: 70px;
+    padding-top: 54px;
+    height: 200px;
 }
 }
 
 @media only screen and (min-width: 350px) {
+     .statusbtn{
+    margin-top: -13px;
+}
    .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -718,19 +748,9 @@ font-family: fontawesome;
     width: 90%;
     padding-top: 4px;
 }
- .head{
-font-weight: 700;
-font-size:20px ;
-line-height:26.5px ;
-}
-.sub-heading{
-    font-weight: 700;
-font-size:20px ;
-line-height:26.5px ;
-}
 .head{
 font-weight: 700;
-font-size:13px ;
+font-size:12px ;
 line-height:18px ;
 }
 .sub-heading{
@@ -820,22 +840,20 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 68px;
-    font-size: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 4px 3px 3px 3px;
+    min-width: 40px;
+    font-size: 7px;
+   font-weight: 600;
+    padding: 1px 3px 1px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-    min-width: 68px;
-    font-size: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 4px 3px 3px 3px;
+    color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
+    min-width: 40px;
+   font-size: 7px;
+   font-weight: 600;
+    padding: 1px 3px 1px 3px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -860,10 +878,11 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 115px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
+    padding: 3px 3px 2px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -878,7 +897,7 @@ line-height:26.5px ;
      min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
+    padding: 3px 3px 2px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -891,15 +910,14 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 66px;
+    min-width: 40px;
     font-size: 5px;
     font-weight: 600;
-  padding: 4px 3px 3px 3px;
+   padding: 3px 3px 2px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -937,18 +955,18 @@ line-height:26.5px ;
     padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 10px;
+    width: 9px;
 }
 .boxicon{
     width: 8px;
 }
 .box p{
-    font-size: 6px;
+    font-size: 8px;
     line-height: 7px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 .box h4{
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -958,32 +976,36 @@ line-height:26.5px ;
     padding-top: 5px;
 }
 .box1 h3{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
 }
 .box1 h4{
     font-size: 9px;
     font-weight: 600;
     margin-bottom: 4px;
-    margin-top: 4px;
+    margin-top: 1px;
 }
 .box1 p{
 font-size: 8px;
-margin-bottom: 4px;
+margin-bottom: 6px;
 }
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 12px;
+    font-size: 7px;
+    margin-bottom: 0px;
 }
 .docbox .doctname{
-font-size: 13px;
+font-size: 7px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
@@ -1026,12 +1048,12 @@ ul{
   background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-  padding: 11px 5px 8px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 5px;
+  font-size: 8px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -1043,12 +1065,12 @@ ul{
     content: "\f107";
     font-family: fontawesome;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 400;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 2px solid #ffffff;
-  padding: 0px 2px 0px 2px;
+  border: 1px solid #ffffff;
+  padding: 0px 3px 0px 3px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -1064,8 +1086,16 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 6px;
+    line-height: 7px;
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
-    padding-top: 70px;
+    padding-top: 54px;
+    height: 200px;
 }
 .mt-minus{
     margin-top: -16px;
@@ -1073,6 +1103,9 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 422px) {
+     .statusbtn{
+    margin-top: -16px;
+}
   .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -1084,8 +1117,8 @@ font-family: fontawesome;
     width: 90%;
 }
 .head{
-font-weight: 700;
-font-size:14px ;
+font-weight: 600;
+font-size:13px ;
 line-height:24px ;
 }
 .sub-heading{
@@ -1193,9 +1226,9 @@ line-height:26.5px ;
     cursor: pointer;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
     min-width: 68px;
     font-size: 6px;
     cursor: pointer;
@@ -1258,7 +1291,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 0px;
-    min-width: 68px;
+    min-width: 46px;
     font-size: 6px;
     font-weight: 600;
     padding: 3px 5px 2px 5px;
@@ -1331,7 +1364,7 @@ line-height:26.5px ;
     margin-bottom: 8px;
 }
 .box1 p{
-    font-size: 8px;
+    font-size: 10px;
     line-height: 16px;
 }
 .docbox{
@@ -1389,7 +1422,7 @@ ul{
 .accordion {
    background-color: #1f67bb;
   color: #ffffff;
- padding: 11px 5px 8px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
   outline: none;
@@ -1409,7 +1442,7 @@ ul{
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
@@ -1426,15 +1459,23 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 5px;
+    line-height: 10px;
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
     padding-top: 80px;
+    height: 200px;
 }
 }
-
-
-
 
 @media only screen and (min-width: 700px) {
+     .statusbtn{
+    margin-top: -16px;
+}
 .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -1445,6 +1486,17 @@ font-family: fontawesome;
 .footerlogo{
     width: 100%;
 }
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
 .logo{
         width: 82px;
     }
@@ -1536,9 +1588,9 @@ font-family: fontawesome;
     cursor: pointer;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+   color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
     min-width: 68px;
     font-size: 6px;
     cursor: pointer;
@@ -1567,11 +1619,11 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10px;
-    min-width: 80px;
+    font-size: 8px;
+    min-width: 130px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 6px 5px 6px;
+    padding: 3px 6px 3px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1638,11 +1690,14 @@ font-family: fontawesome;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 12px;
+    width: 10px;
+}
+.boxicon1{
+    width: 10px;
 }
 .box p{
     font-size: 10px;
-    line-height: 16px;
+    line-height: 11px;
 }
 .box h4{
     font-size: 9px;
@@ -1659,8 +1714,9 @@ font-family: fontawesome;
     line-height: 28px;
 }
 .box1 h4{
-    font-size: 15px;
+    font-size: 9px;
     font-weight: 600;
+    margin-bottom: 8px;
 }
 .docbox{
     background-color: #ffffff;
@@ -1754,13 +1810,25 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 13px;
+    line-height: 10px;   
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
     padding-top: 50px;
+    height: 200px;
+    width: 100%;
 }
 }
 
 
 @media only screen and (min-width: 750px) {
+        .statusbtn{
+    margin-top: -5px;
+}
 .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -1775,6 +1843,18 @@ font-family: fontawesome;
 .footerlogo{
     width: 75%;
 }
+
+.head{
+font-weight: 600;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
 .logo{
         width: 130px;
     }
@@ -1869,9 +1949,9 @@ font-family: fontawesome;
     padding: 2px 5px 2px 5px;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #000000;
+   background-color: #C0C0C0;
+    border-color: #C0C0C0;
     min-width: 68px;
     font-size: 10px;
     cursor: pointer;
@@ -1879,7 +1959,6 @@ font-family: fontawesome;
    padding: 2px 5px 2px 5px;
     border-radius: 20px;
 }
-
 .btn-reports{
     background-color:transparent;
     color: #0C55AD;
@@ -1905,7 +1984,7 @@ font-family: fontawesome;
     min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
-     padding: 5px 6px 5px 6px;
+     padding: 3px 6px 3px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -1934,7 +2013,7 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
-    min-width: 80px;
+    min-width: 54px;
     font-size: 10px;
     font-weight: 600;
     padding: 2px 5px 2px 5px;
@@ -2097,12 +2176,25 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li a{
+    font-size: 13px;
+    line-height: 16px;
+    
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
     padding-top: 75px;
+     height: 100%;
+     width: 100%;
 }
 }
 
 @media only screen and (min-width: 1000px) {
+      .statusbtn{
+    margin-top: -2px;
+}
     .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -2113,6 +2205,17 @@ font-family: fontawesome;
 .footerlogo{
     width: 100%;
 }
+.head{
+font-weight: 600;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
  .logo{
         width: 130px;
     }
@@ -2218,18 +2321,18 @@ font-family: fontawesome;
     border-color: #28a745;
     font-size: 10px;
     font-weight: 600;
-    cursor: pointer;
-    padding: 5px 6px 5px 6px;
+    min-width: 65px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
     min-width: 68px;
     font-size: 10px;
     cursor: pointer;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -2246,7 +2349,6 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 2px solid #0C55AD;
-    font-size: 14px;
 }
 .btn-orange{
     background-color:#F5720A;
@@ -2254,47 +2356,43 @@ font-family: fontawesome;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 10px;
-    min-width: 195px;
+    min-width: 160px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff; 
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
-    min-width: 180px;
+     min-width: 160px;
     text-transform: uppercase;
+      padding: 4px 6px 4px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
-    min-width: 72px;
+    min-width: 65px;
     font-size: 10px;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-primary1:hover{
-    background-color:#0E5FC1 ;
+    background-color:#0E5FC1;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -2333,6 +2431,7 @@ font-family: fontawesome;
 .box h4{
     font-size: 14px;
     font-weight: 600;
+     margin-top: 8px;
 }
 .box1{
     padding-left: 0px;
@@ -2347,7 +2446,6 @@ font-family: fontawesome;
       font-size: 13px;
     line-height: 16px;
 }
-
 .box1 h4{
     font-size: 14px;
     font-weight: 600;
@@ -2444,13 +2542,25 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 13px;
+    line-height: 16px;   
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
     padding-top: 50px;
+     height: 100%;
+     width: 100%;
 }
 }
 
 
 @media only screen and (min-width: 1200px) {
+      .statusbtn{
+    margin-top: 0px;
+}
     .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -2461,6 +2571,18 @@ font-family: fontawesome;
     .footerlogo{
     width: 100%;
 }
+
+.head{
+font-weight: 700;
+font-size:14px ;
+line-height:24px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
+}
+
 .logo{
         width: 130px;
     }
@@ -2572,11 +2694,11 @@ font-family: fontawesome;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 12px;
-    min-width: 180px;
+    font-size: 10px;
+    min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 5px 6px 5px 6px;
+    padding: 3px 6px 3px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -2649,7 +2771,6 @@ font-family: fontawesome;
     font-size: 14px;
     line-height: 16px;
 }
-
 .box h4{
     font-size: 14px;
     font-weight: 600;
@@ -2728,9 +2849,8 @@ ul{
   padding: 11px 5px 8px 5px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 5px;
+  font-size: 14px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -2747,7 +2867,7 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 7px 0px 7px;
+  padding: 0px 6px 0px 6px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -2763,23 +2883,45 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li a{
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+.panel ul li a{
+    color: #000000;
+}
 .consultimg{
     padding-top: 50px;
+     height: 200px;
+     width: 100%;
 }
 }
 
 @media only screen and (min-width: 1300px) {
-    .boxcol{
+      .statusbtn{
+    margin-top: 0px;
+}
+.boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
 .p-10{
         padding-left: 10px!important;
     }
-
-    .footerlogo{
+.footerlogo{
     width: 100%;
     padding-top: 20px;
+}
+.head{
+font-weight: 600;
+font-size:18px ;
+line-height:26.5px ;
+}
+.sub-heading{
+    font-weight: 700;
+font-size:20px ;
+line-height:26.5px ;
 }
 .logo{
         width: 150px;
@@ -2912,18 +3054,18 @@ font-family: fontawesome;
      min-width: 87px;
     font-size: 11px;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+   padding: 4px 6px 4px 6px;
 }
 .btn-secondary {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    color: #000000;
+    background-color: #C0C0C0;
+     border-color: #C0C0C0;
     border-radius: 20px;
     margin: 5px;
     min-width: 87px;
     font-size: 11px;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-reports{
     background-color:transparent;
@@ -2951,13 +3093,11 @@ font-family: fontawesome;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff; 
 }
 .btn-red{
     background-color:#F44336;
@@ -2969,13 +3109,11 @@ font-family: fontawesome;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -2985,12 +3123,11 @@ font-family: fontawesome;
     min-width: 80px;
     font-size: 11px;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
-    color: #ffffff!important;
-    border-radius: 20px;   
+    color: #ffffff!important; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -3158,8 +3295,15 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 14px;
+    line-height: 16px;
+}
+
 .consultimg{
     padding-top: 60px;
+     height: 100%;
+     width: 100%;
 }
 .mt-minus{
     margin-top: -10px;
