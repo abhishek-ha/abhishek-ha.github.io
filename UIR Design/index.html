@@ -391,14 +391,19 @@ button.btn.btn-link i {
 
 <div class="form-group">
     <label for="exampleFormControlInput1"> Reason for Refund </label>
-     <select class="form-control">
+     <select class="form-control" >
       <option selected disabled> Reason for Refund </option>
-      <option> Service not available/Unable to book service </option>
-      <option> Slots Unavailable </option>
-      <option> Service Delayed </option>
-       <option> Customer denied service due to distance </option>
-        <option> Others - Please specify </option>
+      <option value="1"> Service not available/Unable to book service </option>
+      <option value="2"> Slots Unavailable </option>
+      <option value="3"> Service Delayed </option>
+    <option value="4"> Customer denied service due to distance </option>
+        <option value="5"> Others - Please specify </option>
    </select>
+  </div>
+
+   <div class="form-group " id="remark" style="display:none">
+    <label for="exampleFormControlInput1"> Remarks </label>
+    <textarea placeholder="Remarks" class="form-control"> </textarea>
   </div>
 
 <div class="accordion  d-none" id="accordionExample">
@@ -452,11 +457,8 @@ button.btn.btn-link i {
 </div>
 
  <div class="form-group">
-
-
-<div class="drop_box">
-  
-    <h4 class="mb-0"> Select File here </h4>
+    <div class="drop_box">
+     <h4 class="mb-0"> Select File here </h4>
     <p class="mb-0"> Files Supported: JPG, JPEG, PNG , PDF </p>
    <p> Maximum number of allowed files 5 with 300 KB for each </p>
        <span class="btn btn-success fileinput-button">
@@ -784,5 +786,14 @@ maxDate: -1
       );
   } );
   </script>
+
+<script type="text/javascript">
+  $function function_name(argument) {
+    // body...
+  }
+  
+
+</script>
+
 </body>
 </html>

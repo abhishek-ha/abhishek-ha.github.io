@@ -34,7 +34,7 @@ function LoadData(Appointmentid) {
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html('<img src="images/clock.png"  class="boxicon1">' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon1" > ' + data.results.paymentMode);
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode);
                 $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
