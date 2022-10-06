@@ -17723,7 +17723,7 @@ li {
 .footer p{
     background-color: #242021;
     color: #ffffff;
-    padding: 20px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
      font-weight: 300;
 }
 .footer-16 p{
@@ -20438,8 +20438,8 @@ h4{color:#444}
 .disclaimer {
     font-size: 10px;
     color: #ffffff;
-    padding-left: 8%;
-    padding-right: 8%; 
+    padding-left: 7.5%!important;
+    padding-right: 7.5%!important; 
 }
 .disclaimer span{
     font-size: 12px;
