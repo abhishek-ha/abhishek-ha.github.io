@@ -20437,3 +20437,25 @@ h4{color:#444}
     transform: rotate(135deg);
   }
 }
+
+.disclaimer ul li {
+    color: #000000;
+    letter-spacing: 0.5px;
+    margin-left: 13px;
+    margin-right: 7px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    text-indent: -10px;
+    padding-left: 18px;
+}
+
+.disclaimer ul li:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 7px;
+}
+
