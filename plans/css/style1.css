@@ -17723,7 +17723,7 @@ li {
 .footer p{
     background-color: #242021;
     color: #ffffff;
-     padding: 20px 0;
+    padding: 20px 20px 0px 20px;
      font-weight: 300;
 }
 .footer-16 p{
@@ -19491,11 +19491,9 @@ li {
 .f_social_links a{
     color: white;
 }
-
 .f-14{
     font-size: 14px;
 }
-
 .footer_quick_links{
     font-size: 16px;
     justify-content: space-around;
@@ -20437,25 +20435,15 @@ h4{color:#444}
     transform: rotate(135deg);
   }
 }
-
-.disclaimer ul li {
-    color: #000000;
-    letter-spacing: 0.5px;
-    margin-left: 13px;
-    margin-right: 7px;
-    padding-bottom: 0px;
-    font-size: 14px;
-    text-indent: -10px;
-    padding-left: 18px;
+.disclaimer {
+    font-size: 10px;
+    color: #ffffff;
+    padding-left: 8%;
+    padding-right: 8%; 
+}
+.disclaimer span{
+    font-size: 12px;
+    font-weight: 600;
 }
 
-.disclaimer ul li:before {
-    content: "\f111";
-    font-family: FontAwesome;
-    display: inline-block;
-    padding-right: 6px;
-    vertical-align: middle;
-    margin-left: 5px;
-    font-size: 7px;
-}
 
