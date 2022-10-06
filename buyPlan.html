@@ -957,8 +957,15 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
     <script src="js/buyplans.min.js"></script>
     <script>
+        function AddUserForLog(email) {
+            try {
+                LogRocket.identify(email);
+            } catch { }
+        }
         $('#IsTCAccepted').click(function (e) {
             if (this.checked) {
                 $("#Placeorder").prop('disabled', false);
@@ -1019,6 +1026,7 @@
                     return;
                 }
             }
+            AddUserForLog($('#CustomerEmail').val());
             if (Vars["IsEnableApplyCoupon"] == 'true') {
                 GetOPDPlanReview(Vars["PlanCode"]).then(function (result) {
                     $('#Reviewformdiv').show();
