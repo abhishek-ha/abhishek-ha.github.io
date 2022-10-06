@@ -91,7 +91,7 @@ function UpdateTransactionDetais(OpdPayment) {
     return new Promise(function (resolve, reject) {
         debugger;
         $.ajax({
-            type: "POST", 
+            type: "POST",
             url: APiBaseURL + '/api/OPDPlans/UpdateOPDPaymentDetail',
             dataType: "json",
             headers: {
@@ -179,12 +179,14 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             "image": APiBaseURL + "/image/logo/halogo.png",
             "order_id": order_id,
             "handler": function (response) {
+                AddLogRocket(Email, { TransactionId: TransactionId, log: "Paymant Success" });
                 $.ajax({
                     type: "POST", url: APiBaseURL + "/api/OPDPlans/OPDPlansPurchaseConformation",
                     data: JSON.stringify({ TransactionId: TransactionId, Message: "Payment Success", OrderId: order_id, Signature: response.razorpay_signature, RefId: response.razorpay_payment_id, Status: 'Success' }),
                     dataType: "json", headers: headers,
                     success: function (res) {
                         if (res.status) {
+                            AddLogRocket(Email, { TransactionId: TransactionId, log: "plan purchased" });
                             console.log("OPDPlansPurchaseConformation");
                             try {
                                 ShowLoding(false);
@@ -192,10 +194,12 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
                             } catch { }
                             resolve(res) // Resolve promise and go to then()
                         } else {
+                            AddLogRocket(Email, { TransactionId: TransactionId, log: "api=> api/OPDPlans/OPDPlansPurchaseConformation, Error ", result: res });
                             console.warn(res); reject("Error from Buy OPD Plan Conformation")
                         }
                     },
                     error: function (error) {
+                        AddLogRocket(Email, { TransactionId: TransactionId, log: "api=> api/OPDPlans/OPDPlansPurchaseConformation, calling Error " });
                         console.warn(error); reject(error) // Reject the promise and go to catch()
                     }
                 });
@@ -207,6 +211,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             "theme": { "color": "#3399cc" },
             "modal": {
                 "ondismiss": function () {
+                    AddLogRocket(Email, { TransactionId: TransactionId, log: "ondismiss => userClosePaymentPopup" });
                 }
             }
         };
@@ -214,6 +219,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             var rzp1 = new Razorpay(options);
             rzp1.on('payment.failed', function (response) {
                 try {
+                    AddLogRocket(Email, { TransactionId: TransactionId, log: "error => payment.failed", response: response });
                     ShowLoding(false);
                     opningPaymentfailedpage();
                 } catch { }
@@ -221,6 +227,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
                 console.warn(response.error);
             });
             rzp1.open();
+            AddLogRocket(Email, { TransactionId: TransactionId, log: "Open Payment popup" });
             resolve("done");
         } catch (e) {
             reject(e);
@@ -232,3 +239,9 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
     });
 }
 
+function AddLogRocket(email, objectLog) {
+    try {
+        LogRocket.identify(email, objectLog);
+        LogRocket.log(email, objectLog);
+    } catch { }
+}
