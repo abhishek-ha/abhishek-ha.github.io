@@ -42,7 +42,7 @@ function LoadData(Appointmentid) {
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
-                $("#txtPointOfContact").text(data.results.PointOfContact);
+                $("#txtPointOfContact").text(data.results.pointOfContact);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
@@ -51,7 +51,7 @@ function LoadData(Appointmentid) {
                 } else {
                     $("#imgProviderImage").html('<img src="' + data.results.providerImage + 'images/apollo-logo.png" class="img-fluid" alt="">');
                 }
-                if (data.results.PointOfContact == null) {
+                if (data.results.pointOfContact == null) {
                     $("#dvPointOfContact").hide();
                 } if (data.results.durationforTest == null) {
                     $("#dvDurationForTest").hide();
