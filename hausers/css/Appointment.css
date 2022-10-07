@@ -2094,7 +2094,6 @@ line-height:26.5px ;
     height: 18px;
     margin-right: 10px;
 }
-
 .box p{
     font-size: 13px;
     line-height: 16px;
@@ -2814,6 +2813,14 @@ line-height:26.5px ;
 .boxicon1{
     width: 14px;
 }
+
+.joinLink{
+    width: 18px;
+    font-size: 18px;
+    height: 18px;
+}
+
+
 
 .box p{
     font-size: 14px;
