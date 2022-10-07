@@ -59,7 +59,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, de
                                         }
                                     },
                                     error: function (error) {
-                                        AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanConformationWithRazorpay, calling Error ", TransactionId: TransactionId });
+                                        AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanConformationWithRazorpay, calling Error ", TransactionId: result.results.razorpayOrder.receipt });
                                         console.warn(error); reject(error) // Reject the promise and go to catch()
                                     }
                                 });
@@ -80,6 +80,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, de
                         };
                         var rzp1 = new Razorpay(options);
                         rzp1.on('payment.failed', function (response) {
+                            AddLogRocket(Email, { PlanCode: PlanCode, TransactionId: result.results.razorpayOrder.receipt, log: "payment.failed, Error ", result: response });
                             console.warn(response.error);
                         });
                         rzp1.open();
