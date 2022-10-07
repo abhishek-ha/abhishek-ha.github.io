@@ -1961,7 +1961,7 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
     font-size: 10px;
     min-width: 165px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
      padding: 3px 6px 3px 6px;
 }
@@ -2333,7 +2333,7 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
     font-size: 10px;
     min-width: 160px;
-    font-weight: 600;
+     font-weight: 400;
     text-transform: uppercase;
     padding: 4px 6px 4px 6px;
 }
@@ -2348,7 +2348,7 @@ line-height:26.5px ;
     border: 1px solid #F44336;
     font-size: 10px;
     min-width: 160px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 4px 6px 4px 6px;
 }
@@ -2387,7 +2387,7 @@ line-height:26.5px ;
     border-radius: 20px;
     font-size: 10px;
     min-width: 160px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 4px 6px 4px 6px;
 }
@@ -2539,7 +2539,6 @@ font-family: fontawesome;
 }
 }
 
-
 @media only screen and (min-width: 1200px) {
       .statusbtn{
     margin-top: 0px;
@@ -2564,7 +2563,6 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
 .logo{
         width: 130px;
     }
@@ -2673,7 +2671,7 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
     font-size: 10px;
     min-width: 165px;
-    font-weight: 600;
+     font-weight: 400;
     text-transform: uppercase;
     padding: 3px 6px 3px 6px;
 }
@@ -2688,7 +2686,7 @@ line-height:26.5px ;
     border: 1px solid #F44336;
     font-size: 10px;
     min-width: 165px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 3px 6px 3px 6px;
 }
@@ -2704,7 +2702,7 @@ line-height:26.5px ;
     min-width: 87px;
     font-size: 12px;
     font-weight: 600;
-   padding: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -3010,7 +3008,7 @@ line-height:26.5px ;
     margin: 5px;
      min-width: 180px;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 5px 6px 5px 6px;
 }
 .requestedbtn:hover{
@@ -3062,7 +3060,7 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
     font-size: 10.5px;
     min-width: 180px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 3px 6px 2px 6px;
 }
@@ -3078,7 +3076,7 @@ line-height:26.5px ;
     border: 1px solid #F44336;
      font-size: 10.5px;
     min-width: 180px;
-    font-weight: 600;
+     font-weight: 400;
     text-transform: uppercase;
     cursor: pointer;
      padding: 3px 6px 2px 6px;
@@ -3111,9 +3109,6 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
@@ -3121,7 +3116,7 @@ line-height:26.5px ;
     border-radius: 20px;
     font-size: 10.5px;
     min-width: 180px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 3px 6px 2px 6px;
 }
@@ -3247,8 +3242,8 @@ ul{
  background-color: #1f67bb;
 }
 .accordion:after {
-    content: "\f107";
- font-family: fontawesome;
+  content: "\f107";
+  font-family: fontawesome;
   color: #ffffff;
   font-weight: bold;
   float: right;
@@ -3262,7 +3257,7 @@ ul{
 }
 .active:after {
   content: "\f106";
-font-family: fontawesome;
+  font-family: fontawesome;
 }
 .panel {
   padding: 0px 0px;
@@ -3278,16 +3273,10 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 100%;
+    height: 350px;
     width: 90%;
 }
 .mt-minus{
     margin-top: -15px;
 }
 }
-
-
-
-
-
-

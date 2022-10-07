@@ -28,7 +28,7 @@ function LoadData(Appointmentid) {
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
                 $("#txtAppointmentTime").html('<img src="images/clock.png"  class="boxicon"> ' + data.results.appointmentTime);
-                $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="10" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
+                $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" class="boxicon" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
