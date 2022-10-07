@@ -151,10 +151,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10px;
+    font-size: 5px;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
+        padding: 2px 3px 1px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -176,8 +177,6 @@ line-height:26.5px ;
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -191,8 +190,7 @@ line-height:26.5px ;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
-    color: #ffffff!important;
-    border-radius: 20px;  
+    color: #ffffff!important; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -535,10 +533,11 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 5px;
-    min-width: 110px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
+    padding: 3px 3px 2px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -557,7 +556,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -569,27 +567,20 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
-     font-size: 5px;
-    min-width: 110px;
+    font-size: 5px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
-     border-radius: 20px;
+    padding: 3px 3px 2px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
     color: #ffffff;
-    border-radius: 20px;
-    font-size: 11px;
-    min-width: 180px;
-    font-weight: 600;
 }
 .btn-w120{
     width: 120px;
@@ -906,16 +897,16 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     min-width: 115px;
+     font-size: 5px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    padding: 2px 3px 1px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -941,18 +932,17 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    min-width: 115px;
+     font-size: 5px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 3px 3px 3px;
+    padding: 2px 3px 1px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -972,13 +962,11 @@ line-height:26.5px ;
 .boxicon{
     width: 8px;
 }
-
 .joinLink{
      width: 8px;
     font-size: 5px;
     height: 5px;
 }
-
 .box p{
     font-size: 8px;
     line-height: 7px;
@@ -1284,26 +1272,22 @@ line-height:26.5px ;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff; 
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 6px;
+     font-size: 7px;
     min-width: 115px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
      padding: 3px 5px 2px 5px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -1318,7 +1302,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -1330,19 +1313,15 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    font-size: 6px;
+     font-size: 7px;
     min-width: 115px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
-     padding: 3px 5px 2px 5px;
      padding: 3px 5px 2px 5px;
 }
 .btn-w120{
@@ -1522,7 +1501,6 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
 .logo{
         width: 82px;
     }
@@ -1653,25 +1631,22 @@ line-height:26.5px ;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 8px;
+    min-width: 130px;
     font-weight: 600;
-    min-width: 180px;
     text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -1686,7 +1661,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -1706,6 +1680,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 8px;
+    min-width: 130px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .btn-w120{
     width: 120px;
@@ -1721,13 +1700,11 @@ line-height:26.5px ;
 .boxicon1{
     width: 10px;
 }
-
 .joinLink{
      width: 12px;
     font-size: 12px;
     height: 12px;
 }
-
 .box p{
     font-size: 10px;
     line-height: 11px;
@@ -2021,25 +1998,22 @@ line-height:26.5px ;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 10px;
+    min-width: 165px;
     font-weight: 600;
-    min-width: 180px;
     text-transform: uppercase;
+     padding: 3px 6px 3px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -2074,6 +2048,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 10px;
+    min-width: 165px;
+    font-weight: 600;
+    text-transform: uppercase;
+     padding: 3px 6px 3px 6px;
 }
 .btn-w120{
     width: 120px;
@@ -2253,8 +2232,7 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
- .logo{
+.logo{
         width: 130px;
     }
 .instructbox{
@@ -2409,10 +2387,10 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 10px;
+    min-width: 160px;
     font-weight: 600;
-     min-width: 160px;
     text-transform: uppercase;
-      padding: 4px 6px 4px 6px;
+    padding: 4px 6px 4px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -2442,14 +2420,16 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 10px;
+    min-width: 160px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 4px 6px 4px 6px;
 }
 .btn-w120{
     width: 120px;
@@ -2614,7 +2594,6 @@ font-family: fontawesome;
     .footerlogo{
     width: 100%;
 }
-
 .head{
 font-weight: 700;
 font-size:14px ;
@@ -2745,25 +2724,22 @@ line-height:26.5px ;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 12px;
+    font-size: 10px;
+    min-width: 165px;
     font-weight: 600;
-    min-width: 180px;
     text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -2778,7 +2754,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -2790,14 +2765,16 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
+    font-size: 10px;
+    min-width: 165px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .btn-w120{
     width: 120px;
@@ -2813,15 +2790,11 @@ line-height:26.5px ;
 .boxicon1{
     width: 14px;
 }
-
 .joinLink{
     width: 18px;
     font-size: 18px;
     height: 18px;
 }
-
-
-
 .box p{
     font-size: 14px;
     line-height: 16px;
@@ -2940,8 +2913,7 @@ font-family: fontawesome;
 }
 .panel ul li a{
     font-size: 14px;
-    line-height: 16px;
-    
+    line-height: 16px;   
 }
 .panel ul li a{
     color: #000000;
@@ -2955,7 +2927,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 1300px) {
       .statusbtn{
-    margin-top: 0px;
+      margin-top: 0px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -3202,12 +3174,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 10.5px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    cursor: pointer;
-    padding: 5px 10px 5px 10px;
+    padding: 3px 6px 2px 6px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -3229,9 +3200,13 @@ line-height:26.5px ;
 .boxicon{
     width: 14px;
 }
-
 .boxicon1{
     width: 14px;
+}
+.joinLink {
+    width: 27px;
+    height: 21px;
+    margin-right: 10px;
 }
 .box p{
     font-size: 14px;

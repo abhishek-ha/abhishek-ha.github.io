@@ -2937,7 +2937,8 @@ font-family: fontawesome;
 }
 .panel ul li a{
     font-size: 14px;
-    line-height: 16px;   
+    line-height: 16px;
+    
 }
 .panel ul li a{
     color: #000000;
@@ -2951,7 +2952,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 1300px) {
       .statusbtn{
-      margin-top: 0px;
+    margin-top: 0px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -3369,3 +3370,9 @@ font-family: fontawesome;
     margin-top: -15px;
 }
 }
+
+
+
+
+
+

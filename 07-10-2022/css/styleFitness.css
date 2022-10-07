@@ -11,7 +11,6 @@ body {
         overflow-x:hidden!important;
         font-size: 15px;
         }
-
 html{
      overflow-x:hidden!important;
 }
@@ -22,9 +21,7 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
-.statusbtn{
-    margin-top: -10px;
-}
+
 .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -63,7 +60,6 @@ line-height:26.5px ;
 .instructbox h3{
     font-size: 20px;
     font-weight: 600;
-    text-align: center;
 }
 .instructbox p{
     font-size: 16px;
@@ -226,7 +222,6 @@ line-height:26.5px ;
     font-size: 10px;
     height: 10px;
 }
-
 .joinLink{
     width: 10px;
     font-size: 10px;
@@ -359,15 +354,9 @@ font-family: fontawesome;
     padding-top: 50px;
     height: 200px;
 }
-.consultimg{
-    padding-top: 50px;
-}
 }
 
 @media only screen and (min-width: 301px) {
-    .statusbtn{
-    margin-top: -14px;
-}
 .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -376,7 +365,7 @@ font-family: fontawesome;
         padding-left: 12px!important;
     }
 .mt-minus{
-    margin-top: -16px;
+    margin-top: -10px;
 }
 .email{
         width: 8px;
@@ -391,9 +380,9 @@ font-family: fontawesome;
     padding-top: 16px;
 }
 .head{
-font-weight: 600;
-font-size:12px ;
-line-height:18px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
 }
 .sub-heading{
 font-weight: 700;
@@ -423,7 +412,7 @@ line-height:26.5px ;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 7px 15px 2px 15px;
+    padding: 15px;
     background-repeat: no-repeat;
 }
 .footer .fa{
@@ -479,7 +468,7 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 35px;
+    min-width: 60px;
     font-size: 5px;
     cursor: pointer;
     font-weight: 600;
@@ -487,13 +476,13 @@ line-height:26.5px ;
     border-radius: 20px;
 }
 .btn-secondary {
-    color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
    font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
-     min-width: 35px;
+    min-width: 60px;
     font-size: 5px;
     padding: 4px 3px 3px 3px; 
 }
@@ -519,15 +508,15 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 100px;
+    min-width: 110px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
-    letter-spacing: 0.5px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
     color: #ffffff;
+    border: 1px solid #ff790f;   
 }
 .btn-red{
     background-color:#F44336;
@@ -535,7 +524,7 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 5px;
-    min-width: 110px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 4px 3px 3px 3px;
@@ -543,7 +532,9 @@ line-height:26.5px ;
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-  }
+    border-radius: 20px;
+    border: 1px solid #F5720A;
+}
 .btn-primary1{
     background-color:#0E5FC1 ;
     color: #ffffff;
@@ -556,8 +547,7 @@ line-height:26.5px ;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
-    color: #ffffff!important;
-    border-radius: 20px; 
+    color: #ffffff!important; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -600,7 +590,7 @@ line-height:26.5px ;
      padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 5px;
+    width: 10px;
 }
 .boxicon{
     width: 5px;
@@ -616,7 +606,7 @@ line-height:26.5px ;
     margin-bottom: 4px;
 }
 .box h4{
-    font-size: 8px;
+    font-size: 9px;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -637,22 +627,21 @@ line-height:26.5px ;
     margin-top: 4px;
 }
 .box1 p{
-    font-size: 6px;
-    line-height: 8px;
-    margin-bottom: 2px;
+font-size: 8px;
+margin-bottom: 4px;
 }
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding: 3px 6px 3px 6px;
+    padding: 10px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 5px;
+    font-size: 11px;
 }
 .docbox .doctname{
-font-size: 8px;
+font-size: 13px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
@@ -671,12 +660,12 @@ color: #0E5FC1;
     border: 2px solid #0E5FC1;
 }
 .docbox1 .doctname{
-font-size: 14px;
-font-weight: 600;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: #0E5FC1;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 15px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #0E5FC1;
 }
 .docbox1 .designation{
     font-size: 14px;
@@ -694,11 +683,12 @@ ul{
 .accordion {
   background-color: #1f67bb;
   color: #ffffff;
- padding: 3px 5px 2px 5px;
+  cursor: pointer;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
   outline: none;
-  font-size: 6px;
+  font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -710,16 +700,14 @@ ul{
     content: "\f107";
     font-family: fontawesome;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: bold;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 5px;
-  margin-top: 1px;
 }
 .active:after {
   content: "\f106";
@@ -741,15 +729,12 @@ font-family: fontawesome;
     color: #000000;
 }
 .consultimg{
-    padding-top: 54px;
-    height: 150px;
+    padding-top: 70px;
+    height: 200px;
 }
 }
 
 @media only screen and (min-width: 350px) {
-     .statusbtn{
-    margin-top: -13px;
-}
    .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
@@ -761,9 +746,10 @@ font-family: fontawesome;
     width: 90%;
     padding-top: 4px;
 }
+
 .head{
-font-weight: 700;
-font-size:12px ;
+font-weight: 600;
+font-size:13px ;
 line-height:18px ;
 }
 .sub-heading{
@@ -793,7 +779,7 @@ line-height:26.5px ;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 7px 15px 2px 15px;
+    padding: 15px;
     background-repeat: no-repeat;
 }
 .footercol {
@@ -853,20 +839,22 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 40px;
-    font-size: 7px;
-   font-weight: 600;
-    padding: 1px 3px 1px 3px;
+    min-width: 68px;
+    font-size: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-secondary {
-    color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
-    min-width: 40px;
-   font-size: 7px;
-   font-weight: 600;
-    padding: 1px 3px 1px 3px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
+    font-size: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -891,15 +879,15 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 5px;
-    min-width: 100px;
+    min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 1px 3px;
-    letter-spacing: 0.5px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;  
+    color: #ffffff;
+    border: 1px solid #ff790f;   
 }
 .btn-red{
     background-color:#F44336;
@@ -909,7 +897,7 @@ line-height:26.5px ;
      min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    padding: 4px 3px 3px 3px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -918,18 +906,19 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
 }
 .btn-primary1{
-    background-color:#0E5FC1 ;
+    background-color: #0E5FC1;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
     min-width: 40px;
     font-size: 5px;
     font-weight: 600;
-   padding: 3px 3px 2px 3px;
+    padding: 3px 3px 2px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
+    border-radius: 20px; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -972,20 +961,18 @@ line-height:26.5px ;
 .boxicon{
     width: 8px;
 }
-
 .joinLink{
      width: 8px;
     font-size: 5px;
     height: 5px;
 }
-
 .box p{
     font-size: 8px;
     line-height: 7px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 .box h4{
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -995,36 +982,32 @@ line-height:26.5px ;
     padding-top: 5px;
 }
 .box1 h3{
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
 }
 .box1 h4{
     font-size: 9px;
     font-weight: 600;
     margin-bottom: 4px;
-    margin-top: 1px;
+    margin-top: 4px;
 }
 .box1 p{
 font-size: 8px;
-margin-bottom: 6px;
+margin-bottom: 4px;
 }
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
+    padding: 10px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 7px;
-    margin-bottom: 0px;
+    font-size: 12px;
 }
 .docbox .doctname{
-font-size: 7px;
+font-size: 13px;
 font-weight: 700;
 line-height: 15px;
 letter-spacing: 0em;
@@ -1066,11 +1049,13 @@ ul{
 .accordion {
   background-color: #1f67bb;
   color: #ffffff;
-  padding: 3px 5px 4px 5px;
+  cursor: pointer;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
+  text-align: left;
   outline: none;
-  font-size: 8px;
+  font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -1082,16 +1067,14 @@ ul{
     content: "\f107";
     font-family: fontawesome;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: bold;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 6px;
-  margin-top: 1px;
 }
 .active:after {
   content: "\f106";
@@ -1113,8 +1096,7 @@ font-family: fontawesome;
     color: #000000;
 }
 .consultimg{
-    padding-top: 54px;
-    height: 180px;
+    padding-top: 70px;
 }
 .mt-minus{
     margin-top: -16px;
@@ -1122,7 +1104,7 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 422px) {
-     .statusbtn{
+      .statusbtn{
     margin-top: -16px;
 }
   .boxcol{
@@ -1137,8 +1119,8 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 600;
-font-size:12px ;
-line-height:20px ;
+font-size:13px ;
+line-height:24px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -1161,19 +1143,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -1241,18 +1210,18 @@ line-height:26.5px ;
     background-color: #28a745;
     border-color: #28a745;
     font-size: 6px;
-    font-weight: 400;
+    font-weight: 600;
     cursor: pointer;
-    padding: 3px 5px 2px 5px;
 }
 .btn-secondary {
-    color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
-    min-width: 46px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    min-width: 68px;
     font-size: 6px;
-    font-weight: 400;
-    padding: 3px 5px 2px 5px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 3px 3px 3px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -1276,9 +1245,9 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 7px;
+    font-size: 6px;
     min-width: 115px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
      padding: 3px 5px 2px 5px;
 }
@@ -1306,7 +1275,7 @@ line-height:26.5px ;
     border: 1px solid #F5720A;
 }
 .btn-primary1{
-    background-color:#0E5FC1 ;
+    background-color: #0E5FC1;
     color: #ffffff;
     border-radius: 20px;
     margin: 0px;
@@ -1365,13 +1334,13 @@ line-height:26.5px ;
     height: 8px;
 }
 .box p{
-    font-size: 8px;
+    font-size: 5px;
     line-height: 10px;
 }
 .box h4{
     font-size: 9px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .box1{
     padding-left: 13px;
@@ -1385,7 +1354,7 @@ line-height:26.5px ;
 .box1 h4{
     font-size: 9px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .box1 p{
     font-size: 8px;
@@ -1395,15 +1364,15 @@ line-height:26.5px ;
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding: 5px 6px 5px 6px;
+    padding: 10px;
     border: 2px solid #0E5FC1;
 }
 .docbox p{
-    font-size: 9px;
-    margin-bottom: 2px;
+    font-size: 10px;
+    margin-bottom: 4px;
 }
 .docbox .doctname{
-font-size: 11px;
+font-size: 13px;
 font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
@@ -1444,13 +1413,13 @@ ul{
     padding-left: 0px;
 }
 .accordion {
-  background-color: #1f67bb;
+   background-color: #1f67bb;
   color: #ffffff;
-  padding: 3px 5px 4px 5px;
+  padding: 8px 5px 6px 5px;
   width: 100%;
   border: none;
   outline: none;
-  font-size: 8px;
+  font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -1460,18 +1429,16 @@ ul{
 }
 .accordion:after {
     content: "\f107";
-    font-family: fontawesome;
+ font-family: fontawesome;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: bold;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 6px;
-  margin-top: 1px;
 }
 .active:after {
   content: "\f106";
@@ -1489,17 +1456,15 @@ font-family: fontawesome;
     font-size: 5px;
     line-height: 10px;
 }
-.panel ul li a{
-    color: #000000;
-}
 .consultimg{
-    padding-top: 50px;
-    height: 175px;
+    padding-top: 80px;
+    height: 200px;
 }
 }
 
+
 @media only screen and (min-width: 700px) {
-     .statusbtn{
+      .statusbtn{
     margin-top: -16px;
 }
 .boxcol{
@@ -1539,19 +1504,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -1599,11 +1551,7 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
+   cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -1614,9 +1562,9 @@ line-height:26.5px ;
     cursor: pointer;
 }
 .btn-secondary {
-   color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
     min-width: 68px;
     font-size: 6px;
     cursor: pointer;
@@ -1636,26 +1584,22 @@ line-height:26.5px ;
 .btn-reports:hover{
     background-color:#0C55AD;
     color: #ffffff;
-    border-radius: 20px;
     border: 2px solid #0C55AD;
-    font-size: 14px;
 }
 .btn-orange{
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 8px;
-    min-width: 130px;
+    font-size: 10px;
+    min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 6px 3px 6px;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
@@ -1670,8 +1614,6 @@ line-height:26.5px ;
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -1686,7 +1628,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -1698,9 +1639,8 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
+   border: 1px solid #F5720A;
+   
 }
 .btn-grey{
     background-color: #C0C0C0;
@@ -1716,21 +1656,16 @@ line-height:26.5px ;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 10px;
+    width: 12px;
 }
-.boxicon1{
-    width: 10px;
-}
-
 .joinLink{
      width: 12px;
     font-size: 12px;
     height: 12px;
 }
-
 .box p{
     font-size: 10px;
-    line-height: 11px;
+    line-height: 16px;
 }
 .box h4{
     font-size: 9px;
@@ -1747,9 +1682,8 @@ line-height:26.5px ;
     line-height: 28px;
 }
 .box1 h4{
-    font-size: 9px;
+    font-size: 15px;
     font-weight: 600;
-    margin-bottom: 8px;
 }
 .docbox{
     background-color: #ffffff;
@@ -1857,9 +1791,8 @@ font-family: fontawesome;
 }
 }
 
-
 @media only screen and (min-width: 750px) {
-        .statusbtn{
+     .statusbtn{
     margin-top: -5px;
 }
 .boxcol{
@@ -1876,7 +1809,6 @@ font-family: fontawesome;
 .footerlogo{
     width: 75%;
 }
-
 .head{
 font-weight: 600;
 font-size:14px ;
@@ -1887,7 +1819,6 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
 .logo{
         width: 130px;
     }
@@ -1904,19 +1835,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -1966,10 +1884,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
     cursor: pointer;
 }
 .btn-success {
@@ -1982,9 +1896,9 @@ line-height:26.5px ;
     padding: 2px 5px 2px 5px;
 }
 .btn-secondary {
-    color: #000000;
-   background-color: #C0C0C0;
-    border-color: #C0C0C0;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
     min-width: 68px;
     font-size: 10px;
     cursor: pointer;
@@ -2006,7 +1920,6 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 2px solid #0C55AD;
-    font-size: 14px;
 }
 .btn-orange{
     background-color:#F5720A;
@@ -2017,32 +1930,29 @@ line-height:26.5px ;
     min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
-     padding: 3px 6px 3px 6px;
+     padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff;  
 }
 .btn-red{
-    background-color:#F44336;
+    bbackground-color: #F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F44336;
-    font-size: 12px;
+    border: 1px solid #F5720A;
+    font-size: 10px;
+    min-width: 165px;
     font-weight: 600;
-    min-width: 180px;
     text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
-    background-color:#0E5FC1 ;
+    background-color: #0E5FC1;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
@@ -2052,9 +1962,8 @@ line-height:26.5px ;
     padding: 2px 5px 2px 5px;
 }
 .btn-primary1:hover{
-    background-color:#0E5FC1 ;
+    background-color:#0E5FC1;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -2066,9 +1975,6 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
@@ -2086,13 +1992,13 @@ line-height:26.5px ;
 .boxicon{
     width: 13px;
 }
-.boxicon1{
-    width: 13px;
-}
 .joinLink{
     width: 22px;
     height: 18px;
     margin-right: 10px;
+}
+.boxicon1{
+    width: 13px;
 }
 .box p{
     font-size: 13px;
@@ -2176,7 +2082,8 @@ ul{
 .accordion {
    background-color: #1f67bb;
   color: #ffffff;
-  padding: 5px 5px 4px 5px;
+  cursor: pointer;
+  padding: 11px 5px 8px 5px;
   width: 100%;
   border: none;
   outline: none;
@@ -2197,10 +2104,9 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 5px 0px 5px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 7px;
 }
 .active:after {
   content: "\f106";
@@ -2216,21 +2122,20 @@ font-family: fontawesome;
 }
 .panel ul li a{
     font-size: 13px;
-    line-height: 16px;
-    
+    line-height: 16px;    
 }
 .panel ul li a{
     color: #000000;
 }
 .consultimg{
     padding-top: 75px;
-     height: 100%;
+      height: 100%;
      width: 100%;
 }
 }
 
 @media only screen and (min-width: 1000px) {
-      .statusbtn{
+    .statusbtn{
     margin-top: -2px;
 }
     .boxcol{
@@ -2244,7 +2149,7 @@ font-family: fontawesome;
     width: 100%;
 }
 .head{
-font-weight: 600;
+font-weight: 700;
 font-size:14px ;
 line-height:24px ;
 }
@@ -2253,8 +2158,7 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
- .logo{
+.logo{
         width: 130px;
     }
 .instructbox{
@@ -2270,19 +2174,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -2341,16 +2232,13 @@ line-height:26.5px ;
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
-     min-width: 180px;
-     text-transform: uppercase;
+    min-width: 180px;
+    text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
     cursor: pointer;
 }
 .btn-success {
@@ -2359,18 +2247,18 @@ line-height:26.5px ;
     border-color: #28a745;
     font-size: 10px;
     font-weight: 600;
-    min-width: 65px;
-    padding: 4px 6px 4px 6px;
+    cursor: pointer;
+    padding: 3px 6px 3px 6px;
 }
 .btn-secondary {
-    color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
     min-width: 68px;
     font-size: 10px;
     cursor: pointer;
     font-weight: 600;
-    padding: 4px 6px 4px 6px;
+    padding: 3px 6px 3px 6px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -2387,6 +2275,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 2px solid #0C55AD;
+    font-size: 14px;
 }
 .btn-orange{
     background-color:#F5720A;
@@ -2394,25 +2283,25 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 10px;
-    min-width: 160px;
+    min-width: 195px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 4px 6px 4px 6px;
+     padding: 3px 6px 3px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff; 
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
-     min-width: 160px;
+       min-width: 160px;
     text-transform: uppercase;
-      padding: 4px 6px 4px 6px;
+    padding: 3px 6px 3px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -2423,10 +2312,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
-    min-width: 65px;
+    min-width: 72px;
     font-size: 10px;
     font-weight: 600;
-    padding: 4px 6px 4px 6px;
+    padding: 5px 6px 5px 6px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1;
@@ -2442,9 +2331,6 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
@@ -2474,16 +2360,15 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-     margin-top: 8px;
 }
 .box1{
     padding-left: 0px;
     padding-right: 0px;
 }
 .box1 h3{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 28px;
 }
 .box1 p{
       font-size: 13px;
@@ -2497,7 +2382,7 @@ line-height:26.5px ;
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
-    width: 65%;
+    width: 100%;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
@@ -2525,12 +2410,12 @@ margin-bottom: 5px;
     border: 2px solid #0E5FC1;
 }
 .docbox1 .doctname{
-font-size: 14px;
-font-weight: 600;
-line-height: 15px;
-letter-spacing: 0em;
-text-align: left;
-color: #0E5FC1;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 15px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #0E5FC1;
 }
 .docbox1 .designation{
     font-size: 14px;
@@ -2625,7 +2510,6 @@ line-height:24px ;
 font-size:20px ;
 line-height:26.5px ;
 }
-
 .logo{
         width: 130px;
     }
@@ -2642,19 +2526,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -2737,17 +2608,15 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10px;
-    min-width: 165px;
+    font-size: 12px;
+    min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 6px 3px 6px;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff; 
 }
 .btn-red{
     background-color:#F44336;
@@ -2762,8 +2631,6 @@ line-height:26.5px ;
 .btn-red:hover{
     background-color:#f42415;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
 }
 .btn-primary1{
     background-color:#0E5FC1 ;
@@ -2776,9 +2643,8 @@ line-height:26.5px ;
    padding: 5px 0px 5px 0px;
 }
 .btn-primary1:hover{
-    background-color:#0E5FC1 ;
+    background-color:#0E5FC1;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -2808,12 +2674,8 @@ line-height:26.5px ;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 14px;
+    width: 15px;
 }
-.boxicon1{
-    width: 14px;
-}
-
 .joinLink{
     width: 18px;
     font-size: 18px;
@@ -2919,7 +2781,7 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 6px 0px 6px;
+  padding: 0px 7px 0px 7px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -2937,30 +2799,30 @@ font-family: fontawesome;
 }
 .panel ul li a{
     font-size: 14px;
-    line-height: 16px;   
+    line-height: 16px;
+    
 }
 .panel ul li a{
     color: #000000;
 }
 .consultimg{
     padding-top: 50px;
-     height: 200px;
-     width: 100%;
+      width: 100%;
 }
 }
 
 @media only screen and (min-width: 1300px) {
-      .statusbtn{
-      margin-top: 0px;
+       .statusbtn{
+    margin-top: 0px;
 }
-.boxcol{
+    .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
 .p-10{
         padding-left: 10px!important;
     }
-.footerlogo{
+ .footerlogo{
     width: 100%;
     padding-top: 20px;
 }
@@ -2991,19 +2853,6 @@ line-height:26.5px ;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
@@ -3101,22 +2950,22 @@ line-height:26.5px ;
     border-color: #28a745;
     color: #ffffff;
     border-radius: 20px;
-    margin: 0px;
-     min-width: 80px;
-    font-size: 10.5px;
-    font-weight: 600;
-    padding: 3px 6px 2px 6px;
-}
-.btn-secondary {
-    color: #000000;
-    background-color: #C0C0C0;
-     border-color: #C0C0C0;
-    border-radius: 20px;
-    margin: 0px;
-   min-width: 80px;
+    margin: 5px;
+     min-width: 87px;
     font-size: 11px;
     font-weight: 600;
-      padding: 3px 6px 2px 6px;
+    padding: 5px 6px 5px 6px;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 20px;
+    margin: 5px;
+    min-width: 87px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 6px 5px 6px;
 }
 .btn-reports{
     background-color:transparent;
@@ -3130,8 +2979,7 @@ line-height:26.5px ;
 .btn-reports:hover{
     background-color:#0C55AD;
     color: #ffffff;
-    border-radius: 20px;
-    border: 2px solid #0C55AD;
+   border: 2px solid #0C55AD;
     font-size: 14px;
 }
 .btn-orange{
@@ -3139,28 +2987,30 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10.5px;
+    font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 6px 2px 6px;
+    cursor: pointer;
+    padding: 5px 6px 5px 6px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff; 
-    cursor: pointer;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #F5720A;   
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 10.5px;
+    font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-     padding: 3px 6px 2px 6px;
+    padding: 5px 6px 5px 6px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -3171,14 +3021,14 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 0px;
-    min-width: 87px;
-    font-size: 10.5px;
+    min-width: 80px;
+    font-size: 11px;
     font-weight: 600;
-       padding: 3px 6px 2px 6px;
+    padding: 5px 6px 5px 6px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
-    color: #ffffff!important; 
+    color: #ffffff!important;  
 }
 .btn-blue{
     background-color:#F5720A;
@@ -3220,13 +3070,9 @@ line-height:26.5px ;
 .box{
     background: rgba(12, 85, 173, 0.03);
     padding: 10px 15px 10px 15px;
-    margin-top: 20px;
 }
 .boxicon{
-    width: 14px;
-}
-.boxicon1{
-    width: 14px;
+    width: 15px;
 }
 .joinLink {
     width: 27px;
@@ -3248,9 +3094,9 @@ line-height:26.5px ;
     padding-right: 15px;
 }
 .box1 h3{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 28px;
 }
 .box1 h4{
     font-size: 14px;
@@ -3259,13 +3105,13 @@ line-height:26.5px ;
     margin-top: 15px;
 }
 .box1 p{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16px;
 }
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
-    width: 65%;
+    width: 100%;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
@@ -3318,7 +3164,7 @@ ul{
    background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
- padding: 6px 5px 4px 5px;
+  padding: 11px 5px 8px 5px;
   width: 100%;
   border: none;
   outline: none;
@@ -3339,10 +3185,9 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 4px 0px 4px;
+  padding: 0px 6px 0px 6px;
   border-radius: 15px;
   cursor: pointer;
- font-size: 10px;
 }
 .active:after {
   content: "\f106";
@@ -3361,11 +3206,11 @@ font-family: fontawesome;
     line-height: 16px;
 }
 .consultimg{
-    padding-top: 30px;
+    padding-top: 60px;
     height: 100%;
-    width: 90%;
+     width: 100%;
 }
 .mt-minus{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 }
