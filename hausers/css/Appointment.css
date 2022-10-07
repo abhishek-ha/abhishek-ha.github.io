@@ -116,10 +116,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
     cursor: pointer;
 }
 .btn-success {
@@ -155,20 +151,18 @@ line-height:26.5px ;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-        padding: 2px 3px 1px 3px;
+    padding: 2px 3px 1px 3px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;   
+    color: #ffffff; 
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 5px;
+    font-size: 5px;
     min-width: 115px;
     font-weight: 600;
     text-transform: uppercase;
@@ -467,11 +461,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -834,11 +823,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -1218,11 +1202,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -1577,11 +1556,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -1943,11 +1917,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -2028,7 +1997,6 @@ line-height:26.5px ;
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
     color: #ffffff!important;
-    border-radius: 20px;
 }
 .btn-blue{
     background-color:#F5720A;
@@ -2040,9 +2008,6 @@ line-height:26.5px ;
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
 }
 .btn-grey{
     background-color: #C0C0C0;
@@ -2325,11 +2290,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -2681,11 +2641,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     color: #fff;
@@ -3046,11 +3001,6 @@ line-height:26.5px ;
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .requestedbtn{
     background-color: #28a745;
@@ -3066,11 +3016,6 @@ line-height:26.5px ;
 .requestedbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    cursor: pointer;
 }
 .btn-success {
     background-color: #28a745;
@@ -3182,11 +3127,7 @@ line-height:26.5px ;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
-    color: #ffffff;
-    border-radius: 20px;
-    font-size: 11px;
-    min-width: 180px;
-    font-weight: 600;
+    color: #ffffff;  
 }
 .btn-w120{
     width: 120px;
@@ -3337,7 +3278,7 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 100%;
+    height: 350px;
     width: 90%;
 }
 .mt-minus{

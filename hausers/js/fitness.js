@@ -13,6 +13,7 @@ function LoadData(Appointmentid) {
             'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
         },
         success: function (data) {
+            debugger;
             console.log('success');
             if (data.status && data.results != null) {
                  statusName =data.results.statusname;
@@ -24,6 +25,12 @@ function LoadData(Appointmentid) {
                     $("#dvCancel").hide();
                     $("#dvConfirm").show();
                     $("#btnstatusname").attr("class", "btn btn-orange statusbtn");
+                    }
+                    else if (statusName == 'Requested'){
+                        debugger;
+                    $("#dvCancel").hide();
+                    $("#dvConfirm").show();
+                    $("#btnstatusname").attr("class", "btn btn-grey statusbtn");
                     }
                 $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
