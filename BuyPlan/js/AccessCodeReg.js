@@ -1,11 +1,11 @@
 var baseUrl = 'https://live.healthassure.in/ProductApi/'
-function CreateUserWithAccessCode(accessCode, firstName, lastName, gender, mobileNumbar, emailId, dOB, relative) {
+function CreateUserWithAccessCode(accessCode, firstName, lastName, gender, mobileNumbar, emailId, dOB, relative, triggerType) {
     return new Promise(function (resolve, reject) {
         $.ajax({
             type: "POST",
             url: baseUrl + "api/User/LogInWithAccessCode",
             dataType: "json",
-            data: JSON.stringify({ AccessCode: accessCode, FirstName: firstName, LastName: lastName, Gender: gender, MobileNumbar: mobileNumbar, EmailId: emailId, DOB: dOB, Relations: relative }),
+            data: JSON.stringify({ AccessCode: accessCode, FirstName: firstName, LastName: lastName, Gender: gender, MobileNumbar: mobileNumbar, EmailId: emailId, DOB: dOB, Relations: relative, TriggerType: triggerType }),
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
