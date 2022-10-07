@@ -516,7 +516,7 @@
                     return;
                 }
             }
-            CreateUserWithAccessCode($('#vouchercode').val(), $('#firstname').val(), $('#lastname').val(), $('#Gender').val(), $('#mobileno').val(), $('#emailid').val(), $('#CustomerDob').val(), relations).then(function (result) {
+            CreateUserWithAccessCode($('#vouchercode').val(), $('#firstname').val(), $('#lastname').val(), $('#Gender').val(), $('#mobileno').val(), $('#emailid').val(), $('#CustomerDob').val(), relations ,'LANDINGPAGEPLANPURCHASEVERIFYOTP').then(function (result) {
                 UserSelfRegistrationId = result.results[0].userSelfRegistrationId;
                 $('#RegistrationModaldiv').hide();
                 $('#otpapp').show();
