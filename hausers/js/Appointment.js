@@ -63,7 +63,7 @@ function LoadData(Appointmentid) {
                     $("#dvPreprationForCheckup").hide();
                 }
                 if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
-                    if (data.results.coveredTests.length = 1) {
+                    if (data.results.coveredTests.length == 1) {
                         $.each(data.results.coveredTests, function (key, value) {
                             // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
                             $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
