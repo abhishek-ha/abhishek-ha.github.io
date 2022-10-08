@@ -155,6 +155,13 @@
             font-size: 28px;
         }
 
+        #clearCouponButton {
+            color: #959595;
+            padding: 12px;
+            margin-left: -34px;
+            border-left: 1px solid #e4e4e4;
+        }
+
         .btn {
             display: inline-block;
             margin-bottom: 0;
@@ -922,8 +929,9 @@
                         <div style="display: flex;align-items: center">
                             <input type="text" id="CoupanCode" style="margin-left: -3px;" maxlength="15"
                                 placeholder="Coupon Code">
+                            <a id="clearCouponButton" href="javascript:ClearCoupon()" style="visibility:hidden;">X</a>
                             <!-- <button style="background-color: transparent;border-radius: 0px;border-color: transparent"  id="btnApplyCoupan">Apply</button> -->
-                            <a style="border: radius 0;margin-left: 10px;" href="javascript:btnApplyCoupan()">Apply</a>
+                            <a style="border: radius 0;margin-left: 25px;" href="javascript:btnApplyCoupan()">Apply</a>
                         </div>
                         <div>
                             <p id="CouponDiscount" class="mb-0"></p>
@@ -942,8 +950,16 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
     <script src="js/buyplans.min.js"></script>
     <script>
+        var responseCoupon = null;
+        function AddUserForLog(email) {
+            try {
+                LogRocket.identify(email);
+            } catch { }
+        }
         $('#IsTCAccepted').click(function (e) {
             if (this.checked) {
                 $("#Placeorder").prop('disabled', false);
@@ -1046,8 +1062,36 @@
             OpenPaymentPage();
             $("#Reviewformdiv").hide();
         });
+        $(function () {
+            $('#CoupanCode').on('change', function () {
+                if ($('#CoupanCode').val() == '') {
+                    $('#clearCouponButton').css('visibility', 'hidden')
+                    $('#invalidMessage').hide()
+                }
+                else {
+                    $('#clearCouponButton').css('visibility', 'visible')
+                }
+            })
+        });
 
-        function btnApplyCoupan () {
+        function ClearCoupon() {
+            if (responseCoupon != null) {
+                $('#discdtls').hide();
+                $('#PlanSGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
+                $('#PlanCGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
+                $('#TotalAmount').text($('#hdnTotalAmount').val());
+                $('#CouponDiscount').text('');
+                $('#GrandTotalAmount').text($('#hdnTotalAmount').val());
+                $('#invalidMessage').text('');
+                $('#invalidMessage').hide()
+            }
+            $('#CoupanCode').val('')
+            $('#clearCouponButton').css('visibility', 'hidden')
+        }
+        function btnApplyCoupan() {
+            if ($('#CoupanCode').val() == '') {
+                return;
+            }
             GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val()).then(function (result) {
                 $('#discdtls').show();
                 $('#CouponDiscount').text(result.results.discountAmount);
@@ -1058,6 +1102,7 @@
                 $('#invalidMessage').text(result.message);
                 document.getElementById('invalidMessage').setAttribute("class", "couponCode-success-text mb-0");
             }).catch(function (error) {
+                responseCoupon = error;
                 console.warn(error);
                 $('#discdtls').hide();
                 $('#TotalAmount').text($('#hdnTotalAmount').val());
@@ -1065,7 +1110,7 @@
                 $('#PlanSGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
                 $('#PlanCGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
                 $('#GrandTotalAmount').text($('#hdnTotalAmount').val());
-                $('#invalidMessage').text($('#hdnTotalAmount').val());
+                $('#invalidMessage').show()
                 document.getElementById('invalidMessage').setAttribute("class", "couponCode-invalid-text mb-0");
                 $('#invalidMessage').text(error.message);
             });
@@ -1117,7 +1162,7 @@
                         'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
                     },
                     success: function (result) {
-                        console.warn(result.message);
+                        console.log(result.message);
                         if (result.status) {
                             resolve(result) // Resolve promise and go to then()
                         } else {
@@ -1127,7 +1172,7 @@
                     error: function (eror) {
                         console.warn(eror);
                         document.getElementById('invalidMessage').setAttribute("style", "color:red;font-weight: bold;");
-                        $('#invalidMessage').text('InValid Coupon code');
+                        $('#invalidMessage').text('Invalid Coupon code');
                         reject(err) // Reject the promise and go to catch()
                     }
                 });
@@ -1164,7 +1209,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"],'', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1274,7 +1319,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"],'', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
