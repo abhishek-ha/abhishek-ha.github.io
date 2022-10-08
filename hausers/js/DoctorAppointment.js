@@ -96,7 +96,7 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Confirmed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr("class", "btn btn-orange");
+                    $("#btnstatusname").attr("class", "btn btn-orange statusbtn");
                     $("#dvAppointmentConfirmed").show();
                     $("#dvForConfirm").show();;
                 }
