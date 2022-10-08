@@ -88,12 +88,12 @@ function LoadData(Appointmentid) {
                 }
                 else if (data.results.statusname == 'Requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-grey');
+                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
                     $("#dvForRequestImage").show();
                 }
                 else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-grey');
+                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
                     $("#dvForCompletedImage").show();
                 }
                 else if (data.results.statusname == 'Confirmed') {
