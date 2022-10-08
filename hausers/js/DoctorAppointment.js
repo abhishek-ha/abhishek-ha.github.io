@@ -5,9 +5,9 @@ function maplocation(lat, long) {
     window.open('https://maps.google.com/?q=' + lat + ',' + lat);
 }
 
-$('#btnViewReports').click(function(){
+$('#btnViewReports').click(function () {
     window.open(reportsPath);
-  });
+});
 
 function LoadData(Appointmentid) {
     $.ajax({
@@ -23,7 +23,7 @@ function LoadData(Appointmentid) {
             console.log('success');
             if (data.status && data.results != null) {
                 debugger;
-                document.title = ' Doctor Consultation ' + data.results.statusname ;
+                document.title = ' Doctor Consultation ' + data.results.statusname;
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
@@ -45,9 +45,13 @@ function LoadData(Appointmentid) {
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.pointOfContact);
                 $('#PocDesignation').text(data.results.pocDesignation)
+                $('#AppRecivedByName').text(data.results.appRecivedByName);
+                $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
+                $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
+
                 debugger;
                 if (data.results.reportSavePath != null) {
-                    reportsPath =data.results.reportSavePath;
+                    reportsPath = data.results.reportSavePath;
                 }
 
                 if (data.results.providerImage == null) {
@@ -66,19 +70,20 @@ function LoadData(Appointmentid) {
                     if (data.results.coveredTests.length = 1) {
                         $.each(data.results.coveredTests, function (key, value) {
                             // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
-                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);  });   
-                    } 
+                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
+                        });
+                    }
                     else {
                         $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                         $("#dvTestListBtn").show();
                         $.each(data.results.coveredTests, function (key, value) {
                             $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
-                        }); 
+                        });
                     }
-                    
+
                 }
-                else{
-                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName); 
+                else {
+                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
@@ -90,7 +95,7 @@ function LoadData(Appointmentid) {
                     $("#btnstatusname").atte("class", "btn btn-grey");
                     $("#dvForRequestImage").show();
                 }
-                else if (data.results.statusname == 'Completed' || data.results.statusname =='Closed') {
+                else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr("class", "btn btn-success");
                     $("#dvForCompletedImage").show();
@@ -127,10 +132,10 @@ $(function () {
     $("#dvForRequestImage").hide();
     $("#dvForCompletedImage").hide();
     $("#dvCaseNo").hide();
-    if (Appointmentid != undefined && Appointmentid != null) { 
+    if (Appointmentid != undefined && Appointmentid != null) {
         LoadData(Appointmentid);
-         $("body").show();
-         }
+        $("body").show();
+    }
     else {
         window.location.replace("404.html");
     }
