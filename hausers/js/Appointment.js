@@ -43,6 +43,7 @@ function LoadData(Appointmentid) {
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.pointOfContact);
+                $('#PocDesignation').text(data.results.pocDesignation)
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
