@@ -45,33 +45,33 @@ function LoadData(Appointmentid) {
                  if (statusName == 'Requested') {
                     document.title = ' Home Care Requested' ;
                      $('#dvRequested').show();
-                    $("#btnstatusname").attr('class', 'btn btn-grey');
-                    $("#imgHomeCare").attr('class', 'img-fluid w-80 consultimg float-end');
+                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
+                    $("#imgHomeCare").attr('class', 'img-fluid  consultimg float-end');
                 } 
                 else if (statusName == 'completed'|| statusName == 'closed'){
                     document.title = ' Home Care completed' ;
                      $('#dvCompleted').show();
-                    $("#btnstatusname").attr('class', 'btn btn-grey');
+                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
                     $('#dvAppointmentWith').show();
                 }
                 else if (statusName == 'Cancelled'){
                     document.title = ' Home Care Cancelled' ;
                      $('#dvCancelled').show();
-                    $("#btnstatusname").attr('class', 'btn btn-red');
+                    $("#btnstatusname").attr('class', 'btn btn-red statusbtn');
                     }
                 else if (statusName == 'Confirmed'){
                     document.title = ' Home Care ' ;
                      $('#dvConfirmed').show();
                      $('#dvAppointmentWith').show();
                      $('#dvFasting').show();
-                    $("#btnstatusname").attr('class', 'btn btn-orange');
+                    $("#btnstatusname").attr('class', 'btn btn-orange statusbtn');
                     }
             
                 $("#btnstatusname").text('Appoinment '+ data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<i class="fa-solid fa-calendar-check"></i> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<i class="fa-solid fa-clock"></i> ' + data.results.appointmentTime);
+                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                $("#txtAppointmentTime").html('<img src="images/clock.png" class="boxicon"> ' + data.results.appointmentTime);
                 $("#btnAge").text(data.results.memberAge + ' Years');
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#appointmentFor").text(data.results.subServiceDetails);
@@ -84,7 +84,7 @@ function LoadData(Appointmentid) {
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon">'+ data.results.paymentMode);
-                $("#custAddress").html(place +' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
+                $("#custAddress").html(place +' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
             } else {
                 console.log("Error in sucess");
                  window.location.replace("404.html");
