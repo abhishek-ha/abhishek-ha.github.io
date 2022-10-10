@@ -62,24 +62,48 @@ function LoadData(Appointmentid) {
                 } if (data.results.preprationForCheckup == null) {
                     $("#dvPreprationForCheckup").hide();
                 }
-                if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
-                    if (data.results.coveredTests.length == 1) {
-                        $.each(data.results.coveredTests, function (key, value) {
-                            // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
-                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
-                        });
+                try {
+                    var package = '';
+                    let packageposition = data.results.subServiceDetails.search(/:-/);
+                    if (packageposition != -1) {
+                        let result = data.results.subServiceDetails.substring(0, packageposition).lastIndexOf(",");
+                        if (result != -1) {
+                            package = data.results.subServiceDetails.substring(result + 1, packageposition)
+                        } else {
+                            package = data.results.subServiceDetails.substring(0, packageposition)
+                        }
+                        data.results.subServiceDetails = data.results.subServiceDetails.replace(package, "").replace(":-", "");
+                    }
+                    var testArray = data.results.subServiceDetails.split(",");
+                    if (package == '' || package == null) {
+                        package = testArray[0];
+                    }
+                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + package);
+                    $("#dvTestListBtn").show();
+
+                    $.each(testArray, function (key, value) {
+                        $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value + ' </a> </li>');
+                    });
+                } catch {
+                    if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
+                        if (data.results.coveredTests.length == 1) {
+                            $.each(data.results.coveredTests, function (key, value) {
+                                // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
+                                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
+                            });
+                        }
+                        else {
+                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
+                            $("#dvTestListBtn").show();
+
+                            $.each(data.results.coveredTests, function (key, value) {
+                                $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
+                            });
+                        }
                     }
                     else {
-                        $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
-                        $("#dvTestListBtn").show();
-
-                        $.each(data.results.coveredTests, function (key, value) {
-                            $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
-                        });
+                        $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
                     }
-                }
-                else {
-                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
                 if (data.results.statusname == 'Cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
@@ -127,6 +151,7 @@ $(function () {
     $("#dvForRequestImage").hide();
     $("#dvForCompletedImage").hide();
     $("#dvCaseNo").hide();
+    $('body').hide();
     debugger;
     if (Appointmentid != undefined && Appointmentid != null) {
         debugger;
