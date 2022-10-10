@@ -335,37 +335,6 @@ function sc(e) {
     <!-- End Facebook Pixel Code -->
 
 
-    <script>
-        function cid() {
-            var e;
-            var s1;
-            var s2;
-            return Promise.resolve().then(function () {
-                e = new URLSearchParams(window.location.search).get("pid");
-                s1 = new URLSearchParams(window.location.search).get("sub1");
-                s2 = new URLSearchParams(window.location.search).get("sub2");
-                return null === e ? null : fetch("https://secure.traqkarr.com/click?pid=" + e + "&sub1=" + s1 + "&sub2=" + s2 + "&offer_id=126&format=json").then(function (e) {
-                    return e.json();
-                });
-            });
-        }
-
-        function sc(e) {
-            var c = new Date();
-            c.setTime(c.getTime() + 365 * 24 * 60 * 60 * 1000), document.cookie = "affclick=" + e + ";expires=" + c.toUTCString() + ";path=/" + ";domain=.healthassure.in", localStorage.setItem("affclick", e);
-        }
-
-        (function () {
-            var e;
-            return Promise.resolve().then(function () {
-                return cid();
-            }).then(function (_resp) {
-                e = _resp;
-                null !== e && sc(e.clickid);
-            });
-        })();
-    </script>
-
 </head>
 
 <body>
