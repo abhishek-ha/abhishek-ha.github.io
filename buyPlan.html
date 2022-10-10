@@ -1289,9 +1289,9 @@
             $('#buyplanformdiv').hide();
             $('#Placeorder').html('Place order');
         }
-        function opningPaymentSuccesspage() {
+        function opningPaymentSuccesspage(PlanCode) {
             //$('#congratulationsdiv').show();
-            OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val);
+            OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val, PlanCode);
             closebuyplanpopup();
             $('#buyplanformdiv').hide();
             console.log('opningPaymentSuccesspage');
@@ -1560,8 +1560,8 @@
                 });
             });
         }
-        function OpenbuyPlanThankyouPage(PlanName, MobileNo) {
-            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo;
+        function OpenbuyPlanThankyouPage(PlanName, MobileNo, PlanCode) {
+            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo + "&PlanCode=" + PlanCode;
             window.open(url, "_parent");
         }
         var acc = document.getElementsByClassName("accordion");
