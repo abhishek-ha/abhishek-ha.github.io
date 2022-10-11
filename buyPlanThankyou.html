@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style>
 		body {
 			font-family: 'Poppins', sans-serif;
@@ -73,37 +74,29 @@
 		fbq('track', 'Purchase');
 	</script>
 
-	<script language="javascript" type="text/javascript" src="https://secure.traqkarr.com/track.js"></script>
 	<script>
 		var href = new URL(window.location.href);
 		var PlanCode = href.searchParams.get("PlanCode");
-		if (PlanCode == 'CashPlan03') {
-			$.ajax({
-				type: "GET",
-				url: "https://secure.traqkarr.com/success.php?offer_id=131&afsecure=995f4b01e3a521a52f7b82abfd44490d&afid=" + href.searchParams.get("MobileNo") + "&afprice=2500&afgoal=1&custom_field1=2500&afstatus=2",
-				dataType: "json",
-				success: function (result) {
-					console.warn(result);
-				},
-				error: function (eror) {
-					console.warn(eror);
-				}
-			});
+		if (PlanCode?.toLowerCase() == "cashplan03") {
+			var afoffer_id = 131;
+			var afid = href.searchParams.get("MobileNo");
+			var afprice = 2500;
+			var afgoal = 1;
+			var custom_field1 = 2500;
+			var afstatus = 2;
+			var afsecure = "995f4b01e3a521a52f7b82abfd44490d";
 		}
-		if (PlanCode == 'CashPlan01') {
-			$.ajax({
-				type: "GET",
-				url: "https://secure.traqkarr.com/success.php?offer_id=126&afsecure=995f4b01e3a521a52f7b82abfd44490d&afid=" + href.searchParams.get("MobileNo") + "&afprice=1499&afgoal=1&custom_field1=1499&afstatus=2",
-				dataType: "json",
-				success: function (result) {
-					console.warn(result);
-				},
-				error: function (eror) {
-					console.warn(eror);
-				}
-			});
+		if (PlanCode?.toLowerCase() == "cashplan01") {
+			var afoffer_id = 126;
+			var afid = href.searchParams.get("MobileNo");
+			var afprice = 1499;
+			var afgoal = 1;
+			var custom_field1 = 1499;
+			var afstatus = 2;
+			var afsecure = "995f4b01e3a521a52f7b82abfd44490d";
 		}
 	</script>
+    <script language="javascript" type="text/javascript" src="https://secure.traqkarr.com/track.js"></script>
 </head>
 
 <body>

@@ -48,8 +48,10 @@ function LoadData(Appointmentid) {
                 $('#AppRecivedByName').text(data.results.appRecivedByName);
                 $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
                 $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
-
-                debugger;
+                $('#ApptwithDoctorDegree').text("(" + data.results.apptwithDoctorDegree + ")");
+                $('#ApptwithDoctorName').text(data.results.apptwithDoctorName);
+                $('#PocMobile').text(data.results.pocMobile);
+                $('#PocEmail').text(data.results.pocEmail);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }

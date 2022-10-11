@@ -1065,17 +1065,22 @@
         $(function () {
             $('#CoupanCode').on('change', function () {
                 if ($('#CoupanCode').val() == '') {
-                    $('#clearCouponButton').css('visibility', 'hidden')
-                    $('#invalidMessage').hide()
+                    ClearCoupon();
                 }
                 else {
                     $('#clearCouponButton').css('visibility', 'visible')
                 }
             })
+            
+            $('#CoupanCode').on('keypress', function(e){
+                if (e.which == 13) {
+                    btnApplyCoupan()
+                }
+            })
         });
 
         function ClearCoupon() {
-            if (responseCoupon != null) {
+            if (responseCoupon.status == true) {
                 $('#discdtls').hide();
                 $('#PlanSGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
                 $('#PlanCGST').text(Math.round(parseInt($('#PlanAmount').text()) * .09));
@@ -1083,10 +1088,10 @@
                 $('#CouponDiscount').text('');
                 $('#GrandTotalAmount').text($('#hdnTotalAmount').val());
                 $('#invalidMessage').text('');
-                $('#invalidMessage').hide()
             }
             $('#CoupanCode').val('')
             $('#clearCouponButton').css('visibility', 'hidden')
+            $('#invalidMessage').hide()
         }
         function btnApplyCoupan() {
             if ($('#CoupanCode').val() == '') {
