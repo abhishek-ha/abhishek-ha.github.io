@@ -102,7 +102,7 @@ line-height:26.5px ;
     float: left;
     font-size: 8px;
     color: #ffffff;
-    margin: 3px;
+    margin: 2px;
     text-align: center;
 }
 .footer ul li a{
@@ -187,7 +187,7 @@ line-height:26.5px ;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 5px;
-    min-width: 80px;
+   min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 1px 3px 1px 3px;
@@ -215,19 +215,17 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 14px;
+    font-size: 8px;
 }
 .btn-blue:hover{
     background-color:#F5720A;
     color: #ffffff;
-    border-radius: 20px;
     border: 1px solid #F5720A;
 }
 .btn-grey{
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    font-size: 5px;
     min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
@@ -259,7 +257,7 @@ line-height:26.5px ;
 .box p{
     font-size: 4px;
     line-height: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 .box .btn{
     border-radius: 20px;
@@ -287,7 +285,7 @@ line-height:26.5px ;
 .box1 p{
     font-size: 4px;
     line-height: 6px;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 .docbox{
     background-color: #ffffff;
@@ -296,20 +294,26 @@ line-height:26.5px ;
     padding: 3px 6px 3px 6px;
     border: 2px solid #0E5FC1;
 }
+.docboxicon{
+    font-size: 9px;
+}
 .docbox p{
     font-size: 5px;
 }
 .docbox .doctname{
-font-size: 8px;
+font-size: 5px;
 font-weight: 700;
-line-height: 15px;
+line-height: 10px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 5px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .docbox1{
     background-color: #ffffff;
@@ -390,7 +394,7 @@ font-family: fontawesome;
 }
 .consultimg{
    padding-top: 34px;
-    height: 145px;
+    height: 140px;
 }
 }
 
@@ -666,20 +670,26 @@ line-height:26.5px ;
     padding: 3px 6px 3px 6px;
     border: 2px solid #0E5FC1;
 }
+.docboxicon{
+    font-size: 9px;
+}
 .docbox p{
     font-size: 5px;
 }
 .docbox .doctname{
-font-size: 8px;
+font-size: 6px;
 font-weight: 700;
-line-height: 15px;
+line-height: 10px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 6px;
+    font-weight: 700;
+   line-height: 10px;
+   letter-spacing: 0em;
+   text-align: left;
 }
 .docbox1{
     background-color: #ffffff;
@@ -781,8 +791,8 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 700;
-font-size:12px ;
-line-height:18px ;
+font-size:11px ;
+line-height:16px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -1029,6 +1039,11 @@ margin-bottom: 6px;
     padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
+
+.docboxicon{
+    font-size: 10px;
+}
+
 .docbox p{
     font-size: 7px;
     margin-bottom: 0px;
@@ -1042,7 +1057,7 @@ text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 15px;
+    font-size: 7px;
     font-weight: 600;
 }
 .docbox1{
@@ -1164,12 +1179,11 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    text-align: center;
 }
 .instructbox p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
     text-align: center;
 }
@@ -1386,7 +1400,7 @@ line-height:26.5px ;
 }
 .box1 p{
     font-size: 8px;
-    line-height: 16px;
+    line-height: 10px;
 }
 .docbox{
     background-color: #ffffff;
@@ -1395,12 +1409,17 @@ line-height:26.5px ;
     padding: 5px 6px 5px 6px;
     border: 2px solid #0E5FC1;
 }
+
+.docboxicon{
+    font-size: 14px;
+}
+
 .docbox p{
     font-size: 9px;
     margin-bottom: 2px;
 }
 .docbox .doctname{
-font-size: 11px;
+font-size: 10px;
 font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
@@ -1409,8 +1428,11 @@ color: #0E5FC1;
 margin-bottom: 4px;
 }
 .docbox .designation{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+     text-align: left;
 }
 .docbox1{
     background-color: #ffffff;
@@ -1748,6 +1770,12 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
+.docboxicon{
+    font-size: 10px;
+}
+
+
 .docbox p{
     font-size: 15px;
 }
@@ -2111,6 +2139,10 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
+.docboxicon{
+    font-size: 17px;
+}
 .docbox p{
     font-size: 13px;
     margin-bottom: 4px;
@@ -2125,8 +2157,11 @@ text-align: left;
 color: #0E5FC1;
 }
 .docbox .designation{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 13px;
+   font-weight: 600;
+   line-height: 15px;
+   letter-spacing: 0em;
+    text-align: left;
 }
 .docbox1{
     background-color: #ffffff;
@@ -2480,6 +2515,9 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+.docboxicon{
+    font-size: 17px;
+}
 .docbox p{
     font-size: 13px;
 }
@@ -2493,9 +2531,12 @@ color: #0E5FC1;
 margin-bottom: 5px;
 }
 .docbox .designation{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
-}
+    line-height: 15px;
+     letter-spacing: 0em;
+     text-align: left;
+ }
 .docbox1{
     background-color: #ffffff;
     border-radius: 20px;
@@ -2504,15 +2545,16 @@ margin-bottom: 5px;
     border: 2px solid #0E5FC1;
 }
 .docbox1 .doctname{
-font-size: 14px;
+font-size: 13px;
 font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
+margin-bottom: 5px;
 }
 .docbox1 .designation{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 .w-40{
@@ -2819,6 +2861,11 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
+.docboxicon{
+    font-size: 18px;
+}
+
 .docbox p{
     font-size: 15px;
 }
@@ -2912,8 +2959,8 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 50px;
-     height: 200px;
-     width: 100%;
+       height: 300px;     
+       width: 100%;
 }
 }
 
@@ -3219,9 +3266,12 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+.docboxicon{
+    font-size: 18px;
+}
 .docbox p{
     font-size: 14px;
-    margin-bottom: 8px!important;
+    margin-bottom: 2px!important;
 }
 .docbox .doctname{
 font-size: 14px;
@@ -3233,8 +3283,12 @@ color: #0E5FC1;
 margin-bottom: 4px;
 }
 .docbox .designation{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
+   line-height: 15px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin-bottom: 4px;
 }
 .docbox1{
     background-color: #ffffff;
@@ -3312,10 +3366,16 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 350px;
+    height: 300px;
     width: 90%;
 }
 .mt-minus{
     margin-top: -15px;
 }
 }
+
+
+
+
+
+

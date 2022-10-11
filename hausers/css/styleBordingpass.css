@@ -102,7 +102,7 @@ line-height:26.5px ;
     float: left;
     font-size: 8px;
     color: #ffffff;
-    margin: 3px;
+    margin: 2px;
     text-align: center;
 }
 .footer ul li a{
@@ -257,7 +257,7 @@ line-height:26.5px ;
 .box p{
     font-size: 4px;
     line-height: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 0px;
 }
 .box .btn{
     border-radius: 20px;
@@ -285,7 +285,7 @@ line-height:26.5px ;
 .box1 p{
     font-size: 4px;
     line-height: 6px;
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 .docbox{
     background-color: #ffffff;
@@ -1400,7 +1400,7 @@ line-height:26.5px ;
 }
 .box1 p{
     font-size: 8px;
-    line-height: 16px;
+    line-height: 10px;
 }
 .docbox{
     background-color: #ffffff;
@@ -3269,11 +3269,9 @@ line-height:26.5px ;
 .docboxicon{
     font-size: 18px;
 }
-
-
 .docbox p{
     font-size: 14px;
-    margin-bottom: 8px!important;
+    margin-bottom: 2px!important;
 }
 .docbox .doctname{
 font-size: 14px;
@@ -3375,3 +3373,9 @@ font-family: fontawesome;
     margin-top: -15px;
 }
 }
+
+
+
+
+
+
