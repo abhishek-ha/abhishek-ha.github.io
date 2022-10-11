@@ -34,7 +34,9 @@ function LoadData(Appointmentid) {
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
                 $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode);
-                $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
+                if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
+                    $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
+                }
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
@@ -46,7 +48,9 @@ function LoadData(Appointmentid) {
                 $('#AppRecivedByName').text(data.results.appRecivedByName);
                 $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
                 $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
-                $('#PocDesignation').text(data.results.pocDesignation)
+                $('#PocDesignation').text(data.results.pocDesignation);
+                $('#PocMobile').text(data.results.pocMobile);
+                $('#PocEmail').text(data.results.pocEmail);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
@@ -59,9 +63,9 @@ function LoadData(Appointmentid) {
                     $("#dvPointOfContact").hide();
                 } if (data.results.durationforTest == null) {
                     $("#dvDurationForTest").hide();
-                } if (data.results.preprationForCheckup == null) {
-                    $("#dvPreprationForCheckup").hide();
-                }
+                } //if (data.results.preprationForCheckup == null) {
+                    ///$("#dvPreprationForCheckup").hide();
+                //}
                 try {
                     var package = '';
                     let packageposition = data.results.subServiceDetails.search(/:-/);
@@ -105,22 +109,22 @@ function LoadData(Appointmentid) {
                         $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
                     }
                 }
-                if (data.results.statusname == 'Cancelled') {
+                if (data.results.statusname.toLowerCase() == 'cancelled') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr('class', 'btn btn-red statusbtn');
                     $("#dvForCancelImage").show();
                 }
-                else if (data.results.statusname == 'Requested') {
+                else if (data.results.statusname.toLowerCase() == 'requested') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
                     $("#dvForRequestImage").show();
                 }
-                else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
+                else if (data.results.statusname.toLowerCase() == 'completed' || data.results.statusname.toLowerCase() == 'closed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
                     $("#dvForCompletedImage").show();
                 }
-                else if (data.results.statusname == 'Confirmed') {
+                else if (data.results.statusname.toLowerCase() == 'confirmed') {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr('class', 'btn btn-orange statusbtn');
                     $("#dvAppointmentConfirmed").show();

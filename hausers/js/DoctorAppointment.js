@@ -35,7 +35,9 @@ function LoadData(Appointmentid) {
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html('<img src="images/clock.png"  class="boxicon1">' + data.results.durationforTest);
                 $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode);
-                $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
+                if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
+                    $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
+                }
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
@@ -48,7 +50,9 @@ function LoadData(Appointmentid) {
                 $('#AppRecivedByName').text(data.results.appRecivedByName);
                 $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
                 $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
-                $('#ApptwithDoctorDegree').text("(" + data.results.apptwithDoctorDegree + ")");
+                if (data.results.apptwithDoctorDegree != null && data.results.apptwithDoctorDegree != '') {
+                    $('#ApptwithDoctorDegree').text("(" + data.results.apptwithDoctorDegree + ")");
+                }
                 $('#ApptwithDoctorName').text(data.results.apptwithDoctorName);
                 $('#PocMobile').text(data.results.pocMobile);
                 $('#PocEmail').text(data.results.pocEmail);
@@ -65,9 +69,9 @@ function LoadData(Appointmentid) {
                     $("#dvPointOfContact").hide();
                 } if (data.results.durationforTest == null) {
                     $("#dvDurationForTest").hide();
-                } if (data.results.preprationForCheckup == null) {
-                    $("#dvPreprationForCheckup").hide();
-                }
+                } //if (data.results.preprationForCheckup == null) {
+                    //$("#dvPreprationForCheckup").hide();
+                //}
                 if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
                     if (data.results.coveredTests.length = 1) {
                         $.each(data.results.coveredTests, function (key, value) {
@@ -87,22 +91,22 @@ function LoadData(Appointmentid) {
                 else {
                     $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
-                if (data.results.statusname == 'Cancelled') {
+                if (data.results.statusname.toLowerCase() == "cancelled") {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr("class", "btn btn-red");
                     $("#dvForCancelImage").show();
                 }
-                else if (data.results.statusname == 'Requested') {
+                else if (data.results.statusname.toLowerCase() == "requested") {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").atte("class", "btn btn-grey");
+                    $("#btnstatusname").attr("class", "btn btn-grey");
                     $("#dvForRequestImage").show();
                 }
-                else if (data.results.statusname == 'Completed' || data.results.statusname == 'Closed') {
+                else if (data.results.statusname.toLowerCase() == "completed" || data.results.statusname.toLowerCase() == "closed") {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr("class", "btn btn-success");
                     $("#dvForCompletedImage").show();
                 }
-                else if (data.results.statusname == 'Confirmed') {
+                else if (data.results.statusname.toLowerCase() == "confirmed") {
                     $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
                     $("#btnstatusname").attr("class", "btn btn-orange statusbtn");
                     $("#dvAppointmentConfirmed").show();
