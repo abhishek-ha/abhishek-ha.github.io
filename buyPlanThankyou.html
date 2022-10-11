@@ -54,7 +54,7 @@
 		!function (f, b, e, v, n, t, s) {
 			if (f.fbq) return; n = f.fbq = function () {
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			};
 			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
 			n.queue = []; t = b.createElement(e); t.async = !0;
@@ -73,22 +73,37 @@
 		fbq('track', 'Purchase');
 	</script>
 
+	<script language="javascript" type="text/javascript" src="https://secure.traqkarr.com/track.js"></script>
 	<script>
 		var href = new URL(window.location.href);
-		var afoffer_id = 126;
-		var afid = href.searchParams.get("MobileNo");
-		var afprice = '1499';
-		var afgoal = 1;
-		var custom_field1 = '1499';
-		var afstatus = 2;
-		var afsecure = "995f4b01e3a521a52f7b82abfd44490d";
+		var PlanCode = href.searchParams.get("PlanCode");
+		if (PlanCode == 'CashPlan03') {
+			$.ajax({
+				type: "GET",
+				url: "https://secure.traqkarr.com/success.php?offer_id=131&afsecure=995f4b01e3a521a52f7b82abfd44490d&afid=" + href.searchParams.get("MobileNo") + "&afprice=2500&afgoal=1&custom_field1=2500&afstatus=2",
+				dataType: "json",
+				success: function (result) {
+					console.warn(result);
+				},
+				error: function (eror) {
+					console.warn(eror);
+				}
+			});
+		}
+		if (PlanCode == 'CashPlan01') {
+			$.ajax({
+				type: "GET",
+				url: "https://secure.traqkarr.com/success.php?offer_id=126&afsecure=995f4b01e3a521a52f7b82abfd44490d&afid=" + href.searchParams.get("MobileNo") + "&afprice=1499&afgoal=1&custom_field1=1499&afstatus=2",
+				dataType: "json",
+				success: function (result) {
+					console.warn(result);
+				},
+				error: function (eror) {
+					console.warn(eror);
+				}
+			});
+		}
 	</script>
-	<script language="javascript" type="text/javascript" src="https://secure.traqkarr.com/track.js"></script>
-
-	<iframe
-		src="https://secure.traqkarr.com/success.php?offer_id=126&afsecure=995f4b01e3a521a52f7b82abfd44490d&afid={{ order_number }}&afprice={{ total_price | money_without_currency | remove: "," }}&afgoal=1&custom_field1={{ total_price | money_without_currency | remove: "," }}&afstatus=2"
-		height="1" width="1">
-	</iframe>
 </head>
 
 <body>
@@ -120,7 +135,7 @@
 		$('#OKbtn').click(function () {
 			window.location.href = "https://healthassure.in/";
 		});
-		
+
 	</script>
 </body>
 

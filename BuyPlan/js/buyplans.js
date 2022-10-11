@@ -15,7 +15,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'PartnerOPDPlanApiKey': '14UGczJo0lYOe5ilSzlT2cvLTj1lymz2lRWaBCwIQMd=pnIKeTDBAYApRXj6xO' };
         $.ajax({
             type: "POST", url: BaseUrl + "api/OPDPlans/OPDPlansPurchase",
-            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, PartnerOrderId: PartnerOrderId, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent  }),
+            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, PartnerOrderId: PartnerOrderId, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent }),
             dataType: "json", headers: headers,
             success: function (result) {
                 AddLogRocket(Email, { PlanCode: PlanCode, log: "Paymant initiated" });
@@ -43,7 +43,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId
                                         resolve(res) // Resolve promise and go to then()
                                         try {
                                             ShowLoding(false);
-                                            opningPaymentSuccesspage();
+                                            opningPaymentSuccesspage(PlanCode);
                                         } catch { }
                                     } else {
                                         AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanConformationWithRazorpay, Error ", result: res });
@@ -78,7 +78,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId
                     rzp1.open();
                     try {
                         opningPaymentpage();
-                    } catch { } 
+                    } catch { }
                 } else {
                     AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanWithRazorpay, Error ", result: result });
                     console.warn(result); reject('Error Creating transaction Id from HealthAssure side') // Reject the promise and go to catch()

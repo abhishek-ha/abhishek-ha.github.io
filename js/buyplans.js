@@ -22,7 +22,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, de
                     if (PlanCode == "HAOPDR003-60") {
                         try {
                             ShowLoding(false);
-                            opningPaymentSuccesspage();
+                            opningPaymentSuccesspage(null);
                             return;
                         } catch { }
                     }
@@ -51,7 +51,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, de
                                             resolve(res) // Resolve promise and go to then() 
                                             try {
                                                 ShowLoding(false);
-                                                opningPaymentSuccesspage();
+                                                opningPaymentSuccesspage(PlanCode);
                                             } catch { }
                                         } else {
                                             AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanConformationWithRazorpay, Error ", result: res });
