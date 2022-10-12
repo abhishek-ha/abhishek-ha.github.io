@@ -33,14 +33,18 @@ function LoadData(Appointmentid) {
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' : No payment to be ginven at center');
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' , No payment to be ginven at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
                     $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 }
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
-                $("#btnTechnician").text(data.results.technicianGender);
+                if (data.results.technicianGender != null && data.results.technicianGender != '') {
+                    $("#btnTechnician").text(data.results.technicianGender);
+                } else {
+                    $('#Techniciandiv').hide();
+                }
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' : No payment to be tacken from customer');
+                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
