@@ -34,26 +34,33 @@ function LoadData(Appointmentid) {
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
                 $("#txtDurationForTest").html('<img src="images/clock.png"  class="boxicon1">' + data.results.durationforTest);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode);
+                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode + ' : No payment to be ginven at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
                     $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
                 }
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 $("#btnTechnician").text(data.results.technicianGender);
                 $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode);
+                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' : No payment to be tacken from customer');
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);
                 $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("#txtPointOfContact").text(data.results.pointOfContact);
-                $('#PocDesignation').text(data.results.pocDesignation)
-                $('#AppRecivedByName').text(data.results.appRecivedByName);
+                $('#PocDesignation').text(data.results.pocDesignation);
+                if (data.results.appRecivedByName != null && data.results.appRecivedByName != '') {
+                    $('#AppRecivedByName').text(data.results.appRecivedByName);
+                }
+                else {
+                    $('#AppRecivedByName').text(data.results.providerEmail);
+                }
                 $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
                 $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
                 if (data.results.apptwithDoctorDegree != null && data.results.apptwithDoctorDegree != '') {
                     $('#ApptwithDoctorDegree').text("(" + data.results.apptwithDoctorDegree + ")");
                 }
-                $('#ApptwithDoctorName').text(data.results.apptwithDoctorName);
+                if (data.results.apptwithDoctorName != null && data.results.apptwithDoctorName != '') {
+                    $('#ApptwithDoctorName').text("Dr. " + data.results.apptwithDoctorName);
+                }
                 $('#PocMobile').text(data.results.pocMobile);
                 $('#PocEmail').text(data.results.pocEmail);
                 if (data.results.reportSavePath != null) {
@@ -61,16 +68,21 @@ function LoadData(Appointmentid) {
                 }
 
                 if (data.results.providerImage == null) {
-                    $("#imgProviderImage").hide();
+                    var providerNamearr = data.results.providerName.split(' ');
+                    var intials = providerNamearr[0].charAt(0);
+                    if (providerNamearr.length > 0) {
+                        intials += providerNamearr[1].charAt(0);
+                    }
+                    $("#imgProviderImage").html('<div id="profileImage">' + intials + '</div>');
                 } else {
-                    $("#imgProviderImage").html('<img src="' + data.results.providerImage + 'images/apollo-logo.png" class="img-fluid">');
+                    $("#imgProviderImage").html('<img src="' + data.results.providerImage + '" class="img-fluid">');
                 }
                 if (data.results.pointOfContact == null) {
                     $("#dvPointOfContact").hide();
                 } if (data.results.durationforTest == null) {
                     $("#dvDurationForTest").hide();
                 } //if (data.results.preprationForCheckup == null) {
-                    //$("#dvPreprationForCheckup").hide();
+                //$("#dvPreprationForCheckup").hide();
                 //}
                 if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
                     if (data.results.coveredTests.length = 1) {
@@ -138,6 +150,7 @@ $(function () {
     $("#dvForRequestImage").hide();
     $("#dvForCompletedImage").hide();
     $("#dvCaseNo").hide();
+    $("body").hide();
     if (Appointmentid != undefined && Appointmentid != null) {
         LoadData(Appointmentid);
         $("body").show();

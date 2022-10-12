@@ -6,6 +6,17 @@
      text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
      box-sizing: border-box;
  }
+ #profileImage {
+    width: 37px;
+    height: 37px;
+    border-radius: 0%;
+    background: #512DA8;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    margin: 0px;
+  }
 body {
         font-family: 'PT Sans', sans-serif;
         overflow-x:hidden!important;
@@ -22,9 +33,6 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
-    .docimg{
-        width: 15px;
-    }
 .statusbtn{
     margin-top: -15px;
 }
@@ -50,6 +58,7 @@ a{
     width: 100%;
     padding-top: 16px;
 }
+
 .head{
 font-weight: 600;
 font-size: 8px;
@@ -402,9 +411,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 301px) {
-     .docimg{
-        width: 15px;
-    }
     .statusbtn{
     margin-top: -14px;
 }
@@ -781,9 +787,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 350px) {
-     .docimg{
-        width: 20px;
-    }
      .statusbtn{
     margin-top: -13px;
 }
@@ -1048,9 +1051,11 @@ margin-bottom: 6px;
     padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 10px;
 }
+
 .docbox p{
     font-size: 7px;
     margin-bottom: 0px;
@@ -1154,9 +1159,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 422px) {
-     .docimg{
-        width: 24px;
-    }
      .statusbtn{
     margin-top: -16px;
 }
@@ -1419,9 +1421,11 @@ line-height:26.5px ;
     padding: 5px 6px 5px 6px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 14px;
 }
+
 .docbox p{
     font-size: 9px;
     margin-bottom: 2px;
@@ -1526,9 +1530,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 700px) {
-     .docimg{
-       width: 35px;
-    }
      .statusbtn{
     margin-top: -16px;
 }
@@ -1781,9 +1782,12 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 10px;
 }
+
+
 .docbox p{
     font-size: 15px;
 }
@@ -1885,9 +1889,6 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 750px) {
-     .docimg{
-        width: 35px;
-    }
         .statusbtn{
     margin-top: -5px;
 }
@@ -2150,6 +2151,7 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 17px;
 }
@@ -2258,10 +2260,7 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1000px) {
-     .docimg{
-        width: 36px;
-    }
-.statusbtn{
+      .statusbtn{
     margin-top: -2px;
 }
     .boxcol{
@@ -2634,9 +2633,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1200px) {
-     .docimg{
-        width: 40px;
-    }
       .statusbtn{
     margin-top: 0px;
 }
@@ -2877,9 +2873,11 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 18px;
 }
+
 .docbox p{
     font-size: 15px;
 }
@@ -2979,9 +2977,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1300px) {
-     .docimg{
-        width: 34px;
-    }
       .statusbtn{
       margin-top: 0px;
 }
