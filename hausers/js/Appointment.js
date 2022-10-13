@@ -30,6 +30,11 @@ function LoadData(Appointmentid) {
                 $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
+                if (data.results.appointmentAddress != null && data.results.appointmentAddress != ''){
+                    $("[id*='AppointmentAddress']").text(data.results.appointmentAddress);
+                }else{
+                    $("[id*='AppointmentAddressdiv']").hide();
+                }
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 if (data.results.facilityCategoryIds != null && data.results.facilityCategoryIds != '') {
@@ -79,7 +84,7 @@ function LoadData(Appointmentid) {
                     $("[id*='divReportSharing']").hide();
                 }
 
-                $("[id*='btnPaymentSettlementMode']").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
+                $("[id*='btnPaymentSettlementMode']").html('<img src="images/wallet.png" class="boxicon1"> ' + 'Credit' + ' , No payment to be taken from customer');
                 $("[id*='txtProviderName']").text(data.results.providerName);
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
