@@ -44,7 +44,20 @@ function LoadData(Appointmentid) {
                 } else {
                     $('#Techniciandiv').hide();
                 }
-                $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
+                if (data.results.reportSharingwithCustomer != null && data.results.reportSharingwithCustomer != '') {
+                    if (data.results.reportSharingwithCustomer.toLowerCase() == 'y') {
+                        $("#btnReportSharing").text('YES');
+                    }
+                    else if (data.results.reportSharingwithCustomer.toLowerCase() == 'n') {
+                        $("#btnReportSharing").text('NO');
+                    }
+                    else {
+                        $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
+                    }
+                }
+                else {
+                    $('#divReportSharing').hide();
+                }
                 $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon1"> ' + data.results.providerMobile);

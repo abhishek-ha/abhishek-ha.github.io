@@ -32,7 +32,25 @@ function LoadData(Appointmentid) {
                 $("#btnCaseNo").text(data.results.caseNo);
                 $("#btnCaseNoConfirmed").text(data.results.caseNo);
                 $("#btnFasting").text(data.results.isFasting);
-                $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                if (data.results.facilityCategoryIds != null && data.results.facilityCategoryIds != '') {
+                    if (data.results.facilityCategoryIds.includes("1")) {
+                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '45 minutes');
+                    } else if (data.results.facilityCategoryIds.includes("2")) {
+                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '2 hours');
+                    } else if (data.results.facilityCategoryIds.includes("2") || data.results.facilityCategoryIds.includes("2")) {
+                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '3 hours');
+                    } else {
+                        if (data.results.durationforTest == null) {
+                            $("#dvDurationForTest").hide();
+                        }
+                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                    }
+                } else {
+                    if (data.results.durationforTest == null) {
+                        $("#dvDurationForTest").hide();
+                    }
+                    $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                }
                 $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' , No payment to be ginven at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
                     $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
@@ -40,10 +58,27 @@ function LoadData(Appointmentid) {
                 $("#btnBreakfastCentre").text(data.results.breakfastCentre);
                 if (data.results.technicianGender != null && data.results.technicianGender != '') {
                     $("#btnTechnician").text(data.results.technicianGender);
-                } else {
+                } else if (data.results.subServiceDetails.includes('ECG')) {
+                    $("#btnTechnician").text('Female');
+                }
+                else {
                     $('#Techniciandiv').hide();
                 }
-                $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
+                if (data.results.reportSharingwithCustomer != null && data.results.reportSharingwithCustomer != '') {
+                    if (data.results.reportSharingwithCustomer.toLowerCase() == 'y') {
+                        $("#btnReportSharing").text('YES');
+                    }
+                    else if (data.results.reportSharingwithCustomer.toLowerCase() == 'n') {
+                        $("#btnReportSharing").text('NO');
+                    }
+                    else {
+                        $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
+                    }
+                }
+                else {
+                    $('#divReportSharing').hide();
+                }
+
                 $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
                 $("#txtProviderName").text(data.results.providerName);
                 $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
@@ -75,9 +110,8 @@ function LoadData(Appointmentid) {
                 }
                 if (data.results.pointOfContact == null) {
                     $("#dvPointOfContact").hide();
-                } if (data.results.durationforTest == null) {
-                    $("#dvDurationForTest").hide();
-                } //if (data.results.preprationForCheckup == null) {
+                }
+                //if (data.results.preprationForCheckup == null) {
                 ///$("#dvPreprationForCheckup").hide();
                 //}
                 try {
