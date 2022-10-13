@@ -22,9 +22,6 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
-    .docimg{
-        width: 15px;
-    }
 .statusbtn{
     margin-top: -15px;
 }
@@ -50,9 +47,10 @@ a{
     width: 100%;
     padding-top: 16px;
 }
+
 .head{
 font-weight: 600;
-font-size: 14px;
+font-size: 8px;
 line-height: 15px;
 }
 .sub-heading{
@@ -203,8 +201,8 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 54px;
-    font-size: 10px;
+    min-width: 30px;
+    font-size: 5px;
     font-weight: 600;
     padding: 1px 3px 1px 3px;
 }
@@ -228,11 +226,10 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    min-width: 150px;
+    min-width: 80px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 4px 3px 4px;
-    font-size: 10px;
+    padding: 1px 3px 1px 3px;
 }
 .btn-w120{
     width: 120px;
@@ -243,12 +240,14 @@ line-height:26.5px ;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 13px;
-    height: 13px;
+    width: 5px;
+    font-size: 5px;
+    height: 5px;
 }
 .boxicon1{
-    width: 13px;
-    height: 13px;
+    width: 5px;
+    font-size: 5px;
+    height: 5px;
 }
 .joinLink{
     width: 10px;
@@ -256,14 +255,17 @@ line-height:26.5px ;
     height: 10px;
 }
 .box p{
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 4px;
+    line-height: 5px;
     margin-bottom: 0px;
 }
+.box .btn{
+    border-radius: 20px;
+}
 .box h4{
-    font-size: 14px;
+    font-size: 7px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px!important;
@@ -348,29 +350,28 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 5px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
-  margin-top: 10px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
 }
 .accordion:after {
- content: "\f107";
- font-family: fontawesome;
+    content: "\f107";
+    font-family: fontawesome;
   color: #ffffff;
   font-weight: 400;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 1px 4px 0px 4px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 7px;
-  margin-top: 1px;
+  font-size: 4px;
+  margin-top: 0px;
 }
 .active:after {
   content: "\f106";
@@ -398,11 +399,8 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 301px) {
-     .docimg{
-        width: 15px;
-    }
     .statusbtn{
-    margin-top: -1px;
+    margin-top: -14px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -428,7 +426,7 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 600;
-font-size:15px ;
+font-size:12px ;
 line-height:18px;
 }
 .sub-heading{
@@ -445,13 +443,13 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
 }
 .instructbox p{
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
 }
 .footer{
@@ -459,7 +457,7 @@ line-height:26.5px ;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 7px 5px 2px 5px;
+    padding: 7px 15px 2px 15px;
     background-repeat: no-repeat;
 }
 .footer .fa{
@@ -581,11 +579,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 64px;
-    font-size: 10px;
+    min-width: 35px;
+    font-size: 5px;
     font-weight: 600;
-    padding: 4px 3px 4px 3px;
-    text-align: center;
+    padding: 4px 3px 3px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -603,15 +600,14 @@ line-height:26.5px ;
     color: #ffffff;
 }
 .btn-grey{
-    background-color:#C0C0C0 ;
-    color:#000000;
-    border-radius: 20px;
-    font-size: 11px;
+    background-color: #C0C0C0;
+    color: #000000;
+    font-size: 5px;
+    min-width: 100px;
     font-weight: 600;
-    line-height: 16px;
-     min-width: 170px;
-     text-transform: uppercase;
-     padding: 3px 4px 3px 4px;
+    text-transform: uppercase;
+    padding: 3px 3px 2px 3px;
+    letter-spacing: 0.5px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -626,12 +622,10 @@ line-height:26.5px ;
      padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 13px;
-    height: 13px;
+    width: 5px;
 }
 .boxicon{
-    width: 13px;
-    height: 13px;
+    width: 5px;
 }
 .joinLink{
     width: 5px;
@@ -639,14 +633,14 @@ line-height:26.5px ;
     height: 5px;
 }
 .box p{
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 6px;
+    line-height: 8px;
     margin-bottom: 4px;
 }
 .box h4{
-    font-size: 14px;
+    font-size: 8px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -732,7 +726,7 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 6px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
@@ -749,10 +743,10 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 8px;
+  font-size: 5px;
   margin-top: 1px;
 }
 .active:after {
@@ -781,11 +775,8 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 350px) {
-     .docimg{
-        width: 20px;
-    }
      .statusbtn{
-    margin-top: -8px;
+    margin-top: -13px;
 }
    .boxcol{
     padding-left: 2px!important;
@@ -800,8 +791,8 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 700;
-font-size:16px ;
-line-height:20px;
+font-size:11px ;
+line-height:16px ;
 }
 .sub-heading{
     font-weight: 700;
@@ -817,22 +808,21 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
 }
 .footer{
     background-color: #0e5fc1;
     background-image: url('../images/footerbg.png');
-    width: 98%;
+    width: 100%;
     background-position: contain;
-    padding: 7px 5px 2px 5px;
+    padding: 7px 15px 2px 15px;
     background-repeat: no-repeat;
-    margin-left: 4px;
 }
 .footercol {
     padding-left: 2px!important;
@@ -939,7 +929,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 10px;
+     font-size: 5px;
     min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
@@ -955,10 +945,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 75px;
-    font-size: 11px;
+    min-width: 40px;
+    font-size: 5px;
     font-weight: 600;
-   padding: 3px 4px 3px 4px;
+   padding: 3px 3px 2px 3px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -979,11 +969,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-     font-size: 11px;
-    min-width: 180px;
+     font-size: 5px;
+    min-width: 100px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 4px 3px 4px;
+    padding: 2px 3px 1px 3px;
     letter-spacing: 0.5px;
 }
 .btn-grey:hover{
@@ -999,12 +989,10 @@ line-height:26.5px ;
     padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 13px;
-    height: 13px;
+    width: 9px;
 }
 .boxicon{
-     width: 14px;
-    height: 14px;
+    width: 8px;
 }
 .joinLink{
      width: 8px;
@@ -1012,15 +1000,14 @@ line-height:26.5px ;
     height: 5px;
 }
 .box p{
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 8px;
+    line-height: 7px;
     margin-bottom: 6px;
 }
 .box h4{
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
-    margin-bottom: 8px;
-    margin-top: 3px;
+    margin-bottom: 4px;
 }
 .box1{
     padding-left: 15px;
@@ -1052,9 +1039,11 @@ margin-bottom: 6px;
     padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 10px;
 }
+
 .docbox p{
     font-size: 7px;
     margin-bottom: 0px;
@@ -1106,11 +1095,10 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 12px;
+  font-size: 8px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
-  margin-top: 10px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
@@ -1124,10 +1112,10 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 3px 0px 3px;
+  padding: 0px 2px 0px 2px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 9px;
+  font-size: 6px;
   margin-top: 1px;
 }
 .active:after {
@@ -1159,9 +1147,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 422px) {
-     .docimg{
-        width: 24px;
-    }
      .statusbtn{
     margin-top: -16px;
 }
@@ -1424,9 +1409,11 @@ line-height:26.5px ;
     padding: 5px 6px 5px 6px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 14px;
 }
+
 .docbox p{
     font-size: 9px;
     margin-bottom: 2px;
@@ -1531,9 +1518,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 700px) {
-     .docimg{
-       width: 35px;
-    }
      .statusbtn{
     margin-top: -16px;
 }
@@ -1786,9 +1770,12 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 10px;
 }
+
+
 .docbox p{
     font-size: 15px;
 }
@@ -1890,9 +1877,6 @@ font-family: fontawesome;
 
 
 @media only screen and (min-width: 750px) {
-     .docimg{
-        width: 35px;
-    }
         .statusbtn{
     margin-top: -5px;
 }
@@ -2155,6 +2139,7 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 17px;
 }
@@ -2263,10 +2248,7 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1000px) {
-     .docimg{
-        width: 36px;
-    }
-.statusbtn{
+      .statusbtn{
     margin-top: -2px;
 }
     .boxcol{
@@ -2639,9 +2621,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1200px) {
-     .docimg{
-        width: 40px;
-    }
       .statusbtn{
     margin-top: 0px;
 }
@@ -2882,9 +2861,11 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
+
 .docboxicon{
     font-size: 18px;
 }
+
 .docbox p{
     font-size: 15px;
 }
@@ -2984,9 +2965,6 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1300px) {
-     .docimg{
-        width: 34px;
-    }
       .statusbtn{
       margin-top: 0px;
 }
@@ -3396,23 +3374,8 @@ font-family: fontawesome;
 }
 }
 
-@media only screen and (max-width: 700px){
-    .web{
-        display: none;
-    }
-    .mob{
-        display: block;
-        background-color: #ffffff;
-    }
-}
 
 
-@media only screen and (min-width: 701px){
-    .mob{
-        display: none;
-    }
-    .web{
-        display: block;
-    }
 
-}
+
+
