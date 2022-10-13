@@ -21,80 +21,80 @@ function LoadData(Appointmentid) {
             console.log('success');
             if (data.status && data.results != null) {
                 document.title = ' DI-Appointment ' + data.results.statusname;
-                $("#txtMemberName").html('Hi, ' + data.results.memberName);
-                $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                $("[id*='txtMemberName']").html('Hi, ' + data.results.memberName);
+                $("[id*='btnGender']").text(data.results.gender);
+                $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
                 // $("#txtAppointmentDate").attr('class','abc');
-                $("#txtAppointmentTime").html(' <img src="images/clock.png" class="boxicon">  ' + data.results.appointmentTime);
+                $("[id*='txtAppointmentTime']").html(' <img src="images/clock.png" class="boxicon">  ' + data.results.appointmentTime);
                 // $("#txtAddress").html(data.results.address + ' <img src="images/google-map.png" width="15" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')">');
-                $("#txtAddress").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
-                $("#btnAge").text(data.results.memberAge + ' Years');
-                $("#btnCaseNo").text(data.results.caseNo);
-                $("#btnCaseNoConfirmed").text(data.results.caseNo);
-                $("#btnFasting").text(data.results.isFasting);
+                $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon">Location </a>');
+                $("[id*='btnAge']").text(data.results.memberAge + ' Years');
+                $("[id*='btnCaseNo']").text(data.results.caseNo);
+                $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
+                $("[id*='btnFasting']").text(data.results.isFasting);
                 if (data.results.facilityCategoryIds != null && data.results.facilityCategoryIds != '') {
                     if (data.results.facilityCategoryIds.includes("1")) {
-                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '45 minutes');
+                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '45 minutes');
                     } else if (data.results.facilityCategoryIds.includes("2")) {
-                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '2 hours');
+                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '2 hours');
                     } else if (data.results.facilityCategoryIds.includes("2") || data.results.facilityCategoryIds.includes("2")) {
-                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '3 hours');
+                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '3 hours');
                     } else {
                         if (data.results.durationforTest == null) {
-                            $("#dvDurationForTest").hide();
+                            $("[id*='dvDurationForTest']").hide();
                         }
-                        $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
                     }
                 } else {
                     if (data.results.durationforTest == null) {
-                        $("#dvDurationForTest").hide();
+                        $("[id*='dvDurationForTest']").hide();
                     }
-                    $("#txtDurationForTest").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                    $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
                 }
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' , No payment to be ginven at center');
+                $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' , No payment to be ginven at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
-                    $("#txtPreprationForCheckup").text(data.results.preprationForCheckup);
+                    $("[id*='txtPreprationForCheckup']").text(data.results.preprationForCheckup);
                 }
-                $("#btnBreakfastCentre").text(data.results.breakfastCentre);
+                $("[id*='btnBreakfastCentre']").text(data.results.breakfastCentre);
                 if (data.results.technicianGender != null && data.results.technicianGender != '') {
-                    $("#btnTechnician").text(data.results.technicianGender);
+                    $("[id*='btnTechnician']").text(data.results.technicianGender);
                 } else if (data.results.subServiceDetails.includes('ECG')) {
-                    $("#btnTechnician").text('Female');
+                    $("[id*='btnTechnician']").text('Female');
                 }
                 else {
-                    $('#Techniciandiv').hide();
+                    $("[id*='Techniciandiv']").hide();
                 }
                 if (data.results.reportSharingwithCustomer != null && data.results.reportSharingwithCustomer != '') {
                     if (data.results.reportSharingwithCustomer.toLowerCase() == 'y') {
-                        $("#btnReportSharing").text('YES');
+                        $("[id*='btnReportSharing']").text('YES');
                     }
                     else if (data.results.reportSharingwithCustomer.toLowerCase() == 'n') {
-                        $("#btnReportSharing").text('NO');
+                        $("[id*='btnReportSharing']").text('NO');
                     }
                     else {
-                        $("#btnReportSharing").text(data.results.reportSharingwithCustomer);
+                        $("[id*='btnReportSharing']").text(data.results.reportSharingwithCustomer);
                     }
                 }
                 else {
-                    $('#divReportSharing').hide();
+                    $("[id*='divReportSharing']").hide();
                 }
 
-                $("#btnPaymentSettlementMode").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
-                $("#txtProviderName").text(data.results.providerName);
-                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
-                $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
-                $("#txtPointOfContact").text(data.results.pointOfContact);
+                $("[id*='btnPaymentSettlementMode']").html('<img src="images/wallet.png" class="boxicon1"> ' + data.results.paymentSettlementMode + ' , No payment to be tacken from customer');
+                $("[id*='txtProviderName']").text(data.results.providerName);
+                $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
+                $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
+                $("[id*='txtPointOfContact']").text(data.results.pointOfContact);
                 if (data.results.appRecivedByName != null && data.results.appRecivedByName != '') {
-                    $('#AppRecivedByName').text(data.results.appRecivedByName);
+                    $("[id*='AppRecivedByName']").text(data.results.appRecivedByName);
                 }
                 else {
-                    $('#AppRecivedByName').text(data.results.providerEmail);
+                    $("[id*='AppRecivedByName']").text(data.results.providerEmail);
                 }
-                $('#AppRecievedByMobile').text(data.results.appRecievedByMobile);
-                $('#AppRecievedByEmail').text(data.results.appRecievedByEmail);
-                $('#PocDesignation').text(data.results.pocDesignation);
-                $('#PocMobile').text(data.results.pocMobile);
-                $('#PocEmail').text(data.results.pocEmail);
+                $("[id*='AppRecievedByMobile']").text(data.results.appRecievedByMobile);
+                $("[id*='AppRecievedByEmail']").text(data.results.appRecievedByEmail);
+                $("[id*='PocDesignation']").text(data.results.pocDesignation);
+                $("[id*='PocMobile']").text(data.results.pocMobile);
+                $("[id*='PocEmail']").text(data.results.pocEmail);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
@@ -104,12 +104,12 @@ function LoadData(Appointmentid) {
                     if (providerNamearr.length > 0) {
                         intials += providerNamearr[1].charAt(0);
                     }
-                    $("#imgProviderImage").html('<div id="profileImage">' + intials + '</div>');
+                    $("[id*='imgProviderImage']").html('<div id="profileImage">' + intials + '</div>');
                 } else {
-                    $("#imgProviderImage").html('<img src="' + data.results.providerImage + '" class="img-fluid" alt="">');
+                    $("[id*='imgProviderImage']").html('<img src="' + data.results.providerImage + '" class="img-fluid" alt="">');
                 }
                 if (data.results.pointOfContact == null) {
-                    $("#dvPointOfContact").hide();
+                    $("[id*='dvPointOfContact']").hide();
                 }
                 //if (data.results.preprationForCheckup == null) {
                 ///$("#dvPreprationForCheckup").hide();
@@ -130,53 +130,53 @@ function LoadData(Appointmentid) {
                     if (package == '' || package == null) {
                         package = testArray[0];
                     }
-                    $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + package);
-                    $("#dvTestListBtn").show();
+                    $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + package);
+                    $("[id*='dvTestListBtn']").show();
 
                     $.each(testArray, function (key, value) {
-                        $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value + ' </a> </li>');
+                        $("[id*='ulTest']").append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value + ' </a> </li>');
                     });
                 } catch {
                     if (data.results.coveredTests != null && data.results.coveredTests.length > 0) {
                         if (data.results.coveredTests.length == 1) {
                             $.each(data.results.coveredTests, function (key, value) {
                                 // $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
-                                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
+                                $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + value.testName);
                             });
                         }
                         else {
-                            $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
-                            $("#dvTestListBtn").show();
+                            $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
+                            $("[id*='dvTestListBtn']").show();
 
                             $.each(data.results.coveredTests, function (key, value) {
-                                $('#ulTest').append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
+                                $("[id*='ulTest']").append('<li><i class="fa-solid fa-circle-check text-success"></i>  <a href="#">' + value.testName + ' </a> </li>');
                             });
                         }
                     }
                     else {
-                        $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
+                        $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.coveredTests[0].testName);
                     }
                 }
                 if (data.results.statusname.toLowerCase() == 'cancelled') {
-                    $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-red statusbtn');
-                    $("#dvForCancelImage").show();
+                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-red statusbtn');
+                    $("[id*='dvForCancelImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'requested') {
-                    $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
-                    $("#dvForRequestImage").show();
+                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
+                    $("[id*='dvForRequestImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'completed' || data.results.statusname.toLowerCase() == 'closed') {
-                    $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
-                    $("#dvForCompletedImage").show();
+                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
+                    $("[id*='dvForCompletedImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'confirmed') {
-                    $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                    $("#btnstatusname").attr('class', 'btn btn-orange statusbtn');
-                    $("#dvAppointmentConfirmed").show();
-                    $("#dvForConfirm").show();;
+                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-orange statusbtn');
+                    $("[id*='dvAppointmentConfirmed']").show();
+                    $("[id*='dvForConfirm']").show();;
                 }
                 else {
                     console.log("Error in status not matched");
@@ -196,13 +196,13 @@ function LoadData(Appointmentid) {
 }
 
 $(function () {
-    $("#dvTestListBtn").show();
-    $("#dvAppointmentConfirmed").hide();
-    $("#dvForConfirm").hide();
-    $("#dvForCancelImage").hide();
-    $("#dvForRequestImage").hide();
-    $("#dvForCompletedImage").hide();
-    $("#dvCaseNo").hide();
+    $("[id*='dvTestListBtn']").show();
+    $("[id*='dvAppointmentConfirmed']").hide();
+    $("[id*='dvForConfirm']").hide();
+    $("[id*='dvForCancelImage']").hide();
+    $("[id*='dvForRequestImage']").hide();
+    $("[id*='dvForCompletedImage']").hide();
+    $("[id*='dvCaseNo']").hide();
     $('body').hide();
     debugger;
     if (Appointmentid != undefined && Appointmentid != null) {
