@@ -446,8 +446,9 @@ font-family: fontawesome;
 .mt-minus{
     margin-top: -16px;
 }
+
 .email{
-        width: 12px;
+        width: 13px;
         padding-right: 2px;
     }
 .footercol{
@@ -1482,7 +1483,7 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docboxicon{
-    font-size: 10px;
+    font-size: 12px;
 }
 .docbox p{
      font-size: 12px;
@@ -3436,7 +3437,7 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 100%;
+    height: 330px;
     width: 90%;
 }
 .mt-minus{
