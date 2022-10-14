@@ -45,7 +45,7 @@ a{
         width: 15px;
     }
 .statusbtn{
-    margin-top: -10px;
+    margin-top: -6px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -159,22 +159,24 @@ line-height:26.5px ;
     background-color: #28a745;
     border-color: #28a745;
     border-radius: 20px;
+    margin: 1px;
     min-width: 54px;
     font-size: 10px;
     font-weight: 600;
-    padding: 1px 3px 1px 3px;
-    margin-top: -5px;
+    padding: 3px 4px 3px 4px;
+    margin-top: 2px;
 }
 .btn-secondary {
     color: #000000;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
     border-radius: 20px;
-    min-width: 30px;
-    font-size: 5px;
+     margin: 1px;
+    min-width: 54px;
+    font-size: 10px;
     font-weight: 600;
-    padding: 1px 3px 1px 3px;
-    margin-top: -10px;
+    padding: 3px 4px 3px 4px;
+    margin-top: 2px;
 }
 .btn-reports{
     background-color:transparent;
@@ -319,14 +321,14 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docboxicon{
-    font-size: 9px;
+    font-size: 13px;
 }
 .docbox p{
     font-size: 12px;
     line-height: 15px;
 }
 .docbox .doctname{
-font-size: 14px;
+   font-size: 14px;
     font-weight: 600;
 line-height: 10px;
 letter-spacing: 0em;
@@ -772,6 +774,7 @@ ul{
   border-radius: 26px;
   text-align: center;
   margin-top: 10px;
+  font-weight: 600;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
