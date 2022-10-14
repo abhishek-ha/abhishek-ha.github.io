@@ -384,6 +384,7 @@ ul{
   text-align: center;
   margin-top: 10px;
   font-weight: 600;
+      padding: 3px 4px 3px 4px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
@@ -778,6 +779,7 @@ ul{
   text-align: center;
   margin-top: 10px;
   font-weight: 600;
+  padding: 3px 4px 3px 4px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
