@@ -20,7 +20,7 @@ function LoadData(Appointmentid) {
                  if (statusName == 'Cancelled') {
                     $("#dvCancel").show();
                     $("#dvConfirm").hide();
-                    $("#btnstatusname").attr("class", "btn btn-red statusbtn");
+                    $("#btnstatusname").attr("class", "btn btn-orange statusbtn");
                 } else if (statusName == 'Confirmed'){
                     $("#dvCancel").hide();
                     $("#dvConfirm").show();
