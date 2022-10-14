@@ -231,7 +231,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 54px;
+    min-width: 56px;
     font-size: 10px;
     font-weight: 600;
     padding: 3px 4px 3px 4px;
@@ -286,12 +286,13 @@ line-height:26.5px ;
 .box p{
     font-size: 12px;
     line-height: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 .box h4{
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
+    margin-top: 3px;
 }
 .box1{
     padding: 10px 15px 10px 15px;
@@ -556,11 +557,13 @@ line-height:26.5px ;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
    font-weight: 600;
-    cursor: pointer;
+    margin: 1px;
+    min-width: 64px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 3px 4px 3px;
+    text-align: center;
     border-radius: 20px;
-     min-width: 35px;
-    font-size: 5px;
-    padding: 4px 3px 3px 3px; 
 }
 .btn-reports{
     background-color:transparent;
@@ -583,7 +586,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-   font-size: 11px;
+   font-size: 10px;
     font-weight: 600;
     line-height: 16px;
      min-width: 170px;
@@ -600,7 +603,7 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     line-height: 16px;
      min-width: 170px;
@@ -670,9 +673,9 @@ line-height:26.5px ;
     height: 13px;
 }
 .joinLink{
-    width: 5px;
-    font-size: 5px;
-    height: 5px;
+    width: 20px;
+    height: 17px;
+    margin-right: 5px;
 }
 .box p{
     font-size: 12px;
@@ -720,8 +723,8 @@ line-height:26.5px ;
     line-height: 14px;
 }
 .docbox .doctname{
-font-size: 12px;
-    line-height: 14px;
+font-size: 14px;
+    line-height: 16px;
 font-weight: 700;
 letter-spacing: 0em;
 text-align: left;
@@ -3437,6 +3440,7 @@ font-family: fontawesome;
 }
 }
 
+
 @media only screen and (max-width: 700px){
 .web{
         display: none;
@@ -3455,4 +3459,7 @@ font-family: fontawesome;
         display: block;
     }
 
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;
 }

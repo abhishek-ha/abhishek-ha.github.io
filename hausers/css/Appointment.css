@@ -810,8 +810,8 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 5px;
-    line-height: 8px;
+   font-size: 12px;
+    line-height: 14px;
 }
 .panel ul li a{
     color: #000000;
