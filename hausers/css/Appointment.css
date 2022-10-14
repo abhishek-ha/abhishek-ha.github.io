@@ -3426,7 +3426,7 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 300px;
+    height: 100%;
     width: 90%;
 }
 .mt-minus{
