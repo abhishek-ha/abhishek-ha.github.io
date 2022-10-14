@@ -39,7 +39,7 @@ function LoadData(Appointmentid) {
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 if (data.results.facilityCategoryIds != null && data.results.facilityCategoryIds != '') {
                     if (data.results.facilityCategoryIds.includes("1")) {
-                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '45 minutes');
+                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '45 minutes');
                     } else if (data.results.facilityCategoryIds.includes("2")) {
                         $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '2 hours');
                     } else if (data.results.facilityCategoryIds.includes("2") || data.results.facilityCategoryIds.includes("2")) {
@@ -54,7 +54,7 @@ function LoadData(Appointmentid) {
                     if (data.results.durationforTest == null) {
                         $("[id*='dvDurationForTest']").hide();
                     }
-                    $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                    $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + data.results.durationforTest);
                 }
                 $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon"> ' + data.results.paymentMode + ' , No payment to be ginven at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
