@@ -6,6 +6,25 @@
      text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
      box-sizing: border-box;
  }
+ #profileImage {
+    width: 37px;
+    height: 37px;
+    border-radius: 0%;
+    background: #512DA8;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 37px;
+    margin: 0px;
+  }
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     box-sizing: border-box;
+ }
 body {
         font-family: 'PT Sans', sans-serif;
         overflow-x:hidden!important;
@@ -22,8 +41,11 @@ a{
     font-weight: 700;
 }
 @media only screen and (max-width: 300px) {
+    .docimg{
+        width: 15px;
+    }
 .statusbtn{
-    margin-top: -15px;
+    margin-top: -6px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -36,21 +58,21 @@ a{
     margin-top: -16px;
 }
 .email{
-        width: 8px;
+        width: 12px;
         padding-right: 2px;
+        height: 11px;
     }
 .footercol{
-    padding-left: 2px!important;
-    padding-right: 2px!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
 }
 .footerlogo{
     width: 100%;
     padding-top: 16px;
 }
-
 .head{
 font-weight: 600;
-font-size: 8px;
+font-size: 14px;
 line-height: 15px;
 }
 .sub-heading{
@@ -83,19 +105,23 @@ line-height:26.5px ;
     background-position: contain;
     padding: 7px 15px 2px 15px;
     background-repeat: no-repeat;
+    margin-left: 0px;
 }
 .footer .fa{
-    font-size: 6px;
+    font-size: 12px;
+    margin-top: 2px;
 }
+
 .footer h3{
     color: #ffffff;
-    font-size: 7px;
+    font-size: 14px;
+    font-weight: 600;
     margin-bottom: 0px;
 }
 .footer p{
     color: #ffffff;
-    font-size: 4px;
-    line-height: 6px;
+    font-size: 11px;
+    line-height: 16px;
 }
 .footer ul li{
     list-style-type: none;
@@ -133,22 +159,24 @@ line-height:26.5px ;
     background-color: #28a745;
     border-color: #28a745;
     border-radius: 20px;
-    min-width: 30px;
-    font-size: 5px;
+    margin: 1px;
+    min-width: 54px;
+    font-size: 10px;
     font-weight: 600;
-    padding: 1px 3px 1px 3px;
-    margin-top: -10px;
+    padding: 3px 4px 3px 4px;
+    margin-top: 2px;
 }
 .btn-secondary {
     color: #000000;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
     border-radius: 20px;
-    min-width: 30px;
-    font-size: 5px;
+     margin: 1px;
+    min-width: 54px;
+    font-size: 10px;
     font-weight: 600;
-    padding: 1px 3px 1px 3px;
-    margin-top: -10px;
+    padding: 3px 4px 3px 4px;
+    margin-top: 2px;
 }
 .btn-reports{
     background-color:transparent;
@@ -171,11 +199,12 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 5px;
-    min-width: 80px;
+    border-radius: 20px;
+    min-width: 150px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 1px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
+    font-size: 10px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
@@ -186,11 +215,12 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 5px;
-   min-width: 80px;
+    border-radius: 20px;
+    min-width: 150px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 1px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
+    font-size: 10px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -201,10 +231,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 30px;
-    font-size: 5px;
+    min-width: 56px;
+    font-size: 10px;
     font-weight: 600;
-    padding: 1px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -226,10 +256,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-    min-width: 80px;
+    min-width: 150px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 1px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
+    font-size: 10px;
 }
 .btn-w120{
     width: 120px;
@@ -240,14 +271,12 @@ line-height:26.5px ;
     padding: 10px 15px 10px 15px;
 }
 .boxicon{
-    width: 5px;
-    font-size: 5px;
-    height: 5px;
+    width: 13px;
+    height: 13px;
 }
 .boxicon1{
-    width: 5px;
-    font-size: 5px;
-    height: 5px;
+    width: 13px;
+    height: 13px;
 }
 .joinLink{
     width: 10px;
@@ -255,36 +284,34 @@ line-height:26.5px ;
     height: 10px;
 }
 .box p{
-    font-size: 4px;
-    line-height: 5px;
-    margin-bottom: 0px;
-}
-.box .btn{
-    border-radius: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 3px;
 }
 .box h4{
-    font-size: 7px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
+    margin-top: 3px;
 }
 .box1{
-    padding-left: 15px!important;
-    padding-right: 5px!important;
+    padding: 10px 15px 10px 15px;
 }
 .box1 h3{
-    font-size: 10px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 15px;
     margin-bottom: 5px;
 }
 .box1 h4{
-   font-size: 7px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 4px;
+    margin-top: 5px;
 }
 .box1 p{
-    font-size: 4px;
-    line-height: 6px;
+    font-size: 12px;
+    line-height: 15px;
     margin-bottom: 1px;
 }
 .docbox{
@@ -295,14 +322,15 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docboxicon{
-    font-size: 9px;
+    font-size: 13px;
 }
 .docbox p{
-    font-size: 5px;
+    font-size: 12px;
+    line-height: 15px;
 }
 .docbox .doctname{
-font-size: 5px;
-font-weight: 700;
+   font-size: 14px;
+    font-weight: 600;
 line-height: 10px;
 letter-spacing: 0em;
 text-align: left;
@@ -350,28 +378,31 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 5px;
+  font-size: 12px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+      padding: 3px 4px 3px 4px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
 }
 .accordion:after {
-    content: "\f107";
-    font-family: fontawesome;
+ content: "\f107";
+ font-family: fontawesome;
   color: #ffffff;
   font-weight: 400;
   float: right;
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 2px 0px 2px;
+  padding: 1px 4px 0px 4px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 4px;
-  margin-top: 0px;
+  font-size: 7px;
+  margin-top: 1px;
 }
 .active:after {
   content: "\f106";
@@ -386,8 +417,8 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 5px;
-    line-height: 8px;
+        font-size: 12px;
+    line-height: 15px;
 }
 .panel ul li a{
     color: #000000;
@@ -399,8 +430,11 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 301px) {
+     .docimg{
+        width: 15px;
+    }
     .statusbtn{
-    margin-top: -14px;
+    margin-top: -1px;
 }
 .boxcol{
     padding-left: 2px!important;
@@ -413,12 +447,12 @@ font-family: fontawesome;
     margin-top: -16px;
 }
 .email{
-        width: 8px;
+        width: 12px;
         padding-right: 2px;
     }
 .footercol{
-    padding-left: 2px!important;
-    padding-right: 2px!important;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
 }
 .footerlogo{
     width: 100%;
@@ -426,7 +460,7 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 600;
-font-size:12px ;
+font-size:15px ;
 line-height:18px;
 }
 .sub-heading{
@@ -443,13 +477,13 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     text-align: center;
 }
 .instructbox p{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 15px;
     text-align: center;
 }
 .footer{
@@ -457,21 +491,23 @@ line-height:26.5px ;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 7px 15px 2px 15px;
+    padding: 7px 5px 2px 5px;
     background-repeat: no-repeat;
+    margin-left: 0px;
 }
 .footer .fa{
-    font-size: 7px;
+    font-size: 12px;
 }
 .footer h3{
     color: #ffffff;
-    font-size: 7px;
+    font-size: 14px;
     margin-bottom: 0px;
+    font-weight: 600;
 }
 .footer p{
     color: #ffffff;
-    font-size: 5px;
-    line-height: 6px;
+    font-size: 12px;
+    line-height: 16px;
 }
 .footer ul li{
     list-style-type: none;
@@ -508,23 +544,27 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 35px;
-    font-size: 5px;
-    cursor: pointer;
+     border-radius: 20px;
+    margin: 1px;
+    min-width: 64px;
+    font-size: 10px;
     font-weight: 600;
-   padding: 4px 3px 3px 3px;
-    border-radius: 20px;
+    padding: 4px 3px 4px 3px;
+    text-align: center;
+   
 }
 .btn-secondary {
     color: #000000;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
    font-weight: 600;
-    cursor: pointer;
+    margin: 1px;
+    min-width: 64px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 3px 4px 3px;
+    text-align: center;
     border-radius: 20px;
-     min-width: 35px;
-    font-size: 5px;
-    padding: 4px 3px 3px 3px; 
 }
 .btn-reports{
     background-color:transparent;
@@ -547,11 +587,12 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 5px;
-    min-width: 100px;
+   font-size: 10px;
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    line-height: 16px;
+     min-width: 170px;
+     text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
 .btn-orange:hover{
@@ -563,11 +604,12 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-    font-size: 5px;
-    min-width: 100px;
+    font-size: 10px;
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
+    line-height: 16px;
+     min-width: 170px;
+     text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
 .btn-red:hover{
@@ -579,10 +621,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 35px;
-    font-size: 5px;
+    min-width: 64px;
+    font-size: 10px;
     font-weight: 600;
-    padding: 4px 3px 3px 3px;
+    padding: 4px 3px 4px 3px;
+    text-align: center;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -600,14 +643,15 @@ line-height:26.5px ;
     color: #ffffff;
 }
 .btn-grey{
-    background-color: #C0C0C0;
-    color: #000000;
-    font-size: 5px;
-    min-width: 100px;
+    background-color:#C0C0C0 ;
+    color:#000000;
+    border-radius: 20px;
+    font-size: 11px;
     font-weight: 600;
-    text-transform: uppercase;
-    padding: 3px 3px 2px 3px;
-    letter-spacing: 0.5px;
+    line-height: 16px;
+     min-width: 170px;
+     text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
 }
 .btn-grey:hover{
     background-color: #0E5FC1;
@@ -622,10 +666,12 @@ line-height:26.5px ;
      padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 5px;
+    width: 13px;
+    height: 13px;
 }
 .boxicon{
-    width: 5px;
+    width: 13px;
+    height: 13px;
 }
 .joinLink{
     width: 5px;
@@ -633,35 +679,35 @@ line-height:26.5px ;
     height: 5px;
 }
 .box p{
-    font-size: 6px;
-    line-height: 8px;
+    font-size: 13px;
+    line-height: 15px;
     margin-bottom: 4px;
 }
 .box h4{
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 .box1{
     padding-left: 15px;
     padding-right: 15px;
 }
 .box1 h3{
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 17px;
+    line-height: 25px;
     margin-bottom: 5px;
 }
 .box1 h4{
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     margin-top: 4px;
 }
 .box1 p{
-    font-size: 6px;
-    line-height: 8px;
-    margin-bottom: 2px;
+   font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
 }
 .docbox{
     background-color: #ffffff;
@@ -671,15 +717,16 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docboxicon{
-    font-size: 9px;
+    font-size: 13px;
 }
 .docbox p{
-    font-size: 5px;
+    font-size: 12px;
+    line-height: 14px;
 }
 .docbox .doctname{
-font-size: 6px;
+font-size: 14px;
+    line-height: 16px;
 font-weight: 700;
-line-height: 10px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
@@ -726,10 +773,13 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 6px;
+  font-size: 12px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  padding: 3px 4px 3px 4px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
@@ -743,11 +793,11 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 4px 0px 4px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 5px;
-  margin-top: 1px;
+  font-size: 10px;
+  margin-top: 2px;
 }
 .active:after {
   content: "\f106";
@@ -762,8 +812,8 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 5px;
-    line-height: 8px;
+   font-size: 12px;
+    line-height: 14px;
 }
 .panel ul li a{
     color: #000000;
@@ -775,8 +825,11 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 350px) {
+     .docimg{
+        width: 20px;
+    }
      .statusbtn{
-    margin-top: -13px;
+    margin-top: -8px;
 }
    .boxcol{
     padding-left: 2px!important;
@@ -791,8 +844,8 @@ font-family: fontawesome;
 }
 .head{
 font-weight: 700;
-font-size:11px ;
-line-height:16px ;
+font-size:16px ;
+line-height:20px;
 }
 .sub-heading{
     font-weight: 700;
@@ -808,12 +861,12 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 18px;
     text-align: center;
 }
 .footer{
@@ -821,20 +874,22 @@ line-height:26.5px ;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 7px 15px 2px 15px;
+    padding: 7px 5px 2px 5px;
     background-repeat: no-repeat;
+    margin-left: 0px;
 }
 .footercol {
-    padding-left: 2px!important;
-    padding-right: 2px!important;
+    padding-left: 7px!important;
+    padding-right: 7px!important;
 }
 .footer .fa{
-    font-size: 7px;
+    font-size: 12px;
 }
 .footer h3{
     color: #ffffff;
-    font-size: 8px;
+    font-size: 14px;
     margin-bottom: 0px;
+    font-weight: 600;
 }
 .footer ul li{
     list-style-type: none;
@@ -849,8 +904,8 @@ line-height:26.5px ;
 }
 .footer p {
     color: #ffffff;
-    font-size: 5px;
-    line-height: 6px;
+    font-size: 12px;
+    line-height: 16px;
 }
 .footer p a{
     color: #ffffff!important;
@@ -876,20 +931,20 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    min-width: 40px;
-    font-size: 7px;
-   font-weight: 600;
-    padding: 1px 3px 1px 3px;
+   min-width: 75px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 4px 3px 4px;
     border-radius: 20px;
 }
 .btn-secondary {
     color: #000000;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
-    min-width: 40px;
-   font-size: 7px;
-   font-weight: 600;
-    padding: 1px 3px 1px 3px;
+    min-width: 75px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 4px 3px 4px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -913,11 +968,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 5px;
-    min-width: 100px;
+     font-size: 11px;
+    min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
 .btn-orange:hover{
@@ -929,11 +984,11 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 5px;
-    min-width: 100px;
+      font-size: 11px;
+    min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
 .btn-red:hover{
@@ -945,10 +1000,10 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     margin: 1px;
-    min-width: 40px;
-    font-size: 5px;
+    min-width: 75px;
+    font-size: 11px;
     font-weight: 600;
-   padding: 3px 3px 2px 3px;
+   padding: 3px 4px 3px 4px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -969,11 +1024,11 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-     font-size: 5px;
-    min-width: 100px;
+     font-size: 11px;
+    min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 2px 3px 1px 3px;
+    padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
 .btn-grey:hover{
@@ -989,10 +1044,12 @@ line-height:26.5px ;
     padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 9px;
+    width: 13px;
+    height: 13px;
 }
 .boxicon{
-    width: 8px;
+     width: 14px;
+    height: 14px;
 }
 .joinLink{
      width: 8px;
@@ -1000,14 +1057,15 @@ line-height:26.5px ;
     height: 5px;
 }
 .box p{
-    font-size: 8px;
-    line-height: 7px;
+    font-size: 12px;
+    line-height: 15px;
     margin-bottom: 6px;
 }
 .box h4{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    margin-top: 3px;
 }
 .box1{
     padding-left: 15px;
@@ -1015,19 +1073,20 @@ line-height:26.5px ;
     padding-top: 5px;
 }
 .box1 h3{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 20px;
 }
 .box1 h4{
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
-    margin-top: 1px;
+    margin-bottom: 8px;
+    margin-top: 3px;
 }
 .box1 p{
-font-size: 8px;
-margin-bottom: 6px;
+ font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 6px;
 }
 .docbox{
     background-color: #ffffff;
@@ -1039,18 +1098,17 @@ margin-bottom: 6px;
     padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
-
 .docboxicon{
-    font-size: 10px;
+    font-size: 13px;
 }
-
 .docbox p{
-    font-size: 7px;
+    font-size: 12px;
+    line-height: 15px;
     margin-bottom: 0px;
 }
 .docbox .doctname{
-font-size: 7px;
-font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
@@ -1095,10 +1153,11 @@ ul{
   width: 100%;
   border: none;
   outline: none;
-  font-size: 8px;
+  font-size: 12px;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
+  margin-top: 10px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
@@ -1112,10 +1171,10 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 3px 0px 3px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 6px;
+  font-size: 9px;
   margin-top: 1px;
 }
 .active:after {
@@ -1131,8 +1190,8 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 6px;
-    line-height: 7px;
+    font-size: 12px;
+    line-height: 15px;
 }
 .panel ul li a{
     color: #000000;
@@ -1147,23 +1206,27 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 422px) {
+        .docimg{
+        width: 20px;
+    }
      .statusbtn{
-    margin-top: -16px;
+    margin-top: -8px;
 }
-  .boxcol{
+   .boxcol{
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
 .p-10{
         padding-left: 10px!important;
     }
- .footerlogo{
+.footerlogo{
     width: 90%;
+    padding-top: 4px;
 }
 .head{
-font-weight: 600;
-font-size:12px ;
-line-height:20px ;
+font-weight: 700;
+font-size:16px ;
+line-height:20px;
 }
 .sub-heading{
     font-weight: 700;
@@ -1171,7 +1234,7 @@ font-size:20px ;
 line-height:26.5px ;
 }
 .logo{
-        width: 120px;
+        width: 110px;
     }
 .instructbox{
     background-color: #ffffff;
@@ -1179,62 +1242,51 @@ line-height:26.5px ;
     border-radius: 5px; 
 }
 .instructbox h3{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 .instructbox p{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 18px;
     text-align: center;
-}
-#accordion .panel-title a{
-    display: block;
-    padding: 15px 20px;
-    margin: 0;
-    background: #1f67bb;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    position: relative;
-    text-align: center;
-    border-radius: 20px;
 }
 .footer{
     background-color: #0e5fc1;
     background-image: url('../images/footerbg.png');
     width: 100%;
     background-position: contain;
-    padding: 15px;
+    padding: 7px 5px 2px 5px;
     background-repeat: no-repeat;
+    margin-left: 0px;
 }
 .footercol {
     padding-left: 2px!important;
     padding-right: 2px!important;
 }
 .footer .fa{
-    font-size: 7px;
+    font-size: 12px;
 }
 .footer h3{
     color: #ffffff;
-    font-size: 8px;
+    font-size: 16px;
     margin-bottom: 0px;
-}
-.footer p {
-    color: #ffffff;
-    font-size: 5px;
-    line-height: 6px;
+    font-weight: 600;
 }
 .footer ul li{
     list-style-type: none;
     float: left;
-    font-size: 14px;
+    font-size: 7px;
     color: #ffffff;
     margin: 5px;
     text-align: center;
 }
 .footer ul li a{
     color: #ffffff;
+}
+.footer p {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 15px;
 }
 .footer p a{
     color: #ffffff!important;
@@ -1260,19 +1312,22 @@ line-height:26.5px ;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
-    font-size: 6px;
-    font-weight: 400;
-    cursor: pointer;
-    padding: 3px 5px 2px 5px;
+    margin: 1px;
+    min-width: 75px;
+    font-size: 11px;
+    font-weight: 600;
+   padding: 3px 4px 3px 4px;
+    border-radius: 20px;
 }
 .btn-secondary {
     color: #000000;
     background-color: #C0C0C0;
      border-color: #C0C0C0;
-    min-width: 46px;
-    font-size: 6px;
-    font-weight: 400;
-    padding: 3px 5px 2px 5px;
+    margin: 1px;
+    min-width: 75px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 4px 3px 4px;
     border-radius: 20px;
 }
 .btn-reports{
@@ -1296,26 +1351,28 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 7px;
-    min-width: 115px;
-    font-weight: 400;
+     font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
     text-transform: uppercase;
-     padding: 3px 5px 2px 5px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
 }
 .btn-orange:hover{
     background-color:#ff790f;
-    color: #ffffff; 
+    color: #ffffff;  
 }
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 7px;
-    min-width: 115px;
-    font-weight: 400;
+     font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
     text-transform: uppercase;
-     padding: 3px 5px 2px 5px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
 }
 .btn-red:hover{
     background-color:#f42415;
@@ -1325,11 +1382,11 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 0px;
-    min-width: 46px;
-    font-size: 6px;
+    margin: 1px;
+    min-width: 75px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 3px 5px 2px 5px;
+   padding: 3px 4px 3px 4px;
 }
 .btn-primary1:hover{
     background-color:#0E5FC1 ;
@@ -1350,11 +1407,16 @@ line-height:26.5px ;
     background-color: #C0C0C0;
     color: #000000;
     border-radius: 20px;
-     font-size: 7px;
-    min-width: 115px;
-    font-weight: 400;
+     font-size: 11px;
+    min-width: 180px;
+    font-weight: 600;
     text-transform: uppercase;
-     padding: 3px 5px 2px 5px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
+}
+.btn-grey:hover{
+    background-color: #0E5FC1;
+    color: #ffffff;
 }
 .btn-w120{
     width: 120px;
@@ -1362,77 +1424,82 @@ line-height:26.5px ;
 }
 .box{
     background: rgba(12, 85, 173, 0.03);
-   padding: 10px 7px 10px 7px;
+    padding: 10px 7px 10px 7px;
 }
 .boxicon1{
-    width: 8px;
+    width: 13px;
+    height: 13px;
 }
 .boxicon{
-    width: 8px;
+     width: 14px;
+    height: 14px;
 }
 .joinLink{
      width: 8px;
-    font-size: 8px;
-    height: 8px;
+    font-size: 5px;
+    height: 5px;
 }
 .box p{
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 6px;
 }
 .box h4{
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    margin-top: 3px;
 }
 .box1{
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
 }
 .box1 h3{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
 }
 .box1 h4{
-    font-size: 9px;
+     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    margin-top: 6px;
 }
 .box1 p{
-    font-size: 8px;
-    line-height: 10px;
+  font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 6px;
 }
 .docbox{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
-    padding: 5px 6px 5px 6px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
     border: 2px solid #0E5FC1;
 }
-
 .docboxicon{
-    font-size: 14px;
+    font-size: 10px;
 }
-
 .docbox p{
-    font-size: 9px;
-    margin-bottom: 2px;
+     font-size: 12px;
+     line-height: 15px;
+    margin-bottom: 0px;
 }
 .docbox .doctname{
-font-size: 10px;
+font-size: 14px;
 font-weight: 600;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E5FC1;
-margin-bottom: 4px;
 }
 .docbox .designation{
-    font-size: 10px;
+    font-size: 7px;
     font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 0em;
-     text-align: left;
 }
 .docbox1{
     background-color: #ffffff;
@@ -1457,7 +1524,7 @@ color: #0E5FC1;
     width: 40%!important;
 }
 .w-15{
-    width: 30%!important;
+   width: 30%!important;
 }
 ul{
     padding-left: 0px;
@@ -1465,14 +1532,16 @@ ul{
 .accordion {
   background-color: #1f67bb;
   color: #ffffff;
-  padding: 3px 5px 4px 5px;
   width: 100%;
   border: none;
   outline: none;
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: 600;
   transition: 0.4s;
   border-radius: 26px;
   text-align: center;
+  margin-top: 10px;
+  padding: 3px 4px 3px 4px;
 }
 .active, .accordion:hover {
  background-color: #1f67bb;
@@ -1486,10 +1555,10 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 1px solid #ffffff;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 3px 0px 3px;
   border-radius: 15px;
   cursor: pointer;
-  font-size: 6px;
+  font-size: 9px;
   margin-top: 1px;
 }
 .active:after {
@@ -1505,19 +1574,25 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 5px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 15px;
 }
 .panel ul li a{
     color: #000000;
 }
 .consultimg{
-    padding-top: 50px;
-    height: 175px;
+    padding-top: 54px;
+    height: 180px;
+}
+.mt-minus{
+    margin-top: -16px;
 }
 }
 
 @media only screen and (min-width: 700px) {
+     .docimg{
+       width: 35px;
+    }
      .statusbtn{
     margin-top: -16px;
 }
@@ -1770,12 +1845,9 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
-
 .docboxicon{
     font-size: 10px;
 }
-
-
 .docbox p{
     font-size: 15px;
 }
@@ -1874,8 +1946,6 @@ font-family: fontawesome;
     width: 100%;
 }
 }
-
-
 @media only screen and (min-width: 750px) {
         .statusbtn{
     margin-top: -5px;
@@ -1966,7 +2036,7 @@ line-height:26.5px ;
 }
 .footer p a{
     color: #ffffff!important;
-    font-size: 8px;
+    font-size: 8.5px;
 }
 .centerlogo{
     max-width: 100px;
@@ -2026,9 +2096,9 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10px;
+    font-size: 12px;
     min-width: 165px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
      padding: 3px 6px 3px 6px;
 }
@@ -2110,7 +2180,7 @@ line-height:26.5px ;
     line-height: 16px;
 }
 .box h4{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     margin-top: 8px;
 }
@@ -2128,7 +2198,7 @@ line-height:26.5px ;
     line-height: 25px;
 }
 .box1 h4{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     margin-top: 8px;
 }
@@ -3366,7 +3436,7 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 300px;
+    height: 100%;
     width: 90%;
 }
 .mt-minus{
@@ -3375,7 +3445,25 @@ font-family: fontawesome;
 }
 
 
+@media only screen and (max-width: 700px){
+.web{
+        display: none;
+    }
+.mob{
+        display: block;
+        background-color: #ffffff;
+    }
+}
 
+@media only screen and (min-width: 701px){
+.mob{
+        display: none;
+    }
+.web{
+        display: block;
+    }
 
-
-
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;
+}
