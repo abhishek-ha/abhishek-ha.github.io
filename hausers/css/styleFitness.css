@@ -673,9 +673,9 @@ line-height:26.5px ;
     height: 13px;
 }
 .joinLink{
-    width: 20px;
-    height: 17px;
-    margin-right: 5px;
+    width: 5px;
+    font-size: 5px;
+    height: 5px;
 }
 .box p{
     font-size: 12px;
@@ -810,8 +810,8 @@ font-family: fontawesome;
   margin-bottom: 2px;
 }
 .panel ul li{
-    font-size: 5px;
-    line-height: 8px;
+   font-size: 12px;
+    line-height: 14px;
 }
 .panel ul li a{
     color: #000000;
