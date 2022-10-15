@@ -32,7 +32,7 @@ function LoadData(Appointmentid) {
                     $("#dvConfirm").show();
                     $("#btnstatusname").attr("class", "btn btn-grey statusbtn");
                     }
-                $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
+                $("#btnstatusname").text(' Appointment ' + data.results.statusname);
                 $("#txtMemberName").html('Hi, ' + data.results.memberName);
                 $("#btnGender").text(data.results.gender);
                 $("#txtAppointmentDate").html('<img src="images/calendar-black.png"  class="boxicon">  ' + data.results.appointmentDate);

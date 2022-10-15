@@ -163,22 +163,22 @@ function LoadData(Appointmentid) {
                     }
                 }
                 if (data.results.statusname.toLowerCase() == 'cancelled') {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-red statusbtn');
                     $("[id*='dvForCancelImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'requested') {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
                     $("[id*='dvForRequestImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'completed' || data.results.statusname.toLowerCase() == 'closed') {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
                     $("[id*='dvForCompletedImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'confirmed') {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-orange statusbtn');
                     $("[id*='dvAppointmentConfirmed']").show();
                     $("[id*='dvForConfirm']").show();;

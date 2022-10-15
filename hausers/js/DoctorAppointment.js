@@ -121,22 +121,22 @@ function LoadData(Appointmentid) {
                     $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.planName);
                 }
                 if (data.results.statusname.toLowerCase() == "cancelled") {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-red");
                     $("[id*='dvForCancelImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == "requested") {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-grey");
                     $("[id*='dvForRequestImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == "completed" || data.results.statusname.toLowerCase() == "closed") {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-success");
                     $("[id*='dvForCompletedImage']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == "confirmed") {
-                    $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                    $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-orange statusbtn");
                     $("[id*='dvAppointmentConfirmed']").show();
                     $("[id*='dvForConfirm']").show();;
