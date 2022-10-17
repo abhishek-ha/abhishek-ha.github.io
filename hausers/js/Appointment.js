@@ -30,9 +30,9 @@ function LoadData(Appointmentid) {
                 $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
-                if (data.results.appointmentAddress != null && data.results.appointmentAddress != ''){
+                if (data.results.appointmentAddress != null && data.results.appointmentAddress != '') {
                     $("[id*='AppointmentAddress']").text(data.results.appointmentAddress);
-                }else{
+                } else {
                     $("[id*='AppointmentAddressdiv']").hide();
                 }
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
@@ -133,7 +133,7 @@ function LoadData(Appointmentid) {
                     }
                     var testArray = data.results.subServiceDetails.split(",");
                     if (package == '' || package == null) {
-                        package = testArray[0];
+                        package = 'Lab Tests & Scans';
                     }
                     $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + package);
                     $("[id*='dvTestListBtn']").show();
