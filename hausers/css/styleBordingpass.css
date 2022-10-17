@@ -269,6 +269,7 @@ line-height:26.5px ;
 .box{
     background: rgba(12, 85, 173, 0.03);
     padding: 10px 15px 10px 15px;
+     margin-top: 8px;
 }
 .boxicon{
     width: 13px;
@@ -279,9 +280,9 @@ line-height:26.5px ;
     height: 13px;
 }
 .joinLink{
-    width: 10px;
-    font-size: 10px;
-    height: 10px;
+    width: 12px;
+    font-size: 12px;
+    height: 12px;
 }
 .box p{
     font-size: 12px;
@@ -446,8 +447,9 @@ font-family: fontawesome;
 .mt-minus{
     margin-top: -16px;
 }
+
 .email{
-        width: 12px;
+        width: 13px;
         padding-right: 2px;
     }
 .footercol{
@@ -664,6 +666,7 @@ line-height:26.5px ;
 .box{
     background: rgba(12, 85, 173, 0.03);
      padding: 10px 7px 10px 7px;
+     margin-top: 8px;
 }
 .boxicon1{
     width: 13px;
@@ -674,9 +677,9 @@ line-height:26.5px ;
     height: 13px;
 }
 .joinLink{
-    width: 5px;
-    font-size: 5px;
-    height: 5px;
+    width: 17px;
+    font-size: 17px;
+    height: 16px;
 }
 .box p{
     font-size: 13px;
@@ -1052,9 +1055,9 @@ line-height:26.5px ;
     height: 14px;
 }
 .joinLink{
-     width: 8px;
-    font-size: 5px;
-    height: 5px;
+    width: 17px;
+    font-size: 17px;
+    height: 16px;
 }
 .box p{
     font-size: 12px;
@@ -1435,9 +1438,9 @@ line-height:26.5px ;
     height: 14px;
 }
 .joinLink{
-     width: 8px;
-    font-size: 5px;
-    height: 5px;
+    width: 17px;
+    font-size: 17px;
+    height: 16px;
 }
 .box p{
     font-size: 12px;
@@ -1482,7 +1485,7 @@ line-height:26.5px ;
     border: 2px solid #0E5FC1;
 }
 .docboxicon{
-    font-size: 10px;
+    font-size: 12px;
 }
 .docbox p{
      font-size: 12px;
@@ -3436,7 +3439,7 @@ font-family: fontawesome;
 }
 .consultimg{
     padding-top: 30px;
-    height: 100%;
+    height: 330px;
     width: 90%;
 }
 .mt-minus{
@@ -3462,7 +3465,6 @@ font-family: fontawesome;
 .web{
         display: block;
     }
-
 }
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;

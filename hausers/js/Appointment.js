@@ -41,14 +41,14 @@ function LoadData(Appointmentid) {
                     if (data.results.facilityCategoryIds.includes("1")) {
                         $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '45 minutes');
                     } else if (data.results.facilityCategoryIds.includes("2")) {
-                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '2 hours');
+                        $("[id*='txtDurationForTest']").html('  ' + '2 hours');
                     } else if (data.results.facilityCategoryIds.includes("2") || data.results.facilityCategoryIds.includes("2")) {
-                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + '3 hours');
+                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '3 hours');
                     } else {
                         if (data.results.durationforTest == null) {
                             $("[id*='dvDurationForTest']").hide();
                         }
-                        $("[id*='txtDurationForTest']").html(' <i class="fa-regular fa-clock boxicon"></i> ' + data.results.durationforTest);
+                        $("[id*='txtDurationForTest']").html('<img src="images/clock.png" class="boxicon"> ' + data.results.durationforTest);
                     }
                 } else {
                     if (data.results.durationforTest == null) {
