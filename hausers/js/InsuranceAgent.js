@@ -206,6 +206,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
             },
             "prefill": { "name": Name, "email": Email, "contact": "91" + MobileNo },
             "notes": {
+                "transactionId" : TransactionId,
                 "address": "Registered Office : 1st Floor, Excom House, North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai-400 072"
             },
             "theme": { "color": "#3399cc" },
