@@ -28,13 +28,13 @@ function LoadData(Appointmentid) {
                 $("[id*='btnGender']").text(data.results.gender);
                 $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
                 $("[id*='txtAppointmentTime']").html('<img src="images/clock.png"  class="boxicon"> ' + data.results.appointmentTime);
-                $("[id*='txtAddress']").html(data.results.address + ' <img src="images/google-map.png" class="boxicon" onclick="maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"> Direction ');
+                $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 $("[id*='txtDurationForTest']").html('<img src="images/clock.png"  class="boxicon1">' + data.results.durationforTest);
-                $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode + ' , No payment to be ginven at center');
+                $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon" > ' + data.results.paymentMode + ' , No payment to be given at center');
                 if (data.results.preprationForCheckup != null && data.results.preprationForCheckup != '') {
                     $("[id*='txtPreprationForCheckup']").text(data.results.preprationForCheckup);
                 }
@@ -64,14 +64,14 @@ function LoadData(Appointmentid) {
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("[id*='txtPointOfContact']").text(data.results.pointOfContact);
                 $("[id*='PocDesignation']").text(data.results.pocDesignation);
-                if (data.results.appRecivedByName != null && data.results.appRecivedByName != '') {
-                    $("[id*='AppRecivedByName']").text(data.results.appRecivedByName);
+                if (data.results.appRecievedByEmail != null && data.results.appRecievedByEmail != '') {
+                    $("[id*='AppRecievedByEmail']").text(data.results.appRecievedByEmail);
                 }
                 else {
-                    $("[id*='AppRecivedByName']").text(data.results.providerEmail);
+                    $("[id*='AppRecievedByEmail']").text(data.results.providerEmail);
                 }
                 $("[id*='AppRecievedByMobile']").text(data.results.appRecievedByMobile);
-                $("[id*='AppRecievedByEmail']").text(data.results.appRecievedByEmail);
+                $("[id*='AppRecivedByName']").text(data.results.appRecivedByName);
                 if (data.results.apptwithDoctorDegree != null && data.results.apptwithDoctorDegree != '') {
                     $("[id*='ApptwithDoctorDegree']").text("(" + data.results.apptwithDoctorDegree + ")");
                 }
@@ -124,6 +124,8 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-red");
                     $("[id*='dvForCancelImage']").show();
+                    $("[id*='divCancelCaseNo']").show();
+                    $("[id*='divCancelCaseNo']").val(data.results.caseNo);
                 }
                 else if (data.results.statusname.toLowerCase() == "requested") {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
