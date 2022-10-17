@@ -364,7 +364,7 @@ color: #0E5FC1;
     font-weight: 600;
 }
 .w-40{
-    width: 40%!important;
+    width: 33%!important;
 }
 .w-15{
     width: 30%!important;
@@ -761,7 +761,7 @@ color: #0E5FC1;
     font-weight: 600;
 }
 .w-40{
-    width: 40%!important;
+     width: 33%!important;
 }
 .w-15{
    width: 30%!important;
@@ -1141,7 +1141,7 @@ color: #0E5FC1;
     font-weight: 600;
 }
 .w-40{
-    width: 40%!important;
+    width: 33%!important;
 }
 .w-15{
    width: 30%!important;
@@ -1524,7 +1524,7 @@ color: #0E5FC1;
     font-weight: 600;
 }
 .w-40{
-    width: 40%!important;
+    width: 33%!important;
 }
 .w-15{
    width: 30%!important;
@@ -2986,7 +2986,7 @@ ul{
    background-color: #1f67bb;
   color: #ffffff;
   cursor: pointer;
-  padding: 11px 5px 8px 5px;
+ padding: 6px 5px 4px 5px;
   width: 100%;
   border: none;
   outline: none;
@@ -3007,9 +3007,10 @@ ul{
   margin-left: 5px;
   margin-right: 5px;
   border: 2px solid #ffffff;
-  padding: 0px 6px 0px 6px;
+  padding: 0px 4px 0px 4px;
   border-radius: 15px;
   cursor: pointer;
+ font-size: 10px;
 }
 .active:after {
   content: "\f106";
@@ -3023,17 +3024,19 @@ font-family: fontawesome;
   transition: max-height 0.2s ease-out;
   margin-bottom: 2px;
 }
+.panel ul li{
+    font-size: 14px;
+    line-height: 16px;
+}
 .panel ul li a{
     font-size: 14px;
-    line-height: 16px;   
-}
-.panel ul li a{
-    color: #000000;
+    line-height: 16px;
+    color: #000000;   
 }
 .consultimg{
-    padding-top: 50px;
-       height: 300px;     
-       width: 100%;
+  padding-top: 50px;
+    height: 340px;
+    width: 90%;
 }
 }
 
@@ -3465,6 +3468,7 @@ font-family: fontawesome;
 .web{
         display: block;
     }
+
 }
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;
