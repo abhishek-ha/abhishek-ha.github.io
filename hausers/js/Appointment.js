@@ -167,7 +167,6 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").attr('class', 'btn btn-red statusbtn');
                     $("[id*='dvForCancelImage']").show();
                     $("[id*='divCancelCaseNo']").show();
-                    $("[id*='divCancelCaseNo']").val(data.results.caseNo);
                 }
                 else if (data.results.statusname.toLowerCase() == 'requested') {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
