@@ -28,7 +28,7 @@ function LoadData(Appointmentid) {
                 $("[id*='btnGender']").text(data.results.gender);
                 $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
                 $("[id*='txtAppointmentTime']").html('<img src="images/clock.png"  class="boxicon"> ' + data.results.appointmentTime);
-                $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
+                $("[id*='txtAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><br><img src="images/google-map.png" class="boxicon"> Direction </a>');
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
