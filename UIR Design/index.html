@@ -426,7 +426,7 @@ button.btn.btn-link i {
     <div class="drop_box">
      <h4 class="mb-0"> Select File here </h4>
     <p class="mb-0"> Files Supported: JPG, JPEG, PNG , PDF </p>
-   <p> Maximum number of allowed files 5 with 300 KB for each </p>
+   <p> Maximum number of allowed files 5 with 2 MB for each </p>
        <span class="btn btn-success fileinput-button">
             <span> Upload Document </span>
             <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,"><br />
@@ -647,7 +647,7 @@ function ApplyFileValidationRules(readerEvt) {
     alert(
       "The file (" +
         readerEvt.name +
-        ") does not match the upload conditions, The maximum file size for uploads should not exceed 300 KB"
+        ") does not match the upload conditions, The maximum file size for uploads should not exceed 2 MB"
     );
     e.preventDefault();
     return;
@@ -680,7 +680,7 @@ function CheckFileType(fileType) {
 
 //To check file Size according to upload conditions
 function CheckFileSize(fileSize) {
-  if (fileSize < 300000) {
+  if (fileSize < 2000000) {
     return true;
   } else {
     return false;
