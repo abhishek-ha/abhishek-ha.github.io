@@ -86,6 +86,7 @@ function LoadData(Appointmentid) {
 
                 $("[id*='btnPaymentSettlementMode']").html('<img src="images/wallet.png" class="boxicon1"> ' + 'Credit' + ' , No payment to be taken from customer');
                 $("[id*='txtProviderName']").text(data.results.providerName);
+                $("[id*='ProviderName']").text(data.results.providerName);
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("[id*='txtPointOfContact']").text(data.results.pointOfContact);
