@@ -38,12 +38,12 @@ function LoadData(Appointmentid) {
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 if (data.results.facilityCategoryIds != null && data.results.facilityCategoryIds != '') {
-                    if (data.results.facilityCategoryIds.includes("1")) {
-                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '45 minutes');
+                    if (data.results.facilityCategoryIds.includes("2") && data.results.facilityCategoryIds.includes("1")) {
+                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '3 hours');
                     } else if (data.results.facilityCategoryIds.includes("2")) {
                         $("[id*='txtDurationForTest']").html('  ' + '2 hours');
-                    } else if (data.results.facilityCategoryIds.includes("2") || data.results.facilityCategoryIds.includes("2")) {
-                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '3 hours');
+                    } else if (data.results.facilityCategoryIds.includes("1")) {
+                        $("[id*='txtDurationForTest']").html(' <img src="images/clock.png" class="boxicon"> ' + '45 minutes');
                     } else {
                         if (data.results.durationforTest == null) {
                             $("[id*='dvDurationForTest']").hide();
