@@ -3035,8 +3035,8 @@ font-family: fontawesome;
 }
 .consultimg{
   padding-top: 50px;
-    height: 340px;
-    width: 90%;
+    height: 380px;
+    width: 100%;
 }
 }
 
@@ -3441,8 +3441,8 @@ font-family: fontawesome;
     line-height: 16px;
 }
 .consultimg{
-    padding-top: 30px;
-    height: 330px;
+    padding-top: 40px;
+    height: 380px;
     width: 90%;
 }
 .mt-minus{
