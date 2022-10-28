@@ -4,7 +4,7 @@ var statusName ='';
 function LoadData(Appointmentid) {
     debugger;
     $.ajax({
-        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
