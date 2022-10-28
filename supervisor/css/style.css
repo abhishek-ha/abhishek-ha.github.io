@@ -10,11 +10,300 @@ body {
         font-family: 'Poppins', sans-serif!important;
             overflow-x:hidden!important;
             font-size: 15px;
+            background-color: #f2f6fc;
         }
 html{
      overflow-x:hidden!important;
 }
-.supervisorbox {
+
+@media only screen and (max-width: 300px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+   margin: 5%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    background-color: #ffffff;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 301px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+   margin: 5%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+      background-color: #ffffff;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 350px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+   margin: 10%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+
+
+@media only screen and  (min-width: 420px){
+    .supervisorbox1 {
+     border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+   margin: 10%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+
+
+@media only screen and  (min-width: 450px){
+    .supervisorbox1 {
     border-radius: 2px;
     border: 2px solid #000000;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
@@ -29,7 +318,7 @@ html{
     padding: 20px;
     width: 18%;
 }
-.supervisorboxinner{
+.supervisorboxinner1{
     border: 6px solid #5252a3;
     border-radius: 50%;
     width: 150px;
@@ -40,20 +329,301 @@ html{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.supervisorboxinner h3{
+.supervisorboxinner1 h3{
     font-size: 21px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 600;
 }
-.supervisorboxinner p{
+.supervisorboxinner1 p{
     font-size: 12px;
        font-weight: 500;
            line-height: 15px;
            margin-top: 5px;
 }
-.supervisorboxinner .icon{
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+
+
+
+@media only screen and (min-width: 700px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+ margin: 2%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 29%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+@media only screen and  (min-width: 750px){
+    .supervisorbox1 {
+     border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+ margin: 2%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 29%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 900px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+   min-height: 295px;
+ margin: 1%;
+   float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 18%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.redbutton{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 4px;
+    background-color: #f21e1a;
+     border: 2px solid #ffffff;
+    outline: #f21e1a solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.redbutton:hover{
+   background-color: #5252a3;
+     border: 2px solid #ffffff;
+    outline: #5252a3 solid 2px;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 1000px){
+    .supervisorbox1 {
+    border-radius: 2px;
+    border: 2px solid #000000;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    text-align: center;
+    min-height: 295px;
+    margin: 2%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 21%;
+}
+.supervisorboxinner1{
+    border: 6px solid #5252a3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.supervisorboxinner1 h3{
+    font-size: 21px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.supervisorboxinner1 p{
+    font-size: 12px;
+       font-weight: 500;
+           line-height: 15px;
+           margin-top: 5px;
+}
+.supervisorboxinner1 .icon{
     width: 30px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -82,24 +652,26 @@ html{
     text-align: center;
 }
 
+}
 
-@media and screen(max-width: 300px){
-    .supervisorbox {
-    border-radius: 2px;
+
+@media only screen and (min-width: 1100px){
+    .supervisorbox1 {
+     border-radius: 2px;
     border: 2px solid #000000;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     text-align: center;
-   min-height: 295px;
- margin: 1%;
-   float: left;
+    min-height: 295px;
+    margin: 2%;
+    float: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    width: 18%;
+    width: 21%;
 }
-.supervisorboxinner{
+.supervisorboxinner1{
     border: 6px solid #5252a3;
     border-radius: 50%;
     width: 150px;
@@ -110,20 +682,20 @@ html{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.supervisorboxinner h3{
+.supervisorboxinner1 h3{
     font-size: 21px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 600;
 }
-.supervisorboxinner p{
+.supervisorboxinner1 p{
     font-size: 12px;
        font-weight: 500;
            line-height: 15px;
            margin-top: 5px;
 }
-.supervisorboxinner .icon{
+.supervisorboxinner1 .icon{
     width: 30px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -151,14 +723,12 @@ html{
     padding: 6px 12px;
     text-align: center;
 }
-
 }
 
 
 
-
-@media and screen(min-width: 301px){
-    .supervisorbox {
+@media only screen and (min-width: 1200px){
+    .supervisorbox1 {
     border-radius: 2px;
     border: 2px solid #000000;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
@@ -173,7 +743,7 @@ html{
     padding: 20px;
     width: 18%;
 }
-.supervisorboxinner{
+.supervisorboxinner1{
     border: 6px solid #5252a3;
     border-radius: 50%;
     width: 150px;
@@ -184,20 +754,20 @@ html{
     margin-bottom: 10px;
     cursor: pointer;
 }
-.supervisorboxinner h3{
+.supervisorboxinner1 h3{
     font-size: 21px;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 600;
 }
-.supervisorboxinner p{
+.supervisorboxinner1 p{
     font-size: 12px;
        font-weight: 500;
            line-height: 15px;
            margin-top: 5px;
 }
-.supervisorboxinner .icon{
+.supervisorboxinner1 .icon{
     width: 30px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -225,154 +795,6 @@ html{
     padding: 6px 12px;
     text-align: center;
 }
-
-}
-
-
-
-@media and screen(min-width: 350px){
-    .supervisorbox {
-    border-radius: 2px;
-    border: 2px solid #000000;
-    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    text-align: center;
-   min-height: 295px;
- margin: 1%;
-   float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 18%;
-}
-.supervisorboxinner{
-    border: 6px solid #5252a3;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.supervisorboxinner h3{
-    font-size: 21px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    font-weight: 600;
-}
-.supervisorboxinner p{
-    font-size: 12px;
-       font-weight: 500;
-           line-height: 15px;
-           margin-top: 5px;
-}
-.supervisorboxinner .icon{
-    width: 30px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-.redbutton{
-    font-size: 12px;
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: 20px;
-    margin-bottom: 4px;
-    background-color: #f21e1a;
-     border: 2px solid #ffffff;
-    outline: #f21e1a solid 2px;
-    display: inline-block;
-    padding: 6px 12px;
-    text-align: center;
-    margin-top: 5px;
-
-}
-.redbutton:hover{
-   background-color: #5252a3;
-     border: 2px solid #ffffff;
-    outline: #5252a3 solid 2px;
-    display: inline-block;
-    padding: 6px 12px;
-    text-align: center;
-}
-
-}
-
-
-
-
-@media and screen(min-width: 420px){
-    .supervisorbox {
-    border-radius: 2px;
-    border: 2px solid #000000;
-    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
-    text-align: center;
-   min-height: 295px;
- margin: 1%;
-   float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 18%;
-}
-.supervisorboxinner{
-    border: 6px solid #5252a3;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.supervisorboxinner h3{
-    font-size: 21px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    font-weight: 600;
-}
-.supervisorboxinner p{
-    font-size: 12px;
-       font-weight: 500;
-           line-height: 15px;
-           margin-top: 5px;
-}
-.supervisorboxinner .icon{
-    width: 30px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-.redbutton{
-    font-size: 12px;
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: 20px;
-    margin-bottom: 4px;
-    background-color: #f21e1a;
-     border: 2px solid #ffffff;
-    outline: #f21e1a solid 2px;
-    display: inline-block;
-    padding: 6px 12px;
-    text-align: center;
-    margin-top: 5px;
-
-}
-.redbutton:hover{
-   background-color: #5252a3;
-     border: 2px solid #ffffff;
-    outline: #5252a3 solid 2px;
-    display: inline-block;
-    padding: 6px 12px;
-    text-align: center;
-}
-
 }
 
 
