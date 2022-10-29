@@ -181,12 +181,13 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
                     $("[id*='dvForCompletedImage']").show();
+                    $("[id*='divCancelCaseNo']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'confirmed') {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-orange statusbtn');
                     $("[id*='dvAppointmentConfirmed']").show();
-                    $("[id*='dvForConfirm']").show();;
+                    $("[id*='dvForConfirm']").show();
                 }
                 else {
                     console.log("Error in status not matched");
