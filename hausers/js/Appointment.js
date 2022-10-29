@@ -7,6 +7,9 @@ function maplocation(lat, long) {
 $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
 function LoadData(Appointmentid) {
     $.ajax({
         url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
@@ -31,7 +34,7 @@ function LoadData(Appointmentid) {
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
                 if (data.results.appointmentAddress != null && data.results.appointmentAddress != '') {
-                    $("[id*='AppointmentAddress']").text(data.results.appointmentAddress);
+                    $("[id*='userAppointmentAddress']").text(data.results.appointmentAddress);
                 } else {
                     $("[id*='AppointmentAddressdiv']").hide();
                 }
