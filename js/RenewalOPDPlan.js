@@ -55,7 +55,7 @@ $('body').append("<div style=' background-color: rgba(0, 0, 0, 0.5);'>" +
     "            }" +
     "" +
     "            .inputs input {" +
-    "                width: 40px;" +
+    "                width: 100px;" +
     "                height: 40px" +
     "            }" +
     "" +
@@ -98,18 +98,18 @@ $('body').append("<div style=' background-color: rgba(0, 0, 0, 0.5);'>" +
     "                                <h6>  Please enter the one time password  <span class='px-4 ml-3' onclick='closemodalcallback()'><i class='fa  fa-times' aria-hidden='true'></i></span> <br> </h6>" +
     "                                <div> <span> sent to +91******</span> <small id='mobilenotext1'>4343</small> </div>" +
     "                                <div id='otp' class='inputs d-flex flex-row justify-content-center mt-2'> <input" +
-    "                                        class='m-2 text-center form-control rounded heightwidth1' type='text' id='input1'" +
-    "                                        v-on:keyup='inputenter(1)' maxlength='1' />" +
-    "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(2)'" +
-    "                                        type='text' id='input2' maxlength='1' />" +
-    "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(3)'" +
-    "                                        type='text' id='input3' maxlength='1' />" +
-    "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(4)'" +
-    "                                        type='text' id='input4' maxlength='1' />" +
-    "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(5)'" +
-    "                                        type='text' id='input5' maxlength='1' />" +
-    "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(6)'" +
-    "                                        type='text' id='input6' maxlength='1' />" +
+    "                                        class='m-2 text-center form-control rounded heightwidth1' type='number' id='input1'" +
+    "                                        maxlength='6' />" +
+    // "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(2)'" +
+    // "                                        type='text' id='input2' maxlength='1' />" +
+    // "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(3)'" +
+    // "                                        type='text' id='input3' maxlength='1' />" +
+    // "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(4)'" +
+    // "                                        type='text' id='input4' maxlength='1' />" +
+    // "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(5)'" +
+    // "                                        type='text' id='input5' maxlength='1' />" +
+    // "                                    <input class='m-2 text-center form-control rounded heightwidth1' v-on:keyup='inputenter(6)'" +
+    // "                                        type='text' id='input6' maxlength='1' />" +
     "                                </div>" +
     "                                <span> Time Left: <small id='timer1'>00:00</small></span>" +
     "                                <span style='color: red;' id='message'></span>" +
@@ -148,35 +148,35 @@ $('body').append("<div style=' background-color: rgba(0, 0, 0, 0.5);'>" +
     "                        </div>" +
     "                    </div>" +
     "                </div></div> </div></div> <div style='display: none;' id='Lodingdivid' class='preloader1'></div>");
-try {
-    var app = new Vue({
-        el: '#otpapp',
-        methods: {
-            inputenter(id) {
-                const inputs = document.querySelectorAll('#otp > *[id]');
-                for (let i = 0; i < inputs.length; i++) {
-                    inputs[i].addEventListener('keydown', function (event) {
-                        if (event.key === "Backspace") {
-                            inputs[i].value = '';
-                            if (i !== 0) inputs[i - 1].focus();
-                        } else {
-                            if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
-                            else if (event.keyCode > 47 && event.keyCode < 58) {
-                                inputs[i].value = event.key;
-                                if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
-                            }
-                            else if (event.keyCode > 64 && event.keyCode < 91) {
-                                inputs[i].value = String.fromCharCode(event.keyCode);
-                                if (i !== inputs.length - 1) inputs[i + 1].focus();
-                                event.preventDefault();
-                            }
-                        }
-                    });
-                }
-            }
-        }
-    });
-} catch (e) { console.log(e); }
+// try {
+//     var app = new Vue({
+//         el: '#otpapp',
+//         methods: {
+//             inputenter(id) {
+//                 const inputs = document.querySelectorAll('#otp > *[id]');
+//                 for (let i = 0; i < inputs.length; i++) {
+//                     inputs[i].addEventListener('keydown', function (event) {
+//                         if (event.key === "Backspace") {
+//                             inputs[i].value = '';
+//                             if (i !== 0) inputs[i - 1].focus();
+//                         } else {
+//                             if (i === inputs.length - 1 && inputs[i].value !== '') { return true; }
+//                             else if (event.keyCode > 47 && event.keyCode < 58) {
+//                                 inputs[i].value = event.key;
+//                                 if (i !== inputs.length - 1) inputs[i + 1].focus(); event.preventDefault();
+//                             }
+//                             else if (event.keyCode > 64 && event.keyCode < 91) {
+//                                 inputs[i].value = String.fromCharCode(event.keyCode);
+//                                 if (i !== inputs.length - 1) inputs[i + 1].focus();
+//                                 event.preventDefault();
+//                             }
+//                         }
+//                     });
+//                 }
+//             }
+//         }
+//     });
+// } catch (e) { console.log(e); }
 
 function ShowLoding(flag) {
     if (flag) {
@@ -219,12 +219,13 @@ function checkSecond(sec) {
     return sec;
 }
 
-var ProductApiBaseUrl = "https://uat.healthassure.in/ProductApi/"
+var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/"
 var RenewalOPDObj = null;
 var timerFName = 'timer1';
 function RenewalOPDPlan(username, planCode, relation, couponCode, policyNo) {
     return new Promise(function (resolve, reject) {
         ShowLoding(true);
+        $('#input1').val('');
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/RenewalOPDPlanRequest",
@@ -330,11 +331,11 @@ function userClosePaymentPopup() {
 }
 
 $('#VarifyOTPbtn').click(function () {
-    var otp = '';
-    const inputs = document.querySelectorAll('#otp > *[id]');
-    for (let i = 0; i < inputs.length; i++) {
-        otp = otp + inputs[i].value;
-    }
+    var otp = document.getElementById('input1').value;
+    // const inputs = document.querySelectorAll('#otp > *[id]');
+    // for (let i = 0; i < inputs.length; i++) {
+    //     otp = otp + inputs[i].value;
+    // }
     VarifyOTPforValidation(otp, RenewalOPDObj.results.user.mobileNo).then(function (res) {
         $('#VarifyOTPbtn').html('Verified');
         $('#message').html('');

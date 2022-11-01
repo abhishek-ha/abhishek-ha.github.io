@@ -1091,7 +1091,7 @@
                 }
             })
 
-            $('#CoupanCode').on('keypress', function(e){
+            $('#CoupanCode').on('keypress', function (e) {
                 if (e.which == 13) {
                     btnApplyCoupan()
                 }
@@ -1296,9 +1296,9 @@
             $('#buyplanformdiv').hide();
             $('#Placeorder').html('Place order');
         }
-        function opningPaymentSuccesspage(PlanCode) {
+        function opningPaymentSuccesspage(PlanCode, transactionId) {
             //$('#congratulationsdiv').show();
-            OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val, PlanCode);
+            OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val, PlanCode, transactionId);
             closebuyplanpopup();
             $('#buyplanformdiv').hide();
             console.log('opningPaymentSuccesspage');
@@ -1567,8 +1567,8 @@
                 });
             });
         }
-        function OpenbuyPlanThankyouPage(PlanName, MobileNo, PlanCode) {
-            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo + "&PlanCode=" + PlanCode;
+        function OpenbuyPlanThankyouPage(PlanName, MobileNo, PlanCode, transactionId) {
+            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo + "&PlanCode=" + PlanCode + "&id=" + transactionId;
             window.open(url, "_parent");
         }
         var acc = document.getElementsByClassName("accordion");
