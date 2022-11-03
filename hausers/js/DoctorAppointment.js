@@ -9,6 +9,10 @@ $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
 
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
+
 function LoadData(Appointmentid) {
     $.ajax({
         url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
