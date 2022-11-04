@@ -43,7 +43,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId
                                         resolve(res) // Resolve promise and go to then()
                                         try {
                                             ShowLoding(false);
-                                            opningPaymentSuccesspage(PlanCode);
+                                            opningPaymentSuccesspage(PlanCode, result.results.razorpayOrder.receipt);
                                         } catch { }
                                     } else {
                                         AddLogRocket(Email, { PlanCode: PlanCode, log: "api=> api/OPDPlans/BuyOPDPlanConformationWithRazorpay, Error ", result: res });
@@ -58,7 +58,7 @@ function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId
                         },
                         "prefill": { "name": Name, "email": Email, "contact": "91" + MobileNo },
                         "notes": {
-                            "transactionId" : result.results.razorpayOrder.receipt,
+                            "transactionId": result.results.razorpayOrder.receipt,
                             "address": "Registered Office : 1st Floor, Excom House, North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai-400 072"
                         },
                         "theme": { "color": "#3399cc" },

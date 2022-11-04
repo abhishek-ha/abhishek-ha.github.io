@@ -190,7 +190,7 @@ function BuyOPDPlan(TransactionId, razorpaykey, amount, order_id, description, N
                             console.log("OPDPlansPurchaseConformation");
                             try {
                                 ShowLoding(false);
-                                opningPaymentSuccesspage();
+                                opningPaymentSuccesspage(TransactionId);
                             } catch { }
                             resolve(res) // Resolve promise and go to then()
                         } else {

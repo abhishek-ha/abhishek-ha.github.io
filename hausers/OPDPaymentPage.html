@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OPD Payment Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <style>
         table {
@@ -106,13 +106,13 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item mb-3">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 PRODUCT
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                             data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row mb-3">
                                     <div class="col-3">
@@ -142,12 +142,12 @@
                     <div class="accordion-item mb-3">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 COVERAGE
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                             data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-3">
@@ -163,12 +163,12 @@
                     <div class="accordion-item mb-3">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#cusromerDetails" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#cusromerDetails" aria-expanded="false" aria-controls="collapseThree">
                                 CUSTOMER DETAILS
                             </button>
                         </h2>
                         <div id="cusromerDetails" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                             data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div id="PanelShow">
                                     <div class="row mb-2">
@@ -285,7 +285,8 @@
                                             <h4>DOB</h4>
                                         </div>
                                         <div class="col-9">
-                                            <input type="date" class="form-control" id="txtDOB" min="1920-01-01" max="2021-01-01" required />
+                                            <input type="date" class="form-control" id="txtDOB" min="1920-01-01"
+                                                max="2021-01-01" required />
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -293,8 +294,9 @@
                                             <h4>MOBILENO</h4>
                                         </div>
                                         <div class="col-9">
-                                            <input type="number" pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
-                                                   class="form-control" id="txtMobile" />
+                                            <input type="number" pattern="[0123456789][0-9]{9}"
+                                                title="Please Enter Ten digits Number" class="form-control"
+                                                id="txtMobile" />
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -342,7 +344,8 @@
                                 <hr />
                                 <div class="row-mb-2">
                                     <div class="col-4">
-                                        <button id="btnUpdate" onclick="Editbtnclick();" class="btn btn-primary btn-lg">Edit</button>
+                                        <button id="btnUpdate" onclick="Editbtnclick();"
+                                            class="btn btn-primary btn-lg">Edit</button>
                                     </div>
                                 </div>
                             </div>
@@ -351,24 +354,27 @@
                     <div class="accordion-item mb-3">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapseTwo">
+                                data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapseTwo">
                                 PLAN AMOUNT
                             </button>
                         </h2>
                         <div id="collapsePayment" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                             data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h2>PLAN COST</h2>
-                                    <p> <span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span id="PlanAmount"></span></p>
+                                    <p> <span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+                                            id="PlanAmount"></span></p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <h2>GST (18.00%)</h2>
-                                    <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span id="ServiceTaxAmount"></span></p>
+                                    <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+                                            id="ServiceTaxAmount"></span></p>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h1>TOTAL</h1>
-                                    <h2><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span id="PlanAmountWithGST"></span>
+                                    <h2><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+                                            id="PlanAmountWithGST"></span>
                                     </h2>
                                 </div>
                             </div>
@@ -377,7 +383,7 @@
                     <div class="accordion-item mb-3">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                                 <span class="me-3">
                                     <input class="form-check-input" id="IsTCAccepted" type="checkbox">
                                 </span>
@@ -385,40 +391,49 @@
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                             data-bs-parent="#accordionExample">
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body" id="PlanTnCAsHtml">
 
                                 <ul>
                                     <li>The prices mentioned above are exclusive of taxes</li>
                                     <li>Discount on pharmacy would be applicable post wallet exhaustion</li>
                                     <li>
-                                        Flexi Diagnostic wallet- Free booking of health tests/packages up to the MRP amount of wallet
+                                        Flexi Diagnostic wallet- Free booking of health tests/packages up to the MRP
+                                        amount of wallet
                                         balance
                                     </li>
                                     <li>Tele Doctor includes GP, Ayurveda, Homeopathy & Specialists as per the plan</li>
-                                    <li>Physical Doctor consultations (GP) has to be availed on the HealthAssure network</li>
+                                    <li>Physical Doctor consultations (GP) has to be availed on the HealthAssure network
+                                    </li>
                                     <li>
-                                        All OPD services are on cashless basis and can be availed only in HA network. No reimbursements
+                                        All OPD services are on cashless basis and can be availed only in HA network. No
+                                        reimbursements
                                         are applicable
                                     </li>
                                     <li>
-                                        I have completely understood the benefits and T&C's of the HealthAssure's Ultima Grand OPD plan.
+                                        I have completely understood the benefits and T&C's of the HealthAssure's Ultima
+                                        Grand OPD plan.
                                     </li>
                                     <li>It is purely an OPD health plan and not an investment or debt product.</li>
                                     <li>
-                                        I understand & acknowledge that the plan has no implication or binding whatsoever to any other
+                                        I understand & acknowledge that the plan has no implication or binding
+                                        whatsoever to any other
                                         financial product.
                                     </li>
                                     <li>
-                                        I have not been lured /coerced into buying this plan on account of any other financial offering
+                                        I have not been lured /coerced into buying this plan on account of any other
+                                        financial offering
                                         not related to this plan.
                                     </li>
                                     <li>
-                                        I have 7 days of freelook period from the date of issuance to cancel the policy incase i am not
-                                        satisfied with the Terms & Conditions of the plan and no cancellations will be entertained post that
+                                        I have 7 days of freelook period from the date of issuance to cancel the policy
+                                        incase i am not
+                                        satisfied with the Terms & Conditions of the plan and no cancellations will be
+                                        entertained post that
                                     </li>
                                     <li>
-                                        <a href="https://live.healthassure.in/Products/files/TnC-ultima-grand-Protect.pdf">
+                                        <a
+                                            href="https://live.healthassure.in/Products/files/TnC-ultima-grand-Protect.pdf">
                                             Click here
                                         </a> to refer to detailed T&C
                                     </li>
@@ -426,14 +441,18 @@
                                         <b>Additional T&Cs for Ultima Grand Protect Variant-</b>
                                         <ul>
                                             <li>
-                                                The Hospicash insurance cover (for Adults only) is a complementary feature of the Ultima Grand
-                                                Protect plan ONLY and it is underwritten by Care Health Insurance Ltd and premium is paid by the
+                                                The Hospicash insurance cover (for Adults only) is a complementary
+                                                feature of the Ultima Grand
+                                                Protect plan ONLY and it is underwritten by Care Health Insurance Ltd
+                                                and premium is paid by the
                                                 group master policyholder.
                                             </li>
                                             <li>
-                                                I hereby declare that all proposed members are in good health and entirely free from any mental
+                                                I hereby declare that all proposed members are in good health and
+                                                entirely free from any mental
                                                 or
-                                                physical impairments or deformities, disease/condition. Also, none of the proposed members are
+                                                physical impairments or deformities, disease/condition. Also, none of
+                                                the proposed members are
                                                 habitual consumer of alcohol, tobacco, gutka or any recreational drugs.
                                             </li>
                                         </ul>
@@ -445,7 +464,7 @@
                 </div>
                 <div class="text-center my-4">
                     <button class="btn btn-secondary" disabled id="Submitpaymentbtn" data-bs-toggle="modal"
-                            style="padding: 4px 17px;" data-bs-backdrop="static" data-bs-keyboard="false">
+                        style="padding: 4px 17px;" data-bs-backdrop="static" data-bs-keyboard="false">
                         Verify Your Details
                     </button>
                 </div>
@@ -454,29 +473,32 @@
                         </div> -->
             </div>
         </div>
-        <div class="modal fade" id="OTPPopupModal" tabindex="-1" aria-labelledby="OTPPopupModalLabel" aria-hidden="true">
+        <div class="modal fade" id="OTPPopupModal" tabindex="-1" aria-labelledby="OTPPopupModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="border: 0;width: 350px;max-width: 350px;margin: 0 auto;">
                     <div class="modal-header justify-content-end" style="border: 0;">
                         <!-- <h5 class="modal-title" id="OTPPopupModalLabel"></h5> -->
                         <button type="button" class="btn btn-cancel" data-bs-dismiss="modal" aria-label="Close"
-                                style="padding: 3px 10px;font-size: 1.3rem;" onclick="Otppopupclose()" id="Otppopupclosebtn">
+                            style="padding: 3px 10px;font-size: 1.3rem;" onclick="Otppopupclose()"
+                            id="Otppopupclosebtn">
                             Cancel
                         </button>
                     </div>
                     <div class="modal-body my-3" style="padding: 5px 10px;">
                         <div>
                             <input type="text" class="form-control" placeholder="Enter OTP" maxlength="6"
-                                   style="width: 300px;max-width: 300px;margin:0 auto" id="OTP">
+                                style="width: 300px;max-width: 300px;margin:0 auto" id="OTP">
                             <span style="color: red;font-weight: bold;margin-left: 15px;" id="OtpMessage"></span>
                         </div>
                     </div>
                     <div class="modal-footer flex-column justify-content-center" style="border: 0;">
                         <button type="button" class="btn btn-primary mb-2" style="padding: 4px 13px;font-size: 1.4REM;"
-                                id="btnSubmitOTP">Verify
+                            id="btnSubmitOTP">Verify
                             OTP</button>
                         <div class="mb-3 mt-3">
-                            <a href="javascript:SendOTPforvarification()" style="font-size: 1.4rem;color:#da7422;">Resend OTP</a>
+                            <a href="javascript:SendOTPforvarification()"
+                                style="font-size: 1.4rem;color:#da7422;">Resend OTP</a>
                         </div>
                     </div>
                 </div>
@@ -485,11 +507,11 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
     <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
@@ -522,7 +544,7 @@
             var relationlist = plan.displayPlanRelation;
             if (relationlist == null || relationlist == "" || relationlist == undefined) {
                 relationlist = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
-            }else{
+            } else {
                 relationlist = JSON.parse(plan.displayPlanRelation);
             }
             var genderlist = ['Male', 'Female', 'Other'];
@@ -695,19 +717,19 @@
                 SendOTPforvarification();
             }
         });
-        function opningPaymentSuccesspage() {
-            OpenbuyPlanThankyouPage(plan.planName);
+        function opningPaymentSuccesspage(transactionId) {
+            OpenbuyPlanThankyouPage(plan.planName, transactionId);
         }
         function opningPaymentfailedpage() {
             IsotpVerified = 'F'
             IsSubmitpaymentbtnEnabled(false);
             $('#Submitpaymentbtn').text('Failed');
         }
-        function OpenbuyPlanThankyouPage(PlanName) {
+        function OpenbuyPlanThankyouPage(PlanName, transactionId) {
             IsotpVerified = 'D'
             IsSubmitpaymentbtnEnabled(false);
             $('#Submitpaymentbtn').text('Done');
-            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName;
+            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&id=" + transactionId;
             window.open(url, "_parent");
         }
         function SendOTPforvarification() {

@@ -7,9 +7,12 @@ function maplocation(lat, long) {
 $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
 function LoadData(Appointmentid) {
     $.ajax({
-        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -31,7 +34,7 @@ function LoadData(Appointmentid) {
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
                 if (data.results.appointmentAddress != null && data.results.appointmentAddress != '') {
-                    $("[id*='AppointmentAddress']").text(data.results.appointmentAddress);
+                    $("[id*='userAppointmentAddress']").text(data.results.appointmentAddress);
                 } else {
                     $("[id*='AppointmentAddressdiv']").hide();
                 }
@@ -178,12 +181,13 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
                     $("[id*='dvForCompletedImage']").show();
+                    $("[id*='divCancelCaseNo']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == 'confirmed') {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr('class', 'btn btn-orange statusbtn');
                     $("[id*='dvAppointmentConfirmed']").show();
-                    $("[id*='dvForConfirm']").show();;
+                    $("[id*='dvForConfirm']").show();
                 }
                 else {
                     console.log("Error in status not matched");

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.custom-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.custom-container .top-section{
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+.successful-icon i{
+    font-size: 40px;
+    color: #457e70;
+    border: 5px solid #457e70;
+    padding: 10px;
+    border-radius: 50%;
+}
+.congrats-heading{
+    font-size: 21px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+.congrats-heading+h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.congrats-heading+h3+p{
+    position: relative;
+    font-size: 15px;
+    margin: 5px 0 25px 0;
+}
+.congrats-heading+h3+p::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    border-radius: 40%;
+    max-width: 200px;
+    background-color: #457e70;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.details-text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-bottom: 2px solid #BCBCBC;
+    padding: 0 0 16px 0;
+}
+.details-text a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* Details Section  */
+.details-section{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #BCBCBC;
+}
+.details-section h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+.details-section p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.download-link-section{
+    margin-top: 15px;
+}
+.download-link-section > p{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.download-link{
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.download-link-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.download-link-item{
+    display: inline-block;
+}
+.download-link-item p{
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    font-weight: 500;
+}
+.download-link-item img{
+    width: 166px;
+    max-width: 166px;
+}
+
+.button-section button{
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #457e70;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 6px;
+    min-width: 166px;
+    padding: 12px 0;
+    margin: 20px 0 0 0;
+    transition: 0.4s ease-in-out;
+}
+.button-section button:hover{
+    background-color: rgb(218, 116, 34);
+}
+
+
+
+/* Social Media CSS  */
+.socialmedia-section{
+    margin-top: 20px;
+}
+.socialmedia-section h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+.social-media-links a{
+    text-decoration: none;
+    color: #457e70;
+}
+.social-media-links a i{
+    font-size: 22px;
+    margin: 10px 7px;
+}
+
+@media screen and (max-width:700px){ 
+    .custom-container{
+        width: 96%;
+    } 
+}
+@media screen and (max-width:1032px){
+    .custom-container .top-section {
+        margin-top: 19px;
+    }
+    .successful-icon i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+        padding: 10px;
+    }
+    .congrats-heading{
+        font-size: 17px;
+
+    }
+    .congrats-heading+h3{
+        font-size: 14px;
+    }
+    .congrats-heading+h3+p::before{
+        height: 1px;
+        border-radius: 0;
+
+    }
+    .download-link-item img{
+        /* width: 140px; */
+        max-width: 140px;
+    }
+}
+@media screen and (max-width:700px){
+    .congrats-heading{
+        font-size: 15px;
+    }
+    .congrats-heading+h3 {
+        font-size: 12px;
+    }
+    .congrats-heading+h3+p{
+        margin: 3px 0 14px 0;
+        font-size: 12px;
+    }
+
+    .download-link{
+        width: 250px;
+    }
+    .download-link-item img{
+        max-width: 100px;
+    } 
+    .button-section button{
+        padding: 7px 0;
+    }
+    .details-text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .details-section h3{
+        font-size: 13px;
+    }
+    .details-section p{
+        font-size: 12px;
+    }
+    .button-section button{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .download-link-section > p{
+        font-size: 12px;
+    } 
+}
+@media screen and (max-width:600px){
+    .custom-container .top-section{
+        margin-top: 10px;
+    }
+    .successful-icon i{
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .congrats-heading{
+        font-size: 14px;
+    }
+    .congrats-heading+h3{
+        font-size: 11px;
+    }
+    .details-text{
+        font-size: 11px;
+        line-height: 15px;
+        padding-bottom: 6px;
+    }
+    .details-section {
+        margin-top: 6px;
+        padding-bottom: 6px;
+    }
+    .details-section h3{
+        font-size: 12px;
+    }
+    .details-section p{
+        font-size: 11px;
+    }
+    .download-link-section{
+        margin-top: 6px;
+    }
+    .download-link-section p{
+        margin-bottom: 6px;
+        font-size: 11px;
+    }
+    .button-section button{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 11px;
+        letter-spacing: 1px;
+        padding: 5px 0;
+    }
+    .socialmedia-section h4{
+        font-size: 12px;
+    }
+    .socialmedia-section{
+        margin-top: 12px;
+    }
+}

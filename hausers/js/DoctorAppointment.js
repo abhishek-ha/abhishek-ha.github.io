@@ -9,9 +9,13 @@ $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
 
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
+
 function LoadData(Appointmentid) {
     $.ajax({
-        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -136,12 +140,13 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-success");
                     $("[id*='dvForCompletedImage']").show();
+                    $("[id*='divCancelCaseNo']").show();
                 }
                 else if (data.results.statusname.toLowerCase() == "confirmed") {
                     $("[id*='btnstatusname']").text(' Appointment ' + data.results.statusname);
                     $("[id*='btnstatusname']").attr("class", "btn btn-orange statusbtn");
                     $("[id*='dvAppointmentConfirmed']").show();
-                    $("[id*='dvForConfirm']").show();;
+                    $("[id*='dvForConfirm']").show();
                 }
                 else {
                     console.log("Error in status not matched");
