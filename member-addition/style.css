@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.form-control{
+    box-shadow: none !important;
+}
+.form-control:focus{
+    border-color: #457e70;
+}
+.form-select{
+    box-shadow: none !important;
+}
+.form-select:focus{
+    border-color: #457e70;
+}
+
+
+
+
+.add-paid-member{
+border: 0;
+color:#0667ea;
+padding: 0;
+background-color: transparent;
+font-size: 14px;
+font-weight: 600;
+}
+.add-paid-member span{
+    display: inline-block;
+    min-height: 15px;
+    min-width: 15px;
+    background: #0667ea;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.delete-row-btn{
+    background-color: #F92F60;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F92F60;
+    color: #FFFFFF;
+    position: relative;
+    top: -14px;
+    
+}
+
+.container {
+    text-align: center;
+}
+  
+.stepper-wrapper {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stepper-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: lightgray;
+    position: absolute;
+    z-index: 1;
+}
+  
+.progress {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #457e70;
+    position: absolute;
+    z-index: 3;
+    transition: width 1s;
+}
+
+.screen-indicator {
+    border-radius: 50%;
+    border: 2px solid lightgrey;
+    background-color: white;
+    padding: 4px 8px;
+    color: gray;
+    transition: border-color color;
+    transition-duration: 0.7s;
+    position: relative;
+    z-index: 10;
+}
+
+.completed {
+    border-color: #457e70;
+    color: #457e70;
+}
+
+.control-btn {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.control-btn:disabled {
+    cursor: not-allowed;
+}
+
+.control-btn:not(:disabled):hover {
+    background-color: lightgray;
+}
+
+#progress-content-section .section-content {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.section-content h2 {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.section-content p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #777;
+}
+.section-content p label{
+    font-weight: 500;
+    color: #333;
+}
+
+.section-content {
+    display: none;
+    animation: FadeinUp 0.7s ease 1 forwards;
+    transform: translateY(15px);
+    opacity: 0;
+}
+.header{
+    display: none;
+}
+
+.header.completed {
+    display: block;
+    opacity: 1;
+}
+
+.section-content.completed {
+    display: block;
+    opacity: 1;
+}
+.button-container{
+    margin: 10px 0;
+    padding: 0 13px;
+    text-align: right;
+}
+.final-container{
+    display: none;
+}
+
+.final-container button:focus{
+    box-shadow: none !important;
+
+}
+
+.success-message{
+    text-align: center;
+}
+
+.success-message img{
+    width: 50px;
+}
+.success-message p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.succes-heading{
+    font-size: 25px;
+}
+
+#addFamilyMember .modal-header{
+    padding: 9px 10px;
+    background-color: #0f5fc2;
+
+}
+#addFamilyMember .modal-header .header {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+#addFamilyMember .modal-header button{
+    font-size: 17px;
+    color: #FFFFFF;
+}
+#addFamilyMember .modal-header button:focus{
+    box-shadow: none !important;
+}
+#addFamilyMember .form-control , #addFamilyMember .form-select{
+    font-size: 14px;
+}
+
+
+
+
+#addFamilyPaidMember .modal-header{
+    padding: 9px 10px;
+    background-color: #0f5fc2;
+}
+#addFamilyPaidMember .modal-header .header {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+#addFamilyPaidMember .modal-header button{
+    font-size: 17px;
+    color: #FFFFFF;
+}
+#addFamilyPaidMember .modal-header button:focus{
+    box-shadow: none !important;
+}
+#addFamilyPaidMember .form-control , #addFamilyMember .form-select{
+    font-size: 14px;
+}
+
+
+
+
+
+.button-container{
+margin: 0;
+padding: 4px 10px;
+}
+.control-btn {
+padding: 4px 15px;
+background-color: transparent;
+font-size: 13px;
+font-weight: 500;
+letter-spacing: .5px;
+border-radius: 5px;
+cursor: pointer;
+}
+#prev-btn{
+border: 1px solid #F92F60;
+color: #F92F60;
+}
+#prev-btn:hover{
+background-color: transparent;
+}
+#next-btn{
+border: 1px solid #457e70;
+color: #457e70;
+}
+#next-btn:hover{
+background-color: transparent;
+}
+
+.add-relation-container .add-relation label{
+font-size: 14px;
+font-weight: 500;
+margin-bottom: 4px;
+}
+
+.btn-close-modal{
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+}
+
+.add-member-btn{
+    font-size: 17px;
+    font-weight: 500;
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 0;
+    color: #0667ea;
+}
+.add-member-btn:hover{
+    color: #0667ea;
+}
+.add-member-btn .add-btn{
+    border: 1px solid #0667ea;
+    font-size: 12px;
+    padding: 1px 4px;
+}
+.add-member-btn::after{
+    border: 0;
+}
+
+.member-dropdown:active{
+    background-color: #e9ecef !important;
+    color: #0667ea;
+}
