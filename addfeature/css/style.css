@@ -1645,8 +1645,8 @@ input[type=number] {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 30px;
+  width: 50px;
+  height: 26px;
 }
 .switch input { 
   opacity: 0;
@@ -1667,11 +1667,12 @@ input[type=number] {
 .slider:before {
   position: absolute;
   content: "";
-  height: 22px;
-  width: 22px;
-  left: 6px;
-  right: 6px;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  right: 2px;
   bottom: 4px;
+  top: 3px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
