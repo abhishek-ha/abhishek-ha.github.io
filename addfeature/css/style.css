@@ -4,11 +4,9 @@
 p {
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 .profile-container {
   background-color: #f4fdff;
   min-height: 100vh;
@@ -31,7 +29,6 @@ a {
     margin-left: 0;
   }
 }
-
 .profile-container__header {
   position: -webkit-sticky;
   position: sticky;
@@ -58,7 +55,6 @@ a {
   transition: 0.4s;
   border-radius: 20px;
 }
-
 .profile-container__header .header-content {
   position: absolute;
   left: 80px;
@@ -68,7 +64,6 @@ a {
   font-size: 18px;
   color: #089bab;
 }
-
 .profile-container__header .toggleNavMenu {
   position: absolute;
   left: 15px;
@@ -79,20 +74,16 @@ a {
   cursor: pointer;
   color: #089bab;
 }
-
 .profile-container__header .profile-dropdown .dropdown-toggle {
   width: 50px;
 }
-
 .profile-container__header .profile-dropdown .dropdown-toggle img {
   width: 100%;
   border-radius: 50%;
 }
-
 .profile-container__header .profile-dropdown .dropdown-toggle::after {
   display: none;
 }
-
 .profile-container__header .profile-dropdown .dropdown-menu {
   background-color: #f4fdff;
   padding: 10px;
@@ -101,31 +92,25 @@ a {
   width: 230px;
   top: 10px;
 }
-
 .profile-container__header .profile-dropdown .dropdown-menu li {
   margin-bottom: 10px;
 }
-
 .profile-container__header .profile-dropdown .dropdown-menu li a {
   font-size: 1.5rem;
   color: #707070;
 }
-
 .profile-container__header .profile-dropdown .dropdown-menu li a:active {
   color: #707070;
   background-color: transparent;
 }
-
 .sidebar-open {
   background-color: #089bab;
 }
-
 .sidebar-open .profile-container {
   margin-left: 300px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .sidebar-open .profile-container__header {
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -1043,9 +1028,9 @@ input[type=number] {
 
 .btn-primary {
   background-color: #104d89;
-  border-radius: 20px;
+  border-radius: 4px;
   border-color: #104d89;
-  padding: 8px 16px;
+  padding: 4px 16px;
   outline: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -1143,9 +1128,9 @@ input[type=number] {
 
 .btn-danger {
   background-color: #EA5455;
-  border-radius: 20px;
+  border-radius: 4px;
   border-color: #EA5455;
-  padding: 8px 16px;
+  padding: 4px 12px;
   outline: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -1190,14 +1175,29 @@ input[type=number] {
 
 .form-select,
 .form-control {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 1.4rem;
-  border-radius: 10px;
-  min-height: 40px;
-  padding: 6px 12px;
+  display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+  /*background-image: none;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+
+.mb-3{
+  margin-bottom: 1rem!important;
+}
+
+
 
 .form-select::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
@@ -1342,32 +1342,25 @@ input[type=number] {
 .form-table tbody td .case-type p {
   font-size: 1.4rem;
 }
-
 .form-table tbody td .case-type:hover {
   background-color: #707070;
 }
-
 .form-table .dropdown .dropdown-toggle {
   background-color: transparent;
   border: none;
 }
-
 .form-table .dropdown .dropdown-toggle:after {
   display: none;
 }
-
 .form-table .dropdown .dropdown-menu {
   font-size: 1.4rem;
 }
-
 .form-table a {
   color: #104d89;
 }
-
 .calling-table tbody tr:nth-child(odd) {
   background-color: #f4fdff;
 }
-
 .add_doctor_popup {
   border-radius: 20px;
   padding: 20px;
@@ -1382,7 +1375,6 @@ input[type=number] {
     margin: 10px 0 0 0;
   }
 }
-
 .nav-pills .nav-link {
   padding: 8px 15px;
   border-radius: 10px;
@@ -1447,33 +1439,27 @@ input[type=number] {
     display: none;
   }
 }
-
 .profile-sidebar__profile {
   text-align: center;
   margin-bottom: 0px;
   padding-bottom: 20px;
 }
-
 .profile-sidebar__links {
   margin-top: 40px;
 }
-
 .profile-sidebar__links ul li {
   padding-left: 5px;
   margin-bottom: 15px;
 }
-
 .profile-sidebar__links ul li a {
   color: #fff;
 }
-
 .profile-sidebar__links .accordion .accordion-item {
   margin-bottom: 10px;
   border: none;
   border-radius: 15px;
   background-color: transparent;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button {
   font-size: 1.5rem;
   color: #fff;
@@ -1482,11 +1468,9 @@ input[type=number] {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button i {
   font-size: 1.8rem;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button::after {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1495,54 +1479,44 @@ input[type=number] {
   font-family: 'FontAwesome';
   background-image: none;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button.collapsed {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button:focus {
   background-color: white;
   color: #089bab;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button:focus::after {
   -webkit-filter: brightness(1) invert(0);
           filter: brightness(1) invert(0);
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button:not(.collapsed) {
   background-color: white;
   color: #089bab;
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-button:not(.collapsed)::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-
 .profile-sidebar__links .accordion .accordion-item .accordion-collapse {
   background-color: #FFFFFF;
 }
-
 .profile-sidebar__links .accordion .accordion-item ul {
   margin: -7px 0 0 0;
   padding: 5px 0 5px 0;
   border-radius: 0 0 10px 10px;
   list-style-type: none;
 }
-
 .profile-sidebar__links .accordion .accordion-item ul li {
   padding-left: 15px;
   margin-bottom: 15px;
 }
-
 .profile-sidebar__links .accordion .accordion-item ul li a {
   font-size: 1.4rem;
   color: #707070;
 }
-
 .profile-sidebar__links .accordion .accordion-item ul li a i {
   font-size: 1.8rem;
 }
@@ -1552,7 +1526,6 @@ input[type=number] {
     margin-top: 6px;
   }
 }
-
 .upload-profile-pic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1561,7 +1534,6 @@ input[type=number] {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .upload-profile-pic .img-box img {
   border-radius: 5px;
   height: 100px;
@@ -1569,11 +1541,9 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .upload-profile-pic__btn {
   margin-left: 15px;
 }
-
 .upload-profile-pic__btn span {
   border: 1px solid #6bcff6;
   padding: 6px 12px;
@@ -1584,7 +1554,6 @@ input[type=number] {
   margin-bottom: 5px;
   display: inline-block;
 }
-
 .clinic-images .upload-box label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,18 +1664,39 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
 .col-form-label {
     padding-top: calc(0.375rem + 1px);
     padding-bottom: calc(0.375rem + 1px);
     margin-bottom: 0;
-    font-size: 14px!important;
+    font-size: 12px!important;
     line-height: 1.5;
 }
+tr td p{
+  font-size: 12px!important;
+}
 
+td{
+  font-size: 12px;
+  padding: 8px 16px!important;
+}
+.text-primary {
+  color: #0d6efd!important;
+}
 
+.f-18{
+  font-size: 18px;
+}
+th{
+   font-size: 12px!important;
+    padding: 8px 16px!important;
+}
 
+/*.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #7cdbf2;;
+    color: var(--bs-table-striped-color);
+}*/
 
-
+.width{
+  width: 22%;
+}
 /*# sourceMappingURL=style.css.map */
