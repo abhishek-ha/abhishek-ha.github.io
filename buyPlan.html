@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471644001"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         try {
             !function (f, b, e, v, n, t, s) {
@@ -970,6 +971,12 @@
     <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
     <script src="js/buyplans.min.js"></script>
     <script>
+        var clientIP = '';
+        try {
+            $.getJSON("https://api.ipify.org?format=json", function (data) {
+                clientIP = data.ip
+            })
+        } catch { }
         var responseCoupon = null;
         function AddUserForLog(email) {
             try {
@@ -1237,7 +1244,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1419,7 +1426,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
