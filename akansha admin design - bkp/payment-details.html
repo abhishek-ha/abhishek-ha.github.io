@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="top-header">
+        <div class="custom-container">
+            <div>
+                <img src="./images/toplogo.png" alt="">
+            </div>
+            <div>
+                <button class="btn btn-primary">
+                    <img src="./images/bxs_phone-call.png" style="width: 16px;" class="me-1" alt="">
+                    CONTACT US
+                </button>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+        <div class="show-notification">
+            <i class="fa-solid fa-bell"></i>
+            <span class="notification-count">10</span>
+        </div>
+    </div>
+    <!-- Main Section  -->
+    <div class="main-section">
+        <div class="sidebar-menu" id="sidebar-menu">
+            <div class="sidebar-logo">
+                <img src="./images/appleImg.png" class="img-fluid" alt="">
+            </div>
+            <div class="sidebar-header">
+                <h3 class="name">Apollo Hospitals</h3>
+                <p class="services">Pathalogy Services</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="home.html">
+                        <span class="icon">
+                            <img src="./images/homeicon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile-details.html">
+                        <span class="icon">
+                            <img src="./images/profileDetailsIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Profile Details</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="profile-verification.html">
+                        <span class="icon">
+                            <img src="./images/profileVerificationIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Profile Verification</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="infrastructure-details.html">
+                        <span class="icon">
+                            <img src="./images/infraScructureicon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Infrastructure Details</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="diagnostic-services.html">
+                        <span class="icon">
+                            <img src="./images/diagnosticIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Diagnostic Services</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="staff-details.html">
+                        <span class="icon">
+                            <img src="./images/staffDetailsIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Staff Details</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="payment-details.html">
+                        <span class="icon">
+                            <img src="./images/paymentIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Payment Details</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <span class="icon">
+                            <img src="./images/faqIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>FAQ</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="referal.html">
+                        <span class="icon">
+                            <img src="./images/referalIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span>Referal</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="login-form.html">
+                        <span class="icon">
+                            <img src="./images/logoutIcon.png" class="img-fluid" alt="">
+                        </span>
+                        <span style="color: #DD0000;">Logout</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-section">
+            <div class="card payment-details-section">
+                <div class="card-body">
+                    <div class="payment-header">
+                        <h2>Payment Details</h2>
+                        <div>
+                            <button class="btn btn-edit-outline me-3">Edit Details</button>
+                            <button class="btn btn-primary-outline">Save Details</button>
+                        </div>
+                    </div>
+                    <div class="personal-details">
+                        <div class="row gx-5">
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">Account Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">Aadhar Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">GST Registeration Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upload-gst">
+                        <h4>Upload GST Certificate</h4>
+                        <div class="d-flex align-items-center">
+                            <div class="upload-file">
+                                <div class="upload-file__btn">
+                                    <label>
+                                        <input type="file" name="" hidden>
+                                        <span><img src="./images/uploadicon.svg" alt=""> UPLOAD</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="ms-4">
+                                    <span class="upload-img me-2">GST-Certificate.png</span>
+                                    <img src="./images/removeicon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="bank-details">
+                        <h4>Bank Details</h4>
+                        <div class="row gx-5">
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">Bank Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">Branch Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mt-4">
+                                    <label class="form-label">IFSC Code</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cancelled-cheque">
+                        <h4>Cancelled Cheque</h4>
+                        <div class="row gx-5 align-items-end">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="upload-file">
+                                        <div class="upload-file__btn">
+                                            <label>
+                                                <input type="file" name="" hidden>
+                                                <span><img src="./images/uploadicon.svg" alt=""> UPLOAD</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="ms-4">
+                                            <span class="upload-img me-2">Cheque.png</span>
+                                            <img src="./images/removeicon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mt-4">
+                                    <label class="form-label">Payee Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Billing-details">
+                        <h4>Billing Details</h4>
+                        <div class="row gx-5">
+                            <div class="col-md-4">
+                                <div class="mb-4">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-4">
+                                    <label class="form-label">Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-2 text-end">
+                        <button class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
