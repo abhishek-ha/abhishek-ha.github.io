@@ -18,7 +18,8 @@
 .amsify-selection-label
 .amsify-label {
 	float: left;
-	padding: 0px 4px;
+/*	padding: 0px 4px;*/
+ padding: 4px 0px 6px 6px;
 }
 
 .amsify-selection-area
@@ -29,6 +30,7 @@
 .amsify-toggle-selection {
 	float: right;
 	cursor: pointer;
+	padding: 4px 0px 0px 2px;
 }
 .amsify-selection-area .amsify-selection-list {
 	display: none;
@@ -125,7 +127,7 @@ li.amsify-item-pad.active {
 	width: 98%;
     padding: 3px 7px;
     border: 1px solid #d4d4d4;
-    height: 26px;
+    height: 23px;
 }
 
 .amsify-selection-area
