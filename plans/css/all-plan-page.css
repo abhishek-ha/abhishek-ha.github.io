@@ -117,3 +117,9 @@ padding-top: 1rem;
 .buybutton:focus{
     outline: 0px;
 }
+
+
+.footerplan h3{
+    color: #00af87;
+    font-size: 35px;
+}
