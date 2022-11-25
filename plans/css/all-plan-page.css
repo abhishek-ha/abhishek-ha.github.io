@@ -14,7 +14,135 @@ body {
 html{
      overflow-x: hidden!important;
 }
-.top-head{
+
+.bdr-bottomright{
+ border-bottom: 1px solid #000000;
+ border-right: 1px solid #000000;
+padding-bottom: 1rem;
+padding-top: 1rem;
+}
+.bdr-bottom{
+     border-bottom: 1px solid #000000;
+     padding-bottom: 1rem;
+     padding-top: 1rem;
+}
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 17px;
+}
+
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.buybutton:focus{
+    outline: 0px;
+}
+
+
+.footerplan h3{
+    color: #00af87;
+    font-size: 35px;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+
+
+    .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 300px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 80px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 17px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 22px;
+   padding: 12px 0px 12px 0px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+     margin-left: 10px;
+    margin-right: 10px;
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+  
+}
+
+@media only screen and (min-width: 301px ){
+
+
+    .top-head{
   background-image: url('../images/top-bg.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -86,48 +214,8 @@ html{
     width: 100px;
     text-align: center;
 }
-.bdr-bottomright{
- border-bottom: 1px solid #000000;
- border-right: 1px solid #000000;
-padding-bottom: 1rem;
-padding-top: 1rem;
-}
-.bdr-bottom{
-     border-bottom: 1px solid #000000;
-     padding-bottom: 1rem;
-     padding-top: 1rem;
-}
-.buybutton{
-    font-size: 15px;
-    color: #ffffff;
-    background-color: #00af87;
-    border-radius: 5px;
-    font-weight: 600;
-    text-align: center;
-    padding: 4px 12px;
-    border: 2px solid #00af87;
-    margin-top: 17px;
-}
-
-.buybutton:hover{
-    background-color: #27569b;
-    border: 2px solid #27569b;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.buybutton:focus{
-    outline: 0px;
-}
-
-
-.footerplan h3{
-    color: #00af87;
-    font-size: 35px;
-}
 
 
 
-@media only screen and (max-width: 300px) {
-  
 }
+
