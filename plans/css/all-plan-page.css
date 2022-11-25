@@ -112,6 +112,8 @@ padding-top: 1rem;
 .buybutton:hover{
     background-color: #27569b;
     border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .buybutton:focus{
@@ -122,4 +124,10 @@ padding-top: 1rem;
 .footerplan h3{
     color: #00af87;
     font-size: 35px;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+  
 }
