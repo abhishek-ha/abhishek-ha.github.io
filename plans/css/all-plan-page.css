@@ -58,6 +58,12 @@ padding-top: 1rem;
 
 
 @media only screen and (max-width: 300px) {
+   .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
 
 
     .top-head{
@@ -97,8 +103,8 @@ padding-top: 1rem;
    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
    border-top-left-radius: 14px;
     border-top-right-radius: 14px; 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 .healthplan h2{
    color:#27569b;
@@ -112,8 +118,8 @@ padding-top: 1rem;
     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px; 
-     margin-left: 10px;
-    margin-right: 10px;
+     margin-left: 2px;
+    margin-right: 2px;
 }
 .healthplanbg h3{
     font-size: 22px;
@@ -126,6 +132,10 @@ padding-top: 1rem;
     font-size: 19px;
      color: #6d6e70;
 }
+.sectionmid {
+    text-align: center;
+}
+
 .sectionmid h3{
     font-size: 21px;
     color: #27569b;
@@ -134,15 +144,110 @@ padding-top: 1rem;
 }
 .sectionmid img{
     width: 100px;
-    text-align: center;
 }
   
 }
 
 @media only screen and (min-width: 301px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 268px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 21px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 17px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 22px;
+   padding: 12px 0px 12px 0px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+     margin-left: 2px;
+    margin-right: 2px;
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid {
+    text-align: center;
+}
+
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+}
+ 
+}
 
 
-    .top-head{
+@media only screen and (min-width: 350px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
   background-image: url('../images/top-bg.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -214,8 +319,766 @@ padding-top: 1rem;
     width: 100px;
     text-align: center;
 }
-
-
-
 }
+
+
+
+@media only screen and (min-width: 415px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+.top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 450px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+.top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+
+
+@media only screen and (min-width: 700px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid{
+    text-align: left;
+}
+.sectionmid h3{
+    font-size: 17px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 88px;
+}
+}
+
+
+
+
+@media only screen and (min-width: 750px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 340px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 70px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 50px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 14px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 25px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 17px;
+     padding: 12px 0px 12px 0px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 14px;
+     color: #6d6e70;
+}
+.sectionmid{
+    text-align: left;
+}
+.sectionmid h3{
+    font-size: 17px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 88px;
+}
+}
+
+
+
+@media only screen and (min-width: 900px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 1000px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+
+
+
+@media only screen and (min-width: 1100px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+
+@media only screen and (min-width: 1200px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
+
+
+
+@media only screen and (min-width: 1300px ){
+      .atglancehead{
+        font-weight: 600;
+       font-size: 25px;
+       text-align: center;
+       color: #58585b;
+   }
+
+ .top-head{
+  background-image: url('../images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+}
+.top-head h1{
+    color: #ffffff;
+    padding-top: 150px;
+    font-weight: 600;
+    font-size: 45px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 4px;
+    margin-top: 70px;
+    padding: 8px 14px;
+}
+.plan h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 22px;
+     color: #6d6e70;
+}
+.healthplan{
+   background-color: #c1d8f4; 
+   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+   border-top-left-radius: 14px;
+    border-top-right-radius: 14px; 
+}
+.healthplan h2{
+   color:#27569b;
+   text-align: center;
+   font-size: 30px;
+   padding: 12px 8px 12px 8px;
+   font-weight: 600;
+}
+.healthplanbg{
+    background-color: #d4e4ff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px; 
+}
+.healthplanbg h3{
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
+   font-weight: 600;
+   color: #58585b;
+}
+.healthplanbg p{
+    margin-bottom: 0px;
+    font-size: 19px;
+     color: #6d6e70;
+}
+.sectionmid h3{
+    font-size: 21px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid img{
+    width: 100px;
+    text-align: center;
+}
+}
+
 
