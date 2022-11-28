@@ -282,6 +282,8 @@ padding-top: 1rem;
 .buybutton:focus{
     outline: 0px;
 }
+
+
 .bdr-bottomright{
  border-bottom: 1px solid #000000;
  border-right: 1px solid #000000;
@@ -293,8 +295,6 @@ padding-top: 0px;
      padding-bottom: 0px;
      padding-top: 0px;
 }
-
-
 }
 
 
