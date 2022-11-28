@@ -15,7 +15,17 @@ html{
      overflow-x: hidden!important;
 }
 
-
+.bdr-bottomright{
+ border-bottom: 1px solid #000000;
+ border-right: 1px solid #000000;
+padding-bottom: 1rem;
+padding-top: 1rem;
+}
+.bdr-bottom{
+     border-bottom: 1px solid #000000;
+     padding-bottom: 1rem;
+     padding-top: 1rem;
+}
 
 
 
@@ -144,21 +154,6 @@ html{
 .buybutton:focus{
     outline: 0px;
 }
-
-.bdr-bottomright{
- border-bottom: 1px solid #000000;
- border-right: 1px solid #000000;
-padding-bottom: 1rem;
-padding-top: 1rem;
-}
-.bdr-bottom{
-     border-bottom: 1px solid #000000;
-     padding-bottom: 1rem;
-     padding-top: 1rem;
-}
-
-
-
 }
 
 @media only screen and (min-width: 301px ){
@@ -228,14 +223,14 @@ padding-top: 1rem;
     margin-right: 2px;
 }
 .healthplanbg h3{
-    font-size: 12px;
-     padding: 0px;
+    font-size: 22px;
+     padding: 20px 8px 12px 8px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 10px;
+    font-size: 19px;
      color: #6d6e70;
 }
 .sectionmid {
@@ -262,13 +257,13 @@ padding-top: 1rem;
     padding-left: 67px;
 }
 .buybutton{
-    font-size: 10px;
+    font-size: 15px;
     color: #ffffff;
     background-color: #00af87;
     border-radius: 5px;
     font-weight: 600;
     text-align: center;
-    padding: 4px 4px;
+    padding: 4px 12px;
     border: 2px solid #00af87;
     margin-top: 25px;
 }
@@ -281,17 +276,6 @@ padding-top: 1rem;
 }
 .buybutton:focus{
     outline: 0px;
-}
-.bdr-bottomright{
- border-bottom: 1px solid #000000;
- border-right: 1px solid #000000;
-padding-bottom: 0px;
-padding-top: 0px;
-}
-.bdr-bottom{
-     border-bottom: 1px solid #000000;
-     padding-bottom: 0px;
-     padding-top: 0px;
 }
 
 
