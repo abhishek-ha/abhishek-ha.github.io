@@ -44,18 +44,18 @@ padding-top: 1rem;
     background-position:center;
     background-origin: border-box;
     background-size: cover;
-    min-height: 300px;
+    min-height: 180px;
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 80px;
+    padding-top: 50px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 19px;
 }
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
-    font-size: 17px;
+    font-size: 13px;
     border-radius: 4px;
     margin-top: 20px;
     padding: 8px 14px;
@@ -65,13 +65,13 @@ padding-top: 1rem;
 }
 
 .plan h2{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #6d6e70;
     padding-top: 20px;
 }
 .plan p{
-    font-size: 17px;
+    font-size: 14px;
      color: #6d6e70;
 }
 .healthplan{
@@ -98,7 +98,7 @@ padding-top: 1rem;
     margin-right: 2px;
 }
 .healthplanbg h3{
-    font-size: 22px;
+    font-size: 18px;
      padding: 0px 0px 0px 0px;
    font-weight: 600;
    color: #58585b;
@@ -125,12 +125,12 @@ padding-top: 1rem;
 }
 .footerplan h3{
     color: #00af87;
-    font-size: 19px;
+    font-size: 17px;
     margin-bottom: 0px;
 }
 .footerplan p{
-    font-size: 20px;
-    padding-left: 67px;
+    font-size: 14px;
+    padding-left: 37%;
 }
 
 .buybutton{
@@ -170,7 +170,7 @@ padding-top: 1rem;
     background-position:center;
     background-origin: border-box;
     background-size: cover;
-    min-height: 268px;
+    min-height: 200px;
 }
 .top-head h1{
     color: #ffffff;
@@ -183,7 +183,7 @@ padding-top: 1rem;
     color: #ffffff;
     font-size: 17px;
     border-radius: 4px;
-    margin-top: 70px;
+    margin-top: 25px;
     padding: 8px 14px;
 }
 .whatsapp-btn:hover{
