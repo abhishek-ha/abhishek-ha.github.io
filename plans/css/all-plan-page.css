@@ -26,27 +26,7 @@ padding-top: 1rem;
      padding-bottom: 1rem;
      padding-top: 1rem;
 }
-.buybutton{
-    font-size: 15px;
-    color: #ffffff;
-    background-color: #00af87;
-    border-radius: 5px;
-    font-weight: 600;
-    text-align: center;
-    padding: 4px 12px;
-    border: 2px solid #00af87;
-    margin-top: 25px;
-}
 
-.buybutton:hover{
-    background-color: #27569b;
-    border: 2px solid #27569b;
-    color: #ffffff;
-    text-decoration: none;
-}
-.buybutton:focus{
-    outline: 0px;
-}
 
 
 
@@ -58,9 +38,7 @@ padding-top: 1rem;
        text-align: center;
        color: #58585b;
    }
-
-
-    .top-head{
+ .top-head{
   background-image: url('../images/top-bg.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -86,6 +64,16 @@ padding-top: 1rem;
     color: #ffffff;
 }
 
+.plan h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.plan p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 .healthplan{
    background-color: #c1d8f4; 
    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
@@ -111,13 +99,13 @@ padding-top: 1rem;
 }
 .healthplanbg h3{
     font-size: 22px;
-     padding: 20px 8px 12px 8px;
+     padding: 0px 0px 0px 0px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 14px;
      color: #6d6e70;
 }
 .sectionmid {
@@ -125,19 +113,47 @@ padding-top: 1rem;
 }
 
 .sectionmid h3{
-    font-size: 21px;
+    font-size: 16px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 100px;
+    width: 60px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 19px;
+    margin-bottom: 0px;
 }
-  
+.footerplan p{
+    font-size: 20px;
+    padding-left: 67px;
+}
+
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
 }
 
 @media only screen and (min-width: 301px ){
@@ -173,7 +189,6 @@ padding-top: 1rem;
 .whatsapp-btn:hover{
     color: #ffffff;
 }
-
 .plan h2{
     font-size: 22px;
     font-weight: 600;
@@ -221,62 +236,89 @@ padding-top: 1rem;
 .sectionmid {
     text-align: center;
 }
-
 .sectionmid h3{
-    font-size: 21px;
+    font-size: 16px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 100px;
+    width: 60px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 19px;
+    margin-bottom: 0px;
 }
- 
+.footerplan p{
+    font-size: 20px;
+    padding-left: 67px;
+}
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
+
+
 }
 
 
 @media only screen and (min-width: 350px ){
       .atglancehead{
         font-weight: 600;
-       font-size: 25px;
+       font-size: 32px;
        text-align: center;
        color: #58585b;
    }
-
- .top-head{
+.top-head{
   background-image: url('../images/top-bg.jpg');
     background-repeat: no-repeat;
     background-position:center;
     background-origin: border-box;
     background-size: cover;
-    min-height: 500px;
+    min-height: 233px;
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 50px;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 25px;
 }
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
     font-size: 17px;
     border-radius: 4px;
-    margin-top: 70px;
+    margin-top: 35px;
     padding: 8px 14px;
 }
 .plan h2{
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 600;
     color: #6d6e70;
     padding-top: 20px;
 }
 .plan p{
-    font-size: 22px;
+    font-size: 15px;
      color: #6d6e70;
 }
 .healthplan{
@@ -300,30 +342,66 @@ padding-top: 1rem;
 }
 .healthplanbg h3{
     font-size: 22px;
-     padding: 20px 8px 12px 8px;
+     padding: 0px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 15px;
      color: #6d6e70;
 }
 .sectionmid h3{
-    font-size: 21px;
+    font-size: 18px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid {
+    text-align: center;
+}
+.sectionmid h3{
+    font-size: 16px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 100px;
-    text-align: center;
+    width: 60px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
-
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 24px;
+    margin-bottom: 0px;
 }
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
+
 
 }
 
@@ -342,30 +420,30 @@ padding-top: 1rem;
     background-position:center;
     background-origin: border-box;
     background-size: cover;
-    min-height: 500px;
+    min-height: 240px;
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 70px;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 28px;
 }
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
     font-size: 17px;
     border-radius: 4px;
-    margin-top: 70px;
+    margin-top: 34px;
     padding: 8px 14px;
 }
 .plan h2{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
     color: #6d6e70;
     padding-top: 20px;
 }
 .plan p{
-    font-size: 22px;
+    font-size: 16px;
      color: #6d6e70;
 }
 .healthplan{
@@ -389,28 +467,55 @@ padding-top: 1rem;
 }
 .healthplanbg h3{
     font-size: 22px;
-     padding: 20px 8px 12px 8px;
+     padding: 0px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 15px;
      color: #6d6e70;
 }
 .sectionmid h3{
-    font-size: 21px;
+    font-size: 19px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 100px;
-    text-align: center;
+    width: 70px;
+     margin-bottom: 10px;
+    margin-top: 30px;
 }
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 27px;
+}
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
 }
 
 }
@@ -499,6 +604,32 @@ padding-top: 1rem;
     color: #00af87;
     font-size: 35px;
 }
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
+
 
 }
 
@@ -506,9 +637,9 @@ padding-top: 1rem;
 
 
 @media only screen and (min-width: 700px ){
-      .atglancehead{
+ .atglancehead{
         font-weight: 600;
-       font-size: 25px;
+       font-size: 40px;
        text-align: center;
        color: #58585b;
    }
@@ -519,30 +650,30 @@ padding-top: 1rem;
     background-position:center;
     background-origin: border-box;
     background-size: cover;
-    min-height: 500px;
+    min-height: 340px;
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 70px;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 25px;
 }
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
     font-size: 17px;
     border-radius: 4px;
-    margin-top: 70px;
+    margin-top: 50px;
     padding: 8px 14px;
 }
 .plan h2{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     color: #6d6e70;
     padding-top: 20px;
 }
 .plan p{
-    font-size: 22px;
+    font-size: 14px;
      color: #6d6e70;
 }
 .healthplan{
@@ -554,7 +685,7 @@ padding-top: 1rem;
 .healthplan h2{
    color:#27569b;
    text-align: center;
-   font-size: 30px;
+   font-size: 25px;
    padding: 12px 8px 12px 8px;
    font-weight: 600;
 }
@@ -565,32 +696,62 @@ padding-top: 1rem;
     border-bottom-right-radius: 14px; 
 }
 .healthplanbg h3{
-    font-size: 22px;
-     padding: 20px 8px 12px 8px;
+    font-size: 14px;
+     padding: 0px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 12px;
      color: #6d6e70;
 }
 .sectionmid{
     text-align: left;
 }
 .sectionmid h3{
-    font-size: 17px;
+    font-size: 14px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 88px;
+    width: 75px;
 }
 .footerplan h3{
     color: #00af87;
     font-size: 35px;
 }
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+
+.healthbenefit{
+    padding-top: 34px;
+}
+.buybutton{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 8px;
+    border: 2px solid #00af87;
+    margin-top: 9px;
+}
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
+
+
 
 }
 
@@ -600,7 +761,7 @@ padding-top: 1rem;
 @media only screen and (min-width: 750px ){
       .atglancehead{
         font-weight: 600;
-       font-size: 25px;
+       font-size: 40px;
        text-align: center;
        color: #58585b;
    }
@@ -677,13 +838,42 @@ padding-top: 1rem;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 88px;
+    width: 75px;
 }
-
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 48px;
 }
+
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+
+.healthbenefit{
+    padding-top: 34px;
+}
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 11px;
+}
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
+
 
 }
 
@@ -769,19 +959,43 @@ padding-top: 1rem;
     width: 100px;
     text-align: center;
 }
-
 .footerplan h3{
     color: #00af87;
     font-size: 35px;
 }
 
+.footerplan p{
+    font-size: 20px;
+    padding-left: 177px;
+}
+
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
+}
 }
 
 
 @media only screen and (min-width: 1000px ){
       .atglancehead{
         font-weight: 600;
-       font-size: 25px;
+       font-size: 40px;
        text-align: center;
        color: #58585b;
    }
@@ -808,13 +1022,13 @@ padding-top: 1rem;
     padding: 8px 14px;
 }
 .plan h2{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     color: #6d6e70;
     padding-top: 20px;
 }
 .plan p{
-    font-size: 22px;
+    font-size: 18px;
      color: #6d6e70;
 }
 .healthplan{
@@ -848,7 +1062,7 @@ padding-top: 1rem;
      color: #6d6e70;
 }
 .sectionmid h3{
-    font-size: 21px;
+    font-size: 19px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
@@ -857,11 +1071,33 @@ padding-top: 1rem;
     width: 100px;
     text-align: center;
 }
-
-
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 49px;
+}
+.footerplan p{
+    font-size: 25px;
+    padding-left: 48%;
+}
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 13px;
+}
+.buybutton:hover{
+    background-color: #27569b;
+    border: 2px solid #27569b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.buybutton:focus{
+    outline: 0px;
 }
 
 }
@@ -888,9 +1124,9 @@ padding-top: 1rem;
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 140px;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 36px;
 }
 .whatsapp-btn{
     background-color: #00af87;
@@ -950,12 +1186,26 @@ padding-top: 1rem;
     width: 100px;
     text-align: center;
 }
-
 .footerplan h3{
     color: #00af87;
-    font-size: 35px;
+    font-size: 49px;
+}
+.footerplan p{
+    font-size: 25px;
+    padding-left: 48%;
 }
 
+.buybutton{
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00af87;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    padding: 4px 12px;
+    border: 2px solid #00af87;
+    margin-top: 25px;
+}
 }
 
 
@@ -963,12 +1213,11 @@ padding-top: 1rem;
 @media only screen and (min-width: 1200px ){
     .atglancehead{
         font-weight: 600;
-       font-size: 25px;
+       font-size: 40px;
        text-align: center;
        color: #58585b;
    }
-
- .top-head{
+.top-head{
   background-image: url('../images/top-bg.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -1048,12 +1297,14 @@ padding-top: 1rem;
     width: 100px;
     text-align: center;
 }
-
 .footerplan h3{
     color: #00af87;
     font-size: 35px;
 }
-
+.footerplan p{
+    font-size: 30px;
+    padding-left: 17%;
+}
 }
 
 
@@ -1153,6 +1404,10 @@ padding-top: 1rem;
 .footerplan h3{
    font-size: 44px;
     margin-left: -80px;
+}
+.footerplan p{
+    font-size: 25px;
+    padding-left: 25%;
 }
 
 }
