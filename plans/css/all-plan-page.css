@@ -1391,6 +1391,10 @@ padding-top: 1rem;
     font-size: 19px;
      color: #6d6e70;
 }
+.sectionmid div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .sectionmid h3{
     font-size: 21px;
     color: #27569b;
