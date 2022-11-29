@@ -471,8 +471,8 @@ padding-top: 0px;
 .healthplan h2{
    color:#27569b;
    text-align: center;
-   font-size: 30px;
-   padding: 12px 8px 12px 8px;
+   font-size: 16px;
+   padding: 12px 8px 0px 8px;
    font-weight: 600;
 }
 .healthplanbg{
@@ -482,46 +482,57 @@ padding-top: 0px;
     border-bottom-right-radius: 14px; 
 }
 .healthplanbg h3{
-    font-size: 22px;
-     padding: 0px;
+    font-size: 7px;
+     padding: 12px 8px 0px 0px;
    font-weight: 600;
    color: #58585b;
 }
 .healthplanbg p{
     margin-bottom: 0px;
-    font-size: 15px;
+    font-size: 5px;
      color: #6d6e70;
 }
 .sectionmid h3{
-    font-size: 19px;
+    font-size: 18px;
+    color: #27569b;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.sectionmid {
+    text-align: center;
+}
+.sectionmid h3{
+    font-size: 16px;
     color: #27569b;
     font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
-    width: 70px;
-     margin-bottom: 10px;
+    width: 60px;
+    margin-bottom: 10px;
     margin-top: 30px;
 }
 .footerplan h3{
     color: #00af87;
-    font-size: 27px;
+    font-size: 24px;
+    margin-bottom: 0px;
 }
 .footerplan p{
     font-size: 20px;
     padding-left: 177px;
 }
-
 .buybutton{
-    font-size: 15px;
+    font-size: 8px;
     color: #ffffff;
     background-color: #00af87;
     border-radius: 5px;
     font-weight: 600;
     text-align: center;
-    padding: 4px 12px;
+    padding: 4px 0px;
     border: 2px solid #00af87;
-    margin-top: 25px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 50px;
 }
 
 .buybutton:hover{
