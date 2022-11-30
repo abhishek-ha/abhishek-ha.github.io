@@ -400,6 +400,14 @@ a:hover{
                 width:140px;
                 padding: 20px 20px 0px 02px;
             }
+
+.colorcodelogo{
+                width:170px;
+                padding: 8px 20px 0px 02px;
+
+}
+
+
  .item3 {
                 font-size: 85%;
                  margin: 8px;
@@ -422,8 +430,15 @@ a:hover{
 @media only screen and (min-width:601px){
       .logo1 {
                 width:200px;
-                padding: 20px 20px 0px 02px;
+                padding: 20px 20px 0px 2px;
             }
+
+.colorcodelogo{
+         width:250px;
+         padding: 20px 20px 0px 2px;
+
+}
+
 }
 @media only screen and (max-width:800px){
    .offer{
