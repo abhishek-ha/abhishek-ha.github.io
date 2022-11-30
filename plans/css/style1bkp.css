@@ -3319,7 +3319,35 @@ div {
     padding-right:15px;
 }
 .sodexo-plan{
+     background-color:#fcfcfc;
      height:467px;
+    padding:6px;
+    margin:auto;
+    border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.sodexo-plan .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .service{
     background-color:#fcfcfc;
@@ -3333,17 +3361,97 @@ div {
   width:310px;
 }
 .sodexo-plan1{
+     background-color:#fcfcfc;
     height:490px;
-   
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
-
-
+.sodexo-plan1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .sodexo-plan2{
+     background-color:#fcfcfc;
     height:421px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.sodexo-plan2 .buybtn{
+   background-color:#199cda;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan2.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .cashkaro{
+     background-color:#fcfcfc;
     height:421px;
-    
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .accenturehead{
     color: #0f5fc2;
@@ -3459,9 +3567,56 @@ div {
    margin-top:10px;
    width:310px;
 }
+.service4 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:2px;
+}
+.service4 .buybtn:hover{
+   background-color:#026cf0;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+}
 .sodexo-plan2{
-  height:634px;
-  margin-top:70px;
+     background-color:#fcfcfc;
+    height:634px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:70px;
+}
+.sodexo-plan2 .buybtn{
+   background-color:#199cda;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan2.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .sodexo-plan2img{
     margin-top: -1554px;
@@ -3470,10 +3625,36 @@ div {
     position:relative;
 }
 .cashkaro{
-   height:569px;
-   margin-top:70px;
+     background-color:#fcfcfc;
+    height:569px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:70px;
 }
-
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .cashkaroimg{
     margin-top: -1271px;
     margin-left: auto;
@@ -3496,48 +3677,419 @@ div {
     padding-top:40px;
 }
 .service-fiassure{
+     background-color:#fcfcfc;
     height:622px;
-   
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:100%;
+}
+.service-fiassure .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.service-fiassure .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .fitassure-nonhospicash{
+     background-color:#fcfcfc;
     height:601px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:100%;
+}
+.fitassure-nonhospicash .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-nonhospicash .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .gromo{
-    height:557px;   
+     background-color:#fcfcfc;
+    height:557px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:100%;
+}
+.gromo .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.gromo .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .service-sod{
+     background-color:#fcfcfc;
     height:513px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.service-sod .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.service-sod.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .tradeindia{
    height:615px;
   }
+
 .ebix{
-   height:584px; 
+     background-color:#fcfcfc;
+    height:584px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .ebix1{
+     background-color:#fcfcfc;
     height:566px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.tradeindia .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala{
+     background-color:#fcfcfc;
     height:666px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala1{
-   height:666px;
-  }
+     background-color:#fcfcfc;
+    height:666px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala2{
-  height:666px;   
+     background-color:#fcfcfc;
+    height:666px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala2 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala2 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .merabima{
- height:630px;  
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .merabima1{
-height:630px;   
+     background-color:#fcfcfc;
+    height:630px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .accenture{
-  height:579px;
-   
+     background-color:#fcfcfc;
+    height:579px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.accenture .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.accenture.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .fitassure-plus{
- height:668px;  
+     background-color:#fcfcfc;
+    height:668px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:120px;
+}
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .fitassure-plusimg{
     margin-top: -1180px;
@@ -3549,15 +4101,97 @@ height:630px;
     padding-top:10px;
 }
 .mediyaar{
-  height:344px;
+     background-color:#fcfcfc;
+    height:344px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
-
+.mediyaar .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.mediyaar .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .mediyaar1{
-    height:344px; 
+     background-color:#fcfcfc;
+    height:344px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.mediyaar1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.mediyaar1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .colorcode-lite{
-    height:479px;
-    
+     background-color:#fcfcfc;
+      height:479px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.colorcode-lite .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.colorcode-lite .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 }
 
@@ -4179,38 +4813,315 @@ height:630px;
 .service-sod{
      background-color:#fcfcfc;
     height:513px;
- 
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.service-sod .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.service-sod.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .ebix{
+     background-color:#fcfcfc;
     height:542px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .ebix1{
-   height:524px; 
+     background-color:#fcfcfc;
+    height:524px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala{
+     background-color:#fcfcfc;
     height:546px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala1{
-    height:546px;  
+     background-color:#fcfcfc;
+    height:546px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala2{
-    height:546px;  
+     background-color:#fcfcfc;
+    height:546px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala2 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala2 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .merabima{
+     background-color:#fcfcfc;
     height:568px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .merabima1{
-  height:589px; 
+     background-color:#fcfcfc;
+   height:589px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .tradeindia{
    height:601px;
    }
 .accenture{
-   height:579px;
-  }
+     background-color:#fcfcfc;
+    height:579px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.accenture .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.accenture.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .fitassure-plus{
-   height:680px;
-   margin-top:120px;
+     background-color:#fcfcfc;
+    height:680px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:120px;
+}
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .fitassure-plusimg{
     margin-top: -1525px;
@@ -5389,25 +6300,170 @@ height:630px;
    color:#ffffff!important;
 }
 .ebix{
+     background-color:#fcfcfc;
     height:521px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
-.ebix1{
- height:521px;
+.ebix .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 
+.ebix1{
+     background-color:#fcfcfc;
+    height:521px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .brandingwala{
-    height:522px;   
+     background-color:#fcfcfc;
+    height:522px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala1{
+     background-color:#fcfcfc;
     height:546px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala2{
-   height:546px;
+     background-color:#fcfcfc;
+    height:546px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.brandingwala2 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.brandingwala2 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .merabima{
      background-color:#fcfcfc;
     height:567px;
- margin-top:10px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
 .merabima .buybtn{
    background-color:#0f5fc2;
@@ -8983,7 +10039,22 @@ height:630px;
     border-radius:10px;
     margin-top:10px;
 }
-
+.gromo .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
 .mediyaar{
    height:320px;
 }
@@ -9356,11 +10427,36 @@ height:630px;
 }
 
 .fitassure-plus{
+     background-color:#fcfcfc;
     height:490px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
     margin-top:110px;
 }
-
-
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .fitassure-plusimg{
     margin-top: -1148px;
     margin-left:23%;
@@ -9368,10 +10464,66 @@ height:630px;
     position:relative;
 }
 .ebix{
-    height:437px; 
+     background-color:#fcfcfc;
+    height:437px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .ebix1{
+     background-color:#fcfcfc;
      height:437px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.ebix1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.ebix1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .brandingwala{
     height:567px;   
@@ -14484,13 +15636,60 @@ height:630px;
     border-radius:10px;
     margin-top:10px;
 }
-
+.sodexo-plan1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .stamp{
     padding-top:150px;
 }
 .sodexo-plan2{
- height:477px;
-   margin-top:50px;
+     background-color:#fcfcfc;
+    height:477px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:50px;
+}
+.sodexo-plan2 .buybtn{
+   background-color:#199cda;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan2.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .sodexo-plan2img{
     margin-top: -1196px;
@@ -14500,8 +15699,35 @@ height:630px;
     width: 63%;
 }
 .fitassure-plus{
-   height:537px;
-   margin-top:10px;
+     background-color:#fcfcfc;
+    height:537px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.fitassure-plus .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.fitassure-plus .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .fitassure-plusimg{
     margin-top:-1203px;
@@ -14511,8 +15737,35 @@ height:630px;
     width:63%;
 }
 .cashkaro{
+     background-color:#fcfcfc;
     height:498px;
-   margin-top:50px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:50px;
+}
+.cashkaro .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.cashkaro .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .cashkaroimg{
     margin-top: -1173px;
@@ -16374,8 +17627,35 @@ height:630px;
     margin-top:2px;
 }
 .sodexo-plan2{
+     background-color:#fcfcfc;
     height:450px;
-   
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+}
+.sodexo-plan2 .buybtn{
+   background-color:#199cda;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.sodexo-plan2.buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
 }
 .sodexo-plan2img{
     margin-top: -1174px;
@@ -16385,16 +17665,68 @@ height:630px;
     width: 63%;
 }
 .merabima{
+     background-color:#fcfcfc;
     height:614px;
-   
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
-
+.merabima .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 
 .merabima1{
-  height:614px;
+     background-color:#fcfcfc;
+    height:614px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
 }
-
-
+.merabima1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.merabima1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 }
 
 @media only screen and (min-width: 1900px){
@@ -16480,10 +17812,32 @@ height:630px;
      background-size: 100%;
 }
 .service-fiassure{
-     height:459px;
-      width:514px;
+     background-color:#fcfcfc;
+      height:459px;
+    padding:6px;
+    margin:auto;
+    border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:514px;
 }
-
+.service-fiassure .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
 }
 
 
