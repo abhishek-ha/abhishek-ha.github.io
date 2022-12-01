@@ -11927,20 +11927,6 @@ li {
     background-color: #292728;
     padding: 50px 0px 0px 0px;
 }
-._one h2{
-    font-size: 39px;
-    color: #45d878;
-    font-weight: 700;
-}
-._one h3{
-    color: #fff;
-    font-size: 39px;
-    font-size: 500;
-}
-.addr,  .phone, .mail{
-    color: white;
-    column-gap: 20px;
-}
 .footer-16 p{
     font-size: 15px;
 }
@@ -12572,10 +12558,7 @@ li {
     font-size: 39px;
     font-size: 500;
 }
-.addr,  .phone, .mail{
-    color: white;
-    column-gap: 20px;
-}
+
 .footer-16 p{
     font-size: 15px;
 }
@@ -13427,17 +13410,12 @@ li {
 }
 ._one h2{
     font-size: 39px;
-    color: #45d878;
     font-weight: 700;
 }
 ._one h3{
     color: #fff;
     font-size: 39px;
     font-size: 500;
-}
-.addr,  .phone, .mail{
-    color: white;
-    column-gap: 20px;
 }
 .footer-16 p{
     font-size: 15px;
@@ -13535,10 +13513,7 @@ li {
     font-size: 39px;
     font-size: 500;
 }
-.addr,  .phone, .mail{
-    color: white;
-    column-gap: 20px;
-}
+
 .footer-16 p{
     font-size: 15px;
 }
@@ -13606,10 +13581,7 @@ li {
     font-size: 39px!important;
     font-size: 500;
 }
-.addr,  .phone, .mail{
-    color: white;
-    column-gap: 20px;
-}
+
 .footer-16 p{
     font-size: 15px;
 }
