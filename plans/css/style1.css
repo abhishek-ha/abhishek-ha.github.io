@@ -8042,19 +8042,19 @@ height:321px;
    height:639px; 
 }
 .mediyaar{
- height:561px;
+ height:651px;
 }
 .mediyaar1{
-   height:561px;
+    height:651px;
 }
 .colorcode-lite{
       height:477px;
 }
 .relaxbuddy{
-  height:341px;  
+   height:651px; 
 }
 .relaxbuddy1{
-height:341px;
+ height:651px;
    
 }
 
@@ -8591,23 +8591,20 @@ height:341px;
    height:473px;
 }
 .mediyaar{
-  height:561px;  
+  height:652px;  
 }
 .mediyaar1{
-    height:561px; 
+     height:652px; 
+}
+.relaxbuddy{
+height:652px;  
+}
+.relaxbuddy1{
+height:652px;   
 }
 .colorcode-lite {
     height: 477px;
 }
-.relaxbuddy{
-  height:341px;  
-}
-.relaxbuddy1{
-height:341px;
-   
-}
-
-
 }
 
 @media only screen and (min-width: 950px){
@@ -9071,21 +9068,20 @@ height:341px;
   height:613px;
  }
 .mediyaar{
-   height:533px;
+   height:580px;
 }
 .mediyaar1{
-    height:533px; 
+    height:580px;
+}
+.relaxbuddy{
+  height:580px; 
+}
+.relaxbuddy1{
+  height:580px;
+   
 }
 .colorcode-lite {
     height: 470px;
-}
-
-.relaxbuddy{
- height:335px;  
-}
-.relaxbuddy1{
-height:335px;
-   
 }
 
 }
@@ -9460,20 +9456,19 @@ height:335px;
   height:612px; 
 }
 .mediyaar{
-   height:533px; 
+   height:581px; 
 }
 .mediyaar1{
-   height:533px; 
-}
-.colorcode-lite {
-    height: 470px;
+   height:581px; 
 }
 .relaxbuddy{
- height:335px;  
+ height:586px;  
 }
 .relaxbuddy1{
-height:335px;
-   
+ height:581px;  
+}
+.colorcode-lite {
+    height: 686px;
 }
 
 }
@@ -9781,22 +9776,21 @@ height:335px;
     height:475px;
     width:500px;
 }
-
 .mediyaar{
-   height:490px;  
+   height:539px;  
 }
 .mediyaar1{
-    height:490px; 
-}
-.colorcode-lite {
-    height: 470px;
+    height:539px; 
 }
 .relaxbuddy{
- height:335px;  
+  height:539px;  
 }
 .relaxbuddy1{
-height:335px;
+  height:539px; 
    
+}
+.colorcode-lite {
+    height: 602px;
 }
 
 }
@@ -10144,22 +10138,22 @@ height:335px;
 }
 
 .mediyaar{
-    height:477px;
+    height:526px;
 }
-
 .mediyaar1{
-    height:477px;
-}
-.colorcode-lite {
-    height: 456px;
+     height:526px;
 }
 .relaxbuddy{
- height:322px;  
+   height:526px; 
 }
 .relaxbuddy1{
-height:322px;
+  height:526px;
    
 }
+.colorcode-lite {
+    height: 589px;
+}
+
 .relaxtop{
     padding-top: 23px;
 }
