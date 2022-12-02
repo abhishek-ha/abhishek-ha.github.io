@@ -218,7 +218,7 @@
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 95px;
+    padding-top: 120px;
     font-weight: 600;
     font-size: 17px;
     padding-left: 40%;
@@ -354,16 +354,11 @@
     min-height: 340px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 70px;
+       color: #ffffff;
+    padding-top: 170px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 28px;
 }
-.whatsapp-btn{
-    margin-top: 50px;
-    padding: 8px 14px;
-}
-
 .sectionmid{
     text-align: left;
 }
@@ -423,15 +418,10 @@
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 70px;
+    padding-top: 170px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 31px;
 }
-.whatsapp-btn{
-    margin-top: 50px;
-    padding: 8px 14px;
-}
-
 .sectionmid{
     text-align: left;
 }
@@ -553,7 +543,7 @@
     color: #ffffff;
     padding-top: 90px;
     font-weight: 600;
-    font-size: 33px;
+    font-size: 43px;
 }
 .whatsapp-btn{
     margin-top: 70px;

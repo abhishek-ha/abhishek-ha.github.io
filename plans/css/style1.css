@@ -2300,7 +2300,7 @@ div {
 .whatsapp-btn{
        background-color: #00af87;
     color: #ffffff;
-    font-size: 10px!important;
+    font-size: 10px;
     border-radius: 4px;
     margin-top: 5px;
     padding: 2px 12px;
@@ -3847,7 +3847,7 @@ height:630px;
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
-    font-size: 11px!important;
+    font-size: 11px;
     border-radius: 4px;
     margin-top: 5px;
     padding: 2px 12px;
@@ -6768,45 +6768,13 @@ height:321px;
       width: 344px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
     margin-top:22px;
 }
 .service4{
-  padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    height:464px;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
-   margin-top:10px;
-    width:344px;
+ height:464px;
+   width:344px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:23px;
 }
 .service-fiassure{
@@ -6814,14 +6782,8 @@ height:321px;
    width:410px;
 }
 .accenture{
-     background-color:#fcfcfc;
     height:496px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+  
 }
 
 .fitassure-nonhospicash{
@@ -6996,35 +6958,12 @@ height:321px;
     width:30%;
 }
 .service-fiassure{
-     background-color:#fcfcfc;
     height: 456px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+  
 }
 .fitassure-nonhospicash{
     height: 456px;
 }
-
 .gromo{
    height: 456px;  
 }
@@ -7453,13 +7392,13 @@ height:652px;
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
-    font-size: 17px!important;
+    font-size: 15px;
     border-radius: 4px;
-    margin-top: 52px;
-    padding: 6px 12px;
+    margin-top: 5px;
+    padding: 2px 12px;
     font-weight: 500;
     border:2px solid #00af87;
-    margin-left: 59%;
+    margin-left: 58%;
 }
 
 
@@ -8122,13 +8061,8 @@ height:652px;
     position:relative;
 }
 .service{
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:365px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:10px;
+  min-height:365px;
+
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -8179,28 +8113,10 @@ height:652px;
     margin-top: 33px;
 }
 .service3{
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
+ 
    min-height:373px;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
     margin-top:83px;
 }
 .service4{
@@ -9557,14 +9473,7 @@ height:652px;
     width: 63%;
 }
 .service{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
    height:516px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:10px;
 }
 .service .buybtn{
    background-color:#0f5fc2;
@@ -11134,7 +11043,6 @@ li {
     text-align: left;
     padding-top: 15px;
 }
-
 }
 
 
@@ -11180,7 +11088,6 @@ li {
     text-align: left;
     padding-top: 15px;
 }
-
 }
 
 @media only screen and (min-width: 800px){
