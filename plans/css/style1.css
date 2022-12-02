@@ -47,7 +47,6 @@ a:hover{
         width: 190px;
         padding-top:20px;
         }
-
 .logo-text p{
     font-size: 13px;
     font-weight: 600;
@@ -432,7 +431,6 @@ a:hover{
                 width:200px;
                 padding: 20px 20px 0px 2px;
             }
-
 .colorcodelogo{
          width:250px;
          padding: 20px 20px 0px 2px;
@@ -2220,12 +2218,12 @@ div {
 
 .allplan{
      background-color:#fcfcfc;
-    height:500px;
+    height:493px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
+    border-radius: 0px 0px 10px 10px;
     margin-top:10px;
 }
 .allplan .buybtn{
@@ -2239,7 +2237,7 @@ div {
     text-transform:none;
     padding-top:8px;
     padding-bottom:8px;
-    font-size:19px;
+    font-size:17px;
     margin-right:9px;
     cursor:pointer;
     margin-top:2px;
@@ -2253,7 +2251,9 @@ div {
 .offercard{
     background-color: #457e70;
     color: #ffffff;
-    margin-bottom: -20px;  
+    margin-bottom: -12px;  
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .offercard p{
     font-size: 14px;
@@ -2263,6 +2263,15 @@ div {
         text-align: center;
 
 }
+.allplanspace2 {
+    padding-top: 45px;
+}
+
+.allplanspace3 {
+    padding-top: 45px;
+}
+
+
 }
 
 
@@ -2291,10 +2300,11 @@ div {
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
-    font-size: 17px!important;
+    font-size: 16px!important;
     border-radius: 4px;
     margin-top: 25px;
     padding: 8px 14px;
+    font-weight: 500;
 }
 .whatsapp-btn:hover{
     color: #ffffff;
@@ -3406,8 +3416,12 @@ div {
       margin-bottom: 0px;
         text-align: center;
 }
-
-
+.allplanspace2 {
+    padding-top: 58px;
+}
+.allplanspace3 {
+    padding-top: 45px;
+}
 }
 
 
@@ -3816,7 +3830,13 @@ height:630px;
  height:653px;   
 }
 .allplan{
-   height:413px;
+   height:435px;
+}
+.allplanspace2 {
+    padding-top: 74px;
+}
+.allplanspace3 {
+    padding-top: 50px;
 }
 .relaxtop{
     padding-top: 6px;
@@ -3986,36 +4006,10 @@ height:630px;
     padding-right:15px;
 }
 .sodexo-plan{
-     background-color:#fcfcfc;
-     height:467px;
-    padding:6px;
-    margin:auto;
-    border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+    height:467px; 
 }
-.sodexo-plan .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
+
+
 .service{
     background-color:#fcfcfc;
     padding:6px;
@@ -4028,97 +4022,13 @@ height:630px;
   width:310px;
 }
 .sodexo-plan1{
-     background-color:#fcfcfc;
-    height:490px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.sodexo-plan1 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan1 .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+ height:490px;
 }
 .sodexo-plan2{
-     background-color:#fcfcfc;
     height:421px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.sodexo-plan2 .buybtn{
-   background-color:#199cda;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan2.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
 }
 .cashkaro{
-     background-color:#fcfcfc;
-    height:421px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.cashkaro .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.cashkaro.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+   height:421px;
 }
 .accenturehead{
     color: #0f5fc2;
@@ -4292,65 +4202,14 @@ height:630px;
     padding-top:40px;
 }
 .service-fiassure{
-     background-color:#fcfcfc;
     height:551px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
     width:100%;
-}
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.service-fiassure .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
-.fitassure-nonhospicash{
-     background-color:#fcfcfc;
-    height:601px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-    width:100%;
-}
-.fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
 }
 
+.fitassure-nonhospicash{
+  height:601px;
+ width:100%;
+}
 .gromo{
      background-color:#fcfcfc;
     height:557px;
@@ -4406,7 +4265,6 @@ height:630px;
 .mediyaar1{
    height:653px;  
 }
-
 .relaxbuddy{
   height:615px;  
 }
@@ -4416,8 +4274,15 @@ height:630px;
 .colorcode-lite{
     height:737px;
 }
-
-
+.allplan{
+   height:415px;
+}
+.allplanspace2 {
+    padding-top: 75px;
+}
+.allplanspace3 {
+    padding-top: 30px;
+}
 }
 
 @media only screen and (min-width: 390px){
@@ -4453,6 +4318,15 @@ height:630px;
 }
 .colorcode-lite{
     height:695px;
+}
+.allplan{
+   height:415px;
+}
+.allplanspace2 {
+    padding-top: 81px;
+}
+.allplanspace3 {
+    padding-top: 54px;
 }
 
 }
@@ -4515,7 +4389,6 @@ height:630px;
      text-align: left!important;
 }
 .head {
-            font-family: 'Poppins', sans-serif;
             font-size: 30px;
         }
 .banner{
@@ -4529,7 +4402,6 @@ height:630px;
 .startassu{
     font-size:28px;
      font-weight:700!important;
-    font-family: 'Poppins', sans-serif;
     padding-top:10px;
     line-height: 33px;
 }
@@ -4632,13 +4504,11 @@ height:630px;
 .accenturehead{
     color: #0f5fc2;
     font-weight: 700!important;
-    font-family: 'Poppins', sans-serif;
     font-size: 19.4px;
 }
 .cashkarohead1{
     color: #0f5fc2;
     font-weight: 700!important;
-    font-family: 'Poppins', sans-serif;
     font-size: 21px;
 }
 .fitassure-plus{
@@ -4683,19 +4553,6 @@ height:630px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:12px;
 }
 .service3{
@@ -4739,12 +4596,10 @@ height:630px;
     height:622px;
     width:373px;
 }
-
 .fitassure-nonhospicash{
   height:601px;
   width:373px;
 }
-
 .gromo{
     height:552px;
     width:373px;
@@ -4765,8 +4620,17 @@ height:630px;
    height:693px;
 }
 .allplan{
-   height:413px;
+   height:405px;
 }
+.allplanspace2 {
+    padding-top: 81px;
+}
+.allplanspace3 {
+    padding-top: 44px;
+}
+
+
+
 
 }
 
@@ -5170,6 +5034,17 @@ height:630px;
 .relaxtop{
     padding-top: 6px;
 }
+
+.allplan{
+   height:383px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 22px;
+}
+
 }
 
 
@@ -5511,6 +5386,16 @@ height:321px;
    
 }
 
+.allplan{
+   height:383px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 22px;
+}
+
 
 }
 
@@ -5598,35 +5483,7 @@ height:321px;
     padding-top:10px;
 }
 .sodexo-plan{
-     background-color:#fcfcfc;
-    height:415px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.sodexo-plan .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+   height:415px; 
 }
 .service-sod{
     height:490px;
@@ -5658,12 +5515,10 @@ height:545px;
 
 .accenture{
   height:493px;
- 
 }
 
 .fitassure-plus{
     height:526px;
- 
 }
 .fitassure-plusimg {
     margin-top: -1223px;
@@ -5681,27 +5536,7 @@ height:545px;
     border-radius:10px;
     margin-top:80px;
 }
-.sodexo-plan2 .buybtn{
-   background-color:#199cda;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan2.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
+
 .sodexo-plan2img{
     margin-top: -1357px;
     margin-left:10%;
@@ -5709,35 +5544,8 @@ height:545px;
     position:relative;
 }
 .cashkaro{
-     background-color:#fcfcfc;
     height:472px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
     margin-top:80px;
-}
-.cashkaro .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.cashkaro .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
 }
 .cashkaroimg{
     margin-top: -1108px;
@@ -5748,7 +5556,6 @@ height:545px;
 .stamp{
     padding-top:40px;
 }
-
 .thead1{
     letter-spacing: 1px;
     font-size:18px;
@@ -5794,53 +5601,13 @@ height:545px;
   margin-top:10px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:5px;
 }
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
-}
+
 .service2{
-  padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:365px;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-     margin-top:10px;
+ min-height:365px;
 }
-.service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:10px;
-}
+
 .service3{
    padding:6px;
     margin:auto;
@@ -5906,7 +5673,15 @@ height:545px;
 .tradeindia{
     height:615px;  
 }
-
+.allplan{
+   height:383px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 43px;
+}
 }
 
 
@@ -6159,32 +5934,10 @@ height:545px;
     margin-top:39px;
 }
 .fitassure-nonhospicash{
-     background-color:#fcfcfc;
    height:580px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
     width:385px;
 }
-.fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
+
 }
 
 
@@ -6304,6 +6057,17 @@ height:545px;
 .colorcode-lite{
       height:455px;
 }
+
+.allplan{
+   height:383px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 43px;
+}
+
 }
 
 
@@ -6418,42 +6182,17 @@ height:545px;
     position:relative;
 }
 .service-fiassure{
-     background-color:#fcfcfc;
-    height:614px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+   height:614px;
 }
 .fitassure-nonhospicash{
     height:614px;
 }
-
 .gromo{
     height:614px; 
 }
 .ebix{
     height:479px; 
 }
-
 .brandingwala{
  height:546px;  
 }
@@ -6461,161 +6200,25 @@ height:545px;
    height:546px;
    
 }
-.brandingwala1 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.brandingwala1 .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
-
-
 .brandingwala2{
-     background-color:#fcfcfc;
-    height:546px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.brandingwala2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.brandingwala2 .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+   height:546px;
 }
 .merabima{
-     background-color:#fcfcfc;
-    height:630px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+ height:630px;
+ 
 }
-.merabima .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.merabima .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
+
 
 .merabima1{
-     background-color:#fcfcfc;
-    height:630px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:630px;
+ 
 }
-.merabima1 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.merabima1 .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
-
 .tradeindia{
-     background-color:#fcfcfc;
-    height:615px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.tradeindia .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.tradeindia .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+ height:615px;
 }
 .relaxtop{
     padding-top: 4px;
 }
-
-
-
 }
 
 @media only screen and (min-width: 700px){
@@ -6844,29 +6447,10 @@ height:545px;
     padding-top:0px;
 }
 .service{
-  padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:365px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:10px;
+  min-height:365px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top: 33px;
+  margin-top: 33px;
 }
 .service: hover{
     background-color:#fafafa;
@@ -6960,59 +6544,15 @@ height:545px;
     border-radius:10px;
     margin-top:10px;
 }
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
+
 .fitassure-nonhospicash{
-     background-color:#fcfcfc;
-    height:576px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+ height:576px;
+ 
 }
 .gromo{
-     background-color:#fcfcfc;
-    height:509px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
+ height:509px;
 
+}
 .mediyaar{
    height:320px;
 }
@@ -7022,7 +6562,6 @@ height:545px;
 .colorcode-lite{
       height:589px;
 }
-
 .relaxbuddy{
   height:303px;  
 }
@@ -7033,8 +6572,15 @@ height:321px;
 .relaxtop{
     padding-top: 22px;
 }
-
-
+.allplan{
+   height:383px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 43px;
+}
 }
 
 @media only screen and (min-width: 750px){
@@ -7248,31 +6794,8 @@ height:321px;
     margin-top:23px;
 }
 .service-fiassure{
-     background-color:#fcfcfc;
     height:480px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
    width:410px;
-}
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
 }
 .accenture{
      background-color:#fcfcfc;
@@ -7284,111 +6807,19 @@ height:321px;
     border-radius:10px;
     margin-top:10px;
 }
-.accenture .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.accenture .buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
-}
+
 .fitassure-nonhospicash{
-     background-color:#fcfcfc;
-    height:459px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:459px;
    width:410px;
 }
-.fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
+
 .gromo{
-     background-color:#fcfcfc;
-    height:457px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:457px;
    width:410px;
-}
-.gromo .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
 }
 .sodexo-plan2{
-     background-color:#fcfcfc;
     height:449px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
     margin-top:120px;
-}
-.sodexo-plan2 .buybtn{
-   background-color:#199cda;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan2.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
 }
 .sodexo-plan2img{
     margin-top: -1160px;
@@ -7396,7 +6827,6 @@ height:321px;
     margin-right: auto;
     position:relative;
 }
-
 .fitassure-plus{
     height:490px;
     margin-top:110px;
@@ -7447,9 +6877,15 @@ height:321px;
  height:651px;
    
 }
-
-
-
+.allplan{
+   height:422px;
+}
+.allplanspace2 {
+    padding-top: 80px;
+}
+.allplanspace3 {
+    padding-top: 59px;
+}
 }
 @media only screen and (min-width: 800px){
  .pt-bnr {
@@ -7943,18 +7379,14 @@ height:321px;
 .service-sod{
    height:473px; 
 }
-
 .ebix{
-   
-    height:436px;
-   
+   height:436px;  
 }
 .ebix1{
      height:436px; 
 }
 .brandingwala{
-   height:666px;
-   
+   height:666px;  
 }
 .brandingwala1{
    height:666px; 
@@ -7962,8 +7394,6 @@ height:321px;
 .brandingwala2{
     height:666px;  
 }
-
-
 .merabima{
   height:630px; 
 }
@@ -7971,8 +7401,7 @@ height:321px;
    height:630px;  
 }
 .tradeindia{
-  height:615px;
-  
+  height:615px; 
 }
 .accenture{
    height:473px;   
@@ -7995,6 +7424,19 @@ height:652px;
 .colorcode-lite {
     height: 477px;
 }
+
+.allplan{
+   height:422px;
+}
+.allplanspace2 {
+    padding-top: 80px;
+}
+.allplanspace3 {
+    padding-top: 59px;
+}
+
+
+
 }
 
 @media only screen and (min-width: 950px){
@@ -8253,7 +7695,6 @@ height:652px;
     padding-top:24px;
     line-height: 40px;
 }
-
 .thead1{
     letter-spacing: 1px;
     font-size:24px;
@@ -8268,7 +7709,6 @@ height:652px;
 .sodexo-plan2{
  height:534px;
 }
-
 .sodexo-plan2img{
     margin-top: -1269px;
     margin-left: 19%;
@@ -8401,7 +7841,6 @@ height:652px;
    height:489px;
    width:100%;
 }
-
 .fitassure-nonhospicash{
     height:468px;
 }
@@ -8409,10 +7848,8 @@ height:652px;
    height:475px;
    width:100%;
 }
-
 .fitassure-plus{
-   height:616px;
-   
+   height:616px;   
 }
 .fitassure-plusimg{
   margin-top: -1354px;
@@ -8422,8 +7859,7 @@ height:652px;
     width: 71%;
 }
 .accenture{
-    height:458px;
-    
+    height:458px;  
 }
 .accenturehead{
     color: #0f5fc2;
@@ -8434,7 +7870,6 @@ height:652px;
 .ebix{
     height:514px; 
 }
-
 .ebix1{
    height:514px;   
 }
@@ -8444,7 +7879,6 @@ height:652px;
 .brandingwala1{
    height:535px; 
 }
-
 .brandingwala2{
    height:546px;  
 }
@@ -8473,6 +7907,17 @@ height:652px;
 .colorcode-lite {
     height: 686px;
 }
+.allplan{
+   height:405px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 59px;
+}
+
+
 }
 
 @media only screen and (min-width: 1050px){
@@ -8797,22 +8242,7 @@ height:652px;
     margin-top:10px;
     width:500px;
 }
-.service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
+
 .gromo{
      height:490px;
     width:500px;
@@ -8859,6 +8289,17 @@ height:652px;
 .colorcode-lite {
     height: 686px;
 }
+
+.allplan{
+   height:405px;
+}
+.allplanspace2 {
+    padding-top: 59px;
+}
+.allplanspace3 {
+    padding-top: 59px;
+}
+
 
 }
 
@@ -9175,12 +8616,21 @@ height:652px;
   height:539px;  
 }
 .relaxbuddy1{
-  height:539px; 
-   
+  height:539px;  
 }
 .colorcode-lite {
     height: 602px;
 }
+.allplan{
+   height:426px;
+}
+.allplanspace2 {
+    padding-top: 80px;
+}
+.allplanspace3 {
+    padding-top: 59px;
+}
+
 
 }
 @media only screen and (min-width: 1300px){
@@ -9427,19 +8877,14 @@ height:652px;
 .brandingwala1{
     height:546px;
 }
-
 .brandingwala2{
    height:546px;  
 }
-
 .merabima{
-    height:504px;
-   
+    height:504px;   
 }
-
 .merabima1{
-    height:503px;
-  
+    height:503px;  
 }
 .tradeindia{
   height:597px;
@@ -9492,12 +8937,10 @@ height:652px;
      background-color:#fcfcfc;
     height:459px;
 }
-
 .gromo{
     height:439px;  
     width:515px;
 }
-
 .mediyaar{
     height:526px;
 }
@@ -9508,17 +8951,23 @@ height:652px;
    height:526px; 
 }
 .relaxbuddy1{
-  height:526px;
-   
+  height:526px;  
 }
 .colorcode-lite {
     height: 589px;
 }
-
 .relaxtop{
     padding-top: 23px;
 }
-
+.allplan{
+   height:410px;
+}
+.allplanspace2 {
+    padding-top: 70px;
+}
+.allplanspace3 {
+    padding-top: 49px;
+}
 
 }
 
@@ -9601,47 +9050,11 @@ height:652px;
     padding-bottom:0px;
 }
 .sodexo-plan{
-     background-color:#fcfcfc;
-    height:421px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.sodexo-plan .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
-}
-.sodexo-plan.buybtn:hover{
-   background-color:#0860cc;
-   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
-   color:#ffffff!important;
+    height:421px; 
 }
 .sodexo-plan1{
-     background-color:#fcfcfc;
-    height:426px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:426px; 
 }
-
 .stamp{
     padding-top:150px;
 }
@@ -9844,46 +9257,20 @@ height:652px;
     margin-top:2px;
 }
 .fitassure-nonhospicash{
-     background-color:#fcfcfc;
-    height:459px;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
-}
-.fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+   height:459px;
 }
 .ebix{
     height:521px;  
 }
 .ebix1{
-    height:521px;
- 
+    height:521px; 
 }
 .brandingwala{
     height:546px;
 }
 .brandingwala1{
- height:546px;
-   
+ height:546px;   
 }
-
 .brandingwala2{
     height:546px;
 }
@@ -9899,22 +9286,16 @@ height:652px;
 .accenture{
     height:503px; 
 }
-
 .gromo{
  height:438px;
   width:514px;
 }
-
 .relaxbuddy{
  height:526px;  
 }
 .relaxbuddy1{
- height:526px;  
-   
+ height:526px;    
 }
-
-
-
 }
 
 @media only screen and (min-width: 1500px){
@@ -9992,8 +9373,7 @@ height:652px;
   width:514px;
 }
 .sodexo-plan2{
-   height:471px;
-   
+   height:471px; 
 }
 
 .sodexo-plan2img{
@@ -10005,9 +9385,7 @@ height:652px;
 }
 .fitassure-plus{
     height:483px;
-  
 }
-
 .fitassure-plusimg{
     margin-top:-1093px;
     margin-left:18%;
@@ -10028,39 +9406,39 @@ height:652px;
 }
 .accenture{
     height:476px;
-
 }
-
 .tradeindia{
     height:599px;
 }
-
 .brandingwala{
-    height:546px;
- 
+    height:546px; 
 }
 .brandingwala1{
     height:546px;
-  
 }
-
 .brandingwala2{
     height:546px;
- 
 }
 .merabima{
     height:614px; 
 }
 .merabima1{
     height:614px;
-  
 }
 .relaxbuddy{
  height:526px; 
 }
 .relaxbuddy1{
- height:526px; 
-   
+ height:526px;   
+}
+.allplan{
+   height:404px;
+}
+.allplanspace2 {
+    padding-top: 64px;
+}
+.allplanspace3 {
+    padding-top: 43px;
 }
 
 
