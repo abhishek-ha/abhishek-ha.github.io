@@ -2298,13 +2298,15 @@ div {
     padding-bottom: 5px;
 }
 .whatsapp-btn{
-    background-color: #00af87;
+       background-color: #00af87;
     color: #ffffff;
-    font-size: 16px!important;
+    font-size: 10px!important;
     border-radius: 4px;
-    margin-top: 25px;
-    padding: 8px 14px;
+    margin-top: 5px;
+    padding: 2px 12px;
     font-weight: 500;
+    border: 2px solid #00af87;
+    margin-left: 36%;
 }
 .whatsapp-btn:hover{
     color: #ffffff;
@@ -3401,7 +3403,7 @@ div {
     padding-top: 6px;
 }
 .offercard{
-    background-color: #FFA500;
+    background-color: orange;
     color: #ffffff;
     margin-bottom: -13px; 
     margin-left: 0px;
@@ -3841,6 +3843,20 @@ height:630px;
 .relaxtop{
     padding-top: 6px;
 }
+
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 11px!important;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 2px 12px;
+    font-weight: 500;
+    border:2px solid #00af87;
+    margin-left: 44%;
+}
+
+
 
 }
 
@@ -7433,6 +7449,17 @@ height:652px;
 }
 .allplanspace3 {
     padding-top: 59px;
+}
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 17px!important;
+    border-radius: 4px;
+    margin-top: 52px;
+    padding: 6px 12px;
+    font-weight: 500;
+    border:2px solid #00af87;
+    margin-left: 59%;
 }
 
 

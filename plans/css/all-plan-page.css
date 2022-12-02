@@ -88,9 +88,10 @@
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 50px;
+    padding-top: 100px;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 13px;
+    padding-left: 38%;
 }
 
 .sectionmid {
@@ -148,10 +149,11 @@
     min-height: 233px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 50px;
+     color: #ffffff;
+    padding-top: 100px;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 13px;
+    padding-left: 43%;
 }
 .sectionmid h3{
     font-size: 18px;
@@ -216,13 +218,15 @@
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 70px;
+    padding-top: 95px;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 17px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 34px;
     padding: 8px 14px;
+    margin-left: 40%;
 }
 
 .sectionmid h3{
@@ -488,6 +492,7 @@
     padding-top: 150px;
     font-weight: 600;
     font-size: 45px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
@@ -613,6 +618,7 @@
     padding-top: 140px;
     font-weight: 600;
     font-size: 36px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
@@ -673,6 +679,7 @@
     padding-top: 100px;
     font-weight: 600;
     font-size: 40px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
@@ -735,13 +742,12 @@
     padding-top: 150px;
     font-weight: 600;
     font-size: 45px;
+    padding-left: 50%;
 }
 .whatsapp-btn{
    margin-top: 70px;
     padding: 8px 14px;
 }
-
-
 .sectionmid div{
     margin-top: 10px;
     margin-bottom: 12px;
@@ -764,7 +770,6 @@
     font-size: 25px;
     padding-left: 25%;
 }
-
 .planup h2{
     font-size: 30px;
     font-weight: 650;
@@ -773,8 +778,6 @@
 .planup p{
     font-size: 22px;
 }
-
-
 }
 
 @media only screen and (min-width: 899.5px){
