@@ -3110,23 +3110,25 @@ div {
   border-radius:10px;
   margin-top:15px;
 }
+
 .buybtn1{
    background-color:#ffffff;
-    color:#000000; 
+    color:#000000;
     right:10px; 
     bottom: -16px;
-    width:150px;
+    width:160px;
     position:absolute;
     text-align:center;
-    border-radius: 8px;
+    border-radius: 20px;
     text-transform:none;
-    padding: 20px 0px 20px 6px;
+    padding: 12px 0px 12px 6px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
-    font-size:12px;
+    font-size:14px;
     margin-right:9px;
     cursor: pointer;
     margin-top:2%;
     border: 1px solid #007bff;
+    transition: all 0.4s ease-in-out;
 }
 
 .buybtn1:hover{
@@ -3136,10 +3138,9 @@ div {
 
 
 .buybtn1:hover:after {
-   
-    content: '\f178';
+   content: '\f178';
     font-family: "FontAwesome";
-/*    position: absolute;*/
+    position: static;
     top: 6px;
     right: 14px;
     color: #ffffff;
@@ -3446,10 +3447,10 @@ div {
         text-align: center;
 }
 .allplanspace2 {
-    padding-top: 58px;
+    padding-top: 41px;
 }
 .allplanspace3 {
-    padding-top: 45px;
+    padding-top: 26px;
 }
 }
 
