@@ -2292,6 +2292,10 @@ div {
 .allplanspace3 {
     padding-top: 45px;
 }
+.mediyartopspace{
+    padding-top: 50px;
+}
+
 }
 
 
@@ -3129,9 +3133,7 @@ div {
     border: 1px solid #007bff;
     
 }
-/*.buybtn1, .buybtn1:after{
-    transition: all 0.4s ease-in-out;
-}*/
+
 
 .buybtn1:hover{
    background-color: #00af87!important;
@@ -3427,11 +3429,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-.relaxtop{
-    padding-top: 6px;
-}
 .offercard{
     background-color: orange;
     color: #ffffff;
@@ -3453,6 +3450,12 @@ div {
 }
 .allplanspace3 {
     padding-top: 26px;
+}
+.relaxtop{
+    padding-top: 6px;
+}
+.mediyartopspace{
+    padding-top: 50px;
 }
 }
 
@@ -5728,6 +5731,11 @@ height:545px;
 .allplanspace3 {
     padding-top: 43px;
 }
+
+.mediyartopspace{
+    padding-top: 50px;
+}
+
 }
 
 
@@ -6095,10 +6103,10 @@ height:545px;
     width:30%;
 }
 .mediyaar{
- height:320px;
+ height:525px;
 }
 .mediyaar1{
-    height:300px;    
+    height:525px;    
 }
 .colorcode-lite{
       height:455px;
@@ -6251,13 +6259,9 @@ height:545px;
 }
 .merabima{
  height:630px;
- 
 }
-
-
 .merabima1{
    height:630px;
- 
 }
 .tradeindia{
  height:615px;
@@ -6265,6 +6269,10 @@ height:545px;
 .relaxtop{
     padding-top: 4px;
 }
+.mediyartopspace{
+    padding-top: 50px;
+}
+
 }
 
 @media only screen and (min-width: 700px){
@@ -6343,7 +6351,6 @@ height:545px;
     background-size: 100%;
     min-height: 425px;
 }
-
 .bgmain1{
     background-image: url('../images/heppyplan.jpg');
     background-repeat: no-repeat;
@@ -6355,8 +6362,7 @@ height:545px;
     padding-top: 40px;
     padding-bottom:20px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
 .startassu{
@@ -6375,37 +6381,30 @@ height:545px;
 .ebix1{
     height:551px;
 }
-
 .brandingwala{
  height:546px; 
 }
 .brandingwala1{
     height:546px;  
 }
-
 .brandingwala2{
   height:546px;
 }
-
 .merabima{
     height:630px;
 }
-
 .merabima1{
    height:630px;
 }
 .tradeindia{
     height:549px;   
 }
-
 .accenture{
     height:493px;
 }
-
 .fitassure-plus{
     height:575px;
- 
-    margin-top:110px;
+   margin-top:110px;
 }
 
 .fitassure-plusimg{
@@ -6600,10 +6599,10 @@ height:545px;
 
 }
 .mediyaar{
-   height:320px;
+   height:526px;
 }
 .mediyaar1{
-   height:300px;
+   height:526px;
 }
 .colorcode-lite{
       height:589px;
@@ -6627,6 +6626,11 @@ height:321px;
 .allplanspace3 {
     padding-top: 43px;
 }
+
+.mediyartopspace{
+    padding-top: 50px;
+}
+
 }
 
 @media only screen and (min-width: 750px){
@@ -6813,14 +6817,11 @@ height:321px;
 }
 .accenture{
     height:496px;
-  
 }
-
 .fitassure-nonhospicash{
    height:459px;
    width:410px;
 }
-
 .gromo{
    height:457px;
    width:410px;
@@ -6894,6 +6895,11 @@ height:321px;
 .allplanspace3 {
     padding-top: 59px;
 }
+.mediyartopspace{
+    padding-top: 29px;
+}
+
+
 }
 @media only screen and (min-width: 800px){
  .pt-bnr {
@@ -7409,7 +7415,6 @@ height:652px;
 .colorcode-lite {
     height: 477px;
 }
-
 .allplan{
    height:422px;
 }
@@ -7429,6 +7434,10 @@ height:652px;
     font-weight: 500;
     border:2px solid #00af87;
     margin-left: 58%;
+}
+
+.mediyartopspace{
+    padding-top: 29px;
 }
 
 
@@ -7624,6 +7633,12 @@ height:652px;
 .gromo{
     height:455px;  
 }
+
+.mediyartopspace{
+    padding-top: 29px;
+}
+
+
 }
 @media only screen and (min-width: 1000px){
 
@@ -7728,33 +7743,18 @@ height:652px;
     width:80%;
 }
 .service{
-  padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    height:431px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
+ height:431px;
   margin-top:10px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
-    cursor: pointer;
     margin-top:15px;
 }
 .service:hover{
     background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
     border-radius: 8px;
     padding:6px;
 }
@@ -7911,6 +7911,9 @@ height:652px;
 }
 .allplanspace3 {
     padding-top: 59px;
+}
+.mediyartopspace{
+    padding-top: 50px;
 }
 
 
@@ -8083,7 +8086,6 @@ height:652px;
 .cashkaro{
   height:457px;
 }
-
 .cashkaroimg{
     margin-top:-1082px;
     margin-left:0%;
@@ -8095,15 +8097,7 @@ height:652px;
 
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8242,7 +8236,6 @@ height:652px;
 .colorcode-lite {
     height: 686px;
 }
-
 .allplan{
    height:405px;
 }
@@ -8382,10 +8375,8 @@ height:652px;
 .brandingwala1{
     height:546px; 
 }
-
 .brandingwala2{
-    height:546px;
-    
+    height:546px;  
 }
 .merabima{
   height:516px;
@@ -8582,6 +8573,10 @@ height:652px;
 }
 .allplanspace3 {
     padding-top: 59px;
+}
+
+.mediyartopspace{
+    padding-top: 50px;
 }
 
 
