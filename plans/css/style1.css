@@ -2270,11 +2270,13 @@ div {
 
 
 .offercard{
-    background-color: #457e70;
+   background-color: orange;
     color: #ffffff;
-    margin-bottom: -12px;  
+    margin-bottom: -13px; 
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 0px; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .offercard p{
     font-size: 14px;
@@ -2285,14 +2287,11 @@ div {
 
 }
 .allplanspace2 {
-    padding-top: 45px;
+    padding-top: 58px;
 }
-
 .allplanspace3 {
     padding-top: 45px;
 }
-
-
 }
 
 
