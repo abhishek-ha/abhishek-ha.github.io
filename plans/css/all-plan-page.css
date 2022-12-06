@@ -711,9 +711,21 @@
 
 
 
+.chronichead{
+     background-image: url('../images/chronic-fatigue.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 500px;
+
+}
+
+
 
 @media only screen and (min-width: 1300px ){
-      .atglancehead{
+
+ .atglancehead{
         font-weight: 700;
        font-size: 40px;
        text-align: center;
