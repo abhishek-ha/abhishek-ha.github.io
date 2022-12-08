@@ -1127,10 +1127,11 @@ div {
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
-    font-size: 17px!important;
+    font-size: 13px!important;
     border-radius: 4px;
     margin-top: 25px;
     padding: 8px 14px;
+    border: 1px solid #00af87;
 }
 .whatsapp-btn:hover{
     color: #ffffff;
