@@ -2214,11 +2214,9 @@ div {
 .relaxtop{
     padding-top: 8px;
 }
-
-
 .allplan{
      background-color:#fcfcfc;
-    height:493px;
+    height:590px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2267,8 +2265,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
 .offercard{
    background-color: orange;
     color: #ffffff;
@@ -2286,6 +2282,9 @@ div {
         text-align: center;
 
 }
+.allplanspace1 {
+    padding-top: 107px;
+}
 .allplanspace2 {
     padding-top: 58px;
 }
@@ -2295,7 +2294,6 @@ div {
 .mediyartopspace{
     padding-top: 50px;
 }
-
 }
 
 
@@ -3400,7 +3398,7 @@ div {
 }
 .allplan{
      background-color:#fcfcfc;
-    height:472px;
+    height:551px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3444,6 +3442,10 @@ div {
       padding: 8px;
       margin-bottom: 0px;
         text-align: center;
+}
+
+.allplanspace1 {
+    padding-top: 88px;
 }
 .allplanspace2 {
     padding-top: 41px;
@@ -3865,7 +3867,10 @@ height:630px;
  height:653px;   
 }
 .allplan{
-   height:435px;
+   height:533px;
+}
+.allplanspace1 {
+    padding-top: 108px;
 }
 .allplanspace2 {
     padding-top: 74px;
@@ -4324,7 +4329,10 @@ height:630px;
     height:737px;
 }
 .allplan{
-   height:415px;
+   height:513px;
+}
+.allplanspace1 {
+    padding-top: 109px;
 }
 .allplanspace2 {
     padding-top: 75px;
@@ -4669,7 +4677,10 @@ height:630px;
    height:693px;
 }
 .allplan{
-   height:405px;
+   height:482px;
+}
+.allplanspace1 {
+    padding-top: 109px;
 }
 .allplanspace2 {
     padding-top: 81px;
@@ -5083,10 +5094,13 @@ height:630px;
 .relaxtop{
     padding-top: 6px;
 }
-
 .allplan{
-   height:383px;
+   height:439px;
 }
+.allplanspace1 {
+    padding-top: 87px;
+}
+
 .allplanspace2 {
     padding-top: 59px;
 }
@@ -6611,14 +6625,16 @@ height:545px;
   height:303px;  
 }
 .relaxbuddy1{
-height:321px;
-   
+height:321px;   
 }
 .relaxtop{
     padding-top: 22px;
 }
 .allplan{
-   height:383px;
+   height:438px;
+}
+.allplanspace1 {
+    padding-top: 87px;
 }
 .allplanspace2 {
     padding-top: 59px;
@@ -6887,7 +6903,10 @@ height:321px;
    
 }
 .allplan{
-   height:422px;
+   height:519px;
+}
+.allplanspace1 {
+    padding-top: 107px;
 }
 .allplanspace2 {
     padding-top: 80px;
@@ -7416,7 +7435,10 @@ height:652px;
     height: 477px;
 }
 .allplan{
-   height:422px;
+   height:519px;
+}
+.allplanspace1 {
+    padding-top: 108px;
 }
 .allplanspace2 {
     padding-top: 80px;
@@ -7897,14 +7919,16 @@ height:652px;
   height:580px; 
 }
 .relaxbuddy1{
-  height:580px;
-   
+  height:580px;  
 }
 .colorcode-lite {
     height: 686px;
 }
 .allplan{
-   height:405px;
+   height:460px;
+}
+.allplanspace1 {
+    padding-top: 87px;
 }
 .allplanspace2 {
     padding-top: 59px;
@@ -8237,7 +8261,10 @@ height:652px;
     height: 686px;
 }
 .allplan{
-   height:405px;
+   height:459px;
+}
+.allplanspace1 {
+    padding-top: 86px;
 }
 .allplanspace2 {
     padding-top: 59px;
@@ -8566,8 +8593,12 @@ height:652px;
     height: 602px;
 }
 .allplan{
-   height:426px;
+   height:502px;
 }
+.allplanspace1 {
+    padding-top: 107px;
+}
+
 .allplanspace2 {
     padding-top: 80px;
 }
@@ -8908,7 +8939,11 @@ height:652px;
     padding-top: 23px;
 }
 .allplan{
-   height:410px;
+   height:486px;
+}
+
+.allplanspace1 {
+    padding-top: 107px;
 }
 .allplanspace2 {
     padding-top: 70px;

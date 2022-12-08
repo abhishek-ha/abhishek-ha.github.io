@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>  Top up Detail </title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	  <div class="container">
+            <div class="row">
+<div class="col-lg-12 col-md-12">
+<h2 class="header-content pt-3 pb-5"> <b> Additional Plan Details  </b></h2>  </div>
+</div>
+<div class="mb-5 row">
+  <div class="col-sm-2">
+      <select class="form-select">
+  <option> Filter by Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+   <div class="col-sm-2 width">
+      <select class="form-select">
+  <option> Good Health Declaration </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+   <div class="col-sm-3 width">
+      <select class="form-select">
+  <option> Filter by Discount Enabled </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+<div class="col-sm-3 width">
+    <input type="text" name="" class="form-control" placeholder="Search by Keywords">
+   </div>
+<div class="col-md-2 col-lg-2  text-center">
+  <button class="btn btn-primary me-1" type="submit">Apply </button> <button class="btn btn-primary me-1" type="reset"> Reset </button>
+  </div>
+</div>
+<div class="row ">
+  <div class="col-lg-12 col-md-12 ">
+<button type="button" class="btn btn-primary btn-lg float-right mb-3" data-toggle="modal" data-target="#myModal" > Add New Plan Details  </button>
+<div class="col-lg-12 table-responsive">
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col"> S.No </th>
+      <th scope="col"> Plan Name </th>
+      <th scope="col"> Member to be Shown Upfront </th>
+      <th scope="col"> No of Members to be Shown </th>
+      <th scope="col">  Optional Members </th>
+      <th scope="col" > Good Health Declaration </th>
+      <th scope="col"> Agent Id  </th>
+      <th scope="col"> Plan Type </th>
+      <th scope="col"> Corporate Email Domain </th>
+       <th scope="col"> Edit/ Delete </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+      <td> 4 </td>
+      <td> 2 </td>
+      <td> Yes </td>
+      <td> Yes </td>
+      <td> Corporate </td>
+      <td> All </td>
+       <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+
+    <tr>
+      <th scope="row"> 2 </th>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+      <td> 4 </td>
+      <td> 1 </td>
+      <td> Yes </td>
+      <td> Yes </td>
+      <td> Corporate </td>
+      <td> All </td>
+   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+ <tr>
+      <th scope="row">3</th>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+      <td> 4 </td>
+      <td> 3 </td>
+      <td> Yes </td>
+      <td> Yes </td>
+      <td> Corporate </td>
+      <td> All </td>
+   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+ <tr>
+      <th scope="row">4</th>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+      <td> 4 </td>
+      <td> 6 </td>
+      <td> Yes </td>
+      <td> Yes </td>
+      <td> Corporate </td>
+      <td> All </td>
+  <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+   <tr>
+      <th scope="row">5</th>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+      <td> 4 </td>
+      <td> 1 </td>
+      <td> Yes </td>
+      <td> Yes </td>
+      <td> Corporate </td>
+      <td> All </td>
+<td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+</tbody>
+</table>
+  </div>
+  <div class="col-lg-12 ">
+    <nav aria-label="Page navigation ">
+  <ul class="pagination mt-3 mb-5 float-right">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+   </div>
+            </div>
+
+
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+   <h4 class="modal-title" id="myModalLabel"> Add New Plan </h4>
+      </div>
+      <div class="modal-body">
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label"> Select Plan </label>
+    <div class="col-sm-6">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+  </div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Member to be Shown Upfront </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label"> No of Members to be shown </label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="" placeholder="">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Good Health Declaration </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Agent Id to be Shown </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+   <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="You can enter more than 1 domain">
+    </div>
+  </div>
+  <div class="mb-3 row text-center">
+  <div class="col-md-12 pt-3 pb-3">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
+ </div>
+  </div>
+   </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start Edit New Plan -->
+
+
+
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <h4 class="modal-title" id="editModalLabel">Edit Additional Plan Detail </h4>
+      </div>
+      <div class="modal-body">
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label">Select Plan </label>
+    <div class="col-sm-6">
+      <select class="form-select">
+ <option selected> FitAssure </option>
+    <option> OptimaAssure </option>
+  </select>
+
+   </div>
+  </div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Member to be Shown Upfront </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label"> No of Members to be shown </label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="" placeholder="3">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Good Health Declaration </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Agent Id to be Shown </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+   <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="abc@healthassure.in">
+    </div>
+  </div>
+<div class="mb-3 row text-center">
+  <div class="col-md-12 pt-3 pb-3">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
+ </div>
+  </div>
+   </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- End Edit New Plan -->
+
+
+<!-- Start Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="deleteModalLabel"> Additional Plan Detail </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row text-center">
+          <div class="col-lg-12 col-md-12">
+            <h3> Are you Sure to want Delete </h3>
+          </div>
+<div class="col-lg-12 col-md-12 pt-4 pb-5">
+  <button class="btn btn-primary"> Yes </button>
+   <button class="btn btn-primary"> No </button> 
+</div>
+  </div>
+ </div>
+    </div>
+  </div>
+</div>
+<!-- End Delete -->
+
+
+
+
+
+
+
+
+	<!-- <script src="bootstrap.min.js"></script> -->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
