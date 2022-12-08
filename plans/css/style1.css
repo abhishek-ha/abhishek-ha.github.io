@@ -3463,6 +3463,453 @@ div {
 }
 
 
+
+
+
+
+@media only screen and (min-width: 330px){
+ .pt-bnr {
+    padding-top:200px;
+    text-align: center;
+    }
+   .subhead{
+    font-size: 18px!important;
+    font-weight: 600;
+}
+
+.logo-text h3{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif; 
+    color:#4bacc6;
+    font-weight: 600;
+    text-align: center;
+}
+.pdb{
+    padding-bottom: 10px;
+}
+   .head1 {
+           font-size: 27px;
+            font-weight: 700;
+            line-height: 37px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .head1 span{
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 37px;
+}
+.faqhead h4{
+    font-size:26px;
+    line-height:35px;
+    font-weight: 600;
+    color: #fff;
+    padding-top:20px;
+}
+.faqhead p{
+    font-size:18px;
+    line-height:24px;
+    font-weight:500;
+    color: #f2f1f6;
+    letter-spacing:.5px;
+}
+#generic_price_table .generic_content .generic_feature_list ul li{
+    font-family: "Lato",sans-serif;
+      font-size: 13px;
+    padding: 10px 8px 8px 8px;
+    transition: all 0.3s ease-in-out 0s;
+    min-height: 40px;
+}
+.right-arrow {
+    display: inline-block;
+    position: relative;
+    background: #004182!important;
+    padding: 10px;
+    color: #ffffff!important;
+    width: 225px; 
+     margin-bottom: 2px;
+     text-align: left!important;
+}
+.head {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        }
+.pl-109{
+    padding-left: 109px;
+}
+.pl-148{
+    padding-left: 141px;
+}
+.pl-123{
+    padding-left: 123px;
+}
+.pl-88 {
+    padding-left:75px!important;
+}
+.banner{
+    padding-top: 40px;
+    margin-top: 110px;
+     padding-bottom:20px;
+ }
+.banner1{
+    padding-top:0px;
+ }
+.startassu{
+    font-size:35px;
+     font-weight:700!important;
+    font-family: 'Poppins', sans-serif;
+     padding-bottom:20px;
+     padding-top:10px;
+     line-height:45px;
+}
+
+.thead1{
+    letter-spacing: 1px;
+    font-size:18px;
+}
+.offer1 img{
+    margin-top:-22%;
+    width:30%;
+}
+.benitem {
+            text-align: center;
+            color: #5336ca;
+            margin:4px;
+          padding: 5px;
+           max-width:300px;
+           margin: auto;
+        }
+        .benitem  img {
+            width: 80px;
+           padding: 5px 5px 5px 5px;
+           }
+       .benitem p {
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 13px;
+            text-align: center;
+        }
+ .benitem p b {
+            font-weight: 500;
+            color: #ffffff;
+            font-size: 15px;
+            text-align: center;
+        }
+   .benitem  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+.benitem1 {
+        margin:4px;
+        padding: 5px;
+        max-width:300px;
+     }
+      .benitem1  img {
+        width: 90px;
+        padding: 8px ;
+        background-color:#0f5fc2;
+        border-radius:20px;
+     }
+     .benitem1 p {
+            font-weight:400;
+            font-size: 13px;
+            }
+
+.benitem1 p b {
+            font-weight: 600;
+           font-size: 15px;
+            }
+.benitem1  p.sub {
+            font-weight: 400;
+            font-size: 90%;
+        }
+  .val{
+    padding-top:0px; 
+}
+   .val p{
+    padding-top:0px; 
+    padding-right:15px;
+}
+.sodexo-plan{
+     height:467px;
+}
+.service{
+    background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   min-height:560px;
+  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+  border-radius:10px;
+  margin-top:15px;
+  width:310px;
+}
+.sodexo-plan1{
+    height:490px;
+   
+}
+.sodexo-plan2{
+    height:421px;
+}
+.cashkaro{
+    height:421px;    
+}
+.accenturehead{
+    color: #0f5fc2;
+    font-weight: 700!important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.cashkarohead1{
+    color: #0f5fc2;
+    font-weight: 700!important;
+    font-family: 'Poppins', sans-serif;
+    font-size:19px;
+}
+.stamp{
+    padding-top:40px;
+}
+.service .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:2px;
+}
+.service .buybtn:hover{
+   background-color:#026cf0;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+}
+.service: hover{
+    background-color:#fafafa;
+    box-shadow:0px 5px 10px 0px rgb(224 224 224);
+    border-radius: 8px;
+   padding:6px;
+}
+.service2{
+    background-color:#fcfcfc;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    min-height:555px;
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:310px;
+}
+.service2 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor: pointer;
+    margin-top:2px;
+}
+.service2 .buybtn:hover{
+  background-color:#026cf0;
+  box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+}
+.service3{
+     background-color:#fcfcfc;
+    min-height:590px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius:10px;
+    margin-top:10px;
+    width:310px;
+}
+.service3 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:30px 0 0 0;
+    text-transform:none;
+    padding-top:4px;
+    padding-bottom:4px;
+    font-size:19px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.service3 .buybtn:hover{
+   background-color:#026cf0;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+}
+.service4{
+     background-color:#fcfcfc;
+    height:622px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+   border-radius:10px;
+   margin-top:10px;
+   width:310px;
+}
+.sodexo-plan2{
+  height:634px;
+  margin-top:70px;
+}
+.sodexo-plan2img{
+    margin-top: -1554px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+.cashkaro{
+   height:569px;
+   margin-top:70px;
+}
+
+.cashkaroimg{
+    margin-top: -1271px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+.cashkarohead{
+    color: #0f5fc2;
+    font-weight: 700!important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.accenturehead{
+    color: #0f5fc2;
+    font-weight: 700!important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.stamp{
+    padding-top:40px;
+}
+.service-fiassure{
+    height:622px;
+   
+}
+.fitassure-nonhospicash{
+    height:601px;
+}
+.gromo{
+    height:557px;   
+}
+.service-sod{
+    height:513px;
+}
+.tradeindia{
+   height:615px;
+  }
+.ebix{
+   height:584px; 
+}
+.ebix1{
+    height:566px;
+}
+.brandingwala{
+    height:666px;
+}
+.brandingwala1{
+   height:666px;
+  }
+.brandingwala2{
+  height:666px;   
+}
+.merabima{
+ height:630px;  
+}
+.merabima1{
+height:630px;   
+}
+.accenture{
+  height:579px;
+   
+}
+.fitassure-plus{
+ height:668px;  
+}
+.fitassure-plusimg{
+    margin-top: -1180px;
+    margin-left:0%;
+    margin-right: auto;
+    position:relative;
+}
+.val{
+    padding-top:10px;
+}
+.mediyaar{
+  height:652px;
+}
+.mediyaar1{
+     height:673px;
+}
+.colorcode-lite{
+    height:758px;   
+}
+.relaxbuddy{
+  height:635px;  
+}
+.relaxbuddy1{
+ height:653px;   
+}
+.allplan{
+   height:533px;
+}
+.allplanspace1 {
+    padding-top: 108px;
+}
+.allplanspace2 {
+    padding-top: 74px;
+}
+.allplanspace3 {
+    padding-top: 50px;
+}
+.relaxtop{
+    padding-top: 6px;
+}
+
+.whatsapp-btn{
+    background-color: #00af87;
+    color: #ffffff;
+    font-size: 11px;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 2px 12px;
+    font-weight: 500;
+    border:2px solid #00af87;
+    margin-left: 44%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 351px){
  .pt-bnr {
     padding-top:200px;
@@ -4339,7 +4786,7 @@ height:630px;
     padding-top: 75px;
 }
 .allplanspace3 {
-    padding-top: 30px;
+    padding-top: 54px;
 }
 }
 
