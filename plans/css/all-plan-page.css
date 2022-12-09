@@ -1,3 +1,13 @@
+.campfooter{
+    background-color: #0f5fc2;
+    color: #fff;
+    padding: 40px 0px;
+    
+}
+.campfooter p{
+    font-size: 12px;
+}
+
 
 @media only screen and (max-width: 300px) {
    .atglancehead{
@@ -20,6 +30,54 @@
     font-weight: 600;
     font-size: 19px;
 }
+
+.chronichead{
+    background-image: url('../images/chronic-fatigue.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+
+}
+.chronichead h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.allerygytop{
+    background-image: url('../images/allergy.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.allerygytop h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+.healthcaretop{
+    background-image: url('../images/healthcarebg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.healthcaretop h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
@@ -31,11 +89,9 @@
 .whatsapp-btn:hover{
     color: #ffffff;
 }
-
 .sectionmid {
     text-align: center;
 }
-
 .sectionmid h3{
     font-size: 16px;
     color: #27569b;
@@ -55,6 +111,16 @@
 .footerplan p{
     font-size: 14px;
     padding-left: 37%;
+}
+.planup h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 14px;
+     color: #6d6e70;
 }
 }
 
@@ -76,11 +142,56 @@
 }
 .top-head h1{
     color: #ffffff;
-    padding-top: 50px;
+    padding-top: 100px;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 13px;
+    padding-left: 38%;
 }
-
+.chronichead{
+  background-image: url('../images/chronic-fatigue.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.chronichead h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+.allerygytop{
+  background-image: url('../images/allergy.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.allerygytop h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+.healthcaretop{
+  background-image: url('../images/healthcarebg.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.healthcaretop h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
 .sectionmid {
     text-align: center;
 }
@@ -104,35 +215,57 @@
     font-size: 20px;
     padding-left: 67px;
 }
-
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
 @media only screen and (min-width: 350px ){
       .atglancehead{
-        font-weight: 600;
-       font-size: 32px;
-       text-align: center;
-       color: #58585b;
+      font-size: 32px;
    }
 .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
     min-height: 233px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 25px;
+    padding-top: 100px;
+    font-size: 13px;
+    padding-left: 43%;
+}
+.chronichead{
+   min-height: 233px;
+}
+.chronichead h1{
+   padding-top: 100px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+.allerygytop{
+   min-height: 233px;
+}
+.allerygytop h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+.healthcaretop{
+   min-height: 233px;
+}
+.healthcaretop h1{
+   padding-top: 100px;
+ font-size: 13px;
+    padding-left: 43%;
 }
 .sectionmid h3{
     font-size: 18px;
-    color: #27569b;
-    font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid {
@@ -158,37 +291,58 @@
     font-size: 20px;
     padding-left: 177px;
 }
-
+.planup h2{
+    font-size: 22px;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+}
 }
 
 
 
 @media only screen and (min-width: 415px ){
       .atglancehead{
-        font-weight: 600;
        font-size: 25px;
        text-align: center;
-       color: #58585b;
    }
 .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
     min-height: 240px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 70px;
-    font-weight: 600;
-    font-size: 28px;
+    padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.chronichead{
+  min-height: 240px;
+}
+.chronichead h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.allerygytop{
+  min-height: 240px;
+}
+.allerygytop h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.healthcaretop{
+  min-height: 240px;
+}
+.healthcaretop h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 34px;
-    padding: 8px 14px;
+    margin-left: 40%;
 }
-
 .sectionmid h3{
     font-size: 18px;
     color: #27569b;
@@ -200,8 +354,6 @@
 }
 .sectionmid h3{
     font-size: 16px;
-    color: #27569b;
-    font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
@@ -218,36 +370,56 @@
     font-size: 20px;
     padding-left: 177px;
 }
-
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
 @media only screen and (min-width: 450px ){
       .atglancehead{
-        font-weight: 600;
        font-size: 25px;
        text-align: center;
-       color: #58585b;
    }
 .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
     min-height: 500px;
 }
 .top-head h1{
-    color: #ffffff;
     padding-top: 150px;
-    font-weight: 600;
     font-size: 45px;
+}
+.chronichead{
+    min-height: 500px;
+}
+.chronichead h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.allerygytop{
+    min-height: 500px;
+}
+.allerygytop h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.healthcaretop{
+    min-height: 500px;
+}
+.healthcaretop h1{
+   padding-top: 150px;
+   font-size: 45px;
 }
 .whatsapp-btn{
      margin-top: 70px;
     padding: 8px 14px;
 }
-
 .sectionmid h3{
     font-size: 21px;
     color: #27569b;
@@ -266,7 +438,16 @@
     font-size: 20px;
     padding-left: 177px;
 }
-
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
@@ -281,24 +462,33 @@
    }
 
  .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
     min-height: 340px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 70px;
-    font-weight: 600;
-    font-size: 25px;
+    padding-top: 170px;
+    font-size: 28px;
 }
-.whatsapp-btn{
-    margin-top: 50px;
-    padding: 8px 14px;
+.chronichead{
+   min-height: 340px;
 }
-
+.chronichead h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+.allerygytop{
+   min-height: 340px;
+}
+.allerygytop h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+.healthcaretop{
+   min-height: 340px;
+}
+.healthcaretop h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
 .sectionmid{
     text-align: left;
 }
@@ -322,7 +512,16 @@
 .healthbenefit{
     padding-top: 34px;
 }
-
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
@@ -335,26 +534,34 @@
        text-align: center;
        color: #58585b;
    }
-
- .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
+.top-head{
     min-height: 340px;
 }
 .top-head h1{
-    color: #ffffff;
-    padding-top: 70px;
-    font-weight: 600;
-    font-size: 25px;
+    padding-top: 170px;
+    font-size: 31px;
 }
-.whatsapp-btn{
-    margin-top: 50px;
-    padding: 8px 14px;
+.chronichead{
+  min-height: 340px;
 }
-
+.chronichead h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.allerygytop{
+  min-height: 340px;
+}
+.allerygytop h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.healthcaretop{
+  min-height: 340px;
+}
+.healthcaretop h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
 .sectionmid{
     text-align: left;
 }
@@ -378,7 +585,15 @@
 .healthbenefit{
     padding-top: 34px;
 }
-
+.planup h2{
+    font-size: 25px;
+    font-weight: 650;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
@@ -390,30 +605,44 @@
        text-align: center;
        color: #58585b;
    }
-
- .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
+.top-head{
     min-height: 500px;
 }
 .top-head h1{
-    color: #ffffff;
     padding-top: 150px;
-    font-weight: 600;
     font-size: 45px;
+    padding-left: 40%;
+}
+.chronichead{
+  min-height: 500px;
+}
+.chronichead h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.allerygytop{
+  min-height: 500px;
+}
+.allerygytop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.healthcaretop{
+  min-height: 500px;
+}
+.healthcaretop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
     padding: 8px 14px;
 }
-
 .sectionmid h3{
     font-size: 21px;
-    color: #27569b;
-    font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
@@ -424,13 +653,20 @@
     color: #00af87;
     font-size: 35px;
 }
-
 .footerplan p{
     font-size: 20px;
     padding-left: 177px;
 }
-
-
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
@@ -442,24 +678,39 @@
        color: #58585b;
    }
   .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
     min-height: 400px;
 }
 .top-head h1{
     color: #ffffff;
     padding-top: 90px;
     font-weight: 600;
-    font-size: 33px;
+    font-size: 43px;
+}
+.chronichead{
+    min-height: 400px;
+}
+.chronichead h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.allerygytop{
+    min-height: 400px;
+}
+.allerygytop h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.healthcaretop{
+    min-height: 400px;
+}
+.healthcaretop h1{
+    padding-top: 90px;
+    font-size: 43px;
 }
 .whatsapp-btn{
     margin-top: 70px;
     padding: 8px 14px;
 }
-
 .sectionmid h3{
     font-size: 19px;
     color: #27569b;
@@ -478,45 +729,61 @@
     font-size: 25px;
     padding-left: 48%;
 }
-
-
+.planup h2{
+    font-size: 25px;
+    font-weight: 650;
+    color: #6d6e70;
+    padding-top: 20px;
 }
-
-
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
+}
 
 
 
 @media only screen and (min-width: 1100px ){
       .atglancehead{
-        font-weight: 600;
        font-size: 25px;
-       text-align: center;
-       color: #58585b;
    }
-
- .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
+.top-head{
     min-height: 500px;
 }
 .top-head h1{
-    color: #ffffff;
+   padding-top: 140px;
+  font-size: 36px;
+    padding-left: 40%;
+}
+.chronichead{
+ min-height: 500px;
+}
+.chronichead h1{
     padding-top: 140px;
-    font-weight: 600;
-    font-size: 36px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+.allerygytop{
+ min-height: 500px;
+}
+.allerygytop h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+.healthcaretop{
+ min-height: 500px;
+}
+.healthcaretop h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
-    padding: 8px 14px;
 }
-
 .sectionmid h3{
     font-size: 21px;
-    color: #27569b;
-    font-weight: 600;
     margin-bottom: 1px;
 }
 .sectionmid img{
@@ -531,6 +798,16 @@
     font-size: 25px;
     padding-left: 48%;
 }
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
@@ -543,11 +820,7 @@
        color: #58585b;
    }
 .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
+
     min-height: 470px;
 }
 .top-head h1{
@@ -555,12 +828,37 @@
     padding-top: 100px;
     font-weight: 600;
     font-size: 40px;
+    padding-left: 40%;
+}
+.chronichead{
+min-height: 470px;
+}
+.chronichead h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+.allerygytop{
+min-height: 470px;
+}
+.allerygytop h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+.healthcaretop{
+min-height: 470px;
+}
+.healthcaretop h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
 }
 .whatsapp-btn{
     margin-top: 70px;
     padding: 8px 14px;
 }
-
 .sectionmid h3{
     font-size: 21px;
     color: #27569b;
@@ -579,38 +877,65 @@
     font-size: 30px;
     padding-left: 17%;
 }
+.planup h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #6d6e70;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 17px;
+     color: #6d6e70;
+}
 }
 
 
-
-
 @media only screen and (min-width: 1300px ){
-      .atglancehead{
+
+ .atglancehead{
         font-weight: 700;
        font-size: 40px;
        text-align: center;
        color: #58585b;
    }
 .top-head{
-  background-image: url('../images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-origin: border-box;
-    background-size: cover;
-    min-height: 500px;
+ min-height: 500px;
 }
 .top-head h1{
     color: #ffffff;
     padding-top: 150px;
     font-weight: 600;
     font-size: 45px;
+    padding-left: 50%;
+}
+.chronichead{
+ min-height: 500px;
+}
+.chronichead h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+
+.allerygytop{
+ min-height: 500px;
+}
+.allerygytop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+.healthcaretop{
+ min-height: 600px;
+}
+.healthcaretop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
 }
 .whatsapp-btn{
    margin-top: 70px;
-    padding: 8px 14px;
 }
-
-
 .sectionmid div{
     margin-top: 10px;
     margin-bottom: 12px;
@@ -632,6 +957,14 @@
 .footerplan p{
     font-size: 25px;
     padding-left: 25%;
+}
+.planup h2{
+    font-size: 30px;
+    font-weight: 650;
+    padding-top: 20px;
+}
+.planup p{
+    font-size: 22px;
 }
 }
 
