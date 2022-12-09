@@ -632,3 +632,12 @@ th{
   width: 14%;
   float: left;
 }
+.w-10{
+  width: 11.8%;
+  float: left;
+  padding-left: 15px;
+}
+.modal-topup{
+  width: 80%;
+}
+
