@@ -3,9 +3,7 @@ html {
   height: 100%;
   min-height: 100%;
 }
-
 body {
-/*  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
  font-family: 'Poppins', sans-serif!important;
     font-size: 12px;
   color: #000;
@@ -182,20 +180,18 @@ border-color: #ffffff;
   transition: 0.3s;
   font-size: 1.5rem;
 }
-
 .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary:hover {
   background-color: #104d89 !important;
   color: #fff !important;
   border-color: #104d89 !important;
 }
-
 .form-select,
 .form-control {
   display: block;
     width: 100%;
     height: 34px;
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -208,32 +204,25 @@ border-color: #ffffff;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-
 .mb-3{
   margin-bottom: 1rem!important;
 }
-
-
 .form-select::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
   color: #707070;
 }
-
 .form-select:-ms-input-placeholder,
 .form-control:-ms-input-placeholder {
   color: #707070;
 }
-
 .form-select::-ms-input-placeholder,
 .form-control::-ms-input-placeholder {
   color: #707070;
 }
-
 .form-select::placeholder,
 .form-control::placeholder {
   color: #707070;
 }
-
 .form-select::-webkit-input-placeholder,
 .form-control::-webkit-input-placeholder {
   /* Edge */
@@ -603,11 +592,9 @@ th{
     margin-left: 2px;
     vertical-align: middle;
 }
-
 .multiSelect_choice:hover .multiSelect_deselect {
     stroke: #a1a8b1;
 }
-
 .multiSelect_noselections {
     text-align: center;
     padding: 7px;
@@ -615,7 +602,6 @@ th{
     font-weight: 450;
     margin: 0;
 }
-
 .multiSelect_placeholder {
     position: absolute;
     left: 20px;
@@ -641,4 +627,8 @@ th{
     left: 17px;
     color: #6e7277;
     font-size: 13px;
+}
+.w-14{
+  width: 14%;
+  float: left;
 }

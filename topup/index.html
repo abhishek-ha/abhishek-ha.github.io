@@ -14,15 +14,15 @@
 </head>
 <body>
 
-	  <div class="container">
+	  <div class="container-fluid">
             <div class="row">
 <div class="col-lg-12 col-md-12">
-<h2 class="header-content pt-3 pb-5"> <b> Additional Plan Details  </b></h2>  </div>
+<h5 class="header-content pt-3 pb-3">  Top up Detail  </h5>  </div>
 </div>
 <div class="mb-5 row">
-  <div class="col-sm-2">
+  <div class="col-sm-2 w-14">
       <select class="form-select">
-  <option> Filter by Plan </option>
+  <option> Filter by Client Name </option>
   <option> Fitassure </option>
   <option> Optimaassure </option>
     <option> TotalAssure </option>
@@ -31,9 +31,9 @@
   </select>
    </div>
 
-   <div class="col-sm-2 width">
+   <div class="col-sm-2 w-14">
       <select class="form-select">
-  <option> Good Health Declaration </option>
+  <option> Filter by Plan type </option>
   <option> Fitassure </option>
   <option> Optimaassure </option>
     <option> TotalAssure </option>
@@ -42,7 +42,29 @@
   </select>
    </div>
 
-   <div class="col-sm-3 width">
+ <div class="col-sm-2 w-14">
+      <select class="form-select">
+  <option> Filter by Plan Name </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+    <div class="col-sm-2 w-14">
+      <select class="form-select">
+  <option> Filter by Topup Allowed </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+  <div class="col-sm-2 w-14">
       <select class="form-select">
   <option> Filter by Discount Enabled </option>
   <option> Fitassure </option>
@@ -52,97 +74,120 @@
     <option> FitAssure Platinum Plus </option>
   </select>
    </div>
-<div class="col-sm-3 width">
+
+  <div class="col-sm-3 w-14">
+      <select class="form-select">
+  <option> Filter by Discount Enabled </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+<div class="col-sm-3 w-14">
     <input type="text" name="" class="form-control" placeholder="Search by Keywords">
    </div>
-<div class="col-md-2 col-lg-2  text-center">
+<div class="col-md-12 col-lg-12  text-center mt-3">
   <button class="btn btn-primary me-1" type="submit">Apply </button> <button class="btn btn-primary me-1" type="reset"> Reset </button>
   </div>
 </div>
 <div class="row ">
   <div class="col-lg-12 col-md-12 ">
-<button type="button" class="btn btn-primary btn-lg float-right mb-3" data-toggle="modal" data-target="#myModal" > Add New Plan Details  </button>
+<button type="button" class="btn btn-primary btn-lg float-right mb-3" data-toggle="modal" data-target="#myModal" > Add New Top up  </button>
 <div class="col-lg-12 table-responsive">
 <table class="table table-bordered table-striped table-hover">
   <thead>
     <tr>
       <th scope="col"> S.No </th>
-      <th scope="col"> Plan Name </th>
-      <th scope="col"> Member to be Shown Upfront </th>
-      <th scope="col"> No of Members to be Shown </th>
-      <th scope="col">  Optional Members </th>
-      <th scope="col" > Good Health Declaration </th>
-      <th scope="col"> Agent Id  </th>
+      <th scope="col"> Client Name </th>
       <th scope="col"> Plan Type </th>
-      <th scope="col"> Corporate Email Domain </th>
+        <th scope="col"> Plan Name </th>
+      <th scope="col"> Top Up Allowed </th>
+      <th scope="col"> No of Top Up Allowed </th>
+      <th scope="col"> Amount Range </th>
+      <th scope="col" > Amount Interval </th>
+      <th scope="col"> Service  </th>
+      <th scope="col"> Amount Charged to Customer <br>
+      <span style="font-size:8px;
+      ">(% of the Topup Amount) </span> </th>
+      <th scope="col"> Capping Limit </th>
+      <th scope="col"> Discount Enabled </th>
        <th scope="col"> Edit/ Delete </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
+      <td> ABG </td>
+        <td> Flexi Wallet </td>
       <td> FitAssure Plus </td>
       <td> Yes </td>
-      <td> 4 </td>
-      <td> 2 </td>
-      <td> Yes </td>
-      <td> Yes </td>
-      <td> Corporate </td>
-      <td> All </td>
-       <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+         <td> 4 </td>
+         <td> 5000 - 7000 </td>
+      <td> 100 </td>
+      <td> NA </td>
+      <td> 75% </td>
+      <td> NA </td>
+       <td> Yes </td>
+   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
    </tr>
 
-    <tr>
-      <th scope="row"> 2 </th>
+<tr>
+      <th scope="row">1</th>
+      <td> ABG </td>
+        <td> Flexi Wallet </td>
       <td> FitAssure Plus </td>
       <td> Yes </td>
-      <td> 4 </td>
-      <td> 1 </td>
-      <td> Yes </td>
-      <td> Yes </td>
-      <td> Corporate </td>
-      <td> All </td>
+         <td> 4 </td>
+         <td> 5000 - 7000 </td>
+      <td> 100 </td>
+      <td> NA </td>
+      <td> 75% </td>
+      <td> NA </td>
+       <td> Yes </td>
    <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
    </tr>
- <tr>
-      <th scope="row">3</th>
-      <td> FitAssure Plus </td>
-      <td> Yes </td>
-      <td> 4 </td>
-      <td> 3 </td>
-      <td> Yes </td>
-      <td> Yes </td>
-      <td> Corporate </td>
-      <td> All </td>
-   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
-   </tr>
- <tr>
-      <th scope="row">4</th>
-      <td> FitAssure Plus </td>
-      <td> Yes </td>
-      <td> 4 </td>
-      <td> 6 </td>
-      <td> Yes </td>
-      <td> Yes </td>
-      <td> Corporate </td>
-      <td> All </td>
-  <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
-   </tr>
+
+
    <tr>
-      <th scope="row">5</th>
+      <th scope="row">1</th>
+      <td> ABG </td>
+        <td> Flexi Wallet </td>
       <td> FitAssure Plus </td>
       <td> Yes </td>
-      <td> 4 </td>
-      <td> 1 </td>
-      <td> Yes </td>
-      <td> Yes </td>
-      <td> Corporate </td>
-      <td> All </td>
-<td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+         <td> 4 </td>
+         <td> 5000 - 7000 </td>
+      <td> 100 </td>
+      <td> NA </td>
+      <td> 75% </td>
+      <td> NA </td>
+       <td> Yes </td>
+   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
    </tr>
+
+
+   <tr>
+      <th scope="row">1</th>
+      <td> ABG </td>
+        <td> Flexi Wallet </td>
+      <td> FitAssure Plus </td>
+      <td> Yes </td>
+         <td> 4 </td>
+         <td> 5000 - 7000 </td>
+      <td> 100 </td>
+      <td> NA </td>
+      <td> 75% </td>
+      <td> NA </td>
+       <td> Yes </td>
+   <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3" data-toggle="modal" data-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+
+
 </tbody>
 </table>
   </div>
+
   <div class="col-lg-12 ">
     <nav aria-label="Page navigation ">
   <ul class="pagination mt-3 mb-5 float-right">
@@ -168,20 +213,22 @@
 
 
 
-            <!-- Modal -->
+     
+
+ <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-   <h4 class="modal-title" id="myModalLabel"> Add New Plan </h4>
+   <h4 class="modal-title" id="myModalLabel"> Topup Details </h4>
       </div>
       <div class="modal-body">
-  <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-6 col-form-label"> Select Plan </label>
-    <div class="col-sm-6">
+    <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label"> Client Name </label>
+    <div class="col-sm-3">
       <select class="form-select">
-  <option> Select Plan </option>
+  <option> Select Client </option>
   <option> Fitassure </option>
   <option> Optimaassure </option>
     <option> TotalAssure </option>
@@ -189,67 +236,142 @@
     <option> FitAssure Platinum Plus </option>
   </select>
    </div>
-  </div>
-<div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Member to be Shown Upfront </label>
-    <div class="col-sm-6">
+ <div class="col-sm-3">
+  <label for="staticEmail" class="col-sm-2 col-form-label"> Client Name </label>
+      <select class="form-select">
+  <option> Select Client </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+
+    <label for="inputPassword" class="col-sm-2 col-form-label col-md-offset-2"> Top up Allowed </label>
+    <div class="col-sm-2 col-md-offset-1">
     <label class="switch">
   <input type="checkbox" checked>
   <span class="slider round"> </span> 
 </label>
     </div>
-  </div>
+</div>
+
 <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-6 col-form-label"> No of Members to be shown </label>
-    <div class="col-sm-6">
-      <input type="number" class="form-control" name="" placeholder="">
+    <label for="staticEmail" class="col-sm-2 col-form-label"> Amount Range </label>
+    <div class="col-sm-2">
+      <input type="text" class="form-control" name="" placeholder="Min Value">
+     </div>
+     <label for="staticEmail" class="col-sm-1 col-form-label"> To  </label>
+     <div class="col-sm-2">
+    <input type="text" class="form-control" name="" placeholder="Max Value">
      </div>
 </div>
+<div class="row">
+   <label for="No of Top up Allowed" class="col-sm-2 col-form-label"> No of Top up Allowed </label>
+
+<div class="col-sm-5">
+ <input type="number" class="form-control" name="" min="0" max="8"> 
+ </div>
+  
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h4><b> Top up For Each Range </b></h4>
+    </div>
+</div>
+
 <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Good Health Declaration </label>
-    <div class="col-sm-6">
-    <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"> </span> 
-</label>
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Agent Id to be Shown </label>
-    <div class="col-sm-6">
-    <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"> </span> 
-</label>
+   <div class="col-sm-3">
+    <select class="form-select">
+      <option > Select the Range  </option>
+      </select>
+     </div>
+     <label for="Percentage Defined" class="col-sm-3 col-form-label col-md-offset-3"> Percentage Defined  </label>
+     <div class="col-sm-3">
+<select class="form-select">
+  <option> Select the % </option>
+  <option> 10 % </option>
+</select>
+</div>
+   </div>
+<div class="mb-3 row">
+   <div class="col-sm-3">
+    <select class="form-select">
+      <option > Select the Range  </option>
+   </select>
+     </div>
+     <label for="Percentage Defined" class="col-sm-3 col-md-offset-3 col-form-label"> Percentage Defined  </label>
+     <div class="col-sm-3">
+      <select class="form-select">
+  <option> Select the % </option>
+  <option> 10 % </option>
+</select>
+     </div>
+   </div>
+
+ <div class="mb-3 row"> 
+    <div class="col-sm-3">
+    <select class="form-select">
+      <option > Select the Range  </option>
+    </select>
+     </div>
+     <label for="Percentage Defined" class="col-sm-3 col-md-offset-3 col-form-label"> Percentage Defined  </label>
+     <div class="col-sm-3">
+     <select class="form-select">
+  <option> Select the % </option>
+  <option> 10 % </option>
+</select>
+     </div>
+   </div>
+<div class="row">
+    <div class="col-lg-12">
+      <h4 class="pt-1 pb-1"><b> Amount Limit for Each Service </b></h4>
     </div>
   </div>
 <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
-    <div class="col-sm-6">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Diagnostic </label>
+    <div class="col-sm-3">
+<input type="number" class="form-control" name="" placeholder="Enter the Amount">
+ </div>
+<label for="inputPassword" class="col-sm-3 col-form-label"> Discount Allowed </label>
+    <div class="col-sm-2">
     <label class="switch">
   <input type="checkbox" checked>
   <span class="slider round"> </span> 
 </label>
     </div>
+
   </div>
+
    <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
-    <div class="col-sm-6">
-    <input type="text" class="form-control" placeholder="You can enter more than 1 domain">
-    </div>
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Doctor Consultation </label>
+    <div class="col-sm-3">
+<input type="text" class="form-control" name="" placeholder="Enter the Amount">
+ </div>
   </div>
-  <div class="mb-3 row text-center">
+
+ <div class="mb-3 row">
+<label for="staticEmail" class="col-sm-3 col-form-label"> Hospicash </label>
+    <div class="col-sm-3">
+<input type="text" class="form-control" name="" placeholder="Enter the Amount">
+ </div>
+  </div>
+ <div class="mb-3 row text-center">
   <div class="col-md-12 pt-3 pb-3">
 <button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
  </div>
   </div>
-   </div>
+</div>
     </div>
   </div>
 </div>
 
 
-<!-- Start Edit New Plan -->
+
+
 
 
 
