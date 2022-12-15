@@ -1246,8 +1246,6 @@ div {
     padding-top:3px;
     padding-right:15px;
 }
-
-
 .sodexo-plan{
      background-color:#fcfcfc;
     height:343px;
@@ -2295,6 +2293,36 @@ div {
 .mediyartopspace{
     padding-top: 50px;
 }
+
+.renewpolicy-benefits{
+    background-color: #ecf0fa;
+    box-shadow: 5px 11px 23px -13px #dedede;
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.renewpolicy-benefits h2{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 40px 10px 40px 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.renewpolicy-benefits h3{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.renewpolicy-benefits p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.renewpolicy-benefits img{
+    width: 30px;
+}
+
+
 }
 
 
@@ -3132,15 +3160,11 @@ div {
     border: 1px solid #007bff;
     
 }
-
-
 .buybtn1:hover{
    background-color: #00af87!important;
     color:#ffffff!important;  
     border: 1px solid #00af87;
 }
-
-
 .buybtn1:hover:after {
    content: '\f178';
     font-family: "FontAwesome";
@@ -3460,6 +3484,38 @@ div {
 .mediyartopspace{
     padding-top: 50px;
 }
+
+.renewpolicy-benefits{
+    background-color: #ecf0fa;
+    box-shadow: 5px 11px 23px -13px #dedede;
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.renewpolicy-benefits h2{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 40px 10px 40px 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.renewpolicy-benefits h3{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.renewpolicy-benefits p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.renewpolicy-benefits img{
+    width: 30px;
+    float: left;
+}
+
+
+
 }
 
 
@@ -3898,17 +3954,7 @@ height:630px;
     border:2px solid #00af87;
     margin-left: 44%;
 }
-
-
-
 }
-
-
-
-
-
-
-
 
 @media only screen and (min-width: 351px){
  .pt-bnr {
@@ -4329,7 +4375,6 @@ height:630px;
 .relaxtop{
     padding-top: 6px;
 }
-
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
@@ -4341,9 +4386,34 @@ height:630px;
     border:2px solid #00af87;
     margin-left: 44%;
 }
-
-
-
+.renewpolicy-benefits{
+    background-color: #ecf0fa;
+    box-shadow: 5px 11px 23px -13px #dedede;
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.renewpolicy-benefits h2{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 40px 10px 40px 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.renewpolicy-benefits h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.renewpolicy-benefits p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.renewpolicy-benefits img{
+    width: 30px;
+    float: left;
+}
 }
 
 @media only screen and (min-width: 375px){
@@ -7097,6 +7167,34 @@ height:321px;
 .mediyartopspace{
     padding-top: 50px;
 }
+.renewpolicy-benefits{
+    background-color: #ecf0fa;
+    box-shadow: 5px 11px 23px -13px #dedede;
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.renewpolicy-benefits h2{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 40px 10px 40px 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.renewpolicy-benefits h3{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 27px;
+}
+.renewpolicy-benefits p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.renewpolicy-benefits img{
+    width: 38px;
+}
+
 
 }
 
@@ -7114,7 +7212,7 @@ height:321px;
         font-weight:800;
         }
 .head1 {
-           font-size: 35px;
+           font-size: 27px;
             font-weight: 600;
             line-height: 37px;
         }
@@ -7211,19 +7309,10 @@ height:321px;
    width:344px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+  padding-top:4px;
     padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
+   margin-right:9px;
+  
     margin-top:13px;
 }
 .service:hover{
@@ -7912,6 +8001,36 @@ height:652px;
 .mediyartopspace{
     padding-top: 29px;
 }
+
+.renewpolicy-benefits{
+    background-color: #ecf0fa;
+    box-shadow: 5px 11px 23px -13px #dedede;
+    padding: 20px 0px 40px 0px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.renewpolicy-benefits h2{
+    font-size: 33px;
+    font-weight: 600;
+    padding: 40px 10px 40px 10px;
+    text-align: center;
+    line-height: 55px;
+}
+.renewpolicy-benefits h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.renewpolicy-benefits p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.renewpolicy-benefits img{
+    width: 50px;
+}
+
+
 
 
 
@@ -13662,3 +13781,4 @@ h4{color:#444}
     font-size: 12px;
     font-weight: 600;
 }
+

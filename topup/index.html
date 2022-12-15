@@ -345,77 +345,123 @@
 
 
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <h4 class="modal-title" id="editModalLabel">Edit Additional Plan Detail </h4>
+  <h4 class="modal-title" id="editModalLabel">Edit Topup Detail </h4>
       </div>
-      <div class="modal-body">
-  <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-6 col-form-label">Select Plan </label>
-    <div class="col-sm-6">
+   <div class="modal-body">
+   <div class="mb-3 row">
+    <label for="staticEmail" class="col-lg-2 col-sm-2  col-md-2 col-xs-12  col-form-label"> Client Name </label>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
       <select class="form-select">
- <option selected> FitAssure </option>
-    <option> OptimaAssure </option>
+  <option> Select Client </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
   </select>
-
    </div>
-  </div>
-<div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Member to be Shown Upfront </label>
-    <div class="col-sm-6">
-    <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"> </span> 
-</label>
-    </div>
-  </div>
-<div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-6 col-form-label"> No of Members to be shown </label>
-    <div class="col-sm-6">
-      <input type="number" class="form-control" name="" placeholder="3">
-     </div>
+<label for="staticEmail" class=" col-sm-2 col col-md-2 col-xs-12 col-form-label"> Plan Type </label>
+    <div class="col-sm-4 col-xs-12 col-md-4">
+      <select class="form-select">
+  <option> Flexi Wallet </option>
+  <option> Flexi Wallet with Capping </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
 </div>
 <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Good Health Declaration </label>
-    <div class="col-sm-6">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Plan Name </label>
+    <div class="col-sm-4">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+<label for="inputPassword" class="col-sm-2 col-md-2 col-xs-6 col-form-label"> Top up Allowed </label>
+    <div class="col-sm-2 col-md-2 col-xs-6">
     <label class="switch">
   <input type="checkbox" checked>
   <span class="slider round"> </span> 
 </label>
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Agent Id to be Shown </label>
-    <div class="col-sm-6">
-    <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"> </span> 
-</label>
-    </div>
-  </div>
+    </div>   
+</div>
 <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
-    <div class="col-sm-6">
+<label for="No of Top up Allowed" class="col-sm-2 col-form-label"> No of Top up Allowed </label>
+<div class="col-sm-4">
+ <input type="number" class="form-control" name="" min="0" max="8"> 
+ </div>
+  <label for="staticEmail" class="col-sm-2 col-xs-12 col-md-2 col-form-label"> Amount Range </label>
+    <div class="w-10">
+      <input type="text" class="form-control" name="" placeholder="Min Value">
+     </div>
+     <label for="staticEmail" class="col-sm-1 col-xs-12 col-md-1 col-form-label text-center"> To  </label>
+     <div class="w-10">
+    <input type="text" class="form-control" name="" placeholder="Max Value">
+     </div>
+</div>
+
+
+ <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label"> Amount Intervals </label>
+    <div class="col-sm-4">
+      <select class="form-select">
+  <option> Select Intervals </option>
+  <option> 10% </option>
+  <option> 20%</option>
+  </select>
+   </div>
+<label for="staticEmail" class="col-sm-2 col-form-label"> Service </label>
+    <div class="col-sm-4">
+      <select class="form-select">
+  <option> Select Service </option>
+  <option> Diagnostic </option>
+  <option> Lab test </option>
+    <option> Doctor Consultations </option>
+  </select>
+   </div>
+</div>
+
+
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label"> Amount Charged to the Customer </label>
+    <div class="col-sm-4">
+      <select class="form-select">
+  <option> 75% </option>
+  <option> 10% </option>
+  <option> 20%</option>
+  </select>
+   </div>
+<label for="staticEmail" class="col-sm-2 col-form-label"> Capping Limit </label>
+    <div class="col-sm-4">
+    <input type="text" class="form-control"  placeholder="Capping Limit">
+   </div>
+</div>
+<div class="mb-3 row">   
+<label for="inputPassword" class="col-sm-2 col-md-2 col-xs-7 col-form-label"> Discount Allowed </label>
+    <div class="col-sm-2 col-md-2 col-xs-5">
     <label class="switch">
   <input type="checkbox" checked>
   <span class="slider round"> </span> 
 </label>
     </div>
-  </div>
-   <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
-    <div class="col-sm-6">
-    <input type="text" class="form-control" placeholder="abc@healthassure.in">
-    </div>
-  </div>
-<div class="mb-3 row text-center">
+ </div>
+ <div class="mb-3 row text-center">
   <div class="col-md-12 pt-3 pb-3">
 <button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
  </div>
   </div>
-   </div>
+</div>
     </div>
   </div>
 </div>
