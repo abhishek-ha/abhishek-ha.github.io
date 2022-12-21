@@ -11,10 +11,18 @@
 async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP) {
     var latitude = '', longitude = '';
     try {
-        var loc = await getLocation();
-        latitude = loc.coords.latitude;
-        longitude = loc.coords.longitude;
-        console.log(latitude, longitude);
+        var os = getCurrentOS();
+        if (os == "Windows" || os == "Mac OS" || os == "Linux") {
+            getLocation().then((loc) => {
+                latitude = loc.coords.latitude;
+                longitude = loc.coords.longitude;
+            });
+        }
+        else {
+            var loc = await getLocation();
+            latitude = loc.coords.latitude;
+            longitude = loc.coords.longitude;
+        }
     } catch (err) {
         console.log(err.message);
     }
@@ -129,3 +137,30 @@ async function getLocation() {
         );
     });
 };
+
+function getCurrentOS() {
+    try {
+        var userAgent = window.navigator.userAgent,
+            platform = window.navigator?.userAgentData?.platform ?? window.navigator.platform,
+            macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+            windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+            iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+            os = null;
+
+        if (macosPlatforms.indexOf(platform) !== -1) {
+            os = 'Mac OS';
+        } else if (iosPlatforms.indexOf(platform) !== -1) {
+            os = 'iOS';
+        } else if (windowsPlatforms.indexOf(platform) !== -1) {
+            os = 'Windows';
+        } else if (/Android/.test(userAgent)) {
+            os = 'Android';
+        } else if (!os && /Linux/.test(platform)) {
+            os = 'Linux';
+        }
+        return os;
+    }
+    catch (e) {
+        return null;
+    }
+} 

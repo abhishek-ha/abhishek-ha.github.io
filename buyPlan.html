@@ -1124,7 +1124,7 @@
             if ($('#CoupanCode').val() == '') {
                 return;
             }
-            GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val()).then(function (result) {
+            GetOPDPlanCouponDetails($('#CoupanCode').val(), $('#PlanAmount').text(), $('#CustomerPhone').val(), Vars["PlanCode"]).then(function (result) {
                 $('#discdtls').show();
                 $('#CouponDiscount').text(result.results.discountAmount);
                 $('#PlanSGST').text(parseInt(result.results.finalAmount * .09));
@@ -1180,7 +1180,7 @@
             });
         }
 
-        function GetOPDPlanCouponDetails(CouponCode = null, TotalAmount = null, MobileNo = null) {
+        function GetOPDPlanCouponDetails(CouponCode = null, TotalAmount = null, MobileNo = null, PlanCode = null) {
             return new Promise(function (resolve, reject) {
                 if (MobileNo == undefined || MobileNo == '') {
                     MobileNo = null;
@@ -1189,7 +1189,7 @@
                     type: "POST",
                     url: "https://live.healthassure.in/ProductApi/api/Coupon/ApplyCoupon",
                     dataType: "json",
-                    data: JSON.stringify({ CouponCode: CouponCode, Amount: TotalAmount, MobileNo: MobileNo }),
+                    data: JSON.stringify({ CouponCode: CouponCode, Amount: TotalAmount, MobileNo: MobileNo, PlanCode: PlanCode }),
                     headers: {
                         'Accept': 'application/json',
                         'Content-Type': 'application/json',

@@ -185,8 +185,6 @@
             border-radius: 12px;
             font-size: 12px;
         }
-
-       
     </style>
     <!-- Global site tag (gtag.js) - Google Ads: 471644001 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471644001"></script>
@@ -295,68 +293,50 @@
         </div>
     </section>
 
-<section class="renewpolicy-benefits">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 ">
-                <h2>  Main Benefits  </h2>
+    <section class="renewpolicy-benefits" id="renewpolicybenefitsdiv" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                    <h2> Main Benefits </h2>
                 </div>
             </div>
-            <div class="row">
-             <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="row" id="renewpolicybenefits">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-<img src="images/check.png">
-                         </div>
-  <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-                            <h3> Rs. 2000 Flexi Diagnostic Wallet </h3>
-                          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>  
-                       </div>
+                            <img src="images/check.png">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                            <h3> Rs. <span id="totalAmount"></span> Wallet </h3>
+                        </div>
                     </div>
-                  </div>
-
-                    <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-<img src="images/check.png" >
-                         </div>
-  <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-                            <h3> Rs. 1000 Pharmacy </h3>
-                          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>  
-                       </div>
+                            <img src="images/check.png">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                            <h3> Services - <span id="serviceName"></span></h3>
+                        </div>
                     </div>
-                  </div>
-
-
-                    <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-<img src="images/check.png" >
-                         </div>
-  <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-                    <h3> Unlimited Online Doctor Consultations </h3>
-                          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>  
-                       </div>
+                            <img src="images/check.png">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-10">
+                            <h3> Unlimited Fitness - <span id="isUnlimited"></span></h3>
+                        </div>
                     </div>
-                  </div>
-
-
-                    <div class=" col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
-<img src="images/check.png" >
-                         </div>
-  <div class="col-lg-10 col-md-10 col-sm-10 col-10">
-                            <h3> Unlimited Fitness </h3>
-                          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>  
-                       </div>
-                    </div>
-                  </div>
-             </div>
-         </div>
-
-
-</section>
+                </div>
+            </div>
+            <div class="px-4">
+                <h4><b>Note:  All benefits are on HealthAssure network except the MeraWalaDoctor (Doctor of Your Choice) service</b></h4>
+            </div>
+        </div>
+    </section>
 
     <section id="PolicyDetailsection" style="display: none;">
         <div class="container banner" style="background-color:#ecf0fa; box-shadow: 5px 11px 23px -13px #dedede;">
@@ -508,7 +488,7 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="../js/RenewalOPDPlan.min.js"></script>
+    <script src="../js/RenewalOPDPlan.js"></script>
 
 
     <script>
@@ -548,6 +528,21 @@
                 $('#PlanNewValidity').html(result.results.plan.newValidFrom + ' to ' + result.results.plan.newValidTo);
                 $('#DiscountPlanAmount').html(result.results.plan.discountPlanAmount);
                 $('#PolicyDetailsection').show();
+                var renewpolicybenefits = '';
+                jQuery.each(result.results.plan.benefits, function (index, item) {
+                    renewpolicybenefits += "<div class='col-lg-6 col-md-6 col-sm-6 col-12 my-3'>" +
+                        "<div class='row'>" +
+                        "<div class='col-lg-2 col-md-2 col-sm-2 col-2'>" +
+                        "<img src='images/check.png'>" +
+                        "</div>" +
+                        "<div class='col-lg-10 col-md-10 col-sm-10 col-10'>" +
+                        "<h3 class='pt-3'> <span>" + (item.isUnlimited == "Y" ? "Unlimited" : item.totalAmount > 0 ? " Rs. " + item.totalAmount : " Credits " + item.totalCredits) + "  " + item.serviceName + "</span></h3>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>"
+                });
+                $('#renewpolicybenefits').html(renewpolicybenefits);
+                $("#renewpolicybenefitsdiv").show();
             }).catch(function (err) {
                 console.warn(err);
                 //alert(err.message);
