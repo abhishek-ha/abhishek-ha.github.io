@@ -135,3 +135,25 @@ html{
     background-color: #0E5FC1;
     border-radius: 10px;
   }
+.blog-sec h2{
+        color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.team-memberhead {
+        color: #000000;
+    font-size: 22px!important;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.blog-sec h3{
+        color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
