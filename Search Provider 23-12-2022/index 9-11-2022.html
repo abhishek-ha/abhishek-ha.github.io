@@ -1,0 +1,1039 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+<title> Search Provider </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/al-range-slider.css" />
+<style>
+.accordion-container{
+  position: relative;
+  max-width: 500px;
+  height: auto;
+  margin: 10px auto;
+}
+.accordion-container > h2{
+  text-align: center;
+  color: #fff;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.set{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+.set > a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+.set > a i{
+  float: right;
+  margin-top: 2px;
+}
+.set > a.active{
+  background-color:#3399cc;
+  color: #fff;
+}
+.content{
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display:none;
+}
+.content p{
+  padding: 10px 15px;
+  margin: 0;
+  color: #333;
+}
+</style>
+</head>
+ <body>
+  <section class="bg-white shadow">
+    <div class="container pt-3 pb-3">
+      <div class="row">
+                <div class="col-lg-8 col-12">
+                    <img src="images/new-logo.png" class="logo">
+             </div>
+         <div class="col-lg-4 col-12">
+                  <h5 class="mb-0"> <i class="fa-solid fa-user-doctor docicon px-3"></i> Search Providers Near You </h5>
+                </div>
+              </div>
+   </div>
+    </section>
+
+  <section>
+    <div class="container">
+      <div class="row pt-5">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 ">
+<h4 class="head pt-1"> What you are Looking for </h4>
+       </div>
+
+<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+<form>
+  <div class="form-group align-items-center">
+<label  for="Enter Location"><img src="images/location.png" width="20px"> Enter Location </label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-location-dot"></i> </span>
+  </div>
+  <input type="text" class="form-control" placeholder="Enter Location" >
+</div>
+  </div>
+</form>
+       </div>
+                 <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+                   <form>
+  <div class="form-row align-items-center">
+  
+    <label class="sr-only" for="inlineFormInputGroup"> Select Category </label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+  <div class="input-group-text"> <i class="fa-solid fa-tag"></i> </div>
+        </div>
+        <select class="form-control">
+          <option selected disabled> Select Category </option>
+             <option> All</option>
+          <option> Diagnostic </option>
+          <option> Doctor Consultations </option>
+        </select>
+      </div>
+    </div>
+</form>
+  </div>
+ <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+  <form>
+  <div class="form-row align-items-center">
+<label class="sr-only" for="inlineFormInputGroup"> Search for Doctors, Diagnostics, Consultations and More </label>
+ <div class="input-group">
+  <input type="text" class="form-control" placeholder="Search for Doctors, Diagnostics, Consultations and More">
+  <div class="input-group-append">
+ <span class="input-group-text"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+  </div>
+  </div>
+</form>
+</div>
+</div>
+ </div>
+  </section>
+
+
+<div class="container my-5">
+<div class="row">
+<div class="col-xl-3 col-lg-3 col-md-3 col-12 filterbox mob">
+<div class="border-bottom">
+<div class="accordion-container">
+<div class="set">
+    <a href="javascript:void(0)">
+      Categories 
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+       <form>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Doctor Consultations (12637)
+  </label>
+  <ul>
+    <li> <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    General Physician (2328)
+  </label>  </li>
+  <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dental (1070)
+  </label>  </li>
+<li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Opthal (950)
+  </label>  </li>
+   <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Gynaec (4150) </label>  </li>
+
+   <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Pediotric (2037) </label>  </li>
+     <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dietician (178) </label>  </li>
+  </ul>
+
+   <input class="form-check-input" type="checkbox" value="">
+  <label class="form-check-label" for="defaultCheck1">
+    Diagnostic (7628)
+  </label>
+</div>
+</form>
+</div>
+  </div>
+  <div class="set">
+    <a href="javascript:void(0)">
+      Home Pickup Available
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+     <form>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Yes (1060) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   No (7004) </label>
+</div>
+  </form>
+    </div>
+  </div>
+  <div class="set">
+    <a href="javascript:void(0)">
+      Provider Category
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+      <form>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Diagnostic Centre (41) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Diagnostic Centre HNI (67) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Hospitals (7240) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Wellness Partners (72) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Pathology Centres (650) </label>
+</div>
+</form>
+    </div>
+  </div>
+  <div class="set">
+    <a href="javascript:void(0)">
+      Top Brands
+      <i class="fa fa-plus"></i> 
+    </a>
+    <div class="content">
+ <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"> Search Brands </label>
+  <input type="email" class="form-control" placeholder="Search Brands">
+  </div>
+</form>
+
+<form>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Max Lab </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Lal Path Lab </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   SRL Diagnostics </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Thyrocare Technologies </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Apollo Hospitals </label>
+</div>
+</form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-3 col-md-3 col-12 filterbox desk">
+<div class="border-bottom">
+ <p class="text-center pt-2"> Location(km) </p>
+      <div class="basic"></div>
+    </div>
+ <div class="border-bottom pb-4">
+
+
+
+
+
+
+
+
+<div class="accordion-items">
+  <div class="accordion-heading"> 
+<form>
+   <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Doctor Consultations (12637)
+  </label>
+</div>
+  </form>
+</div>
+  <div class="accordion-content"> 
+ <form>
+ <div class="form-check">
+  <ul>
+    <li> <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    General Physician (2328)
+  </label>  </li>
+  <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dental (1070)
+  </label>  </li>
+ <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Opthal (950)
+  </label>  </li>
+   <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Gynaec (4150) </label>  </li>
+<li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Pediotric (2037) </label>  </li>
+     <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dietician (178) </label>  </li>
+  </ul>
+</div>
+</form>
+</div>
+
+  <div class="accordion-heading">  <form>
+   <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="">
+  <label class="form-check-label" for="defaultCheck1">
+    Diagnostic (7628)
+  </label>
+</div>
+  </form>   </div>
+  <div class="accordion-content">
+
+ <form>
+ <div class="form-check">
+  <ul>
+    <li> <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    General Physician (2328)
+  </label>  </li>
+  <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dental (1070)
+  </label>  </li>
+ <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Opthal (950)
+  </label>  </li>
+   <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Gynaec (4150) </label>  </li>
+<li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Pediotric (2037) </label>  </li>
+     <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dietician (178) </label>  </li>
+  </ul>
+</div>
+</form>
+
+  </div>
+</div>
+
+
+
+
+
+
+<p class="category"> Categories </p>
+  <form>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" checked>
+  <label class="form-check-label" for="defaultCheck1">
+    Doctor Consultations (12637)
+  </label>
+  <ul>
+    <li> <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    General Physician (2328)
+  </label>  </li>
+  <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dental (1070)
+  </label>  </li>
+ <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Opthal (950)
+  </label>  </li>
+   <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Gynaec (4150) </label>  </li>
+<li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Pediotric (2037) </label>  </li>
+     <li> <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Dietician (178) </label>  </li>
+  </ul>
+<input class="form-check-input" type="checkbox" value="">
+  <label class="form-check-label" for="defaultCheck1">
+    Diagnostic (7628)
+  </label>
+</div>
+</form>
+</div>
+ <div class="border-bottom pb-4">
+    <p class="category"> Home Pickup Available </p>
+    <form>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Yes 1060) </label>
+</div>
+
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   No (7004) </label>
+</div>
+  </form>
+  
+</div>
+<div class="border-bottom pb-4">
+    <p class="category"> Provider Category </p>
+  <form>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Diagnostic Centre (41) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Hospitals (650) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Wellness Partners (217) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Pathology Centres (4317) </label>
+</div>
+</form>
+</div>
+ <div class=" pb-4">
+    <p class="category"> Top Brands </p>
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1"> Search Brands </label>
+    <input type="email" class="form-control" placeholder="Search Brands">
+  </div>
+</form>
+<form>
+   <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+    Max Lab (270) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Lal Path Lab (1804) </label>
+</div>
+
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   SRL Diagnostics (1250) </label>
+</div>
+
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Thyrocare Technologies (340) </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" >
+  <label class="form-check-label" for="defaultCheck1">
+   Apollo Hospitals (227) </label>
+</div>
+</form>
+</div>
+</div>
+
+<div class="col-xl-9 col-lg-9 col-md-9 col-12">
+  <div class="row">
+    <div class="col-lg-6 offset-md-6 pt-2">
+      <form>
+        <select class="form-control">
+          <option >Sort By: Customer Rating </option>
+          <option >Location: Nearest to Farthest </option>
+          <option >Customer Recommended: High to Low </option>
+        </select>
+      </form>
+    </div>
+  <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png" >
+   <img src="images/star.png" >
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+    <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span> 
+     </div>
+ 
+ </div>
+ </div>
+<div class="row my-2 mx-left">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+
+   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+
+
+ <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+     <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span> 
+     </div>
+  </div>
+ </div>
+<div class="row my-2 mx-left">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+
+   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+
+
+<div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png" >
+   <img src="images/star.png" >
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+   <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span>      </div>
+  
+ </div>
+ </div>
+<div class="row my-2 mx-left">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+
+
+ <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png" >
+   <img src="images/star.png" >
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+      <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span> 
+     </div>
+  
+ </div>
+ </div>
+<div class="row my-2 mx-left">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+
+
+ <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png" >
+   <img src="images/star.png" >
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+      <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span>  
+     </div>
+  
+ </div>
+ </div>
+<div class="row my-2 mx-left">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+
+<div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+    <div class="searchprovider pb-2">
+      <div class="row">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-4 pt-2">
+          <img src="images/apollo-logo.png" class="small-logo "/ >
+          <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
+<p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+     </div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-4">
+  <div class="ratingstar">
+  <img src="images/star.png" >
+   <img src="images/star.png" >
+   <img src="images/star.png">
+   <img src="images/star.png">
+   <img src="images/star.png">
+ </div>
+    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+  <div class="map-border">
+      <span> <img src="images/google-maps-icon.png" class="icon"> 5 Kms </span> 
+     </div>
+ 
+ </div>
+ </div>
+<div class="row my-2 mx-left">
+
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+         <i class="fa-solid fa-users"></i>
+       </div>
+        <div class="col-lg-11 col-md-11 col-xl-9 col-9">
+          <p> 10,00,000+ Appointments </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/nabl-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> NABL CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+
+   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+            <img src="images/iso-certified.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9 pt-1">
+            <p> ISO CERTIFIED </p>
+       </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="countbox1">
+   <div class="row py-1">
+        <div class="col-lg-3 col-md-3 col-xl-3 col-3">
+          <img src="images/branches.png">
+       </div>
+        <div class="col-lg-9 col-md-9 col-xl-9 col-9">
+           <p> 250 + Branches Pan India </p>
+       </div>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+ </div>
+</div>
+  </div> 
+</div>
+ </div> 
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+     <script src="js/bootstrap.min.js"></script>
+  <script src="js/al-range-slider.js"></script> 
+ <script>
+  $('.basic').alRangeSlider();
+  const options = {
+  range: { min: -50, max: 50, step: 1 },
+  initialSelectedValues: { from: -25, to: 25 },
+  grid: { minTicksStep: 1, marksStep: 5 },
+  theme: "dark",
+};
+</script>
+
+<script>
+  $(document).ready(function () {
+  $(".accordion-items").on("click", ".accordion-heading", function () {
+    $(this).toggleClass("active").next().slideToggle();
+      $(".accordion-content").not($(this).next()).slideUp(300);
+        $(this).siblings().removeClass("active");
+  });
+});
+</script>
+
+</body>
+</html>
