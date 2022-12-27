@@ -442,24 +442,9 @@ select.form-control:not([size]):not([multiple]) {
 .searchbox .container{
     transform: translateY(-60px);
 }
-.popularcountbox{
-  padding: 20px 0px 20px 0px;
-    max-width: 1200px;
-    margin: 0 auto;
-     border-radius: 8px;
-    /* transform: translateY(30px); */
-}
-.popularcountbox p{
-    margin-bottom: 0px;
-}
-.popularcountbox  span{
-    color: #007bff;
-    font-size: 18px;
-    font-weight: 600;
-}
-/*.popularcountbox .container{
-    transform: translateY(-60px);
-}*/
+
+
+
 /*.form1 {
     display: block;
     width: 90%!important;
@@ -501,6 +486,17 @@ select.form-control:not([size]):not([multiple]) {
 
 
 /*Accordian Start*/
+
+
+
+
+
+@charset "UTF-8";
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -613,130 +609,10 @@ a:hover {
     border: none !important;
     background-color: #000000;
 }
+
+
 .searchbtn{
     width: 71px;
     margin-left:-20px; 
     margin-top:43px;
-}
-.popular-btn{
-    background-color: #ffffff;
-   display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 14px;
-    line-height: 1.5;
-    border-radius: 18px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.popular-btn.focus, .opular-btn:focus {
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
-}
-.popular-selected{
-    color: #fff;
-    background-color: #007bff;
-   display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 14px;
-    line-height: 1.5;
-    border-radius: 18px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.popular-selected:after{
-    content: "\f00d";
-    font-family: "FontAwesome";
-    position: inherit;
-    color: #ffffff;
-    z-index: 1;
-}
-.reviewbox{
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    padding: 10px;
-position: absolute;
-z-index: 999999;
-display: none;
-}
-.reviewbox img{
-    height: 15px;
-    float: left;
-}
-.reviewbox p:nth-child(1){
-    font-size: 12px;
-    font-weight: 600;
-}
-.reviewbox p{
-    font-size: 10px;
-    font-weight: 400;
-}
-.reviewbox .rating{
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 16px;
-}
-.reviewbox:hover{
-    display: block;
-}
-.progress-bar {
-    float: left;
-    height: 16px;
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    text-align: center;
-    background-color: #ffa41c;
-    -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
-    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
-    -webkit-transition: width .6s ease;
-    -o-transition: width .6s ease;
-    transition: width .6s ease;
-    border-radius: 4px;
-    margin-left: 0px;
-}
-.progress-custom {
-        display: table;
-        width: 100%;
-        margin-bottom: 6px;
-    }
-.progress-custom .progress{
-        margin-bottom: 0;
-        display:flex;
-        vertical-align: middle;
-    }
-.progress-custom .progress-value{
-        display: table-cell;
-        vertical-align: middle;
-        width: 1%; 
-        padding: 0 4px; /*optionally*/
-    }
-.progress {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 1rem;
-    overflow: hidden;
-    font-size: .75rem;
-    background-color: #e9ecef;
-    border-radius: 0.25rem;
-}
-.progress p span{
-    background-color: #ffffff;
-    padding: 0px 5px 0px 5px;
 }
