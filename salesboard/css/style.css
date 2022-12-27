@@ -18,7 +18,7 @@ html{
 }
 .custom-navbar{
    box-shadow: 10px 3px 1px #eee;
-    background-color: #F2F5FF;
+   background-color: #F2F5FF;
 }
 .nav-link{
     color: #000000!important;
@@ -102,7 +102,6 @@ html{
 .team-section ul{
     padding-left: 25px;
 }
-
 .team-section h4{
     color: #000000;
     font-size: 16px;
