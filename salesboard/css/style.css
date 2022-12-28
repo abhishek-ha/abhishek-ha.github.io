@@ -72,6 +72,10 @@ html{
     color: #999999;
     padding: 20px 20px 10px 20px;
 }
+.headerbottom ul li a{
+        color: #838383;
+}
+
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -180,6 +184,11 @@ html{
     color: #999999;
     padding: 20px 20px 10px 20px;
 }
+
+.headerbottom ul li a{
+        color: #838383;
+}
+
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -396,8 +405,13 @@ html{
     float: left;
     font-size: 14px;
     color: #999999;
-    padding: 20px 20px 10px 20px;
+    padding: 25px 20px 10px 20px;
 }
+
+.headerbottom ul li a{
+        color: #838383;
+}
+
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -505,8 +519,13 @@ html{
     float: left;
     font-size: 14px;
     color: #999999;
-    padding: 20px 20px 10px 20px;
+    padding: 25px 20px 10px 20px;
 }
+.headerbottom ul li a{
+        color: #838383;
+}
+
+
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
