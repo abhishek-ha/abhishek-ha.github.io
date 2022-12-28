@@ -61,7 +61,20 @@
     font-size: 19px;
 }
 
-
+.test-scan{
+    background-image: url('../images/personalised-test-scan.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.test-scan h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
 .healthcaretop{
     background-image: url('../images/healthcarebg.jpg');
     background-repeat: no-repeat;
@@ -76,8 +89,6 @@
     font-weight: 600;
     font-size: 19px;
 }
-
-
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
@@ -177,6 +188,24 @@
     font-size: 13px;
     padding-left: 38%;
 }
+
+.test-scan{
+  background-image: url('../images/personalised-test-scan.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.test-scan h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+
+
 .healthcaretop{
   background-image: url('../images/healthcarebg.jpg');
     background-repeat: no-repeat;
@@ -256,6 +285,14 @@
  font-size: 13px;
     padding-left: 43%;
 }
+.test-scan{
+   min-height: 233px;
+}
+.test-scan h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
 .healthcaretop{
    min-height: 233px;
 }
@@ -331,6 +368,17 @@
     font-size: 17px;
     padding-left: 40%;
 }
+
+.test-scan{
+  min-height: 240px;
+}
+.test-scan h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+
+
 .healthcaretop{
   min-height: 240px;
 }
@@ -409,6 +457,16 @@
    padding-top: 150px;
    font-size: 45px;
 }
+
+.test-scan{
+    min-height: 500px;
+}
+.test-scan h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+
+
 .healthcaretop{
     min-height: 500px;
 }
@@ -482,6 +540,17 @@
    padding-top: 170px;
    font-size: 28px;
 }
+
+.test-scan{
+   min-height: 340px;
+}
+.test-scan h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+
+
+
 .healthcaretop{
    min-height: 340px;
 }
@@ -555,6 +624,15 @@
    padding-top: 170px;
     font-size: 31px;
 }
+
+.test-scan{
+  min-height: 340px;
+}
+.test-scan h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+
 .healthcaretop{
   min-height: 340px;
 }
@@ -629,6 +707,16 @@
     font-size: 45px;
     padding-left: 40%;
 }
+
+.test-scan{
+  min-height: 500px;
+}
+.test-scan h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+
 .healthcaretop{
   min-height: 500px;
 }
@@ -697,6 +785,13 @@
     min-height: 400px;
 }
 .allerygytop h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.test-scan{
+    min-height: 400px;
+}
+.test-scan h1{
     padding-top: 90px;
     font-size: 43px;
 }
@@ -771,6 +866,15 @@
    font-size: 36px;
     padding-left: 40%;
 }
+.test-scan{
+ min-height: 500px;
+}
+.test-scan h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
 .healthcaretop{
  min-height: 500px;
 }
@@ -847,6 +951,18 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
+
+.test-scan{
+min-height: 470px;
+}
+.test-scan h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+
+
 .healthcaretop{
 min-height: 470px;
 }
@@ -921,6 +1037,14 @@ min-height: 470px;
  min-height: 500px;
 }
 .allerygytop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+.test-scan{
+ min-height: 500px;
+}
+.test-scan h1{
     padding-top: 150px;
     font-size: 45px;
     padding-left: 50%;
