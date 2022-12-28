@@ -56,9 +56,22 @@
     font-weight: 600;
     font-size: 19px;
 }
-
+.cervical-cancer{
+    background-image: url('../images/cervical-cancer.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.cervical-cancer h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
 .eating-disorder{
-    background-image: url('../images/allergy.jpg');
+    background-image: url('../images/eating-disorder.png');
     background-repeat: no-repeat;
     background-position:center;
     background-origin: border-box;
@@ -283,8 +296,25 @@
     font-size: 13px;
     padding-left: 38%;
 }
+
+.cervical-cancer{
+  background-image: url('../images/cervical-cancer.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.cervical-cancer h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+
 .eating-disorder{
-  background-image: url('../images/allergy.jpg');
+  background-image: url('../images/eating-disorder.png');
     background-repeat: no-repeat;
     background-position:center;
     background-origin: border-box;
@@ -298,8 +328,6 @@
     font-size: 13px;
     padding-left: 38%;
 }
-
-
 .hypertension{
   background-image: url('../images/hypertension.png');
     background-repeat: no-repeat;
@@ -483,6 +511,14 @@
  font-size: 13px;
     padding-left: 43%;
 }
+.cervical-cancer{
+   min-height: 233px;
+}
+.cervical-cancer h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
 .eating-disorder{
    min-height: 233px;
 }
@@ -491,7 +527,6 @@
  font-size: 13px;
     padding-left: 43%;
 }
-
 .hypertension{
    min-height: 233px;
 }
@@ -500,7 +535,6 @@
  font-size: 13px;
     padding-left: 43%;
 }
-
 .elder-care{
    min-height: 233px;
 }
@@ -624,7 +658,14 @@
     font-size: 17px;
     padding-left: 40%;
 }
-
+.cervical-cancer{
+  min-height: 240px;
+}
+.cervical-cancer h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
 .eating-disorder{
   min-height: 240px;
 }
@@ -769,6 +810,13 @@
    padding-top: 150px;
    font-size: 45px;
 }
+.cervical-cancer{
+    min-height: 500px;
+}
+.cervical-cancer h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
 .eating-disorder{
     min-height: 500px;
 }
@@ -898,6 +946,14 @@
    padding-top: 170px;
    font-size: 28px;
 }
+.cervical-cancer{
+   min-height: 340px;
+}
+.cervical-cancer h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+
 .eating-disorder{
    min-height: 340px;
 }
@@ -905,8 +961,6 @@
    padding-top: 170px;
    font-size: 28px;
 }
-
-
 .hypertension{
    min-height: 340px;
 }
@@ -914,7 +968,6 @@
    padding-top: 170px;
    font-size: 28px;
 }
-
 .elder-care{
    min-height: 340px;
 }
@@ -922,7 +975,6 @@
    padding-top: 170px;
    font-size: 28px;
 }
-
 .women-health{
    min-height: 340px;
 }
@@ -1031,6 +1083,15 @@
    padding-top: 170px;
     font-size: 31px;
 }
+
+.cervical-cancer{
+  min-height: 340px;
+}
+.cervical-cancer h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+
 .eating-disorder{
   min-height: 340px;
 }
@@ -1162,6 +1223,15 @@
     font-size: 45px;
     padding-left: 40%;
 }
+.cervical-cancer{
+  min-height: 500px;
+}
+.cervical-cancer h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+
 .eating-disorder{
   min-height: 500px;
 }
@@ -1298,6 +1368,14 @@
     padding-top: 90px;
     font-size: 43px;
 }
+
+.cervical-cancer{
+    min-height: 400px;
+}
+.cervical-cancer h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
 .eating-disorder{
     min-height: 400px;
 }
@@ -1305,7 +1383,6 @@
     padding-top: 90px;
     font-size: 43px;
 }
-
 .hypertension{
     min-height: 400px;
 }
@@ -1423,6 +1500,15 @@
  min-height: 500px;
 }
 .allerygytop h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
+.cervical-cancer{
+ min-height: 500px;
+}
+.cervical-cancer h1{
     padding-top: 140px;
    font-size: 36px;
     padding-left: 40%;
@@ -1570,6 +1656,16 @@ min-height: 470px;
     padding-left: 40%;
 }
 
+.cervical-cancer{
+min-height: 470px;
+}
+.cervical-cancer h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+
 .eating-disorder{
 min-height: 470px;
 }
@@ -1712,6 +1808,15 @@ min-height: 470px;
     font-size: 45px;
     padding-left: 50%;
 }
+.cervical-cancer{
+ min-height: 500px;
+}
+.cervical-cancer h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+
 .eating-disorder{
  min-height: 500px;
 }
