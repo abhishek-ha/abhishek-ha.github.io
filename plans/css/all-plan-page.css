@@ -61,6 +61,35 @@
     font-size: 19px;
 }
 
+.affordable-health{
+    background-image: url('../images/affordable-health-plan.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.affordable-health h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.health-across{
+    background-image: url('../images/healthcare-across-cities.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.health-across h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
 .test-scan{
     background-image: url('../images/personalised-test-scan.png');
     background-repeat: no-repeat;
@@ -188,7 +217,38 @@
     font-size: 13px;
     padding-left: 38%;
 }
+.affordable-health{
+  background-image: url('../images/affordable-health-plan.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.affordable-health h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
 
+
+.health-across{
+  background-image: url('../images/healthcare-across-cities.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.health-across h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
 .test-scan{
   background-image: url('../images/personalised-test-scan.png');
     background-repeat: no-repeat;
@@ -204,8 +264,6 @@
     font-size: 13px;
     padding-left: 38%;
 }
-
-
 .healthcaretop{
   background-image: url('../images/healthcarebg.jpg');
     background-repeat: no-repeat;
@@ -256,7 +314,6 @@
 }
 }
 
-
 @media only screen and (min-width: 350px ){
       .atglancehead{
       font-size: 32px;
@@ -281,6 +338,22 @@
    min-height: 233px;
 }
 .allerygytop h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+.affordable-health{
+   min-height: 233px;
+}
+.affordable-health h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+.health-across{
+   min-height: 233px;
+}
+.health-across h1{
    padding-top: 70px;
  font-size: 13px;
     padding-left: 43%;
@@ -369,6 +442,22 @@
     padding-left: 40%;
 }
 
+.affordable-health{
+  min-height: 240px;
+}
+.affordable-health h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.health-across{
+  min-height: 240px;
+}
+.health-across h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
 .test-scan{
   min-height: 240px;
 }
@@ -377,8 +466,6 @@
     font-size: 17px;
     padding-left: 40%;
 }
-
-
 .healthcaretop{
   min-height: 240px;
 }
@@ -454,6 +541,20 @@
     min-height: 500px;
 }
 .allerygytop h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.affordable-health{
+    min-height: 500px;
+}
+.affordable-health h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.health-across{
+    min-height: 500px;
+}
+.health-across h1{
    padding-top: 150px;
    font-size: 45px;
 }
@@ -540,7 +641,20 @@
    padding-top: 170px;
    font-size: 28px;
 }
-
+.affordable-health{
+   min-height: 340px;
+}
+.affordable-health h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+.health-across{
+   min-height: 340px;
+}
+.health-across h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
 .test-scan{
    min-height: 340px;
 }
@@ -548,9 +662,6 @@
    padding-top: 170px;
    font-size: 28px;
 }
-
-
-
 .healthcaretop{
    min-height: 340px;
 }
@@ -621,6 +732,20 @@
   min-height: 340px;
 }
 .allerygytop h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.affordable-health{
+  min-height: 340px;
+}
+.affordable-health h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.health-across{
+  min-height: 340px;
+}
+.health-across h1{
    padding-top: 170px;
     font-size: 31px;
 }
@@ -707,7 +832,22 @@
     font-size: 45px;
     padding-left: 40%;
 }
-
+.affordable-health{
+  min-height: 500px;
+}
+.affordable-health h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.health-across{
+  min-height: 500px;
+}
+.health-across h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
 .test-scan{
   min-height: 500px;
 }
@@ -785,6 +925,21 @@
     min-height: 400px;
 }
 .allerygytop h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.affordable-health{
+    min-height: 400px;
+}
+.affordable-health h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+
+.health-across{
+    min-height: 400px;
+}
+.health-across h1{
     padding-top: 90px;
     font-size: 43px;
 }
@@ -866,6 +1021,26 @@
    font-size: 36px;
     padding-left: 40%;
 }
+.affordable-health{
+ min-height: 500px;
+}
+.affordable-health h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
+.health-across{
+ min-height: 500px;
+}
+.health-across h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
+
+
 .test-scan{
  min-height: 500px;
 }
@@ -951,6 +1126,23 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
+.affordable-health{
+min-height: 470px;
+}
+.affordable-health h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+.health-across{
+min-height: 470px;
+}
+.health-across h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
 
 .test-scan{
 min-height: 470px;
@@ -960,9 +1152,6 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
-
-
-
 .healthcaretop{
 min-height: 470px;
 }
@@ -1037,6 +1226,24 @@ min-height: 470px;
  min-height: 500px;
 }
 .allerygytop h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+
+.affordable-health{
+ min-height: 500px;
+}
+.affordable-health h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+
+.health-across{
+ min-height: 500px;
+}
+.health-across h1{
     padding-top: 150px;
     font-size: 45px;
     padding-left: 50%;
