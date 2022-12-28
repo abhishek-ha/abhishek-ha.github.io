@@ -1,13 +1,11 @@
 .campfooter{
     background-color: #0f5fc2;
     color: #fff;
-    padding: 40px 0px;
-    
+    padding: 40px 0px;  
 }
 .campfooter p{
     font-size: 12px;
 }
-
 
 @media only screen and (max-width: 300px) {
    .atglancehead{
@@ -30,7 +28,6 @@
     font-weight: 600;
     font-size: 19px;
 }
-
 .chronichead{
     background-image: url('../images/chronic-fatigue.jpg');
     background-repeat: no-repeat;
@@ -38,7 +35,6 @@
     background-origin: border-box;
     background-size: cover;
     min-height: 180px;
-
 }
 .chronichead h1{
     color: #ffffff;
@@ -61,6 +57,77 @@
     font-size: 19px;
 }
 
+.eating-disorder{
+    background-image: url('../images/allergy.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.eating-disorder h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.hypertension{
+    background-image: url('../images/hypertension.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.hypertension h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.elder-care{
+    background-image: url('../images/elder-care.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.elder-care h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.women-health{
+    background-image: url('../images/womens-health.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.women-health h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.virtual-doc{
+    background-image: url('../images/virtual-doc.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 180px;
+}
+.virtual-doc h1{
+    color: #ffffff;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 19px;
+}
 .affordable-health{
     background-image: url('../images/affordable-health-plan.png');
     background-repeat: no-repeat;
@@ -75,7 +142,6 @@
     font-weight: 600;
     font-size: 19px;
 }
-
 .health-across{
     background-image: url('../images/healthcare-across-cities.png');
     background-repeat: no-repeat;
@@ -217,6 +283,83 @@
     font-size: 13px;
     padding-left: 38%;
 }
+.eating-disorder{
+  background-image: url('../images/allergy.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.eating-disorder h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+
+
+.hypertension{
+  background-image: url('../images/hypertension.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.hypertension h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+.elder-care{
+  background-image: url('../images/elder-care.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.elder-care h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+.women-health{
+  background-image: url('../images/womens-health.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.women-health h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
+.virtual-doc{
+  background-image: url('../images/virtual-doc.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-origin: border-box;
+    background-size: cover;
+    min-height: 200px;
+}
+.virtual-doc h1{
+    color: #ffffff;
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 13px;
+    padding-left: 38%;
+}
 .affordable-health{
   background-image: url('../images/affordable-health-plan.png');
     background-repeat: no-repeat;
@@ -232,8 +375,6 @@
     font-size: 13px;
     padding-left: 38%;
 }
-
-
 .health-across{
   background-image: url('../images/healthcare-across-cities.png');
     background-repeat: no-repeat;
@@ -342,6 +483,49 @@
  font-size: 13px;
     padding-left: 43%;
 }
+.eating-disorder{
+   min-height: 233px;
+}
+.eating-disorder h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+
+.hypertension{
+   min-height: 233px;
+}
+.hypertension h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+
+.elder-care{
+   min-height: 233px;
+}
+.elder-care h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+
+.women-health{
+   min-height: 233px;
+}
+.women-health h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
+.virtual-doc{
+   min-height: 233px;
+}
+.virtual-doc h1{
+   padding-top: 70px;
+ font-size: 13px;
+    padding-left: 43%;
+}
 .affordable-health{
    min-height: 233px;
 }
@@ -411,7 +595,6 @@
 }
 
 
-
 @media only screen and (min-width: 415px ){
       .atglancehead{
        font-size: 25px;
@@ -442,6 +625,48 @@
     padding-left: 40%;
 }
 
+.eating-disorder{
+  min-height: 240px;
+}
+.eating-disorder h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+
+.hypertension{
+  min-height: 240px;
+}
+.hypertension h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+
+.elder-care{
+  min-height: 240px;
+}
+.elder-care h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.women-health{
+  min-height: 240px;
+}
+.women-health h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
+.virtual-doc{
+  min-height: 240px;
+}
+.virtual-doc h1{
+   padding-top: 120px;
+    font-size: 17px;
+    padding-left: 40%;
+}
 .affordable-health{
   min-height: 240px;
 }
@@ -544,6 +769,42 @@
    padding-top: 150px;
    font-size: 45px;
 }
+.eating-disorder{
+    min-height: 500px;
+}
+.eating-disorder h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.hypertension{
+    min-height: 500px;
+}
+.hypertension h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.elder-care{
+    min-height: 500px;
+}
+.elder-care h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+.women-health{
+    min-height: 500px;
+}
+.women-health h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
+
+.virtual-doc{
+    min-height: 500px;
+}
+.virtual-doc h1{
+   padding-top: 150px;
+   font-size: 45px;
+}
 .affordable-health{
     min-height: 500px;
 }
@@ -558,7 +819,6 @@
    padding-top: 150px;
    font-size: 45px;
 }
-
 .test-scan{
     min-height: 500px;
 }
@@ -566,8 +826,6 @@
    padding-top: 150px;
    font-size: 45px;
 }
-
-
 .healthcaretop{
     min-height: 500px;
 }
@@ -619,8 +877,7 @@
        text-align: center;
        color: #58585b;
    }
-
- .top-head{
+.top-head{
     min-height: 340px;
 }
 .top-head h1{
@@ -638,6 +895,45 @@
    min-height: 340px;
 }
 .allerygytop h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+.eating-disorder{
+   min-height: 340px;
+}
+.eating-disorder h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+
+
+.hypertension{
+   min-height: 340px;
+}
+.hypertension h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+
+.elder-care{
+   min-height: 340px;
+}
+.elder-care h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+
+.women-health{
+   min-height: 340px;
+}
+.women-health h1{
+   padding-top: 170px;
+   font-size: 28px;
+}
+.virtual-doc{
+   min-height: 340px;
+}
+.virtual-doc h1{
    padding-top: 170px;
    font-size: 28px;
 }
@@ -735,6 +1031,42 @@
    padding-top: 170px;
     font-size: 31px;
 }
+.eating-disorder{
+  min-height: 340px;
+}
+.eating-disorder h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+
+.hypertension{
+  min-height: 340px;
+}
+.hypertension h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.elder-care{
+  min-height: 340px;
+}
+.elder-care h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.women-health{
+  min-height: 340px;
+}
+.women-health h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
+.virtual-doc{
+  min-height: 340px;
+}
+.virtual-doc h1{
+   padding-top: 170px;
+    font-size: 31px;
+}
 .affordable-health{
   min-height: 340px;
 }
@@ -749,7 +1081,6 @@
    padding-top: 170px;
     font-size: 31px;
 }
-
 .test-scan{
   min-height: 340px;
 }
@@ -757,7 +1088,6 @@
    padding-top: 170px;
     font-size: 31px;
 }
-
 .healthcaretop{
   min-height: 340px;
 }
@@ -832,6 +1162,47 @@
     font-size: 45px;
     padding-left: 40%;
 }
+.eating-disorder{
+  min-height: 500px;
+}
+.eating-disorder h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+
+.hypertension{
+  min-height: 500px;
+}
+.hypertension h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.elder-care{
+  min-height: 500px;
+}
+.elder-care h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.women-health{
+  min-height: 500px;
+}
+.women-health h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
+.virtual-doc{
+  min-height: 500px;
+}
+.virtual-doc h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 40%;
+}
 .affordable-health{
   min-height: 500px;
 }
@@ -856,7 +1227,6 @@
     font-size: 45px;
     padding-left: 40%;
 }
-
 .healthcaretop{
   min-height: 500px;
 }
@@ -928,6 +1298,43 @@
     padding-top: 90px;
     font-size: 43px;
 }
+.eating-disorder{
+    min-height: 400px;
+}
+.eating-disorder h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+
+.hypertension{
+    min-height: 400px;
+}
+.hypertension h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+
+.elder-care{
+    min-height: 400px;
+}
+.elder-care h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.women-health{
+    min-height: 400px;
+}
+.women-health h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
+.virtual-doc{
+    min-height: 400px;
+}
+.virtual-doc h1{
+    padding-top: 90px;
+    font-size: 43px;
+}
 .affordable-health{
     min-height: 400px;
 }
@@ -935,7 +1342,6 @@
     padding-top: 90px;
     font-size: 43px;
 }
-
 .health-across{
     min-height: 400px;
 }
@@ -1021,6 +1427,49 @@
    font-size: 36px;
     padding-left: 40%;
 }
+
+.eating-disorder{
+ min-height: 500px;
+}
+.eating-disorder h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
+.hypertension{
+ min-height: 500px;
+}
+.hypertension h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+
+.elder-care{
+ min-height: 500px;
+}
+.elder-care h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+.women-health{
+ min-height: 500px;
+}
+.women-health h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
+.virtual-doc{
+ min-height: 500px;
+}
+.virtual-doc h1{
+    padding-top: 140px;
+   font-size: 36px;
+    padding-left: 40%;
+}
 .affordable-health{
  min-height: 500px;
 }
@@ -1029,7 +1478,6 @@
    font-size: 36px;
     padding-left: 40%;
 }
-
 .health-across{
  min-height: 500px;
 }
@@ -1038,9 +1486,6 @@
    font-size: 36px;
     padding-left: 40%;
 }
-
-
-
 .test-scan{
  min-height: 500px;
 }
@@ -1049,7 +1494,6 @@
    font-size: 36px;
     padding-left: 40%;
 }
-
 .healthcaretop{
  min-height: 500px;
 }
@@ -1117,11 +1561,53 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
-
 .allerygytop{
 min-height: 470px;
 }
 .allerygytop h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+.eating-disorder{
+min-height: 470px;
+}
+.eating-disorder h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+.hypertension{
+min-height: 470px;
+}
+.hypertension h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+
+.elder-care{
+min-height: 470px;
+}
+.elder-care h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+.women-health{
+min-height: 470px;
+}
+.women-health h1{
+   padding-top: 100px;
+ font-size: 40px;
+    padding-left: 40%;
+}
+.virtual-doc{
+min-height: 470px;
+}
+.virtual-doc h1{
    padding-top: 100px;
  font-size: 40px;
     padding-left: 40%;
@@ -1134,7 +1620,6 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
-
 .health-across{
 min-height: 470px;
 }
@@ -1143,7 +1628,6 @@ min-height: 470px;
  font-size: 40px;
     padding-left: 40%;
 }
-
 .test-scan{
 min-height: 470px;
 }
@@ -1196,8 +1680,7 @@ min-height: 470px;
 
 
 @media only screen and (min-width: 1300px ){
-
- .atglancehead{
+.atglancehead{
         font-weight: 700;
        font-size: 40px;
        text-align: center;
@@ -1221,7 +1704,6 @@ min-height: 470px;
     font-size: 45px;
     padding-left: 50%;
 }
-
 .allerygytop{
  min-height: 500px;
 }
@@ -1230,7 +1712,48 @@ min-height: 470px;
     font-size: 45px;
     padding-left: 50%;
 }
+.eating-disorder{
+ min-height: 500px;
+}
+.eating-disorder h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
 
+
+.hypertension{
+ min-height: 500px;
+}
+.hypertension h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+.elder-care{
+ min-height: 500px;
+}
+.elder-care h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+.women-health{
+ min-height: 500px;
+}
+.women-health h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
+.virtual-doc{
+ min-height: 500px;
+}
+.virtual-doc h1{
+    padding-top: 150px;
+    font-size: 45px;
+    padding-left: 50%;
+}
 .affordable-health{
  min-height: 500px;
 }
@@ -1239,7 +1762,6 @@ min-height: 470px;
     font-size: 45px;
     padding-left: 50%;
 }
-
 .health-across{
  min-height: 500px;
 }
