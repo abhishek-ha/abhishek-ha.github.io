@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Coupon Detail </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="new-css/style.css" />
+    <link rel="stylesheet" href="new-css/ownStyle.css" />
+</head>
+<body>
+
+	  <div class="container">
+            <div class="row">
+<div class="col-lg-12 col-md-12">
+<h2 class="header-content pt-3 pb-5"> <b> Coupon Details  </b></h2>  </div>
+</div>
+ <div class="mb-5 row">
+    <div class="col-sm-4">
+      <select class="form-select">
+  <option> Coupon Type </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+<div class="col-sm-3">
+     <input type="text" name="" class="form-control" placeholder="Expiry Date">
+   </div>
+ <div class="col-sm-3 ">
+    <input type="text" name="" class="form-control" placeholder="Search by Keywords">
+   </div>
+
+<div class="col-md-2 col-lg-2">
+  <button class="coupon-applybtn" type="submit">Apply </button> <button class="coupon-resetbtn" type="reset"> Reset </button>
+  
+</div>
+
+ </div>
+
+
+
+
+
+
+
+
+<div class="row ">
+  <div class="col-lg-12 col-md-12 mb-5">
+    <button class="btn btn-primary btn-lg float-end" data-bs-toggle="modal" data-bs-target="#myModal"> Add New Coupan </button>
+</div>
+
+<div class="col-lg-12 table-responsive">
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">S.No </th>
+      <th scope="col"> Coupan Code </th>
+      <th scope="col"> Coupan Type </th>
+      <th scope="col"> Discount % or Amount </th>
+      <th scope="col"  class="px-4"> Expiry Date </th>
+      <th scope="col"> Discount Count
+      <p>(No of times coupan can be used)</p> </th>
+      <th scope="col"> Max Limit on Discount Amount (Per Transaction) </th>
+      <th scope="col" class="px-4"> Plan Mapped </th>
+       <th scope="col"> Edit/ Delete </th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td> FP60 </td>
+      <td> New Plan </td>
+      <td> 60% </td>
+      <td> 30-12-2022 </td>
+      <td><p> 99 </p> </td>
+      <td><p> 999 </p> </td>
+      <td><p> View Plan
+ 
+       <i class="fa-solid fa-eye  f-18 text-primary" data-bs-toggle="modal" data-bs-target="#viewplanModal"></i> </p> </td>
+       <td><p><i class="fa-solid fa-pen-to-square f-18 text-primary mx-1 ms-3"   data-bs-toggle="modal" data-bs-target="#editModal"></i> <i class="fa-solid fa-trash f-18 text-danger mx-1" data-toggle="modal" data-target="#deleteModal"></i> </p> </td>
+   </tr>
+ </tbody>
+</table>
+  </div>
+  <div class="col-lg-12 ">
+    <nav aria-label="Page navigation ">
+  <ul class="pagination mt-3 mb-5 float-right">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    </div>
+   </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered rounded modal-lg">
+    <div class="modal-content plan-popup">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add New Coupon </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+   
+
+     <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
+    <div class="col-sm-9">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Coupan Code </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupan Code">
+     </div>
+</div>
+
+<div class="row mb-3">
+  <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
+  <div class="multiSelect col-sm-9">
+  <select multiple class="multiSelect_field" data-placeholder="Select Plan">
+    <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconX">
+    <g stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+    </g>
+  </symbol>
+</svg>
+  </div>
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Discount % or absolute Amount </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Expiry Date </label>
+    <div class="col-sm-9">
+     <input type="date" class="form-control" placeholder="Expiry Date">
+ </div>
+</div>
+<div class="mb-3 row">
+  <label for="staticEmail" class="col-sm-3 col-form-label"> Discount Count:
+    <p> (No of Time coupon can be used) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Max Limit on Discount Amount:
+    <p> (Per Transaction) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+ <div class="mb-3 row text-center">
+  <div class="col-md-12 pt-3 pb-3">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
+ </div>
+  </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add New Coupon </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
+    <div class="col-sm-9">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Coupan Code </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupan Code">
+     </div>
+</div>
+
+<div class="row mb-3">
+  <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
+  <div class="multiSelect col-sm-9">
+  <select multiple class="multiSelect_field" data-placeholder="Select Plan">
+    <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconX">
+    <g stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+    </g>
+  </symbol>
+</svg>
+  </div>
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Discount % or absolute Amount </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Expiry Date </label>
+    <div class="col-sm-9">
+     <input type="date" class="form-control" placeholder="Expiry Date">
+ </div>
+</div>
+<div class="mb-3 row">
+  <label for="staticEmail" class="col-sm-3 col-form-label"> Discount Count:
+    <p> (No of Time coupon can be used) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Max Limit on Discount Amount:
+    <p> (Per Transaction) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder=" Coupon Code">
+     </div>
+</div>
+ <div class="mb-3 row text-center">
+  <div class="col-md-12 pt-3 pb-3">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
+ </div>
+  </div>
+   </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<!--  Start Edit Plan Model -->
+
+
+
+            <!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+<div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add New Coupon </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="editModalLabel"> Edit Coupon </h4>
+      </div> -->
+      <div class="modal-body">
+     <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Coupon Type </label>
+    <div class="col-sm-9">
+      <select class="form-select">
+  <option> Coupon type </option>
+  <option selected> ABC </option>
+
+  </select>
+   </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label">Coupon Code </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder="  CK 50%">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Select Your Plan </label>
+    <div class="col-sm-9">
+      <select class="form-select">
+  <option selected> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="Discount % or absolute Amount" class="col-sm-3 col-form-label"> Discount % or absolute Amount </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder="₹ 1205">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="Expiry Date" class="col-sm-3 col-form-label"> Expiry Date </label>
+    <div class="col-sm-9 col-md-9">
+     <input type="date" class="form-control" value="01/01/1999">
+ </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Discount Count:
+    <p> (No of Time coupon can be used) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder="97">
+     </div>
+</div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-3 col-form-label"> Max Limit on Discount Amount:
+    <p> (Per Transaction) </p> </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" name="" placeholder="₹ 2000">
+     </div>
+</div>
+ <div class="mb-3 row text-center">
+  <div class="col-md-12 pt-3 pb-3">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-primary ms-5"> Cancel </button>
+ </div>
+  </div>
+   </div>
+    </div>
+  </div>
+</div>
+<!-- End Edit Plan Model -->
+
+<!-- Start Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="deleteModalLabel"> Delete Coupon </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row text-center">
+          <div class="col-lg-12 col-md-12">
+            <h3> Are you Sure to want Delete </h3>
+          </div>
+<div class="col-lg-12 col-md-12 pt-4 pb-5">
+  <button class="btn btn-primary"> Yes </button>
+   <button class="btn btn-primary"> No </button> 
+</div>
+  </div>
+ </div>
+    </div>
+  </div>
+</div>
+<!-- End Delete -->
+
+
+<!-- Start View Plan -->
+
+
+
+
+
+
+
+
+<div class="modal fade" id="viewplanModal" tabindex="-1" role="dialog" aria-labelledby="viewplanModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add New Coupon </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+ <div class="row text-center">
+          <div class="col-lg-12 col-md-12">
+            <h5> FitAssure </h5>
+             <h5> OptimaAssure </h5>
+              <h5> TotalAssure </h5>
+               <h5> FitAssure Plus </h5>
+          </div>
+<div class="col-lg-12 col-md-12 pt-4 pb-5">
+  <button class="btn btn-primary"> Yes </button>
+   <button class="btn btn-primary"> No </button> 
+</div>
+  </div>
+ </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="topup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered rounded">
+    <div class="modal-content plan-popup">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Top Up Plan </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form >
+    <div class="row">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+    <label for="Client Name" class="form-label"> Select Service </label>
+<select class="form-select">
+  <option> Select Service For Topup  </option>
+  <option> Client Name  </option>
+</select>
+   </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pt-4">
+<p class="addmore">  <i class="fa-solid fa-plus"></i> Add More Services  </p>
+   </div>
+</div>
+<div class="row pt-4">
+<div class="amountbox">
+  <p> Net payable Amount </p>
+  <p><span> Rs.2184.00  </span></p>
+  </div>
+<button class="topup-proceed-btn"> Proceed </button>
+</div>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="new-css/style.css" />
+    <link rel="stylesheet" href="new-css/ownStyle.css" />
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+              <a href="./dashboard.html">
+                <img src="images/healthassure-logo.png" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                <button
+                  id="onboardbtn"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOnboardId"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i
+                  ><span>Customer Experience</span>
+                </button>
+
+                <ul
+                  id="collapseOnboardId"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      New onboarding
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      First appointment booking
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Non-usage
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRenewalId"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewals & Upsell</span>
+                </button>
+
+                <ul
+                  id="collapseRenewalId"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./renwal-submenu1.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Renewal pending Customers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseMenuId4"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Customer Feedback</span>
+                </button>
+
+                <ul
+                  id="collapseMenuId4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./submenu1.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Recently booked customers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseMenuId3"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+
+                <ul
+                  id="collapseMenuId3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./add-user.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./master-data-management.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+            <h4 class="header-content">Operation-Customer Module</h4>
+            <div class="mobile-view">
+              <i
+                class="fa-solid fa-bars toggleNavMenu"
+                onclick="toggleMenu()"
+              ></i>
+
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./images/profileLogo.jpg" alt="" />
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-wrapper">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">OCR</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <!-- 2 Side by Side PDF -->
+            <div class="__two_sided_pdf">
+              <div class="__firstSide">
+                <div class="embed-pdf-wrapper">
+                  <iframe src="pdf.pdf" frameborder="0"></iframe>
+                </div>
+                <div class="bottom-fixed-btns">
+                  <a href="#">Find Previous</a>
+                  <a href="#">Previous</a>
+                  <a href="#">Next</a>
+                  <a href="#">Find Next</a>
+                </div>
+              </div>
+
+              <div class="__secondSide">
+                <div class="__tableEmbeded">
+                  <div class="page-count">
+                    <p class="pageNoCount">Page Number: <span>1</span></p>
+                    <p class="tableNoCount">
+                      <span>Table Number: <span>1</span></span>
+                      <a href="#">Save</a>
+                    </p>
+                    <!-- Table Start Here -->
+                    <div class="__dynamicTable">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">1</th>
+                              <th scope="col">2</th>
+                              <th scope="col">3</th>
+                              <th scope="col">4</th>
+                              <th scope="col">5</th>
+                              <th scope="col">6</th>
+                              <th scope="col">7</th>
+                              <th scope="col">8</th>
+                              <th scope="col">9</th>
+                              <th scope="col">10</th>
+                              <th scope="col">11</th>
+                              <th scope="col">12</th>
+                              <th scope="col">13</th>
+                              <th scope="col">14</th>
+                              <th scope="col">15</th>
+                              <th scope="col">16</th>
+                              <th scope="col">17</th>
+                              <th scope="col">18</th>
+                              <th scope="col">19</th>
+                              <th scope="col">20</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- Table Ends Here -->
+                  </div>
+                  <div class="page-count page-margin">
+                    <p class="pageNoCount">Page Number: <span>2</span></p>
+                    <p class="tableNoCount">
+                      <span>Table Number: <span>2</span></span>
+                      <a href="#">Save</a>
+                    </p>
+                    <!-- Table Start Here -->
+                    <div class="__dynamicTable">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col">1</th>
+                              <th scope="col">2</th>
+                              <th scope="col">3</th>
+                              <th scope="col">4</th>
+                              <th scope="col">5</th>
+                              <th scope="col">6</th>
+                              <th scope="col">7</th>
+                              <th scope="col">8</th>
+                              <th scope="col">9</th>
+                              <th scope="col">10</th>
+                              <th scope="col">11</th>
+                              <th scope="col">12</th>
+                              <th scope="col">13</th>
+                              <th scope="col">14</th>
+                              <th scope="col">15</th>
+                              <th scope="col">16</th>
+                              <th scope="col">17</th>
+                              <th scope="col">18</th>
+                              <th scope="col">19</th>
+                              <th scope="col">20</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>4</td>
+                              <td>5</td>
+                              <td>6</td>
+                              <td>7</td>
+                              <td>8</td>
+                              <td>9</td>
+                              <td>10</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
+                              <td>15</td>
+                              <td>16</td>
+                              <td>17</td>
+                              <td>18</td>
+                              <td>19</td>
+                              <td>20</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- Table Ends Here -->
+                  </div>
+                </div>
+                <div class="bottom-fixed-btns justify-content-center">
+                  <a href="#">QC Done</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Open Form Popup-->
+    <div
+      class="modal _custom_modal fade"
+      id="formModal"
+      tabindex="-1"
+      aria-labelledby="formModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog _custom_dialog">
+        <div class="modal-content _custom_modal_content">
+          <div class="modal-header">
+            <h2 class="mb-0">Add Details</h2>
+            <button
+              type="button"
+              class="btn-close normal-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <div class="d-flex gap-10 align-items-center justify-space-between mb-3">
+                <p class="mb-0">Case ID</p>
+                <input type="text" placeholder="Enter Case ID" />
+              </div>
+              <div class="d-flex gap-10 align-items-center justify-space-between mb-3">
+                <p class="mb-0">Report</p>
+                <input type="file" name="" id="">
+              </div>
+              <div class="d-flex gap-10 align-items-center justify-space-between mb-3">
+                <p class="mb-0">Engine</p>
+                <select class="form-select custom-width" aria-label="Default select example">
+                  <option selected>Select</option>
+                  <option value="HA">HA</option>
+                  <option value="AWS">AWS</option>
+                </select>
+              </div>
+              <div class="d-flex gap-10 align-items-center justify-space-between mb-3">
+                <p class="mb-0">QC Request</p>
+                <div class="checkbox d-flex gap-10">
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                    <label class="form-check-label" for="radio1">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label" for="radio2">No</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <input type="submit" value="Submit" class="submit-btn">
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Close Form Popup-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- <script>
+      document.querySelectorAll("form").forEach(function (item) {
+        item.children[0].children[0].insertAdjacentHTML(
+          "afterend",
+          '<button class="file-button">Choose file</button><span class="file-name">No file chosen</span>'
+        );
+        item.children[0].children[0].addEventListener("change", function () {
+          const splitFileName = this.value.split(/\\/);
+          item.children[0].children[2].innerText =
+            splitFileName[splitFileName.length - 1];
+        });
+      });
+    </script> -->
+  </body>
+</html>
