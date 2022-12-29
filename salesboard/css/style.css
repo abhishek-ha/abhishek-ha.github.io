@@ -55,7 +55,6 @@ html{
 .headerbottom{
     display: flex;
     background-color:#ffffff;
-   border-right: 1.5px solid #B8B8B8;
    overflow-x: auto;
        }
 
