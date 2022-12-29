@@ -300,6 +300,7 @@ function OpnOPDPaymentPopUp(result, ProductApiBaseUrl) {
                 },
                 "prefill": { "name": result.results.user.name, "email": result.results.user.emailId, "contact": "91" + result.results.user.mobileNo },
                 "notes": {
+                    "transactionId": result.results.razorpayOrder.receipt,
                     "address": "Registered Office : 1st Floor, Excom House, North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai-400 072"
                 },
                 "theme": { "color": "#3399cc" },
