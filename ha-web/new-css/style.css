@@ -1421,6 +1421,7 @@ input[type=number] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.5rem;
+  min-width: 80px;
 }
 
 .btn-primary:focus, .btn-primary:active, .btn-primary:hover {

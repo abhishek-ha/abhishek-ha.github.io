@@ -41,7 +41,53 @@
 
 </nav>
 
-<section class="headerbottom">
+<section>
+  <div class="grid-container">
+ <main class="grid-item main">
+    <div class="items">
+      <div class="item "> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item "> <a href="#"> CBU </a> </div>
+      <div class="item "> <a href="#"> Corporate </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item "> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+      <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+         <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+       <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+       <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+     
+     
+    </div>
+ 
+  </main>
+
+</div>
+</section>
+
+
+
+<!-- <section class="headerbottom">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-xl-12">
@@ -75,7 +121,7 @@
      </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section>
   <div class="container-fluid">
@@ -93,7 +139,7 @@
   <p> We began helping people get care for big and small health issues in 2010, with a focus on primary healthcare for employees. Today, we are India's leading HMO, and have grown our offering to include other holistic benefits like wellness coaching, fitness, insurance products, and pharmacy needs. We began helping people get care for big and small health issues in 2010, with a focus on primary healthcare for employees. Today, we are India's leading HMO, and have grown our offering to include other holistic benefits. </p>
      </div>
    <div class="col-xl-6 col-lg-6 col-md-4 col-12 pt-5">
-    <img src="images/first-thumb.jpg" class="img-fluid" alt="first-thumb"> 
+    <img src="images/first-thumb.png" class="img-fluid" alt="first-thumb"> 
   </div> 
 </div>
 <div class="row icon">
@@ -260,7 +306,42 @@
 
 
 
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
+
+<script>
+  const slider = document.querySelector('.items');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+</script>
 </body>
 </html>
