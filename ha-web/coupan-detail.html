@@ -11,9 +11,11 @@
         rel="stylesheet">
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="new-css/style.css" />
     <link rel="stylesheet" href="new-css/ownStyle.css" />
+
 </head>
 <body>
 
@@ -138,13 +140,6 @@
    </div>
     </div>
 
-
-
-
-
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered rounded modal-xl">
@@ -154,9 +149,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-   
 
-     <div class="mb-2 row">
+   <div class="mb-2 row">
     <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
     <div class="col-sm-9">
       <select class="form-select">
@@ -175,28 +169,23 @@
       <input type="text" class="form-control" name="" placeholder=" Coupan Code">
      </div>
 </div>
-
-<div class="row mb-2">
-  <label for="staticEmail" class="col-sm-3 col-form-label">Select Plan </label>
-  <div class="multiSelect col-sm-9">
-  <select multiple class="multiSelect_field" data-placeholder="Select Plan">
-    <option> Select Plan </option>
-  <option> Fitassure </option>
-  <option> Optimaassure </option>
-    <option> TotalAssure </option>
-    <option> FitAssure Plus </option>
-    <option> FitAssure Platinum Plus </option>
-  </select>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="iconX">
-    <g stroke-linecap="round" stroke-linejoin="round">
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-    </g>
-  </symbol>
-</svg>
+<div class="row  justify-content-center mt-100 mb-2">
+      <label for="staticEmail" class="col-sm-3 col-form-label"> Select Plan  </label>
+    <div class="col-md-9"> 
+      <select id="choices-multiple-remove-button" placeholder="Select Plan" multiple>
+            <option value="Author" onclick="filterSelection('Author')">Author</option>
+            <option value="MSelect"> FitAssure </option>
+            <option value="Accordions" > OptimaAssure </option>
+            <option value="Radio Buttons"> TotalAssure </option>
+            <option value="SearchBox"> FitAssure Plus </option>
+            <option value="Tables"> TotalAssure Plus </option>
+            <option value="Profiles">TotalAssure Protect </option>
+       </select>
   </div>
+</div>
+
+
+
   <div class="mb-2 row">
     <label for="staticEmail" class="col-sm-3 col-form-label"> Discount % or absolute Amount </label>
     <div class="col-sm-9">
@@ -359,8 +348,26 @@
     </div>
   </div>
 </div>
-
-
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    
+     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount:5,
+        searchResultLimit:5,
+        renderChoiceLimit:5
+      }); 
+     
+     
+ });
+
+</script>
+
+
+
 </body>
 </html>
