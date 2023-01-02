@@ -609,24 +609,11 @@ html{
 
 
 @media only  screen and (min-width: 800px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 25px 20px 10px 20px;
-}
-.headerbottom ul li a{
-        color: #838383;
-}
+
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
+   position: relative;
 }
 .about-section h3{
     color: #000000;
@@ -774,11 +761,22 @@ html{
   }
 .item {
     display: inline-block;
+    color: #000000;
     background: white;
  /*   min-height: 50px;
     min-width: 100px;*/
    margin-top: 85px;
+       height: 60px;
    }
+
+.item:hover{
+    border-bottom: 2px solid #003AFF;
+}
+
+
+  
+
+
 .item a{
     display: flex;
         font-size: 14px;
@@ -787,6 +785,8 @@ html{
         font-weight: 500;
         text-decoration: none;
      }
+
+
 
 /*.item {
     display: inline-block;
