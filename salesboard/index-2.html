@@ -41,41 +41,46 @@
 
 </nav>
 
-<section class="headerbottom">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-xl-12">
-      <ul>
-        <li> Overview </li>
-        <li> Agents </li>
-        <li> CBU </li>
-          <li> Corporates </li>
-            <li> Digital </li>
-              <li> Banks </li>
-                <li> Agents </li>
-                <li> CBU </li>
-                <li> Corporates </li>
-                 <li> Overview </li>
-        <li> Agents </li>
-        <li> CBU </li>
-          <li> Corporates </li>
-            <li> Digital </li>
-              <li> Banks </li>
-                <li> Agents </li>
-                <li> CBU </li>
-                <li> Corporates </li>
-                 <li> CBU </li>
-          <li> Corporates </li>
-            <li> Digital </li>
-              <li> Banks </li>
-                <li> Agents </li>
-                <li> CBU </li>
-                <li> Corporates </li>
-            </ul>
+<section>
+  <div class="grid-container">
+ <main class="grid-item main">
+    <div class="items">
+      <div class="item "> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item "> <a href="#"> CBU </a> </div>
+      <div class="item "> <a href="#"> Corporate </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item "> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+      <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+         <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+       <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
+       <div class="item"> <a href="#"> Agents </a> </div>
+       <div class="item"> <a href="#"> CBU </a> </div>
+      <div class="item"> <a href="#"> Corporates </a> </div>
+       <div class="item"> <a href="#"> Overview </a> </div>
+      <div class="item"> <a href="#"> Digital </a> </div>
+       <div class="item"> <a href="#"> Banks </a> </div>
      </div>
-    </div>
-  </div>
+ </main>
+</div>
 </section>
+
 
 <section>
   <div class="container-fluid">
@@ -230,5 +235,38 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+  const slider = document.querySelector('.items');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+</script>
+
+
 </body>
 </html>
