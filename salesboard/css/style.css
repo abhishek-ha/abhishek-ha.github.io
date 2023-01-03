@@ -47,6 +47,32 @@ html{
     margin-top: -6px;
     width: 150px;
     }
+.healthbg{
+    background-image: url('../images/healthbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    background-size: contain;
+}
+.healthbg h3{
+    font-size: 25px!important;
+    font-weight: 600;
+    padding-top: 85px!important;
+    padding: 20px;
+}
+
+.download-btn{
+        border-radius: 0;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 25%;
+    margin-top: 15px;
+    text-align: center;
+    width: 150px;
+
+}
+
+
 @media only screen and (max-width: 760px) { 
     #logo_custom{width: 40%;
     }
@@ -54,11 +80,7 @@ html{
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: #003AFF!important;  
 }
-.headerbottom{
-    display: flex;
-    background-color:#ffffff;
-   overflow-x: auto;
-       }
+
 
 @media only screen and (max-width: 400px) {
 .about-section{

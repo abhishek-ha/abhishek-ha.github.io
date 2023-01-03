@@ -4,9 +4,9 @@ Remove duplicate & only show the ones discussed (Done)
 
 Spacing between heading & content (Done)
 
-Images instead <> illustrations 
+Images instead <> illustrations (Done)
 
-Data update from slides to landing page
+Data update from slides to landing page (Done)
 
 Index_2 to be added to same landing page(Done) 
 
