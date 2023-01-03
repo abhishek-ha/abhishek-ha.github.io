@@ -7,9 +7,8 @@
      box-sizing: border-box;
  }
 body {
-/*    font-family: 'Poppins', sans-serif;*/
-font-family: 'Inter', sans-serif;
-   overflow-x: hidden!important;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden!important;
     font-size: 14px;
     line-height: 22px;
     color: #838383;
@@ -62,22 +61,6 @@ html{
        }
 
 @media only screen and (max-width: 400px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 20px 20px 10px 20px;
-}
-.headerbottom ul li a{
-        color: #838383;
-}
-
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -174,23 +157,6 @@ html{
 }
 
 @media only  screen and (min-width: 401px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 20px 20px 10px 20px;
-}
-
-.headerbottom ul li a{
-        color: #838383;
-}
-
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -288,18 +254,6 @@ html{
 
 
 @media only  screen and (min-width: 501px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 20px 20px 10px 20px;
-}
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -397,23 +351,6 @@ html{
 
 
 @media only  screen and (min-width: 601px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 25px 20px 10px 20px;
-}
-
-.headerbottom ul li a{
-        color: #838383;
-}
-
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -506,26 +443,10 @@ html{
 .blog-sec img{
     padding: 5px 0px 10px 0px;
 }
-
 }
 
 
 @media only  screen and (min-width: 701px) {
- .headerbottom ul{
-    padding-top: 70px;
-    width: 100%;
-    display: flex;
-}
-.headerbottom ul li{
-    list-style-type: none;
-    float: left;
-    font-size: 14px;
-    color: #999999;
-    padding: 25px 20px 10px 20px;
-}
-.headerbottom ul li a{
-        color: #838383;
-}
 .about-section{
    padding: 30px 20px 30px 20px;  
    border-right: 1.5px solid #B8B8B8; 
@@ -693,17 +614,8 @@ html{
     padding: 5px 0px 10px 0px;
 }
 }
-
-
-
-
-
-
-
-
 .grid-container {
   background: #efefef;
-  font-family: "Rubik", sans-serif;
 }
 
 @supports (display: grid) {
@@ -754,8 +666,7 @@ html{
     user-select: none;
     cursor: pointer;
   }
-
-  .items.active {
+ .items.active {
     background: rgba(255, 255, 255, 0.3);
     cursor: grabbing;
     cursor: -webkit-grabbing;
@@ -770,15 +681,9 @@ html{
    margin-top: 85px;
        height: 60px;
    }
-
 .item:hover{
     border-bottom: 2px solid #003AFF;
 }
-
-
-  
-
-
 .item a{
     display: flex;
         font-size: 14px;
@@ -806,22 +711,6 @@ html{
     }
   }
 }
-
-/*.items::-webkit-scrollbar {
-    width: 4px;
-    background-color: #003AFF;
-    height: 4px;
-}
-.items::-webkit-scrollbar-thumb {
-    background-color: #003AFF;
-
-}
-.items::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
-    background-color: #F5F5F5;
-
-}*/
-
 .items::-webkit-scrollbar {
     width: 4px;
     background-color: #003AFF;
@@ -834,9 +723,26 @@ html{
 .items::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
     background-color: #F5F5F5;
-
 }
 
+footer{
+    background-color: #457e70;
+    padding: 40px 90px 10px;
+    background-color: #457e70;
+    background-image: url(https://uploads-ssl.webflow.com/6225e80…/6246d89…_Logo%20large.svg);
+    background-position: 100% 0%;
+    background-size: 37%;
+    background-repeat: no-repeat;
+    color: #fff;
+}
 
-
-
+footer h3{
+   font-size: 20px;
+    line-height: 25.9px;
+    font-weight: 500;
+}
+footer .subscribe{
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #cccccc;
+}

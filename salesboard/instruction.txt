@@ -2,7 +2,7 @@ Hover on top (Done)
 
 Remove duplicate & only show the ones discussed (Done)
 
-Spacing between heading & content
+Spacing between heading & content (Done)
 
 Images instead <> illustrations 
 
@@ -20,9 +20,9 @@ Team members to be shifted on the right side (Done)
 
 Overview <> home (Done)
 
-Sales deck <> Slides master 
+Sales deck <> Slides master (Done)
 
-Projects <> Faqs repository 
+Projects <> Faqs repository (Done)
 
 Updates, policies, terms : remove all three (Done)
 
