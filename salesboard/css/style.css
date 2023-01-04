@@ -18,7 +18,7 @@ html{
      overflow-x: hidden!important;
 }
 .custom-navbar{
-   box-shadow: 10px 3px 1px #eee;
+   box-shadow: 10px 0px 1px #eee;
    background-color: #F2F5FF;
 }
 .nav-link{
@@ -59,14 +59,14 @@ html{
     font-size: 25px!important;
     font-weight: 600;
     padding-top: 85px!important;
-    padding: 20px;
+    padding: 20px 10px 0px 10px;
 }
 .download-btn{
     border-radius: 0;
     font-weight: 600;
-    margin-bottom: 15px;
+    bottom: 15px;
     margin-left: 25%;
-    margin-top: 15px;
+    margin-top: 5px;
     text-align: center;
     width: 150px;
 }
@@ -114,23 +114,24 @@ html{
      border-top:1px solid #b9cec9;
      border-bottom: 1px solid #b9cec9;
 }
-
 .copyright{
     margin-top: 30px;
 }
-
 .copyright p span {
     padding: 10px 20px 10px 20px;
     color: #7ba399;
     font-size: 15px;
     font-weight: 500;
 }
-
 .startconver h4:after{
     border-right: 2px solid #ffffff;
     width: 90%;
-
 }
+
+
+
+
+
 
 
 
@@ -748,6 +749,7 @@ html{
     will-change: transform;
     user-select: none;
     cursor: pointer;
+
   }
  .items.active {
     background: rgba(255, 255, 255, 0.3);
@@ -815,7 +817,7 @@ html{
 
 .our-journey img{
     width: 100%;
-    height: 90%;
+    height: 85%;
 }
 
 
@@ -873,4 +875,70 @@ color: #b9cec9;
 }
 footer .subscribe::-moz-placeholder { /* Firefox 19+ */
   color: #b9cec9;
+}
+
+
+
+.navbar-ctfb1 {
+    background-color:#000871;
+    color:#FFF;
+}
+#ctfb1 a {
+color:#FFF;.l
+}
+
+
+
+#ctfb1 ul {width:200px;}
+#ctfb1 ul li {
+    
+    font-size:18px;
+    margin-bottom:3px;
+    //height:40px;
+    //width:100px;
+    //margin-left:20px;
+}
+#ctfb1 .section {
+    font-weight:600;
+    font-size:20px;
+    
+}
+
+#ctfb1 .section:not(:first-child) {
+    margin-top:30px !important;
+}
+#ctfb1 ul li a:hover  {
+    text-decoration:none;
+}
+
+#ctfb1 ul li a
+{
+    font-weight:300;
+color: #FFFFFF;
+text-shadow: none;
+}
+#ctfb1 ul li a:hover
+{
+padding-left: 14px;
+    text-align:right;
+text-shadow: 0 0 15px #FFFFFF;
+transform: scale(1.05);
+}
+
+.style-glow
+{
+color: #FFFFFF;
+font-weight: 700;
+font-size: 18px;
+}
+
+}
+
+.btn-primary,
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background:#000871;
+}
+
+#fields {
+    background-color:rgba( 200,200,200,.1);
 }
