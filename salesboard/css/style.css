@@ -12,6 +12,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     color: #838383;
+    font-weight: 400;
         }
 html{
      overflow-x: hidden!important;
@@ -60,29 +61,76 @@ html{
     padding-top: 85px!important;
     padding: 20px;
 }
-
 .download-btn{
-        border-radius: 0;
+    border-radius: 0;
     font-weight: 600;
     margin-bottom: 15px;
     margin-left: 25%;
     margin-top: 15px;
     text-align: center;
     width: 150px;
-
 }
-
 .menu h4{
     font-size: 16px;
     margin-bottom: 10px;
-
+    font-weight: 500;
+    line-height: 28px;
 }
 .menu ul li{
     list-style-type: none;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+.menu ul li a{
+    color: #b9cec9;
+}
+.menu ul li a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu p a{
+    color: #b9cec9;
+}
+.txt-grey{
+    color: #b9cec9;
+}
+.social {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.social ul li{
+    float: left;
+}
+.social ul li a{
+    font-size: 20px;
+    padding: 0px 20px 10px 20px;
+    color: #ffffff;
+}
+.txt-13{
+    font-size: 13px;
+    line-height: 22px;
+     color: #b9cec9;
+     font-weight: 500;
+     border-top:1px solid #b9cec9;
+     border-bottom: 1px solid #b9cec9;
 }
 
+.copyright{
+    margin-top: 30px;
+}
 
+.copyright p span {
+    padding: 10px 20px 10px 20px;
+    color: #7ba399;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.startconver h4:after{
+    border-right: 2px solid #ffffff;
+    width: 90%;
+
+}
 
 
 
@@ -753,31 +801,76 @@ html{
 }
 .items::-webkit-scrollbar-thumb {
     background-color: #B8B8B8;
-
 }
 .items::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
     background-color: #F5F5F5;
 }
+.input-group-text{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #cccccc!important;
+    cursor: pointer;
+}
+
+.our-journey img{
+    width: 100%;
+    height: 90%;
+}
+
+
+
 
 footer{
-    background-color: #457e70;
-    padding: 40px 90px 10px;
+   padding: 40px 0px 10px 0px;
     background-color: #457e70;
     background-image: url(https://uploads-ssl.webflow.com/6225e80…/6246d89…_Logo%20large.svg);
     background-position: 100% 0%;
-    background-size: 37%;
+/*    background-size: 37%;*/
     background-repeat: no-repeat;
     color: #fff;
 }
 
 footer h3{
    font-size: 20px;
-    line-height: 25.9px;
-    font-weight: 500;
+    line-height: 27px;
+    font-weight: 400;
 }
 footer .subscribe{
     background-color: transparent;
+    padding: 5px 10px;
     width: 100%;
-    border: 1px solid #cccccc;
+    border: none;
+    color: #ffffff!important;
+    border-radius: 0px;
+    font-size: 14px;
+    border-bottom: 1px solid #cccccc!important;
+}
+
+footer .subscribe:focus{
+   background-color: transparent;
+     color: #ffffff!important;
+    border-radius: 0px;
+    border-bottom: 1px solid #cccccc!important;
+    outline: 0;
+    box-shadow:none;
+}
+footer .subscribe::placeholder {
+  color: #b9cec9;
+  opacity: 1; /* Firefox */
+}
+footer .subscribe::-webkit-input-placeholder { /* Edge */
+color: #b9cec9;
+}
+footer .subscribe:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #b9cec9;
+}
+footer .subscribe::-ms-input-placeholder { /* Microsoft Edge */
+color: #b9cec9;
+}
+footer .subscribe:-moz-placeholder { /* Firefox 18- */
+color: #b9cec9;
+}
+footer .subscribe::-moz-placeholder { /* Firefox 19+ */
+  color: #b9cec9;
 }
