@@ -965,29 +965,41 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .myaccordion .card,
 .myaccordion .card:last-child .card-header {
   border: none;
+/*  background-color: #000000;*/
 }
-
 .myaccordion .card-header {
   border-bottom-color: #EDEFF0;
   background: transparent;
 }
-
 .myaccordion .fa-stack {
   font-size: 18px;
 }
-
 .myaccordion .btn {
   width: 100%;
   font-weight: bold;
-  color: #004987;
+  color: #000000;
   padding: 0;
+  font-size: 13px;
 }
-
+.fa-inverse {
+color: #000000!important;
+}
 .myaccordion .btn-link:hover,
 .myaccordion .btn-link:focus {
   text-decoration: none;
 }
-
 .myaccordion li + li {
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+/*.collapsed{
+    background-color: #000000;
+    color: #ffffff;
+}*/
