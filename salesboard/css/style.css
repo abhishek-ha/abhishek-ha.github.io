@@ -974,18 +974,22 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 #accordion .panel-title a{
     display: block;
     padding: 15px 20px;
+    color: #000000;
     margin: 0;
-    background: #000000;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #fff;
     border-radius: 0;
     position: relative;
 }
+
+#accordion .panel-title a[aria-expanded="true"]{
+    background-color: #000;
+    color: white;
+}
+
+
 #accordion .panel-title a.collapsed{
- background: #ffffff;
- color: #000000;
 border: 1px solid #E0E0E0;
 text-decoration: none;
 }
