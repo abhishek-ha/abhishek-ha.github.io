@@ -155,8 +155,8 @@
     <p><span> <i class="fa-solid fa-chart-line"></i> 10K+ </span> Appoinments have been made at this location recently </p>
     </div>
    <div class="col-lg-4 col-md-4 col-12 text-right">
-    <button class="btn popular-selected"> Popular Near You </button>
-<button class="btn popular-btn"> Preferred Centres </button>
+    <button class="btn popular-selected " id="color2" onclick=" clicked2()"> Popular Near You </button>
+<button class="btn popular-selected  " id="color" onclick=" clicked()" > Preferred Centres </button>
   </div>
   </div>
   </section>
@@ -1079,20 +1079,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
   </div> 
 </div>
@@ -1134,6 +1120,36 @@
     $("#review_con").css("display","none");
   });
 
+
+
+
+ 
+function clicked(){
+  if($("#color").hasClass( "popular-selected" )){
+  $("#color").removeClass("popular-selected");
+    $("#color").addClass("popular-btn");
+  }
+  else{
+   $("#color").removeClass("popular-btn");
+      $("#color").addClass("popular-selected");
+  }
+}
+
+function clicked2(){
+  if($("#color2").hasClass( "popular-selected" )){
+  $("#color2").removeClass("popular-selected");
+    $("#color2").addClass("popular-btn");
+  }
+  else{
+   $("#color2").removeClass("popular-btn");
+      $("#color2").addClass("popular-selected");
+  }
+}
+
+
 </script>
+
+
+
 </body>
 </html>
