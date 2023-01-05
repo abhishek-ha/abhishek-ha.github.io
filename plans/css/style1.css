@@ -8004,7 +8004,7 @@ height:652px;
 
 .renewpolicy-benefits{
     background-color: #ecf0fa;
-    box-shadow: 5px 11px 23px -13px #dedede;
+    box-shadow: none;
     padding: 20px 0px 40px 0px;
     margin-bottom: 100px;
     margin-top: 50px;
@@ -13780,5 +13780,21 @@ h4{color:#444}
 .disclaimer span{
     font-size: 12px;
     font-weight: 600;
+}
+.renewbenefitbox{
+    background-color: #f2f1f6!important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+    padding: 20px;
+    margin-top: 30px;
+}
+.renewbenefitbox p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.renewbenefitbox h3{
+     font-size: 22px;
+    font-weight: 600;
+    color: #0f5fc2;
+    padding: 20px 0px 20px 0px;
 }
 

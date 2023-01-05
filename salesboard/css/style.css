@@ -58,8 +58,8 @@ html{
 .healthbg h3{
     font-size: 25px!important;
     font-weight: 600;
-    padding-top: 85px!important;
-    padding: 20px 10px 0px 10px;
+/*    padding-top: 85px!important;*/
+   padding: 20px 10px 0px 10px;
 }
 .download-btn{
     border-radius: 0;
@@ -877,84 +877,36 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
   color: #b9cec9;
 }
 
-
-div.bhoechie-tab-container{
-  z-index: 10;
-  background-color: #ffffff;
-  padding: 0 !important;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  border:1px solid #ddd;
-  margin-top: 20px;
- 
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  background-clip: padding-box;
-  opacity: 0.97;
-  filter: alpha(opacity=97);
-}
-div.bhoechie-tab-menu{
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group{
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group>a{
-  margin-bottom: 0;
-}
-div.bhoechie-tab-menu div.list-group>a .glyphicon,
-div.bhoechie-tab-menu div.list-group>a .fa {
-  color: #5A55A3;
-}
-div.bhoechie-tab-menu div.list-group>a:first-child{
-  border-top-right-radius: 0;
-  -moz-border-top-right-radius: 0;
-}
-div.bhoechie-tab-menu div.list-group>a:last-child{
-  border-bottom-right-radius: 0;
-  -moz-border-bottom-right-radius: 0;
-}
-div.bhoechie-tab-menu div.list-group>a.active,
-div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
-div.bhoechie-tab-menu div.list-group>a.active .fa{
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 4px;
-  text-align: left;
-}
-.list-group-item {
+.nav-pills-custom .nav-link {
+    color: #aaa;
+    background: #fff;
     position: relative;
-    display: block;
-    padding: 0.75rem 1.25rem;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
-    color: #B0B0B0;
 }
-/*div.bhoechie-tab-menu div.list-group>a.active:after{
-  content: '';
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-top: -13px;
-  border-left: 0;
-  border-bottom: 13px solid transparent;
-  border-top: 13px solid transparent;
-  border-left: 10px solid #5A55A3;
-}*/
-
-div.bhoechie-tab-content{
-  background-color: #ffffff;
-  /* border: 1px solid #eeeeee; */
-  padding-left: 20px;
-  padding-top: 10px;
+.nav-pills-custom .nav-link.active {
+    color: #ffffff!important;
+    background: #000000;
+}
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
 }
 
-div.bhoechie-tab div.bhoechie-tab-content:not(.active){
-  display: none;
-}
+
+
+
 
 
 #accordion .panel{
@@ -981,14 +933,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     letter-spacing: 1px;
     border-radius: 0;
     position: relative;
+    width: 98%;
 }
 
 #accordion .panel-title a[aria-expanded="true"]{
     background-color: #000;
     color: white;
 }
-
-
 #accordion .panel-title a.collapsed{
 border: 1px solid #E0E0E0;
 text-decoration: none;
@@ -1006,7 +957,7 @@ text-decoration: none;
     font-weight: normal;
     color: #ffffff;
     text-align: center;
-    border: 3px solid #fff;
+   /*border: 3px solid #fff;*/
     position: absolute;
     top: 10px;
     right: 14px;
@@ -1066,4 +1017,11 @@ text-decoration: none;
 }
 #accordion .panel-body p{
   padding: 10px;
+}
+
+.faqtxt{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    padding-top: 20px;
 }
