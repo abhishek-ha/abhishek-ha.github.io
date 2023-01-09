@@ -109,23 +109,23 @@
                             <div class="col-md-6 pl-4 pt-1 col-6">
                               <form>
 <p class="mb-1"> Select Tenure: </p>
-  <input type="radio" id="1 Year" name="age" >
+  <input type="radio" id="1year" name="age" checked >
   <label for="age1" class="mb-0"> 1 Year </label><br>
-  <input type="radio" id="age2" name="age" value="60">
+  <input type="radio" id="2year" name="age">
   <label for="age2" class="mb-0"> 2 Year</label><br>  
 </form>
                             </div>
-        <div class="col-md-6 pt-4 col-6">
+        <div class="col-md-6 pt-4 col-6" id="oneyear">
 <a href="javascript:OpenBuyPlanPopup('FitAssure Plus','HAOPDR003-57','',false,false,'',true,false,false,false)"
     class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
     <span style="font-weight:500;"> &#8377; <del> 9999
-                                        </del> &nbsp; 5999/-</span> </a>
+                                        </del> &nbsp; 6999/-</span> </a>
                             </div> 
 
-                             <div class="col-md-6 pt-4 col-6" style="display:none;">
+                             <div class="col-md-6 pt-4 col-6" id="twoyear" style="display:none;">
 <a href="javascript:OpenBuyPlanPopup('FitAssure Plus','HAOPDR003-57','',false,false,'',true,false,false,false)"
     class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
-    <span style="font-weight:500;"> &#8377; <del> 9999
+    <span style="font-weight:500;"> &#8377; <del> 99999
                                         </del> &nbsp; 5999/-</span> </a>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                             <div class="col-md-6 pl-4 pt-1 col-6">
  <form>
 <p class="mb-1"> Select Tenure: </p>
-  <input type="radio" id="age1" name="age" >
+  <input type="radio" id="age1" name="age" checked >
   <label for="age1" class="mb-0"> 1 Year </label><br>
   <input type="radio" id="age2" name="age" value="60">
   <label for="age2" class="mb-0"> 2 Year</label><br>  
@@ -355,7 +355,19 @@
                     $('#thankyoufirst').modal('toggle');
                 });
         });
-    </script>
+
+$(document).ready(function(){
+$("#1year").click(function(){
+    $("#oneyear").show();
+     $("#twoyear").hide();
+  });
+$("#2year").click(function(){
+    $("#twoyear").show();
+    $("#oneyear").hide();
+  });
+ });
+
+ </script>
 
 </body>
 
