@@ -163,20 +163,20 @@
                             <div class="col-md-6 pl-4 pt-1 col-6">
  <form>
 <p class="mb-1"> Select Tenure: </p>
-  <input type="radio" id="age1" name="age" checked >
+  <input type="radio" id="age1" name="age" >
   <label for="age1" class="mb-0"> 1 Year </label><br>
   <input type="radio" id="age2" name="age" value="60">
   <label for="age2" class="mb-0"> 2 Year</label><br>  
 </form>
                      </div>
-                            <div class="col-md-6 pt-4 col-6">
+                            <div class="col-md-6 pt-4 col-6" id="fitassureplatinumoneyear">
 <a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR003-58','',false,false,'',true,false,false,false)"
     class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
     <span style="font-weight:500;"> &#8377; <del> 14999 </del> &nbsp; 8999/-</span> </a>
                             </div>
 
 
- <div class="col-md-6 pt-4 col-6" style="display:none;">
+ <div class="col-md-6 pt-4 col-6" id="fitassureplatinumtwoyear" style="display:none;">
 <a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR003-63','',false,false,'',true,false,false,false)"
     class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
     <span style="font-weight:500;"> &#8377; <del> 16199 </del> &nbsp; 32999/-</span> </a>
@@ -375,6 +375,21 @@ $("#2year").click(function(){
     $("#oneyear").hide();
   });
  });
+
+
+
+
+$(document).ready(function(){
+$("#1year").click(function(){
+    $("#fitassureplatinumoneyear").show();
+     $("#fitassureplatinumtwoyear").hide();
+  });
+$("#2year").click(function(){
+    $("#fitassureplatinumtwoyear").show();
+    $("#fitassureplatinumoneyear").hide();
+  });
+ });
+
 
  </script>
 
