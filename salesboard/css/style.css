@@ -905,7 +905,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
         content: '';
         display: block;
         border-top: 8px solid transparent;
-        border-left: 10px solid #fff;
+        border-left: 10px solid #000000;
         border-bottom: 8px solid transparent;
         position: absolute;
         top: 50%;
@@ -918,16 +918,11 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     opacity: 1;
 }
 
-
-
-
-
-
 #accordion .panel{
     border: none;
     border-radius: 0;
     box-shadow: none;
-   /* margin: 0 30px 10px 30px;*/
+   margin: 0 3px 0px 3px;
     overflow: hidden;
     position: relative;
 }
@@ -939,7 +934,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
 }
 #accordion .panel-title a{
     display: block;
-    padding: 15px 20px;
+    padding: 15px 2px 15px 13px;
     color: #000000;
     margin: 0;
     font-size: 14px;
@@ -948,7 +943,14 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     border-radius: 0;
     position: relative;
     width: 98%;
+    text-decoration: none;
 }
+
+ol.numeric {
+    list-style-type: lower-alpha;
+}
+
+
 
 #accordion .panel-title a[aria-expanded="true"]{
     background-color: #000;
@@ -992,6 +994,7 @@ text-decoration: none;
     position: absolute;
     top: 10px;
     right: 14px;
+    padding-left: 15px;
 }
 #accordion .panel-title a.collapsed:before{
    content: "\f067";
@@ -1179,11 +1182,11 @@ body{background-color:#f1f1f2}
 }
 .box19 .box-content{
     width:100%;
-    height:46%;
+    height:40%;
     background:0 0;
-    padding-top:7%;
+    padding-top:5%;
     position:absolute;
-    top: 50%;
+    top: 60%;
     left:0;
     transition:all .3s ease 0s;
 }
@@ -1249,3 +1252,8 @@ body{background-color:#f1f1f2}
 }
 /* End */
 
+.w-50{
+    width: 46%!important;
+    float: left;
+    margin: 2%;
+}

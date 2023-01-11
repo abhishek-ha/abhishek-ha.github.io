@@ -468,6 +468,14 @@
           <div class="ratingstar">
       <p><img id="star_con" src="images/star.svg" > 4.5 </p>
       <p > 20 Review </p>
+
+
+
+
+
+
+
+
       <div id="review_con" class="reviewbox">
         <p> Customer Reviews </p>
         <p> <img src="images/star.svg" > 4.3 out of 5 </p>
@@ -516,6 +524,12 @@
         </div>
       </div>
   </div>
+
+
+
+
+
+
    </div>
  </div>
 </div>
@@ -1113,17 +1127,13 @@
     parent.addClass('is-open');
   }
 });
-
- $("#star_con").hover(function(){
+$("#star_con").hover(function(){
     $("#review_con").css("display","block");
-    }, function(){
+    }, 
+    function(){
     $("#review_con").css("display","none");
   });
 
-
-
-
- 
 function clicked(){
   if($("#color").hasClass( "popular-selected" )){
   $("#color").removeClass("popular-selected");
