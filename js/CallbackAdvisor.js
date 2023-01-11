@@ -266,7 +266,7 @@ function VarifyOTPforValidation(otp, mobileno) {
         "                        <div class='modal-body'>" +
         "                            <div class='row'>" +
         "                                <div class='col-lg-6  '>" +
-        "                                    <img src='https://healthassure.in/ha/images/call-center1.png' class='img-fluid mob1' alt='call us'>" +
+        "                                    <img src='https://live.healthassure.in/images/call-center1.png' class='img-fluid mob1' alt='call us'>" +
         "                                </div>" +
         "                                <div class='col-lg-6 col-md-12 col-sm-12' id='CallbackAdvisorformdiv1'>" +
         "                                    <h3 class='pb-4' id='callbackAdvisorhedertext'>Let us call you back!</h3>" +
