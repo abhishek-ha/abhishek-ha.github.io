@@ -180,7 +180,7 @@ function checkSecond(sec) {
     return sec;
 }
 
-var ProductApiBaseUrl = "https://localhost:44301/"   //"https://live.healthassure.in/ProductApi/"
+var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/"
 var UpgradeOPDObj = null;
 var timerFName = 'timer1';
 function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCode, policyNo) {
