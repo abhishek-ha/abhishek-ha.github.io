@@ -391,7 +391,7 @@
             <div class="row">
                 <div class="col-lg-12 pt-5">
                     <form class="row">
-                        <div class="col-lg-12 col-md-12 col-12">
+                        <!-- <div class="col-lg-12 col-md-12 col-12">
                             <h3 class="text-left"><b> Adult 1 </b> </h3>
                         </div>
                         <div class="form-group col-lg-4">
@@ -425,10 +425,10 @@
                                 <label class="form-check-label" for="Membergender1"> Female </label>
                             </div>
 
-                        </div>
+                        </div> -->
 
                         <div class="col-lg-12 col-md-12 col-12">
-                            <h3 class="text-left"><b> Adult 2 </b> </h3>
+                            <h3 class="text-left"><b> Adult</b> </h3>
                         </div>
                         <div class="form-group col-lg-4">
                             <label for="First Name"> First Name </label>
@@ -550,7 +550,7 @@
                     <h3> Email </h3>
                     <p id="CustomerEmail"> avanish.shukla@healthassure.in </p>
                     <h3> Current Premium </h3>
-                    <p> <i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount">10520</span></p>
+                    <p> <span style="font-size: 8px;">Exclusive of GST</span> <i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount">10520</span></p>
                     <img src="images/policy-renew.png" class="img-fluid w-25">
                 </div>
                 <div class="col-lg-6 col-md-6 renew">
@@ -561,7 +561,9 @@
                     <h3> New Validity </h3>
                     <p id="PlanNewValidity"> 04-DEC-2021-03-DEC-2022 </p>
                     <input type="hidden" value="" id="PolicyNo">
+                    
                     <button type="button" class="btn btn-primary mt-3" id="RenewNewbtnClick">
+                        <span style="font-size: 8px;">Exclusive of GST</span><br/>
                         <del>
                             <i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount1">10520</span>
                         </del><br> <i class="fa fa-inr" aria-hidden="true"></i>
@@ -706,7 +708,7 @@
             }
             var planRelations = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
             $.each(planRelations, function (key, p) {
-                $('#Relative1').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                //$('#Relative1').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
                 $('#Relative2').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
                 $('#Relative3').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
                 $('#Relative4').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
@@ -740,21 +742,21 @@
         });
         function GetRelations() {
             var Relations = [];
-            var MemberName1 = $('#FirstName1').val() + ' ' + $('#LastName1').val();
-            var MemberDOB1 = $('#MemberDOB1').val();
+            //var MemberName1 = $('#FirstName1').val() + ' ' + $('#LastName1').val();
+            //var MemberDOB1 = $('#MemberDOB1').val();
             var MemberName2 = $('#FirstName2').val() + ' ' + $('#LastName2').val();
             var MemberDOB2 = $('#MemberDOB2').val();
             var MemberName3 = $('#FirstName3').val() + ' ' + $('#LastName3').val();
             var MemberDOB3 = $('#MemberDOB3').val();
             var MemberName4 = $('#FirstName4').val() + ' ' + $('#LastName4').val();
             var MemberDOB4 = $('#MemberDOB4').val();
-            var Member1Relative = $('#Relative1').val();
+            //var Member1Relative = $('#Relative1').val();
             var Member2Relative = $('#Relative2').val();
             var Member3Relative = $('#Relative3').val();
             var Member4Relative = $('#Relative3').val();
-            if (MemberName1 != null && MemberName1.trim() != '' && MemberDOB1 != null && MemberDOB1 != '') {
-                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="Membergender1"]:checked').val(), "RelationName": Member1Relative });
-            }
+            // if (MemberName1 != null && MemberName1.trim() != '' && MemberDOB1 != null && MemberDOB1 != '') {
+            //     Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="Membergender1"]:checked').val(), "RelationName": Member1Relative });
+            // }
             if (MemberName2 != null && MemberName2.trim() != '' && MemberDOB2 != null && MemberDOB2 != '') {
                 Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="Membergender2"]:checked').val(), "RelationName": Member2Relative });
             }
