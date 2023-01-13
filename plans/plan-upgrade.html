@@ -347,10 +347,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12 text-center">
-                    <h2 style="font-size: 30px;font-weight: 600; text-align:center;"><b> Update your plan and enjoy 10%
-                            discount </b></h2>
+                    <h2 style="font-size: 30px;font-weight: 600; text-align:center;"><b> Even in the case of policy
+                            upgradation you can still enjoy 10% discount on original plan's premium</b></h2>
                     <p><b> Kindly Select your Preferred plan </b> </p>
-                    <input type="hidden" id="SelectedUpgradePlanCode"/>
+                    <input type="hidden" id="SelectedUpgradePlanCode" />
                 </div>
             </div>
             <div class="row">
@@ -369,7 +369,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-12" id="UpgradePlatFloatdiv"  style="display: none;">
+                <div class="col-lg-6 col-md-6 col-12" id="UpgradePlatFloatdiv" style="display: none;">
                     <div class="renewbenefitbox">
                         <h3> Platinum Ultima (Floater) </h3>
                         <p> <i class="fa fa-check-square-o" aria-hidden="true"></i> Unlimited Doctor Coach </p>
@@ -386,8 +386,158 @@
             </div>
         </div>
     </section>
+    <section id="relationsection" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pt-5">
+                    <form class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <h3 class="text-left"><b> Adult 1 </b> </h3>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="First Name"> First Name </label>
+                            <input type="text" id="FirstName1" class="form-control addmem" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Last Name"> Last Name </label>
+                            <input type="text" id="LastName1" class="form-control addmem" placeholder="Last Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Date of Birth"> Date of Birth </label>
+                            <input type="date" id="MemberDOB1" min="1920-01-01" max="2021-01-01"
+                                class="form-control addmem" placeholder="Date of Birth">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Relative1">Relation</label>
+                            <select id="Relative1" name="Relative1" class="form-control addmem">
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="form-label pl-1" for="Gender"> Gender </label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked type="radio" name="Membergender1"
+                                    id="Membergender1" value="Male">
+                                <label class="form-check-label" for="Membergender1"> Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Membergender1" id="Membergender1"
+                                    value="Female">
+                                <label class="form-check-label" for="Membergender1"> Female </label>
+                            </div>
 
-    <section class="PolicyDetailsection" style="background-color: #ecf0fa; margin-bottom:30px; display: none;">
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <h3 class="text-left"><b> Adult 2 </b> </h3>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="First Name"> First Name </label>
+                            <input type="text" id="FirstName2" class="form-control addmem" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Last Name"> Last Name </label>
+                            <input type="text" id="LastName2" class="form-control addmem" placeholder="Last Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Date of Birth"> Date of Birth </label>
+                            <input type="date" id="MemberDOB2" min="1920-01-01" max="2021-01-01"
+                                class="form-control addmem" placeholder="Date of Birth">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Relative2">Relation</label>
+                            <select id="Relative2" name="Relative2" class="form-control addmem">
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <label class="form-label pl-1" for="Gender"> Gender </label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked type="radio" name="Membergender2"
+                                    id="Membergender2" value="Male">
+                                <label class="form-check-label" for="Membergender2"> Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Membergender2" id="Membergender2"
+                                    value="Female">
+                                <label class="form-check-label" for="Membergender2"> Female </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <h3 class="text-left"><b> Child 1 </b> </h3>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="First Name"> First Name </label>
+                            <input type="text" id="FirstName3" class="form-control addmem" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Last Name"> Last Name </label>
+                            <input type="text" id="LastName3" class="form-control addmem" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="Date of Birth"> Date of Birth </label>
+                            <input type="date" id="MemberDOB3" min="1920-01-01" max="2021-01-01"
+                                class="form-control addmem" placeholder="Date of Birth">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Relative3">Relation</label>
+                            <select id="Relative3" name="Relative3" class="form-control addmem">
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <label class="form-label pl-1" for="Gender"> Gender </label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked type="radio" name="Membergender3"
+                                    id="Membergender3" value="Male">
+                                <label class="form-check-label" for="Membergender3"> Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Membergender3" id="Membergender3"
+                                    value="Female">
+                                <label class="form-check-label" for="Membergender3"> Female </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <h3 class="text-left"><b> Child 2 </b> </h3>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="First Name"> First Name </label>
+                            <input type="text" id="FirstName4" class="form-control addmem" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Last Name"> Last Name </label>
+                            <input type="text" id="LastName4" class="form-control addmem" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="Date of Birth"> Date of Birth </label>
+                            <input type="date" id="MemberDOB4" min="1920-01-01" max="2021-01-01"
+                                class="form-control addmem" placeholder="Date of Birth">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="Relative4">Relation</label>
+                            <select id="Relative4" name="Relative4" class="form-control addmem">
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <label class="form-label pl-1" for="Gender"> Gender </label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" checked type="radio" name="Membergender4"
+                                    id="Membergender4" value="Male">
+                                <label class="form-check-label" for="Membergender4"> Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Membergender4" id="Membergender4"
+                                    value="Female">
+                                <label class="form-check-label" for="Membergender4"> Female </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="PolicyDetailsection" style="background-color: #ecf0fa; margin-bottom:10px; display: none;">
         <div class="container banner">
             <div class="row px-4 py-4">
                 <div class="col-lg-12 col-md-12 col-sm-12 renew">
@@ -554,24 +704,33 @@
                 $('#RenewPolicyNo').val(policyNo);
                 OPDPlanRenewal(policyNo);
             }
+            var planRelations = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
+            $.each(planRelations, function (key, p) {
+                $('#Relative1').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                $('#Relative2').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                $('#Relative3').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                $('#Relative4').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+            });
         });
         var PlatUltimaIndividual = '';
         var PlatUltimaFloater = '';
 
         $('#RenewNewbtnClick').click(function (e) {
-            UpgradeOPDPlan('', '', $('#SelectedUpgradePlanCode').val(), [], '', $('#PolicyNo').val());
+            UpgradeOPDPlan('', '', $('#SelectedUpgradePlanCode').val(), GetRelations(), '', $('#PolicyNo').val());
         });
         $('#UpgradePlatIndiBtn').click(function (e) {
             $('#SelectedUpgradePlanCode').val(PlatUltimaIndividual);
             OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaIndividual);
             $('#UpgradePlatIndiBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
             $('#UpgradePlatFloatBtn').html('Upgrade');
+            $('#relationsection').hide();
         });
         $('#UpgradePlatFloatBtn').click(function (e) {
             $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
             OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaFloater);
             $('#UpgradePlatFloatBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
             $('#UpgradePlatIndiBtn').html('Upgrade');
+            $('#relationsection').show();
         });
 
         $('#policyInvalidMessage').html('');
@@ -579,8 +738,35 @@
             ev.preventDefault();
             OPDPlanRenewal($('#RenewPolicyNo').val());
         });
-
-        function OPDPlanRenewal(policyNo, planCode = '') {
+        function GetRelations() {
+            var Relations = [];
+            var MemberName1 = $('#FirstName1').val() + ' ' + $('#LastName1').val();
+            var MemberDOB1 = $('#MemberDOB1').val();
+            var MemberName2 = $('#FirstName2').val() + ' ' + $('#LastName2').val();
+            var MemberDOB2 = $('#MemberDOB2').val();
+            var MemberName3 = $('#FirstName3').val() + ' ' + $('#LastName3').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
+            var MemberName4 = $('#FirstName4').val() + ' ' + $('#LastName4').val();
+            var MemberDOB4 = $('#MemberDOB4').val();
+            var Member1Relative = $('#Relative1').val();
+            var Member2Relative = $('#Relative2').val();
+            var Member3Relative = $('#Relative3').val();
+            var Member4Relative = $('#Relative3').val();
+            if (MemberName1 != null && MemberName1.trim() != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="Membergender1"]:checked').val(), "RelationName": Member1Relative });
+            }
+            if (MemberName2 != null && MemberName2.trim() != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="Membergender2"]:checked').val(), "RelationName": Member2Relative });
+            }
+            if (MemberName3 != null && MemberName3.trim() != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="Membergender3"]:checked').val(), "RelationName": Member3Relative });
+            }
+            if (MemberName4 != null && MemberName4.trim() != '' && MemberDOB4 != null && MemberDOB4 != '') {
+                Relations.push({ "Name": MemberName4, "DoB": MemberDOB4, "Gender": $('input[type="radio"][name="Membergender3"]:checked').val(), "RelationName": Member4Relative });
+            }
+            return Relations;
+        }
+        function OPDPlanRenewal(policyNo, planCode = 'HAOPDR001') {
             GetOPDPlanForUpgrade(policyNo, planCode).then(function (result) {
                 $('#UpgradePlatIndidiv').hide();
                 $('#UpgradePlatFloatdiv').hide();
@@ -590,21 +776,31 @@
                 $('#PlanValidity').html(result.results.plan.validFrom + ' to ' + result.results.plan.validTo);
                 $('#CustomerEmail').html(result.results.plan.emailid);
                 $('#CurrentPlanAmount').html(result.results.plan.planAmount);
-                $('#CurrentPlanAmount1').html(result.results.plan.planAmount);
+                $('#CurrentPlanAmount1').html(parseInt(parseInt(result.results.plan.discountPlanAmount) * 1.1));
                 $('#PolicyName').html(result.results.plan.planName);
                 $('#CustomerMobileNo').html(result.results.plan.phoneNo);
                 $('#PlanNewValidity').html(result.results.plan.newValidFrom + ' to ' + result.results.plan.newValidTo);
                 $('#DiscountPlanAmount').html(result.results.plan.discountPlanAmount);
                 var PlanCodeArray = result.results.plan.upgradePlanCode.split(',');
                 PlatUltimaIndividual = PlanCodeArray[0]?.trim();
-                if (PlatUltimaIndividual != undefined && PlatUltimaIndividual != null && PlatUltimaIndividual != '') {
+                if (PlatUltimaIndividual != undefined && PlatUltimaIndividual != null && PlatUltimaIndividual != '' && result.results.plan.planCode !== PlatUltimaIndividual) {
                     $('#UpgradePlatIndidiv').show();
-                    $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
+                    if ($('#SelectedUpgradePlanCode').val() === '') {
+                        $('#SelectedUpgradePlanCode').val(PlatUltimaIndividual);
+                        $('#UpgradePlatIndiBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
+                        $('#UpgradePlatFloatBtn').html('Upgrade');
+                    }
                 }
 
                 PlatUltimaFloater = PlanCodeArray[1]?.trim();
                 if (PlatUltimaFloater != undefined && PlatUltimaFloater != null && PlatUltimaFloater != '') {
                     $('#UpgradePlatFloatdiv').show();
+                    if ($('#SelectedUpgradePlanCode').val() === '') {
+                        $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
+                        $('#UpgradePlatFloatBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
+                        $('#UpgradePlatIndiBtn').html('Upgrade');
+                        $('#relationsection').show();
+                    }
                 }
                 $('.PolicyDetailsection').show();
                 var renewpolicybenefits = '';

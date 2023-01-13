@@ -208,11 +208,13 @@ function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCod
                     $('#otptextFeild1').html(' Resend OTP');
                     resolve(result);
                 } else {
+                    ShowLoding(false);
                     alert(result.message);
                     console.warn(result); reject('Error Creating transaction Id from HealthAssure side') // Reject the promise and go to catch()
                 }
             },
             error: function (eror) {
+                ShowLoding(false);
                 console.warn(eror); reject(eror) // Reject the promise and go to catch()
             }
         });

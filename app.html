@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0px;
+		}
+		.container{
+			height: 100vh;
+			width: 100%;
+			background-color: aliceblue;
+			padding: 20px 0px;
+			box-sizing: border-box;
+			display: flex;
+			justify-content: center;
+
+			background-image: url('background.png');
+		}
+
+		.phone-screen{
+			height: 100%;
+			width: 100%;
+			max-width: 350px;
+			margin: 0 auto;
+			border-radius: none;
+			overflow: none;
+		}
+
+        iframe{
+			border: none;
+			outline: none;
+			border-radius: 10px;
+			box-shadow: 6px 6px 60px 0px rgb(206, 221, 234);
+			z-index: 999999;
+		}
+
+        .cover-layer {
+            width: 100%;
+			height: 100%;
+			max-width: 350px;
+			position: absolute;
+			background-color: rgb(255, 255, 255);
+			padding: 0px;
+			overflow-y: hidden;
+			height: calc(100% - 40px);
+			border-radius: 10px;
+		}
+
+        .loader {
+			margin: 0 0 2em;
+			height: 100px;
+			width: 20%;
+			text-align: center;
+			padding: 1em;
+			margin: 0 auto 1em;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+        svg path,
+		svg rect {
+			fill: #3255ED;
+		}
+
+		@media(max-width: 450px){
+            .container{
+                padding: 0px;
+            }
+
+			.container .phone-screen{
+				max-width: 100%;
+			}
+
+            iframe, .loader{
+                border-radius: 0px;
+            }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<iframe id="iframeurl" class="phone-screen" allow='geolocation'> </iframe>
+        <div class="cover-layer"></div>
+	</div>
+
+    <div class="loader loader--style1" title="0" style="position: absolute; top: 48.5%; left: 38.5%;">
+		<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
+			xml:space="preserve">
+			<path opacity="0.2" fill="#000"
+				d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+	  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+	  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+			<path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+	  C22.32,8.481,24.301,9.057,26.013,10.047z">
+				<animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20"
+					to="360 20 20" dur="0.5s" repeatCount="indefinite" />
+			</path>
+		</svg>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+		var url = window.location.href.split('#');
+		if (url.length == 2) {
+			$('#iframeurl').attr('src', 'https://live.healthassure.in/webapp/index.html#' + url[1]);
+		} else {
+			$('#iframeurl').attr('src', 'https://live.healthassure.in/webapp/index.html');
+		}
+	</script>
+</body>
+</html>
