@@ -180,7 +180,7 @@ function checkSecond(sec) {
     return sec;
 }
 
-var ProductApiBaseUrl = "https://localhost:44301/"   //"https://live.healthassure.in/ProductApi/"
+var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/"
 var UpgradeOPDObj = null;
 var timerFName = 'timer1';
 function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCode, policyNo) {
@@ -208,11 +208,13 @@ function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCod
                     $('#otptextFeild1').html(' Resend OTP');
                     resolve(result);
                 } else {
+                    ShowLoding(false);
                     alert(result.message);
                     console.warn(result); reject('Error Creating transaction Id from HealthAssure side') // Reject the promise and go to catch()
                 }
             },
             error: function (eror) {
+                ShowLoding(false);
                 console.warn(eror); reject(eror) // Reject the promise and go to catch()
             }
         });
