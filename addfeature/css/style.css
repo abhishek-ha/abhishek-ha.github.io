@@ -1700,3 +1700,20 @@ th{
   width: 22%;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* Start Avanish  */
+
+.add_field_button{
+  float: right;
+  background-color: #104d89;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 2px solid #104d89;
+}
+
+
+
+
+/*End Avanish*/
