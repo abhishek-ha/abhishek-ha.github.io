@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="top-header">
+      <div class="custom-container">
+        <div>
+          <img src="./images/toplogo.png" alt="" />
+        </div>
+        <div>
+          <button class="btn btn-primary">
+            <img
+              src="./images/bxs_phone-call.png"
+              style="width: 16px"
+              class="me-1"
+              alt=""
+            />
+            CONTACT US
+          </button>
+        </div>
+      </div>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+      <div class="show-notification">
+        <i class="fa-solid fa-bell"></i>
+        <span class="notification-count">10</span>
+      </div>
+    </div>
+    <!-- Main Section  -->
+    <div class="main-section">
+      <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-logo">
+          <img src="./images/appleImg.png" class="img-fluid" alt="" />
+        </div>
+        <div class="sidebar-header">
+          <h3 class="name">Apollo Hospitals</h3>
+          <p class="services">Pathalogy Services</p>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <img src="./images/homeicon.png" class="img-fluid" alt="" />
+              </span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="appointment.html">
+              <span class="icon">
+                <img
+                  src="./images/profileDetailsIcon.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </span>
+              <span>Appointments</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-section appointment-page-styled">
+        <div class="appointment-search-section">
+          <div class="search-policy-section">
+            <h1>Appointment Status</h1>
+            <div class="policy-input">
+              <input type="text" placeholder="Search Policy Number" />
+              <!-- <a href="#">Search</a> -->
+              <input type="submit" value="Search" class="submit" />
+            </div>
+          </div>
+          <div class="appointment-action-btns">
+            <div class="actionable-btns">
+              <a href="#" class="export-to-excel">
+                <span>Export to Excel</span>
+                <div class="svg-icon">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 10L20.2 1.8M21 5.8V1H16.2M10 1H8C3 1 1 3 1 8V14C1 19 3 21 8 21H14C19 21 21 19 21 14V12"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="export-to-excel"
+                data-bs-toggle="modal"
+                data-bs-target="#merModal"
+              >
+                <span>MER Library</span>
+                <div class="svg-icon">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21 7.27V3.23C21 1.64 20.36 1 18.77 1H14.73C13.14 1 12.5 1.64 12.5 3.23V7.27C12.5 8.86 13.14 9.5 14.73 9.5H18.77C20.36 9.5 21 8.86 21 7.27ZM9.5 7.52V2.98C9.5 1.57 8.86 1 7.27 1H3.23C1.64 1 1 1.57 1 2.98V7.51C1 8.93 1.64 9.49 3.23 9.49H7.27C8.86 9.5 9.5 8.93 9.5 7.52ZM9.5 18.77V14.73C9.5 13.14 8.86 12.5 7.27 12.5H3.23C1.64 12.5 1 13.14 1 14.73V18.77C1 20.36 1.64 21 3.23 21H7.27C8.86 21 9.5 20.36 9.5 18.77Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.5 16.5H19.5M16.5 19.5V13.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+         <!--Open Results Popup-->
+         <div
+         class="modal _customModals fade modal-fixed"
+         id="resultModal"
+         tabindex="-1"
+         aria-labelledby="resultModalLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog _customDialog">
+           <div class="modal-content _customModalContent">
+             <div class="modal-body">
+               <div
+                 class="d-flex justify-content-between border-bottom modalHeader"
+               >
+                 <h4 class="font-bold text-black">Results</h4>
+                 <button
+                   type="button"
+                   class="btn-close"
+                   data-bs-dismiss="modal"
+                   aria-label="Close"
+                 ></button>
+               </div>
+
+               <div class="pdf-frame">
+                 <iframe src="pdf-files/detail-1.pdf" frameborder="0"></iframe>
+               </div>
+
+               <div class="pdf-print">
+                 <a href="#">Print</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <!--Close Results Popup-->
+
+        <!--Open MER Library Popup-->
+        <div
+          class="modal _customModals fade modal-fixed"
+          id="merModal"
+          tabindex="-1"
+          aria-labelledby="merModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog _customDialog">
+            <div class="modal-content _customModalContent">
+              <div class="modal-body">
+                <div
+                  class="d-flex justify-content-between border-bottom modalHeader"
+                >
+                  <h4 class="font-bold text-black">MER Library</h4>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="downloadable-files">
+                  <div class="client_list">
+                    <div class="client_files">
+                      <div class="modalContentWidth">
+                        <a href="#">
+                          <img src="images/pdf-file.svg" alt="" width="70" />
+
+                          <p>SBI Life Insurance Company Ltd</p>
+                        </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>Royal Sundaram General Insurance Company Ltd</p>
+                        </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>Reliance General Insurance Company Ltd</p>
+                        </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>Policy Bazaar Health Exchange</p>
+                        </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>PNB Metlife India Insurance company Ltd</p></a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>Niva Bupa Health Insurance PPHC</p>
+                          </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>Mylan Laboratories Ltd</p>
+                          </a>
+                      </div>
+                      <div class="modalContentWidth">
+                        <a href="#"
+                          ><img src="images/pdf-file.svg" alt="" width="70" />
+                          <p>MetLife</p>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Close MER Library Popup-->
+
+        <div class="appointment-tabs">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Today’s Application Status
+              </button>
+              <button
+                class="nav-link"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Tomorrow Confirmation
+              </button>
+              <button
+                class="nav-link"
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-contact"
+                type="button"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                Future Confirmation
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade active show"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <!-- TAB 1 Content Start Here -->
+              <div class="results-sortby">
+                <div class="d-flex gap-30 align-items-center m-gap">
+                  <div class="results">Showing <span>5</span> results</div>
+                  <div class="d-flex align-items-center gap-5">
+                    <p class="mb-0">IBU</p>
+                    <input type="checkbox" class="switch_1" />
+                    <p class="mb-0">CBU</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-20 m-gap">
+                  <div class="action-btn">
+                    <button
+                      class="dropdown-toggle appointment-dropdown"
+                      type="button"
+                      id="dropdownMenu2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>Listing Order</span>
+                      <div class="svg-icon">
+                        <svg
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.999878 0.999999L10.9999 11L20.9999 1"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li>
+                        <button
+                          class="dropdown-item btn-border-bottom"
+                          type="button"
+                        >
+                          Ascending
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Descending
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="action-btn">
+                    <button
+                      class="dropdown-toggle appointment-dropdown"
+                      type="button"
+                      id="dropdownMenu2"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>Action</span>
+                      <div class="svg-icon">
+                        <svg
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.999878 0.999999L10.9999 11L20.9999 1"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li>
+                        <button
+                          class="dropdown-item btn-border-bottom"
+                          type="button"
+                        >
+                          Clear All
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Accept All
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Table Start Here-->
+              <div class="table-responsive __custom__properties">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="width-250">
+                        Appointment Date & Time
+                      </th>
+                      <th scope="col" class="width-350">Provider</th>
+                      <th scope="col" class="width-350">Insurer</th>
+                      <th scope="col" class="width-250">Policy Number</th>
+                      <th scope="col" class="width-150">Proposer</th>
+                      <th scope="col" class="width-150">Gender</th>
+                      <th scope="col" class="width-350 pl-0">Tests</th>
+                      <th scope="col" class="width-90">Visits</th>
+                      <th scope="col" class="width-90">Details</th>
+                      <th scope="col" class="width-150">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center" data-bs-toggle="modal" data-bs-target="#resultModal">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Table Ends Here-->
+
+              <!-- TAB 1 Content Ends Here -->
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <!-- TAB 2 Content Start Here -->
+              <div class="results-sortby">
+                <div class="results">Showing <span>5</span> results</div>
+                <div class="sortby">
+                  <span>Sort By</span>
+                  <div class="sort-dropdown">
+                    <button
+                      class="dropdown-toggle sort-btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>Listing Order</span>
+                      <div class="svg-icon">
+                        <svg
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.999878 0.999999L10.9999 11L20.9999 1"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li>
+                        <button
+                          class="dropdown-item btn-border-bottom"
+                          type="button"
+                        >
+                          Latest
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Oldest
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Table Start Here-->
+              <div class="table-responsive __custom__properties">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="width-250">Date & Time</th>
+                      <th scope="col" class="width-350">Provider</th>
+                      <th scope="col" class="width-350">Insurer</th>
+                      <th scope="col" class="width-250">Policy Number</th>
+                      <th scope="col" class="width-150">Proposer</th>
+                      <th scope="col" class="width-150">Gender</th>
+                      <th scope="col" class="width-350">Tests</th>
+                      <th scope="col" class="width-90">Visits</th>
+                      <th scope="col" class="width-90">Details</th>
+                      <th scope="col" class="width-150">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Table Ends Here-->
+              <!-- TAB 2 Content Ends Here -->
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+            >
+              <!-- TAB 3 Content Start Here -->
+              <div class="results-sortby">
+                <div class="results">Showing <span>5</span> results</div>
+                <div class="sortby">
+                  <span>Sort By</span>
+                  <div class="sort-dropdown">
+                    <button
+                      class="dropdown-toggle sort-btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span>Listing Order</span>
+                      <div class="svg-icon">
+                        <svg
+                          width="22"
+                          height="12"
+                          viewBox="0 0 22 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.999878 0.999999L10.9999 11L20.9999 1"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li>
+                        <button
+                          class="dropdown-item btn-border-bottom"
+                          type="button"
+                        >
+                          Latest
+                        </button>
+                      </li>
+                      <li>
+                        <button class="dropdown-item" type="button">
+                          Oldest
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--Table Start Here-->
+              <div class="table-responsive __custom__properties">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="width-250">Date & Time</th>
+                      <th scope="col" class="width-350">Provider</th>
+                      <th scope="col" class="width-350">Insurer</th>
+                      <th scope="col" class="width-250">Policy Number</th>
+                      <th scope="col" class="width-150">Proposer</th>
+                      <th scope="col" class="width-150">Gender</th>
+                      <th scope="col" class="width-350">Tests</th>
+                      <th scope="col" class="width-90">Visits</th>
+                      <th scope="col" class="width-90">Details</th>
+                      <th scope="col" class="width-150">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20/12/2022 [06:30 AM]</td>
+                      <td>Any Age Healthcare Private Limited</td>
+                      <td>Bajaj Allianz General Insurance Co. Ltd</td>
+                      <td>738295821014122022</td>
+                      <td>Ajay Thukral</td>
+                      <td>Male</td>
+                      <td class="test-overflow p-0">
+                        <div class="__testsName p-0">
+                          Vital Healthcheckup [AG Ratio, CBC, ECG, ESR, Fasting
+                          Blood Sugar, GGTP (Gamma Glutamyl Tran Peptidase),
+                          HbA1c, HDL Cholesterol, Medical-Examination-Report,
+                          Proteins - Total, Serum Albumin, Serum Cholesterol,
+                          Serum Creatinine, Serum Globulin, Serum Triglycerides,
+                          SGOT, SGPT, Urine Routine Analysis]
+                        </div>
+                      </td>
+                      <td>Home</td>
+                      <td>
+                        <div class="eye_view text-center">
+                          <i class="fa-solid fa-eye"></i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="__acceptReject">
+                          <div class="__acceptance">
+                            <svg
+                              width="10"
+                              height="8"
+                              viewBox="0 0 10 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M0.75 4L3.58 6.83L9.25 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="__rejection">
+                            <svg
+                              width="8"
+                              height="8"
+                              viewBox="0 0 8 8"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.16992 6.83L6.82992 1.17M6.82992 6.83L1.16992 1.17"
+                                stroke="black"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Table Ends Here-->
+              <!-- TAB 3 Content Ends Here -->
+            </div>
+          </div>
+        </div>
+
+        <div class="__submitBtn">
+          <a href="#">Submit</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
