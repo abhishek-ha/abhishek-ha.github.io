@@ -1727,3 +1727,84 @@ input[type=number] {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+/*Start Avanish Shukla */
+
+.appoinment-sec{
+  padding: 30px;
+    width: 100%;
+  }
+.appoinment-sec h1{
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+.appoinment-sec .appbox{
+     display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 225px;
+      float: left;
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.06);
+      margin: 20px 15px 10px 0px;
+}
+.appoinment-sec .appbox .icon{
+    background-color: #5252c3;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 4px;
+    float: left;
+    margin-top:4px;
+    margin-bottom: 4px;
+   }
+
+.appoinment-sec .appbox .icon .numtext{
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    float: left;
+   
+  }
+
+
+.appoinment-sec .appbox .numtext h2{
+  display: flex;
+  color: #5252c3;
+    font-size: 35px;
+    padding: 0px;
+    float: right;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-align: right;
+  }
+
+  .appoinment-sec .appbox .numtext p{
+    
+    color: #5252c3;
+    font-size: 14px;
+    padding: 0px;
+    float: right;
+    font-weight: 600;
+    text-align: right;
+  }
+
+
+
+
+
+
+
+
+
+/*End Avanish Shukla*/
