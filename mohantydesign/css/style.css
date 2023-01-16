@@ -1817,8 +1817,6 @@ input[type=number] {
     border-radius: 4px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
-
 .appoinment-sec .form-select {
     display: block;
     width: 100%;
@@ -1842,20 +1840,23 @@ input[type=number] {
 }
 .appoinment-detailpending{
       width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-
+      margin-top: 25px;
+      margin-bottom: 25px;
+      position: relative;
 }
 .appoinment-detailpending .topsec{
   background-color: #ffe2ab;
   color: #ffa800;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
- 
 }
 .appoinment-detailpending .topsec h2{
    font-size: 12px;
-   padding: 10px 5px 10px 5px;
+   padding: 10px 20px 10px 20px;
+}
+.appoinment-detailpending .topsec h2 span{
+  font-weight: 700;
+  font-size: 13px;
 
 }
 
@@ -1865,6 +1866,7 @@ input[type=number] {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; 
   padding: 10px 20px 10px 20px;
+  min-height: 140px;
 }
 .appoinment-detailpending .bottomsec h2{
   font-size: 22px;
@@ -1881,8 +1883,6 @@ input[type=number] {
   font-weight: 700;
   color: #000000;
 }
-
-
 .appoinment-detailpending .bottomsec .icon{
 color: #ffa800;
 }
@@ -1908,30 +1908,27 @@ color: #ffa800;
 }
 
 
-
-
 /*approved*/
-
-
-
 
 .appoinment-detailaccept{
       width: 100%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-
+      margin-top: 25px;
+      margin-bottom: 25px;
+      position: relative;
 }
 .appoinment-detailaccept .topsec{
   background-color: #ADFFD8;
   color: #01E075 ;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
- 
 }
 .appoinment-detailaccept .topsec h2{
    font-size: 12px;
-   padding: 10px 5px 10px 5px;
-
+   padding: 10px 20px 10px 20px;
+}
+.appoinment-detailaccept .topsec h2 span{
+  font-weight: 700;
+  font-size: 13px;
 }
 
 
@@ -1940,6 +1937,8 @@ color: #ffa800;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; 
   padding: 10px 20px 10px 20px;
+   min-height: 140px;
+
 }
 .appoinment-detailaccept .bottomsec h2{
   font-size: 22px;
@@ -1956,8 +1955,6 @@ color: #ffa800;
   font-weight: 700;
   color: #000000;
 }
-
-
 .appoinment-detailaccept .bottomsec .icon{
 color: #ffa800;
 }
@@ -1980,6 +1977,85 @@ color: #ffa800;
   border-radius: 4px;
    margin-top: 10px;
    float: end;
+}
+
+
+/* Rejected */
+.appoinment-detailreject{
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      position: relative;
+}
+.appoinment-detailreject .topsec{
+  background-color: #FFC9B3;
+  color: #FF4D00;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+ 
+}
+.appoinment-detailreject .topsec h2{
+   font-size: 12px;
+   padding: 10px 20px 10px 20px;
+}
+
+.appoinment-detailreject .topsec h2 span{
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.appoinment-detailreject .bottomsec{
+  background-color: #ffffff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; 
+  padding: 10px 20px 10px 20px;
+   min-height: 140px;
+
+}
+.appoinment-detailreject .bottomsec h2{
+  font-size: 22px;
+   color: #FF4D00;
+   font-weight: 600;
+}
+.appoinment-detailreject .bottomsec p{
+  color: #989898;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.appoinment-detailreject .bottomsec p span{
+  font-weight: 700;
+  color: #000000;
+}
+.appoinment-detailreject .bottomsec .icon{
+color: #ffa800;
+}
+.appoinment-detailreject .bottomsec .accept-btn{
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 10px;
+  float: end;
+}
+.appoinment-detailreject .bottomsec .reject-btn{
+  background-color: #ff4d00;
+  border: 2px solid #ff4d00;
+  color: #ffffff;
+  padding: 3px 5px;
+    font-size: 13px;
+  border-radius: 4px;
+   margin-top: 10px;
+   float: end;
+}
+.bottomtxt{
+  position: absolute;
+  bottom: 12px;
+}
+.button-right{
+  right: 20px;
 }
 
 
