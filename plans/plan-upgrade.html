@@ -452,11 +452,11 @@
                             <label class="form-label pl-1" for="Gender"> Gender </label><br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" checked type="radio" name="Membergender2"
-                                    id="Membergender2" value="Male">
+                                    id="Membergender12" value="Male">
                                 <label class="form-check-label" for="Membergender2"> Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="Membergender2" id="Membergender2"
+                                <input class="form-check-input" type="radio" name="Membergender2" id="Membergender22"
                                     value="Female">
                                 <label class="form-check-label" for="Membergender2"> Female </label>
                             </div>
@@ -487,11 +487,11 @@
                             <label class="form-label pl-1" for="Gender"> Gender </label><br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" checked type="radio" name="Membergender3"
-                                    id="Membergender3" value="Male">
+                                    id="Membergender13" value="Male">
                                 <label class="form-check-label" for="Membergender3"> Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="Membergender3" id="Membergender3"
+                                <input class="form-check-input" type="radio" name="Membergender3" id="Membergender23"
                                     value="Female">
                                 <label class="form-check-label" for="Membergender3"> Female </label>
                             </div>
@@ -523,11 +523,11 @@
                             <label class="form-label pl-1" for="Gender"> Gender </label><br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" checked type="radio" name="Membergender4"
-                                    id="Membergender4" value="Male">
+                                    id="Membergender14" value="Male">
                                 <label class="form-check-label" for="Membergender4"> Male</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="Membergender4" id="Membergender4"
+                                <input class="form-check-input" type="radio" name="Membergender4" id="Membergender24"
                                     value="Female">
                                 <label class="form-check-label" for="Membergender4"> Female </label>
                             </div>
@@ -550,7 +550,8 @@
                     <h3> Email </h3>
                     <p id="CustomerEmail"> avanish.shukla@healthassure.in </p>
                     <h3> Current Premium </h3>
-                    <p> <span style="font-size: 8px;">Exclusive of GST</span> <i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount">10520</span></p>
+                    <p> <span style="font-size: 8px;">Exclusive of GST</span> <i class="fa fa-inr"
+                            aria-hidden="true"></i> <span id="CurrentPlanAmount">10520</span></p>
                     <img src="images/policy-renew.png" class="img-fluid w-25">
                 </div>
                 <div class="col-lg-6 col-md-6 renew">
@@ -561,9 +562,9 @@
                     <h3> New Validity </h3>
                     <p id="PlanNewValidity"> 04-DEC-2021-03-DEC-2022 </p>
                     <input type="hidden" value="" id="PolicyNo">
-                    
+
                     <button type="button" class="btn btn-primary mt-3" id="RenewNewbtnClick">
-                        <span style="font-size: 8px;">Exclusive of GST</span><br/>
+                        <span style="font-size: 8px;">Exclusive of GST</span><br />
                         <del>
                             <i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount1">10520</span>
                         </del><br> <i class="fa fa-inr" aria-hidden="true"></i>
@@ -772,6 +773,13 @@
             GetOPDPlanForUpgrade(policyNo, planCode).then(function (result) {
                 $('#UpgradePlatIndidiv').hide();
                 $('#UpgradePlatFloatdiv').hide();
+                for (var i = 0; i < 3; i++) {
+                    $('#FirstName' + (i + 2)).val('');
+                    $('#LastName' + (i + 2)).val('');
+                    $('#MemberDOB' + (i + 2)).val('');
+                    $('#Relative' + (i + 2)).val('');
+                    $('#Membergender1' + (i + 2)).prop('checked', true);
+                }
                 $('#PolicyNo').val(result.results.plan.policyNo);
                 $('#CustomerName').html(result.results.plan.fullName);
                 $('#CustomerRelationAndGender').html(result.results.plan.relation + ' | ' + result.results.plan.gender);
@@ -793,7 +801,17 @@
                         $('#UpgradePlatFloatBtn').html('Upgrade');
                     }
                 }
-
+                for (var i = 0; i < result.results.plan?.memberes?.length; i++) {
+                    $('#FirstName' + (i + 2)).val(result.results.plan?.memberes[i]?.firstName);
+                    $('#LastName' + (i + 2)).val(result.results.plan?.memberes[i]?.lastName);
+                    $('#MemberDOB' + (i + 2)).val(result.results.plan?.memberes[i].dob);
+                    $('#Relative' + (i + 2)).val(result.results.plan?.memberes[i].relation);
+                    if (result.results.plan?.memberes[i].gender?.toLowerCase() === 'female') {
+                        $('#Membergender2' + (i + 2)).prop('checked', true);
+                    } else {
+                        $('#Membergender1' + (i + 2)).prop('checked', true);
+                    }
+                }
                 PlatUltimaFloater = PlanCodeArray[1]?.trim();
                 if (PlatUltimaFloater != undefined && PlatUltimaFloater != null && PlatUltimaFloater != '') {
                     $('#UpgradePlatFloatdiv').show();
@@ -822,7 +840,6 @@
                 $("#renewpolicybenefitsdiv").show();
             }).catch(function (err) {
                 console.warn(err);
-                //alert(err.message);
                 $('#policyInvalidMessage').html(err.message);
             });
         }
