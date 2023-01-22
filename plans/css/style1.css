@@ -2367,9 +2367,9 @@ div {
 }
 
 .head1 {
-           font-size: 27px;
+           font-size: 20px;
             font-weight: 700;
-            line-height: 37px;
+            line-height: 25px;
             font-family: 'Poppins', sans-serif;
         }
 .head1 span{
@@ -3495,7 +3495,7 @@ div {
 .renewpolicy-benefits h2{
     font-size: 33px;
     font-weight: 600;
-    padding: 40px 10px 40px 10px;
+    padding: 20px 10px 20px 10px;
     text-align: center;
     line-height: 55px;
 }
@@ -3510,16 +3510,10 @@ div {
     padding-bottom: 20px;
 }
 .renewpolicy-benefits img{
-    width: 30px;
+    width: 24px;
     float: left;
 }
-
-
-
 }
-
-
-
 
 
 
@@ -7207,16 +7201,16 @@ height:321px;
     padding-top: 100px;
     text-align: center;
     }
- .head {
+.head {
         font-size: 32px;
         font-weight:800;
         }
 .head1 {
            font-size: 27px;
             font-weight: 600;
-            line-height: 37px;
+            line-height: 30px;
         }
-        .head1 span{
+.head1 span{
             font-size: 38px;
             font-weight: 700;
             line-height: 42px;
@@ -8017,9 +8011,9 @@ height:652px;
     line-height: 55px;
 }
 .renewpolicy-benefits h3{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 28px;
 }
 .renewpolicy-benefits p{
     font-size: 14px;
@@ -8027,13 +8021,8 @@ height:652px;
     padding-bottom: 20px;
 }
 .renewpolicy-benefits img{
-    width: 50px;
+    width: 30px;
 }
-
-
-
-
-
 }
 
 @media only screen and (min-width: 950px){

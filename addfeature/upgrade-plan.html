@@ -17,13 +17,16 @@
   border: 1px solid #aaaaaa;
   border-radius: 4px;
 }
-
 #div2 {
   width: 100%;
   height: 150px;
   padding: 10px;
   border: 1px solid #aaaaaa;
   border-radius: 4px;
+}
+.w-30{
+  width: 24%!important;
+  float: left;
 }
 
 </style>
@@ -289,7 +292,7 @@
 </div>
 </div>
   <div class="col-md-12 col-lg-12 my-5 text-center">
-  <button class="btn btn-primary me-3" type="submit">Apply </button> <button class="btn btn-danger me-3" type="reset"> Reset </button>
+  <button class="btn btn-primary me-3" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" >Apply </button> <button class="btn btn-danger me-3" type="reset"> Reset </button>
 </div>
  </div>
  </div>
@@ -299,10 +302,25 @@
     </div>
 
 
-
-
-
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+    <img src="images/check.png" class="img-fluid">
+        <h2 class="pt-4"> Changes have been saved to your plan!  </h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -324,7 +342,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div> <input type="text" placeholder="From Month" name="mytext[' + x + ']"/> <input type="text" placeholder="To Month" name="mydate[' + x + ']"/> <select name="myselect[' + x + ']"><option> Select the %</option><option> 10%</option> <option> 20%</option> </select> <a href="#" class="remove_field">Remove</a> </div>'); // add input boxes.
+            $(wrapper).append('<div> <input type="text" placeholder="From Month" class="form-control w-30" name="mytext[' + x + ']"/> <input type="text" placeholder="To Month" class="form-control w-30" name="mydate[' + x + ']"/> <select class="form-select w-30" name="myselect[' + x + ']"><option> Select the %</option><option> 10%</option> <option> 20%</option> </select> <a href="#" class="remove_field">Remove</a> </div>'); // add input boxes.
         }
     });
     
@@ -351,6 +369,10 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 </script>
+
+
+
+
 
 
 

@@ -676,13 +676,15 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
+.reviewbox{
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
+position: absolute;
+z-index: 999999;
+display: none;
+}
 .reviewbox img{
     height: 15px;
     float: left;
