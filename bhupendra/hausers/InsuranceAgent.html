@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance-Agent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        #preload {
+            margin-top: 17%;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 2px solid #e5e5e5;
+            animation: 0.8s pre linear infinite;
+        }
+
+        @keyframes pre {
+            0% {
+                transform: rotate(0deg);
+                border-top: 2px solid mediumseagreen;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                border-top: 2px solid green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loadding" style="overflow: hidden;display: none;">
+        <center>
+            <div id="preload"></div>
+        </center>
+    </div>
+    <div class="landing-page-container">
+        <div class="landing-page-header">
+            <div class="custom-container d-flex justify-content-between align-items-center">
+                <div class="header-heading">
+                    <h2 class="mb-0">Kuzalin Services Private Limited</h2>
+                </div>
+                <div>
+                    <img src="./images/favicon.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="landin-page-main-section">
+            <div class="custom-container d-flex justify-content-between align-items-center">
+                <div class="main-section-top-left">
+                    <h2>HEALTHASSURE SALES PORTAL</h2>
+                </div>
+                <div class="main-section-top-right d-flex align-items-center">
+                    <span class="me-2">Powered By</span>
+                    <img src="./images/healthassure-logo.png" alt="">
+                </div>
+            </div>
+            <div class="custom-container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 my-3">
+                                <h2>PRODUCT</h2>
+                                <div class="mt-3">
+                                    <p>Retail OPD products by HealthAssure</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 my-3">
+                                <h2>PARTNERCODE</h2>
+                                <div class="mt-3">
+                                    <input type="text" class="form-control" id="AccessCode" name="AccessCode"
+                                        onchange="AccessCodeTextonchange(this);">
+                                    <span id="PartnerName"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 my-3">
+                                <h2>VARIANT</h2>
+                                <div class="mt-3">
+                                    <select id="PlansDroupdown" class="form-select"
+                                        onchange="PlansDroupdownonchange(this);">
+                                        <option disabled="" selected="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 my-3">
+                                <h2>COVERAGE</h2>
+                                <div class="d-flex mt-3">
+                                    <div class="me-5">
+                                        <input disabled type="radio" class="form-check-input" id="Plan-self"
+                                            name="Plancoverage">
+                                        <label for="self">Self</label>
+                                    </div>
+                                    <div>
+                                        <input disabled type="radio" class="form-check-input" id="Plan-family"
+                                            name="Plancoverage">
+                                        <label for="family">Family</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-container mt-5">
+                <div class="card" style="background-image: url('./images/transparentbackground.png');">
+                    <div class="card-body">
+                        <h2 class="card-title">Self</h2>
+                        <form id="RegisterUserform">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">First Name</label>
+                                        <input class="form-control" type="text" placeholder="Enter First Name"
+                                            id="SelfFirstName" name="FirstName" maxlength="100" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Last Name</label>
+                                        <input class="form-control" type="text" placeholder="Enter Last Name"
+                                            id="SelfLastName" name="LastName" maxlength="100" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Gender</label>
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <input type="radio" class="form-check-input" checked name="Selfgender"
+                                                    id="male" value="Male">
+                                                <label for="male">Male</label>
+                                            </div>
+                                            <div class="me-3">
+                                                <input type="radio" class="form-check-input" name="Selfgender"
+                                                    id="female" value="Female">
+                                                <label for="female">Female</label>
+                                            </div>
+                                            <div class="me-3">
+                                                <input type="radio" class="form-check-input" name="Selfgender"
+                                                    id="other" value="Other">
+                                                <label for="other">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">DOB</label>
+                                        <input class="form-control" type="date" id="SelfDob" min="1920-01-01"
+                                            max="2021-01-01" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Mobile No</label>
+                                        <input class="form-control" type="number" placeholder="Enter Mobile No"
+                                            pattern="[0123456789][0-9]{9}" title="Please Enter Ten digits Number"
+                                            id="SelfMobileNo" name="SelfMobileNo" maxlength="10" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Email Id</label>
+                                        <input class="form-control" type="email" placeholder="Enter Email ID"
+                                            id="SelfEmailId" name="SelfEmailId" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Pin Code</label>
+                                        <input class="form-control" type="number" placeholder="Enter Pin Code"
+                                            id="SelfPincode" name="SelfPincode" maxlength="6" minlength="5" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-8">
+                                    <div class="form-group mb-4">
+                                        <label class="mb-2">Address</label>
+                                        <input class="form-control" type="text" placeholder="Enter Address"
+                                            id="SelfAddress" name="SelfAddress" required>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member1div">
+                                            <h3><b>Adult</b></h3>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Name</label>
+                                                <input type="text" id="MemberName1" class="form-control">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">DOB</label>
+                                                <input type="date" id="MemberDOB1" min="1920-01-01" max="2021-01-01"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Relation</label>
+                                                <select id="Relative1" name="Relative1" class="form-control">
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="male" checked value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender1" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member2div">
+                                            <h3><b>Child 1</b></h3>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Name</label>
+                                                <input type="text" id="MemberName2" class="form-control">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">DOB</label>
+                                                <input type="date" id="MemberDOB2" min="1920-01-01" max="2021-01-01"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Relation</label>
+                                                <select id="Relative2" name="Relative2" class="form-control">
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="male" checked value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender2" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4" style="display: none;" id="Member3div">
+                                            <h3><b>Child 2</b></h3>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Name</label>
+                                                <input type="text" id="MemberName3" class="form-control">
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">DOB</label>
+                                                <input type="date" id="MemberDOB3" min="1920-01-01" max="2021-01-01"
+                                                    class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label">Relation</label>
+                                                <select id="Relative3" name="Relative3" class="form-control">
+                                                </select>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2">Gender</label>
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="male" checked value="Male">
+                                                        <label for="male">Male</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="female" value="Female">
+                                                        <label for="female">Female</label>
+                                                    </div>
+                                                    <div class="me-3">
+                                                        <input type="radio" class="form-check-input"
+                                                            name="Membergender3" id="other" value="Other">
+                                                        <label for="other">Other</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12 text-center" id="paymentlinkdiv">
+                                    <img src="images/True.png" alt="True" height="30" width="30">
+                                    <span style="color: #70C248;">Payment link sent successfuly</span>
+                                    <p style="display: none;"><a id="paymentlinkid" href=""></a><input type="button" id="paymentlinkbtn"
+                                            style="background-color: transparent;border-radius: 0px;border-color: transparent;"
+                                            value="Copy"></button></p>
+                                    <p style="margin-left: 5px;">Application Number: <strong
+                                            id="ApplicationNumber"></strong></p>
+                                </div>
+                                <div class="col-md-12 text-center my-4">
+                                    <button class="btn btn-primary" id="formsubmitbtn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/InsuranceAgent.js"></script>
+    <script>
+        $('#paymentlinkdiv').hide();
+        var planlist = [];
+        function ShowLoding(flag = true) {
+            if (flag) {
+                $('#loadding').show();
+            } else {
+                $('#loadding').hide();
+            }
+        }
+        function IsSubmitbtnEnabled(flag) {
+            if (flag) {
+                $("#formsubmitbtn").prop('disabled', false);
+            } else {
+                $("#formsubmitbtn").prop('disabled', true);
+            }
+        }
+        function AccessCodeTextonchange(event) {
+            if (event.value == null || event.value == '') {
+                //alert('PartnerCode is empty');
+                return;
+            }
+            GetPartnerPlanDetails(event.value).then(function (result) {
+                $("#PlansDroupdown").empty();
+                $('#Relative1').empty();
+                $('#Relative2').empty();
+                $('#Relative3').empty();
+                planlist = result.results.plans;
+                $.each(result.results.plans, function (key, p) {
+                    $("#PartnerName").text(p.partnerName);
+                    $('#PlansDroupdown').append('<option OPDPartnerDetailsId="' + p.opdPartnerDetailsId + '" AgeTo="' + p.ageTo + '" AgeFrom="' + p.ageFrom + '" RelCount="' + p.relCount + '" value="' + p.planCode + '">' + p.planName + '</option>');
+                });
+                $('#SelfDob').attr('min', result.results.plans[0].ageTo);
+                $('#SelfDob').attr('max', result.results.plans[0].ageFrom);
+                $('#MemberDOB1').attr('min', result.results.plans[0].ageTo);
+                $('#MemberDOB1').attr('max', result.results.plans[0].ageFrom);
+
+                var planRelations = result.results.plans[0].displayPlanRelation;
+                if (planRelations == null || planRelations == "" || planRelations == undefined) {
+                    planRelations = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
+                } else {
+                    planRelations = JSON.parse(result.results.plans[0].displayPlanRelation);
+                }
+                $.each(planRelations, function (key, p) {
+                    $('#Relative1').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                    $('#Relative2').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                    $('#Relative3').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                });
+                if (result.results.plans[0].relCount == 0) {
+                    $('#Plan-self').attr('checked', true);
+                    $('#Member1div').hide();
+                    $('#Member2div').hide();
+                    $('#Member3div').hide();
+                } else {
+                    $('#Plan-family').attr('checked', true);
+                    $('#Member1div').show();
+                    if (result.results.plans[0].relCount == 1) {
+                        $('#Member1div').show();
+                        $('#Member2div').hide();
+                        $('#Member3div').hide();
+                    }
+                    if (result.results.plans[0].relCount == 2) {
+                        $('#Member1div').show();
+                        $('#Member2div').show();
+                        $('#Member3div').hide();
+                    }
+                    if (result.results.plans[0].relCount > 2) {
+                        $('#Member1div').show();
+                        $('#Member2div').show();
+                        $('#Member3div').show();
+                    }
+                }
+            }).catch(function (error) {
+                PlansDroupdownEmpty();
+                if (error.subCode == 408) {
+                    alert(error.message);
+                }
+                console.warn(error);
+            });
+        }
+        function PlansDroupdownonchange(event) {
+            var OPDPartnerDetailsId = $('#PlansDroupdown :selected').attr("OPDPartnerDetailsId");
+            planlist.findIndex(function (entry, i) {
+                if (entry.opdPartnerDetailsId == OPDPartnerDetailsId) {
+                    $('#Relative1').empty();
+                    $('#Relative2').empty();
+                    $('#Relative3').empty();
+                    var planRelations = planlist[i].displayPlanRelation;
+                    if (planRelations == null || planRelations == "" || planRelations == undefined) {
+                        planRelations = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
+                    } else {
+                        planRelations = JSON.parse(planlist[i].displayPlanRelation);
+                    }
+                    $.each(planRelations, function (key, p) {
+                        $('#Relative1').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                        $('#Relative2').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                        $('#Relative3').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
+                    });
+                    return true;
+                }
+            });
+            RelCount = parseInt($('#PlansDroupdown :selected').attr("RelCount"), 10);
+            var AgeTo = $('#PlansDroupdown :selected').attr("AgeTo");
+            var AgeFrom = $('#PlansDroupdown :selected').attr("AgeFrom");
+            $('#SelfDob').attr('min', AgeTo);
+            $('#SelfDob').attr('max', AgeFrom);
+            $('#MemberDOB1').attr('min', AgeTo);
+            $('#MemberDOB1').attr('max', AgeFrom);
+            if ($('#PlansDroupdown :selected').attr("RelCount") == 0) {
+                $('#Plan-family').attr('checked', false);
+                $('#Plan-self').attr('checked', true);
+                $('#Member1div').hide();
+                $('#Member2div').hide();
+                $('#Member3div').hide();
+            } else {
+                $('#Plan-self').attr('checked', false);
+                $('#Plan-family').attr('checked', true);
+                if (RelCount == 1) {
+                    $('#Member1div').show();
+                    $('#Member2div').hide();
+                    $('#Member3div').hide();
+                }
+                if (RelCount == 2) {
+                    $('#Member1div').show();
+                    $('#Member2div').show();
+                    $('#Member3div').hide();
+                }
+                if (RelCount > 2) {
+                    $('#Member1div').show();
+                    $('#Member2div').show();
+                    $('#Member3div').show();
+                }
+            }
+        }
+        function PlansDroupdownEmpty() {
+            $("#PlansDroupdown").empty();
+            $('#PlansDroupdown').append('<option disabled="" selected="">Select</option>');
+        }
+        $('#RegisterUserform').submit(function (e) {
+            e.preventDefault();
+            $("#formsubmitbtn").text('Loding...');
+            $('#paymentlinkdiv').hide();
+            IsSubmitbtnEnabled(false);
+            var Relations = [];
+            var MemberName1 = $('#MemberName1').val();
+            var MemberDOB1 = $('#MemberDOB1').val();
+            var MemberName2 = $('#MemberName2').val();
+            var MemberDOB2 = $('#MemberDOB2').val();
+            var MemberName3 = $('#MemberName3').val();
+            var MemberDOB3 = $('#MemberDOB3').val();
+            var Member1Relative = $('#Relative1').val()
+            var Member2Relative = $('#Relative2').val()
+            var Member3Relative = $('#Relative3').val()
+            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+                Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": $('input[type="radio"][name="Membergender1"]:checked').val(), "RelationName": Member1Relative });
+            }
+            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+                Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": $('input[type="radio"][name="Membergender2"]:checked').val(), "RelationName": Member2Relative });
+            }
+            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+                Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": $('input[type="radio"][name="Membergender3"]:checked').val(), "RelationName": Member3Relative });
+            }
+            var OPDPartnerDetailsId = $('#PlansDroupdown :selected').attr("OPDPartnerDetailsId");
+            var UserAddress = { "Address": $('#SelfAddress').val(), "PinCode": $('#SelfPincode').val() };
+            CreateOrderOPDPlans($('#SelfFirstName').val() + ' ' + $('#SelfLastName').val(), $('#SelfEmailId').val(), $('#SelfMobileNo').val(), $('#SelfDob').val(), $('input[type="radio"][name="Selfgender"]:checked').val(),
+                $('#PlansDroupdown :selected').val(), Relations, UserAddress, OPDPartnerDetailsId).then(function (result) {
+                    $('#paymentlinkdiv').show();
+                    $("#formsubmitbtn").text('Submit');
+                    IsSubmitbtnEnabled(true);
+                    RegistrationFormEmpty();
+                    $('#paymentlinkid').text(result.results.paymentLink);
+                    document.getElementById("paymentlinkid").setAttribute('href', result.results.paymentLink);
+                    $('#ApplicationNumber').text(result.results.transaction.transactionId);
+                }).catch(function (error) {
+                    $("#formsubmitbtn").text('Submit');
+                    IsSubmitbtnEnabled(true);
+                    PlansDroupdownEmpty();
+                    if (error.subCode == 408) {
+                        alert(error.message);
+                    }
+                    console.warn(error);
+                });
+        });
+        $('#paymentlinkbtn').click(function () {
+            navigator.clipboard.writeText($('#paymentlinkid').text());
+            $('#paymentlinkbtn').val('Copied');
+        });
+        function RegistrationFormEmpty() {
+            $('#MemberName1').val('');
+            $('#MemberDOB1').val('');
+            $('#MemberName2').val('');
+            $('#MemberDOB2').val('');
+            $('#MemberName3').val('');
+            $('#MemberDOB3').val('');
+            $('#SelfFirstName').val('');
+            $('#SelfLastName').val('');
+            $('#SelfEmailId').val('');
+            $('#SelfMobileNo').val('');
+            $('#SelfDob').val('');
+            $('#SelfPincode').val('');
+            $('#SelfAddress').val('');
+        }
+    </script>
+</body>
+
+</html>
