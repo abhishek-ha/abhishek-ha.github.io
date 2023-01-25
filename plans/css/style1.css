@@ -3460,14 +3460,14 @@ div {
     margin-right: 0px; 
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    width: 100%;
 }
 .offercard p{
     font-size: 13px;
     line-height: 20px;
-      padding: 8px;
-      margin-bottom: 0px;
-        text-align: center;
+    padding: 8px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #ffffff;
 }
 
 .allplanspace1 {
