@@ -1160,13 +1160,31 @@ body{background-color:#f1f1f2}
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
-
-
-
 .accordion-content.open .header{
     background-color: #000000;
     color: #ffffff;
-
+}
+.loginbox{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.loginbox h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 6px;
+}
+.loginbox p{
+    font-size: 15px;
+    line-height: 22px;
+    color: #A9A9A9;
 }
 
+.loginbox .btn{
+    background-color: #0D2C3E;
+    color: #ffffff;
+    border-radius: 6px;
+
+}
 
