@@ -3220,46 +3220,35 @@ line-height:26.5px ;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
-    font-size: 10.5px;
+    font-size: 14px;
     min-width: 180px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 3px 6px 2px 6px;
+     padding: 3px 6px 2px 6px;
 }
-.btn-orange:hover{
-    background-color:#ff790f;
-    color: #ffffff; 
-    cursor: pointer;
-}
+
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
-     font-size: 10.5px;
+     font-size: 14px;
     min-width: 180px;
-     font-weight: 400;
+     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
      padding: 3px 6px 2px 6px;
 }
-.btn-red:hover{
-    background-color:#f42415;
-    color: #ffffff;
-}
+
 .btn-primary1{
-    background-color:#0E5FC1 ;
+   background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
     margin: 0px;
     min-width: 87px;
-    font-size: 10.5px;
+    font-size: 14px;
     font-weight: 600;
        padding: 3px 6px 2px 6px;
-}
-.btn-primary1:hover{
-    background-color:#0E5FC1 ;
-    color: #ffffff!important; 
 }
 .btn-blue{
     background-color:#F5720A;
@@ -3282,10 +3271,7 @@ line-height:26.5px ;
     text-transform: uppercase;
     padding: 3px 6px 2px 6px;
 }
-.btn-grey:hover{
-    background-color: #0E5FC1;
-    color: #ffffff;  
-}
+
 .btn-w120{
     width: 120px;
     cursor: pointer;
