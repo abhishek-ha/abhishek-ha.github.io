@@ -31,7 +31,7 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-   
+
     <style>
         /* Chrome, Safari, and also the Edge Browser and Firefox */
         @media and (-webkit-min-device-pixel-ratio:0) {
@@ -40,347 +40,387 @@
             }
         }
 
-@media only screen and (max-width: 300px){
-.renew{
-     margin-bottom: 30px;
-    padding-top: 20px;
-}
-.renew h3{
-            font-size: 13px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 2px;
+        @media only screen and (max-width: 300px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 20px;
+            }
+
+            .renew h3 {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 2px;
+            }
+
+            .renew p {
+                font-size: 10px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 4px;
+                word-wrap: break-word;
+            }
+
+            .renewbox {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+                background-color: #f2f1f6;
+                margin-top: 10px;
+                padding: 30px 10px 30px 10px;
+                text-align: center;
+            }
+
+            .renewnow-btn {
+                border-radius: 4px !important;
+                background-color: #72ce7c;
+                color: #ffffff;
+                border: 2px solid #72ce7c;
+                margin-bottom: 10px;
+                min-width: 98px;
+                padding: 5px 4px;
+                margin-left: -24px;
+            }
+
+            .renewnow-btn:hover {
+                color: #ffffff;
+            }
+
+            .head1 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .form-group {
+                margin-bottom: 0px;
+            }
+
+            .allplan {
+                height: auto;
+            }
+
+            .allplan .buybtn {
+                background-color: #0f5fc2;
+                color: #EFEDD8;
+                right: 0px;
+                width: 155px;
+                position: absolute;
+                text-align: center;
+                border-radius: 30px 0 0 0;
+                text-transform: none;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 17px;
+                margin-right: 9px;
+                cursor: pointer;
+                margin-top: 2px;
+                bottom: 0px;
+            }
+
+
+
+
         }
-.renew p{
-            font-size: 10px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 4px;
-            word-wrap: break-word;
+
+        @media only screen and (min-width: 301px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 20px;
+            }
+
+            .renew h3 {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 2px;
+            }
+
+            .renew p {
+                font-size: 11px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 4px;
+                word-wrap: break-word;
+            }
+
+            .renewbox {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+                background-color: #f2f1f6;
+                margin-top: 89px;
+                padding: 30px 10px 1px 10px;
+            }
+
+            .renewnow-btn {
+                border-radius: 4px !important;
+                background-color: #72ce7c;
+                color: #ffffff;
+                border: 2px solid #72ce7c;
+                margin-bottom: 10px;
+                min-width: 64px;
+                padding: 5px 4px;
+                margin-left: -31px;
+                font-size: 14px !important;
+            }
+
+            .renewnow-btn:hover {
+                color: #ffffff;
+            }
+
+            .form-group {
+                margin-bottom: 0px;
+            }
+
+            .allplan {
+                height: auto !important;
+            }
+
+            .allplan .buybtn {
+                background-color: #0f5fc2;
+                color: #EFEDD8;
+                right: 0px;
+                width: 155px;
+                position: absolute;
+                text-align: center;
+                border-radius: 30px 0 0 0;
+                text-transform: none;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-size: 17px;
+                margin-right: 9px;
+                cursor: pointer;
+                margin-top: 2px;
+                bottom: 0px;
+            }
+
+
         }
-.renewbox{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
-    background-color: #f2f1f6;
-    margin-top: 10px;
-    padding: 30px 10px 30px 10px;
-    text-align: center;
-}
-.renewnow-btn{
-    border-radius: 4px!important;
-    background-color: #72ce7c;
-    color: #ffffff;
-    border: 2px solid #72ce7c;
-    margin-bottom: 10px;
-    min-width: 98px;
-    padding: 5px 4px;
-    margin-left: -24px;
-}
-.renewnow-btn:hover{
-    color: #ffffff;
-}
-.head1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    font-family: 'Poppins', sans-serif;
-}
-.form-group {
-    margin-bottom: 0px;
-}
-.allplan {
-    height:auto;
-}
 
-.allplan .buybtn {
-    background-color: #0f5fc2;
-    color: #EFEDD8;
-    right: 0px;
-    width: 155px;
-    position: absolute;
-    text-align: center;
-    border-radius: 30px 0 0 0;
-    text-transform: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 17px;
-    margin-right: 9px;
-    cursor: pointer;
-    margin-top: 2px;
-    bottom: 0px;
-}
+        @media only screen and (min-width: 350px) {
+            .head1 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 26px;
+            }
 
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 20px;
+            }
 
+            .renew h3 {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 2px;
+            }
 
+            .renew p {
+                font-size: 12px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 4px;
+                word-wrap: break-word;
+            }
 
-}
+            .renewbox {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
+                background-color: #f2f1f6;
+                margin-top: 89px;
+                padding: 30px 10px 30px 10px;
+            }
 
-@media only screen and (min-width: 301px){
-    .renew{
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-.renew h3 {
-            font-size: 13px;
-            font-weight: 700;
-            color: #000000;
-             margin-bottom: 2px;
+            .renewnow-btn {
+                border-radius: 4px !important;
+                margin-bottom: 10px;
+                min-width: 64px;
+                padding: 5px 4px;
+                margin-left: -31px;
+            }
+
+            .renewnow-btn:hover {
+                color: #ffffff;
+            }
+
         }
-.renew p {
-            font-size: 11px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 4px;
-            word-wrap: break-word;
+
+
+        @media only screen and (min-width: 400px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 50px;
+            }
+
+            .renew h3 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #000000;
+                margin-bottom: 2px;
+            }
+
+            .renew p {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 4px;
+            }
+
+            .renewbox {
+                margin-top: 10px;
+                padding: 30px 10px 30px 10px;
+            }
+
+            .renewnow-btn {
+                border-radius: 4px !important;
+                background-color: #72ce7c;
+                color: #ffffff;
+                border: 1px solid #000000;
+                margin-bottom: 10px;
+                min-width: 98px;
+                padding: 5px 4px;
+                margin-left: -24px;
+            }
         }
-.renewbox{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
-    background-color: #f2f1f6;
-    margin-top: 89px;
-    padding: 30px 10px 1px 10px;
- }
-.renewnow-btn{
-    border-radius: 4px!important;
-    background-color: #72ce7c;
-    color: #ffffff;
-    border: 2px solid #72ce7c;
-    margin-bottom: 10px;
-    min-width: 64px;
-    padding: 5px 4px;
-    margin-left: -31px;
-    font-size: 14px!important;
-}
-.renewnow-btn:hover{
-    color: #ffffff;
-}
-.form-group {
-    margin-bottom: 0px;
-}
-
-.allplan {
-    height:auto!important;
-}
-
-.allplan .buybtn {
-    background-color: #0f5fc2;
-    color: #EFEDD8;
-    right: 0px;
-    width: 155px;
-    position: absolute;
-    text-align: center;
-    border-radius: 30px 0 0 0;
-    text-transform: none;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 17px;
-    margin-right: 9px;
-    cursor: pointer;
-    margin-top: 2px;
-    bottom: 0px;
-}
 
 
-}
+        @media only screen and (min-width: 450px) {
+            .renew h3 {
+                font-size: 16px;
+                font-weight: 600;
+                color: #000000;
+                margin-bottom: 2px;
+            }
 
-@media only screen and (min-width: 350px){
-.head1 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26px;
-}    
-.renew{
-    margin-bottom: 30px;
-    padding-top: 20px;
-}
-.renew h3 {
-            font-size: 13px;
-            font-weight: 700;
-            color: #000000;
-             margin-bottom: 2px;
+            .renew p {
+                font-size: 13px;
+                font-weight: 700;
+                color: #000000;
+                margin-bottom: 4px;
+            }
+
+            .renewbox {
+                margin-top: 10px;
+                padding: 30px 10px 30px 10px;
+            }
+
+            .renewnow-btn {
+                margin-left: -24px;
+            }
         }
-.renew p {
-            font-size: 12px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 4px;
-            word-wrap: break-word;
+
+        @media only screen and (min-width: 500px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 50px;
+            }
+
+            .renew h3 {
+                font-size: 22px;
+                font-weight: 600;
+                color: #000000;
+                margin-bottom: 2px;
+            }
+
+            .renew p {
+                font-size: 15px;
+                font-weight: 600;
+                color: #000000;
+                margin-bottom: 4px;
+            }
+
+            .renewbox {
+                margin-top: 10px;
+                padding: 30px 10px 30px 10px;
+            }
+
+            .renewnow-btn {
+                margin-left: -24px;
+            }
         }
-.renewbox{
-    box-shadow: 0 3px 10px rgb(0 0 0 / 15%);
-    background-color: #f2f1f6;
-    margin-top: 89px;
-    padding: 30px 10px 30px 10px;
-}
-.renewnow-btn{
-    border-radius: 4px!important;
-     margin-bottom: 10px;
-    min-width: 64px;
-    padding: 5px 4px;
-    margin-left: -31px;
-}
-.renewnow-btn:hover{
-    color: #ffffff;
-}
-
-}
 
 
-@media only screen and (min-width: 400px){
-   .renew{
-    margin-bottom: 30px;
-    padding-top: 50px;
-}
 
- .renew h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #000000;
-             margin-bottom: 2px;
+        @media only screen and (min-width: 700px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 50px;
+            }
+
+            .renew h3 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .renew p {
+                font-size: 14px;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .renewbox {
+                margin-top: 110px;
+                padding: 30px 10px 30px 10px;
+            }
+
+            .renewnow-btn {
+                margin-left: 27%;
+            }
         }
-      .renew p {
-            font-size: 13px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 4px;
+
+
+        @media only screen and (min-width: 900px) {
+            .renew {
+                margin-bottom: 30px;
+                padding-top: 50px;
+            }
+
+            .renew h3 {
+                font-size: 22px;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .renew p {
+                font-size: 15px;
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .renewbox {
+                margin-top: 150px;
+                padding: 30px 10px 30px 10px;
+            }
+
+            .renewbox h3 {
+                text-align: center !important;
+            }
+
+            .renewbox p {
+                text-align: center !important;
+            }
+
+            .renewnow-btn {
+                margin-left: 27%;
+            }
         }
-.renewbox{
-    margin-top: 10px;
-    padding: 30px 10px 30px 10px;
-}
 
-.renewnow-btn{
-    border-radius: 4px!important;
-    background-color: #72ce7c;
-    color: #ffffff;
-    border: 1px solid #000000;
-    margin-bottom: 10px;
-    min-width: 98px;
-    padding: 5px 4px;
-    margin-left: -24px;
-}
-}
-
-
-@media only screen and (min-width: 450px){
- .renew h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #000000;
-             margin-bottom: 2px;
-        }
-      .renew p {
-            font-size: 13px;
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 4px;
-        }
-.renewbox{
-    margin-top: 10px;
-    padding: 30px 10px 30px 10px;
-}
-.renewnow-btn{
- margin-left: -24px;
-}
-}
-
-@media only screen and (min-width: 500px){
-.renew{
-   margin-bottom: 30px;
-    padding-top: 50px;
-}
- .renew h3 {
-            font-size: 22px;
-            font-weight: 600;
-            color: #000000;
-            margin-bottom: 2px;
-        }
-      .renew p {
-            font-size: 15px;
-            font-weight: 600;
-            color: #000000;
-            margin-bottom: 4px;
-        }
-.renewbox{
-    margin-top: 10px;
-    padding: 30px 10px 30px 10px;
-}
-
-.renewnow-btn{
- margin-left: -24px;
-}
-}
-
-
-
-@media only screen and (min-width: 700px){
-     .renew{
-    margin-bottom: 30px;
-    padding-top: 50px;
-}
-     .renew h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #000000;
-        }
-      .renew p {
-            font-size: 14px;
-            font-weight: 600;
-            color: #000000;
-        }
-.renewbox{
-    margin-top: 110px;
-    padding: 30px 10px 30px 10px;
-}
-.renewnow-btn{
- margin-left: 27%;
-}
-}
-
-
-@media only screen and (min-width: 900px){
-     .renew{
-    margin-bottom: 30px;
-    padding-top: 50px;
-}
-     .renew h3 {
-            font-size: 22px;
-            font-weight: 600;
-            color: #000000;
-        }
-      .renew p {
-            font-size: 15px;
-            font-weight: 600;
-            color: #000000;
-        }
-.renewbox{
-    margin-top: 150px;
-    padding: 30px 10px 30px 10px;
-}
-.renewbox h3{
-       text-align: center!important;
-}
-.renewbox p{
-       text-align: center!important;
-}
-.renewnow-btn{
- margin-left: 27%;
-}
-}
-
-    @media only screen and (min-width: 1200px) {
-.banner {
+        @media only screen and (min-width: 1200px) {
+            .banner {
                 padding-top: 40px;
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
-.banner1 {
+
+            .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 40px !important;
             }
-.renewnow-btn{
- margin-left: 27%;
-}
- }
+
+            .renewnow-btn {
+                margin-left: 27%;
+            }
+        }
 
         @media only screen and (min-width: 1300px) {
             .banner {
@@ -388,15 +428,17 @@
                 margin-top: 60px;
                 padding-bottom: 10px;
             }
-   .banner1 {
+
+            .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
-.renewnow-btn{
- margin-left: 27%;
-}
- }
+
+            .renewnow-btn {
+                margin-left: 27%;
+            }
+        }
 
         @media only screen and (min-width: 1400px) {
             .banner {
@@ -404,15 +446,17 @@
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
- .banner1 {
+
+            .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
-.renewnow-btn{
- margin-left: 27%;
-}
-}
+
+            .renewnow-btn {
+                margin-left: 27%;
+            }
+        }
 
         @media only screen and (min-width: 1600px) {
             .banner {
@@ -420,7 +464,8 @@
                 margin-top: 130px;
                 padding-bottom: 50px;
             }
-       .banner1 {
+
+            .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
@@ -433,13 +478,15 @@
                 margin-top: 130px;
                 padding-bottom: 60px;
             }
-           .banner1 {
+
+            .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
             }
         }
-     .form-control {
+
+        .form-control {
             display: block;
             width: 100%;
             height: 36px;
@@ -454,20 +501,22 @@
             border-radius: 4px;
             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         }
-     .btn {
+
+        .btn {
             font-size: 15px;
             font-weight: 600;
-            border-radius: 4px!important;
+            border-radius: 4px !important;
         }
-.renew-btn{
-    border-radius: 4px!important;
-    background-color: #72ce7c;
-    color: #ffffff;
-    border: 1px solid #000000;
-    margin-bottom: 10px;
-}
 
-.modal-content {
+        .renew-btn {
+            border-radius: 4px !important;
+            background-color: #72ce7c;
+            color: #ffffff;
+            border: 1px solid #000000;
+            margin-bottom: 10px;
+        }
+
+        .modal-content {
             position: relative;
             background-color: #ffffff !important;
             margin: auto;
@@ -485,17 +534,20 @@
             font-weight: 300;
             text-align: left;
         }
- .outer-box {
+
+        .outer-box {
             display: flex;
             flex-direction: column;
             align-items: left;
         }
-  .main-box {
+
+        .main-box {
             width: 30px;
             text-align: center;
             cursor: pointer;
         }
-     .tip {
+
+        .tip {
             box-sizing: border-box;
             background-color: #ffffff;
             border: 1px solid #ccc;
@@ -505,15 +557,15 @@
             border-radius: 12px;
             font-size: 12px;
         }
-.renewpolicy-benefits {
-    background-color: #ecf0fa;
-    box-shadow: none;
-    padding: 20px 0px 40px 0px;
-    margin-bottom: 0px;
-    margin-top: 50px;
-}
 
- </style>
+        .renewpolicy-benefits {
+            background-color: #ecf0fa;
+            box-shadow: none;
+            padding: 20px 0px 40px 0px;
+            margin-bottom: 0px;
+            margin-top: 50px;
+        }
+    </style>
     <!-- Global site tag (gtag.js) - Google Ads: 471644001 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-471644001"></script>
     <script>
@@ -568,7 +620,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="z-index: 999;">
         <div class="container mt-2 mb-2">
-    <a class="navbar-brand logo mdcenter" href="https://healthassure.in/">
+            <a class="navbar-brand logo mdcenter" href="https://healthassure.in/">
                 <img src="images/logo.png" width="180px">
             </a>
         </div>
@@ -576,36 +628,40 @@
     <section>
         <div class="container">
             <div class="row px-md-0">
-<div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-4 banner d-none d-sm-block">
-<img src="images/renew-policy.png" class="img-fluid ">
+                <div class="col-12 col-md-6 col-sm-12 col-lg-4 col-xl-4 banner d-none d-sm-block">
+                    <img src="images/renew-policy.png" class="img-fluid ">
                 </div>
-    <div class="col-12 col-md-6 col-sm-12 col-lg-8 col-xl-8">
-    <form id="RenewPolicyformid" class="renewbox">
-<h3 class="head1"> Your HealthAssure Plan Expires Soon! </h3>
-<p><b> Renew now to continue availing benefits! </b> </p>
+                <div class="col-12 col-md-6 col-sm-12 col-lg-8 col-xl-8">
+                    <form id="RenewPolicyformid" class="renewbox">
+                        <h3 class="head1"> Your HealthAssure Plan Expires Soon! </h3>
+                        <p><b> Renew now to continue availing benefits! </b> </p>
                         <div class="form-group row">
- <label for="Policy No" class=" col-lg-2 col-sm-2 col-6 pt-3 pl-4 d-none d-sm-block"><b> Policy No.</b>  </label>
+                            <label for="Policy No" class=" col-lg-2 col-sm-2 col-6 pt-3 pl-4 d-none d-sm-block"><b>
+                                    Policy No.</b> </label>
                             <div class="col-lg-1 col-sm-1 col-1 pt-3 d-none d-sm-block ">
                                 <div class="outer-box">
                                     <div class="main-box">
-<div class="main"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
- </div>
-<div class="tip"> <span> You can view your policy number on our Retail App or refer to COI pdf </span>
+                                        <div class="main"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="tip"> <span> You can view your policy number on our Retail App or
+                                                refer to COI pdf </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
- <div class="col-sm-8 col-lg-9 col-10">
-    <input type="text" id="RenewPolicyNo" class="form-control" placeholder=" Enter Policy No" required>
+                            <div class="col-sm-8 col-lg-9 col-10">
+                                <input type="text" id="RenewPolicyNo" class="form-control"
+                                    placeholder=" Enter Policy No" required>
                                 <div>
-        <p id="policyInvalidMessage"> Please enter Valid policy no </p>
+                                    <p id="policyInvalidMessage"> Please enter Valid policy no </p>
                                 </div>
-                          </div>
-                          <div class=" col-lg-12 col-md-12 col-2 ">
-    <button class="btn renewnow-btn" type="submit"> Submit </button>
-                                </div>
+                            </div>
+                            <div class=" col-lg-12 col-md-12 col-2 ">
+                                <button class="btn renewnow-btn" type="submit"> Submit </button>
+                            </div>
                         </div>
-<p style="font-size: 13px;padding-top: 10px; text-align: center;"><b>Note: You will be eligible for 40% additional diagnostic credit if you have a claim free plan year</b></p>
+                        <p style="font-size: 13px;padding-top: 10px; text-align: center;"><b>Note: You will be eligible
+                                for 40% additional diagnostic credit if you have a claim free plan year</b></p>
                     </form>
                 </div>
             </div>
@@ -658,9 +714,7 @@
         </div>
     </section>
 
-
-
-  <!--   <section class="PolicyDetailsection">
+    <!--   <section class="PolicyDetailsection">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12 text-center">
@@ -704,135 +758,128 @@
         </div>
     </section> -->
 
-
-
-
-<section class="bringing-section">
+    <section class="bringing-section" id="bringingsectondiv" style="display: none;">
         <div class="container pb-4 px-3 px-md-0 mt-3">
             <div class="row">
                 <div class="col-md-12 col-lg-12 text-center">
-<h2 class="head pb-4 pt-5 " style="font-size: 28px; font-weight: 600;"> Even in the case of policy upgradation you can still enjoy 10% discount on original plan's premium   </h2>
-  <p style="font-size:20px;font-weight: 600;"><b> Kindly select your Preferred Plan </b> </p>
+                    <h2 class="head pb-4 pt-5 " style="font-size: 28px; font-weight: 600;"> Even in the case of policy
+                        upgradation you can still enjoy 10% discount on original plan's premium </h2>
+                    <p style="font-size:20px;font-weight: 600;"><b> Kindly select your Preferred Plan </b> </p>
                 </div>
-<div class="col-md-6 col-sm-12 col-lg-6  col-xl-6 col-xxl-6 mt-5 ">
-                     <div class="row offercard">
-                            <div class="col-lg-5 col-md-6 pt-2 col-6">
-                                <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Individual) </b> </p>
-                            </div>
-                            <div class="col-lg-7 col-md-6 col-6 val">
-                                <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                                <p class="tnc2 mt-n2"><b> Self </b></p>
-                                <p class="tnc1 mt-n2"> (No Age Limit)</p>
-                            </div>
-                       </div> 
+                <div class="col-md-6 col-sm-12 col-lg-6  col-xl-6 col-xxl-6 mt-5" id="UpgradePlatIndidiv">
+                    <div class="row offercard">
+                        <div class="col-lg-5 col-md-6 pt-2 col-6">
+                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Individual) </b> </p>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-6 val">
+                            <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
+                            <p class="tnc2 mt-n2"><b> Self </b></p>
+                            <p class="tnc1 mt-n2"> (No Age Limit)</p>
+                        </div>
+                    </div>
                     <div class="allplan">
-                      <div class="row plan">
-                      
-                             <ul class="pt-3">
+                        <div class="row plan">
+                            <ul class="pt-3">
                                 <p class="pl-2"><b> Highlighted Features :</b></p>
-                    <li> <b> ₹ 5000</b> Free Lab Test & Scans </li>
-                    <li> <b> ₹ 1000</b> Pharmacy </li>
-        <li><b> Unlimited </b> In-Person GP Consultations </li>
-        <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
-        <li> <b> Unlimited  </b> 1:1 Sessions with Wellness Coaches </li>
-        <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
-         <li> Upto 20% on Medicines with Home Delivery </li>
-         <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
-                   
+                                <li> <b> ₹ 5000</b> Free Lab Test & Scans </li>
+                                <li> <b> ₹ 1000</b> Pharmacy </li>
+                                <li><b> Unlimited </b> In-Person GP Consultations </li>
+                                <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
+                                <li> <b> Unlimited </b> 1:1 Sessions with Wellness Coaches </li>
+                                <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
+                                <li> Upto 20% on Medicines with Home Delivery </li>
+                                <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
                             </ul>
                         </div>
-                     <div class="row allplanspace3">
+                        <div class="row allplanspace3">
                             <div class="col-md-6 pl-4 pt-1 col-6">
- <form>
-<p class="mb-1"> Select Tenure: </p>
-  <input type="radio" id="fitassureplatinum1year" name="age" >
-  <label for="age1" class="mb-0"> 1 Year </label><br>
-  <input type="radio" id="fitassureplatinum2year" name="age" value="60">
-  <label for="age2" class="mb-0"> 2 Year</label><br>  
-</form>
-                     </div>
+                                <form id="platinum">
+                                    <p class="mb-1"> Select Tenure: </p>
+                                    <input type="radio" checked value="HAOPDR00U19" id="fitassureplatinum1year"
+                                        name="Upgradeplancode">
+                                    <label for="fitassureplatinum1year" class="mb-0"> 1 Year </label><br>
+                                    <input type="radio" value="HAOPDR00U22" id="fitassureplatinum2year"
+                                        name="Upgradeplancode">
+                                    <label for="fitassureplatinum2year" class="mb-0"> 2 Year</label><br>
+                                </form>
+                            </div>
                             <div class="col-md-6 col-6" id="fitassureplatinumoneyear">
-<a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR003-58','',false,false,'',true,false,false,true)"
-    class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
-    <span style="font-weight:500;"> &#8377; <del> 14999 </del> &nbsp; 6999/-</span> </a>
+                                <a class="buybtn float-end"> <span
+                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
+                                    </span><br />
+                                    <span style="font-weight:500;"> &#8377; <del> 8259 </del> &nbsp; 6999/-</span> </a>
                             </div>
-<div class="col-md-6 col-6" id="fitassureplatinumtwoyear" style="display:none;">
-<a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR003-63','',false,false,'',true,false,false,true)"
-    class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
-    <span style="font-weight:500;"> &#8377; <del>14999 </del> &nbsp;  28999/-</span> </a>
+                            <div class="col-md-6 col-6" id="fitassureplatinumtwoyear" style="display:none;">
+                                <a class="buybtn float-end"> <span
+                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
+                                    </span><br />
+                                    <span style="font-weight:500;"> &#8377; <del>13214 </del> &nbsp; 11198/-</span> </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-        <div class="col-md-6 col-sm-12 col-lg-6  col-xl-6 col-xxl-6 mt-5 ">
-                     <div class="row offercard">
- <div class="col-lg-5 col-md-6 pt-2 col-5">
-                                <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Floater) </b> </p>
-                            </div>
-                            <div class="col-lg-7 col-md-6 col-7 val">
-            <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                <p class="tnc2 mt-n2"><b> Upto 4 Family Members </b></p>
-                    <p class="tnc1 mt-n2"> (No Age Limit) </p>
-                            </div>
-                       </div>
+                <div class="col-md-6 col-sm-12 col-lg-6  col-xl-6 col-xxl-6 mt-5" id="UpgradePlatFloatdiv">
+                    <div class="row offercard">
+                        <div class="col-lg-5 col-md-6 pt-2 col-5">
+                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Floater) </b> </p>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-7 val">
+                            <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
+                            <p class="tnc2 mt-n2"><b> Upto 4 Family Members </b></p>
+                            <p class="tnc1 mt-n2"> (No Age Limit) </p>
+                        </div>
+                    </div>
                     <div class="allplan">
-                      <div class="row plan">
-                           <ul class="pt-3">
-                <p class="pl-2"><b> Highlighted Features :</b></p>
-                     <li> <b> ₹ 10000</b> Free Lab Test & Scans </li>
-                    <li> <b> ₹ 2500</b> Pharmacy </li>
-        <li><b> Unlimited </b> In-Person GP Consultations </li>
-        <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
-        <li> <b> Unlimited  </b> 1:1 Sessions with Wellness Coaches </li>
-        <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
-         <li> Upto 20% on Medicines with Home Delivery </li>
-         <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                        <div class="row plan">
+                            <ul class="pt-3">
+                                <p class="pl-2"><b> Highlighted Features :</b></p>
+                                <li> <b> ₹ 10000</b> Free Lab Test & Scans </li>
+                                <li> <b> ₹ 2500</b> Pharmacy </li>
+                                <li><b> Unlimited </b> In-Person GP Consultations </li>
+                                <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
+                                <li> <b> Unlimited </b> 1:1 Sessions with Wellness Coaches </li>
+                                <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
+                                <li> Upto 20% on Medicines with Home Delivery </li>
+                                <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
                             </ul>
                         </div>
-                     <div class="row allplanspace3">
+                        <div class="row allplanspace3">
                             <div class="col-md-6 pl-4 pt-1 col-6">
- <form>
-<p class="mb-1"> Select Tenure: </p>
-  <input type="radio" id="fitassureplatinumpro1year" name="age" >
-  <label for="age1" class="mb-0"> 1 Year </label><br>
-  <input type="radio" id="fitassureplatinumpro2year" name="age" value="60">
-  <label for="age2" class="mb-0"> 2 Year</label><br>  
-</form>
-                     </div>
-                    <div class="col-md-6  col-6" id="fitassureplatinumprooneyear">
-<a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR00U31','',false,false,'',true,false,false,true)"
-    class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
-    <span style="font-weight:500;"> &#8377; <del> 29999 </del> &nbsp; 14999/-</span> </a>
+                                <form id="platinumpro">
+                                    <p class="mb-1"> Select Tenure: </p>
+                                    <input value="HAOPDR00U31" type="radio" id="fitassureplatinumpro1year"
+                                        name="Upgradeplancode">
+                                    <label for="fitassureplatinumpro1year" class="mb-0"> 1 Year </label><br>
+                                    <input value="HAOPDR00U38" type="radio" id="fitassureplatinumpro2year"
+                                        name="Upgradeplancode">
+                                    <label for="fitassureplatinumpro2year" class="mb-0"> 2 Year</label><br>
+                                </form>
                             </div>
-<div class="col-md-6  col-6" id="fitassureplatinumprotwoyear" style="display:none;">
-<a href="javascript:OpenBuyPlanPopup('FitAssure Platinum Plus','HAOPDR00U38','',false,false,'',true,false,false,true)"
-    class="buybtn float-end"> <span style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now </span><br /> 
-    <span style="font-weight:500;"> &#8377; <del>46999</del> &nbsp;  23999 /-</span> </a>
+                            <div class="col-md-6  col-6" id="fitassureplatinumprooneyear">
+                                <a class="buybtn float-end"> <span
+                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
+                                    </span><br />
+                                    <span style="font-weight:500;"> &#8377; <del> 17699 </del> &nbsp; 14999/-</span>
+                                </a>
+                            </div>
+                            <div class="col-md-6  col-6" id="fitassureplatinumprotwoyear" style="display:none;">
+                                <a class="buybtn float-end"> <span
+                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
+                                    </span><br />
+                                    <span style="font-weight:500;"> &#8377; <del>28318</del> &nbsp; 23998/-</span> </a>
                             </div>
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
     <section id="relationsection" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 pt-5">
                     <form class="row">
-                  <div class="col-lg-12 col-md-12 col-12">
+                        <div class="col-lg-12 col-md-12 col-12">
                             <h3 class="text-left"><b> Adult</b> </h3>
                         </div>
                         <div class="form-group col-lg-4">
@@ -942,11 +989,11 @@
             </div>
         </div>
     </section>
-    <section class="PolicyDetailsection" style="background-color: #ecf0fa; margin-bottom:10px; ">
+    <section class="PolicyDetailsection" style="background-color: #ecf0fa; margin-bottom:10px; display: none; ">
         <div class="container banner">
             <div class="row px-4">
                 <div class="col-lg-6 col-md-6 col-sm-6 renew">
- <h3 id="CustomerName"> Avanish Kumar Shukla </h3>
+                    <h3 id="CustomerName"> Avanish Kumar Shukla </h3>
                     <p id="CustomerRelationAndGender">Self | Male </p>
 
                     <h3>Existing Policy </h3>
@@ -1110,6 +1157,7 @@
             if (policyNo != null && policyNo != '') {
                 $('#RenewPolicyNo').val(policyNo);
                 OPDPlanRenewal(policyNo);
+                $("#bringingsecton").show();
             }
             var planRelations = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
             $.each(planRelations, function (key, p) {
@@ -1119,26 +1167,26 @@
                 $('#Relative4').append('<option value="' + p.RelationCode + '">' + p.RelationName + '</option>');
             });
         });
-        var PlatUltimaIndividual = '';
-        var PlatUltimaFloater = '';
+        // var PlatUltimaIndividual = '';
+        // var PlatUltimaFloater = '';
 
         $('#RenewNewbtnClick').click(function (e) {
-            UpgradeOPDPlan('', '', $('#SelectedUpgradePlanCode').val(), GetRelations(), '', $('#PolicyNo').val());
+            UpgradeOPDPlan('', '', $('input[type="radio"][name="Upgradeplancode"]:checked').val(), GetRelations(), '', $('#PolicyNo').val());
         });
-        $('#UpgradePlatIndiBtn').click(function (e) {
-            $('#SelectedUpgradePlanCode').val(PlatUltimaIndividual);
-            OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaIndividual);
-            $('#UpgradePlatIndiBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
-            $('#UpgradePlatFloatBtn').html('Upgrade');
-            $('#relationsection').hide();
-        });
-        $('#UpgradePlatFloatBtn').click(function (e) {
-            $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
-            OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaFloater);
-            $('#UpgradePlatFloatBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
-            $('#UpgradePlatIndiBtn').html('Upgrade');
-            $('#relationsection').show();
-        });
+        // $('#UpgradePlatIndiBtn').click(function (e) {
+        //     $('#SelectedUpgradePlanCode').val(PlatUltimaIndividual);
+        //     OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaIndividual);
+        //     $('#UpgradePlatIndiBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
+        //     $('#UpgradePlatFloatBtn').html('Upgrade');
+        //     $('#relationsection').hide();
+        // });
+        // $('#UpgradePlatFloatBtn').click(function (e) {
+        //     $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
+        //     OPDPlanRenewal($('#RenewPolicyNo').val(), PlatUltimaFloater);
+        //     $('#UpgradePlatFloatBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
+        //     $('#UpgradePlatIndiBtn').html('Upgrade');
+        //     $('#relationsection').show();
+        // });
 
         $('#policyInvalidMessage').html('');
         $('#RenewPolicyformid').submit(function (ev) {
@@ -1196,13 +1244,20 @@
                 $('#PlanNewValidity').html(result.results.plan.newValidFrom + ' to ' + result.results.plan.newValidTo);
                 $('#DiscountPlanAmount').html(result.results.plan.discountPlanAmount);
                 var PlanCodeArray = result.results.plan.upgradePlanCode.split(',');
-                PlatUltimaIndividual = PlanCodeArray[0]?.trim();
-                if (PlatUltimaIndividual != undefined && PlatUltimaIndividual != null && PlatUltimaIndividual != '' && result.results.plan.planCode !== PlatUltimaIndividual) {
+                var PlatUltimaIndividual = PlanCodeArray[0]?.trim();
+                if (PlatUltimaIndividual === 'HAOPDR00U19' && result.results.plan.planCode !== PlatUltimaIndividual) {
                     $('#UpgradePlatIndidiv').show();
-                    if ($('#SelectedUpgradePlanCode').val() === '') {
-                        $('#SelectedUpgradePlanCode').val(PlatUltimaIndividual);
-                        $('#UpgradePlatIndiBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
-                        $('#UpgradePlatFloatBtn').html('Upgrade');
+                }
+
+                var PlatUltimaFloater = PlanCodeArray[2]?.trim();
+                if(!PlatUltimaFloater){
+                    PlatUltimaFloater = PlanCodeArray[0]?.trim();
+                }
+                if (PlatUltimaFloater === 'HAOPDR00U31') {
+                    $('#UpgradePlatFloatdiv').show();
+                    var SelectedUpgradePlanCode = $('input[type="radio"][name="Upgradeplancode"]:checked').val();
+                    if (SelectedUpgradePlanCode === 'HAOPDR00U31' || SelectedUpgradePlanCode === 'HAOPDR00U38') {
+                        $("#relationsection").show();
                     }
                 }
                 for (var i = 0; i < result.results.plan?.memberes?.length; i++) {
@@ -1214,16 +1269,6 @@
                         $('#Membergender2' + (i + 2)).prop('checked', true);
                     } else {
                         $('#Membergender1' + (i + 2)).prop('checked', true);
-                    }
-                }
-                PlatUltimaFloater = PlanCodeArray[1]?.trim();
-                if (PlatUltimaFloater != undefined && PlatUltimaFloater != null && PlatUltimaFloater != '') {
-                    $('#UpgradePlatFloatdiv').show();
-                    if ($('#SelectedUpgradePlanCode').val() === '') {
-                        $('#SelectedUpgradePlanCode').val(PlatUltimaFloater);
-                        $('#UpgradePlatFloatBtn').html('Upgrade <i class="fa fa-check" aria-hidden="true"></i>');
-                        $('#UpgradePlatIndiBtn').html('Upgrade');
-                        $('#relationsection').show();
                     }
                 }
                 $('.PolicyDetailsection').show();
@@ -1242,6 +1287,7 @@
                 });
                 $('#renewpolicybenefits').html(renewpolicybenefits);
                 $("#renewpolicybenefitsdiv").show();
+                $("#bringingsectondiv").show();
             }).catch(function (err) {
                 console.warn(err);
                 $('#policyInvalidMessage').html(err.message);
@@ -1263,47 +1309,55 @@
             })
         })
     </script>
+    <script>
+        $(document).ready(function () {
+            $("#1year").click(function () {
+                $("#oneyear").show();
+                $("#twoyear").hide();
+            });
+            $("#2year").click(function () {
+                $("#twoyear").show();
+                $("#oneyear").hide();
+            });
+        });
 
+        $(document).ready(function () {
+            $("#fitassureplatinum1year").click(function () {
+                $("#fitassureplatinumoneyear").show();
+                $("#fitassureplatinumtwoyear").hide();
+                OPDPlanRenewal($('#RenewPolicyNo').val(), 'HAOPDR00U19');
+                $("#relationsection").hide();
+                document.getElementById("fitassureplatinumpro1year").checked = false;
+                document.getElementById("fitassureplatinumpro2year").checked = false;
+            });
+            $("#fitassureplatinum2year").click(function () {
+                $("#fitassureplatinumtwoyear").show();
+                $("#fitassureplatinumoneyear").hide();
+                OPDPlanRenewal($('#RenewPolicyNo').val(), 'HAOPDR00U22');
+                $("#relationsection").hide();
+                document.getElementById("fitassureplatinumpro1year").checked = false;
+                document.getElementById("fitassureplatinumpro2year").checked = false;
+            });
+        });
 
-<script>
-$(document).ready(function(){
-$("#1year").click(function(){
-    $("#oneyear").show();
-     $("#twoyear").hide();
-  });
-$("#2year").click(function(){
-    $("#twoyear").show();
-    $("#oneyear").hide();
-  });
- });
-
-$(document).ready(function(){
-$("#fitassureplatinum1year").click(function(){
-    $("#fitassureplatinumoneyear").show();
-     $("#fitassureplatinumtwoyear").hide();
-  });
-$("#fitassureplatinum2year").click(function(){
-    $("#fitassureplatinumtwoyear").show();
-    $("#fitassureplatinumoneyear").hide();
-  });
- });
-
-$(document).ready(function(){
-$("#fitassureplatinumpro1year").click(function(){
-    $("#fitassureplatinumprooneyear").show();
-     $("#fitassureplatinumprotwoyear").hide();
-  });
-$("#fitassureplatinumpro2year").click(function(){
-    $("#fitassureplatinumprotwoyear").show();
-    $("#fitassureplatinumprooneyear").hide();
-  });
- });
-
-
-</script>
-
-
-
+        $(document).ready(function () {
+            $("#fitassureplatinumpro1year").click(function () {
+                $("#fitassureplatinumprooneyear").show();
+                $("#fitassureplatinumprotwoyear").hide();
+                OPDPlanRenewal($('#RenewPolicyNo').val(), 'HAOPDR00U31');
+                $("#relationsection").show();
+                document.getElementById("fitassureplatinum1year").checked = false;
+                document.getElementById("fitassureplatinum2year").checked = false;
+            });
+            $("#fitassureplatinumpro2year").click(function () {
+                OPDPlanRenewal($('#RenewPolicyNo').val(), 'HAOPDR00U38');
+                $("#relationsection").show();
+                $("#fitassureplatinumprotwoyear").show();
+                $("#fitassureplatinumprooneyear").hide();
+                document.getElementById("fitassureplatinum1year").checked = false;
+                document.getElementById("fitassureplatinum2year").checked = false;
+            });
+        });
+    </script>
 </body>
-
 </html>

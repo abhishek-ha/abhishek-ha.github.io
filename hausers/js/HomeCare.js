@@ -3,14 +3,13 @@ var Appointmentid = href.searchParams.get("AppointmentId");
 var statusName ='';
 var place ='';
 
-
-$(function () {debugger;
-    $('#dvAppointmentWith').hide();
-    $('#dvFasting').hide();
-    $('#dvConfirmed').hide();
-     $('#dvCancelled').hide();
-     $('#dvCompleted').hide();
-     $('#dvRequested').hide();
+$(function () {
+    $("[id*='dvAppointmentWith']").hide(); 
+    $("[id*='dvFasting']").hide();  
+    $("[id*='dvConfirmed']").hide();
+     $("[id*='dvCancelled']").hide();
+     $("[id*='dvCompleted']").hide();
+     $("[id*='dvRequested']").hide();
 if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
     else {
         console.log('error')
@@ -23,9 +22,8 @@ if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmenti
 
 
 function LoadData(Appointmentid) {
-    debugger;
     $.ajax({
-        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://localhost:44301/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -44,47 +42,47 @@ function LoadData(Appointmentid) {
 
                  if (statusName == 'Requested') {
                     document.title = ' Home Care Requested' ;
-                     $('#dvRequested').show();
-                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
-                    $("#imgHomeCare").attr('class', 'img-fluid  consultimg float-end');
+                     $("[id*='dvRequested']").show();
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
+                    $("[id*='imgHomeCare']").attr('class', 'img-fluid float-end');
                 } 
                 else if (statusName == 'completed'|| statusName == 'closed'){
                     document.title = ' Home Care completed' ;
-                     $('#dvCompleted').show();
-                    $("#btnstatusname").attr('class', 'btn btn-grey statusbtn');
-                    $('#dvAppointmentWith').show();
+                     $("[id*='dvCompleted']").show();
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-grey statusbtn');
+                    $("[id*='dvAppointmentWith']").show();
                 }
                 else if (statusName == 'Cancelled'){
                     document.title = ' Home Care Cancelled' ;
-                     $('#dvCancelled').show();
-                    $("#btnstatusname").attr('class', 'btn btn-red statusbtn');
+                     $("[id*='dvCancelled']").show();
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-red statusbtn');
                     }
                 else if (statusName == 'Confirmed'){
                     document.title = ' Home Care ' ;
-                     $('#dvConfirmed').show();
-                     $('#dvAppointmentWith').show();
-                     $('#dvFasting').show();
-                    $("#btnstatusname").attr('class', 'btn btn-orange statusbtn');
+                     $("[id*='dvConfirmed']").show();
+                     $("[id*='dvAppointmentWith']").show();
+                     $("[id*='dvFasting']").show();
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-orange statusbtn');
                     }
             
-                $("#btnstatusname").text('Appoinment '+ data.results.statusname);
-                $("#txtMemberName").html('Hi, ' + data.results.memberName);
-                $("#btnGender").text(data.results.gender);
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<img src="images/clock.png" class="boxicon"> ' + data.results.appointmentTime);
-                $("#btnAge").text(data.results.memberAge + ' Years');
-                $("#btnCaseNo").text(data.results.caseNo);
-                $("#appointmentFor").text(data.results.subServiceDetails);
-                $("#doctname").text(data.results.doctorName);
-                $("#designation").text(data.results.doctorName);
-                $("#btnFasting").text(data.results.isFasting);
-                $("#btnCaseNoConfirmed").text(data.results.caseNo);
-                $("#btnPaymentSettlementMode").text(data.results.paymentMode);
-                $("#txtProviderName").text(data.results.providerName);
-                $("#txtProviderEmail").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
-                $("#txtProviderMobile").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
-                $("#txtPaymentMode").html('<img src="images/wallet.png" class="boxicon">'+ data.results.paymentMode);
-                $("#custAddress").html(place +' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
+                $("[id*='btnstatusname']").text('Appoinment '+ data.results.statusname);
+                $("[id*='txtMemberName']").html('Hi, ' + data.results.memberName);
+                $("[id*='btnGender']").text(data.results.gender);
+                $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.appointmentDate);
+                $("[id*='txtAppointmentTime']").html('<img src="images/clock.png" class="boxicon"> ' + data.results.appointmentTime);
+                $("[id*='btnAge']").text(data.results.memberAge + ' Years');
+                $("[id*='btnCaseNo']").text(data.results.caseNo);
+                $("[id*='appointmentFor']").text(data.results.subServiceDetails);
+                $("[id*='doctname']").text(data.results.doctorName);
+                $("[id*='designation']").text(data.results.doctorName);
+                $("[id*='btnFasting']").text(data.results.isFasting);
+                $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
+                $("[id*='btnPaymentSettlementMode']").text(data.results.paymentMode);
+                $("[id*='txtProviderName']").text(data.results.providerName);
+                $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
+                $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
+                $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon">'+ data.results.paymentMode);
+                $("[id*='custAddress']").html(place +' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
             } else {
                 console.log("Error in sucess");
                  window.location.replace("404.html");

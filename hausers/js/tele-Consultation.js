@@ -6,9 +6,9 @@ $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
 function LoadData(Appointmentid) {
-    debugger;
+    
     $.ajax({
-        url: "https://uat.healthassure.in/productApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://localhost:44301/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -21,33 +21,33 @@ function LoadData(Appointmentid) {
             if (data.status && data.results != null) {
                  statusName =data.results.statusname;
                  document.title = 'Tele Consultation | ' + data.results.statusname ;
-                $("#btnstatusname").text(' Appoinment ' + data.results.statusname);
-                $("#txtMemberName").html('Hi, ' + data.results.memberName);
-                $("#btnGender").text(data.results.gender);
-                $("#txtModeOfConsultation").text(data.results.modeOfConsultation + ' Consultation ');
-                $("#txtAppointmentDate").html('<img src="images/calendar-black.png"  class="boxicon"> ' + data.results.appointmentDate);
-                $("#txtAppointmentTime").html('<img src="images/clock.png" class="boxicon">' + data.results.appointmentTime);
-                 $("#btnAge").text(data.results.memberAge + ' Years');
-                $("#txtplanName").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.subServiceDetails);
+                $("[id*='btnstatusname']").text(' Appoinment ' + data.results.statusname);
+                $("[id*='txtMemberName']").html('Hi, ' + data.results.memberName);
+                $("[id*='btnGender']").text(data.results.gender);
+                $("[id*='txtModeOfConsultation']").text(data.results.modeOfConsultation + ' Consultation ');
+                $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png"  class="boxicon"> ' + data.results.appointmentDate);
+                $("[id*='txtAppointmentTime']").html('<img src="images/clock.png" class="boxicon">' + data.results.appointmentTime);
+                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
+                $("[id*='txtplanName']").html('<i class="fa-solid fa-circle-check text-success"></i> ' + data.results.subServiceDetails);
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
                 }
                 if (statusName == 'Cancelled') {
-                    $("#btnstatusname").attr("class", "btn btn-red");
-                     $("#dvCancelled").show();
+                    $("[id*='btnstatusname']").attr("class", "btn btn-red");
+                     $("[id*='dvCancelled']").show();
                 }
                 else if (statusName == 'Requested') {
-                    $("#btnstatusname").css("background-color", "Blue");
-                    $("#dvRequested").show();
+                    $("[id*='btnstatusname']").css("background-color", "Blue");
+                    $("[id*='dvRequested']").show();
                 }
                 else if (statusName == 'Completed' || data.results.statusname == 'Closed') {
-                    $("#btnstatusname").css("background-color", "Green");
-                    $("#dvCompleted").show();
+                    $("[id*='btnstatusname']").css("background-color", "Green");
+                    $("[id*='dvCompleted']").show();
                 }
                 else if (statusName == 'Confirmed') {
-                    $("#txtTrainerName").html('<span class="trainername">' + data.results.pointOfContact + '</span> ');
-                    $("#btnstatusname").attr("class", "btn btn-orange");
-                    $("#dvConfirmed").show();
+                    $("[id*='txtTrainerName']").html('<span class="trainername">' + data.results.pointOfContact + '</span> ');
+                    $("[id*='btnstatusname']").attr("class", "btn btn-orange");
+                    $("[id*='dvConfirmed']").show();
                 }
                 else {
                     console.log("Error in status not matched");
@@ -67,11 +67,11 @@ function LoadData(Appointmentid) {
 
 }
 
-$(function () {debugger;
-    $("#dvRequested").hide();
-    $("#dvCancelled").hide();
-    $("#dvCompleted").hide();
-    $("#dvConfirmed").hide();
+$(function () {
+    $("[id*='dvRequested']").hide();
+    $("[id*='dvCancelled']").hide();
+    $("[id*='dvCompleted']").hide();
+    $("[id*='dvConfirmed']").hide();
 
 if (Appointmentid != undefined && Appointmentid != null) { 
     LoadData(Appointmentid); 
