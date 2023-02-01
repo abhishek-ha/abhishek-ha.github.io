@@ -9,14 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/superhero/bootstrap.min.css">
-  <script type="text/javascript" src="assets/mock.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/jquery.dropdown.css">
-  <script src="assets/jquery.dropdown.js"></script>
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
   </head>
   <body>
 
@@ -193,35 +186,27 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-<div class="col-lg-8 col-md-8 offset-md-2">
+<div class="col-lg-8 col-md-8 offset-md-1">
     <h2 class="header-content pt-3 pb-5"><b> Product Plan Copy Creation </b></h2> 
             </div>
 
 
  <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-2 col-form-label"> Select Client </label>
+    <label for="staticEmail" class="col-sm-2 offset-md-1 col-form-label"> Select Client </label>
+<div class="col-sm-9">
+     <select id="choices-multiple-remove-button" class="form-select form-control" placeholder="Select Client" multiple>
 
-<div class="col-sm-6">
-      <div class="text-info">Multi-select+JSON+Token Mode</div><br>
-      <div class="dropdown-mul-1">
-        <select style="display:none"  name="" id="" multiple placeholder="Select"> </select>
-      </div>
-    </div>
-
-    <!-- <div class="col-sm-6">
-      <select class="form-select">
-  <option> ABG UltraTech </option>
-    <option> Care </option>
-    <option> JP Cement </option>
-    <option>  Sodexo </option>
-  </select>
-   </div> -->
+            <option value="HTML" >ABG Ultatech </option>
+            <option value="Jquery"> Care Insurance </option>
+            <option value="CSS">JP Cement </option>
+        </select>
+   </div>
   </div>
 
 
 <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-2 col-form-label"> Select Plan </label>
-    <div class="col-sm-6">
+    <label for="staticEmail" class="col-sm-2 offset-md-1  col-form-label"> Select Plan </label>
+    <div class="col-sm-9">
       <select class="form-select">
   <option> Select Plan </option>
   <option> Fitassure </option>
@@ -233,30 +218,20 @@
    </div>
   </div>
   
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 offset-md-2 col-form-label"> Paid Member Addition Allowed </label>
-    <div class="col-sm-6">
-    <label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"> </span> 
-</label>
-    </div>
-  </div>
-
-
-
-   <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-2 col-form-label"> No of Extra Member Allowed </label>
-    <div class="col-sm-6">
-<input type="number" class="form-control" name="" placeholder="0">
- </div>
-  </div>
-
 
     <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-2 col-form-label"> Amount Per Member </label>
-    <div class="col-sm-6">
-<input type="text" class="form-control" name="" placeholder=" Enter Amount in INR ">
+    <label for="staticEmail" class="col-sm-2 offset-md-1 pt-5 col-form-label"> Client Name1 </label>
+    <div class="col-sm-3">
+      <label class="col-form-label"> Plan Name </label>
+<input type="text" class="form-control" name="" placeholder=" Enter Plan Name">
+ </div>
+ <div class="col-sm-3">
+  <label class="col-form-label"> Plan Code </label>
+<input type="text" class="form-control" name="" placeholder="Enter Plan Code">
+ </div>
+ <div class="col-sm-3">
+  <label class="col-form-label"> Plan Amount(Excluding GST) </label>
+<input type="text" class="form-control" name="" placeholder="Enter Plan Amount">
  </div>
   </div>
 
@@ -280,42 +255,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/custom.js"></script>
 
+<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
 
 
-  <script >
-  var Random = Mock.Random;
-    var json1 = Mock.mock({
-      "data|10-50": [{
-        name: function () {
-          return Random.name(true)
-        },
-        "id|+1": 1,
-        "disabled|1-2": true,
-        groupName: 'Group Name',
-        "groupId|1-4": 1,
-        "selected": false
-      }]
-    });
 
-    $('.dropdown-mul-1').dropdown({
-      data: json1.data,
-      limitCount: 40,
-      multipleMode: 'label',
-      choice: function () {
-      }
-    });
-   $('.dropdown-mul-2').dropdown({
-      limitCount: 5,
-      searchable: false
-    });
-   $('.dropdown-sin-1').dropdown({
-      readOnly: true,
-      input: '<input type="text" maxLength="20" placeholder="Search">'
-    });
-   $('.dropdown-sin-2').dropdown({
-      data: json2.data,
-      input: '<input type="text" maxLength="20" placeholder="Search">'
-    });
+<script>
+  
+$(document).ready(function(){
+    
+     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount:5,
+        searchResultLimit:5,
+        renderChoiceLimit:5
+      }); 
+     
+     
+ });
+
+
 </script>
 
 
