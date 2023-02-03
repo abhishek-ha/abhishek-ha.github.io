@@ -1108,12 +1108,12 @@ body{background-color:#f1f1f2}
     border-color:#4c91f7;
     text-decoration: none;
 }
-.box19 .icon li:first-child a{
+/*.box19 .icon li:first-child a{
     transition:all .6s cubic-bezier(.175,.885,.32,1.275) 0s;
 }
 .box19 .icon li:last-child a{
     transition:all .6s cubic-bezier(.175,.885,.32,1.275) .1s;
-}
+}*/
 @media only screen and (max-width:990px){
     .box19{
         margin-bottom:30px;

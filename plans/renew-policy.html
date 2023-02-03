@@ -812,7 +812,8 @@
             ev.preventDefault();
             OPDPlanRenewal($('#RenewPolicyNo').val());
         });
-        function OPDPlanRenewal(policyNo) {
+
+  function OPDPlanRenewal(policyNo) {
             GetOPDPlanForRenewal(policyNo).then(function (result) {
                 $('#PolicyNo').val(result.results.plan.policyNo);
                 $('#CustomerName').html(result.results.plan.fullName);
