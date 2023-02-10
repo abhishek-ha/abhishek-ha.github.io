@@ -824,11 +824,17 @@
                                 href="https://live.healthassure.in/Products/files/aceenture-tnc.pdf" target="_blank">
                                 *Terms & conditions </a></label>
                     </div>
+                    <div class="form-group" style="margin-left: 8px;" id="GenericTNCdiv">
+                        <input type="checkbox" id="GenericTNCAccepted" />
+                        <label class="form-check-label">I agree to the <a
+                                href="https://live.healthassure.in/Products/files/aceenture-tnc.pdf" target="_blank">
+                                *Terms & conditions </a></label>
+                    </div>
                     <div class="form-group">
                         <!--  <button style="margin-top: 15px;" id="Placeorder" class="btn btn-primary btn-block mb-2">Place
                     order</button> -->
                         <div class=" text-center" style="margin-top:20px;">
-                            <button class="placeorderbtn" id="Placeorder" style="margin-bottom:5px;">
+                            <button class="placeorderbtn" id="Placeorder" disabled style="margin-bottom:5px;">
                                 Place Order
                             </button>
                         </div>
@@ -966,13 +972,7 @@
                 LogRocket.identify(email);
             } catch { }
         }
-        $('#IsTCAccepted').click(function (e) {
-            if (this.checked) {
-                $("#Placeorder").prop('disabled', false);
-            } else {
-                $("#Placeorder").prop('disabled', true);
-            }
-        });
+       
         $('#congratulationsdiv').hide();
         $('#loadding').hide();
         function getUrlVars(url = window.location.href) {
@@ -1011,10 +1011,42 @@
             $("#IdTnChref").text('Good Health Declaration');
             $("#IdTnChref").prop('href', "https://live.healthassure.in/Products/files/Good-health-Declaration.pdf");
         }
+        var IsHideGenericTNC = Vars["IsHideGenericTNC"];
+        if (IsHideGenericTNC == "true") {
+            $("#GenericTNCdiv").hide();
+            if (IsVarifyEmailPhoneTNC == "false") {
+                $("#Placeorder").prop('disabled', false);
+            }
+        }
         var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
         if (IsEnableMembersAddtion == 'true') {
             $('#Membersdiv').show();
         }
+        $('#GenericTNCAccepted').click(function (e) {
+            if (this.checked) {
+                if (IsVarifyEmailPhoneTNC == "true") {
+                    if (document.getElementById('IsTCAccepted').checked) {
+                        $("#Placeorder").prop('disabled', false);
+                    }
+                } else {
+                    $("#Placeorder").prop('disabled', false);
+                }
+            } else {
+                $("#Placeorder").prop('disabled', true);
+            }
+        });
+        $('#IsTCAccepted').click(function (e) {
+            if (this.checked) {
+                if (document.getElementById('GenericTNCAccepted').checked) {
+                    $("#Placeorder").prop('disabled', false);
+                }
+                else if (IsHideGenericTNC == "true") {
+                    $("#Placeorder").prop('disabled', false);
+                }
+            } else {
+                $("#Placeorder").prop('disabled', true);
+            }
+        });
         $('#buyplanform').submit(function (event) {
             event.preventDefault();
             $('#TotalAmount').text('');
