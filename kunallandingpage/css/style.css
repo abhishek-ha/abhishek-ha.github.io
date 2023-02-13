@@ -395,8 +395,8 @@
 
 @media only screen and (min-width: 400px) {
 .chatsupportbox{
-  max-width: 300px;
-    right: 14%;
+  max-width: 350px;
+    right: 9%;
 }
 .scrollbar {
     height: 300px;   
