@@ -296,13 +296,13 @@
 
 @media only screen and (min-width: 350px) {
 .chatsupportbox{
-  max-width: 430px;
+  max-width: 350px;
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 10px;
   position: absolute;
   bottom: 20%;
-    right: 0%;
+    right: 3%;
 }
 .header {
   background: #0f5fc2;
@@ -385,29 +385,18 @@
   position: absolute;
   top: 10px;
 }
-.chatbox .chat:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.chatbox .chat:nth-child(odd) ion-icon {
-  left: -14px;
-}
-.chatbox .chat:nth-child(even) ion-icon {
-  right: -14px;
-  transform: rotate(180deg);
-}
 .scrollbar {
-    height: 300px;
+    height: 350px;
     width: 100%;
    padding: 6px 5px;
 }
 }
 
 
-
 @media only screen and (min-width: 400px) {
 .chatsupportbox{
   max-width: 300px;
-    right: 10%;
+    right: 14%;
 }
 .scrollbar {
     height: 300px;   
