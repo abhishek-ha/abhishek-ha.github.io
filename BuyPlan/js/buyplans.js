@@ -8,9 +8,9 @@
     s0.parentNode.insertBefore(s1, s0);
 })();
 
-async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP) {
+async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerOrderId, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP, GHDTNCAccepted, TNCAccepted) {
     var latitude = '', longitude = '';
-    try { 
+    try {
         var os = getCurrentOS();
         if (os == "Windows" || os == "Mac OS" || os == "Linux") {
             getLocation().then((loc) => {
@@ -32,7 +32,7 @@ async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, PartnerO
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'PartnerOPDPlanApiKey': '14UGczJo0lYOe5ilSzlT2cvLTj1lymz2lRWaBCwIQMd=pnIKeTDBAYApRXj6xO' };
         $.ajax({
             type: "POST", url: BaseUrl + "api/OPDPlans/OPDPlansPurchase",
-            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, PartnerOrderId: PartnerOrderId, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent, UserPurchaseLatitude: String(latitude), UserPurchaseLongitude: String(longitude), ClientIP: clientIP }),
+            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, PartnerOrderId: PartnerOrderId, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent, UserPurchaseLatitude: String(latitude), UserPurchaseLongitude: String(longitude), ClientIP: clientIP, GHDTNCAccepted: GHDTNCAccepted, TNCAccepted: TNCAccepted }),
             dataType: "json", headers: headers,
             success: function (result) {
                 AddLogRocket(Email, { PlanCode: PlanCode, log: "Paymant initiated" });

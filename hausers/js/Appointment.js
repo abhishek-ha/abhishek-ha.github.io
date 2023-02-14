@@ -2,7 +2,7 @@ var reportsPath = '';
 var href = new URL(window.location.href);
 var Appointmentid = href.searchParams.get("AppointmentId");
 function maplocation(lat, long) {
-    window.open('https://maps.google.com/?q=' + lat + ',' + lat);
+    window.open('https://maps.google.com/?q=' + lat + ',' + long);
 }
 $('#btnViewReports').click(function () {
     window.open(reportsPath);

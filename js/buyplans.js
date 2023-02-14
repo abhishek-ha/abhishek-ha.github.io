@@ -8,7 +8,7 @@
     s0.parentNode.insertBefore(s1, s0);
 })();
 
-async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP) {
+async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP, GHDTNCAccepted, TNCAccepted) {
     var latitude = '', longitude = '';
     try {
         var os = getCurrentOS();
@@ -32,7 +32,7 @@ async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCo
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: BaseUrl + "api/OPDPlans/BuyOPDPlanWithRazorpay",
-            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent, UserPurchaseLatitude: String(latitude), UserPurchaseLongitude: String(longitude), ClientIP: clientIP }),
+            data: JSON.stringify({ Name: Name, Email: Email, MobileNo: MobileNo, DOB: DOB, Gender: Gender, PlanCode: PlanCode, CouponCode: CouponCode, Status: 'BuyRequest', utmSource: utm_Source, utmMedium: utm_Medium, utmCampaign: utm_Campaign, utmTerm: utm_Term, utmContent: utm_Content, Relations: Relations, Agent: Agent, UserPurchaseLatitude: String(latitude), UserPurchaseLongitude: String(longitude), ClientIP: clientIP, GHDTNCAccepted: GHDTNCAccepted, TNCAccepted: TNCAccepted }),
             dataType: "json", headers: headers,
             success: function (result) {
                 try {
