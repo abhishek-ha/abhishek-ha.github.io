@@ -843,7 +843,7 @@
                     </div>
                     <div class="form-group" style="margin-left: 8px;" id="GenericTNCdiv">
                         <input type="checkbox" id="GenericTNCAccepted" />
-                        <label class="form-check-label">I agree to the <a
+                        <label class="form-check-label">I agree to the <a id="GenericTNChref"
                                 href="https://live.healthassure.in/Products/files/aceenture-tnc.pdf" target="_blank">
                                 *Terms & conditions </a></label>
                     </div>
@@ -976,6 +976,7 @@
     <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
     <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
     <script src="js/buyplans.min.js"></script>
+    <script src="js/PlanTncFile.js"></script>
     <script>
         var clientIP = '';
         try {
@@ -1035,6 +1036,7 @@
                 $("#Placeorder").prop('disabled', false);
             }
         }
+        $('#GenericTNChref').prop('href', GetPlanTncLink(Vars["PlanCode"]));
         var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
         if (IsEnableMembersAddtion == 'true') {
             $('#Membersdiv').show();
@@ -1276,7 +1278,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('GenericTNCAccepted').checked, document.getElementById('IsTCAccepted').checked).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1458,7 +1460,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('GenericTNCAccepted').checked, document.getElementById('IsTCAccepted').checked).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
