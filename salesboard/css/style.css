@@ -25,6 +25,7 @@ html{
     color: #000000!important;
     font-weight: 500;
     padding: 15px 20px 15px 20px!important;
+    width: 97%;
 }
 .custom-toggler.navbar-toggler {
     color: rgba(0,0,0,.5);
