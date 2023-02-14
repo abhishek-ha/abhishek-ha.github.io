@@ -17,6 +17,23 @@ body {
 html{
      overflow-x: hidden!important;
 }
+
+.w-97{
+    width: 97%;
+}
+
+
+@media only screen and (max-width: 300px) {
+ 
+}
+
+
+
+@media only screen and (min-width: 301px) {
+ 
+}
+
+
 .custom-navbar{
    box-shadow: 10px 0px 1px #eee;
    background-color: #F2F5FF;
@@ -25,7 +42,7 @@ html{
     color: #000000!important;
     font-weight: 500;
     padding: 15px 20px 15px 20px!important;
-    width: 97%;
+
 }
 .custom-toggler.navbar-toggler {
     color: rgba(0,0,0,.5);
@@ -144,6 +161,9 @@ html{
     z-index: 999999;
     width: 96%;
 }
+
+
+
 
 @media only screen and (max-width: 760px) { 
     #logo_custom{width: 40%;
