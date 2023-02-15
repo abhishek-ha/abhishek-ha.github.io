@@ -17,6 +17,59 @@ body {
 html{
      overflow-x: hidden!important;
 }
+
+.w-97{
+    width: 97%;
+}
+
+
+@media only screen and (max-width: 800px){
+.web{
+        display: none;
+    }
+.mob{
+        display: block;
+        background-color: #ffffff;
+    }
+.accordion {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+}
+
+@media only screen and (min-width: 801px){
+.mob{
+        display: none;
+    }
+.web{
+        display: block;
+    }
+.accordion {
+  width: 100%;
+/*background-color: #ffffff;*/
+  border-radius: 8px;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 0px 0px 0px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+ 
+}
+
+
+
+@media only screen and (min-width: 301px) {
+ 
+}
+
+
 .custom-navbar{
    box-shadow: 10px 0px 1px #eee;
    background-color: #F2F5FF;
@@ -25,7 +78,7 @@ html{
     color: #000000!important;
     font-weight: 500;
     padding: 15px 20px 15px 20px!important;
-    width: 97%;
+
 }
 .custom-toggler.navbar-toggler {
     color: rgba(0,0,0,.5);
@@ -144,6 +197,9 @@ html{
     z-index: 999999;
     width: 96%;
 }
+
+
+
 
 @media only screen and (max-width: 760px) { 
     #logo_custom{width: 40%;
@@ -1212,13 +1268,7 @@ body{background-color:#f1f1f2}
     right: 0px;
     position: absolute;
 }
-.accordion {
-  width: 100%;
-/*background-color: #ffffff;*/
-  border-radius: 8px;
-  padding: 15px;
-  margin: 0px 15px 0px 15px;
-}
+
 .accordion h2 {
   text-align: center;
 }
@@ -1263,6 +1313,13 @@ background-color: #ffffff;
   transition: all 0.3s linear;
   margin-bottom: 1px;
 }
+
+.accordion-content .description h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
 .accordion-content .title {
   font-size: 16px;
   font-weight: 600;
