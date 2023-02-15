@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Diagnostic | Confirmed Stage </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/Appointment.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="display: none;">
+
+	<div id="body">
+		<div class="web">
+			<div class="container mt-3">
+				<div class="row">
+					<div class="col-xl-9 col-lg-9 col-md-9 col-7">
+						<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end">
+						<img src="images/logo.png" class="img-fluid logo ">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-6 mt-minus">
+						<div class="row">
+							<div class="col-xl-2 col-lg-2 col-md-2 col-3">
+								<button id="btnGender" class="btn btn-primary1"> Male </button>
+							</div>
+							<div class="col-xl-2 col-lg-2 col-md-2 col-6">
+								<button id="btnAge" class="btn btn-primary1 "> Female </button>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-12 mt-2">
+								<div class="box">
+									<h4> Appointment Status </h4>
+									<button id="btnstatusname" class="btn btn-green statusbtn"> Appointment Confirmed
+									</button>
+									<div class="row">
+										<div class="col-lg-12 ">
+											<h4> Appointment Date </h4>
+										</div>
+										<div class="col-lg-6 col-md-8 col-sm-8 col-8 boxcol p-10">
+											<p id="txtAppointmentDate"> <img src="images/calendar-black.png"
+													class="boxicon"> Saturday, 12 June </p>
+										</div>
+										<div class="col-lg-6 col-md-4 col-sm-4 col-4 boxcol">
+											<p id="txtAppointmentTime"> <i class="fa-regular fa-clock"></i> 11:00 -
+												12:00
+											</p>
+										</div>
+										<div class="col-lg-12 col-md-12">
+											<h4> Center Location </h4>
+										</div>
+										<div class="col-lg-2 col-3" id="imgProviderImage">
+											<img src="images/apollo-logo.png" class="img-fluid">
+										</div>
+										<div class="col-lg-10 col-9">
+											<b id="ProviderName"></b>
+											<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida,
+												Uttar Pradesh 201301 <img src="images/google-map.png" class="boxicon">
+												Direction
+											</p>
+										</div>
+
+										<div class="col-lg-12">
+											<div class="col-lg-12 col-md-12" id="AppointmentAddressdiv">
+												<h4> Home Address </h4>
+												<p id="userAppointmentAddress"></p>
+											</div>
+											<div class="col-lg-12">
+												<h4> Appointment For </h4>
+												<p id="txtplanName"><i
+														class="fa-solid fa-circle-check text-success"></i> Annual Health
+													Checkup <a href="#"> (10 Tests Covered) </a> </p>
+											</div>
+											<div id="divCancelCaseNo" style="display: none;">
+												<h4 class="mb-0 pt-4 pb-2"> Case Id </h4>
+												<button id="btnCaseNo" class="btn btn-primary1"> APPOLO345676 </button>
+											</div>
+										</div>
+										<div class="col-lg-12" id="dvTestListBtn">
+											<button class="accordion"> Check Tests Covered </button>
+											<div class="panel">
+												<ul id="ulTest" class="mt-2 px-3" type="none">
+												</ul>
+											</div>
+										</div>
+										<div id="dvCaseNo">
+											<h4 class="mb-0 pt-4 "> Case Id </h4>
+											<button id="btnCaseNo" class="btn btn-primary1"> APPOLO345676 </button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-6 col-lg-6 col-md-6 col-6">
+						<img src="images/consult.png" class="img-fluid  float-end consultimg">
+					</div>
+
+					<div class="col-lg-12 col-md-12 mt-4">
+						<div class="instructbox" id="dvForCancelImage">
+							<h3 class="text-center pt-5">Sorry, your appointment has been cancelled </h3>
+							<p class="text-center"> We request you to please schedule an appointment again! </p>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 text-center">
+									<img src="images/calender.png" class="img-fluid w-15 my-4" />
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12 col-md-12 mt-3" id="dvForCompletedImage">
+							<div class="instructbox">
+								<h3 class=" pt-5"> Thankyou for choosing us </b></h3>
+								<p class="text-center"> Your appointment was completed successfully! Please find your
+									reports below. </p>
+								<div class="row">
+									<div class="col-lg-12 col-md-12 text-center">
+										<img src="images/appoinment-complete.png" class="img-fluid w-15 my-5" />
+										<div class="row">
+											<div class="col-lg-12 mb-4">
+												<button class="btn btn-reports" id="btnViewReports">View Reports
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-12 mt-3">
+							<div class="instructbox" id="dvForRequestImage">
+								<h3 class=" pt-5"> Waiting for center to accept your request </h3>
+								<p class="text-center"> We will notify you shortly! </p>
+								<div class="row">
+									<div class="col-lg-12 col-md-12 text-center">
+										<img src="images/request.png" class="img-fluid w-15 my-5" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-6" id="dvForConfirm">
+									<div class="box">
+										<div class="row">
+											<div class="col-lg-12">
+												<div id="dvDurationForTest">
+													<h4> Duration for Test </h4>
+													<p id="txtDurationForTest"> <img src="images/wallet.png"
+															class="boxicon">
+														Under 45 Mins </p>
+												</div>
+												<div id="dvPointOfContact">
+	<h4 class="pt-2"> Point Of Contact at Center </h4>
+													<div class="docbox">
+<p> <i class="fa-solid docboxicon px-1 fa-user-doctor text-primary ps-1"></i> <span id="txtPointOfContact" class="doctname ml-5"></span> </p>
+<p id="PocMobile" class="mb-0 ms-4"> </p>
+<p id="PocEmail" class="ms-4"> </p>
+													</div>
+												</div>
+				<h4 class="mb-0"> Fasting Required </h4>
+												<button id="btnFasting" class="btn btn-primary1">Yes </button>
+												<h4> Payment Mode </h4>
+<p id="txtPaymentMode"> <img src="images/wallet.png" class="boxicon">
+													Prepaid : No payment to be ginven at center </p>
+												<div id="dvPreprationForCheckup">
+													<h4> Before you go </h4>
+<p id="txtPreprationForCheckup"> Carry a valid identity proof in hard copy format for the appointment (Aadhar Card). </p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6 col-6">
+									<div class="row " id="dvAppointmentConfirmed">
+										<div class="box1 ">
+											<div class="col-lg-12">
+												<h3> For Centre Use only </h3>
+												<h4 class="mb-0 mt-1"> Case Id </h4>
+												<button id="btnCaseNoConfirmed" class="btn btn-primary1">APPOLO345676
+												</button>
+												<!-- <h4> Breakfast at Centre </h4>
+												<button id="btnBreakfastCentre" class="btn btn-success"> Yes </button> -->
+												<div id="Techniciandiv">
+													<h4> Technician Preferred </h4>
+													<button id="btnTechnician" class="btn btn-success"> Female </button>
+												</div>
+												<h4> Payment Settlement Mode </h4>
+												<p id="btnPaymentSettlementMode"> <img src="images/wallet.png"
+														class="boxicon1"> Credit : No payment to be tacken from customer
+											</div>
+											<div id="divReportSharing">
+												<h4 class="mb-0"> Report Sharing with Customer </h4>
+												<button id="btnReportSharing" class="btn btn-secondary"> No </button>
+											</div>
+											<h4 class="pb-2"> Appointment Recieved By at Centre </h4>
+											<div class="docbox">
+												<div class="row">
+													<div class="col-lg-3  col-2 boxcol p-10">
+														<img src="images/users.png" class="img-fluid w-75">
+													</div>
+													<div class="col-lg-9 col-10 boxcol">
+														<p class=" mb-0"> <span id="AppRecivedByName" class="doctname">
+																Mr. Abhishek Singh </span> </p>
+														<p id="AppRecievedByMobile"> <i class="fa-solid fa-phone"></i>
+															+91- 995544888 </p>
+														<p id="AppRecievedByEmail"> <i
+																class="fa-regular fa-envelope"></i>
+															support@healthassure.in </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="footer mt-3 web">
+			<div class="container">
+				<div class="row ">
+					<div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 footercol">
+						<img src="images/footer-logo.png" class="img-fluid">
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 footercol">
+						<h3> www.healthassure.in </h3>
+						<p class="mb-1"> 1st Floor, Excom House,North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E),
+							Mumbai- 400072 </p>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 footercol ">
+						<div class="row ms-2">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
+								<p class="mb-0"> <i class="fa-regular fa-envelope"></i>
+									<a href="mailto:support@healthassure.in" style="color:#ffffff;">
+										support@healthassure.in </a>
+								</p>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-12 footercol">
+								<p class="mb-0"> <img src="images/email.png" class="email"> +91-22-6167-6600/33 </p>
+							</div>
+							<div class="col-lg-8 offset-lg-4 col-md-8 offset-md-4 col-sm-6 footercol">
+								<ul>
+									<li><a href="https://twitter.com/healthassure1"> <i class="fa-brands fa fa-twitter"
+												target="blank"></i> </a> </li>
+									<li> <a href="https://www.facebook.com/healthassure.india/"> <i
+												class="fa-brands fa fa-facebook-f" target="blank"></i></a> </li>
+									<li><a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home"
+											target="_blank"> <i class="fa-brands fa fa-linkedin-in"></i> </a> </li>
+									<li><a href="https://www.instagram.com/health.assure/" target="_blank"> <i
+												class="fa-brands fa fa-instagram"></i> </a> </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 text-center footercol" style="display: none;">
+						<h3> Download Now </h3>
+						<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank"><img
+								src="images/playstore.png" class="img-fluid w-40"></a>
+						<a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485"
+							target="_blank"> <img src="images/appstore.png" class="img-fluid w-40"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	</div>
+
+	<section class="mob">
+		<div class="container">
+			<div class="row pt-4 pb-3 mx-1">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-12 mx-auto text-center ">
+					<img src="images/logo-center.png" class="img-fluid logo ">
+				</div>
+			</div>
+			<div class="row bg-white shadow py-2 mx-1">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+					<h1 class="head" id="txtMemberName"> Hi, Aditya Tandon </h1>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-12">
+					<div class="row">
+						<div class="col-xl-2 col-lg-2 col-md-2 col-3">
+							<button id="btnGender" class="btn btn-primary1"> Male </button>
+						</div>
+						<div class="col-xl-2 col-lg-2 col-md-2 col-6">
+							<button id="btnAge" class="btn btn-primary1 "> 32 Years </button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 mt-3">
+							<div class="box pt-2">
+								<h4> Appointment Status </h4>
+								<button id="btnstatusname" class="btn btn-grey statusbtn"> Appointment Requested
+								</button>
+								<div class="row">
+									<div class="col-lg-12 ">
+										<h4>Appointment Date </h4>
+									</div>
+									<div class="col-lg-6 col-12">
+										<p id="txtAppointmentDate"> <img src="images/calendar-black.png"
+												class="boxicon"> Saturday, 12 June </p>
+									</div>
+									<div class="col-lg-6 col-12">
+										<p id="txtAppointmentTime"> <img src="images/clock.png" class="boxicon"> 11:00
+											AM - 12:00 PM </p>
+									</div>
+									<div class="col-lg-12 col-md-12 pt-1">
+										<h4> Center Location </h4>
+									</div>
+									<div class="col-lg-2 col-3" id="imgProviderImage">
+										<img src="images/apollo-logo.png" class="img-fluid">
+
+									</div>
+									<div class="col-lg-10 col-9">
+										<b id="ProviderName"></b>
+										<p id="txtAddress"> E 2, Apollo Hospitals Rd, Block E, Sector 26, Noida, Uttar
+											Pradesh 201301 <img src="images/google-map.png" class="boxicon"> Direction
+										</p>
+									</div>
+									<h4> Appointment For </h4>
+									<p id="txtplanName"><i class="fa-solid fa-circle-check text-success"></i> Annual
+										Health Checkup <a href="#"> (10 Tests Covered) </a> </p>
+									<div id="divCancelCaseNo" style="display: none;">
+										<h4 class="mb-0 pt-4 pb-2"> Case Id </h4>
+										<button id="btnCaseNo" class="btn btn-primary1"> APPOLO345676 </button>
+									</div>
+									<div class="col-lg-12">
+										<button class="accordion"> Check Tests Covered </button>
+										<div class="panel">
+											<ul id="ulTest" class="mt-2 px-3" type="none">
+												<li> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-12 col-md-12 ">
+					<div class="instructbox" id="dvForCancelImage">
+						<h3 class="text-center pt-5">Sorry, your appointment has been cancelled </h3>
+						<p class="text-center"> We request you to please schedule an appointment again! </p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 text-center">
+								<img src="images/calender.png" class="img-fluid w-15 my-4" />
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12 col-md-12 " id="dvForCompletedImage">
+						<div class="instructbox">
+							<h3 class=" pt-5"> Thankyou for choosing us </b></h3>
+							<p class="text-center"> Your appointment was completed successfully! Please find your
+								reports below. </p>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 text-center">
+									<img src="images/appoinment-complete.png" class="img-fluid w-15 my-5" />
+									<div class="row">
+										<div class="col-lg-12 mb-4">
+											<button class="btn btn-reports" id="btnViewReports1">View Reports
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="instructbox" id="dvForRequestImage">
+							<h3 class=" pt-5"> Waiting for center to accept your request </h3>
+							<p class="text-center"> We will notify you shortly! </p>
+							<div class="row">
+								<div class="col-lg-12 col-md-12 text-center">
+									<img src="images/request.png" class="img-fluid w-15 my-5" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12" id="dvForConfirm">
+								<div class="box">
+									<div class="row">
+										<div class="col-lg-12 ">
+											<div id="dvDurationForTest">
+												<h4> Duration for Test </h4>
+<p id="txtDurationForTest"> <i class="fa-solid fa-clock "> </i> Under 45 Mins </p>
+											</div>
+											<div id="dvPointOfContact">
+	<h4 class="pt-2"> Point Of Contact at Center </h4>
+												<div class="docbox">
+<p> <i class="fa-solid docboxicon px-1 fa-user-doctor text-primary pl-3 pt-1"></i> <span id="txtPointOfContact" class="doctname "></span> </p>
+<p id="PocMobile" class="mb-0 pl-3 ms-4"> </p>
+<p id="PocEmail" class="pl-3 ms-4"> </p>
+
+												</div>
+											</div>
+<h4 class="mb-1"> Fasting Required </h4>
+<button id="btnFasting" class="btn btn-primary1">Yes </button>
+											<h4> Payment Mode </h4>
+<p id="txtPaymentMode"> <img src="images/wallet.png" class="boxicon">
+Prepaid : No payment to be ginven at center </p>
+<div id="dvPreprationForCheckup">
+					<h4> Before you go </h4>
+<p id="txtPreprationForCheckup"> Carry a valid identity proof in hard copy format for the appointment (Aadhar Card). </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="box1">
+									<div class="row " id="dvAppointmentConfirmed">
+										<div class="col-lg-12 pt-3">
+											<h3> For Centre Use only </h3>
+											<h4 class="mb-0 mt-1"> Case Id </h4>
+											<button id="btnCaseNoConfirmed" class="btn btn-primary1">APPOLO345676
+											</button>
+											<!-- <h4 class="mb-0"> Breakfast at Centre </h4>
+											<button id="btnBreakfastCentre" class="btn btn-success"> Yes </button> -->
+											<div id="Techniciandiv">
+												<h4> Technician Preferred </h4>
+												<button id="btnTechnician" class="btn btn-success"> Female </button>
+											</div>
+											<h4> Payment Settlement Mode </h4>
+											<p id="btnPaymentSettlementMode"> <img src="images/wallet.png"
+													class="boxicon1"> Credit : No payment to be tacken from customer
+											</p>
+											<div id="divReportSharing">
+												<h4 class="mb-1"> Report Sharing with Customer </h4>
+												<button id="btnReportSharing" class="btn btn-secondary"> No </button>
+											</div>
+											<h4 class="pb-1"> Appointment Recieved By at Centre</h4>
+											<div class="docbox mb-2">
+												<div class="row">
+													<div class="col-lg-3  col-2 boxcol p-10">
+														<img src="images/users.png" class="img-fluid w-75">
+													</div>
+													<div class="col-lg-9 col-10 boxcol">
+														<p class=" mb-0"> <span id="AppRecivedByName" class="doctname">
+																Mr. Abhishek Singh </span> </p>
+														<p id="AppRecievedByMobile"> <i class="fa-solid fa-phone"></i>
+															+91- 995544888 </p>
+														<p id="AppRecievedByEmail"> <i
+																class="fa-regular fa-envelope"></i>
+															support@healthassure.in </p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row footer">
+
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 footercol pt-1 pb-2" style="display: none;">
+						<h3 class="pb-2"> Download Now </h3>
+						<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank">
+							<img src="images/playstore.png" class="img-fluid w-40"></a>
+						<a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485"
+							target="_blank"><img src="images/appstore.png" class="img-fluid w-40"></a>
+					</div>
+
+					<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-9 footercol pt-1 pb-2">
+						<h3> www.healthassure.in </h3>
+						<p class="mb-1"> 1st Floor, Excom House,North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E),
+							Mumbai- 400072 </p>
+						<h3> Connect </h3>
+						<p class="mb-0"> <i class="fa-regular fa-envelope"></i>
+							<a href="mailto:support@healthassure.in" style="color:#ffffff;">
+								support@healthassure.in </a>
+						</p>
+						<p class="mb-0"> <img src="images/email.png" class="email"> +91-22-6167-6600/33 </p>
+						<ul>
+							<li><a href="https://twitter.com/healthassure1"> <i class="fa-brands fa fa-twitter"
+										target="blank"></i> </a> </li>
+							<li> <a href="https://www.facebook.com/healthassure.india/"> <i
+										class="fa-brands fa fa-facebook-f" target="blank"></i></a> </li>
+							<li><a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home"
+									target="_blank"> <i class="fa-brands fa fa-linkedin-in"></i> </a> </li>
+							<li><a href="https://www.instagram.com/health.assure/" target="_blank"> <i
+										class="fa-brands fa fa-instagram"></i> </a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.6.1.js"
+				integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+				integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+				crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+				integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+				crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/Appointment.js"></script>
+			<script>
+				var acc = document.getElementsByClassName("accordion");
+				var i;
+				for (i = 0; i < acc.length; i++) {
+					acc[i].addEventListener("click", function () {
+						this.classList.toggle("active");
+						var panel = this.nextElementSibling;
+						if (panel.style.maxHeight) {
+							panel.style.maxHeight = null;
+						} else {
+							panel.style.maxHeight = panel.scrollHeight + "px";
+						}
+					});
+				}
+			</script>
+</body>
+
+</html>
