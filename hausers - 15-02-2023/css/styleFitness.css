@@ -464,11 +464,6 @@ font-family: fontawesome;
 font-weight: 600;
 font-size:15px ;
 line-height:18px;
-margin-bottom: 0px;
-}
-
-.margin-5{
-    margin-left: 5px !important;
 }
 .sub-heading{
 font-weight: 700;
@@ -2829,7 +2824,7 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-top: 8px;
 }
 .box1{
@@ -3172,7 +3167,7 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     margin-top: 15px;
 }
 .box1{
@@ -3331,20 +3326,4 @@ font-family: fontawesome;
 }
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;
-}
-
-.column-gap-250{
-    column-gap: 250px;
-}
-
-img{
-    object-fit: contain;
-}
-
-.padding-right-0{
-    padding-right: 0px !important;
-}
-
-.padding-left-0{
-    padding-left: 0px !important;
 }
