@@ -18,31 +18,62 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    // Copy the below lines under window.fcWidget.init inside initFreshChat function in the above snippet
-
-    // To set unique user id in your system when it is available
-    window.fcWidget.setExternalId("john.doe1987");
-
-    // To set user name
-    window.fcWidget.user.setFirstName("John");
-
-    // To set user email
-    window.fcWidget.user.setEmail("john.doe@gmail.com");
-
-    try {
-      window.fcWidget.user.setMobileNo("john.doe@gmail.com");
-    } catch {
-
+    let href = new URL(window.location.href);
+    function GetUserInfoAndAppointmentHistory() {
+      return new Promise(function (resolve, reject) {
+        $.ajax({
+          type: "GET",
+          url: "https://live.healthassure.in/ProductApi/api/UserOPDPlans/GetUserInfoAndAppointmentHistory?MobileNo=" + href.searchParams.get("MobileNo"),
+          dataType: "json",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+          },
+          success: function (result) {
+            if (result.status) {
+              resolve(result) // Resolve promise and go to then()
+            } else {
+              reject(result) // Reject the promise and go to catch()
+            }
+          },
+          error: function (eror) {
+            console.warn(eror);
+            reject(err) // Reject the promise and go to catch()
+          }
+        });
+      });
     }
-    // To set user properties
-    window.fcWidget.user.setProperties({
-      plan: "Pro",                 // meta property 1
-      status: "Active"                // meta property 2
-    });
+    // var Data= {
+    //   ExternalId : "john.doe1987",
+    //   FirstName : "John",
+    //   Email : href.searchParams.get("EmailId"),        
+    //   MobileNo : href.searchParams.get("MobileNo"),
+    //   "plan": "Pro",
+    //   "status": "Active"
+    // }
     function initFreshChat() {
       window.fcWidget.init({
         token: "2dce7ffd-8f15-40de-9fc7-d504acc9df78",
         host: "https://healthassure.freshchat.com"
+      });
+      GetUserInfoAndAppointmentHistory().then(function (d) {
+        var Data = {
+          PolicyNo: d.results.policyNo,
+          CustomerName: d.results.customerName,
+          Email: d.results.customerEmail,
+          MobileNo: d.results.customerMobile,
+          "gender": d.results.gender,
+          "dob": d.results.dob,
+          "RelationList": JSON.stringify(d.results.relationList),
+          "Plans": JSON.stringify(d.results.plans),
+          "AppointmentDetails": JSON.stringify(d.results.appointmentDetails)
+        }
+        window.fcWidget.user.setProperties(Data).then(function () {
+          console.log('User Set');
+        }, function () {
+          console.log("User Not Set");
+        });
       });
     }
     function initialize(i, t) {
