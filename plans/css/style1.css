@@ -3326,7 +3326,7 @@ div {
    color:#ffffff!important;
 }
 .platinumultimaimg{
-    margin-top: -1956px;
+    margin-top: -1842px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
@@ -3611,7 +3611,6 @@ div {
     font-size: 18px!important;
     font-weight: 600;
 }
-
 .logo-text h3{
     font-size: 16px;
     font-family: 'Inter', sans-serif; 
@@ -4021,7 +4020,6 @@ height:630px;
 .relaxtop{
     padding-top: 6px;
 }
-
 .whatsapp-btn{
     background-color: #00af87;
     color: #ffffff;
@@ -4033,6 +4031,13 @@ height:630px;
     border:2px solid #00af87;
     margin-left: 44%;
 }
+.platinumultima{
+    height:815px;
+   }
+.platinumultimaimg{
+    margin-top: -1766px;
+}
+
 }
 
 @media only screen and (min-width: 351px){
@@ -4493,6 +4498,12 @@ height:630px;
     width: 30px;
     float: left;
 }
+.platinumultima{
+    height:770px;
+   }
+.platinumultimaimg{
+    margin-top: -1681px;
+}
 }
 
 @media only screen and (min-width: 375px){
@@ -4937,6 +4948,15 @@ height:630px;
 .allplanspace3 {
     padding-top: 54px;
 }
+
+.platinumultima{
+    height:732px;
+   }
+.platinumultimaimg{
+    margin-top: -1615px;
+}
+
+
 }
 
 @media only screen and (min-width: 390px){
@@ -4985,6 +5005,13 @@ height:630px;
 .allplanspace3 {
     padding-top: 54px;
 }
+.platinumultima{
+    height:735px;
+   }
+.platinumultimaimg{
+    margin-top: -1624px;
+}
+
 
 }
 
@@ -5288,7 +5315,12 @@ height:630px;
 .allplanspace3 {
     padding-top: 44px;
 }
-
+.platinumultima{
+    height:711px;
+   }
+.platinumultimaimg{
+    margin-top: -1579px;
+}
 
 
 
@@ -5708,6 +5740,14 @@ height:630px;
     padding-top: 22px;
 }
 
+.platinumultima{
+    height:669px;
+   }
+.platinumultimaimg{
+    margin-top: -1505px;
+}
+
+
 }
 
 
@@ -6059,6 +6099,13 @@ height:321px;
     padding-top: 22px;
 }
 
+.platinumultima{
+    height:648px;
+   }
+.platinumultimaimg{
+    margin-top: -1461px;
+}
+
 
 }
 
@@ -6345,10 +6392,18 @@ height:545px;
 .allplanspace3 {
     padding-top: 43px;
 }
-
 .mediyartopspace{
     padding-top: 50px;
 }
+.platinumultima{
+    height:588px;
+   }
+.platinumultimaimg{
+    
+    margin-top: -1348px;
+    margin-left: 10%;
+}
+
 
 }
 
@@ -6542,7 +6597,6 @@ height:545px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
@@ -6605,6 +6659,14 @@ height:545px;
    height:580px;
     width:385px;
 }
+.platinumultima{
+    height:567px;
+   }
+.platinumultimaimg{
+   margin-top: -1300px;
+    margin-left: 13%;
+}
+
 
 }
 
@@ -6735,6 +6797,15 @@ height:545px;
 .allplanspace3 {
     padding-top: 43px;
 }
+
+.platinumultima{
+    height:567px;
+   }
+.platinumultimaimg{
+   margin-top: -1300px;
+    margin-left: 13%;
+}
+
 
 }
 
@@ -6886,6 +6957,15 @@ height:545px;
 .mediyartopspace{
     padding-top: 50px;
 }
+
+.platinumultima{
+    height:567px;
+   }
+.platinumultimaimg{
+   margin-top: -1300px;
+    margin-left: 13%;
+}
+
 
 }
 
@@ -7274,6 +7354,14 @@ height:321px;
     width: 38px;
 }
 
+.platinumultima{
+    height:567px;
+   }
+.platinumultimaimg{
+   margin-top: -1300px;
+    margin-left: 13%;
+}
+
 
 }
 
@@ -7536,6 +7624,14 @@ height:321px;
 .mediyartopspace{
     padding-top: 29px;
 }
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
 
 
 }
@@ -7667,6 +7763,15 @@ height:321px;
 .tradeindia{
     height:615px;
 }
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
+
 }
 
 @media only screen and (min-width: 850px){
@@ -7757,6 +7862,16 @@ height:321px;
 .tradeindia{
     height:615px;
 }
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
+
+
 }
 
 
@@ -8108,6 +8223,17 @@ height:652px;
 .renewpolicy-benefits img{
     width: 30px;
 }
+
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
+
+
 }
 
 @media only screen and (min-width: 950px){
@@ -8302,6 +8428,13 @@ height:652px;
 
 .mediyartopspace{
     padding-top: 29px;
+}
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
 }
 
 
@@ -8584,6 +8717,14 @@ height:652px;
     padding-top: 50px;
 }
 
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
 
 }
 
@@ -8672,6 +8813,15 @@ height:652px;
     margin-right: auto;
     position:relative;
 }
+
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
+}
+
 }
 
 @media only screen and (min-width: 1100px){
@@ -8915,6 +9065,14 @@ height:652px;
 }
 .allplanspace3 {
     padding-top: 59px;
+}
+
+.platinumultima{
+    height:526px;
+   }
+.platinumultimaimg{
+   margin-top: -1213px;
+    margin-left: 22%;
 }
 
 
@@ -9249,9 +9407,15 @@ height:652px;
 .allplanspace3 {
     padding-top: 59px;
 }
-
 .mediyartopspace{
     padding-top: 50px;
+}
+.platinumultima{
+    height:626px;
+   }
+.platinumultimaimg{
+   margin-top: -1417px;
+    margin-left: 9%;
 }
 
 
@@ -9593,6 +9757,14 @@ height:652px;
 }
 .allplanspace3 {
     padding-top: 49px;
+}
+
+.platinumultima{
+    height:610px;
+   }
+.platinumultimaimg{
+   margin-top: -1385px;
+    margin-left: 9%;
 }
 
 }
