@@ -198,7 +198,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     border-radius: 20px;
     min-width: 150px;
     font-weight: 600;
@@ -292,7 +292,7 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     margin-top: 3px;
 }
 .box1{
@@ -588,7 +588,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
    font-size: 10px;
     font-weight: 600;
     line-height: 16px;
@@ -970,7 +970,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
      font-size: 11px;
     min-width: 180px;
     font-weight: 600;
@@ -1353,7 +1353,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
      font-size: 11px;
     min-width: 180px;
     font-weight: 600;
@@ -1735,7 +1735,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     font-size: 8px;
     min-width: 130px;
     font-weight: 600;
@@ -2098,7 +2098,7 @@ line-height:26.5px ;
     background-color:#F5720A;
     color: #ffffff;
     border-radius: 20px;
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     font-size: 12px;
     min-width: 165px;
     font-weight: 600;
@@ -2457,7 +2457,7 @@ line-height:26.5px ;
 }
 
 .btn-orange{
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     font-size: 10px;
     min-width: 160px;
      font-weight: 400;
@@ -2763,7 +2763,7 @@ line-height:26.5px ;
 }
 
 .btn-orange{
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     font-size: 10px;
     min-width: 165px;
      font-weight: 400;
@@ -2824,7 +2824,7 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     margin-top: 8px;
 }
 .box1{
@@ -3109,7 +3109,7 @@ line-height:26.5px ;
     min-width: 228px;
 }
 .btn-orange{
-    border: 1px solid #F5720A;
+    /* border: 1px solid #F5720A; */
     font-size: 14px;
     min-width: 180px;
     font-weight: 600;
@@ -3167,7 +3167,7 @@ line-height:26.5px ;
 .box h4{
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     margin-top: 15px;
 }
 .box1{
@@ -3327,3 +3327,40 @@ font-family: fontawesome;
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,1)!important;
 }
+
+.padding-right-0{
+    padding-right: 0px;
+}
+
+.padding-left-0{
+    padding-left: 0px;
+}
+
+img{
+    object-fit: contain !important;
+}
+
+@media(min-width: 768px){
+    .footercol{
+        text-align: right;
+    }
+    
+    .footercol ul{
+        margin: 0px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: flex-end;
+    }
+    
+    .footercol ul li{
+        margin: 0px;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .md__none{
+        display: none;
+    }
+}
+
