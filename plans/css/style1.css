@@ -3308,17 +3308,17 @@ div {
    background-color:#0f5fc2;
     color:#EFEDD8; 
     right:0px; 
-    width:150px;
+    width:180px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
     text-transform:none;
     padding-top:8px;
     padding-bottom:8px;
-    font-size:19px;
+    font-size:15px;
     margin-right:9px;
     cursor:pointer;
-    margin-top:2px;
+    margin-top:8px;
 }
 .platinumultima .buybtn:hover{
    background-color:#0860cc;
@@ -8716,13 +8716,12 @@ height:652px;
 .mediyartopspace{
     padding-top: 50px;
 }
-
 .platinumultima{
-    height:526px;
+    height:710px;
    }
 .platinumultimaimg{
-   margin-top: -1213px;
-    margin-left: 22%;
+   margin-top: -1589px;
+    margin-left: 0%;
 }
 
 
@@ -8815,11 +8814,11 @@ height:652px;
 }
 
 .platinumultima{
-    height:526px;
+    height:710px;
    }
 .platinumultimaimg{
-   margin-top: -1213px;
-    margin-left: 22%;
+   margin-top: -1589px;
+    margin-left: 0%;
 }
 
 }
@@ -9066,13 +9065,12 @@ height:652px;
 .allplanspace3 {
     padding-top: 59px;
 }
-
 .platinumultima{
-    height:526px;
+    height:710px;
    }
 .platinumultimaimg{
-   margin-top: -1213px;
-    margin-left: 22%;
+   margin-top: -1589px;
+    margin-left: 0%;
 }
 
 
@@ -14037,5 +14035,10 @@ h4{color:#444}
     font-weight: 600;
     color: #0f5fc2;
     padding: 20px 0px 20px 0px;
+}
+
+
+.mb-6{
+    margin-bottom: 60px;
 }
 
