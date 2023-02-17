@@ -22,6 +22,11 @@ html{
     width: 97%;
 }
 
+.logo img {
+    width: 160px;
+}
+
+
 
 @media only screen and (max-width: 800px){
 .web{
@@ -825,7 +830,7 @@ html{
     background: white;
  /*   min-height: 50px;
     min-width: 100px;*/
-   margin-top: 70px;
+   margin-top: 90px;
        height: 52px;
    }
 .item:hover{
