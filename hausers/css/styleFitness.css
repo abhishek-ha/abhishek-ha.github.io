@@ -3348,3 +3348,28 @@ img{
 .padding-left-0{
     padding-left: 0px !important;
 }
+
+@media(min-width: 768px){
+    .footercol{
+        text-align: right;
+    }
+    
+    .footercol ul{
+        margin: 0px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: flex-end;
+    }
+    
+    .footercol ul li{
+        margin: 0px;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .md__none{
+        display: none;
+    }
+}
+

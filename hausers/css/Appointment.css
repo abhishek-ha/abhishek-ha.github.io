@@ -111,6 +111,7 @@ line-height:26.5px ;
     font-size: 12px;
     margin-top: 2px;
 }
+
 .footer h3{
     color: #ffffff;
     font-size: 14px;
@@ -229,7 +230,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 1px;
     min-width: 56px;
     font-size: 10px;
     font-weight: 600;
@@ -621,7 +621,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 1px;
     min-width: 64px;
     font-size: 10px;
     font-weight: 600;
@@ -1001,7 +1000,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 1px;
     min-width: 75px;
     font-size: 11px;
     font-weight: 600;
@@ -1384,7 +1382,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 1px;
     min-width: 75px;
     font-size: 11px;
     font-weight: 600;
@@ -1764,7 +1761,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 5px;
     min-width: 68px;
     font-size: 10px;
     font-weight: 600;
@@ -2127,7 +2123,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 5px;
     min-width: 54px;
     font-size: 10px;
     font-weight: 600;
@@ -2476,7 +2471,6 @@ line-height:26.5px ;
     background-color:#0E5FC1 ;
     color: #ffffff;
     border-radius: 20px;
-    margin: 5px;
     min-width: 65px;
     font-size: 10px;
     font-weight: 600;
@@ -2778,7 +2772,6 @@ line-height:26.5px ;
 }
 
 .btn-primary1{
-    margin: 5px;
     min-width: 87px;
     font-size: 12px;
     font-weight: 600;
@@ -3122,7 +3115,6 @@ line-height:26.5px ;
 }
 
 .btn-primary1{
-    margin: 0px;
     min-width: 87px;
     font-size: 14px;
     font-weight: 600;
