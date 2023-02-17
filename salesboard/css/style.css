@@ -1151,6 +1151,7 @@ body{background-color:#f1f1f2}
     border-color:#4c91f7;*/
     text-decoration: none;
 }
+
 /*.box19 .icon li:first-child a{
     transition:all .6s cubic-bezier(.175,.885,.32,1.275) 0s;
 }
@@ -1253,7 +1254,6 @@ body{background-color:#f1f1f2}
     right: 0px;
     position: absolute;
 }
-
 .accordion h2 {
   text-align: center;
 }
