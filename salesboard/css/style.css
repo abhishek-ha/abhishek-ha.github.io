@@ -844,9 +844,6 @@ html{
         font-weight: 500;
         text-decoration: none;
      }
-
-
-
 /*.item {
     display: inline-block;
     background: skyblue;
@@ -854,8 +851,6 @@ html{
     min-width: 400px;
     margin: 2em 1em;
   }*/
-
-
   @media screen and (max-width: 500px) {
     .item {
       min-height: 50px;
@@ -881,15 +876,10 @@ html{
     border-bottom: 1px solid #cccccc!important;
     cursor: pointer;
 }
-
 .our-journey img{
     width: 100%;
     height: 85%;
 }
-
-
-
-
 footer{
    padding: 40px 0px 10px 0px;
     background-color: #457e70;
@@ -899,7 +889,6 @@ footer{
     background-repeat: no-repeat;
     color: #fff;
 }
-
 footer h3{
    font-size: 20px;
     line-height: 27px;
@@ -915,7 +904,6 @@ footer .subscribe{
     font-size: 14px;
     border-bottom: 1px solid #cccccc!important;
 }
-
 footer .subscribe:focus{
    background-color: transparent;
      color: #ffffff!important;
@@ -943,7 +931,6 @@ color: #b9cec9;
 footer .subscribe::-moz-placeholder { /* Firefox 19+ */
   color: #b9cec9;
 }
-
 .nav-pills-custom .nav-link {
     color: #aaa;
     background: #fff;
@@ -976,14 +963,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     color: #000000;
     padding-top: 20px;
 }
-
-
-
-
-
 /* Start On Hover Box Animation */
-
-
 
 
 /*********************** Demo - 1 *******************/

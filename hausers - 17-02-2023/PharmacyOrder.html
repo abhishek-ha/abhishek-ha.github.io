@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Pharmacy | Order Completed </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylePhyrmacy.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+		integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<section class="footerbtm">
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col-xl-9 col-lg-9 col-md-9 col-7">
+					<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end pb-3">
+					<img src="images/logo.png" class="img-fluid logo ">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-12">
+					<button id="btnGender" class="btn btn-primary1"> Male </button><button id="btnAge"
+						class="btn btn-primary1"> Female </button>
+					<div class="row">
+						<div class="col-lg-12 mt-4 ">
+							<div class="box pt-4">
+								<h4> Appoinment Status </h4>
+								<button id="btnstatusname" class="btn btn-orange"> Order Delivered </button>
+								<div class="row">
+									<div class="col-lg-12 pt-4">
+										<h4>Estimated Date </h4>
+									</div>
+									<div class="col-lg-6">
+										<p id="txtAppointmentDate"> <i class="fa-solid fa-calendar-check"></i> Saturday,
+											12 June </p>
+									</div>
+
+									<div class="col-lg-12 col-md-12 pt-1">
+										<h4> Delivery At </h4>
+									</div>
+									<div class="col-lg-12 col-8">
+										<p>
+											<Label id="txtAppointmentAddress">E 2, Apollo Hospitals Rd, Block E, Sector
+												26, Noida, Uttar Pradesh 201301</Label>
+											<img src="images/google-map.png" id="mapLogo" width="15">
+										</p>
+									</div>
+									<div class="col-lg-12 mt-3">
+										<h4> View Order Details </h4>
+										<p>
+											<i class="fa-solid fa-circle-check text-success"></i> <span class="pl-3">
+												10+
+												Medicines Order
+											</span>
+										</p>
+									</div>
+									<div class="col-lg-12 mt-3">
+										<h4> Track Order Details </h4>
+										<p>
+											<button class="btn btn-secondary" data-toggle="modal" id="btnTrackRorder"
+												data-bs-toggle="modal" style="padding: 4px 17px;"
+												data-target="#TrackOrderModal">
+												Verify My Track Order
+											</button>
+										</p>
+									</div>
+								</div>
+
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#accordion"
+													href="#collapseOne" aria-expanded="true"
+													aria-controls="collapseOne">
+													View Order Details </a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+											aria-labelledby="headingOne">
+											<div class="panel-body">
+
+												<div class="accordion shadow">
+													<ul type="none">
+														<li><i class="fa-solid fa-circle-check text-success"></i>
+															Advance Health Checkup <a href="#"> (10 Tests Covered) </a>
+														</li>
+														<li><i class="fa-solid fa-circle-check text-success"></i> Heart
+															Healt Checkup <a href="#"> (21 Tests Covered) </a> </li>
+														<li><i class="fa-solid fa-circle-check text-success"></i> Health
+															Assure Checkup <a href="#"> (2 Tests Covered) </a> </li>
+														<li><i class="fa-solid fa-circle-check text-success"></i>
+															Advance Health Checkup <a href="#"> (10 Tests Covered) </a>
+														</li>
+														<li><i class="fa-solid fa-circle-check text-success"></i>
+															Advance Health Checkup <a href="#"> (10 Tests Covered) </a>
+														</li>
+														<li><i class="fa-solid fa-circle-check text-success"></i>
+															Advance Health Checkup <a href="#"> (10 Tests Covered) </a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-12 mt-4">
+									<h4> Prescription </h4>
+									<p><img src="images/epass.png" width="20"> my prescription.pdf </p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-5">
+					<img src="images/pharmacy.png" class="img-fluid ">
+					<div class="row mt-5">
+						<div class="box1 ms-5 ">
+							<div class="col-lg-12" id="dvCenterUseOnly">
+								<h3> For Centre Use only </h3>
+								<h4 class="mb-0 "> Case Id </h4>
+								<button id="btnCaseNo" class="btn btn-primary1"> ORDER0345676 </button>
+								<h4> Order Amount </h4>
+								<p> <i class="fa-solid fa-indian-rupee-sign"></i> 5000 </p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-12 col-md-12 mt-3">
+					<div class="instructbox" id="dvOrderCompleted">
+						<h3 class="text-center pt-5"> Thankyou for choosing us </h3>
+						<p class="text-center"> Your order has been delivered successfully. </p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 text-center my-5">
+								<img src="images/tele-success.png" class="img-fluid w-15 mb-4" />
+								<div class="row mx-auto">
+									<div class="col-lg-12 mb-4">
+										<button class="btn btn-reports"> Reorder? </button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="instructbox" id="dvOutDelivery">
+						<h3 class="text-center pt-5"> Your order is on its way </h3>
+						<p class="text-center"> Please be patient, your order is out for delivey. </p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 text-center my-5">
+								<img src="images/track-order.png" class="img-fluid w-15 mb-4" />
+								<div class="row mx-auto">
+									<div class="col-lg-12 mb-4">
+										<button class="btn btn-reports"> Track Order </button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="instructbox" id="dvPaymentDue">
+						<h3 class="text-center pt-5"> Payment for your order is due </h3>
+						<p class="text-center"> We request you to proceed with the payment for your order. </p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 text-center my-5">
+								<img src="images/payment-due.png" class="img-fluid w-15 mb-4" />
+								<div class="row mx-auto">
+									<div class="col-lg-12 mb-4">
+										<button class="btn btn-reports"> Paynow </button>
+									</div>
+								</div>
+
+								<div class="col-lg-12 mb-4">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="instructbox" id="dvOrderRequested">
+						<h3 class="text-center pt-5"> We have Received your Order Request </h3>
+						<p class="text-center"> We are working your request, please wait while we update you shortly
+						</p>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 text-center my-5">
+								<img src="images/request.png" class="img-fluid w-15 mb-4" />
+								<div class="row mx-auto">
+									<div class="col-lg-12 mb-4">
+										<button class="btn btn-reports"> Track Order </button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="footer mt-3">
+		<div class="container">
+			<div class="row py-2">
+				<div class="col-xl-1 col-lg-1 col-md-2 col-3">
+					<img src="images/footer-logo.png" class="img-fluid">
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-4 col-9">
+					<h3> www.healthassure.in </h3>
+					<p> 1st Floor, Excom House,North Wing, 7 Saki-vihar Road, Sakinaka, Andheri(E), Mumbai- 400072 </p>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6">
+					<div class="row">
+						<div class="col-lg-6 col-md-12  col-sm-6 col-12">
+							<p> <i class="fa-solid fa-envelope"></i> support@healthassure.in </p>
+						</div>
+						<div class="col-lg-6 col-md-12   col-sm-6 col-12">
+							<p> <i class="fa-solid fa-phone-volume"></i> 02261676633</p>
+						</div>
+						<div class="col-lg-9 offset-lg-3 ">
+							<ul>
+								<li><a href="https://twitter.com/healthassure1"> <i class="fa-brands fa-twitter"
+											target="blank"></i> </a> </li>
+								<li> <a href="https://www.facebook.com/healthassure.india/"> <i
+											class="fa-brands fa-facebook-f" target="blank"></i></a> </li>
+								<li><a href="https://www.linkedin.com/company/healthassure?trk=top_nav_home"
+										target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a> </li>
+								<li><a href="https://www.instagram.com/health.assure/" target="_blank"> <i
+											class="fa-brands fa-instagram"></i> </a> </li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="col-xl-4 col-lg-4 col-md-4 text-center">
+					<h3> Download Now </h3>
+					<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank"><img
+							src="images/playstore.png" class="img-fluid w-40"></a>
+					<a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485"
+						target="_blank"><img src="images/appstore.png" class="img-fluid w-40"> </a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="TrackOrderModal" tabindex="-1" aria-labelledby="TrackOrderModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content px-3 py-4" style="background-color:#e6f3fa;">
+					<div class="modal-header" style="background-color:cadetblue;color:white;">
+						<h5 class="modal-title" id="TrackOrderModalLabel" style="font-size:20px;font-weight:600;">
+							Track Order details...
+						</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form id="TrackOrderformId" action="">
+							<div class="form-group" id="TableData">
+
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/pharmacy-order.js"></script>
+</body>
+
+</html>
