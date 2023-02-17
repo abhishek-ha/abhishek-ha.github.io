@@ -5,10 +5,12 @@ var reportsPath ='';
 $('#btnViewReports').click(function () {
     window.open(reportsPath);
 });
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
 function LoadData(Appointmentid) {
-    
     $.ajax({
-        url: "https://localhost:44301/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/ProductApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -17,7 +19,6 @@ function LoadData(Appointmentid) {
             'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
         },
         success: function (data) {
-            console.log( data);
             if (data.status && data.results != null) {
                  statusName =data.results.statusname;
                  document.title = 'Tele Consultation | ' + data.results.statusname ;
@@ -64,7 +65,6 @@ function LoadData(Appointmentid) {
             swal('Error occure');
         }
     });
-
 }
 
 $(function () {
@@ -72,14 +72,11 @@ $(function () {
     $("[id*='dvCancelled']").hide();
     $("[id*='dvCompleted']").hide();
     $("[id*='dvConfirmed']").hide();
-
-if (Appointmentid != undefined && Appointmentid != null) { 
-    LoadData(Appointmentid); 
-    $('body').show();
-}
+    if (Appointmentid != undefined && Appointmentid != null) { 
+        LoadData(Appointmentid); 
+        $('body').show();
+    }
     else {
         window.location.replace("404.html");
     }
-    console.log(Appointmentid);
-    console.log("ready!");
 });
