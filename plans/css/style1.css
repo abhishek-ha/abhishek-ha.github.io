@@ -1382,14 +1382,9 @@ div {
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
 .platinumultima{
      background-color:#fcfcfc;
-    height:917px;
+    height:947px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -1419,7 +1414,7 @@ div {
    color:#ffffff!important;
 }
 .platinumultimaimg{
-    margin-top: -1956px;
+    margin-top: -2013px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
@@ -4035,7 +4030,9 @@ height:630px;
     height:815px;
    }
 .platinumultimaimg{
-    margin-top: -1766px;
+     margin-top: -1735px;
+    width: 73%;
+    margin-left: 14%;
 }
 
 }
@@ -4502,7 +4499,9 @@ height:630px;
     height:770px;
    }
 .platinumultimaimg{
-    margin-top: -1681px;
+     margin-top: -1645px;
+    width: 73%;
+    margin-left: 14%;
 }
 }
 
@@ -4953,7 +4952,9 @@ height:630px;
     height:732px;
    }
 .platinumultimaimg{
-    margin-top: -1615px;
+     margin-top: -1590px;
+    width: 73%;
+    margin-left: 14%;
 }
 
 
@@ -5006,10 +5007,12 @@ height:630px;
     padding-top: 54px;
 }
 .platinumultima{
-    height:735px;
+    height:731px;
    }
 .platinumultimaimg{
-    margin-top: -1624px;
+    margin-top: -1590px;
+    width: 73%;
+    margin-left: 14%;
 }
 
 
@@ -5316,10 +5319,12 @@ height:630px;
     padding-top: 44px;
 }
 .platinumultima{
-    height:711px;
+    height:690px;
    }
 .platinumultimaimg{
-    margin-top: -1579px;
+   margin-top: -1505px;
+    width: 73%;
+    margin-left: 14%;
 }
 
 
@@ -5739,12 +5744,13 @@ height:630px;
 .allplanspace3 {
     padding-top: 22px;
 }
-
 .platinumultima{
     height:669px;
    }
 .platinumultimaimg{
-    margin-top: -1505px;
+    margin-top: -1467px;
+    width: 73%;
+    margin-left: 15%;
 }
 
 
