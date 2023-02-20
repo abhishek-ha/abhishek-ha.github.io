@@ -1012,14 +1012,21 @@
             $("#IdTnChref").text('Good Health Declaration');
             $("#IdTnChref").prop('href', "https://live.healthassure.in/Products/files/Good-health-Declaration.pdf");
         }
+        var Generic_TNC = GetPlanTncLink(Vars["PlanCode"]);
         var IsHideGenericTNC = Vars["IsHideGenericTNC"];
+        if (Generic_TNC == undefined || Generic_TNC == "" || Generic_TNC == null) {
+            IsHideGenericTNC = "true";
+            $('#GenericTNChref').prop('href', "#");
+        } else {
+            IsHideGenericTNC = "false";
+            $('#GenericTNChref').prop('href', Generic_TNC);
+        }
         if (IsHideGenericTNC == "true") {
             $("#GenericTNCdiv").hide();
             if (IsVarifyEmailPhoneTNC == "false") {
                 $("#Placeorder").prop('disabled', false);
             }
         }
-        $('#GenericTNChref').prop('href', GetPlanTncLink(Vars["PlanCode"]));
         var IsEnableMembersAddtion = Vars["IsEnableMembersAddtion"];
         if (IsEnableMembersAddtion == 'true') {
             $('#Membersdiv').show();
@@ -1254,7 +1261,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('GenericTNCAccepted').checked, document.getElementById('IsTCAccepted').checked).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('IsTCAccepted').checked, document.getElementById('GenericTNCAccepted').checked).then(function (result) {
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
                     $('#CustomerPhone').val('');
@@ -1364,7 +1371,7 @@
                 if (AgentId != null && AgentId != '' && AgentId != undefined) {
                     Agent = { AgentId: AgentId };
                 }
-                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('GenericTNCAccepted').checked, document.getElementById('IsTCAccepted').checked).then(function (result) {
+                BuyOPDPlan($('#CustomerName').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('input[type="radio"][name="CustomerGender"]:checked').val(), Vars["PlanCode"], '', $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('IsTCAccepted').checked, document.getElementById('GenericTNCAccepted').checked).then(function (result) {
                     $('#otpapp').hide();
                     $('#CustomerName').val('');
                     $('#CustomerEmail').val('');
