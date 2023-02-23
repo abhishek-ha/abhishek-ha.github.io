@@ -13,7 +13,7 @@ $(function () {
     if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
     else {
         console.log('error')
-        window.location.replace("404.html");
+        //window.location.replace("404.html");
     }
     console.log(Appointmentid);
     console.log("ready!");
