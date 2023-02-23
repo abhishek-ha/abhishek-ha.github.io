@@ -2446,27 +2446,22 @@ line-height:26.5px ;
 }
 
 .btn-orange{
-    /* border: 1px solid #F5720A; */
-    font-size: 10px;
-    min-width: 160px;
-     font-weight: 400;
-    text-transform: uppercase;
-    padding: 4px 6px 4px 6px;
+     font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+     min-width: 180px;
 }
 .btn-outdelivery{
-    font-size: 10px;
-    min-width: 160px;
-     font-weight: 400;
-    text-transform: uppercase;
-    padding: 4px 6px 4px 6px;
+      font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+     min-width: 180px;
 }
-
 .paymentduebtn{
-    font-size: 10px;
-    min-width: 160px;
-     font-weight: 400;
-    text-transform: uppercase;
-    padding: 4px 6px 4px 6px;
+     font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+     min-width: 180px;
 }
 .btn-red{
     font-size: 10px;
