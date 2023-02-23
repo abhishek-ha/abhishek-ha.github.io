@@ -175,9 +175,11 @@
   <p style="font-family: 'Inter', sans-serif;margin-bottom: 0px;margin-top: 4px; font-size:13.5px;"> <span style="font-weight: 600;">Grand Total :   </span> [Grand Total] </p> 
 <p style="font-family: 'Inter', sans-serif;margin-bottom: 0px;margin-top: 4px; font-size:13.5px;"> <span style="font-weight: 600;">Received Amount :  </span> [Received Amount] </p>
   <p style="font-family: 'Inter', sans-serif;margin-bottom: 0px;margin-top: 4px; font-size:13.5px;"> <span style="font-weight: 600;">Balance Due :   </span> [Balance Due] </p>
-</td>
+
+ </td>
    </tr>
-<tr>
+
+   <tr>
  <td style="border-right:1px solid #000000;border-top: 1px solid #000000; padding:7px;font-family: 'Inter', sans-serif;font-size: 14px;text-align: left; width: 66%;"> 
   <p style="font-family: 'Inter', sans-serif;margin-bottom: 0px;margin-top: 4px; font-size:13.5px;">Terms & Conditions- All dispute are subject to Mumbai Jurisdiction. </p>
  </td>
