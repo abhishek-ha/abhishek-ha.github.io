@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		body{
+		body {
 			margin: 0px;
 		}
-		.container{
+
+		.container {
 			height: 100vh;
 			width: 100%;
 			background-color: aliceblue;
@@ -22,7 +23,7 @@
 			background-image: url('background.png');
 		}
 
-		.phone-screen{
+		.phone-screen {
 			height: 100%;
 			width: 100%;
 			max-width: 350px;
@@ -31,7 +32,7 @@
 			overflow: none;
 		}
 
-        iframe{
+		iframe {
 			border: none;
 			outline: none;
 			border-radius: 10px;
@@ -39,8 +40,8 @@
 			z-index: 999999;
 		}
 
-        .cover-layer {
-            width: 100%;
+		.cover-layer {
+			width: 100%;
 			height: 100%;
 			max-width: 350px;
 			position: absolute;
@@ -51,7 +52,7 @@
 			border-radius: 10px;
 		}
 
-        .loader {
+		.loader {
 			margin: 0 0 2em;
 			height: 100px;
 			width: 20%;
@@ -62,34 +63,35 @@
 			vertical-align: top;
 		}
 
-        svg path,
+		svg path,
 		svg rect {
 			fill: #3255ED;
 		}
 
-		@media(max-width: 450px){
-            .container{
-                padding: 0px;
-            }
+		@media(max-width: 450px) {
+			.container {
+				padding: 0px;
+			}
 
-			.container .phone-screen{
+			.container .phone-screen {
 				max-width: 100%;
 			}
 
-            iframe, .loader{
-                border-radius: 0px;
-            }
+			iframe,
+			.loader {
+				border-radius: 0px;
+			}
 		}
-
 	</style>
 </head>
+
 <body>
 	<div class="container">
 		<iframe id="iframeurl" class="phone-screen" allow='geolocation'> </iframe>
-        <div class="cover-layer"></div>
+		<div class="cover-layer"></div>
 	</div>
 
-    <div class="loader loader--style1" title="0" style="position: absolute; top: 48.5%; left: 38.5%;">
+	<div class="loader loader--style1" title="0" style="position: absolute; top: 48.5%; left: 38.5%;">
 		<svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40"
 			xml:space="preserve">
@@ -108,13 +110,34 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+	<script>
 		var url = window.location.href.split('#');
-		if (url.length == 2) {
-			$('#iframeurl').attr('src', 'https://live.healthassure.in/webapp/index.html#' + url[1]);
-		} else {
-			$('#iframeurl').attr('src', 'https://live.healthassure.in/webapp/index.html');
+		function OpenUrl() {
+			if (url.length == 2) {
+				$('#iframeurl').attr('src', 'https://uat.healthassure.in/webapp/index.html#' + url[1]);
+			} else {
+				$('#iframeurl').attr('src', 'https://uat.healthassure.in/webapp/index.html');
+			}
 		}
+		function OpenMainUrl() {
+			if (url.length == 2) {
+				window.location.href = 'https://uat.healthassure.in/webapp/index.html#' + url[1];
+			} else {
+				window.location.href = 'https://uat.healthassure.in/webapp/index.html';
+			}
+		}
+		function myFunction(x) {
+			if (x.matches) { // If media query matches
+				OpenUrl();
+			} else {
+				OpenMainUrl();
+			}
+		}
+
+		var x = window.matchMedia("(min-width: 768px)")
+		myFunction(x) // Call listener function at run time
+		x.addListener(myFunction) // Attach listener function on state changes
 	</script>
 </body>
+
 </html>
