@@ -210,6 +210,40 @@ line-height:26.5px ;
     background-color:#ff790f;
     color: #ffffff; 
 }
+
+.btn-outdelivery{
+    background-color:#F5720A;
+    color: #ffffff;
+    border-radius: 20px;
+    /* border: 1px solid #F5720A; */
+    border-radius: 20px;
+    min-width: 150px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 4px 3px 4px;
+    font-size: 10px;
+}
+.btn-outdelivery: hover{
+    background-color:#ff790f;
+    color: #ffffff; 
+}
+.paymentduebtn{
+    background-color:#F5720A;
+    color: #ffffff;
+    border-radius: 20px;
+    /* border: 1px solid #F5720A; */
+    border-radius: 20px;
+    min-width: 150px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 4px 3px 4px;
+    font-size: 10px;
+}
+.paymentduebtn:hover{
+    background-color:#ff790f;
+    color: #ffffff; 
+}
+
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
@@ -600,6 +634,45 @@ line-height:26.5px ;
     background-color:#ff790f;
     color: #ffffff;
 }
+
+
+.btn-outdelivery{
+    background-color:#6575f7;
+    color: #ffffff;
+    border-radius: 20px;
+    /* border: 1px solid #F5720A; */
+   font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+     min-width: 170px;
+     text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
+}
+.btn-outdelivery:hover{
+    background-color:#6575f7;
+    color: #ffffff;
+}
+
+
+
+.paymentduebtn{
+    background-color:#46a6b6;
+    color: #ffffff;
+    border-radius: 20px;
+    /* border: 1px solid #F5720A; */
+   font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+     min-width: 170px;
+     text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
+}
+.paymentduebtn:hover{
+    background-color:#46a6b6;
+    color: #ffffff;
+}
 .btn-red{
     background-color:#F44336;
     color: #ffffff;
@@ -965,75 +1038,51 @@ line-height:26.5px ;
     font-size: 14px;
 }
 .btn-orange{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
-    /* border: 1px solid #F5720A; */
+   border-radius: 20px;
      font-size: 11px;
     min-width: 180px;
     font-weight: 600;
-    text-transform: uppercase;
+     padding: 3px 4px 3px 4px;
+}
+.btn-outdelivery{
+   font-size: 11px;
+    min-width: 180px;
     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
-.btn-orange:hover{
-    background-color:#ff790f;
-    color: #ffffff;  
+
+.paymentduebtn{
+   font-size: 11px;
+    min-width: 180px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
 }
 .btn-red{
-    background-color:#F44336;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F44336;
+   border: 1px solid #F44336;
       font-size: 11px;
     min-width: 180px;
     font-weight: 600;
-    text-transform: uppercase;
     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
-.btn-red:hover{
-    background-color:#f42415;
-    color: #ffffff;
-}
 .btn-primary1{
-    background-color:#0E5FC1 ;
-    color: #ffffff;
-    border-radius: 20px;
-    min-width: 75px;
+   min-width: 75px;
     font-size: 11px;
     font-weight: 600;
    padding: 3px 4px 3px 4px;
 }
-.btn-primary1:hover{
-    background-color:#0E5FC1 ;
-    color: #ffffff!important;
-}
 .btn-blue{
-    background-color:#F5720A;
-    color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 14px;
 }
-.btn-blue:hover{
-    background-color:#F5720A;
-    color: #ffffff;
-}
 .btn-grey{
-    background-color: #C0C0C0;
-    color: #000000;
-    border-radius: 20px;
-     font-size: 11px;
+    font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
-}
-.btn-grey:hover{
-    background-color: #0E5FC1;
-    color: #ffffff;
 }
 .btn-w120{
     width: 120px;
@@ -1340,71 +1389,56 @@ line-height:26.5px ;
     min-width: 228px;
 }
 .btn-reports:hover{
-    background-color:#0C55AD;
-    color: #ffffff;
     border-radius: 20px;
     border: 2px solid #0C55AD;
     font-size: 14px;
 }
 .btn-orange{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
-    /* border: 1px solid #F5720A; */
-     font-size: 11px;
+  font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 3px 4px 3px 4px;
     letter-spacing: 0.5px;
 }
-.btn-orange:hover{
-    background-color:#ff790f;
-    color: #ffffff;  
+.btn-outdelivery{
+    font-size: 11px;
+    min-width: 180px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
 }
+
+.paymentduebtn{
+    font-size: 11px;
+    min-width: 180px;
+    padding: 3px 4px 3px 4px;
+    letter-spacing: 0.5px;
+}
+
 .btn-red{
-    background-color:#F44336;
-    color: #ffffff;
-    border-radius: 20px;
     border: 1px solid #F44336;
      font-size: 11px;
     min-width: 180px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 3px 4px 3px 4px;
-    letter-spacing: 0.5px;
 }
-.btn-red:hover{
-    background-color:#f42415;
-    color: #ffffff;
-}
+
 .btn-primary1{
-    background-color:#0E5FC1 ;
-    color: #ffffff;
     border-radius: 20px;
     min-width: 75px;
     font-size: 11px;
     font-weight: 600;
    padding: 3px 4px 3px 4px;
 }
-.btn-primary1:hover{
-    background-color:#0E5FC1 ;
-    color: #ffffff!important;
-}
+
 .btn-blue{
-    background-color:#F5720A;
-    color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 14px;
 }
-.btn-blue:hover{
-    background-color:#F5720A;
-    color: #ffffff;
-}
+
 .btn-grey{
-    background-color: #C0C0C0;
-    color: #000000;
     border-radius: 20px;
      font-size: 11px;
     min-width: 180px;
@@ -1728,23 +1762,29 @@ line-height:26.5px ;
     font-size: 14px;
 }
 .btn-orange{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
-    /* border: 1px solid #F5720A; */
     font-size: 8px;
     min-width: 130px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 3px 6px 3px 6px;
 }
-.btn-orange:hover{
-    background-color:#ff790f;
-    color: #ffffff;  
+.btn-outdelivery{
+   font-size: 8px;
+    min-width: 130px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
 }
+
+.paymentduebtn{
+   font-size: 8px;
+    min-width: 130px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 6px 3px 6px;
+}
+
 .btn-red{
-    background-color:#F44336;
-    color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 8px;
@@ -1753,15 +1793,9 @@ line-height:26.5px ;
     text-transform: uppercase;
     padding: 3px 6px 3px 6px;
 }
-.btn-red:hover{
-    background-color:#f42415;
-    color: #ffffff;
-}
+
 .btn-primary1{
-    background-color:#0E5FC1 ;
-    color: #ffffff;
-    border-radius: 20px;
-    min-width: 68px;
+   min-width: 68px;
     font-size: 10px;
     font-weight: 600;
     padding: 2px 5px 2px 5px;
@@ -1771,23 +1805,10 @@ line-height:26.5px ;
     color: #ffffff!important;
 }
 .btn-blue{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 1px solid #F5720A;
-    font-size: 14px;
-}
-.btn-blue:hover{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 14px;
 }
 .btn-grey{
-    background-color: #C0C0C0;
-    color: #000000;
-    border-radius: 20px;
     font-size: 8px;
     min-width: 130px;
     font-weight: 600;
@@ -2082,31 +2103,27 @@ line-height:26.5px ;
     font-weight: 600;
     min-width: 228px;
 }
-.btn-reports:hover{
-    background-color:#0C55AD;
-    color: #ffffff;
-    border-radius: 20px;
-    border: 2px solid #0C55AD;
-    font-size: 14px;
-}
+
 .btn-orange{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
-    /* border: 1px solid #F5720A; */
     font-size: 12px;
     min-width: 165px;
     font-weight: 600;
     text-transform: uppercase;
      padding: 3px 6px 3px 6px;
 }
-.btn-orange:hover{
-    background-color:#ff790f;
-    color: #ffffff;  
+.btn-outdelivery{
+    font-size: 12px;
+    min-width: 165px;
+   padding: 3px 6px 3px 6px;
 }
+.paymentduebtn{
+    font-size: 12px;
+    min-width: 165px;
+   padding: 3px 6px 3px 6px;
+}
+
+
 .btn-red{
-    background-color:#F44336;
-    color: #ffffff;
     border-radius: 20px;
     border: 1px solid #F44336;
     font-size: 10px;
@@ -2115,38 +2132,20 @@ line-height:26.5px ;
     text-transform: uppercase;
      padding: 3px 6px 3px 6px;
 }
-.btn-red:hover{
-    background-color:#f42415;
-    color: #ffffff;
-}
+
 .btn-primary1{
-    background-color:#0E5FC1 ;
-    color: #ffffff;
-    border-radius: 20px;
     min-width: 54px;
     font-size: 10px;
     font-weight: 600;
     padding: 2px 5px 2px 5px;
 }
-.btn-primary1:hover{
-    background-color:#0E5FC1 ;
-    color: #ffffff!important;
-}
+
 .btn-blue{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 14px;
 }
-.btn-blue:hover{
-    background-color:#F5720A;
-    color: #ffffff;
-}
+
 .btn-grey{
-    background-color: #C0C0C0;
-    color: #000000;
-    border-radius: 20px;
     font-size: 10px;
     min-width: 165px;
     font-weight: 600;
@@ -2458,7 +2457,21 @@ line-height:26.5px ;
     text-transform: uppercase;
     padding: 4px 6px 4px 6px;
 }
+.btn-outdelivery{
+    font-size: 10px;
+    min-width: 160px;
+     font-weight: 400;
+    text-transform: uppercase;
+    padding: 4px 6px 4px 6px;
+}
 
+.paymentduebtn{
+    font-size: 10px;
+    min-width: 160px;
+     font-weight: 400;
+    text-transform: uppercase;
+    padding: 4px 6px 4px 6px;
+}
 .btn-red{
     font-size: 10px;
     min-width: 160px;
@@ -2468,9 +2481,6 @@ line-height:26.5px ;
 }
 
 .btn-primary1{
-    background-color:#0E5FC1 ;
-    color: #ffffff;
-    border-radius: 20px;
     min-width: 65px;
     font-size: 10px;
     font-weight: 600;
@@ -2478,9 +2488,6 @@ line-height:26.5px ;
 }
 
 .btn-blue{
-    background-color:#F5720A;
-    color: #ffffff;
-    border-radius: 20px;
     border: 1px solid #F5720A;
     font-size: 14px;
 }
@@ -2741,12 +2748,11 @@ line-height:26.5px ;
     font-weight: 600;
     line-height: 18px;
      min-width: 180px;
-     text-transform: uppercase;
 }
 .btn-success {
     font-size: 12px;
     font-weight: 600;
-    cursor: pointer;
+    min-width: 180px;
 }
 .btn-reports{
     border: 2px solid #0C55AD;
@@ -2756,33 +2762,41 @@ line-height:26.5px ;
 }
 
 .btn-orange{
-    /* border: 1px solid #F5720A; */
-    font-size: 10px;
+   font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+     min-width: 180px;
+}
+.btn-outdelivery{
+    font-size: 12px;
     min-width: 165px;
-     font-weight: 400;
+     font-weight: 600;
     text-transform: uppercase;
  padding: 5px 6px 5px 6px;
 }
-
-.btn-red{
-    font-size: 10px;
+.paymentduebtn{
+    font-size: 12px;
     min-width: 165px;
-    font-weight: 400;
+     font-weight: 600;
+    text-transform: uppercase;
+ padding: 5px 6px 5px 6px;
+}
+.btn-red{
+    font-size: 12px;
+    min-width: 165px;
+    font-weight: 600;
      padding: 5px 6px 5px 6px;
 }
-
 .btn-primary1{
     min-width: 87px;
     font-size: 12px;
     font-weight: 600;
     padding: 5px 6px 5px 6px;
 }
-
 .btn-blue{
     border: 1px solid #F5720A;
     font-size: 14px;
 }
-
 .btn-grey{
     font-size: 10px;
     min-width: 165px;
@@ -2841,7 +2855,6 @@ line-height:26.5px ;
     padding: 10px;
     border: 2px solid #0E5FC1;
 }
-
 .docboxicon{
     font-size: 18px;
 }
@@ -3061,32 +3074,31 @@ line-height:26.5px ;
     border-radius: 20px;
     margin: 5px;
      min-width: 180px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
-    padding: 5px 6px 5px 6px;
+   padding: 5px 6px 3px 6px;
 }
 .appoinmentbtn:hover{
     background-color:#1f67bb;
     color:#ffffff;
 }
 .requestedbtn{
-    background-color: #28a745;
-    border-color: #28a745;
+ border-color: #28a745;
     color: #ffffff;
     border-radius: 20px;
     margin: 5px;
      min-width: 180px;
-    font-size: 11px;
-    font-weight: 400;
-    padding: 5px 6px 5px 6px;
+   font-size: 13px;
+    font-weight: 600;
+   padding: 5px 6px 3px 6px;
 }
 
 .btn-success {
     margin: 0px;
-     min-width: 80px;
-    font-size: 10.5px;
+     min-width: 180px;
+    font-size: 13px;
     font-weight: 600;
-   padding: 5px 6px 5px 6px;
+   padding: 5px 6px 3px 6px;
 }
 .btn-secondary {
    min-width: 80px;
@@ -3101,12 +3113,27 @@ line-height:26.5px ;
     min-width: 228px;
 }
 .btn-orange{
-    /* border: 1px solid #F5720A; */
-    font-size: 14px;
+   font-size: 14px;
     min-width: 180px;
     font-weight: 600;
    padding: 5px 6px 5px 6px;
 }
+
+.btn-outdelivery{
+   font-size: 14px;
+    min-width: 180px;
+    font-weight: 600;
+   padding: 5px 6px 5px 6px;
+}
+
+.paymentduebtn{
+   font-size: 14px;
+    min-width: 180px;
+    font-weight: 600;
+   padding: 5px 6px 5px 6px;
+}
+
+
 .btn-red{
    font-size: 14px;
     min-width: 180px;
