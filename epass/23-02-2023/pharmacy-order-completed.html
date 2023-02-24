@@ -5,27 +5,78 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Pharmacy  | Order Completed </title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Appointment.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style >
+	
+#accordion .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+   /* margin: 0 30px 10px 30px;*/
+    overflow: hidden;
+    position: relative;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+#accordion .panel-title a.collapsed{ 
+    background-color: #1f67bb;
+}
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: fontawesome;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background: #1f67bb;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+	
+</style>
+
+
+
 </head>
 <body>
 
-<section class="footerbtm">
+<section>
 <div class="container mt-5">
+     <div class="row ">
+					<div class="col-xl-9 col-lg-9 col-md-9 col-7">
+						<h1 id="txtMemberName" class="head"> Hi, Aditya Tandon </h1>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end">
+						<img src="images/logo.png" class="img-fluid logo ">
+					</div>
+				</div>
 <div class="row">
-	<div class="col-xl-9 col-lg-9 col-md-9 col-7">
-		<h1 class="head"> Hi, Aditya Tandon </h1>
-		</div>
-	<div class="col-xl-3 col-lg-3 col-md-3 col-5 float-end pb-3">
-		<img src="images/logo.png" class="img-fluid logo ">
-	</div>
-</div>
-<div class="row">
-	<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-		<button class="btn btn-primary1"> Male </button><button class="btn btn-primary1"> 52 Years </button>
+	<div class="col-xl-6 col-lg-6 col-md-6 col-12 mt-minus">
+           <div class="row">
+							<div class="col-xl-2 col-lg-2 col-md-2 col-3">
+								<button id="btnGender" class="btn btn-primary1"> Male </button>
+							</div>
+							<div class="col-xl-2 col-lg-2 col-md-2 col-6">
+								<button id="btnAge" class="btn btn-primary1 "> Female </button>
+							</div>
+						</div>
 		<div class="row">
 			<div class="col-lg-12 mt-4 ">
 				<div class="box pt-4">
@@ -50,6 +101,7 @@
 <p><i class="fa-solid fa-circle-check text-success"></i> <span class="pl-3"> 10+ Medicines Order </span></p> 
 </div>
             </div>
+
 
 
 
@@ -81,10 +133,6 @@
 
                 </div>
              </div>
-
-
-
-
 
 
 
@@ -163,19 +211,8 @@
  				</ul>
  			</div>
  		</div>
- 			
- 		</div>
- 	
-			
-    <div class="col-xl-4 col-lg-4 col-md-4 text-center">
-    	<h3> Download Now </h3>
-    	<a href="https://play.google.com/store/apps/details?id=com.ha.healthcare" target="_blank"><img src="images/playstore.png" class="img-fluid w-40"></a>
-    	<a href="https://apps.apple.com/us/app/healthassure-consumer-health/id1612411485" target="_blank"><img src="images/appstore.png" class="img-fluid w-40"> </a>
-    	
-    </div>
-
-
-			</div>
+ 	</div>
+ 	</div>
 		</div>
 
 </section>
