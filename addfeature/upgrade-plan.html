@@ -25,192 +25,50 @@
   border-radius: 4px;
 }
 .w-30{
-  width: 24%!important;
-  float: left;
+     width: 24%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.w-5{
+    width: 5%;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    padding-top: 5px;
 }
 
+.btn-plancopy {
+background-image: linear-gradient(to bottom, #7cdbf2 0%, #fff 100%);;
+  border-radius: 4px;
+border-color: #ffffff;
+  color: #000000;
+  padding: 4px 12px;
+  min-width: 90px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+
+}
+.btn-plancopy:hover{
+      background-color: #e0e0e0;
+  background-position: 0 -15px;
+}
+.btn-plancopy:focus, .btn-plancopy:active, .btn-plancopy:hover {
+  background-color: transparent !important;
+  color: #104d89 !important;
+  border: none!important;
+}
 </style>
-
-
-  </head>
-  <body>
-    <!-- profile sidebar -->
-    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
-      <section class="profile-sidebar open" id="profile-sidebar">
-        <div class="profile-sidebar__inner">
-          <div class="profile-sidebar__top">
-            <div class="text-center">
-              <a href="index.html">
-                <img src="images/healthassure-logo.png" class="img-fluid"/>
-              </a>
-            </div>
-          </div>
-
-          <div class="profile-sidebar__links">
-            <div class="accordion" id="accordionSidebarMenu">
-              <div class="accordion-item">
-                
-                <button id="onboardbtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnboardId" aria-expanded="false" aria-controls="collapseTwo">
-                  <i class="fa-solid fa-arrows-spin me-3"></i><span>Customer Experience</span>
-                </button>
-                
-                <ul id="collapseOnboardId" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebarMenu">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      New onboarding
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      First appointment booking
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      Non-usage
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-
-              <div class="accordion-item">
-                
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewalId" aria-expanded="false" aria-controls="collapseThree">
-                  <i class="fa-solid fa-arrows-spin me-3"></i>
-                  <span>Renewals & Upsell</span>
-                </button>
-                
-                <ul id="collapseRenewalId" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      <span>Renewal pending Customers</span>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-
-              
-              <div class="accordion-item">
-                
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
-                  <i class="fa-solid fa-arrows-spin me-3"></i>
-                  <span>Customer Feedback</span>
-                </button>
-                
-                <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      <span>Recently booked customers</span>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-
-     <div class="accordion-item">
-               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId3" aria-expanded="false" aria-controls="collapseThree">
-                  <i class="fa-solid fa-arrows-spin me-3"></i>
-                  <span>Administrator</span>
-                </button>
-                
-                <ul id="collapseMenuId3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      <span>Add User</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      Master Data management
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-
-       <div class="accordion-item">
-               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa-solid fa-file-invoice me-3"></i>
-                  <span> Plan Details </span>
-                </button>
-                
-                <ul id="plandetail" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
-                  <li>
-                    <a href="topup.html">
-                       <i class="fa-solid fa-indian-rupee-sign me-3"></i>
-                      <span> Top Up </span>
-                    </a>
-                  </li>
-
-                   <li>
-                    <a href="coupan.html">
-                       <i class="fa-solid fa-receipt me-3"></i>
-                      <span> Coupan </span>
-                    </a>
-                  </li>
-
-                   <li>
-                    <a href="additional-plan-detail.html">
-                      <i class="fa-solid fa-user-plus me-3"></i>
-                      <span> Additional Plan Detail </span>
-                    </a>
-                  </li>
-
-                    <li>
-                    <a href="paid-member-addition.html">
-                      <i class="fa-solid fa-user-plus me-3"></i>
-                      <span> Paid Member Addition </span>
-                    </a>
-                  </li>
-
-                </ul>
-              </div>
-           </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- right section -->
+</head>
+<body>
+     <!-- right section -->
       <section class="right-section profile-right-section">
         <div class="profile-container">
-          <div class="profile-container__header">
-          
-            <div class="mobile-view">
-              <i class="fa-solid fa-bars toggleNavMenu" onclick="toggleMenu()"></i>
-              
-              <img src="images/healthassure-logo.png" class="img-fluid" />
-            </div>
-            <div class="dropdown profile-dropdown">
-              <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./images/profileLogo.jpg" alt="">
-              </div>
-            <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item mt-2" href="#">
-                    <i class="fa-solid fa-user me-3"></i>
-                    <span>Profile Setting</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <i class="fa-solid fa-right-from-bracket me-3"></i>
-                    Logout
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <div class="container-fluid">
+          <div class="container">
             <div class="row">
 <div class="col-lg-12 col-md-12">
     <h2 class="header-content pt-3 pb-5"> <b> Upgrade Plan </b> </h2> 
@@ -265,10 +123,7 @@
 <div class="col-lg-9">
 <button class="add_field_button">Add More </button>
 </div>
-      
-    </div> 
-
-
+  </div> 
 
 
 <div class="col-lg-12 col-md-12">
@@ -292,7 +147,7 @@
 </div>
 </div>
   <div class="col-md-12 col-lg-12 my-5 text-center">
-  <button class="btn btn-primary me-3" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" >Apply </button> <button class="btn btn-danger me-3" type="reset"> Reset </button>
+  <button class="btn btn-plancopy me-3" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" >Apply </button> <button class="btn btn-danger me-3" type="reset"> Reset </button>
 </div>
  </div>
  </div>
@@ -307,15 +162,15 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body text-center">
-    <img src="images/check.png" class="img-fluid">
+    <img src="images/check.png" class="img-fluid w-25">
         <h2 class="pt-4"> Changes have been saved to your plan!  </h2>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Ok </button>
         
       </div>
     </div>
@@ -342,7 +197,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div> <input type="text" placeholder="From Month" class="form-control w-30" name="mytext[' + x + ']"/> <input type="text" placeholder="To Month" class="form-control w-30" name="mydate[' + x + ']"/> <select class="form-select w-30" name="myselect[' + x + ']"><option> Select the %</option><option> 10%</option> <option> 20%</option> </select> <a href="#" class="remove_field">Remove</a> </div>'); // add input boxes.
+            $(wrapper).append('<div> <input type="text" placeholder="From Month" class="form-control w-30" name="mytext[' + x + ']"/> <input type="text" placeholder="To Month" class="form-control w-30" name="mydate[' + x + ']"/> <select class="form-select w-30" name="myselect[' + x + ']"><option> Select the %</option><option> 10%</option> <option> 20% </option> </select> <a href="#" class="remove_field w-5"> <i class="fa-solid text-danger fa-xmark"></i> </a> </div>'); // add input boxes.
         }
     });
     

@@ -1733,9 +1733,6 @@ border-color: #ffffff;
       background-color: #e0e0e0;
   background-position: 0 -15px;
 }
-
-
-
 .btn-plancopy:focus, .btn-plancopy:active, .btn-plancopy:hover {
   background-color: transparent !important;
   color: #104d89 !important;
