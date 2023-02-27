@@ -24,20 +24,6 @@
   border: 1px solid #aaaaaa;
   border-radius: 4px;
 }
-.w-30{
-     width: 24%;
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-.w-5{
-    width: 5%;
-    float: left;
-    margin-right: 17px;
-    margin-bottom: 10px;
-    padding-top: 5px;
-}
-
 .btn-plancopy {
 background-image: linear-gradient(to bottom, #7cdbf2 0%, #fff 100%);;
   border-radius: 4px;
@@ -62,6 +48,42 @@ border-color: #ffffff;
   color: #104d89 !important;
   border: none!important;
 }
+
+@media only screen and (max-width: 600px) {
+ .w-30{
+     width: 85%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.w-5{
+    width: 3%;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+ .w-30{
+     width: 24%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.w-5{
+    width: 5%;
+    float: left;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+}
+
+
+
 </style>
 </head>
 <body>
@@ -75,8 +97,8 @@ border-color: #ffffff;
             </div>
 </div>
 
-<div class="mb-5 row">
-   <div class="col-sm-4 mb-5">
+<div class="row mb-5">
+   <div class="col-sm-4">
       <label for="Select Client" class="form-label"> Select Client </label>
       <select class="form-select">
   <option> Select Client </option>
@@ -87,7 +109,7 @@ border-color: #ffffff;
     <option> FitAssure Platinum Plus </option>
   </select>
    </div>
-    <div class="col-sm-4 mb-5">
+    <div class="col-sm-4 ">
       <label for="Select Client" class="form-label"> Select Plan </label>
       <select class="form-select">
   <option> Select Plan </option>
@@ -98,7 +120,7 @@ border-color: #ffffff;
     <option> FitAssure Platinum Plus </option>
   </select>
    </div>
-    <div class="col-sm-4 mb-5">
+    <div class="col-sm-4 ">
     <label for="Select Client" class="form-label"> Charges of upgrade </label>
       <select class="form-select">
   <option> Pro Rate Basis </option>
@@ -106,13 +128,13 @@ border-color: #ffffff;
   </select>
    </div>
 
- <div class="col-lg-12">
+ <div class="col-lg-12 mt-5">
       <div class="input_fields_wrap">
     <div class="row mb-3">
-    <div class="col-lg-3">  <input type="text" class="form-control" name="mytext[1]" placeholder="from Month"> </div>
-      <div class="col-lg-3">  <input type="text" name="mytext[1]" class="form-control" placeholder="To Month"> </div>
+    <div class="col-lg-3 mb-2">  <input type="text" class="form-control" name="mytext[1]" placeholder="from Month"> </div>
+      <div class="col-lg-3 mb-2">  <input type="text" name="mytext[1]" class="form-control" placeholder="To Month"> </div>
       <!-- <input type="date" name="mydate[1]">  -->
-     <div class="col-lg-3">  <select name="myselect[1]" class="form-select"> <option>Select the % </option>
+     <div class="col-lg-3 mb-2">  <select name="myselect[1]" class="form-select"> <option>Select the % </option>
         <option> 5% </option>
         <option> 10% </option>
          <option> 15% </option>
