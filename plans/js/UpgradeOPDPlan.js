@@ -296,10 +296,6 @@ function userClosePaymentPopup() {
 
 $('#VerifyOTPUpgradebtn').click(function () {
     var otp = document.getElementById('input1').value;
-    // const inputs = document.querySelectorAll('#otp > *[id]');
-    // for (let i = 0; i < inputs.length; i++) {
-    //     otp = otp + inputs[i].value;
-    // }
     VarifyOTPforValidation(otp, UpgradeOPDObj.results.user.mobileNo).then(function (res) {
         $('#VerifyOTPUpgradebtn').html('Verified');
         $('#message').html('');
