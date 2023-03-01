@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+body{
+        background-image: url('../images/health-transparent.jpg');
+        background-color: #0f5ebf3f;
+        width: 100%;
+      }
+
 
 * {
   padding: 0;
@@ -312,7 +318,7 @@
 }
 .grp-img {
   position: relative;
-  width: 125px;
+  width: 75px;
   height: 45px;
 }
 .grp-img img {
@@ -497,16 +503,15 @@
 
 @media only screen and (min-width: 1300px) {
 .chatsupportbox{
-  width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 60px;
   border-radius: 10px;
   position: absolute;
   right: 2%;
 }
 .scrollbar {
-    height: 390px;
+    height: 350px;
 }
 }
 

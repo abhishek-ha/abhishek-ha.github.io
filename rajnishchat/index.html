@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Chat Box </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        background-image: url('https://live.healthassure.in/WebApp/background.png');
+        background-color: #0f5ebf3f;
+      }
+     
+
+@media only screen and (max-width: 600px) {
+  #fc_frame{
+        position: absolute !important;
+        right: 2% !important;
+        bottom: 0px !important
+      }
+}
+
+@media only screen and (min-width: 601px) {
+  #fc_frame{
+        position: absolute !important;
+        right: 2% !important;
+        bottom: 0px !important
+      }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    let href = new URL(window.location.href);
+    function GetUserInfoAndAppointmentHistory() {
+      return new Promise(function (resolve, reject) {
+        $.ajax({
+          type: "GET",
+          url: "https://live.healthassure.in/ProductApi/api/UserOPDPlans/GetUserInfoAndAppointmentHistory?MobileNo=" + href.searchParams.get("MobileNo"),
+          dataType: "json",
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+          },
+          success: function (result) {
+            if (result.status) {
+              resolve(result) // Resolve promise and go to then()
+            } else {
+              reject(result) // Reject the promise and go to catch()
+            }
+          },
+          error: function (eror) {
+            console.warn(eror);
+            reject(err) // Reject the promise and go to catch()
+          }
+        });
+      });
+    }
+    // var Data= {
+    //   ExternalId : "john.doe1987",
+    //   FirstName : "John",
+    //   Email : href.searchParams.get("EmailId"),        
+    //   MobileNo : href.searchParams.get("MobileNo"),
+    //   "plan": "Pro",
+    //   "status": "Active"
+    // }
+    function initFreshChat() {
+      window.fcWidget.init({
+        token: "2dce7ffd-8f15-40de-9fc7-d504acc9df78",
+        host: "https://healthassure.freshchat.com"
+      });
+      GetUserInfoAndAppointmentHistory().then(function (d) {
+        var Data = {
+          PolicyNo: d.results.policyNo,
+          CustomerName: d.results.customerName,
+          Email: d.results.customerEmail,
+          MobileNo: d.results.customerMobile,
+          "gender": d.results.gender,
+          "dob": d.results.dob,
+          "RelationList": JSON.stringify(d.results.relationList),
+          "Plans": JSON.stringify(d.results.plans),
+          "AppointmentDetails": JSON.stringify(d.results.appointmentDetails)
+        }
+        window.fcWidget.user.setProperties(Data).then(function () {
+          console.log('User Set');
+        }, function () {
+          console.log("User Not Set");
+        });
+      });
+    }
+    function initialize(i, t) {
+      var e; i.getElementById(t) ?
+        initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0,
+          e.src = "https://healthassure.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+    }
+    function initiateCall() { initialize(document, "Freshchat-js-sdk") }
+    window.addEventListener ? window.addEventListener("load", initiateCall, !1) :
+      window.attachEvent("load", initiateCall, !1);
+  </script>
+</body>
+
+</html>
