@@ -525,7 +525,30 @@
             font-weight: 600;
             padding-bottom: 0px;
             margin-bottom: 0px;
+        }
 
+        .plan ul li {
+            color: #000000;
+            letter-spacing: 0.5px;
+            margin-left: 13px;
+            margin-right: 7px;
+            padding-bottom: 6px;
+            font-size: 12px !important;
+            text-indent: -10px;
+            padding-left: 18px;
+
+        }
+
+
+        .plan ul li ul li {
+            color: #000000;
+            letter-spacing: 0.5px;
+            margin-left: 3px;
+            margin-right: 7px;
+            padding-bottom: 6px;
+            font-size: 12px !important;
+            text-indent: -10px;
+            padding-left: 10px;
         }
     </style>
     <!-- Global site tag (gtag.js) - Google Ads: 471644001 -->
@@ -588,19 +611,16 @@
                     <a class="navbar-brand logo mdcenter" href="https://healthassure.in/">
                         <img src="images/logo.png" width="180px">
                     </a>
-                    <h1 class="head" style="color: #004182; font-size:45px;font-weight: 700;"> Renew Insurance Policy
+                    <h1 class="head" style="color: #004182; font-size:45px;font-weight: 700;"> Upgrade Insurance Policy
                         and Save 10%! </h1>
                     <h6><b> Note: You will be eligible for 40% additional diagnostic credit if you have a claim free
                             plan year </b> </h6>
-                    <p class="pt-3"> Lorem ipsum dolor sit amet eiusmod tempor labore offer magna aliqua. Enim lorem
-                        ipsum dolor minimo laboris aliquiped commodo consequat. Lorem ipsum dolor sit amet eiusmod
-                        tempor labore offer magna aliqua. </p>
 
                 </div>
                 <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
                     <form class="px-5 pt-5 shadow bg-white pb-6" id="RenewpolicyNoForm">
                         <h2><b> Your HealthAssure Plan Expires Soon! </b></h2>
-                        <p style="font-size:16px;"><b> Renew now to continue availing benefits! </b> </p>
+                        <p style="font-size:16px;"><b> Upgrade now to continue availing benefits! </b> </p>
                         <div class="form-group mb-4">
                             <label for="exampleInputEmail1" style="font-weight: 600;"> Policy No. </label>
                             <input type="text" class="form-control" id="RenewPolicyNo" placeholder="Enter Policy No">
@@ -608,111 +628,110 @@
                                 <p id="policyInvalidMessage"> Please enter Valid policy no </p>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="RenewNewbtnClick"> Renew Now</button>
+                        <button type="submit" class="btn btn-primary" id="RenewNewbtnClick"> Upgrade Now</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-white py-5" id="renewpolicybenefitsdiv">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 ">
-                    <h2 class="mt-5 text-center mb-3"><b> Main Benefits </b></h2>
-                </div>
+    <section class="bg-white py-5" id="renewpolicybenefitsdiv" style="display: none;"">
+        <div class=" container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 ">
+                <h2 class="mt-5 text-center mb-3"><b> Main Benefits </b></h2>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center flex-row">
-                        <div class="row" id="renewpolicybenefits">
-                            <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/doctor.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> Unlimited </b></p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="d-flex flex-wrap align-items-center justify-content-center flex-row">
+                    <div class="row" id="renewpolicybenefits">
+                        <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/doctor.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> Unlimited </b></p>
 
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p>Doctors on Call </p>
-                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p>Doctors on Call </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/i1.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> Rs. 10000 </b></p>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p>Lab test & Scans </p>
-                                        </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/i1.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> Rs. 10000 </b></p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p>Lab test & Scans </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/i7.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> Unlimited </b></p>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p> Online Gym & Wellness </p>
-                                        </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/i7.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> Unlimited </b></p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p> Online Gym & Wellness </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/tele-doctor.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> Unlimited </b></p>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p> Tele Consultation </p>
-                                        </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/tele-doctor.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> Unlimited </b></p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p> Tele Consultation </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/i3.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> Unlimited </b></p>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p> Doctor Coach </p>
-                                        </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/i3.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> Unlimited </b></p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p> Doctor Coach </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                                <div class="servicerenew">
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <img src="images/medicines.png">
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p><b> 2500 </b></p>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12">
-                                            <p> Pharmacy Wallet </p>
-                                        </div>
+                        </div>
+                        <div class=" col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                            <div class="servicerenew">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <img src="images/medicines.png">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p><b> 2500 </b></p>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <p> Pharmacy Wallet </p>
                                     </div>
                                 </div>
                             </div>
@@ -720,15 +739,16 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="pt-4" style="font-size:15px; font-weight:600; text-align: center;line-height: 18px;"><b>Note:
-                        All benefits are on HealthAssure network except the MeraWalaDoctor (Doctor of Your Choice)
-                        service</b></p>
-            </div>
+        </div>
+        <div>
+            <p class="pt-4" style="font-size:15px; font-weight:600; text-align: center;line-height: 18px;"><b>Note:
+                    All benefits are on HealthAssure network except the MeraWalaDoctor (Doctor of Your Choice)
+                    service </b></p>
+        </div>
         </div>
     </section>
 
-    <section id="bringingsectondiv">
+    <section id="bringingsectondiv" style="display: none;">
         <div class="container pb-4 px-3 px-md-0 mt-3">
             <div class="row">
                 <div class="col-md-12 col-lg-12 text-center">
@@ -739,120 +759,125 @@
                 <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5" id="UpgradePlatIndidiv">
                     <div class="row offercard">
                         <div class="col-lg-5 col-md-6 pt-2 col-6">
-                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Individual) </b> </p>
+                            <p style="font-size:16px; padding-left:10px;"><b> FitAssure Plus </b> </p>
                         </div>
                         <div class="col-lg-7 col-md-6 col-6 val">
                             <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
-                            <p class="tnc2 mt-n2"><b> Self </b></p>
+                            <p class="tnc2 mt-n2"><b> Upto 4 Family Members </b></p>
                             <p class="tnc1 mt-n2"> (No Age Limit)</p>
                         </div>
                     </div>
-                    <div class="allplan">
+                    <div class="renewdigital">
                         <div class="row plan">
                             <ul class="pt-3">
                                 <p class="pl-2"><b> Highlighted Features :</b></p>
-                                <li> <b> ₹ 5000</b> Free Lab Test & Scans </li>
-                                <li> <b> ₹ 1000</b> Pharmacy </li>
+                                <li> <b> ₹ 5000 </b> Free Lab Test & Scans </li>
+                                <li> <b> ₹ 3,000 </b> Daily Cash to cover Hospital stays upto 30 days till Age 65 (for
+                                    Family) </li>
                                 <li><b> Unlimited </b> In-Person GP Consultations </li>
                                 <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
                                 <li> <b> Unlimited </b> 1:1 Sessions with Wellness Coaches </li>
-                                <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
-                                <li> Upto 20% on Medicines with Home Delivery </li>
-                                <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                                <li><b> 6 Visits </b> F2F Consultations- Specialits Upto Rs 500 Each </li>
+
+
+                                <li><b> Exclusive Discounted Platform Benefits: </b>
+                                    <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
+                                        <li> Upto 15% on Medicines with Home Delivery </li>
+                                        <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
-                        <div class="row allplanspace3">
+                        <div class="row renewdigitalspace">
                             <div class="col-md-6 pl-4  col-6">
                                 <a href="https://www.healthassure.in/products/Files/FitAssure_Plan_Tnc.pdf" class="tnc"
                                     target="_blank">*Terms & conditions</a>
                                 <p class="tnc1 pl-2">(Excl. GST) </p>
                             </div>
-                            <div class="col-md-6 col-6" id="fitassureplatinumoneyear">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br />
-                                    <span style="font-weight:500;"> &#8377; <del> 8259 </del> &nbsp; 6999/-</span> </a>
+                            <div class="col-md-6 col-6">
+                                <a class="buybtn selected float-end" id="upgradeFAPlus">
+                                    Upgrade </a>
                             </div>
-                            <div class="col-md-6 col-6" id="fitassureplatinumtwoyear" style="display:none;">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br />
-                                    <span style="font-weight:500;"> &#8377; <del>13214 </del> &nbsp; 11198/-</span> </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5" id="UpgradePlatFloatdiv">
                     <div class="row offercard">
-                        <div class="col-lg-5 col-md-6 pt-2 col-5">
-                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Floater) </b> </p>
+                        <div class="col-lg-5 col-xl-5 col-md-6 pt-2 col-5">
+                            <p style="font-size:16px; padding-left:10px;"><b> FitAssure Platinum Plus </b> </p>
                         </div>
-                        <div class="col-lg-7 col-md-6 col-7 val">
+                        <div class="col-lg-7 col-xl-7 col-md-6 col-7 val">
                             <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
                             <p class="tnc2 mt-n2"><b> Upto 4 Family Members </b></p>
-                            <p class="tnc1 mt-n2"> (No Age Limit) </p>
+                            <p class="tnc1 mt-n2"> (Age 18-65) </p>
                         </div>
                     </div>
-                    <div class="allplan">
+                    <div class="renewdigital">
                         <div class="row plan">
                             <ul class="pt-3">
                                 <p class="pl-2"><b> Highlighted Features :</b></p>
-                                <li> <b> ₹ 10000</b> Free Lab Test & Scans </li>
-                                <li> <b> ₹ 2500</b> Pharmacy </li>
+                                <li> <b> ₹ 5000</b> Free Lab Test & Scans </li>
+                                <li> <b> ₹ 5,000 </b> Daily Cash to cover Hospital stays upto 30 days till Age 65 (for
+                                    Family) </li>
                                 <li><b> Unlimited </b> In-Person GP Consultations </li>
                                 <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
                                 <li> <b> Unlimited </b> 1:1 Sessions with Wellness Coaches </li>
-                                <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
-                                <li> Upto 20% on Medicines with Home Delivery </li>
-                                <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                                <li><b> 6 Visits </b> F2F Consultations- Specialits Upto Rs 500 Each </li>
+                                <li><b> Exclusive Discounted Platform Benefits: </b>
+                                    <ul style="border-top: none;list-style-type:bullet;" class="pt-2">
+                                        <li> Upto 15% on Medicines with Home Delivery </li>
+                                        <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
-                        <div class="row allplanspace3">
+                        <div class="row renewdigitalspace">
                             <div class="col-md-6 pl-4 col-6">
                                 <a href="https://www.healthassure.in/products/Files/FitAssure_Plan_Tnc.pdf" class="tnc"
                                     target="_blank">*Terms & conditions</a>
                                 <p class="tnc1 pl-2">(Excl. GST) </p>
                             </div>
-                            <div class="col-md-6  col-6" id="fitassureplatinumprooneyear">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br />
-                                    <span style="font-weight:500;"> &#8377; <del> 17699 </del> &nbsp; 14999/-</span>
-                                </a>
+                            <div class="col-md-6 col-6">
+                                <a class="buybtn float-end" id="upgradeFAPP">
+                                    <span style="font-weight:500;"> Upgrade </span> </a>
                             </div>
-                            <div class="col-md-6  col-6" id="fitassureplatinumprotwoyear" style="display:none;">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br />
-                                    <span style="font-weight:500;"> &#8377; <del>28318</del> &nbsp; 23998/-</span> </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-lg-6  col-xl-4 col-xxl-4 mt-5" id="UpgradePlatFloatdiv">
                     <div class="row offercard">
-                        <div class="col-lg-5 col-md-6 pt-2 col-5">
-                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima (Floater) </b> </p>
+                        <div class="col-lg-5 col-xl-5 col-xxl-6 col-md-6 pt-2 col-5">
+                            <p style="font-size:16px; padding-left:10px;"><b> Platinum Ultima Suraksha </b> </p>
                         </div>
-                        <div class="col-lg-7 col-md-6 col-7 val">
+                        <div class="col-lg-7 col-xl-7 col-xxl-6 col-md-6 col-7 val">
                             <p style="margin-bottom:0px;"> <small> 12 Months </small> </p>
                             <p class="tnc2 mt-n2"><b> Upto 4 Family Members </b></p>
                             <p class="tnc1 mt-n2"> (No Age Limit) </p>
                         </div>
                     </div>
-                    <div class="allplan">
+                    <div class="renewdigital1">
                         <div class="row plan">
                             <ul class="pt-3">
                                 <p class="pl-2"><b> Highlighted Features :</b></p>
-                                <li> <b> ₹ 10000</b> Free Lab Test & Scans </li>
-                                <li> <b> ₹ 2500</b> Pharmacy </li>
-                                <li><b> Unlimited </b> In-Person GP Consultations </li>
-                                <li> <b> Unlimited </b> Online 24x7 Doctor Consults </li>
-                                <li> <b> Unlimited </b> 1:1 Sessions with Wellness Coaches </li>
-                                <li><b> 4 Visits </b> Insta Health Wallet ( Doctor of your choice) </li>
-                                <li> Upto 20% on Medicines with Home Delivery </li>
-                                <li> Up to. 50% discount on Lab tests & Scans at in-network centers </li>
+                                <li> <b> ₹ 10000 </b> Free Lab Test & Scans </li>
+                                <li> <b> Free </b> Personal Family doctor </li>
+                                <li> <b> Personal health screenings</b> Once in a year - Free for every member </li>
+                                <li> <b> Unlimited </b> Tele Doctor Consultations GP & 18+ other Specialists </li>
+
+                                <li> <b> Mera Waala Doctor</b> 4 visits- Up to Rs 800 Each </li>
+                                <li><b> Unlimited </b> Live Online Fitness classes (Yoga, Zumba etc) </li>
+                                <li><b> ₹ 30,000 </b> Daily Cash cover to Hospital Stays </li>
+                                <li><b> Exclusive Discounted Platform Benefits: </b>
+                                    <ul style="border-top: none;" class="pt-2">
+                                        <li> Upto 50% discount on Lab tests & Scans at in-network centers </li>
+                                        <li> Upto 15% on Medicines with Home Delivery </li>
+                                    </ul>
+                                </li>
+
                             </ul>
                         </div>
                         <div class="row allplanspace3">
@@ -861,26 +886,17 @@
                                     target="_blank">*Terms & conditions</a>
                                 <p class="tnc1 pl-2">(Excl. GST) </p>
                             </div>
-                            <div class="col-md-6  col-6" id="fitassureplatinumprooneyear">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br />
-                                    <span style="font-weight:500;"> &#8377; <del> 17699 </del> &nbsp; 14999/-</span>
-                                </a>
+                            <div class="col-md-6 col-6">
+                                <a class="buybtn float-end" id="upgradePUS"> Upgrade </a>
                             </div>
-                            <div class="col-md-6  col-6" id="fitassureplatinumprotwoyear" style="display:none;">
-                                <a class="buybtn float-end"> <span
-                                        style="font-size:14px;text-align:left; padding-right:16px;"> Buy Now
-                                    </span><br /> <span style="font-weight:500;"> &#8377; <del>28318</del> &nbsp;
-                                        23998/-</span> </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="PolicyDetailsection" style="background-color: #ffffff; margin-bottom:10px;">
+    <section class="PolicyDetailsection" style="background-color: #ffffff; margin-bottom:10px; display: none;">
         <div class="container banner">
             <div class="row px-4 renew">
                 <div class="col-lg-6 col-md-6 col-sm-6 ">
@@ -906,14 +922,20 @@
             <div class="row py-3 mt-5" style="background-color: #0f5fc2;">
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12">
                     <h3> Current Premium </h3>
-                    <p class="text-white" style="font-size: 18px; font-weight: 600;"> <span id="CurrentPlanAmount"><del>
-                                <i class="fa fa-inr" aria-hidden="true"></i> 13520 </span> </del> <span
-                            id="CurrentPlanAmount1"><i class="fa fa-inr" aria-hidden="true"></i> 10520</span> <span
-                            style="font-size: 8px;">Exclusive of GST </span>
+                    <p class="text-white" style="font-size: 18px; font-weight: 600;">
+                        <span><i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount">13520</spen>
+                                </span>
+                            <!-- <span id="CurrentPlanAmount1"><i class="fa fa-inr" aria-hidden="true"></i> 10520</span> -->
+                            <span style="font-size: 8px;">Exclusive of GST </span>
                     </p>
                 </div>
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12">
-                    <button class="btn renewnow-btn"> Renew Now </button>
+                    <p class="text-white" style="font-size: 18px; font-weight: 600;margin-top: 5px;">
+                        <span><i class="fa fa-inr" aria-hidden="true"></i> <span id="DiscountPlanAmount">13520</spen>
+                                </span>
+                            <span style="font-size: 8px;">Exclusive of GST </span>
+                    </p>
+                    <button class="btn renewnow-btn" id="RenewbtnClick"> Renew Now </button>
                 </div>
             </div>
         </div>
@@ -1058,6 +1080,10 @@
             GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val());
         });
 
+        $('#RenewbtnClick').click(function (e) {
+            UpgradeOPDPlan('', '', '', [], '', $('#RenewPolicyNo').val());
+        });
+
         // $('#RenewNewbtnClick').click(function (e) {
         //     GetOPDPlanForUpgrade($('#RenewPolicyNo').val());
         // });
@@ -1067,6 +1093,24 @@
             OPDPlanRenewal($('#RenewPolicyNo').val());
         });
 
+        $('#upgradeFAPlus').click(function (e) {
+            $('#upgradeFAPlus').addClass('selected');
+            $('#upgradeFAPP').removeClass('selected');
+            $('#upgradePUS').removeClass('selected');
+            UpgradeOPDPlan('', '', 'HAOPDR003-65', [], '', $('#RenewPolicyNo').val());
+        });
+        $('#upgradeFAPP').click(function (e) {
+            $('#upgradeFAPlus').removeClass('selected');
+            $('#upgradeFAPP').addClass('selected');
+            $('#upgradePUS').removeClass('selected');
+            UpgradeOPDPlan('', '', 'HAOPDR003-67', [], '', $('#RenewPolicyNo').val());
+        });
+        $('#upgradePUS').click(function (e) {
+            $('#upgradeFAPlus').removeClass('selected');
+            $('#upgradeFAPP').removeClass('selected');
+            $('#upgradePUS').addClass('selected');
+            UpgradeOPDPlan('', '', 'HAOPDR00U46', [], '', $('#RenewPolicyNo').val());
+        });
         function GetOPDPlanSearhForUpgrade(policyNo, planCode = '') {
             GetOPDPlanForUpgrade(policyNo, planCode).then(function (result) {
                 $('#UpgradePlatIndidiv').hide();
@@ -1096,7 +1140,7 @@
                 }
 
                 var PlatUltimaFloater = PlanCodeArray[2]?.trim();
-                if(!PlatUltimaFloater){
+                if (!PlatUltimaFloater) {
                     PlatUltimaFloater = PlanCodeArray[0]?.trim();
                 }
                 if (PlatUltimaFloater === 'HAOPDR00U31') {
@@ -1120,10 +1164,10 @@
                 $('.PolicyDetailsection').show();
                 var renewpolicybenefits = '';
                 jQuery.each(result.results.plan.benefits, function (index, item) {
-                    renewpolicybenefits+="<div class='col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4'><div class='servicerenew'><div class='row'><div class='col-lg-12 col-md-12 col-12'>"+
-                                            "<img src='"+item.image+"'></div><div class='col-lg-12 col-md-12 col-12'><p>"+
-                                            "<b>" + (item.isUnlimited == "Y" ? "Unlimited" : item.totalAmount > 0 ? " Rs. " + item.totalAmount : " Credits " + item.totalCredits) + " </b></p></div><div class='col-lg-12 col-md-12 col-12'>"+
-                                            "<p> "+item.serviceName+" </p></div></div></div></div>";
+                    renewpolicybenefits += "<div class='col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4'><div class='servicerenew'><div class='row'><div class='col-lg-12 col-md-12 col-12'>" +
+                        "<img src='" + item.image + "'></div><div class='col-lg-12 col-md-12 col-12'><p>" +
+                        "<b>" + (item.isUnlimited == "Y" ? "Unlimited" : item.totalAmount > 0 ? " Rs. " + item.totalAmount : " Credits " + item.totalCredits) + " </b></p></div><div class='col-lg-12 col-md-12 col-12'>" +
+                        "<p> " + item.serviceName + " </p></div></div></div></div>";
                 });
                 $('#renewpolicybenefits').html(renewpolicybenefits);
                 $("#renewpolicybenefitsdiv").show();
