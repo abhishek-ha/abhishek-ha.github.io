@@ -2323,12 +2323,9 @@ div {
 
 }
 
-
-
-
 .renewdigital{
      background-color:#fcfcfc;
-    height:687px;
+    height:608px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2343,7 +2340,7 @@ div {
     width:150px;
     position:absolute;
     text-align:center;
-    border-radius:30px 0 0 0;
+    border-radius:5px;
     text-transform:none;
     padding-top:8px;
     padding-bottom:8px;
@@ -2363,7 +2360,7 @@ div {
 
 .renewdigital1{
      background-color:#fcfcfc;
-    height:778px;
+    height:637px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -2378,7 +2375,7 @@ div {
     width:150px;
     position:absolute;
     text-align:center;
-    border-radius:30px 0 0 0;
+    border-radius:5px;
     text-transform:none;
     padding-top:8px;
     padding-bottom:8px;
@@ -2392,15 +2389,9 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
-
-
-
-
-
+.renewdigitalspace{
+    padding-top: 60px;
+}
 
 
 
@@ -3613,12 +3604,9 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
 .renewdigital{
      background-color:#fcfcfc;
-    height:626px;
+    height:618px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3629,7 +3617,7 @@ div {
 .renewdigital .buybtn{
    background-color:#0f5fc2;
     color:#EFEDD8; 
-    
+    right: 15px;
     width:150px;
     position:absolute;
     text-align:center;
@@ -3642,17 +3630,35 @@ div {
     cursor:pointer;
     margin-top:2px;
 }
+.renewdigital .buybtn.selected{
+    background-color: #000000;
+}
+
+
+.renewdigital .buybtn.selected::before {
+     content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #000000;
+}
+
+
+
 .renewdigital .buybtn:hover{
    background-color:#000000;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
+.renewdigitalspace{
+    padding-top: 60px;
+}
 .renewdigital1{
      background-color:#fcfcfc;
-    height:675px;
+    height:610px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -3662,7 +3668,8 @@ div {
 }
 .renewdigital1 .buybtn{
    background-color:#0f5fc2;
-    color:#EFEDD8; 
+    color:#EFEDD8;
+    right: 15px; 
      width:150px;
     position:absolute;
     text-align:center;
@@ -3675,6 +3682,26 @@ div {
     cursor:pointer;
     margin-top:2px;
 }
+
+
+.renewdigital1 .buybtn.selected{
+    background-color: #000000;
+}
+
+
+.renewdigital1 .buybtn.selected::before {
+     content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #000000;
+}
+
+
+
 .renewdigital1 .buybtn:hover{
    background-color:#000000;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
@@ -3765,7 +3792,7 @@ div {
 .pdb{
     padding-bottom: 10px;
 }
-   .head1 {
+.head1 {
            font-size: 27px;
             font-weight: 700;
             line-height: 37px;
@@ -4152,10 +4179,13 @@ height:630px;
    height:533px;
 }
 .renewdigital{
-  height:650px;
+  height:598px;
   }
 .renewdigital1{
-  height:699px; 
+  height:598px; 
+}
+.renewdigitalspace{
+    padding-top: 60px;
 }
 
 .allplanspace1 {
@@ -4599,12 +4629,14 @@ height:630px;
 .allplan{
    height:533px;
 }
-
 .renewdigital{
-  height:650px;
+   height:543px; 
   }
 .renewdigital1{
-  height:678px; 
+  height:575px; 
+}
+.renewdigitalspace{
+    padding-top: 50px;
 }
 
 
@@ -5105,10 +5137,13 @@ height:630px;
    height:513px;
 }
 .renewdigital{
-  height:634px;
+  height:508px;
   }
 .renewdigital1{
-  height:641px; 
+  height:550px; 
+}
+.renewdigitalspace {
+    padding-top: 54px;
 }
 
 
@@ -5168,10 +5203,13 @@ height:630px;
    height:491px;
 }
 .renewdigital{
-  height:592px;
+  height:491px;
   }
 .renewdigital1{
-  height:641px; 
+  height:550px; 
+}
+.renewdigitalspace {
+    padding-top: 54px;
 }
 .allplanspace1 {
     padding-top: 108px;
@@ -5215,7 +5253,6 @@ height:630px;
      font-weight: 700;
     line-height: 37px;
 }
-
 .faqhead h4{
     font-size:26px;
     line-height:35px;
@@ -5301,11 +5338,11 @@ height:630px;
            max-width:300px;
            margin: auto;
         }
-      .benitem  img {
+.benitem  img {
             width: 90px;
            padding: 5px 5px 5px 5px;
            }
-        .benitem p {
+.benitem p {
             font-weight: 400;
             color: #ffffff;
             font-size: 13px;
@@ -5329,8 +5366,7 @@ height:630px;
     height:436px;
 }
 .sodexo-plan1{
-   height:490px;
-  
+   height:490px; 
 }
 .sodexo-plan2{
    height:570px;
@@ -5346,7 +5382,6 @@ height:630px;
     height:522px;
     margin-top:80px;
 }
-
 .cashkaroimg{
     margin-top: -1212px;
     margin-left:2%;
@@ -5482,13 +5517,14 @@ height:630px;
    height:482px;
 }
 .renewdigital{
-  height:540px;
+  height:484px;
   }
 .renewdigital1{
-  height:610px; 
+  height:525px; 
 }
-
-
+.renewdigitalspace {
+    padding-top: 44px;
+}
 .allplanspace1 {
     padding-top: 109px;
 }
@@ -5506,9 +5542,6 @@ height:630px;
     width: 73%;
     margin-left: 14%;
 }
-
-
-
 }
 
 
@@ -5594,14 +5627,12 @@ height:630px;
 .service-sod{
     height:503px;
 }
-
 .ebix{
     height:521px;
 }
 .ebix1{
  height:521px;
 }
-
 .brandingwala{
     height:522px;   
 }
@@ -5662,22 +5693,19 @@ height:630px;
             font-weight: 400;
             font-size: 90%;
         }
- .val{
+.val{
     padding-top:0px;
 }
 .sodexo-plan{
    height:436px;
 }
-
 .sodexo-plan1{
    height:490px;  
 }
-
 .sodexo-plan2{
    height:535px;
     margin-top:100px;
 }
-
 .sodexo-plan2img{
     margin-top: -1332px;
     margin-left:2%;
@@ -5738,27 +5766,10 @@ height:630px;
   margin-top:10px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
+     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:11px;
-}
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
 }
 .service2{
   padding:6px;
@@ -5770,15 +5781,6 @@ height:630px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5788,22 +5790,12 @@ height:630px;
 .service3{
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
    height:539px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5813,22 +5805,12 @@ height:630px;
 .service4{
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
    height:623px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5847,15 +5829,6 @@ height:630px;
     width:373px;
 }
 .service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
@@ -5867,22 +5840,11 @@ height:630px;
     height:601px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
     width:373px;
 }
 .fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
@@ -5914,12 +5876,14 @@ height:630px;
 .allplan{
    height:439px;
 }
-
 .renewdigital{
   height:518px;
   }
 .renewdigital1{
   height:567px; 
+}
+.renewdigitalspace {
+    padding-top: 22px;
 }
 .allplanspace1 {
     padding-top: 87px;
@@ -8867,11 +8831,15 @@ height:652px;
    height:460px;
 }
 .renewdigital{
-  height:513px; 
+  height:466px; 
   }
 .renewdigital1{
-  height:562px; 
+  height:508px; 
 }
+.renewdigitalspace {
+    padding-top: 59px;
+}
+
 .allplanspace1 {
     padding-top: 87px;
 }
@@ -9104,37 +9072,24 @@ height:652px;
 .service4{
    padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:373px;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
+ min-height:373px;
    margin-top:10px;
 }
 .service4 .buybtn{
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
-    cursor: pointer;
     margin-top:41px;
 }
 .servicebox{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:615px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:15px;
+  min-height:615px;
+ margin-top:15px;
   max-width: 345px;
 }
 .service-fiassure{
-      background-color:#fcfcfc;
     height:456px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
     width:500px;
@@ -9188,15 +9143,15 @@ height:652px;
 .allplan{
    height:459px;
 }
-
 .renewdigital{
-  height:513px; 
+  height:466px; 
   }
 .renewdigital1{
-  height:562px; 
+    height:505px; 
 }
-
-
+.renewdigitalspace {
+    padding-top: 59px;
+}
 .allplanspace1 {
     padding-top: 86px;
 }
@@ -9274,7 +9229,6 @@ height:652px;
 .startassu{
     font-size:40px;
      font-weight:700!important;
-    font-family: 'Poppins', sans-serif;
      padding-bottom:50px;
      padding-top:8px;
      line-height: 45px;
@@ -9297,8 +9251,7 @@ height:652px;
 }
 .fitassure-plus{
    height:574px;
-   
-}
+   }
 .fitassure-plusimg{
    margin-top: -1287px;
     margin-left: 14%;
@@ -9372,11 +9325,7 @@ height:652px;
   width:358px;
 }
 .service .buybtn{
-     padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:83px!important;
+  margin-top:83px!important;
 }
 .service2{
    height:502px!important;
@@ -9384,11 +9333,7 @@ height:652px;
     width:358px;
 }
 .service2 .buybtn{
-   padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:110px!important;
+   margin-top:110px!important;
 }
 .service3{
     height:501px!important;
@@ -9396,10 +9341,6 @@ height:652px;
     width:358px;
 }
 .service3 .buybtn{
-   padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
     margin-top:57px!important;
 }
 .service4{
@@ -9408,10 +9349,6 @@ height:652px;
    width:358px;
 }
 .service4 .buybtn{
-   padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:128px!important;
 }
 .service-fiassure{
@@ -9422,12 +9359,7 @@ height:652px;
     width:500px;
 }
 .service-fiassure .buybtn{
-   padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+   margin-top:2px;
 }
 .fitassure-nonhospicash{
     height:468px;
@@ -9455,11 +9387,15 @@ height:652px;
    height:512px;
 }
 .renewdigital{
-  height:492px; 
+  height:555px; 
   }
 .renewdigital1{
-  height:520px; 
+  height:555px; 
 }
+.renewdigitalspace {
+    padding-top: 122px;
+}
+
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -9479,16 +9415,14 @@ height:652px;
    margin-top: -1399px;
     margin-left: 10%;
 }
-
-
 }
-@media only screen and (min-width: 1300px){
 
+
+@media only screen and (min-width: 1300px){
 .inrspace{
     padding-top:3rem;
 }
-
-    .sodexolrmargin{
+.sodexolrmargin{
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -9603,9 +9537,6 @@ height:652px;
   width:358px;
 }
 .service .buybtn{
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:83px!important;
 }
 .service2{
@@ -9614,11 +9545,7 @@ height:652px;
     width:358px;
 }
 .service2 .buybtn{
-   padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:110px!important;
+   margin-top:110px!important;
 }
 .service3{
    height:487px!important;
@@ -9636,7 +9563,6 @@ height:652px;
 }
 .service4 .buybtn{
     margin-right:9px;
-    cursor: pointer;
     margin-top:128px!important;
 }
 .service-sod{
@@ -9672,7 +9598,6 @@ height:652px;
 .fitassure-plus{
     height:538px;
 }
-
 .fitassure-plusimg{
     margin-top:-1204px;
     margin-left:18%;
@@ -9740,12 +9665,14 @@ height:652px;
    height:485px;
 }
 .renewdigital{
-  height:530px; 
+  height:545px; 
   }
 .renewdigital1{
-  height:530px; 
+  height:545px; 
 }
-
+.renewdigitalspace {
+    padding-top: 111px;
+}
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -9762,7 +9689,6 @@ height:652px;
     margin-top: -1362px;
     margin-left: 11%;
 }
-
 }
 
 @media only screen and (min-width: 1400px){
@@ -9894,7 +9820,6 @@ height:652px;
     margin-right:9px;
     margin-top:87px!important;
 }
-
 .service2{
     height:487px!important;
     margin-top:10px;
@@ -9930,11 +9855,11 @@ height:652px;
             margin:4px;
           padding: 5px;
         }
-      .benitem  img {
+.benitem  img {
             width: 70px;
            padding: 2px 2px;
             }
-       .benitem p {
+.benitem p {
             font-weight: 400;
             color: #ffffff;
             font-size: 13px;
@@ -9942,7 +9867,7 @@ height:652px;
             padding-left:5px;
             padding-top:10px;
         }
-        .benitem p b {
+.benitem p b {
            font-weight:700;
             color: #ffffff;
            font-size:14.5px;
@@ -10006,6 +9931,10 @@ height:652px;
   }
 .renewdigital1{
   height:510px; 
+}
+
+.renewdigitalspace {
+    padding-top: 119px;
 }
 
 
