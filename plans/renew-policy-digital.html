@@ -376,17 +376,18 @@
             }
         }
 
- @media only screen and (min-width: 1500px) {
-    .allplanspace3 {
-    padding-top: 20px;
-}
-.renewdigitalfirst{
-    padding-bottom: 1rem!important;
-}
+        @media only screen and (min-width: 1500px) {
+            .allplanspace3 {
+                padding-top: 20px;
+            }
+
+            .renewdigitalfirst {
+                padding-bottom: 1rem !important;
+            }
 
 
 
- }
+        }
 
 
         @media only screen and (min-width: 1600px) {
@@ -937,7 +938,7 @@
                     <h3> Current Premium </h3>
                     <p class="text-white" style="font-size: 18px; font-weight: 600;">
                         <span><i class="fa fa-inr" aria-hidden="true"></i> <span id="CurrentPlanAmount">13520</spen>
-                                </span>
+                            </span>
                             <!-- <span id="CurrentPlanAmount1"><i class="fa fa-inr" aria-hidden="true"></i> 10520</span> -->
                             <span style="font-size: 8px;">Exclusive of GST </span>
                     </p>
@@ -945,7 +946,7 @@
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12">
                     <p class="text-white" style="font-size: 18px; font-weight: 600;margin-top: 5px;">
                         <span><i class="fa fa-inr" aria-hidden="true"></i> <span id="DiscountPlanAmount">13520</spen>
-                                </span>
+                            </span>
                             <span style="font-size: 8px;">Exclusive of GST </span>
                     </p>
                     <button class="btn renewnow-btn" id="RenewbtnClick"> Renew Now </button>
@@ -1084,17 +1085,22 @@
             var policyNo = href.searchParams.get("id");
             if (policyNo != null && policyNo != '') {
                 $('#RenewPolicyNo').val(policyNo);
-                OPDPlanRenewal(policyNo);
+                GetOPDPlanSearhForUpgrade(policyNo);
             }
         });
 
         $('#RenewpolicyNoForm').submit(function (e) {
             e.preventDefault();
             GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val());
+            $('#upgradeFAPlus').addClass('selected');
+            $('#upgradeFAPP').removeClass('selected');
+            $('#upgradePUS').removeClass('selected');
         });
 
+        var selecttedPlanCode = 'HAOPDR003-65';
         $('#RenewbtnClick').click(function (e) {
-            UpgradeOPDPlan('', '', '', [], '', $('#RenewPolicyNo').val());
+            debugger;
+            UpgradeOPDPlan('', '', selecttedPlanCode, [], '', $('#RenewPolicyNo').val());
         });
 
         // $('#RenewNewbtnClick').click(function (e) {
@@ -1110,21 +1116,24 @@
             $('#upgradeFAPlus').addClass('selected');
             $('#upgradeFAPP').removeClass('selected');
             $('#upgradePUS').removeClass('selected');
-            UpgradeOPDPlan('', '', 'HAOPDR003-65', [], '', $('#RenewPolicyNo').val());
+            selecttedPlanCode = 'HAOPDR003-65';
+            GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
         });
         $('#upgradeFAPP').click(function (e) {
             $('#upgradeFAPlus').removeClass('selected');
             $('#upgradeFAPP').addClass('selected');
             $('#upgradePUS').removeClass('selected');
-            UpgradeOPDPlan('', '', 'HAOPDR003-67', [], '', $('#RenewPolicyNo').val());
+            selecttedPlanCode = 'HAOPDR003-67';
+            GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
         });
         $('#upgradePUS').click(function (e) {
             $('#upgradeFAPlus').removeClass('selected');
             $('#upgradeFAPP').removeClass('selected');
             $('#upgradePUS').addClass('selected');
-            UpgradeOPDPlan('', '', 'HAOPDR00U46', [], '', $('#RenewPolicyNo').val());
+            selecttedPlanCode = 'HAOPDR00U46';
+            GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
         });
-        function GetOPDPlanSearhForUpgrade(policyNo, planCode = '') {
+        function GetOPDPlanSearhForUpgrade(policyNo, planCode = 'HAOPDR003-65') {
             GetOPDPlanForUpgrade(policyNo, planCode).then(function (result) {
                 $('#UpgradePlatIndidiv').hide();
                 $('#UpgradePlatFloatdiv').hide();
