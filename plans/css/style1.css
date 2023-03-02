@@ -115,26 +115,7 @@ a:hover{
 .pb-6{
     padding-bottom: 5rem;
 }
-.form-control {
-/*float: right;*/
-    padding: 0 1em;
-    color: #6a7989;
-    font-weight: 800;
-    font-size: 115%;
-    height: 55px;
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+
 .btn-primary {
     color: #ffffff!important;
     background-color: #0f5fc2!important;
@@ -2322,6 +2303,79 @@ div {
         text-align: center;
 
 }
+
+.renewdigital{
+     background-color:#fcfcfc;
+    height:608px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 0px 0px 10px 10px;
+    margin-top:10px;
+}
+.renewdigital .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:17px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.renewdigital .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+
+
+
+
+.renewdigital1{
+     background-color:#fcfcfc;
+    height:637px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 0px 0px 10px 10px;
+    margin-top:10px;
+}
+.renewdigital1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right:0px; 
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:17px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.renewdigital1 .buybtn:hover{
+   background-color:#0860cc;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.renewdigitalspace{
+    padding-top: 60px;
+}
+
+
+
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -3531,6 +3585,109 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
+.renewdigital{
+     background-color:#fcfcfc;
+    height:618px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 0px 0px 10px 10px;
+    margin-top:10px;
+}
+.renewdigital .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8; 
+    right: 15px;
+    width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:17px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+.renewdigital .buybtn.selected{
+    background-color: #000000;
+}
+
+
+.renewdigital .buybtn.selected::before {
+     content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #000000;
+}
+
+
+
+.renewdigital .buybtn:hover{
+   background-color:#000000;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
+.renewdigitalspace{
+    padding-top: 60px;
+}
+.renewdigital1{
+     background-color:#fcfcfc;
+    height:610px;
+    padding:6px;
+    margin:auto;
+   border:1px solid rgb(201 213 219);
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 0px 0px 10px 10px;
+    margin-top:10px;
+}
+.renewdigital1 .buybtn{
+   background-color:#0f5fc2;
+    color:#EFEDD8;
+    right: 15px; 
+     width:150px;
+    position:absolute;
+    text-align:center;
+    border-radius:5px;
+    text-transform:none;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:17px;
+    margin-right:9px;
+    cursor:pointer;
+    margin-top:2px;
+}
+
+
+.renewdigital1 .buybtn.selected{
+    background-color: #000000;
+}
+
+
+.renewdigital1 .buybtn.selected::before {
+     content: "\f00c";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #000000;
+}
+
+
+
+.renewdigital1 .buybtn:hover{
+   background-color:#000000;
+   box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
+   color:#ffffff!important;
+}
 .offercard{
     background-color: orange;
     color: #ffffff;
@@ -3616,7 +3773,7 @@ div {
 .pdb{
     padding-bottom: 10px;
 }
-   .head1 {
+.head1 {
            font-size: 27px;
             font-weight: 700;
             line-height: 37px;
@@ -3773,8 +3930,7 @@ div {
   width:310px;
 }
 .sodexo-plan1{
-    height:490px;
-   
+    height:490px; 
 }
 .sodexo-plan2{
     height:421px;
@@ -4003,6 +4159,16 @@ height:630px;
 .allplan{
    height:533px;
 }
+.renewdigital{
+  height:598px;
+  }
+.renewdigital1{
+  height:598px; 
+}
+.renewdigitalspace{
+    padding-top: 60px;
+}
+
 .allplanspace1 {
     padding-top: 108px;
 }
@@ -4444,6 +4610,19 @@ height:630px;
 .allplan{
    height:533px;
 }
+.renewdigital{
+   height:543px; 
+  }
+.renewdigital1{
+  height:575px; 
+}
+.renewdigitalspace{
+    padding-top: 50px;
+}
+
+
+
+
 .allplanspace1 {
     padding-top: 108px;
 }
@@ -4938,6 +5117,17 @@ height:630px;
 .allplan{
    height:513px;
 }
+.renewdigital{
+  height:508px;
+  }
+.renewdigital1{
+  height:550px; 
+}
+.renewdigitalspace {
+    padding-top: 54px;
+}
+
+
 .allplanspace1 {
     padding-top: 109px;
 }
@@ -4956,8 +5146,6 @@ height:630px;
     width: 73%;
     margin-left: 14%;
 }
-
-
 }
 
 @media only screen and (min-width: 390px){
@@ -4971,10 +5159,8 @@ height:630px;
     margin-right: auto;
     position:relative;
 }
-
 .ebix{
- height:540px;
-  
+ height:540px;  
 }
 .ebix1{
   height:523px; 
@@ -4997,6 +5183,15 @@ height:630px;
 .allplan{
    height:491px;
 }
+.renewdigital{
+  height:491px;
+  }
+.renewdigital1{
+  height:550px; 
+}
+.renewdigitalspace {
+    padding-top: 54px;
+}
 .allplanspace1 {
     padding-top: 108px;
 }
@@ -5014,26 +5209,22 @@ height:630px;
     width: 73%;
     margin-left: 14%;
 }
-
-
 }
 
 
 @media only screen and (min-width: 400px){
-
 .remark{
     font-size: 12px;
     font-weight: 600;
 }
-
- .pt-bnr {
+.pt-bnr {
     padding-top: 200px;
     text-align: center;
     }
     .pdb{
     padding-bottom: 10px;
 }
-   .head1 {
+.head1 {
            font-size: 27px;
             font-weight: 700;
             line-height: 37px;
@@ -5043,7 +5234,6 @@ height:630px;
      font-weight: 700;
     line-height: 37px;
 }
-
 .faqhead h4{
     font-size:26px;
     line-height:35px;
@@ -5129,11 +5319,11 @@ height:630px;
            max-width:300px;
            margin: auto;
         }
-      .benitem  img {
+.benitem  img {
             width: 90px;
            padding: 5px 5px 5px 5px;
            }
-        .benitem p {
+.benitem p {
             font-weight: 400;
             color: #ffffff;
             font-size: 13px;
@@ -5157,8 +5347,7 @@ height:630px;
     height:436px;
 }
 .sodexo-plan1{
-   height:490px;
-  
+   height:490px; 
 }
 .sodexo-plan2{
    height:570px;
@@ -5174,7 +5363,6 @@ height:630px;
     height:522px;
     margin-top:80px;
 }
-
 .cashkaroimg{
     margin-top: -1212px;
     margin-left:2%;
@@ -5309,6 +5497,15 @@ height:630px;
 .allplan{
    height:482px;
 }
+.renewdigital{
+  height:484px;
+  }
+.renewdigital1{
+  height:525px; 
+}
+.renewdigitalspace {
+    padding-top: 44px;
+}
 .allplanspace1 {
     padding-top: 109px;
 }
@@ -5326,9 +5523,6 @@ height:630px;
     width: 73%;
     margin-left: 14%;
 }
-
-
-
 }
 
 
@@ -5414,14 +5608,12 @@ height:630px;
 .service-sod{
     height:503px;
 }
-
 .ebix{
     height:521px;
 }
 .ebix1{
  height:521px;
 }
-
 .brandingwala{
     height:522px;   
 }
@@ -5482,22 +5674,19 @@ height:630px;
             font-weight: 400;
             font-size: 90%;
         }
- .val{
+.val{
     padding-top:0px;
 }
 .sodexo-plan{
    height:436px;
 }
-
 .sodexo-plan1{
    height:490px;  
 }
-
 .sodexo-plan2{
    height:535px;
     margin-top:100px;
 }
-
 .sodexo-plan2img{
     margin-top: -1332px;
     margin-left:2%;
@@ -5558,27 +5747,10 @@ height:630px;
   margin-top:10px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
+     font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:11px;
-}
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
 }
 .service2{
   padding:6px;
@@ -5590,15 +5762,6 @@ height:630px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5608,22 +5771,12 @@ height:630px;
 .service3{
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
    height:539px;
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5633,22 +5786,12 @@ height:630px;
 .service4{
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
    height:623px;
    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
    border-radius:10px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -5667,15 +5810,6 @@ height:630px;
     width:373px;
 }
 .service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
@@ -5687,22 +5821,11 @@ height:630px;
     height:601px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
     width:373px;
 }
 .fitassure-nonhospicash .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
     padding-bottom:8px;
     font-size:19px;
     margin-right:9px;
@@ -5734,10 +5857,18 @@ height:630px;
 .allplan{
    height:439px;
 }
+.renewdigital{
+  height:518px;
+  }
+.renewdigital1{
+  height:567px; 
+}
+.renewdigitalspace {
+    padding-top: 22px;
+}
 .allplanspace1 {
     padding-top: 87px;
 }
-
 .allplanspace2 {
     padding-top: 59px;
 }
@@ -5752,8 +5883,6 @@ height:630px;
     width: 73%;
     margin-left: 15%;
 }
-
-
 }
 
 
@@ -5765,8 +5894,7 @@ height:630px;
     .pdb{
     padding-bottom: 10px;
 }
-
-   .head1 {
+.head1 {
            font-size: 27px;
             font-weight: 700;
             line-height: 37px;
@@ -6016,9 +6144,7 @@ height:630px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
+   right:0px; 
     width:150px;
     position:absolute;
     text-align:center;
@@ -6092,12 +6218,18 @@ height:630px;
 }
 .relaxbuddy1{
 height:321px;
-   
-}
-
+   }
 .allplan{
    height:383px;
 }
+.renewdigital{
+  height:497px;
+  }
+.renewdigital1{
+  height:546px; 
+}
+
+
 .allplanspace2 {
     padding-top: 59px;
 }
@@ -6334,8 +6466,7 @@ height:545px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
+   
     right:0px; 
     width:150px;
     position:absolute;
@@ -6359,14 +6490,11 @@ height:545px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
     right:0px; 
     width:150px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
@@ -6392,6 +6520,15 @@ height:545px;
 .allplan{
    height:383px;
 }
+
+.renewdigital{
+  height:497px;
+  }
+.renewdigital1{
+  height:546px; 
+}
+
+
 .allplanspace2 {
     padding-top: 59px;
 }
@@ -6564,14 +6701,12 @@ height:545px;
   margin-top:10px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
+  
     right:0px; 
     width:150px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
@@ -6620,9 +6755,7 @@ height:545px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
+   right:0px; 
     width:150px;
     position:absolute;
     text-align:center;
@@ -6632,11 +6765,10 @@ height:545px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
-    cursor:pointer;
     margin-top: 60px;
 }
 .service4{
-    background-color:#fcfcfc;
+  
    padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
@@ -6646,10 +6778,6 @@ height:545px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
     position:absolute;
     text-align:center;
     border-radius:30px 0 0 0;
@@ -6672,6 +6800,15 @@ height:545px;
    margin-top: -1300px;
     margin-left: 13%;
 }
+
+.renewdigital{
+  height:477px;
+  }
+.renewdigital1{
+  height:526px; 
+}
+
+
 
 
 }
@@ -6797,6 +6934,16 @@ height:545px;
 .allplan{
    height:383px;
 }
+
+.renewdigital{
+  height:477px;
+  }
+.renewdigital1{
+  height:526px; 
+}
+
+
+
 .allplanspace2 {
     padding-top: 59px;
 }
@@ -6971,6 +7118,8 @@ height:545px;
    margin-top: -1300px;
     margin-left: 13%;
 }
+
+
 
 
 }
@@ -7214,9 +7363,7 @@ height:545px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
+
     width:150px;
     position:absolute;
     text-align:center;
@@ -7239,9 +7386,7 @@ height:545px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
+ 
     width:150px;
     position:absolute;
     text-align:center;
@@ -7264,12 +7409,8 @@ height:545px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
+ 
+
     border-radius:30px 0 0 0;
     text-transform:none;
     padding-top:4px;
@@ -7319,6 +7460,14 @@ height:321px;
 .allplan{
    height:438px;
 }
+
+.renewdigital{
+  height:477px;
+  }
+.renewdigital1{
+  height:526px; 
+}
+
 .allplanspace1 {
     padding-top: 87px;
 }
@@ -7619,6 +7768,12 @@ height:321px;
 .allplan{
    height:519px;
 }
+.renewdigital{
+  height:475px;
+  }
+.renewdigital1{
+  height:551px; 
+}
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -7639,9 +7794,6 @@ height:321px;
     margin-left: 27%;
     width: 43%;
 }
-
-
-
 }
 @media only screen and (min-width: 800px){
  .pt-bnr {
@@ -7878,8 +8030,12 @@ height:321px;
    margin-top: -1179px;
     margin-left: 30%;
 }
-
-
+.renewdigital{
+  height:639px;
+  }
+.renewdigital1{
+  height:645px; 
+}
 
 }
 
@@ -8011,13 +8167,7 @@ height:321px;
   width:358px!important;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
+   border-radius:30px 0 0 0;
     text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
@@ -8026,12 +8176,7 @@ height:321px;
     cursor: pointer;
     margin-top: 33px;
 }
-.service:hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    padding:6px;
-}
+
 .service2{
   padding:6px;
     margin:auto;
@@ -8043,12 +8188,7 @@ height:321px;
        width:358px!important;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
+
     border-radius:30px 0 0 0;
     text-transform:none;
     padding-top:4px;
@@ -8069,14 +8209,7 @@ height:321px;
      width:358px!important;
 }
 .service3 .buybtn{
-   color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8094,15 +8227,7 @@ height:321px;
    width:358px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8180,6 +8305,15 @@ height:652px;
 .allplan{
    height:519px;
 }
+
+.renewdigital{
+  height:639px;
+  }
+.renewdigital1{
+  height:645px; 
+}
+
+
 .allplanspace1 {
     padding-top: 108px;
 }
@@ -8361,15 +8495,7 @@ height:652px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8386,14 +8512,6 @@ height:652px;
     margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
@@ -8411,15 +8529,7 @@ height:652px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+  padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8444,6 +8554,13 @@ height:652px;
 .platinumultimaimg{
    margin-top: -1179px;
     margin-left: 30%;
+}
+
+.renewdigital{
+  height:639px;
+  }
+.renewdigital1{
+  height:645px; 
 }
 
 
@@ -8576,15 +8693,7 @@ height:652px;
      margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#ffffff; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8601,15 +8710,7 @@ height:652px;
    margin-top:10px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
+   padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8626,14 +8727,6 @@ height:652px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
     padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
@@ -8713,6 +8806,16 @@ height:652px;
 .allplan{
    height:460px;
 }
+.renewdigital{
+  height:466px; 
+  }
+.renewdigital1{
+  height:508px; 
+}
+.renewdigitalspace {
+    padding-top: 59px;
+}
+
 .allplanspace1 {
     padding-top: 87px;
 }
@@ -8733,8 +8836,6 @@ height:652px;
     margin-left: 12%;
     width: 76%;
 }
-
-
 }
 
 @media only screen and (min-width: 1050px){
@@ -8805,7 +8906,6 @@ height:652px;
 .sodexo-plan2{
  height:492px;   
 }
-
 .sodexo-plan2img{
     margin-top: -1019px;
     margin-left:23%;
@@ -8815,7 +8915,6 @@ height:652px;
 .cashkaro{
   height:492px;
 }
-
 .cashkaroimg{
     margin-top: -1019px;
     margin-left:23%;
@@ -8881,11 +8980,9 @@ height:652px;
     padding-top: 40px;
      padding-bottom:80px;
  }
-
-  .banner1{
+.banner1{
     padding-top: 40px;
  }
-
 .startassu{
     font-size:40px;
      font-weight:700!important;
@@ -8931,32 +9028,11 @@ height:652px;
     cursor: pointer;
     margin-top: 33px;
 }
-.service:hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius: 8px;
-    min-height:190px;
-    padding:6px;
-}
 .service2{
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:365px;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-     margin-top:10px;
+  min-height:365px;
+   margin-top:10px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
@@ -8964,8 +9040,7 @@ height:652px;
     margin-top: 33px;
 }
 .service3{
- 
-   min-height:373px;
+ min-height:373px;
 }
 .service3 .buybtn{
     margin-top:83px;
@@ -8973,50 +9048,28 @@ height:652px;
 .service4{
    padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:373px;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
+ min-height:373px;
    margin-top:10px;
 }
 .service4 .buybtn{
-   color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
     padding-bottom:4px;
     font-size:19px;
     margin-right:9px;
-    cursor: pointer;
     margin-top:41px;
 }
 .servicebox{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   min-height:615px;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:15px;
+  min-height:615px;
+ margin-top:15px;
   max-width: 345px;
 }
 .service-fiassure{
-      background-color:#fcfcfc;
     height:456px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
     width:500px;
 }
-
 .gromo{
      height:490px;
     width:500px;
@@ -9066,6 +9119,15 @@ height:652px;
 .allplan{
    height:459px;
 }
+.renewdigital{
+  height:466px; 
+  }
+.renewdigital1{
+    height:505px; 
+}
+.renewdigitalspace {
+    padding-top: 59px;
+}
 .allplanspace1 {
     padding-top: 86px;
 }
@@ -9082,8 +9144,6 @@ height:652px;
   margin-top: -1547px;
     margin-left: 11%;
 }
-
-
 }
 
 
@@ -9145,7 +9205,6 @@ height:652px;
 .startassu{
     font-size:40px;
      font-weight:700!important;
-    font-family: 'Poppins', sans-serif;
      padding-bottom:50px;
      padding-top:8px;
      line-height: 45px;
@@ -9168,8 +9227,7 @@ height:652px;
 }
 .fitassure-plus{
    height:574px;
-   
-}
+   }
 .fitassure-plusimg{
    margin-top: -1287px;
     margin-left: 14%;
@@ -9179,7 +9237,6 @@ height:652px;
 .cashkaro{
     height:513px;
 }
-
 .cashkaroimg{
     margin-top: -1203px;
     margin-left: 17%;
@@ -9216,8 +9273,7 @@ height:652px;
     height:546px;  
 }
 .merabima{
-  height:516px;
-    
+  height:516px;  
 }
 .merabima1{
  height:516px;
@@ -9240,145 +9296,46 @@ height:652px;
     padding-top: 22px;
 }
 .service{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   height:500px!important;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
+  height:500px!important;
   margin-top:10px;
   width:358px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:83px!important;
-}
-.service:hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius:8px;
-    padding:6px;
+  margin-top:83px!important;
 }
 .service2{
-    background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
    height:502px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   margin-top:10px;
     width:358px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-   color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:110px!important;
+   margin-top:110px!important;
 }
 .service3{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-    border:1px solid rgb(201 213 219);
     height:501px!important;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
     margin-top:10px;
     width:358px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
     margin-top:57px!important;
 }
 .service4{
-     background-color:#fcfcfc;
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
     height:504px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
-   margin-top:10px;
+  margin-top:10px;
    width:358px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:128px!important;
 }
 .service-fiassure{
-     background-color:#fcfcfc;
      height:490px;
      padding:6px;
      margin:auto;
-    border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
     margin-top:10px;
     width:500px;
 }
 .service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
-    margin-right:9px;
-    cursor:pointer;
-    margin-top:2px;
+   margin-top:2px;
 }
 .fitassure-nonhospicash{
     height:468px;
@@ -9405,10 +9362,19 @@ height:652px;
 .allplan{
    height:512px;
 }
+.renewdigital{
+  height:555px; 
+  }
+.renewdigital1{
+  height:555px; 
+}
+.renewdigitalspace {
+    padding-top: 122px;
+}
+
 .allplanspace1 {
     padding-top: 107px;
 }
-
 .allplanspace2 {
     padding-top: 80px;
 }
@@ -9425,16 +9391,14 @@ height:652px;
    margin-top: -1399px;
     margin-left: 10%;
 }
-
-
 }
-@media only screen and (min-width: 1300px){
 
+
+@media only screen and (min-width: 1300px){
 .inrspace{
     padding-top:3rem;
 }
-
-    .sodexolrmargin{
+.sodexolrmargin{
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -9544,117 +9508,37 @@ height:652px;
     width:80%;
 }
 .service{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
    height:484px!important;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
   margin-top:10px;
   width:358px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
     margin-top:83px!important;
 }
-.service:hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius:8px;
-    padding:6px;
-}
 .service2{
-    background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   height:487px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+  height:487px!important;
+  margin-top:10px;
     width:358px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-   color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:110px!important;
+   margin-top:110px!important;
 }
 .service3{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-    border:1px solid rgb(201 213 219);
-    height:487px!important;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:487px!important;
+   margin-top:10px;
     width:358px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
     margin-right:9px;
-    cursor:pointer;
-    margin-top:57px!important;
+   margin-top:57px!important;
 }
 .service4{
-     background-color:#fcfcfc;
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
     height:489px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
-   margin-top:10px;
+    margin-top:10px;
    width:358px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
     margin-right:9px;
-    cursor: pointer;
     margin-top:128px!important;
 }
 .service-sod{
@@ -9690,7 +9574,6 @@ height:652px;
 .fitassure-plus{
     height:538px;
 }
-
 .fitassure-plusimg{
     margin-top:-1204px;
     margin-left:18%;
@@ -9757,6 +9640,15 @@ height:652px;
 .allplan{
    height:485px;
 }
+.renewdigital{
+  height:545px; 
+  }
+.renewdigital1{
+  height:545px; 
+}
+.renewdigitalspace {
+    padding-top: 111px;
+}
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -9773,7 +9665,6 @@ height:652px;
     margin-top: -1362px;
     margin-left: 11%;
 }
-
 }
 
 @media only screen and (min-width: 1400px){
@@ -9897,115 +9788,39 @@ height:652px;
     width: 63%;
 }
 .service{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   height:487px!important;
-  box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-  border-radius:10px;
-  margin-top:10px;
+  height:487px!important;
+ margin-top:10px;
   width:358px;
 }
 .service .buybtn{
-   background-color:#0f5fc2;
-    color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
     margin-right:9px;
-    cursor: pointer;
     margin-top:87px!important;
 }
-.service: hover{
-    background-color:#fafafa;
-    box-shadow:0px 5px 10px 0px rgb(224 224 224);
-    border-radius:8px;
-    padding:6px;
-}
 .service2{
-    background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-   height:487px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
+    height:487px!important;
     margin-top:10px;
     width:358px;
 }
 .service2 .buybtn{
-   background-color:#0f5fc2;
-   color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
-    margin-right:9px;
-    cursor: pointer;
-    margin-top:110px!important;
+   margin-right:9px;
+   margin-top:110px!important;
 }
 .service3{
-     background-color:#fcfcfc;
-    padding:6px;
-    margin:auto;
-    border:1px solid rgb(201 213 219);
-    height:489px!important;
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-    border-radius:10px;
-    margin-top:10px;
+   height:489px!important;
+   margin-top:10px;
     width:358px;
 }
 .service3 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
     margin-right:9px;
     cursor:pointer;
     margin-top:60px!important;
 }
 .service4{
-     background-color:#fcfcfc;
-   padding:6px;
-    margin:auto;
-   border:1px solid rgb(201 213 219);
-    height:489px!important;
-   box-shadow: 5px 7px 9px -4px rgb(158 158 158);
-   border-radius:10px;
+  height:489px!important;
    margin-top:10px;
    width:358px;
 }
 .service4 .buybtn{
-   background-color:#0f5fc2;
-     color:#ffffff!important; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-   padding-top:4px;
-    padding-bottom:4px;
-    font-size:19px;
     margin-right:9px;
     cursor: pointer;
     margin-top:128px!important;
@@ -10016,11 +9831,11 @@ height:652px;
             margin:4px;
           padding: 5px;
         }
-      .benitem  img {
+.benitem  img {
             width: 70px;
            padding: 2px 2px;
             }
-       .benitem p {
+.benitem p {
             font-weight: 400;
             color: #ffffff;
             font-size: 13px;
@@ -10028,35 +9843,21 @@ height:652px;
             padding-left:5px;
             padding-top:10px;
         }
-        .benitem p b {
+.benitem p b {
            font-weight:700;
             color: #ffffff;
            font-size:14.5px;
          line-height:20px;
        }
 .service-fiassure{
-    background-color:#fcfcfc;
     height:481px;
     padding:6px;
     margin:auto;
-   border:1px solid rgb(201 213 219);
-    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius:10px;
     margin-top:10px;
     width:514px;
 }
 .service-fiassure .buybtn{
-   background-color:#0f5fc2;
-    color:#EFEDD8; 
-    right:0px; 
-    width:150px;
-    position:absolute;
-    text-align:center;
-    border-radius:30px 0 0 0;
-    text-transform:none;
-    padding-top:8px;
-    padding-bottom:8px;
-    font-size:19px;
     margin-right:9px;
     cursor:pointer;
     margin-top:2px;
@@ -10101,6 +9902,19 @@ height:652px;
 .relaxbuddy1{
  height:526px;    
 }
+.renewdigital{
+  height:482px; 
+  }
+.renewdigital1{
+  height:510px; 
+}
+
+.renewdigitalspace {
+    padding-top: 119px;
+}
+
+
+
 }
 
 @media only screen and (min-width: 1500px){
@@ -10238,6 +10052,15 @@ height:652px;
 }
 .allplan{
    height:481px;
+}
+.renewdigital{
+  height:516px;
+  }
+.renewdigital1{
+   height:516px;
+}
+.renewdigitalspace {
+    padding-top: 80px;
 }
 .allplanspace2 {
     padding-top: 64px;
