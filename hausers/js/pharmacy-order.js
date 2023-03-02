@@ -1,5 +1,6 @@
 var href = new URL(window.location.href);
 var Appointmentid = href.searchParams.get("AppointmentId");
+var TotalCount;
 var statusName = '';
 var place = '';
 
@@ -13,8 +14,6 @@ $(function () {
     console.log(Appointmentid);
     console.log("ready!");
 });
-
-
 
 function LoadData(Appointmentid) {
     $.ajax({
@@ -87,20 +86,26 @@ function LoadData(Appointmentid) {
                 $("[id*='btnInvoice']").attr("href", data.results.invoiceLink);
 
                 if(data.results.serviceName == "Pharmacy"){
+                    TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
+                    console.log(TotalCount);
                     $.each(data.results.coveredTests, function (key, value) {
                         $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' '+ value.testName + '</a></li>');
-                    });
+                                                       
+                    });                    
                 }
+                $("[id*='spnMedicineOrders']").html(TotalCount + '+ Medicines Orders');
             } else {
                 console.log("Error in sucess");
                 window.location.replace("404.html");
             }
+
         },
         error: function () {
             console.log("Error");
             window.location.replace("404.html");
             swal('Error occure');
         }
+        
     });
 
 }
