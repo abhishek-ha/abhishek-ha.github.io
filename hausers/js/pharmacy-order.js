@@ -8,11 +8,8 @@ var place = '';
 $(function () {
     if (Appointmentid != undefined && Appointmentid != null) { LoadData(Appointmentid); }
     else {
-        console.log('error')
         window.location.replace("404.html");
     }
-    console.log(Appointmentid);
-    console.log("ready!");
 });
 
 function LoadData(Appointmentid) {
@@ -26,8 +23,6 @@ function LoadData(Appointmentid) {
             'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
         },
         success: function (data) {
-            console.log(data.results);
-            console.log('success');
             if (data.status && data.results != null) {
                 statusName = data.results.statusname;
                 place = data.results.appointmentAddress;
@@ -87,7 +82,6 @@ function LoadData(Appointmentid) {
 
                 if(data.results.serviceName == "Pharmacy"){
                     TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
-                    console.log(TotalCount);
                     $.each(data.results.coveredTests, function (key, value) {
                         $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' '+ value.testName + '</a></li>');
                                                        
@@ -95,13 +89,11 @@ function LoadData(Appointmentid) {
                 }
                 $("[id*='spnMedicineOrders']").html(TotalCount + '+ Medicines Orders');
             } else {
-                console.log("Error in sucess");
                 window.location.replace("404.html");
             }
 
         },
         error: function () {
-            console.log("Error");
             window.location.replace("404.html");
             swal('Error occure');
         }
