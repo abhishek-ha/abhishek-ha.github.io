@@ -115,26 +115,7 @@ a:hover{
 .pb-6{
     padding-bottom: 5rem;
 }
-.form-control {
-/*float: right;*/
-    padding: 0 1em;
-    color: #6a7989;
-    font-weight: 800;
-    font-size: 115%;
-    height: 55px;
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+
 .btn-primary {
     color: #ffffff!important;
     background-color: #0f5fc2!important;
