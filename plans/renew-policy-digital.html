@@ -648,7 +648,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-white py-5" id="renewpolicybenefitsdiv" style="display: none;"">
+    <section class="bg-white py-5" id="renewpolicybenefitsdiv" style="display: none;">
         <div class=" container">
         <div class="row">
             <div class="col-lg-12 col-md-12 ">
@@ -910,7 +910,7 @@
             </div>
         </div>
     </section>
-    <section class="PolicyDetailsection" style="background-color: #ffffff; margin-bottom:10px; display: none;">
+    <section class="PolicyDetailsection" id='PolicyDetailsectiondiv' style="background-color: #ffffff; margin-bottom:10px; display: none;">
         <div class="container banner">
             <div class="row px-4 renew">
                 <div class="col-lg-6 col-md-6 col-sm-6 ">
@@ -1095,6 +1095,7 @@
             $('#upgradeFAPlus').addClass('selected');
             $('#upgradeFAPP').removeClass('selected');
             $('#upgradePUS').removeClass('selected');
+            document.getElementById('renewpolicybenefitsdiv').scrollIntoView();
         });
 
         var selecttedPlanCode = 'HAOPDR003-65';
@@ -1118,6 +1119,7 @@
             $('#upgradePUS').removeClass('selected');
             selecttedPlanCode = 'HAOPDR003-65';
             GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
+            document.getElementById('PolicyDetailsectiondiv').scrollIntoView();
         });
         $('#upgradeFAPP').click(function (e) {
             $('#upgradeFAPlus').removeClass('selected');
@@ -1125,6 +1127,7 @@
             $('#upgradePUS').removeClass('selected');
             selecttedPlanCode = 'HAOPDR003-67';
             GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
+            document.getElementById('PolicyDetailsectiondiv').scrollIntoView();
         });
         $('#upgradePUS').click(function (e) {
             $('#upgradeFAPlus').removeClass('selected');
@@ -1132,6 +1135,7 @@
             $('#upgradePUS').addClass('selected');
             selecttedPlanCode = 'HAOPDR00U46';
             GetOPDPlanSearhForUpgrade($('#RenewPolicyNo').val(), selecttedPlanCode);
+            document.getElementById('PolicyDetailsectiondiv').scrollIntoView();
         });
         function GetOPDPlanSearhForUpgrade(policyNo, planCode = 'HAOPDR003-65') {
             GetOPDPlanForUpgrade(policyNo, planCode).then(function (result) {
