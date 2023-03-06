@@ -74,7 +74,9 @@
         <div class="right-section">
             <div class="profile-verification-section">
                 <!-- Filter Start Here -->
-                <div class="d-flex align-items-center justify-content-between width-100">
+
+
+<div class="d-flex align-items-center justify-content-between width-100">
                     <div class="filters gap-10 align-items-center">
                        
                         <input type="text" placeholder="rajnish@healthassure.in"
@@ -111,17 +113,18 @@
                         <p class="mb-0">
                             <a href="#" class="text-decoration text-highlight f-12"> <i class="fa-solid fa-xmark"></i> Clear </a>
                         </p>
-
-
-
+  </div>
+ <div class="filters gap-10 align-items-center">
+<a href="#" class="adduserbtn-admin text-white" data-bs-toggle="modal" data-bs-target="#AdduserModal"><i class="fa-solid fa-plus "></i> Add user
+</a> 
                     </div>
-
-                    <div class="filters gap-10 align-items-center">
-                        <i class="fa-solid fa-plus"></i> Add user
-                    </div>
+ </div>
 
 
-                </div>
+
+
+
+
                 <!-- Filter Ends Here -->
                 <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
                     <h6 class="text-unhighlighted font-medium mb-0">Showing 5 Results</h6>
@@ -158,8 +161,8 @@
                         <tbody>
                             <tr>
                                 <th scope="row">001</th>
-                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
-                                        data-bs-toggle="modal" data-bs-target="#verificationModal">SRL Wellness
+<td class="width-200"><a href="#" class="text-highlighted text-decoration"
+data-bs-toggle="modal" data-bs-target="#verificationModal">SRL Wellness
                                         Center</a></td>
                                 <td>Verification</td>
                                 <td>11 November, 2022</td>
@@ -216,6 +219,10 @@
                     </table>
                 </div>
                 <!--Table Ends Here-->
+
+
+
+
 
                 <!--Open Profile Verification Popup-->
                 <div class="modal _custom_modal fade modal-fixed" id="verificationModal" tabindex="-1"
@@ -839,6 +846,145 @@
                 </div>
                 <!--Close Staff Details Popup-->
 
+
+
+<!-- Start Add User Popup -->
+<div class="modal _custom_modal fade modal-fixed" id="AdduserModal" tabindex="-1" aria-labelledby="AdduserModalLabel" aria-hidden="true">
+    <div class="modal-dialog _custom_dialog">
+        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+    <div class="centre-brand-logo d-flex align-items-center gap-10">
+ <div class="brand-name">
+    <h5 class="mb-0 text-highlight font-bold"> Add User Details</h5>
+                           </div>
+                                </div>
+<button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+   <div class="modal-body">
+   
+<div class="d-flex align-items-center justify-content-between width-100">
+<div class="filters gap-10 align-items-center">
+<div class="dropdown"> <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> User Type </a>
+<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#"> HealthAssure </a></li>
+      </ul>
+                        </div>      
+
+                        <div class="dropdown"> <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> User Access </a>
+<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#"> View  </a></li>
+    <li><a class="dropdown-item" href="#"> Edit  </a></li>
+      </ul>
+                        </div>                  
+                       
+                     
+  <div>
+                        <label for=" Role" class="col-form-label"> Role </label>
+                       <select class="form-control form-select">
+                       <option>  Network Executive </option>
+                       <option>  Network Manager </option> 
+                       <option>  RP Executive </option>  
+                   </select>
+                    </div>
+</div>
+
+</div>
+
+
+
+<div class="d-flex align-items-center justify-content-between width-100">
+<div class="filters gap-10 align-items-center">
+<div class="dropdown"> <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> User Type </a>
+<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#"> HealthAssure </a></li>
+      </ul>
+                        </div>      
+
+                        <div class="dropdown"> <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> User Access </a>
+<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#"> View  </a></li>
+    <li><a class="dropdown-item" href="#"> Edit  </a></li>
+      </ul>
+                        </div>                  
+                       
+                     <div>
+                        <label> Role</label>
+                       <select class="form-control form-select">
+                       <option>  Network Executive </option>
+                       <option>  Network Manager </option> 
+                       <option>  RP Executive </option>  
+                   </select>
+                    </div>
+
+<div class="dropdown"> <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"> Role </a>
+<ul class="dropdown-menu __custom_ul scrollbar" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#"> Network Executive </a></li>
+    <li><a class="dropdown-item" href="#"> Network Manager </a></li>
+    <li><a class="dropdown-item" href="#"> RP Executive </a></li>
+    <li><a class="dropdown-item" href="#"> QC Executive </a></li>
+<li><a class="dropdown-item" href="#"> QC Doctor </a></li>
+<li><a class="dropdown-item" href="#"> Closing Executive </a></li>
+<li><a class="dropdown-item" href="#"> Closing Manager </a></li>
+<li><a class="dropdown-item" href="#"> Call Executive Inbound </a></li>
+<li><a class="dropdown-item" href="#"> Call Executive Outbound </a></li>
+<li><a class="dropdown-item" href="#"> Call Executive DCConfirm </a></li>
+<li><a class="dropdown-item" href="#"> Call Executive SNS </a></li>
+<li><a class="dropdown-item" href="#"> Call Executive HV </a></li>
+<li><a class="dropdown-item" href="#"> Supervisor </a></li>
+<li><a class="dropdown-item" href="#"> Provider </a></li>
+<li><a class="dropdown-item" href="#"> Client </a></li>
+<li><a class="dropdown-item" href="#"> Agent </a></li>
+
+                            </ul>
+                        </div>
+   
+                        <div class="search">
+                            <a class="sidebar-links" href="#">
+                                <span class="custom-svg">
+                                    <svg width="16" height="16" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.77089 3.32907H3.53919L3.45707 3.24993C3.80902 2.83956 3.99086 2.27971 3.89114 1.68469C3.75329 0.869829 3.07287 0.219113 2.25166 0.119453C1.01106 -0.0329666 -0.0330473 1.01052 0.119462 2.2504C0.21918 3.07113 0.870278 3.75115 1.68562 3.88892C2.28099 3.98858 2.84117 3.80685 3.25177 3.45511L3.33096 3.53718V3.76874L4.57743 5.01448C4.69768 5.13466 4.89418 5.13466 5.01443 5.01448C5.13468 4.8943 5.13468 4.69792 5.01443 4.57774L3.77089 3.32907ZM2.01117 3.32907C1.28088 3.32907 0.691372 2.73991 0.691372 2.01005C0.691372 1.28019 1.28088 0.691029 2.01117 0.691029C2.74145 0.691029 3.33096 1.28019 3.33096 2.01005C3.33096 2.73991 2.74145 3.32907 2.01117 3.32907Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar-link-text">Search</span>
+                            </a>
+                        </div>
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration text-highlight f-12"> <i class="fa-solid fa-xmark"></i> Clear </a>
+                        </p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+
+
+<!-- End Add user Popup -->
+
+
+
+
+
+
+
+
                 <!--Open Payment Details Popup-->
                 <div class="modal _custom_modal fade modal-fixed" id="paymentModal" tabindex="-1"
                     aria-labelledby="paymentModalLabel" aria-hidden="true">
@@ -1132,6 +1278,10 @@
         </div>
     </div>
     </div><!-- Parent Container Close Here -->
+
+
+
+
 
 
 

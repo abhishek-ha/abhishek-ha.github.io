@@ -346,6 +346,36 @@
 
 
 /*Avanish Shukla CSS*/
+.adduserbtn-admin{
+    padding: 6px 15px !important;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--theme-color);
+    color: var(--theme-white) !important;
+}
+.scrollbar {
+    height: 170px;
+    max-width: 250px;
+    background: #fff;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 6px 5px;
+    overflow-x: hidden;
+}
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+    background-color: #6165d7;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #6165d7;
+}
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #F5F5F5;
+}
+
+
 
 
 
