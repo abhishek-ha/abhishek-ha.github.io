@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Verification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="__custom_scroller__properties">
+    
+    <div class="___parent_container"><!-- Parent Container Start Here -->
+    <div class="top-header">
+        <div class="custom-container">
+            <div>
+                <img src="images/logo.svg" alt="">
+            </div>
+
+            <div class="provider-profile-dp d-flex align-items-center gap-10">
+                <img src="css/used-icons/pf.png" alt="" width="40">
+                <div class="profile-details">
+                    <div class="provider-name font-bold text-highlight lh-10">Prakash Singh</div>
+                    <div class="provider-designation font-medium text-black lh-10">Network</div>
+                </div>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </div>
+    <!-- Main Section  -->
+    <div class="main-section">
+        <div class="sidebar-menu __custom_scroller__properties" id="sidebar-menu">
+            <ul class="__custom_ul">
+                <li class="active">
+                    <a class="sidebar-links" href="profile.html">
+                        <span class="custom-svg">
+                            <svg width="19" height="22" viewBox="0 0 19 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.18 21C18.18 17.13 14.33 14 9.59 14C4.85 14 1 17.13 1 21M9.59 11C10.9161 11 12.1879 10.4732 13.1255 9.53553C14.0632 8.59785 14.59 7.32608 14.59 6C14.59 4.67392 14.0632 3.40215 13.1255 2.46447C12.1879 1.52678 10.9161 1 9.59 1C8.26392 1 6.99215 1.52678 6.05447 2.46447C5.11678 3.40215 4.59 4.67392 4.59 6C4.59 7.32608 5.11678 8.59785 6.05447 9.53553C6.99215 10.4732 8.26392 11 9.59 11V11Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="sidebar-link-text">Provider Profile Details <span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="sidebar-links" href="#">
+                        <span class="custom-svg">
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.41003 21C1.41003 17.13 5.26003 14 10 14C10.96 14 11.89 14.13 12.76 14.37M10 11C11.3261 11 12.5979 10.4732 13.5356 9.53553C14.4733 8.59785 15 7.32608 15 6C15 4.67392 14.4733 3.40215 13.5356 2.46447C12.5979 1.52678 11.3261 1 10 1C8.67395 1 7.40218 1.52678 6.4645 2.46447C5.52682 3.40215 5.00003 4.67392 5.00003 6C5.00003 7.32608 5.52682 8.59785 6.4645 9.53553C7.40218 10.4732 8.67395 11 10 11V11Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M20 17.0001C20 17.7501 19.79 18.46 19.42 19.0601C19.21 19.4201 18.94 19.7401 18.63 20.0001C17.93 20.6301 17.01 21.0001 16 21.0001C15.3106 21.0015 14.6326 20.8233 14.033 20.4832C13.4333 20.143 12.9325 19.6525 12.58 19.0601C12.1993 18.4405 11.9985 17.7272 12 17.0001C12 15.7401 12.58 14.6101 13.5 13.8801C14.088 13.4088 14.7972 13.1132 15.5458 13.0275C16.2945 12.9417 17.0522 13.0692 17.7315 13.3953C18.4108 13.7214 18.9842 14.2328 19.3856 14.8705C19.7869 15.5083 19.9999 16.2465 20 17.0001V17.0001Z"
+                                    stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M14.4401 17L15.4301 17.99L17.5601 16.02" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                        <span class="sidebar-link-text">Appointments</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="sidebar-links" href="#">
+                        <span class="custom-svg">
+                            <svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 19.99H23H1ZM19.78 20V15.54V20ZM19.8 8.88C18.58 8.88 17.6 9.86 17.6 11.08V13.35C17.6 14.57 18.58 15.55 19.8 15.55C21.02 15.55 22 14.57 22 13.35V11.08C22 9.86 21.02 8.88 19.8 8.88ZM2.1 19.99V4.02C2.1 2.01 3.1 1 5.09 1H11.32C13.31 1 14.3 2.01 14.3 4.02V19.99M5.8 6.24H10.75H5.8ZM5.8 9.99H10.75H5.8ZM8.25 19.99V16.24V19.99Z"
+                                    fill="#EEEFFF" />
+                                <path
+                                    d="M1 19.99H23M19.78 20V15.54M2.1 19.99V4.02C2.1 2.01 3.1 1 5.09 1H11.32C13.31 1 14.3 2.01 14.3 4.02V19.99M5.8 6.24H10.75M5.8 9.99H10.75M8.25 19.99V16.24M19.8 8.88C18.58 8.88 17.6 9.86 17.6 11.08V13.35C17.6 14.57 18.58 15.55 19.8 15.55C21.02 15.55 22 14.57 22 13.35V11.08C22 9.86 21.02 8.88 19.8 8.88Z"
+                                    stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </span>
+                        <span class="sidebar-link-text">Payin / Payout</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="logout">
+                <ul class="__custom_ul">
+                    <li>
+                        <a class="sidebar-links" href="#">
+                            <span class="custom-svg">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.9 6.56023C8.21 2.96023 10.06 1.49023 14.11 1.49023H14.24C18.71 1.49023 20.5 3.28023 20.5 7.75023V14.2702C20.5 18.7402 18.71 20.5302 14.24 20.5302H14.11C10.09 20.5302 8.24 19.0802 7.91 15.5402M1 11.0002H13.88"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.6499 7.6499L14.9999 10.9999L11.6499 14.3499" stroke="black"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="sidebar-link-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="profile-verification-section">
+                <!-- Filter Start Here -->
+                <div class="d-flex align-items-center justify-content-between width-100">
+                    <div class="filters gap-10 align-items-center">
+                        <h5 class="font-bold mb-0">Filters</h5>
+                        <input type="text" placeholder="Request ID"
+                            class="__inputs width-control font-medium text-black">
+                        <input type="text" placeholder="Provider's Name" class="__inputs font-medium text-black">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium detail__type p-0" href="#" role="button"
+                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Detail Type
+                            </a>
+
+                            <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Profile Details</a></li>
+                                <li><a class="dropdown-item" href="#">Profile Verification</a></li>
+                                <li><a class="dropdown-item" href="#">Infrastructure</a></li>
+                                <li><a class="dropdown-item" href="#">Staff Details</a></li>
+                                <li><a class="dropdown-item" href="#">Payment Details</a></li>
+                            </ul>
+                        </div>
+                        <div class="date__time">
+                            <a class="sidebar-links" href="#">
+                                <span class="custom-svg">
+                                    <svg width="16" height="19" viewBox="0 0 16 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.2221 2.05333V0.666667C12.2221 0.302222 11.9199 0 11.5555 0C11.191 0 10.8888 0.302222 10.8888 0.666667V2H5.11102V0.666667C5.11102 0.302222 4.80879 0 4.44435 0C4.07991 0 3.77768 0.302222 3.77768 0.666667V2.05333C1.37768 2.27556 0.213239 3.70667 0.0354609 5.83111C0.0176831 6.08889 0.231016 6.30222 0.479905 6.30222H15.5199C15.7777 6.30222 15.991 6.08 15.9643 5.83111C15.7866 3.70667 14.6221 2.27556 12.2221 2.05333Z"
+                                            fill="#B0B0B0" class="path1" />
+                                        <path opacity="0.4"
+                                            d="M15.1111 7.63525C15.6 7.63525 16 8.03525 16 8.52414V13.9997C16 16.6664 14.6667 18.4441 11.5556 18.4441H4.44444C1.33333 18.4441 0 16.6664 0 13.9997V8.52414C0 8.03525 0.4 7.63525 0.888889 7.63525H15.1111Z"
+                                            fill="#aaaaaa" class="path2" />
+                                        <path
+                                            d="M4.88889 12.2214C4.77333 12.2214 4.65778 12.1947 4.55111 12.1503C4.44444 12.1058 4.34667 12.0436 4.25778 11.9636C4.17778 11.8747 4.11556 11.777 4.07111 11.6703C4.02545 11.5635 4.00129 11.4487 4 11.3325C4 11.217 4.02667 11.1014 4.07111 10.9947C4.11556 10.8881 4.17778 10.7903 4.25778 10.7014C4.34667 10.6214 4.44444 10.5592 4.55111 10.5147C4.76752 10.4258 5.01026 10.4258 5.22667 10.5147C5.33333 10.5592 5.43111 10.6214 5.52 10.7014C5.6 10.7903 5.66222 10.8881 5.70667 10.9947C5.75111 11.1014 5.77778 11.217 5.77778 11.3325C5.77778 11.4481 5.75111 11.5636 5.70667 11.6703C5.66222 11.777 5.6 11.8747 5.52 11.9636C5.43111 12.0436 5.33333 12.1058 5.22667 12.1503C5.12 12.1947 5.00444 12.2214 4.88889 12.2214ZM8 12.2214C7.88445 12.2214 7.76889 12.1947 7.66222 12.1503C7.55556 12.1058 7.45778 12.0436 7.36889 11.9636C7.20889 11.7947 7.11111 11.5636 7.11111 11.3325C7.11111 11.1014 7.20889 10.8703 7.36889 10.7014C7.45778 10.6214 7.55556 10.5592 7.66222 10.5147C7.87556 10.417 8.12445 10.417 8.33778 10.5147C8.44445 10.5592 8.54222 10.6214 8.63111 10.7014C8.79111 10.8703 8.88889 11.1014 8.88889 11.3325C8.88889 11.5636 8.79111 11.7947 8.63111 11.9636C8.54222 12.0436 8.44445 12.1058 8.33778 12.1503C8.23111 12.1947 8.11556 12.2214 8 12.2214ZM4.88889 15.3325C4.77333 15.3325 4.65778 15.3059 4.55111 15.2614C4.44444 15.217 4.34667 15.1547 4.25778 15.0747C4.09778 14.9058 4 14.6747 4 14.4436C4 14.2125 4.09778 13.9814 4.25778 13.8125C4.34667 13.7325 4.44444 13.6703 4.55111 13.6259C4.76752 13.5369 5.01026 13.5369 5.22667 13.6259C5.33333 13.6703 5.43111 13.7325 5.52 13.8125C5.68 13.9814 5.77778 14.2125 5.77778 14.4436C5.77778 14.6747 5.68 14.9058 5.52 15.0747C5.43111 15.1547 5.33333 15.217 5.22667 15.2614C5.12 15.3059 5.00444 15.3325 4.88889 15.3325Z"
+                                            fill="#B0B0B0" class="path1" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar-link-text">Date & Time</span>
+                            </a>
+                        </div>
+                        <div class="search">
+                            <a class="sidebar-links" href="#">
+                                <span class="custom-svg">
+                                    <svg width="16" height="16" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.77089 3.32907H3.53919L3.45707 3.24993C3.80902 2.83956 3.99086 2.27971 3.89114 1.68469C3.75329 0.869829 3.07287 0.219113 2.25166 0.119453C1.01106 -0.0329666 -0.0330473 1.01052 0.119462 2.2504C0.21918 3.07113 0.870278 3.75115 1.68562 3.88892C2.28099 3.98858 2.84117 3.80685 3.25177 3.45511L3.33096 3.53718V3.76874L4.57743 5.01448C4.69768 5.13466 4.89418 5.13466 5.01443 5.01448C5.13468 4.8943 5.13468 4.69792 5.01443 4.57774L3.77089 3.32907ZM2.01117 3.32907C1.28088 3.32907 0.691372 2.73991 0.691372 2.01005C0.691372 1.28019 1.28088 0.691029 2.01117 0.691029C2.74145 0.691029 3.33096 1.28019 3.33096 2.01005C3.33096 2.73991 2.74145 3.32907 2.01117 3.32907Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                                <span class="sidebar-link-text">Search</span>
+                            </a>
+                        </div>
+                        <p class="mb-0">
+                            <a href="#" class="text-decoration text-highlight f-12">Clear All Filters</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Filter Ends Here -->
+                <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6 class="text-unhighlighted font-medium mb-0">Showing 5 Results</h6>
+                    <div class="d-flex align-items-center">
+                        <span class="text-unhighlighted font-medium">Sort By</span>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listing Order
+                            </a>
+
+                            <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
+                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Table Start Here-->
+                <div class="table-responsive __custom__properties">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Detail Type</th>
+                                <th scope="col">Submitted On</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">History</th>
+                                <th scope="col">Last Updated By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">001</th>
+                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
+                                        data-bs-toggle="modal" data-bs-target="#verificationModal">SRL Wellness
+                                        Center</a></td>
+                                <td>Verification</td>
+                                <td>11 November, 2022</td>
+                                <td class="width-80"><span class="status-style rejected">Rejected</span> </td>
+                                <td class="width-80"><a href="#" class="text-decoration text-black"
+                                        data-bs-toggle="modal" data-bs-target="#historyModal">View</a></td>
+                                <td>Akanksha Goswami</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">001</th>
+                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
+                                        data-bs-toggle="modal" data-bs-target="#profileModal">PathKind Lab</a></td>
+                                <td>Profile</td>
+                                <td>11 November, 2022</td>
+                                <td class="width-80"><span class="status-style pending">Pending</span> </td>
+                                <td class="width-80"><a href="#" class="text-decoration text-black">View</a></td>
+                                <td>Akanksha Goswami</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">001</th>
+                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
+                                        data-bs-toggle="modal" data-bs-target="#infrastructureModal">Aarti Scan
+                                        Center</a></td>
+                                <td>Infrastructure</td>
+                                <td>11 November, 2022</td>
+                                <td class="width-80"><span class="status-style approved">Approved</span> </td>
+                                <td class="width-80"><a href="#" class="text-decoration text-black">View</a></td>
+                                <td>Akanksha Goswami</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">001</th>
+                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
+                                        data-bs-toggle="modal" data-bs-target="#staffModal">Aarti Scan Center</a>
+                                </td>
+                                <td>Staff</td>
+                                <td>11 November, 2022</td>
+                                <td class="width-80"><span class="status-style rejected">Rejected</span> </td>
+                                <td class="width-80"><a href="#" class="text-decoration text-black">View</a></td>
+                                <td>Akanksha Goswami</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">001</th>
+                                <td class="width-200"><a href="#" class="text-highlighted text-decoration"
+                                        data-bs-toggle="modal" data-bs-target="#paymentModal">SRL Wellness
+                                        Center</a>
+                                </td>
+                                <td>Payment</td>
+                                <td>11 November, 2022</td>
+                                <td class="width-80"><span class="status-style rejected">Rejected</span> </td>
+                                <td class="width-80"><a href="#" class="text-decoration text-black">View</a></td>
+                                <td>Akanksha Goswami</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Table Ends Here-->
+
+                <!--Open Profile Verification Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="verificationModal" tabindex="-1"
+                    aria-labelledby="verificationModalLabel" aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+                                <div class="centre-brand-logo d-flex align-items-center gap-10">
+                                    <div class="logo-circle">
+                                        <img src="css/used-icons/logo.svg" alt="">
+                                    </div>
+                                    <div class="brand-name">
+                                        <h5 class="mb-0 text-highlight font-bold">Apollo Hospital</h5>
+                                        <p class="mb-0 font-medium text-unhighlighted">Pathology Services</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close normal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <h4 class="font-bold text-black">Profile Verification</h4>
+                                <div class="d-flex justify-content-between gap-20 pv-body">
+                                    <div class="_left-side">
+                                        <div class="shadow-heights">
+                                            <div
+                                                class="d-flex gap-10 flex-wrap justify-content-between align-items-center bottom-spacing-10">
+                                                <h6 class="font-medium">Is your centre recognized by any
+                                                    association/
+                                                    body ?</h6>
+                                                <div class="pill-un-highlighted">Yes</div>
+                                            </div>
+                                            <div
+                                                class="d-flex gap-10 flex-wrap justify-content-between align-items-center">
+                                                <h6 class="font-medium">Please Specify</h6>
+                                                <div class="pill-un-highlighted">NABL</div>
+                                            </div>
+                                        </div>
+                                        <div class="spacing-hr"></div>
+                                        <!--Table Start Here-->
+                                        <div class="modal-table-padding">
+                                            <div class="table-responsive __custom__properties">
+                                                <table class="table __border-none">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Certificates</th>
+                                                            <th scope="col" class="custom-width-250">Accreditation
+                                                                Documents</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>20/04/2021</td>
+                                                            <td>NABL</td>
+                                                            <td><a href="#" class="text-decoration">Accreditation
+                                                                    Certificate .png</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20/04/2021</td>
+                                                            <td>NABH</td>
+                                                            <td class="text-unhighlighted">Not Uploaded</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>20/04/2021</td>
+                                                            <td>ISO</td>
+                                                            <td class="text-unhighlighted">Not Uploaded</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!--Table Ends Here-->
+                                        <div class="spacing-hr"></div>
+
+                                        <div class="remarks mt-4 modal-table-padding">
+                                            <h6 class="font-bold text-black">Remarks</h6>
+                                            <textarea name="" id="" class="textarea font-medium"
+                                                placeholder="Type Something Here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="_right-side __mt-30">
+                                        <div
+                                            class="shadow-heights d-flex flex-direction-column justify-content-between height-100">
+                                            <div class="upload-documents">
+                                                <h5 class="font-bold text-black bottom-spacing-30">Uploaded
+                                                    Documents
+                                                </h5>
+                                                <div
+                                                    class="d-flex flex-wrap gap-10 align-items-center justify-content-between align-items-center bottom-spacing-10">
+                                                    <h6 class="font-medium mb-0">Aadhar Card</h6>
+                                                    <div><a href="#" class="text-highlighted text-decoration">Front</a>
+                                                        &nbsp;| <a href="#"
+                                                            class="text-highlighted text-decoration">Back</a> </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap  gap-10align-items-center justify-content-between align-items-center bottom-spacing-10">
+                                                    <h6 class="font-medium mb-0">PAN Card</h6>
+                                                    <div><a href="#" class="text-highlighted text-decoration">Front</a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap gap-10 align-items-center justify-content-between align-items-center bottom-spacing-10">
+                                                    <h6 class="font-medium mb-0">MSP Sheet Duly Filled</h6>
+                                                    <div><a href="#" class="text-highlighted text-decoration">View</a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap gap-10 align-items-center justify-content-between align-items-center bottom-spacing-10">
+                                                    <h6 class="font-medium mb-0">Centre Registration Certificate
+                                                    </h6>
+                                                    <div><a href="#" class="text-highlighted text-decoration">View</a>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="d-flex flex-wrap gap-10 align-items-center justify-content-between align-items-center">
+                                                    <h6 class="font-medium mb-0">Signed MOU</h6>
+                                                    <div><a href="#" class="text-highlighted text-decoration">View</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accept-reject-btns bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <a href="#" class="approve-btn" data-bs-toggle="modal" data-bs-target="#historyModal">Approve</a>
+                                                    <a href="#" class="reject-btn" data-bs-dismiss="modal"
+                                                        aria-label="Close">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close Profile Verification Popup-->
+
+                <!--Open Profile Details Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="profileModal" tabindex="-1"
+                    aria-labelledby="profileModalLabel" aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+                                <div class="centre-brand-logo d-flex align-items-center gap-10">
+                                    <div class="logo-circle">
+                                        <img src="css/used-icons/logo.svg" alt="">
+                                    </div>
+                                    <div class="brand-name">
+                                        <h5 class="mb-0 text-highlight font-bold">Apollo Hospital</h5>
+                                        <p class="mb-0 font-medium text-unhighlighted">Pathology Services</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close normal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <h4 class="font-bold text-black">Profile Details</h4>
+                                <div class="card-container d-flex justify-content-between gap-30">
+                                    <div class="cards padding-0">
+                                        <div class="pdetails padding-30">
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Centre Name</div>
+                                                <div class="font-medium text-highlight">The Apollo Clinic</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Year Establishment</div>
+                                                <div class="font-medium text-highlight">2015</div>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between bottom-spacing-10 align-items-center">
+                                                <div class="font-bold">Centre Type</div>
+                                                <div class="font-medium text-highlight d-flex gap-10">
+                                                    <div class="pill-un-highlighted">Diagnostics Centre</div>
+                                                    <div class="pill-highlighted">Hospital</div>
+                                                    <div class="pill-highlighted">All in one facility</div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Authorized Person Name</div>
+                                                <div class="font-medium text-highlight">Akanksha Goswami</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Registered Mobile Number</div>
+                                                <div class="font-medium text-highlight">+91 - 0123456789</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Additional Mobile Number</div>
+                                                <div class="font-medium text-highlight">-</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Registered Email Address</div>
+                                                <div class="font-medium text-highlight">akankshagoswami@gmail.com
+                                                </div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Official Website</div>
+                                                <div class="font-medium text-highlight">iamakanksha.com</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Permanent Address</div>
+                                                <div class="font-medium text-highlight">HealthAssure 8th Floor,
+                                                    Sector
+                                                    30,
+                                                    BPTP Tower</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">City</div>
+                                                <div class="font-medium text-highlight">Gurgaon</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">State / Province</div>
+                                                <div class="font-medium text-highlight">Haryana</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Pincode</div>
+                                                <div class="font-medium text-highlight">122001</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Landmark</div>
+                                                <div class="font-medium text-highlight">Star Mall</div>
+                                            </div>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Locate On Google Maps</div>
+                                                <div class="font-medium text-highlight">
+                                                    <a href="#" class="text-decoration">View</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacing-hr mt-0"></div>
+
+                                        <div class="remarks modal-table-padding mb-4 __pb-30">
+                                            <h6 class="font-bold text-black">Remarks</h6>
+                                            <textarea name="" id="" class="textarea font-medium m-12-"
+                                                placeholder="Type Something Here..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="cards d-flex flex-direction-column justify-content-between __branch_details">
+                                        <div class="bdetails">
+                                            <h5 class="font-bold text-black">Branches Details</h5>
+                                            <div class="branch-details">
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Sr. No</div>
+                                                    <div class="font-medium text-highlight">1</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">SPOC Name</div>
+                                                    <div class="font-medium text-highlight">SPOC Name</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Contact Number</div>
+                                                    <div class="font-medium text-highlight">
+                                                        <a href="tel:+91-9988774477"
+                                                            class="text-decoration">+91-9988774477</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Address</div>
+                                                    <div class="font-medium text-highlight">Chowk, Laxmi Road
+                                                        1001/1002,Gokul Chowk</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="font-bold">City</div>
+                                                    <div class="font-medium text-highlight">Lucknow</div>
+                                                </div>
+                                            </div>
+                                            <div class="branch-details">
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Sr. No</div>
+                                                    <div class="font-medium text-highlight">2</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">SPOC Name</div>
+                                                    <div class="font-medium text-highlight">SPOC Name</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Contact Number</div>
+                                                    <div class="font-medium text-highlight">
+                                                        <a href="tel:+91-9988774477"
+                                                            class="text-decoration">+91-9988774477</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Address</div>
+                                                    <div class="font-medium text-highlight">Chowk, Laxmi Road
+                                                        1001/1002,Gokul Chowk</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="font-bold">City</div>
+                                                    <div class="font-medium text-highlight">Lucknow</div>
+                                                </div>
+                                            </div>
+                                            <div class="branch-details">
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Sr. No</div>
+                                                    <div class="font-medium text-highlight">3</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">SPOC Name</div>
+                                                    <div class="font-medium text-highlight">SPOC Name</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Contact Number</div>
+                                                    <div class="font-medium text-highlight">
+                                                        <a href="tel:+91-9988774477"
+                                                            class="text-decoration">+91-9988774477</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bottom-spacing-10">
+                                                    <div class="font-bold">Address</div>
+                                                    <div class="font-medium text-highlight">Chowk, Laxmi Road
+                                                        1001/1002,Gokul Chowk</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="font-bold">City</div>
+                                                    <div class="font-medium text-highlight">Lucknow</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accept-reject-btns bottom-0">
+                                            <div class="d-flex justify-content-between flex-wrap">
+                                                <a href="#" class="approve-btn">Approve</a>
+                                                <a href="#" class="reject-btn" data-bs-dismiss="modal"
+                                                    aria-label="Close">Reject</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close Profile Details Popup-->
+
+                <!--Open Infrastructure Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="infrastructureModal" tabindex="-1"
+                    aria-labelledby="infrastructureModalLabel" aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+                                <div class="centre-brand-logo d-flex align-items-center gap-10">
+                                    <div class="logo-circle">
+                                        <img src="css/used-icons/logo.svg" alt="">
+                                    </div>
+                                    <div class="brand-name">
+                                        <h5 class="mb-0 text-highlight font-bold">Apollo Hospital</h5>
+                                        <p class="mb-0 font-medium text-unhighlighted">Pathology Services</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close normal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between gap-20 d__block pv-body">
+                                    <div class="_left-side width_50 padding-30">
+                                        <div class="cards bottom-spacing-30">
+                                            <h5 class="bottom-spacing-20 font-bold">Infrastructure Details</h5>
+                                            <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                <div class="font-bold">Total Area Of Facility (Sq. Ft)</div>
+                                                <div class="font-medium pill-highlighted">5000</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="font-bold">Total Area Of Facility (Sq. Ft)</div>
+                                                <div class="font-medium pill-un-highlighted">Diagnostics Centre
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cards bottom-spacing-30">
+                                            <h5 class="bottom-spacing-20 font-bold">Centre Amenities</h5>
+                                            <div class="bottom-spacing-10 d-flex gap-10 flex-wrap">
+                                                <div class="font-medium pill-highlighted">CCTV</div>
+                                                <div class="font-medium pill-highlighted">Air Conditioning</div>
+                                                <div class="font-medium pill-highlighted">Parking</div>
+                                                <div class="font-medium pill-un-highlighted">Pantry</div>
+                                                <div class="font-medium pill-highlighted">Reception</div>
+                                                <div class="font-medium pill-highlighted">Wheelchair Friendly</div>
+                                                <div class="font-medium pill-un-highlighted">Lift</div>
+                                                <div class="font-medium pill-highlighted">Lab</div>
+                                                <div class="font-medium pill-highlighted">Waiting Area</div>
+                                                <div class="font-medium pill-un-highlighted">Washroom (Indian)</div>
+                                                <div class="font-medium pill-highlighted">Washroom (Western)</div>
+                                            </div>
+                                        </div>
+                                        <div class="cards bottom-spacing-30">
+                                            <h5 class="bottom-spacing-20 font-bold">Selected Working Days</h5>
+                                            <div class="bottom-spacing-10 d-flex gap-10 flex-wrap">
+                                                <div class="font-medium pill-highlighted">Monday</div>
+                                                <div class="font-medium pill-un-highlighted">Tuesday</div>
+                                                <div class="font-medium pill-highlighted">Wednesday</div>
+                                                <div class="font-medium pill-highlighted">Thursday</div>
+                                                <div class="font-medium pill-highlighted">Friday</div>
+                                                <div class="font-medium pill-highlighted">Saturday</div>
+                                                <div class="font-medium pill-un-highlighted">Sunday</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                                <h5 class="font-bold mb-0">Selected Working Time</h5>
+                                                <div class="d-flex gap-10">
+                                                    <div class="font-medium pill-highlighted">10:00 <sup>AM</sup>
+                                                    </div>
+                                                    <div class="font-medium pill-highlighted">07:00 <sup>PM</sup>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_right-side width_50 __mt-30">
+                                        <div class="shadow-heights pos-rel height-100">
+                                            <div class="cards bottom-spacing-30">
+                                                <h5 class="bottom-spacing-20 font-bold">Uploaded Facility Images
+                                                </h5>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Logo <span
+                                                            class="text-dark font-medium">(1/1)</span></div>
+                                                    <div><a href="#" class="text-decoration">logo.png</a></div>
+                                                </div>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Banner <span
+                                                            class="text-dark font-medium">(3/5)</span></div>
+                                                    <div class="d-flex gap-10">
+                                                        <a href="#" class="text-decoration">Banner1.jpg</a>
+                                                        <a href="#" class="text-decoration">Banner2.jpg</a>
+                                                        <a href="#" class="text-decoration">Banner3.jpg</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Reception <span
+                                                            class="text-dark font-medium">(2/5)</span></div>
+                                                    <div class="d-flex gap-10">
+                                                        <a href="#" class="text-decoration">Reception1.jpg</a>
+                                                        <a href="#" class="text-decoration">Reception2.jpg</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Waiting Area <span
+                                                            class="text-dark font-medium">(4/5))</span></div>
+                                                    <div class="d-flex gap-10">
+                                                        <a href="#" class="text-decoration">W1.jpg</a>
+                                                        <a href="#" class="text-decoration">W2.jpg</a>
+                                                        <a href="#" class="text-decoration">W3.jpg</a>
+                                                        <a href="#" class="text-decoration">W4.jpg</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Lab <span
+                                                            class="text-dark font-medium">(3/5)</span></div>
+                                                    <div class="d-flex gap-10">
+                                                        <a href="#" class="text-decoration">L1.jpg</a>
+                                                        <a href="#" class="text-decoration">L2.jpg</a>
+                                                        <a href="#" class="text-decoration">L3.jpg</a>
+                                                    </div>
+                                                </div>
+                                                <div class="bottom-spacing-10 d-flex justify-content-between">
+                                                    <div class="font-bold">Washroom (Indian / Western) <span
+                                                            class="text-dark font-medium">(3/5)</span></div>
+                                                    <div class="d-flex gap-10">
+                                                        <a href="#" class="text-decoration">W1.jpg</a>
+                                                        <a href="#" class="text-decoration">W2.jpg</a>
+                                                        <a href="#" class="text-decoration">W3.jpg</a>
+                                                    </div>
+                                                </div>
+                                                <div class="spacing-hr mt-0"></div>
+
+                                                <div class="remarks mb-4">
+                                                    <h6 class="font-bold text-black">Remarks</h6>
+                                                    <textarea name="" id="" class="textarea font-medium"
+                                                        placeholder="Type Something Here..."></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="accept-reject-btns bottom-0">
+                                                <div class="d-flex justify-content-between flex-wrap">
+                                                    <a href="#" class="approve-btn">Approve</a>
+                                                    <a href="#" class="reject-btn" data-bs-dismiss="modal"
+                                                        aria-label="Close">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close Infrastructure Popup-->
+
+                <!--Open Staff Details Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="staffModal" tabindex="-1" aria-labelledby="staffModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+                                <div class="centre-brand-logo d-flex align-items-center gap-10">
+                                    <div class="logo-circle">
+                                        <img src="css/used-icons/logo.svg" alt="">
+                                    </div>
+                                    <div class="brand-name">
+                                        <h5 class="mb-0 text-highlight font-bold">Apollo Hospital</h5>
+                                        <p class="mb-0 font-medium text-unhighlighted">Pathology Services</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close normal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="font-bold text-black">Network Details</h4>
+                                </div>
+                                <!--Table Start Here-->
+                                <div class="table-responsive __custom__properties">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Contact Type</th>
+                                                <th scope="col">Designation</th>
+                                                <th scope="col">Contact Person</th>
+                                                <th scope="col">Mobile Number</th>
+                                                <th scope="col">Contact Number</th>
+                                                <th scope="col">Email ID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Administration</td>
+                                                <td>Owner</td>
+                                                <td>Suresh Kumar</td>
+                                                <td>+91 9988774477</td>
+                                                <td>+91 9988775598</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Center Head</td>
+                                                <td>Owner</td>
+                                                <td>Ramesh Kumar</td>
+                                                <td>+91 9988774477</td>
+                                                <td>+91 9988775598</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Finance</td>
+                                                <td>Owner</td>
+                                                <td>Surendra Sharma</td>
+                                                <td>+91 9988774477</td>
+                                                <td>+91 9988775598</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+
+                                <h4 class="font-bold text-black mt-3">Operations Details</h4>
+                                <!--Table Start Here-->
+                                <div class="table-responsive __custom__properties">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Contact Type</th>
+                                                <th scope="col">Designation</th>
+                                                <th scope="col">Contact Person</th>
+                                                <th scope="col">Contact Number</th>
+                                                <th scope="col">Email ID</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Administration</td>
+                                                <td>Owner</td>
+                                                <td>Suresh Kumar</td>
+                                                <td>+91 9988774477</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Center Manager</td>
+                                                <td>Owner</td>
+                                                <td>Ramesh Kumar</td>
+                                                <td>+91 9988774477</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Escalation</td>
+                                                <td>Owner</td>
+                                                <td>Surendra Sharma</td>
+                                                <td>+91 9988774477</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Report</td>
+                                                <td>Owner</td>
+                                                <td>Surendra Sharma</td>
+                                                <td>+91 9988774477</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Show / No-Show</td>
+                                                <td>Owner</td>
+                                                <td>Surendra Sharma</td>
+                                                <td>+91 9988774477</td>
+                                                <td>admin@gmail.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+                                <div class="remarks mt-4 mb-5">
+                                    <h6 class="font-bold text-black">Remarks</h6>
+                                    <textarea name="" id="" class="textarea font-medium"
+                                        placeholder="Type Something Here..."></textarea>
+                                </div>
+                                <div class="accept-reject-btns bottom-0">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <a href="#" class="approve-btn">Approve</a>
+                                        <a href="#" class="reject-btn" data-bs-dismiss="modal"
+                                            aria-label="Close">Reject</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close Staff Details Popup-->
+
+                <!--Open Payment Details Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="paymentModal" tabindex="-1"
+                    aria-labelledby="paymentModalLabel" aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-header">
+                                <div class="centre-brand-logo d-flex align-items-center gap-10">
+                                    <div class="logo-circle">
+                                        <img src="css/used-icons/logo.svg" alt="">
+                                    </div>
+                                    <div class="brand-name">
+                                        <h5 class="mb-0 text-highlight font-bold">Apollo Hospital</h5>
+                                        <p class="mb-0 font-medium text-unhighlighted">Pathology Services</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-close normal-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <h4 class="font-bold text-black">Payment Details</h4>
+                                <div class="card-container d-flex justify-content-between gap-30 __payment_details_popup">
+                                    <div class="cards __mp_15lr">
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Paynee Name</div>
+                                            <div class="font-medium text-highlight">Suresh Singh</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Bank Name</div>
+                                            <div class="font-medium text-highlight">State Bank Of India</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Branch Name</div>
+                                            <div class="font-medium text-highlight">Gurgaon</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Account Number</div>
+                                            <div class="font-medium text-highlight">123456789</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">IFSC Code</div>
+                                            <div class="font-medium text-highlight">SBI00255</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Aadhar Number</div>
+                                            <div class="font-medium text-highlight">-</div>
+                                        </div>
+                                        <div class="bottom-spacing-30 d-flex justify-content-between">
+                                            <div class="font-bold">GST Registeration Number</div>
+                                            <div class="font-medium text-highlight">4456FG56677888</div>
+                                        </div>
+                                        <h5 class="font-bold text-black bottom-spacing-20">Billing Details</h5>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Name</div>
+                                            <div class="font-medium text-highlight">Suresh</div>
+                                        </div>
+                                        <div class="bottom-spacing-10 d-flex justify-content-between">
+                                            <div class="font-bold">Number</div>
+                                            <div class="font-medium text-highlight">8876655889</div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="cards kyc-container __mp_15lr d-flex flex-direction-column justify-content-between __mt-30">
+                                        <div class="kyc-details pos-rel">
+                                            <h5 class="font-bold text-black bottom-spacing-20">KYC Details</h5>
+                                            <div class="d-flex justify-content-between bottom-spacing-10">
+                                                <div class="font-bold">Uploaded GST Certificate</div>
+                                                <div class="font-medium text-highlight">
+                                                    <a href="tel:+91-9988774477"
+                                                        class="text-decoration">GST-Certificate.png</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between bottom-spacing-10">
+                                                <div class="font-bold">Cancelled Cheque</div>
+                                                <div class="font-medium text-highlight">
+                                                    <a href="tel:+91-9988774477" class="text-decoration">Cheque.png</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="spacing-hr"></div>
+
+                                        <div class="remarks mb-5">
+                                            <h6 class="font-bold text-black">Remarks</h6>
+                                            <textarea name="" id="" class="textarea font-medium"
+                                                placeholder="Type Something Here..."></textarea>
+                                        </div>
+                                        <div class="accept-reject-btns bottom-0">
+                                            <div class="d-flex justify-content-between flex-wrap">
+                                                <a href="#" class="approve-btn">Approve</a>
+                                                <a href="#" class="reject-btn" data-bs-dismiss="modal"
+                                                    aria-label="Close">Reject</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close Payment Details Popup-->
+
+                <!--Open History Popup-->
+                <div class="modal _custom_modal fade modal-fixed" id="historyModal" tabindex="-1"
+                    aria-labelledby="historyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog _custom_dialog">
+                        <div class="modal-content _custom_modal_content">
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between">
+                                    <h4 class="font-bold text-black">History Log</h4>
+                                    <button type="button" class="btn-close history-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <!--Table Start Here-->
+                                <div class="table-responsive __custom__properties">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Request History</th>
+                                                <th scope="col">Submitted On</th>
+                                                <th scope="col">Action</th>
+                                                <th scope="col">Submitted By</th>
+                                                <th scope="col">Date & Time</th>
+                                                <th scope="col">Remark</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style approved">Approved</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style pending">Pending</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Submitted</td>
+                                                <td><span>11 November, 2022</span> | <span>11:00 PM</span></td>
+                                                <td><span class="status-style rejected">Rejected</span> </td>
+                                                <td>Akanksha Goswami</td>
+                                                <td><span>14 November, 2022</span> | <span>10:00 AM</span></td>
+                                                <td>Invalid Email Address</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Close History Popup-->
+            </div>
+        </div>
+    </div>
+    </div><!-- Parent Container Close Here -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
