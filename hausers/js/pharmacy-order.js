@@ -75,7 +75,7 @@ function LoadData(Appointmentid) {
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='txtAppointmentDate']").html('<img src="images/calendar-black.png" class="boxicon"> ' + data.results.estDate);
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
-                $("[id*='txtAppointmentAddress']").html(place);
+                $("[id*='txtAppointmentAddress']").html(place + ' <a href="javascript:maplocation()"><img src="images/google-map.png" class="boxicon"> Location </a>');
                 $("[id*='tagPrescription']").attr("href", data.results.reportSavePath);
                 $("[id*='txtOrderAmount']").text(data.results.orderAmount);
                 $("[id*='btnInvoice']").attr("href", data.results.invoiceLink);
@@ -102,26 +102,7 @@ function LoadData(Appointmentid) {
 
 }
 
-$('#mapLogo').click(function () {
-    window.open('https://www.google.com/maps/place/' + place);
-});
-
-$("#btnTrackRorder").click(function () {
-    GetTrackOrder({ AppointmentId: Appointmentid }).then(function (res) {
-        debugger;
-        var orderStatus = res.results.trackStatus[0]['orderStatus'];
-        var i = 0;
-        $.each(res, function () {
-            var html = ''
-            html += '<b><label id="orderStatus-' + i + '">Order Status: </label></b>' + res.results.trackStatus[i]['orderStatus'] + '<br/>'
-            html += '<b><label id="orderStatus-' + i + '">Time Stamp: </label></b>' + res.results.trackStatus[i]['timestamp'] + '<br/>'
-            html += '<hr/>'
-            i++;
-            $('#TableData').append(html);
-        });
-    }).catch(function (err) {
-        console.log(err);
-    });
-});
-
+function maplocation() {
+    window.open('https://maps.google.com/?q=' + place);
+}
 
