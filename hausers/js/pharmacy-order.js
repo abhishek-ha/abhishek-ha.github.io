@@ -32,6 +32,7 @@ function LoadData(Appointmentid) {
                     $("[id*='dvOrderRequested']").show();
                     $("[id*='btnstatusname']").html('ORDER REQUESTED');
                     $("[id*='btnstatusname']").attr('class', 'btn appoinmentbtn');
+                    $("[id*='dvEstimateDate']").hide();
                 }
                 else if (statusName == 'Dispatched' || statusName == 'Package Picked') {
                     document.title = ' Pharmacy | Order Out For Delivery';
@@ -50,7 +51,7 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").html('PAYMENT DUE');
                     $("[id*='btnstatusname']").attr('class', 'btn paymentduebtn');
                 }
-                else if (statusName == 'Confirmed') {
+                else if (statusName == 'Confirmed' || statusName == 'Payment Collected') {
                     document.title = ' Pharmacy | Confirm';
                     $("[id*='dvOrderConfirmed']").show();
                     $("[id*='dvCenterUseOnly']").show();
@@ -84,7 +85,6 @@ function LoadData(Appointmentid) {
                     TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
                     $.each(data.results.coveredTests, function (key, value) {
                         $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' '+ value.testName + '</a></li>');
-                                                       
                     });                    
                 }
                 $("[id*='spnMedicineOrders']").html(TotalCount + '+ Medicines Orders');
