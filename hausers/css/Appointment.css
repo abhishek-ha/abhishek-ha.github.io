@@ -2055,10 +2055,7 @@ line-height:26.5px ;
 .centerlogo{
     max-width: 100px;
 }
-.appoinmentbtn{
-    background-color:#C0C0C0 ;
-    color:#000000;
-    border-radius: 20px;
+.appoinmentbtn{ 
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
@@ -3022,10 +3019,6 @@ line-height:26.5px ;
     max-width: 100px;
 }
 .appoinmentbtn{
-    background-color:#C0C0C0 ;
-    color:#000000;
-      color: #ffffff;
-    border-radius: 20px;
     margin: 5px;
      min-width: 180px;
     font-size: 13px;
