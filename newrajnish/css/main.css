@@ -346,14 +346,26 @@
 
 
 /*Avanish Shukla CSS*/
-.adduserbtn-admin{
+.adduserbtn-admin a{
     padding: 6px 15px !important;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
     background-color: var(--theme-color);
     color: var(--theme-white) !important;
+    min-width: 110px;
+    gap: 10px;
+    display: flex;
 }
+
+.adduserbtn-admin a:focus{
+    color: #ffffff!important;
+}
+
+/*.filters .adduserbtn-admin a:active,a:focus{
+    color: #ffffff;
+}
+*/
 .scrollbar {
     height: 170px;
     max-width: 250px;
@@ -374,14 +386,92 @@
     -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
     background-color: #F5F5F5;
 }
+.savedetails{
+    background-color: #F5F5F5!important;
+        font-size: 14px;
+    padding: 10px 33px;
+    border-radius: 4px;
+    color: #dddddd!important;
+}
+/*.addusermodalbox{
+    border-radius: 24px;
+}*/
+.tbl-textgreen{
+    color: #2EE741;
+}
+.tbl-textred{
+    color: #FF3535;
+}
 
+.tbl-actionimg img{
+    width: 16px;
+}
 
+.avanishtbl th span img{
+    width: 6px;
+    margin-left: 5px;
+}
+.addusermodalbox .form-control{
+    background-color: #eeeeee;
+color: var(--theme-color) !important;
+}
 
+.addusermodalbox .__inputs {
+    padding: 8px 15px;
+    border: none;
+    color: var(--theme-color) !important;
+    border-radius: 4px;
+    background-color: var(--theme-color-e);
+}
 
+.addusermodalbox .form-select{
+    background-color: #eeeeee;
+   color: #6d7985
+    border: none;
+}
+.addusermodalbox label{
+    color: #000000;
+    font-weight: 600;
+}
 
+/*.addusermodalbox input::-webkit-input-placeholder {
+    color: var(--theme-color) !important;
+}
 
+.addusermodalbox input:-moz-placeholder {
+    color: var(--theme-color) !important;
+}*/
 
+.addusermodalbox .modal-content._custom_modal_content{
+    border-radius: 18px!important;
+}
 
+.addusermodalbox .modal-body {
+    border-radius: 8px;
+    padding: 25px 30px;
+}
 
+.addusermodalbox .modal-content._custom_modal_content .modal-header {
+    padding: 10px 30px;
+    background-color: #ffffff!important;
+    border-bottom: none;
+}
 
+.deactiveuser .modal-content._custom_modal_content {
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 12%;
+}
+.deactiveuser .modal-body {
+    padding: 50px 30px;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 8px;
+}
+.deactiveuser .reject-btn{
+    margin-top: 70px;
+}
+.addusermodalbox .form-select:focus {
+   box-shadow: none;
+  outline-color: var(--theme-color) !important;
+}
 /* Fixed Modal Header CSS Ends Here */
