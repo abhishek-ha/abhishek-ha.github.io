@@ -76,7 +76,7 @@ function LoadData(Appointmentid) {
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon">' + data.results.paymentMode);
-                $("[id*='custAddress']").html(place + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Direction </a>');
+                $("[id*='custAddress']").html(place + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Location </a>');
             } else {
                 window.location.replace("404.html");
             }
