@@ -48,6 +48,7 @@ function LoadData(Appointmentid) {
                     $("[id*='dvPaymentDue']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='accordionFlushExample']").show();
+                    $("[id*='dvEstimateDate']").hide();
                     $("[id*='btnstatusname']").html('PAYMENT DUE');
                     $("[id*='btnstatusname']").attr('class', 'btn paymentduebtn');
                 }
@@ -80,6 +81,7 @@ function LoadData(Appointmentid) {
                 $("[id*='tagPrescription']").attr("href", data.results.reportSavePath);
                 $("[id*='txtOrderAmount']").text(data.results.orderAmount);
                 $("[id*='btnInvoice']").attr("href", data.results.invoiceLink);
+                $("[id*='paymentLinkBtn']").attr("href", data.results.paymentLink);
 
                 if(data.results.serviceName == "Pharmacy"){
                     TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
