@@ -77,18 +77,18 @@ function LoadData(Appointmentid) {
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
                 $("[id*='btnPaymentSettlementMode']").text(data.results.paymentMode);
                 if (data.results.appRecievedByEmail != null && data.results.appRecievedByEmail != '') {
-                    $("[id*='AppRecievedByEmail']").text(data.results.appRecievedByEmail);
+                    $("[id*='AppRecievedByEmail']").html('<i class="fa-regular fa-envelope"></i> ' + data.results.appRecievedByEmail);
                 }
                 else {
-                    $("[id*='AppRecievedByEmail']").text(data.results.providerEmail);
+                    $("[id*='AppRecievedByEmail']").html('<i class="fa-regular fa-envelope"></i> '+data.results.providerEmail);
                 }
-                $("[id*='AppRecievedByMobile']").text(data.results.appRecievedByMobile);
+                $("[id*='AppRecievedByMobile']").html('<i class="fa-solid fa-phone"></i> ' + data.results.appRecievedByMobile);
                 $("[id*='AppRecivedByName']").text(data.results.appRecivedByName);
                 $("[id*='txtProviderName']").text(data.results.providerName);
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon">' + data.results.paymentMode);
-                $("[id*='custAddress']").html(data.results.address + ' <a href="javascript:maplocation(' + data.results.providerLatitude + ',' + data.results.providerLongitude + ')"><img src="images/google-map.png" class="boxicon"> Location </a>');
+                $("[id*='custAddress']").html(place + ' <a href="javascript:maplocation()"><img src="images/google-map.png" class="boxicon"> Location </a>');
             } else {
                 window.location.replace("404.html");
             }
@@ -104,8 +104,8 @@ function LoadData(Appointmentid) {
 // $('#mapLogo').click(function () {
 //     window.open('https://www.google.com/maps/place/' + place);});
 
-function maplocation(lat, long) {
-    window.open('https://maps.google.com/?q=' + lat + ',' + lat);
+function maplocation() {
+    window.open('https://www.google.com/maps/place/' + place);
 }
 
 

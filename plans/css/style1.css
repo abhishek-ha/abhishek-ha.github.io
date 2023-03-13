@@ -1400,12 +1400,6 @@ div {
     margin-right: auto;
     position:relative;
 }
-
-
-
-
-
-
 .cashkarohead{
     color: #0f5fc2;
     font-weight: 700!important;
@@ -2415,6 +2409,26 @@ div {
 }
 .renewpolicy-benefits img{
     width: 30px;
+}
+
+.explorepackage a{
+    background: #0f5fc2;
+    color: #ffffff!important;
+    border-radius: 8px;
+    width:215px;
+    font-size:16px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left:0px;
+   border:1px solid #0f5fc2;
+}
+.explorepackage:hover{
+    background: #000000!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+     cursor: pointer;
 }
 
 
@@ -3750,6 +3764,53 @@ div {
     width: 24px;
     float: left;
 }
+
+.booknow{
+    background: #ffffff;
+    color: #0148FF!important;
+    border-radius: 6px;
+    font-size:15px;
+   font-weight: 600;
+   text-align: center;
+   padding: 10px;  
+   margin-left:0px;
+   border:1px solid #ffffff;
+}
+.booknow:hover{
+    background: #000000!important;
+    color: #ffffff!important;
+    border:1px solid #000000;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+     cursor: pointer;
+}
+.explorepackage a{
+    background: #0f5fc2;
+    color: #ffffff!important;
+    border-radius: 6px;
+    width:215px;
+    font-size:16px;
+   font-weight: 600;
+   text-align: center;
+   padding: 15px 20px;  
+   margin-left:0px;
+   border:1px solid #0f5fc2;
+   position: absolute;
+   margin-top: 40px;
+}
+.explorepackage a:hover{
+    background: #000000!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+     cursor: pointer;
+}
+
+
+
+
+
 }
 
 
@@ -7031,7 +7092,6 @@ height:545px;
         color: #5336ca;
         margin:4px;
           padding: 5px;
-          margin: ;
         }
 .benitem  img {
             width: 90px;

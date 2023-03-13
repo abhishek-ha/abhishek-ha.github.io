@@ -432,7 +432,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 301px) {
      .docimg{
-        width: 15px;
+        width: 30px;
     }
     .statusbtn{
     margin-top: -1px;
@@ -829,7 +829,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 350px) {
      .docimg{
-        width: 20px;
+        width: 43px;
     }
      .statusbtn{
     margin-top: -8px;
@@ -1210,7 +1210,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 422px) {
         .docimg{
-        width: 20px;
+        width: 46px;
     }
      .statusbtn{
     margin-top: -8px;
@@ -1594,7 +1594,7 @@ font-family: fontawesome;
 
 @media only screen and (min-width: 700px) {
      .docimg{
-       width: 35px;
+       width: 40px;
     }
      .statusbtn{
     margin-top: -16px;
@@ -2694,6 +2694,12 @@ font-family: fontawesome;
 }
 
 @media only screen and (min-width: 1200px) {
+
+.docleft p{
+    .margin-left:-15px!important;
+}
+
+
       .statusbtn{
     margin-top: 0px;
 }
@@ -3349,15 +3355,15 @@ line-height:26.5px ;
     font-size: 14px;
     margin-bottom: 2px!important;
 }
-.docbox .doctname{
-font-size: 14px;
-font-weight: 600;
+
+.docbox .docleft p{
+    font-size: 14px;
 line-height: 15px;
 letter-spacing: 0em;
 text-align: left;
-color: #0E5FC1;
 margin-bottom: 4px;
-}
+margin-left: -10px!important;
+} 
 .docbox .designation{
     font-size: 14px;
     font-weight: 600;
