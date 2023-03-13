@@ -105,6 +105,6 @@ function LoadData(Appointmentid) {
 }
 
 function maplocation() {
-    window.open('https://maps.google.com/?q=' + place);
+    window.open('https://www.google.com/maps/place/' + place);
 }
 
