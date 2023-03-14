@@ -17,14 +17,6 @@
     line-height: 37px;
     margin: 0px;
   }
- * {
-     margin: 0;
-     padding: 0;
-     -webkit-font-smoothing: antialiased;
-     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-     box-sizing: border-box;
- }
 body {
         font-family: 'PT Sans', sans-serif;
         overflow-x:hidden!important;
@@ -825,6 +817,14 @@ font-family: fontawesome;
     padding-top: 54px;
     height: 150px;
 }
+
+.docbox .docleft p{
+    margin-left:-22px!important;
+}
+
+
+
+
 }
 
 @media only screen and (min-width: 350px) {
@@ -1206,6 +1206,10 @@ font-family: fontawesome;
 .mt-minus{
     margin-top: -16px;
 }
+.docbox .docleft p{
+    margin-left:-22px!important;
+}
+
 }
 
 @media only screen and (min-width: 422px) {
