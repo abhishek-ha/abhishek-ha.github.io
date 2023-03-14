@@ -1,0 +1,166 @@
+.bbb_viewed {
+     padding-top: 30px;
+     padding-bottom: 60px;
+ }
+.bbb_main_container{
+    padding: 11px;
+ }
+.bbb_viewed_title_container {
+     margin-top: 50px;
+     position: relative;
+ }
+.bbb_viewed_title {
+         margin-bottom: 16px;
+    margin-top: 8px;
+ }
+.bbb_viewed_nav_container {
+     position: absolute;
+     right: -5px;
+     bottom: 14px
+ }
+.bbb_viewed_nav {
+     display: inline-block;
+     cursor: pointer
+ }
+.bbb_viewed_nav i {
+  color: rgba(1, 72, 255, 0.3);
+/*background-color: rgba(1, 72, 255, 0.3);*/
+     font-size: 18px;
+     padding: 5px;
+     -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+     -ms-transition: all 200ms ease;
+     -o-transition: all 200ms ease;
+     transition: all 200ms ease
+ }
+.bbb_viewed_nav:hover i {
+     color: #0148FF;
+ }
+.bbb_viewed_prev {
+     margin-right: 15px
+ }
+.bbb_viewed_slider_container {
+     padding-top: 13px;
+ }
+.bbb_viewed_item {
+     width: 100%;
+     background-color: #ffffff;
+     border-radius: 8px;
+     padding: 20px 10px;
+     box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+ }
+.package {
+         width: 100%;
+         height: 150px;
+ }
+.package .testcount{
+   background: #0148FF;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-top: -10px;
+    position: absolute;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+}
+.packageprice{
+    margin-top: 10px;
+}
+
+
+.packageprice p{
+    font-size: 13px;
+}
+
+.packageprice p del{
+    font-weight: 700;
+}
+
+.package img {
+     display: block;
+     max-width: 100%;
+     border-radius: 8px;
+ }
+.bbb_viewed_content {
+     width: 100%;
+     margin-top: 25px
+ }
+.bbb_viewed_item.discount .bbb_viewed_price {
+     color: #df3b3b
+ }
+.bbb_viewed_price span {
+     position: relative;
+     font-size: 12px;
+     font-weight: 400;
+     color: rgba(0, 0, 0, 0.6);
+     margin-left: 8px
+ }
+.bbb_viewed_price span::after {
+     display: block;
+     position: absolute;
+     top: 6px;
+     left: -2px;
+     width: calc(100% + 4px);
+     height: 1px;
+     background: #8d8d8d;
+     content: ''
+ }
+.bbb_viewed_name {
+     margin-top: 3px
+ }
+.bbb_viewed_name a {
+     font-size: 14px;
+     color: #000000;
+     -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+     -ms-transition: all 200ms ease;
+     -o-transition: all 200ms ease;
+     transition: all 200ms ease
+ }
+.bbb_viewed_name a:hover {
+     color: #0e8ce4
+ }
+.item_new {
+     background: #0e8ce4
+ }
+.bbb_viewed_item.discount .item_discount {
+     display: inline-block
+ }
+.bbb_viewed_item.is_new .item_new {
+     display: inline-block
+ }
+#tabs h6.section-title{
+    color: #eee;
+}
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000000;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #000;
+    font-size: 20px;
+}
+.planbenefit h3{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 35px;
+}
+.planbenefit ul li{
+    color: #808080;
+    font-size: 13px;
+}
+.planbenefit ul li:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    color: #0148ff;
+}

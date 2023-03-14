@@ -2329,10 +2329,6 @@ div {
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
    color:#ffffff!important;
 }
-
-
-
-
 .renewdigital1{
      background-color:#fcfcfc;
     height:637px;
@@ -2367,9 +2363,6 @@ div {
 .renewdigitalspace{
     padding-top: 60px;
 }
-
-
-
 .allplanspace1 {
     padding-top: 107px;
 }
@@ -2382,7 +2375,6 @@ div {
 .mediyartopspace{
     padding-top: 50px;
 }
-
 .renewpolicy-benefits{
     background-color: #ecf0fa;
     box-shadow: 5px 11px 23px -13px #dedede;
@@ -2410,7 +2402,6 @@ div {
 .renewpolicy-benefits img{
     width: 30px;
 }
-
 .explorepackage a{
     background: #0f5fc2;
     color: #ffffff!important;
@@ -2423,15 +2414,19 @@ div {
    margin-left:0px;
    border:1px solid #0f5fc2;
 }
-.explorepackage:hover{
+.explorepackage a:hover{
     background: #000000!important;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     text-decoration: none;
      cursor: pointer;
 }
-
-
+.landingpagebg{
+    background-image: url('../images/landingpagebg.png');
+    background-position: center center; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
 }
 
 
@@ -3628,8 +3623,6 @@ div {
 .renewdigital .buybtn.selected{
     background-color: #000000;
 }
-
-
 .renewdigital .buybtn.selected::before {
      content: "\f00c";
     font-family: "FontAwesome";
@@ -3640,9 +3633,6 @@ div {
     z-index: 1;
     background-color: #000000;
 }
-
-
-
 .renewdigital .buybtn:hover{
    background-color:#000000;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
@@ -3677,13 +3667,9 @@ div {
     cursor:pointer;
     margin-top:2px;
 }
-
-
 .renewdigital1 .buybtn.selected{
     background-color: #000000;
 }
-
-
 .renewdigital1 .buybtn.selected::before {
      content: "\f00c";
     font-family: "FontAwesome";
@@ -3694,9 +3680,6 @@ div {
     z-index: 1;
     background-color: #000000;
 }
-
-
-
 .renewdigital1 .buybtn:hover{
    background-color:#000000;
    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.27);
@@ -3806,11 +3789,12 @@ div {
     text-decoration: none;
      cursor: pointer;
 }
-
-
-
-
-
+.landingpagebg{
+    background-image: url('../images/landingpagebg.png');
+    background-position: center center; 
+    background-repeat:no-repeat; 
+    background-size:cover;
+}
 }
 
 
