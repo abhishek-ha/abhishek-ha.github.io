@@ -1,20 +1,23 @@
 .bbb_viewed {
-     padding-top: 30px;
+     padding-top: 8px;
      padding-bottom: 60px;
  }
 .bbb_main_container{
-    padding: 11px;
+    padding: 0px;
  }
 .bbb_viewed_title_container {
-     margin-top: 50px;
-     position: relative;
+    margin-top: -76px;
+    display: flex;
+    position: absolute;
+    right: -41px;
+    z-index: 999999;
  }
 .bbb_viewed_title {
-         margin-bottom: 16px;
+    margin-bottom: 16px;
     margin-top: 8px;
  }
 .bbb_viewed_nav_container {
-     position: absolute;
+     position: relative;
      right: -5px;
      bottom: 14px
  }
@@ -40,7 +43,7 @@
      margin-right: 15px
  }
 .bbb_viewed_slider_container {
-     padding-top: 13px;
+     padding-top: 0px;
  }
 .bbb_viewed_item {
      width: 100%;
