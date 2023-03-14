@@ -66,8 +66,6 @@
 .packageprice{
     margin-top: 10px;
 }
-
-
 .packageprice p{
     font-size: 13px;
 }
@@ -163,4 +161,8 @@
     padding-right: 6px;
     vertical-align: middle;
     color: #0148ff;
+}
+.homevisit a{
+    max-width: 150px!important;
+    display: inline-block;
 }

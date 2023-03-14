@@ -2414,6 +2414,10 @@ div {
    margin-left:0px;
    border:1px solid #0f5fc2;
 }
+.explorepackage .fa-arrow-down{
+   font-weight: 500!important;
+}
+
 .explorepackage a:hover{
     background: #000000!important;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
@@ -3768,6 +3772,12 @@ div {
     text-decoration: none;
      cursor: pointer;
 }
+
+.explorepackage img{
+    width: 15px;
+    height: 15px;
+}
+
 .explorepackage a{
     background: #0f5fc2;
     color: #ffffff!important;
