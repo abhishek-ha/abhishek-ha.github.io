@@ -27,11 +27,11 @@
 /*background-color: rgba(1, 72, 255, 0.3);*/
      font-size: 18px;
      padding: 5px;
-     -webkit-transition: all 200ms ease;
-     -moz-transition: all 200ms ease;
-     -ms-transition: all 200ms ease;
-     -o-transition: all 200ms ease;
-     transition: all 200ms ease
+   -webkit-transition: all 100ms ease;
+     -moz-transition: all 100ms ease;
+     -ms-transition: all 100ms ease;
+     -o-transition: all 100ms ease;
+     transition: all 100ms ease*
  }
 .bbb_viewed_nav:hover i {
      color: #0148FF;
@@ -142,7 +142,6 @@
 /*#tabs .nav-tabs .nav-link{
      color: #000000;
 }*/
-
 .planbenefit h3{
     font-size: 16px;
     font-weight: 600;
@@ -172,7 +171,6 @@
 .homevisit .filter{
     float: right;
 }
-
 .homevisit .form-control{
     border-radius: 4px;
     font-size: 14px;
@@ -180,4 +178,7 @@
     right: 10px;
     margin-top: 10px;
     border: none;
+}
+.owl-item{
+    margin-bottom: 30px;
 }
