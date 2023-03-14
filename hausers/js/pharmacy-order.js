@@ -43,7 +43,7 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").html('OUT FOR DELIVERY');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
                 }
-                else if (statusName == 'Payment Pending') {
+                else if (statusName == 'Payment Pending' || statusName=='Pending') {
                     document.title = ' Pharmacy | Order Payment Due';
                     $("[id*='dvPaymentDue']").show();
                     $("[id*='dvCenterUseOnly']").show();

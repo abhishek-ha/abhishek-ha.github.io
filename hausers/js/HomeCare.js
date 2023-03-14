@@ -2,6 +2,7 @@ var href = new URL(window.location.href);
 var Appointmentid = href.searchParams.get("AppointmentId");
 var statusName = '';
 var place = '';
+var reportsPath = '';
 
 $(function () {
     $("[id*='dvAppointmentWith']").hide();
@@ -15,7 +16,12 @@ $(function () {
         window.location.replace("404.html");
     }
 });
-
+$('#btnViewReports').click(function () {
+    window.open(reportsPath);
+});
+$('#btnViewReports1').click(function () {
+    window.open(reportsPath);
+});
 
 
 function LoadData(Appointmentid) {
@@ -71,8 +77,8 @@ function LoadData(Appointmentid) {
                 $("[id*='btnAge']").text(data.results.memberAge + ' Years');
                 $("[id*='btnCaseNo']").text(data.results.caseNo);
                 $("[id*='appointmentFor']").text(data.results.subServiceDetails);
-                $("[id*='txtPointOfContact']").text(data.results.pointOfContact);
-                $("[id*='PocDesignation']").text(data.results.pocDesignation);
+                $("[id*='txtPointOfContact']").text(data.results.apptwithDoctorName);
+                $("[id*='PocDesignation']").text('(' + data.results.apptwithDoctorDegree + ')');
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
                 $("[id*='btnPaymentSettlementMode']").text(data.results.paymentMode);
@@ -89,6 +95,9 @@ function LoadData(Appointmentid) {
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
                 $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon">' + data.results.paymentMode);
                 $("[id*='custAddress']").html(place + ' <a href="javascript:maplocation()"><img src="images/google-map.png" class="boxicon"> Location </a>');
+                if (data.results.reportSavePath != null) {
+                    reportsPath = data.results.reportSavePath;
+                }
             } else {
                 window.location.replace("404.html");
             }
