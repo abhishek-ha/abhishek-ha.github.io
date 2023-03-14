@@ -54,7 +54,7 @@
          height: 150px;
  }
 .package .testcount{
-   background: #0148FF;
+   background-color: #0f5fc2;
     color: #ffffff;
     font-size: 13px;
     padding: 5px 10px;
@@ -63,17 +63,23 @@
     width: 100%;
     border-radius: 0px 0px 5px 5px;
 }
+.tabfilter{
+    display: flex;
+    justify-content: space-between;
+}
 .packageprice{
     margin-top: 10px;
+}
+.packageprice .btn-primary{
+     font-size: 13px;
+    padding: 7px 11px;
 }
 .packageprice p{
     font-size: 13px;
 }
-
 .packageprice p del{
     font-weight: 700;
 }
-
 .package img {
      display: block;
      max-width: 100%;
@@ -105,18 +111,6 @@
  }
 .bbb_viewed_name {
      margin-top: 3px
- }
-.bbb_viewed_name a {
-     font-size: 14px;
-     color: #000000;
-     -webkit-transition: all 200ms ease;
-     -moz-transition: all 200ms ease;
-     -ms-transition: all 200ms ease;
-     -o-transition: all 200ms ease;
-     transition: all 200ms ease
- }
-.bbb_viewed_name a:hover {
-     color: #0e8ce4
  }
 .item_new {
      background: #0e8ce4
@@ -162,7 +156,23 @@
     vertical-align: middle;
     color: #0148ff;
 }
+.homevisit{
+    display: flex;
+    justify-content: space-between;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 .homevisit a{
     max-width: 150px!important;
     display: inline-block;
+}
+.homevisit .filter{
+    float: right;
+}
+
+.homevisit .form-control{
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    right: 10px;
+   margin-top: 10px;
 }
