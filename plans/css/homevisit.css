@@ -6,12 +6,12 @@
     padding: 0px;
  }
 .bbb_viewed_title_container {
-    margin-top: -76px;
+    margin-top: -88px;
     display: flex;
     position: absolute;
-    right: -41px;
+    right: -72px;
     z-index: 999999;
- }
+}
 .bbb_viewed_title {
     margin-bottom: 16px;
     margin-top: 8px;
