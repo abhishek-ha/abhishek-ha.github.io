@@ -3751,7 +3751,6 @@ div {
     width: 24px;
     float: left;
 }
-
 .booknow{
     background: #ffffff;
     color: #0148FF!important;
@@ -3763,6 +3762,12 @@ div {
    margin-left:13%;
    border:1px solid #ffffff;
 }
+.booknow a{
+    color: #000000!important;
+}
+.booknow a:hover{
+    color: #ffffff!important;
+}
 .booknow:hover{
     background: #000000!important;
     color: #ffffff!important;
@@ -3772,12 +3777,10 @@ div {
     text-decoration: none;
      cursor: pointer;
 }
-
 .explorepackage img{
     width: 15px;
     height: 15px;
 }
-
 .explorepackage a{
     background: #0f5fc2;
     color: #ffffff!important;
