@@ -146,13 +146,15 @@
      color: #000000;
 }*/
 .planbenefit h3{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding-top: 35px;
 }
 .planbenefit ul li{
     color: #808080;
     font-size: 13px;
+    text-indent: -10px;
+    padding-left: 18px;
 }
 .planbenefit ul li:before {
     content: "\f00c";
