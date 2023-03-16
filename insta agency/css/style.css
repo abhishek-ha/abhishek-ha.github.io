@@ -15,13 +15,96 @@ body {
 html{
      overflow-x:hidden!important;
 }
-.cardbox{
+
+
+@media only screen and (max-width:300px){
+    .cardbox{
     background-color: #7572FC;
     border-radius: 6px;
     padding: 10px;
+    display: block;
+    color: #ffffff;
+    margin: 3.50%;
+    width: 43%;
+    float: left;
 }
+.cardbox h3{
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: right;
+    font-weight: 600;
+}
+.cardbox .icon{
+    font-size: 40px;
+    float: left;
+}
+.cardbox p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+     text-align: right;
+     font-weight: 600;
+}
+} 
 
 
+
+
+@media only screen and (min-width:301px){
+    .cardbox{
+    background-color: #7572FC;
+    border-radius: 6px;
+    padding: 10px;
+    display: block;
+    color: #ffffff;
+    margin: 3.50%;
+    width: 43%;
+    float: left;
+}
+.cardbox h3{
+    font-size: 20px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: right;
+    font-weight: 600;
+}
+.cardbox .icon{
+    font-size: 40px;
+    float: left;
+}
+.cardbox p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+     text-align: right;
+     font-weight: 600;
+}
+} 
+
+
+@media only screen and (min-width:350px){
+    .cardbox{
+    margin: 3.50%;
+    width: 43%;
+   
+}
+.cardbox h3{
+    font-size: 20px;
+    line-height: 22px;
+}
+.cardbox .icon{
+    font-size: 40px;
+    float: left;
+}
+.cardbox p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+     text-align: right;
+     font-weight: 600;
+}
+} 
 
 
 
