@@ -3781,6 +3781,12 @@ div {
     width: 15px;
     height: 15px;
 }
+.explorepackage{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
 .explorepackage a{
     background: #0f5fc2;
     color: #ffffff!important;
@@ -3792,8 +3798,7 @@ div {
    padding: 15px 20px;  
    margin-left:0px;
    border:1px solid #0f5fc2;
-   position: absolute;
-   margin-top: 40px;
+  margin-top: 40px;
 }
 .explorepackage a:hover{
     background: #000000!important;
