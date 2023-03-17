@@ -12,7 +12,6 @@
 <link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
 <body>
-
 <div class="container">
 	<div class="row">
 		<div class="cardbox">
@@ -31,7 +30,25 @@
 				</div>
 				<div>
 				<h3> 43690 </h3>
-				<p> NOP </p>	
+				<p> Case Rate </p>	
+				</div>
+			</div>
+
+			<div class="cardbox">
+	<div id="piechart" width="50" height="50"> </div>
+				<div>
+				<h3> 43690 </h3>
+				<p> Productivity </p>	
+				</div>
+			</div>
+
+			<div class="cardbox">
+				<div>
+				<i class="fa-regular fa-user icon"></i>	
+				</div>
+				<div>
+				<h3> 8.7 cr+ </h3>
+				<p> Total GWP </p>	
 				</div>
 			</div>
 
@@ -41,7 +58,7 @@
 				</div>
 				<div>
 				<h3> 43690 </h3>
-				<p> NOP </p>	
+				<p> Renewal Logs </p>	
 				</div>
 			</div>
 
@@ -51,27 +68,7 @@
 				</div>
 				<div>
 				<h3> 43690 </h3>
-				<p> NOP </p>	
-				</div>
-			</div>
-
-			<div class="cardbox">
-				<div>
-				<i class="fa-regular fa-user icon"></i>	
-				</div>
-				<div>
-				<h3> 43690 </h3>
-				<p> NOP </p>	
-				</div>
-			</div>
-
-			<div class="cardbox">
-				<div>
-				<i class="fa-regular fa-user icon"></i>	
-				</div>
-				<div>
-				<h3> 43690 </h3>
-				<p> NOP </p>	
+				<p> Total Utilization </p>	
 				</div>
 			</div>
 	</div>
@@ -81,5 +78,30 @@
 
 
 <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+ <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Language', 'Speakers (in millions)'],
+          ['Productivity',  7],
+          ['Romansh', 3]
+        ]);
+      var options = {
+        legend: 'none',
+        pieSliceText: 'label',
+        pieStartAngle: 100,
+      };
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
 </body>
 </html>

@@ -45,6 +45,7 @@ html{
     color: #ffffff;
      text-align: right;
      font-weight: 600;
+     margin-bottom: 0px;
 }
 } 
 
@@ -79,6 +80,7 @@ html{
     color: #ffffff;
      text-align: right;
      font-weight: 600;
+      margin-bottom: 0px;
 }
 } 
 
@@ -103,6 +105,30 @@ html{
     color: #ffffff;
      text-align: right;
      font-weight: 600;
+      margin-bottom: 0px;
+}
+} 
+
+@media only screen and (min-width:1200px){
+    .cardbox{
+    margin: 1%;
+    width: 23%; 
+}
+.cardbox h3{
+    font-size: 20px;
+    line-height: 22px;
+}
+.cardbox .icon{
+    font-size: 40px;
+    float: left;
+}
+.cardbox p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+     text-align: right;
+     font-weight: 600;
+      margin-bottom: 0px;
 }
 } 
 
