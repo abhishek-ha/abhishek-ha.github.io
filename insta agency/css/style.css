@@ -32,9 +32,7 @@ html{
     padding: 10px;
     display: block;
     color: #ffffff;
-    margin: 3.50%;
- 
-    float: left;
+       margin: 15px 0px 10px 0px;
 }
 .cardbox h3{
     font-size: 20px;
@@ -43,6 +41,13 @@ html{
     text-align: right;
     font-weight: 600;
 }
+.cardbox h3 a{
+    text-decoration: none;
+}
+.cardbox p a{
+    text-decoration: none;
+}
+
 .cardbox .icon{
     font-size: 40px;
     float: left;
@@ -58,6 +63,16 @@ html{
 } 
 
 @media only screen and (min-width:301px){
+.cardbox h3 a{
+    text-decoration: none;
+}
+.cardbox p a{
+    text-decoration: none;
+}
+
+
+
+
     .cardbox{
     background-color: #7572FC;
     border-radius: 6px;
