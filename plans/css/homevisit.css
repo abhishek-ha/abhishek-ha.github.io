@@ -232,6 +232,11 @@
     padding-left: 8%!important;
 }
 
+.owl-carousel .owl-item {
+    width: 100%;
+}
+
+
 }
 
 
@@ -251,10 +256,9 @@
  }
 .package img {
      display: block;
-     max-width: 100%;
+     width: 100%;
      border-radius: 8px;
      height: 150px;
-     width: 235px;
  }
 .bbb_viewed_title_container {
     margin-top: -30px;
