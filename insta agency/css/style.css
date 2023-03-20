@@ -15,6 +15,14 @@ body {
 html{
      overflow-x:hidden!important;
 }
+.pbold{
+    font-weight: 600;
+}
+
+.f-22{
+    font-size: 22px;
+}
+
 
 
 @media only screen and (max-width:300px){
@@ -25,7 +33,7 @@ html{
     display: block;
     color: #ffffff;
     margin: 3.50%;
-    width: 43%;
+ 
     float: left;
 }
 .cardbox h3{
@@ -49,9 +57,6 @@ html{
 }
 } 
 
-
-
-
 @media only screen and (min-width:301px){
     .cardbox{
     background-color: #7572FC;
@@ -59,9 +64,7 @@ html{
     padding: 10px;
     display: block;
     color: #ffffff;
-    margin: 3.50%;
-    width: 43%;
-    float: left;
+    margin: 15px 0px 10px 0px;
 }
 .cardbox h3{
     font-size: 20px;
@@ -86,11 +89,7 @@ html{
 
 
 @media only screen and (min-width:350px){
-    .cardbox{
-    margin: 3.50%;
-    width: 43%;
-   
-}
+
 .cardbox h3{
     font-size: 20px;
     line-height: 22px;
@@ -110,10 +109,6 @@ html{
 } 
 
 @media only screen and (min-width:1200px){
-    .cardbox{
-    margin: 1%;
-    width: 23%; 
-}
 .cardbox h3{
     font-size: 20px;
     line-height: 22px;

@@ -5,13 +5,7 @@
 .bbb_main_container{
     padding: 0px;
  }
-.bbb_viewed_title_container {
-    margin-top: -88px;
-    display: flex;
-    position: absolute;
-    right: -72px;
-    z-index: 999999;
-}
+
 .bbb_viewed_title {
     margin-bottom: 16px;
     margin-top: 8px;
@@ -193,8 +187,13 @@
      height: 150px;
      width: 235px;
  }
-
-
+.bbb_viewed_title_container {
+    margin-top: -30px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    z-index: 999999;
+}
 }
 
 
@@ -214,6 +213,14 @@
      height: 150px;
      width: 235px;
  }
+.bbb_viewed_title_container {
+    margin-top: -30px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    z-index: 999999;
+}
+
 }
 
 
@@ -234,4 +241,13 @@
      height: 150px;
      width: 235px;
  }
+.bbb_viewed_title_container {
+    margin-top: -30px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    z-index: 999999;
+}
+
+
 }

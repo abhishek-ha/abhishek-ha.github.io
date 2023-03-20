@@ -13,20 +13,45 @@
 </head>
 <body>
 <div class="container">
+ <div class="row pt-5">
+ 	<div class="col-lg-12">
+<div class="form-check form-check-inline">
+ <p class="pbold"> Summary <span class="ps-3"> <i class="fa-solid fa-arrows-rotate "></i></span> </p>
+</div>
+
+
+ 		<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1"> MTD </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2"> YTD </label>
+</div>
+</div>
+	
+</div>
+
+
+
 	<div class="row">
+<div class="col-lg-3 col-md-4 col-6">
 		<div class="cardbox">
 				<div>
-				<i class="fa-regular fa-user icon"></i>	
+				<i class="fa-solid fa-id-card icon"></i>
 				</div>
 				<div>
 				<h3> 43690 </h3>
 				<p> NOP </p>	
 				</div>
 			</div>
+</div>
 
-			<div class="cardbox">
+<div class="col-lg-3 col-md-4 col-6">
+	
+	<div class="cardbox">
 				<div>
-				<i class="fa-regular fa-user icon"></i>	
+			<i class="fa-solid fa-file-lines icon"></i>
 				</div>
 				<div>
 				<h3> 43690 </h3>
@@ -34,74 +59,63 @@
 				</div>
 			</div>
 
-			<div class="cardbox">
-	<div id="piechart" width="50" height="50"> </div>
+</div>
+
+<div class="col-lg-3 col-md-4 col-6">
+	<div class="cardbox">
+		<div>
+	<i class="fa-solid fa-chart-pie icon"></i>
+	</div>
 				<div>
 				<h3> 43690 </h3>
 				<p> Productivity </p>	
 				</div>
 			</div>
+</div>
 
-			<div class="cardbox">
+<div class="col-lg-3 col-md-4 col-6">
+	<div class="cardbox">
 				<div>
-				<i class="fa-regular fa-user icon"></i>	
+			<i class="fa-solid fa-indian-rupee-sign icon"></i>
 				</div>
 				<div>
 				<h3> 8.7 cr+ </h3>
 				<p> Total GWP </p>	
 				</div>
 			</div>
+</div>
 
-			<div class="cardbox">
+
+<div class="col-lg-3 col-md-4 col-6">
+	<div class="cardbox">
 				<div>
-				<i class="fa-regular fa-user icon"></i>	
+				<i class="fa-solid fa-user icon"></i>
 				</div>
 				<div>
 				<h3> 43690 </h3>
 				<p> Renewal Logs </p>	
 				</div>
 			</div>
+	
+</div>
 
-			<div class="cardbox">
+<div class="col-lg-3 col-md-4 col-6">
+	<div class="cardbox">
 				<div>
-				<i class="fa-regular fa-user icon"></i>	
+		<i class="fa-solid fa-indian-rupee-sign icon"></i>
 				</div>
 				<div>
-				<h3> 43690 </h3>
+				<h3> 2.3 cr+ </h3>
 				<p> Total Utilization </p>	
 				</div>
 			</div>
 	</div>
+</div>
 	
 </div>
 
 
 
 <script type="text/javascript" src="js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-
- <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Language', 'Speakers (in millions)'],
-          ['Productivity',  7],
-          ['Romansh', 3]
-        ]);
-      var options = {
-        legend: 'none',
-        pieSliceText: 'label',
-        pieStartAngle: 100,
-      };
-      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
-      }
-    </script>
-
-
-
-
 </body>
 </html>
