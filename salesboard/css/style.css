@@ -60,21 +60,6 @@ html{
   margin: 0px 0px 0px 0px;
 }
 }
-
-
-
-
-@media only screen and (max-width: 300px) {
- 
-}
-
-
-
-@media only screen and (min-width: 301px) {
- 
-}
-
-
 .custom-navbar{
    box-shadow: 10px 0px 1px #eee;
    background-color: #F2F5FF;
