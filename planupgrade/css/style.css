@@ -26,8 +26,10 @@ a{
     font-weight: 600;
 }
 .planupgradebg{
-	background-color: #0057FF;
+    background-image: url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
 	color: #ffffff;
+    height: 400px;
    }
 .planupgradebg h3{
 	font-size: 25px;
@@ -35,7 +37,7 @@ a{
 	font-weight: 600;
 }
 .planupgradebg .form{
-width: 50%;
+width: 45%;
 margin: auto;
 background-color: #ffffff;
 color: #000000;
