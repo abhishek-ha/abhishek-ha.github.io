@@ -165,7 +165,7 @@ Expires Soon </h3>
   <p class="tnc2"><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
                             </div>
 <div class="col-lg-4 col-md-6 col-xl-4 col-7 val">
-  <button class="btn btn-light"> Upgrade </button>
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
           </div>
           </div>
  </div>
@@ -209,7 +209,7 @@ Expires Soon </h3>
   <p class="tnc2"><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
                             </div>
 <div class="col-lg-4 col-md-6 col-xl-4 col-7 val">
-  <button class="btn btn-light"> Upgrade </button>
+  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
           </div>
           </div>
  </div>
@@ -354,7 +354,7 @@ Expires Soon </h3>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Payment Details</h5>
@@ -371,9 +371,15 @@ Expires Soon </h3>
         
       </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="mdl-footer">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3> Total Rs. 11241 </h3>
+         </div>
+           <div class="col-lg-6">
+<button type="button" class="btn btn-primary paynow_button"> Pay Now </button>
+          </div>
+       </div>
       </div>
     </div>
   </div>
