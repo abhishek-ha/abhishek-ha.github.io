@@ -21,8 +21,7 @@ html{
 .planupgradebg{
 	background-color: #0057FF;
 	color: #ffffff;
-   
-}
+   }
 .planupgradebg h3{
 	font-size: 25px;
 	line-height: 30px;
@@ -201,13 +200,14 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
 }
 .allplan{
      background-color:#fcfcfc;
-    min-height: 400px;
+    min-height: 450px;
     padding:6px;
     margin:auto;
    border:1px solid rgb(201 213 219);
     box-shadow: 5px 7px 9px -4px rgb(158 158 158);
     border-radius: 0px 0px 10px 10px;
     margin-top:10px;
+    
 }
 .offercard{
    background-color: #0057FF;
@@ -225,6 +225,33 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     margin-bottom: 0px;
     text-align: left;
 }
+
+.termscnc{
+    background-color:#fcfcfc;
+    min-height: 30px;
+    padding:6px;
+    margin:auto;
+    box-shadow: 5px 7px 9px -4px rgb(158 158 158);
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 0px;
+    margin-top: -13px;
+    margin-right: 0px; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.termscnc p a{
+    font-size: 14px;
+    line-height: 20px;
+      padding: 4px 6px;
+      margin-bottom: 0px;
+        text-align: left;
+        text-decoration: none;
+        color: #000000;
+}
+
+
+
+
 .bottomsec{
    background-color: #0057FF;
     color: #ffffff;
@@ -257,8 +284,6 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
      font-weight: 600;
 
 }
-
-
 .plan ul li:before {
      content: "\f00c";
      font-family: FontAwesome;
@@ -267,6 +292,8 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
    vertical-align: middle;
    color: #0057FF;
 }
+
+
 
 .tnc {
             text-decoration: none;
