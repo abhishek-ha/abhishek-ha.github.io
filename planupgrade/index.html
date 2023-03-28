@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Plan Upgrade </title>
  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <section class="planupgradebg">
@@ -57,7 +58,7 @@ Expires Soon </h3>
   <div class="container">
      <div class="row">
     <div class="col-lg-12 col-md-12">
-      <h3 class="text-center py-4"> Existing Plan Details </h3>
+  <h4 class="text-center py-4 text-dark"> Existing Plan Details </h4>
     </div>
     
   </div>
@@ -162,12 +163,12 @@ Expires Soon </h3>
   <p ><b> <a href="#">*Terms & Conditions </a></b> </p> 
 </div>
 <div class="row bottomsec">
-        <div class="col-lg-8 col-xl-8 col-md-6 pt-2 col-5">
-<p style="padding-left:10px;"><b> Current Premium </b> </p>
-  <p class="tnc2"><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
-                            </div>
+<div class="col-lg-8 col-xl-8 col-md-6 py-2 col-5">
+<p><b> Current Premium </b> </p>
+<p><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
+</div>
 <div class="col-lg-4 col-md-6 col-xl-4 col-7 val">
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
+<button type="button" class="btn btn-light upgrade_button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
           </div>
           </div>
  </div>
@@ -206,12 +207,12 @@ Expires Soon </h3>
   <p ><b> <a href="#">*Terms & Conditions </a></b> </p> 
 </div>
 <div class="row bottomsec">
-        <div class="col-lg-8 col-xl-8 col-md-6 pt-2 col-5">
+        <div class="col-lg-8 col-xl-8 col-md-6 py-2 col-5">
 <p style="padding-left:10px;"><b> Current Premium </b> </p>
   <p class="tnc2"><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
                             </div>
 <div class="col-lg-4 col-md-6 col-xl-4 col-7 val">
-  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
+  <button type="button" class="btn btn-light upgrade_button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Upgrade </button>
           </div>
           </div>
  </div>
@@ -248,12 +249,12 @@ Expires Soon </h3>
   <p ><b> <a href="#">*Terms & Conditions </a></b> </p> 
 </div>
 <div class="row bottomsec">
-        <div class="col-lg-8 col-xl-8 col-md-6 pt-2 col-5">
+        <div class="col-lg-8 col-xl-8 col-md-6 py-2 col-5">
 <p style="padding-left:10px;"><b> Current Premium </b> </p>
   <p class="tnc2"><b> <del> 15430 </del> 10801  </b> <small>( Exclusive GST ) </small></p>
                             </div>
 <div class="col-lg-4 col-md-6 col-xl-4 col-7 val">
-<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#paymentsuccess"> Upgrade </button>
+<button type="button" class="btn btn-light upgrade_button" data-bs-toggle="modal" data-bs-target="#paymentsuccess"> Upgrade </button>
           </div>
           </div>
  </div>
@@ -355,19 +356,39 @@ Expires Soon </h3>
 
 <!-- Start payment Popup -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-dialog modal-dialog-centered modal-lg modal-planupgrade">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Payment Details</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body modalpaymentdetail">
       <div class="row">
-        <div class="col-lg-6">
-          <h4> Plan Amount </h4>
+        <div class="col-xl-6 col-lg-6 col-6">
+          <h3> Plan Amount </h3>
         </div>
-         <div class="col-lg-6">
-          <h4> 15430 </h4>
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3 class="amountblue"> Rs. 15430 </h3>
+        </div>
+
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3> Discount </h3>
+        </div>
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3 class="amountred"> Rs. 15430 </h3>
+        </div>
+
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3> CGST </h3>
+        </div>
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3 class="amountblue"> Rs. 15430 </h3>
+        </div>
+   <div class="col-xl-6 col-lg-6 col-6">
+          <h3> SGST </h3>
+        </div>
+         <div class="col-xl-6 col-lg-6 col-6">
+          <h3 class="amountblue"> Rs. 15430 </h3>
         </div>
         
       </div>
@@ -392,10 +413,10 @@ Expires Soon </h3>
 
 
 <div class="modal fade" id="paymentsuccess" tabindex="-1" aria-labelledby="paymentsuccessLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-dialog modal-dialog-centered modal-lg modal-planupgrade">
     <div class="modal-content">
-      <div class="modal-header">
-    <h5 class="modal-title" id="paymentsuccessLabel">Payment Details</h5>
+      <div class="modal-header payment-success-header">
+    <h5 class="modal-title" id="paymentsuccessLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body payment-success">
@@ -405,17 +426,11 @@ Expires Soon </h3>
           <h4> Payment Successful </h4>
           <p> Transaction Number: 1495283945359 </p>
         </div>
-       
-        
+       </div>
       </div>
-      </div>
-      
-    </div>
+   </div>
   </div>
 </div>
-
-
-
 <!-- End Thank You Popup -->
 
 

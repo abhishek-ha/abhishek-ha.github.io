@@ -7,7 +7,7 @@
      box-sizing: border-box;
  }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden!important;
     font-size: 14px;
     line-height: 22px;
@@ -17,6 +17,13 @@ body {
         }
 html{
      overflow-x: hidden!important;
+}
+a{
+    text-decoration:none;
+}
+.form-label{
+    color: #0057FF;
+    font-weight: 600;
 }
 .planupgradebg{
 	background-color: #0057FF;
@@ -219,7 +226,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     border-top-left-radius: 10px;
 }
 .offercard p{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     padding: 4px 6px;
     margin-bottom: 0px;
@@ -238,6 +245,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     margin-right: 0px; 
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    text-align: center;
 }
 .termscnc p a{
     font-size: 14px;
@@ -251,6 +259,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
 .payment-success{
     margin:auto;
     text-align: center;
+    padding: 50px 10px;
 }
 .payment-success h3{
     font-size: 20px;
@@ -275,7 +284,7 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
 .bottomsec p{
     font-size: 14px;
     line-height: 20px;
-      padding: 4px 6px;
+      padding: 2px 6px;
       margin-bottom: 0px;
         text-align: left;
 }
@@ -303,9 +312,6 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
    vertical-align: middle;
    color: #0057FF;
 }
-
-
-
 .tnc {
             text-decoration: none;
             color: #212121;
@@ -330,20 +336,31 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     margin-bottom: 1px;
     text-align: right;
     padding-right: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px!important;
 }
 .val{
     text-align:right;
     padding-right:10px!important;
     padding-top: 20px;
 }
-
-
 .modal-header{
     background-color: #0057FF;
     color: #ffffff;
 }
+.payment-success-header{
+    background-color: transparent;
+    color: #000000;
+    border: none;
+}
 
+.modal-planupgrade .modal-content {
+background-color: #E3FFF7;
+}
+
+.modal-planupgrade .modal-content h3{
+    font-size: 18px;
+    line-height: 28px;
+}
 .mdl-footer{
     display: block;
     flex-wrap: wrap;
@@ -358,9 +375,50 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     color: #ffffff;
 
 }
-
 .paynow_button{
     background-color: #ffffff;
-    color: #000000;
+    color: #0057FF;
     float: right;
+    font-weight: 600;
+}
+.paynow_button:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.modalpaymentdetail h3{
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+.modalpaymentdetail .amountblue{
+    color: #0057FF;
+    float: right;
+}
+.modalpaymentdetail .amountred{
+    color: #FF3A6A;
+    float: right;
+}
+.upgrade_button{
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0066FF;
+    text-transform: uppercase;
+}
+
+.modal-planupgrade .btn-close {
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    padding: 0.25em 0.25em;
+    color: #ffffff;
+    background-image: url('../images/close.png');
+    background-repeat: no-repeat;
+    border: 0;
+    border-radius:0px;
+    opacity: .5;
 }
