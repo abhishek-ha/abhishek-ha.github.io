@@ -248,10 +248,21 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
         text-decoration: none;
         color: #000000;
 }
-
-
-
-
+.payment-success{
+    margin:auto;
+    text-align: center;
+}
+.payment-success h3{
+    font-size: 20px;
+    color: #15caab;
+}
+.payment-success img{
+    width: 50px;
+}
+.payment-success p{
+    font-size: 14px;
+    color: #15caab;
+}
 .bottomsec{
    background-color: #0057FF;
     color: #ffffff;
