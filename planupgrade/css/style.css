@@ -25,18 +25,60 @@ a{
     color: #0057FF;
     font-weight: 600;
 }
-.planupgradebg{
-    background-image: url(../images/bgimg.jpg);
-    background-repeat: no-repeat;
-	color: #ffffff;
-    height: 400px;
-   }
+
 .planupgradebg h3{
 	font-size: 25px;
 	line-height: 30px;
 	font-weight: 600;
 }
-.planupgradebg .form{
+
+
+@media only screen and (max-width: 300px) {
+.planupgradebg{
+    background-image: url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 600px;
+   }
+}
+
+
+@media only screen and (min-width: 301px) {
+.planupgradebg{
+    background-image: url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 600px;
+   }
+}
+
+
+
+@media only screen and (min-width: 900px) {
+.planupgradebg{
+    background-image: url(../images/bgimg.jpg);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 430px;
+   }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+ .planupgradebg .form{
+width: 100%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 50px 30px;
+border-radius: 8px;
+}
+}
+
+@media only screen and (min-width: 601px) {
+ .planupgradebg .form{
 width: 45%;
 margin: auto;
 background-color: #ffffff;
@@ -44,6 +86,10 @@ color: #000000;
 padding: 50px 30px;
 border-radius: 8px;
 }
+}
+
+
+
 .plandetail{
     background-color: #ffffff;
     border-radius: 8px;
