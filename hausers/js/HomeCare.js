@@ -27,7 +27,7 @@ $('#btnViewReports1').click(function () {
 function LoadData(Appointmentid) {
     debugger;
     $.ajax({
-        url: "https://uat.healthassure.in/ProductApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/ProductApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -81,7 +81,6 @@ function LoadData(Appointmentid) {
                 $("[id*='PocDesignation']").text('(' + data.results.apptwithDoctorDegree + ')');
                 $("[id*='btnFasting']").text(data.results.isFasting);
                 $("[id*='btnCaseNoConfirmed']").text(data.results.caseNo);
-                $("[id*='btnPaymentSettlementMode']").text(data.results.paymentMode);
                 if (data.results.appRecievedByEmail != null && data.results.appRecievedByEmail != '') {
                     $("[id*='AppRecievedByEmail']").html('<i class="fa-regular fa-envelope"></i> ' + data.results.appRecievedByEmail);
                 }
@@ -93,7 +92,6 @@ function LoadData(Appointmentid) {
                 $("[id*='txtProviderName']").text(data.results.providerName);
                 $("[id*='txtProviderEmail']").html('<i class="fa-regular fa-envelope" ></i> ' + data.results.providerEmail);
                 $("[id*='txtProviderMobile']").html('<img src="images/call-black-icon.png" class="boxicon"> ' + data.results.providerMobile);
-                $("[id*='txtPaymentMode']").html('<img src="images/wallet.png" class="boxicon">' + data.results.paymentMode);
                 $("[id*='custAddress']").html(place + ' <a href="javascript:maplocation()"><img src="images/google-map.png" class="boxicon"> Location </a>');
                 if (data.results.reportSavePath != null) {
                     reportsPath = data.results.reportSavePath;
