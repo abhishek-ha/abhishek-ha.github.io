@@ -34,7 +34,7 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").attr('class', 'btn appoinmentbtn');
                     $("[id*='dvEstimateDate']").hide();
                 }
-                else if (statusName == 'Dispatched' || statusName == 'Package Picked') {
+                else if (statusName == 'Out For Delivery') {
                     document.title = ' Pharmacy | Order Out For Delivery';
                     $("[id*='dvOutDelivery']").show();
                     $("[id*='dvCenterUseOnly']").show();
@@ -43,7 +43,7 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").html('OUT FOR DELIVERY');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
                 }
-                else if (statusName == 'Payment Pending' || statusName=='Pending') {
+                else if (statusName == 'Payment Pending') {
                     document.title = ' Pharmacy | Order Payment Due';
                     $("[id*='dvPaymentDue']").show();
                     $("[id*='dvCenterUseOnly']").show();
@@ -52,7 +52,7 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").html('PAYMENT DUE');
                     $("[id*='btnstatusname']").attr('class', 'btn paymentduebtn');
                 }
-                else if (statusName == 'Confirmed' || statusName == 'Payment Collected') {
+                else if (statusName == 'Confirmed') {
                     document.title = ' Pharmacy | Confirm';
                     $("[id*='dvOrderConfirmed']").show();
                     $("[id*='dvCenterUseOnly']").show();
