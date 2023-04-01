@@ -229,7 +229,7 @@ function OnlyUpgradeOPDPlan(username, planCode, upgradePlanCode, relation, coupo
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/UpgradeOnlyOPDPlanRequest",
-            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: true }),
+            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: false }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
@@ -267,7 +267,7 @@ function RenewalOPDPlan(username, planCode, upgradePlanCode, relation, couponCod
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/RenewalOPDPlanRequest",
-            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: true }),
+            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: false }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
@@ -529,7 +529,7 @@ $("[id*='VerifyOTPUpgradebtn']").click(function () {
         }).catch(function (err) {
             $("[id*='message']").html(err.message);
         });
-    } else if (planupgradeTypeId === 2) {
+    } else if (planupgradeTypeId === 3) {
         OpnOPDPaymentRenewalPopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
             //$("[id*='Thankyouformdiv').show();
             window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
