@@ -39,6 +39,7 @@ function LoadData(Appointmentid) {
                     $("[id*='dvOutDelivery']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
+                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('OUT FOR DELIVERY');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
@@ -57,15 +58,18 @@ function LoadData(Appointmentid) {
                     $("[id*='dvOrderConfirmed']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
+                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('ORDER CONFIRMED');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
+                    $("[id*='dvEstimateDate']").hide();
                 }
                 else if (statusName == 'Closed' || statusName == 'Delivered') {
                     document.title = ' Pharmacy | Order Completed';
                     $("[id*='dvOrderCompleted']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
+                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='dvEstimateDate']").hide();
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('ORDER DELIVERED');
@@ -83,11 +87,11 @@ function LoadData(Appointmentid) {
                 $("[id*='btnInvoice']").attr("href", data.results.invoiceLink);
                 $("[id*='paymentLinkBtn']").attr("href", data.results.paymentLink);
 
-                if(data.results.serviceName == "Pharmacy"){
-                    TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
+                if (data.results.serviceName == "Pharmacy") {
+                    TotalCount = data.results.coveredTests == null ? 0 : data.results.coveredTests.length;
                     $.each(data.results.coveredTests, function (key, value) {
-                        $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' '+ value.testName + '</a></li>');
-                    });                    
+                        $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' ' + value.testName + '</a></li>');
+                    });
                 }
                 $("[id*='spnMedicineOrders']").html(TotalCount + '+ Medicines Orders');
             } else {
@@ -99,7 +103,7 @@ function LoadData(Appointmentid) {
             window.location.replace("404.html");
             swal('Error occure');
         }
-        
+
     });
 
 }
