@@ -28,6 +28,18 @@ html{
     font-weight: 600;
 }
 
-
-
-
+.acerenew .button{
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 20px 0px 15px 0px;
+   text-align: center;
+}
+.acerenew .button:after {
+    content: "\f178";
+    font-family: "FontAwesome";
+    top: 6px;
+    right: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    z-index: 1;
+}
