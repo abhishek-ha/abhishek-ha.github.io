@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+	<title> Narendra Design </title>
+
+<style type="text/css">
+.accordion-container {
+	max-width: 80rem;
+	margin: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	border-radius: 0.5em;
+}
+
+.accordion {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 0.75em 0;
+	text-align: start;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #007bff;
+	transition: 0.5s ease-in-out;
+	position: relative;
+	border-bottom: 2px solid rgb(214, 214, 214);
+}
+
+.accordion span {
+	margin: 0 0.75em;
+}
+
+.accordion .step {
+	background-color: rgb(0, 83, 83);
+	padding: 0.5em 0.75em;
+	font-size: 1.25rem;
+	border-radius: 1em;
+}
+.accordion .accordion-title {
+	margin-right: 5em;
+}
+.accordion:last-of-type {
+	border-bottom: 0;
+}
+.active,
+.accordion:hover {
+	background-color: rgb(1, 92, 92);
+}
+
+.accordion::after {
+	content: "\2b";
+	font-family: "Font Awesome 5 Free";
+	font-size: 2rem;
+	font-weight: 900;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	transition: 0.5s ease-in-out;
+}
+
+.active::after {
+	content: "\f00d";
+	font-family: "Font Awesome 5 Free";
+	font-size: 2rem;
+	font-weight: 900;
+	transition: 0.5s ease-in-out;
+}
+.panel {
+	overflow: hidden;
+	max-height: 0;
+	transition: 0.5s ease-in-out;
+}
+.panel ul {
+	padding: 1em 3em;
+	font-size: 1.7rem;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="accordion-container">
+	<button type="button" class="accordion" id="accordion">
+		<span class="accordion-title">
+			click to see test
+			</span>
+		</button>
+		<div class="panel">
+			<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Test 1
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Test 2
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+   Test 3
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+   Test 4
+  </label>
+</div>
+</div>
+
+	</div>
+</div>
+
+<script>
+const accordion = document.querySelectorAll(".accordion");
+accordion.forEach((element) => {
+	element.addEventListener("click", () => {
+		element.classList.toggle("active");
+		let panel = element.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+});
+</script>
+
+
+</body>
+</html>
