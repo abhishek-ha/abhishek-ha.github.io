@@ -9,37 +9,180 @@
 body {
             font-family: 'Poppins', sans-serif!important;
             overflow-x:hidden!important;
-            font-size: 15px;
+            font-size: 14px;
+            color: #ABABAB;
         }
 html{
      overflow-x:hidden!important;
 }
-.acerenew h3{
-    font-size: 26px;
+@media only screen and (max-width: 300px) {
+ .order-summary p{
+    margin-bottom: 0px;
     font-weight: 600;
-    color: #007bff;
+    font-size: 12px;
+    line-height: 16px;
 }
-.acerenew h4{
-    font-size: 18px;
+.mainhead{
+    font-size: 16px;
+    color: #91C79A;
     font-weight: 600;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0px;
 }
-.acerenew p{
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.acerenew .button{
+.order-summary .button{
     border-radius: 4px;
     font-weight: 600;
     margin: 20px 0px 15px 0px;
    text-align: center;
+    background-color: #91C79A;
+   border: 1px solid #91C79A;
 }
-.acerenew .button:after {
+.order-summary .button:hover{
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+.order-summary .button:after {
     content: "\f178";
     font-family: "FontAwesome";
     top: 6px;
     right: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
     z-index: 1;
+}
+.amountright p{
+    padding-top: 41px;
+    color: #91C79A;
+    font-weight: 800;
+}
+.amountright p span{
+    font-weight: 600;
+   color: #ABABAB;
+    font-size: 10px;f
+}
+
+}
+@media only screen and (min-width: 301px) {
+ .order-summary p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.mainhead{
+    font-size: 16px;
+    color: #91C79A;
+    font-weight: 600;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+.order-summary .button{
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 20px 0px 15px 0px;
+   text-align: center;
+   background-color: #91C79A;
+   border: 1px solid #91C79A;
+}
+.order-summary .button:hover{
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.order-summary .button:after {
+    content: "\f178";
+    font-family: "FontAwesome";
+    top: 6px;
+    right: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    z-index: 1;
+}
+.amountright p{
+    padding-top: 41px;
+    color: #91C79A;
+    font-weight: 800;
+    font-size: 15px;
+}
+.amountright p span{
+    font-weight: 600;
+   color: #ABABAB;
+    font-size: 10px;
+}
+}
+
+@media only screen and (min-width: 400px) {
+ .order-summary p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}
+}
+@media only screen and (min-width: 500px) {
+ .order-summary p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}
+.mainhead{
+    font-size: 20px;
+    color: #91C79A;
+    font-weight: 600;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+}
+@media only screen and (min-width: 700px) {
+ .order-summary p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+}
+.mainhead{
+    font-size: 20px;
+    color: #91C79A;
+    font-weight: 600;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+}
+.topheadbg{
+        background-color: rgba(145, 199, 154, 0.35);
+        padding: 30px 5px;
+    }
+.topheadbg h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+.mainhead1{
+    font-size: 16px;
+    color: #91C79A;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.acerenew{
+    padding: 10px;
+}
+.acerenew h3{
+    font-size: 34px;
+    font-weight: 600;
+    color: #007bff;
+}
+.acerenew h4{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 25px;
+     margin-bottom: 0px;
+}
+.acerenew p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.border-radius {
+    border-radius: 10px;
 }
