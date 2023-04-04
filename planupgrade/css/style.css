@@ -30,20 +30,9 @@ a{
     background-repeat: no-repeat;
 	color: #ffffff;
     height: 400px;
+    background-position: center;
+     background-size: 100% 100%;
    }
-.planupgradebg h3{
-	font-size: 25px;
-	line-height: 30px;
-	font-weight: 600;
-}
-.planupgradebg .form{
-width: 45%;
-margin: auto;
-background-color: #ffffff;
-color: #000000;
-padding: 50px 30px;
-border-radius: 8px;
-}
 .plandetail{
     background-color: #ffffff;
     border-radius: 8px;
@@ -234,7 +223,6 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     margin-bottom: 0px;
     text-align: left;
 }
-
 .termscnc{
     background-color:#fcfcfc;
     min-height: 30px;
@@ -354,11 +342,9 @@ footer .subscribe::-moz-placeholder { /* Firefox 19+ */
     color: #000000;
     border: none;
 }
-
 .modal-planupgrade .modal-content {
 background-color: #E3FFF7;
 }
-
 .modal-planupgrade .modal-content h3{
     font-size: 18px;
     line-height: 28px;
@@ -375,7 +361,6 @@ background-color: #E3FFF7;
     border-bottom-left-radius: calc(0.3rem - 1px);
     background-color: #0057FF;
     color: #ffffff;
-
 }
 .paynow_button{
     background-color: #ffffff;
@@ -387,8 +372,6 @@ background-color: #E3FFF7;
   background-color: #000000;
   color: #ffffff;
 }
-
-
 .modalpaymentdetail h3{
     font-size: 18px;
     line-height: 28px;
@@ -411,7 +394,6 @@ background-color: #E3FFF7;
     color: #0066FF;
     text-transform: uppercase;
 }
-
 .modal-planupgrade .btn-close {
     box-sizing: content-box;
     width: 20px;
@@ -424,3 +406,272 @@ background-color: #E3FFF7;
     border-radius:0px;
     opacity: .5;
 }
+
+@media only screen and (max-width: 300px) {
+.planupgradebg .form{
+width: 100%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.planupgradebg h3{
+      font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.existingplanbenefits{
+    margin-top: 240px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 301px) {
+.planupgradebg .form{
+width: 100%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.planupgradebg h3{
+     font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+     margin-top: 240px;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 350px) {
+.planupgradebg .form{
+width: 100%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 200px;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 400px) {
+.planupgradebg .form{
+width: 100%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 100px;
+}
+}
+
+
+@media only screen and (min-width: 450px) {
+.planupgradebg .form{
+width: 92%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 100px;
+}
+}
+
+
+
+@media only screen and (min-width: 500px) {
+.planupgradebg .form{
+width: 90%;
+padding: 40px 20px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 150px;
+}
+
+}
+
+
+@media only screen and (min-width: 600px) {
+.planupgradebg .form{
+width: 85%;
+padding: 40px 20px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+}
+
+@media only screen and (min-width: 700px) {
+.planupgradebg .form{
+width: 80%;
+padding: 40px 20px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 118px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 800px) {
+.planupgradebg .form{
+width: 70%;
+padding: 40px 20px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 150px;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+.planupgradebg .form{
+width: 60%;
+padding: 50px 30px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 150px;
+}
+}
+
+
+@media only screen and (min-width: 1100px) {
+.planupgradebg .form{
+width: 60%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 20px 10px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 80px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+.planupgradebg .form{
+width: 45%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 50px 30px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 150px;
+}
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+.planupgradebg .form{
+width: 45%;
+margin: auto;
+background-color: #ffffff;
+color: #000000;
+padding: 50px 30px;
+border-radius: 8px;
+}
+.planupgradebg .form h3{
+        font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.planupgradebg h3{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.existingplanbenefits{
+    margin-top: 150px;
+}
+
+
+}
+
+
+
+
+
