@@ -179,7 +179,7 @@ function checkSecond(sec) {
     return sec;
 }
 
-var ProductApiBaseUrl = "https://uat.healthassure.in/ProductApi/"
+var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/"
 var UpgradeOPDObj = null;
 var timerFName = 'timer1';
 function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCode, policyNo) {
@@ -190,12 +190,13 @@ function UpgradeOPDPlan(username, planCode, upgradePlanCode, relation, couponCod
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/UpgradeOPDPlanRequest",
-            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: false }),
+            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: true }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
                     UpgradeOPDObj = result;
                     $("[id*='otpapp']").show();
+                    $("[id*='exampleModal']").hide();
                     ShowLoding(false);
                     openmodalcallback();
                     $("[id*='mobilenotext1']").html(result.results.user.mobileNo.slice(result.results.user.mobileNo.length - 4));
@@ -229,12 +230,13 @@ function OnlyUpgradeOPDPlan(username, planCode, upgradePlanCode, relation, coupo
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/UpgradeOnlyOPDPlanRequest",
-            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: false }),
+            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: true }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
                     UpgradeOPDObj = result;
                     $("[id*='otpapp']").show();
+                    $("[id*='exampleModal']").hide();
                     ShowLoding(false);
                     openmodalcallback();
                     $("[id*='mobilenotext1']").html(result.results.user.mobileNo.slice(result.results.user.mobileNo.length - 4));
@@ -267,12 +269,13 @@ function RenewalOPDPlan(username, planCode, upgradePlanCode, relation, couponCod
         var headers = { 'Accept': 'application/json', 'Content-Type': 'application/json', 'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak' };
         $.ajax({
             type: "POST", url: ProductApiBaseUrl + "api/OPDPlans/RenewalOPDPlanRequest",
-            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: false }),
+            data: JSON.stringify({ Username: username, PlanCode: planCode, Relation: relation, UpgradePlanCode: upgradePlanCode, CouponCode: couponCode, PolicyNo: policyNo, IsOTPVarification: true }),
             dataType: "json", headers: headers,
             success: function (result) {
                 if (result.status) {
                     UpgradeOPDObj = result;
                     $("[id*='otpapp']").show();
+                    $("[id*='exampleModal']").hide();
                     ShowLoding(false);
                     openmodalcallback();
                     $("[id*='mobilenotext1']").html(result.results.user.mobileNo.slice(result.results.user.mobileNo.length - 4));
@@ -511,37 +514,36 @@ function userClosePaymentPopup() {
 
 $("[id*='VerifyOTPUpgradebtn']").click(function () {
     var otp = document.getElementById('input1').value;
-    //VarifyOTPforValidation(otp, UpgradeOPDObj.results.user.mobileNo).then(function (res) {
-    $("[id*='VerifyOTPUpgradebtn']").html('Verified');
-    $("[id*='message']").html('');
-    var planupgradeTypeId = parseInt($('#planupgradeTypeId').val());
-    if (planupgradeTypeId === 1) {
-        OpnOPDPaymentOnlyUpgradePopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
-            //$("[id*='Thankyouformdiv').show();
-            window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
-        }).catch(function (err) {
-            $("[id*='message']").html(err.message);
-        });
-    } else if (planupgradeTypeId === 2) {
-        OpnOPDPaymentUpgradePopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
-            //$("[id*='Thankyouformdiv').show();
-            window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
-        }).catch(function (err) {
-            $("[id*='message']").html(err.message);
-        });
-    } else if (planupgradeTypeId === 3) {
-        OpnOPDPaymentRenewalPopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
-            //$("[id*='Thankyouformdiv').show();
-            window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
-        }).catch(function (err) {
-            $("[id*='message']").html(err.message);
-        });
-    }
-
-    $("[id*='otpapp']").hide();
-    // }).catch(function (err) {
-    //     $("[id*='message']").html(err.message);
-    // });
+    VarifyOTPforValidation(otp, UpgradeOPDObj.results.user.mobileNo).then(function (res) {
+        $("[id*='VerifyOTPUpgradebtn']").html('Verified');
+        $("[id*='message']").html('');
+        var planupgradeTypeId = parseInt($('#planupgradeTypeId').val());
+        if (planupgradeTypeId === 1) {
+            OpnOPDPaymentOnlyUpgradePopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
+                //$("[id*='Thankyouformdiv').show();
+                window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
+            }).catch(function (err) {
+                $("[id*='message']").html(err.message);
+            });
+        } else if (planupgradeTypeId === 2) {
+            OpnOPDPaymentUpgradePopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
+                //$("[id*='Thankyouformdiv').show();
+                window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
+            }).catch(function (err) {
+                $("[id*='message']").html(err.message);
+            });
+        } else if (planupgradeTypeId === 3) {
+            OpnOPDPaymentRenewalPopUp(UpgradeOPDObj, ProductApiBaseUrl).then(function (resu) {
+                //$("[id*='Thankyouformdiv').show();
+                window.open("https://live.healthassure.in/plans/thankyou.html", "_parent");
+            }).catch(function (err) {
+                $("[id*='message']").html(err.message);
+            });
+        }
+        $("[id*='otpapp']").hide();
+    }).catch(function (err) {
+        $("[id*='message']").html(err.message);
+    });
 });
 
 function VarifyOTPforValidation(otp, mobileno) {
