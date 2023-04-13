@@ -395,7 +395,7 @@
       $('.benefitbox').html("");
       var policybenefits = '';
       jQuery.each(result.results.upgradePlanDetails.benefits, function (index, item) {
-        var benefitImage = '';
+        var benefitImage = item.image;
         if (item.serviceName.toLowerCase() == 'diagnostics') {
           benefitImage = 'images/stethoscope.png';
         }
