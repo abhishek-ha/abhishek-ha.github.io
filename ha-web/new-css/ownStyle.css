@@ -695,13 +695,11 @@ table tbody tr:hover {
   font-weight: 600;
   font-size: 14px;
 }
-
 ._custom_modal .modal-body input, 
 ._custom_modal .form-check-label{
   cursor: pointer;
 }
-
-._custom_modal .modal-body input[type="text"], 
+.synonyms_modal .modal-body input[type="text"], 
 ._custom_modal .modal-body input[type="file"]{
   padding: 8px 15px;
   border: none;
@@ -711,14 +709,10 @@ table tbody tr:hover {
   font-size: 14px;
   width: 250px;
 }
-
-
 ._custom_modal .form-check-input:checked{
   background-color: #089BAB;
     border-color: #089BAB;
 }
-
-
 ._custom_modal .modal-body input::placeholder{
   color: #757575;
 }

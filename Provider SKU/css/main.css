@@ -406,11 +406,16 @@ body{
 .tbl-textred{
     color: #FF3535;
 }
+
 .tbl-actionimg img{
     width: 16px;
 }
 .avanishtbl th span img{
     width: 6px;
+    margin-left: 5px;
+}
+.avanishtbl th .seticon img{
+    width: 18px;
     margin-left: 5px;
 }
 .addusermodalbox .form-control{
@@ -433,7 +438,6 @@ color: var(--theme-color) !important;
     color: #000000;
     font-weight: 600;
 }
-
 .addusermodalbox .modal-content._custom_modal_content{
     border-radius: 18px!important;
 }
@@ -446,18 +450,9 @@ color: var(--theme-color) !important;
     background-color: #ffffff!important;
     border-bottom: none;
 }
-
-
-
-
-
-
-
-
-
 .providerskumodalbox .form-control{
     background-color: #eeeeee;
-color: var(--theme-color) !important;
+    color: var(--theme-color) !important;
 }
 .providerskumodalbox .__inputs {
     padding: 8px 15px;
@@ -477,7 +472,7 @@ color: var(--theme-color) !important;
 }
 
 .providerskumodalbox .modal-content._custom_modal_content{
-    border-radius: 18px!important;
+    border-radius: 6px!important;
 }
 .providerskumodalbox .modal-body {
     border-radius: 8px;
@@ -495,6 +490,39 @@ color: var(--theme-color) !important;
 .addusermodalbox input:-moz-placeholder {
     color: var(--theme-color) !important;
 }*/
+.choosefiltermodalbox .form-control{
+    background-color: #eeeeee;
+color: var(--theme-color) !important;
+}
+.choosefiltermodalbox .__inputs {
+    padding: 8px 15px;
+    border: none;
+    color: var(--theme-color) !important;
+    border-radius: 4px;
+    background-color: var(--theme-color-e);
+}
+.choosefiltermodalbox .form-select{
+    background-color: #eeeeee;
+   color: #6d7985;
+    border: none;
+}
+.choosefiltermodalbox label{
+    color: #000000;
+    font-weight: 600;
+}
+
+.choosefiltermodalbox .modal-content._custom_modal_content{
+    border-radius: 8px!important;
+}
+.choosefilterodalbox .modal-body {
+    border-radius: 8px;
+    padding: 25px 30px;
+}
+.choosefiltermodalbox .modal-content._custom_modal_content .modal-header {
+    padding: 10px 30px;
+    background-color: #F1F2F8!important;
+    border-bottom: none;
+}
 .deactiveuser .modal-content._custom_modal_content {
     border-radius: 8px;
     border: 0px;
@@ -688,8 +716,6 @@ color: var(--theme-color) !important;
    text-align: center;
     padding: 6px 42px;
 }
-
-
 .filtertable-button .btn{
     background-color: #6165d7;
     color: #ffffff;
@@ -702,7 +728,7 @@ color: var(--theme-color) !important;
 .fileupload{
      background-color: #F6F6F6;
     color: #ffffff;
-    padding: 30px;
+    padding: 30px!important;
     border-radius: 4px;
     float: right;
    text-align: center;
@@ -767,9 +793,64 @@ color: var(--theme-color) !important;
            -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
              -o-transition: opacity 0.3s linear, right 0.3s ease-out;
                 transition: opacity 0.3s linear, right 0.3s ease-out;
+                margin-top: 0px;
     }
  .modal.right.fade.in .modal-dialog {
         right: 0;
+        margin-top: 0px;
     }
+.providerskutbl__head{
+    background-color: #ffffff;
+}
+.providerskutbl__body{
+    background-color: #f1f3f8;
+}
+
+.providerskutbl__body tr .active{
+    color: #6165d7;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tbl-action .iconedit{
+    color: #000000;
+}
+.tbl-action .iconeditactive{
+    color: #6165d7;
+}
+.providerskutbl__body tr{
+  border-bottom: 1px solid #C8D5F5;
+}
+.providerskutbl__body tr td{
+    color: #a2a3ce;
+    font-size: 15px;
+}
+.providerskutbl__body tr:nth-child(2n+0) {
+      background-color: #f1f3f8!important;
+}
+.choosefilter__bottom{
+    bottom: 30px;
+    position: absolute; 
+    display:flex;
+}
+.save__button{
+    background-color: #6165d7;
+    color: #ffffff;
+    border-radius: 4px;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+    padding: 6px 18px;
+}
+.save__button:before {
+    content: "\f02f";
+    font-family: "FontAwesome";
+    top: 6px;
+    right: 14px;
+    color: #ffffff;
+    z-index: 1;
+}
+
+
   
 /* Fixed Modal Header CSS Ends Here */

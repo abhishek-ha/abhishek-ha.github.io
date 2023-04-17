@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="new-css/style.css" />
+    <link rel="stylesheet" href="new-css/ownStyle.css" />
+    <link rel="stylesheet" href="new-css/upload_datatble.css" />
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+              <a href="./dashboard.html">
+                <img src="images/healthassure-logo.png" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                <button
+                  id="onboardbtn"
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOnboardId"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i
+                  ><span>Customer Experience</span>
+                </button>
+
+                <ul
+                  id="collapseOnboardId"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      New onboarding
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      First appointment booking
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./calling-dashboard.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Non-usage
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseRenewalId"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewals & Upsell</span>
+                </button>
+
+                <ul
+                  id="collapseRenewalId"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./renwal-submenu1.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Renewal pending Customers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseMenuId4"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Customer Feedback</span>
+                </button>
+
+                <ul
+                  id="collapseMenuId4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./submenu1.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Recently booked customers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseMenuId3"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+
+                <ul
+                  id="collapseMenuId3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionSidebarMenu"
+                >
+                  <li>
+                    <a href="./add-user.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./master-data-management.html">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+            <h4 class="header-content">Operation-Customer Module</h4>
+            <div class="mobile-view">
+              <i
+                class="fa-solid fa-bars toggleNavMenu"
+                onclick="toggleMenu()"
+              ></i>
+
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./images/profileLogo.jpg" alt="" />
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container-wrapper">
+            <div class="__uploadWrapper">
+              <!-- Custom File Upload Start Here -->
+              <div class="custom-upload">
+                <div class="centralised-content">
+                  <div class="image-upload">
+                    <input
+                      type="file"
+                      name=""
+                      id="logo"
+                      onchange="fileValue(this)"
+                    />
+                    <label for="logo" class="upload-field" id="file-label">
+                      <div class="file-thumbnail">
+                        <img
+                          id="image-preview"
+                          src="assets/upload-con.png"
+                          alt=""
+                        />
+                        <h3 id="filename">Drag and Drop</h3>
+                        <h6>Upload List Of Pincodes, City or states.</h6>
+                        <p>*Please Upload File in XLSX, CSV Format Only.</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="button-center margin-top-20">
+                    <a href="data-table.html" class="button __anim">
+                      <div>Continue</div>
+                      <div class="button-anim">
+                        <svg
+                          class="first-svg"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          width="13px"
+                          height="13px"
+                          viewBox="1 1 13 13"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <polygon
+                              points="13.48,1.52 13.48,1.52 1.867,1.52 1.867,1.78 13.047,1.78 1.693,13.134 1.867,13.307 13.22,1.954 13.22,13.22    13.48,13.22  "
+                            ></polygon>
+                            <polyline
+                              points="14,1.26 14,13.74 12.7,13.74 12.7,3.167 1.867,14 1,13.134 11.833,2.3 1.347,2.3 1.347,1 13.48,1  "
+                            ></polyline>
+                            <polyline
+                              points="13.48,1 14,1 14,1.26  "
+                            ></polyline>
+                          </g>
+                        </svg>
+
+                        <svg
+                          class="sec-svg"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px"
+                          y="0px"
+                          width="13px"
+                          height="13px"
+                          viewBox="1 1 13 13"
+                          xml:space="preserve"
+                        >
+                          <g>
+                            <polygon
+                              points="13.48,1.52 13.48,1.52 1.867,1.52 1.867,1.78 13.047,1.78 1.693,13.134 1.867,13.307 13.22,1.954 13.22,13.22    13.48,13.22  "
+                            ></polygon>
+                            <polyline
+                              points="14,1.26 14,13.74 12.7,13.74 12.7,3.167 1.867,14 1,13.134 11.833,2.3 1.347,2.3 1.347,1 13.48,1  "
+                            ></polyline>
+                            <polyline
+                              points="13.48,1 14,1 14,1.26  "
+                            ></polyline>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--End Upload-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/upload_datatable.js"></script>
+
+    <!-- <script>
+      document.querySelectorAll("form").forEach(function (item) {
+        item.children[0].children[0].insertAdjacentHTML(
+          "afterend",
+          '<button class="file-button">Choose file</button><span class="file-name">No file chosen</span>'
+        );
+        item.children[0].children[0].addEventListener("change", function () {
+          const splitFileName = this.value.split(/\\/);
+          item.children[0].children[2].innerText =
+            splitFileName[splitFileName.length - 1];
+        });
+      });
+    </script> -->
+  </body>
+</html>

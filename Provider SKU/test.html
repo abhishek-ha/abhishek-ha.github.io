@@ -13,11 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
-<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
-
-
 </head>
 <body class="__custom_scroller__properties">
 <div class="___parent_container"><!-- Parent Container Start Here -->
@@ -47,10 +42,16 @@
 <span class="sidebar-link-text">Appointments</span>
                     </a>
                 </li>
- <li class="active">
-        <a class="sidebar-links" href="test-packages.html">
+<li>
+        <a class="sidebar-links" href="packages.html">
              <span> <img src="images/test-packages-icon.png"> </span>
-                        <span class="sidebar-link-text"> Test Packages <span>
+                        <span class="sidebar-link-text"> Packages <span>
+                    </a>
+                </li>
+ <li class="active">
+        <a class="sidebar-links" href="test.html">
+             <span> <img src="images/test-packages-icon.png"> </span>
+                        <span class="sidebar-link-text"> Test <span>
                     </a>
                 </li>
  </ul>
@@ -113,56 +114,68 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
  </div>
                 </div>
 
-                <!--Table Start Here-->
+ <!--Table Start Here-->
                 <div class="table-responsive __custom__properties">
-                    <table class="table">
-                        <thead>
+                    <table class="table ">
+                        <thead class="providerskutbl__head">
                             <tr class="avanishtbl">
-<th scope="col">Name<span> <img src="images/arrowupdown.png"></span> </th>
-<th scope="col"> Email<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Role<span> <img src="images/arrowupdown.png" ></span></th>
-<th scope="col"> Last Login<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Join Date<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Action<span> <img src="images/arrowupdown.png"></span> </th>
+<th scope="col"><input type="checkbox" >  </th>
+<th scope="col"> Centre SKU Code   </th>
+<th scope="col"> Centre SKU Name </th>
+<th scope="col"> Also Known as </th>
+<th scope="col"> Walk In Price </th>
+<th scope="col"><span class="seticon"> <img src="images/settingicon.png"></span> </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tbl-textgreen"> Rajnish </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
-                                <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
-                             <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+                        <tbody class="providerskutbl__body">
+<tr >
+                                <td class="active"><input type="checkbox" checked> </td>
+                                <td class="active"> 225801 </td>
+                                <td class="active"> CBC </td>
+                                <td class="width-200 active"> Complete Blood Count </td>
+                                <td class="active"> Rs. 650 </td>
+                             <td class="tbl-action active"> <i class="fa-solid fa-pencil iconeditactive"></i> </td>
                            </tr>
-                            <tr>
-                                <td class="tbl-textred"> Sachin Kumar </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
-                                <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
-     <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+                           <tr>
+                                <td><input type="checkbox" > </td>
+                                <td> 225801 </td>
+                                <td class="width-200"> CBC </td>
+                                <td> Complete Blood Count </td>
+                                <td> Rs. 650 </td>
+                             <td class="tbl-action"> <i class="fa-solid fa-pencil iconedit"></i> </td>
                            </tr>
- <tr>
-                                <td class="tbl-textgreen"> Rajnish </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
-                                <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
- <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+
+                           <tr>
+                                <td><input type="checkbox" > </td>
+                                <td> 225801 </td>
+                                <td class="width-200"> CBC </td>
+                                <td> Complete Blood Count </td>
+                                <td> Rs. 650 </td>
+                             <td class="tbl-action"> <i class="fa-solid fa-pencil iconedit"></i> </td>
                            </tr>
-                          <tr>
-                                <td class="tbl-textred"> Sachin Kumar </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
-                                <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
- <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+
+                           <tr>
+                                <td><input type="checkbox" > </td>
+                                <td> 225801 </td>
+                                <td class="width-200"> CBC </td>
+                                <td> Complete Blood Count </td>
+                                <td> Rs. 650 </td>
+                             <td class="tbl-action"> <i class="fa-solid fa-pencil iconedit"></i> </td>
                            </tr>
-                        </tbody>
+
+                           <tr>
+                                <td><input type="checkbox" > </td>
+                                <td> 225801 </td>
+                                <td class="width-200"> CBC </td>
+                                <td> Complete Blood Count </td>
+                                <td> Rs. 650 </td>
+                             <td class="tbl-action"> <i class="fa-solid fa-pencil iconedit"></i> </td>
+                           </tr>
+        </tbody>
                     </table>
                 </div>
                 <!--Table Ends Here-->
+
 
 
 <!-- Start Import SKU Popup -->
@@ -268,19 +281,19 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
   </label>
 </div>
  </div>
-
- <div class="col-lg-8 col-md-8 col-8 pt-5">
+<div class="choosefilter__bottom">
+ <div class="col-lg-8 col-md-8 col-8" >
         <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
   <label class="form-check-label" for="flexCheckChecked">
    Select All
   </label>
 </div>
-         </div>
-     <div class="col-lg-4 col-md-4 col-4 pt-5">
+</div>
+<div class="col-lg-4 col-md-4 col-4" >
 <button class="btn"> Show Selected </button>
 </div>
-
+</div>
   
  </div>
    </div>
@@ -301,7 +314,7 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 <div class="modal-body">   
-<div class="row">
+<div class="row ">
 <div class="col-lg-6 col-md-6">
     <label for=" Role" class="col-form-label"> Center SKU Name* </label>
 <input type="text" name="" class="form-control inputbgavanish" placeholder="Center SKU Name*">
@@ -340,11 +353,45 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                        <option>  No </option> 
                    </select>
 </div>
-<div class="accept-reject-btns bottom-0">
-    <div class="d-flex justify-content-end flex-wrap gap-10 mt-4">
-<a href="#" class="savedetails"> Save  </a>
-                    </div>
-                </div>
+
+<div class="col-lg-3 col-md-3 col-6 pt-3">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Fasting
+  </label>
+</div> 
+</div>
+
+<div class="col-lg-3 col-md-3 col-6 pt-3">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Home Visit Allowed
+  </label>
+</div> 
+</div>
+
+<div class="col-lg-3 col-md-3 col-6 pt-3">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Mera Attach Flag
+  </label>
+</div> 
+</div>
+<div class="col-lg-3 col-md-3 col-6 pt-3">
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Disable For Pregnancy
+  </label>
+</div> 
+</div>
+<div class="col-lg-12 col-md-12 col-12">
+    <button class="btn save__button">  Save </button>
+</div>
+
  </div>
    </div>
                         </div>
@@ -429,15 +476,13 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </div>
                 </div>
     <!-- End Product Package Creation Popup -->
-
-</div>
+  </div>
         </div>
     </div>
     </div><!-- Parent Container Close Here -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 <script src="./js/custom.js"></script>
-
 <script>
     const dropArea = document.querySelector(".drop_box"),
   button = dropArea.querySelector("button"),
@@ -445,11 +490,9 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
   input = dropArea.querySelector("input");
 let file;
 var filename;
-
 button.onclick = () => {
   input.click();
 };
-
 input.addEventListener("change", function (e) {
   var fileName = e.target.files[0].name;
   let filedata = `
@@ -463,9 +506,5 @@ input.addEventListener("change", function (e) {
   dropArea.innerHTML = filedata;
 });
 </script>
-
-
-
-
 </body>
 </html>

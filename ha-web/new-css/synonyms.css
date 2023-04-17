@@ -1,0 +1,86 @@
+.__custom__properties .synonyms td{
+	    padding: 10px 20px;
+}  
+.__custom__properties .synonyms td a{
+	padding: 0px 3px;
+}
+.synonyms_modal .modal-body input[type="text"], 
+._custom_modal .modal-body input[type="file"]{
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eeeeee;
+  color: #09111d;
+  font-size: 14px;
+  width: 100%;
+  cursor: auto;
+}
+.synonyms_modal h3{
+	font-size: 25px;
+	font-weight: 600;
+}
+.synonyms_search .btn{
+	color: #ffffff;
+	float: right;
+}
+.synonyms_search .btn:hover{
+	color: #ffffff;
+}
+.synonyms_search label{
+	font-weight: 600;
+}
+.__search_button{
+  padding: 8px 20px;
+  color: white;
+  font-size: 14px;
+  background-color: #09111d;
+  box-shadow: 3px 3px 0px 0px #089BAB;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+  margin-top: 30px;
+}
+.__search_button a:hover{
+  box-shadow: none;
+  color: #ffffff!important;
+  transform: translateY(3px);
+}
+.synonyms_modal .resetbtn{
+	padding: 8px 20px;
+     color: white;
+     font-size: 14px;
+     font-weight: 600;
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+   box-shadow: 3px 3px 0px 0px #089BAB;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+  margin: 30px;
+  min-width: 100px;
+   }
+.synonyms_modal .resetbtn:hover{
+  box-shadow: none;
+  color: #ffffff!important;
+  transform: translateY(3px);
+}
+.synonyms_modal .__btn_primary{
+ padding: 8px 20px;
+  color: white;
+  font-size: 14px;
+  background-color: #09111d;
+  box-shadow: 3px 3px 0px 0px #089BAB;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+  margin: 30px;
+  min-width: 100px;
+}
+.synonyms_modal .__btn_primary:hover{
+  box-shadow: none;
+  color: #ffffff!important;
+  transform: translateY(3px);
+}
+.synonyms_search .form-select{
+	width: 200px;
+}
