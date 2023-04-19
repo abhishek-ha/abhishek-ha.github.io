@@ -197,6 +197,9 @@
     .benitem p a {
     color: #ffffff;
 }
+.booknow{
+  color: #ffffff!important;
+}
 
 
 }
@@ -231,9 +234,11 @@
 .pl-40{
     padding-left: 8%!important;
 }
-
 .owl-carousel .owl-item {
     width: 100%;
+}
+.booknow{
+  color: #ffffff!important;
 }
 
 

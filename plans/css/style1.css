@@ -3765,9 +3765,8 @@ div {
 .booknow a{
     color: #000000!important;
 }
-.booknow a:hover{
-    color: #ffffff!important;
-}
+
+
 .booknow:hover{
     background: #000000!important;
     color: #ffffff!important;
@@ -3776,6 +3775,9 @@ div {
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     text-decoration: none;
      cursor: pointer;
+}
+.booknow a:hover{
+    color: #ffffff!important;
 }
 .explorepackage img{
     width: 15px;
