@@ -849,4 +849,20 @@ color: var(--theme-color) !important;
     color: #ffffff;
     z-index: 1;
 }
+
+.addsku-btn div{
+    display: flex;
+    float: left;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+ 
+
+
+}
+
+
+
 /* Fixed Modal Header CSS Ends Here */
