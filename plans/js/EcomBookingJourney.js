@@ -1,5 +1,5 @@
 
-var ProductApiBaseUrl = "https://uat.healthassure.in/ProductApi/";
+var ProductApiBaseUrl = "https://live.healthassure.in/ProductApi/";
 
 function GetEcomUserLoginURL(PlanCode, ServiceName = "", ClientId = 0) {
     return new Promise(function (resolve, reject) {
