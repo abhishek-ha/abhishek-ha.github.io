@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Discount Coupon </title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/discountcoupon.css">
@@ -187,70 +185,61 @@
           </div>
 
 <div class="container-fluid discount_coupon">
-  <div class="row">
+  <div class="row box">
     <h3> Discount Plan Level Setup </h3>
- <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-4">
  <div class="form-check form-check-inline ">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="All plan" value="option1" />
-    <label class="col-form-label" for="All plan"> All plan </label>
+    <label class="form-check-label" for="All plan"> All plan </label>
+            </div>
+            <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="Specific Plan" value="option2" />
+              <label class="form-check-label" for="Specific Plan"> Specific Plan </label>
             </div>
              </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
-        <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="Specific Plan" value="option2" />
-              <label class="col-form-label" for="Specific Plan"> Specific Plan </label>
-            </div>
-          </div>
-
-
-        
-        </div>
-<div class="row">
-<label for="staticEmail" class="col-sm-1 col-form-label"> Client: </label>
+<label for="staticEmail" class="col-sm-1 form-check-label"> Client: </label>
     <div class="col-sm-5">
      <select class="form-select">
       <option> Select Client </option>
       <option> Renew Buy </option>
    </select>
      </div>
-     <label for="staticEmail" class="col-sm-1 col-form-label"> Plan:  </label>
+     <label for="staticEmail" class="col-sm-1 form-check-label"> Plan:  </label>
      <div class="col-sm-5">
       <select class="form-select">
       <option> Select Plan </option>
       <option> HealthAssure One </option>
    </select>
      </div>
-   </div>
+ </div>
 
-<div class="row">
+
+<div class="row box">
     <h3> Discount User Level Setup </h3>
-
- <div class="col-xl-6 col-lg-6 col-md-6 col-12 py-4">
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12 py-4">
  <div class="form-check form-check-inline ">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Discount Applicable For All User" value="option1" />
-    <label class="col-form-label" for="All plan"> Discount Applicable For All User </label>
+    <label class="form-check-label" for="All plan"> Discount Applicable For All User </label>
+            </div>
+             <div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="Specific Plan" value="option2" />
+<label class="form-check-label" for="Discount Applicable for specific user"> Discount Applicable for specific user </label>
             </div>
              </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-12 py-4">
-        <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="inlineRadioOptions" id="Specific Plan" value="option2" />
-              <label class="col-form-label" for="Discount Applicable for specific user"> Discount Applicable for specific user </label>
-            </div>
-          </div>
+<label for="staticEmail" class="col-sm-2 form-check-label"> Max user Count: </label>
+    <div class="col-sm-4">
+   <input type="number" name="" class="form-control">
+     </div>
+     <label for="staticEmail" class="col-sm-2 form-check-label"> Mobile Number:  </label>
+     <div class="col-sm-4">
+   <input type="number" name="" class="form-control">
+     </div>
+
   </div>
-<div class="row">
-    <label for="staticEmail" class="col-sm-3 col-form-label"> Max user Count: </label>
-    <div class="col-sm-3">
-   <input type="number" name="" class="form-control">
-     </div>
-     <label for="staticEmail" class="col-sm-2 col-form-label"> Mobile Number:  </label>
-     <div class="col-sm-3">
-   <input type="number" name="" class="form-control">
-     </div>
-   </div>
-<div class="row">
+
+<div class="row box">
     <h3 class="pb-4"> Discount Service Level Setup </h3>
-    <label for="staticEmail" class="col-sm-2 col-form-label"> Coupon Type: </label>
+    <label for="staticEmail" class="col-sm-2 form-check-label"> Coupon Type: </label>
     <div class="col-sm-2">
  <select class="form-select"> 
   <option> Service </option>
@@ -259,21 +248,19 @@
        <option> Renewal </option>
  </select>
      </div>
-<label for="staticEmail" class="col-sm-2 col-form-label"> Discount Type </label>
+<label for="staticEmail" class="col-sm-2 form-check-label"> Discount Type </label>
      <div class="col-sm-2">
     <select class="form-select"> 
   <option> Amount </option>
     <option> Percentage </option>
  </select>
      </div>
-<label for="staticEmail" class="col-sm-2 col-form-label"> Plan Max Discount
+<label for="staticEmail" class="col-sm-2 form-check-label"> Plan Max Discount
 Amount/Percent: </label>
      <div class="col-sm-2">
 <input type="number" class="form-control" name="">
      </div>
-   </div>
-   <div class="row py-4">
-<label for="staticEmail" class="col-sm-2 col-form-label"> Select Service </label>
+<label for="staticEmail" class="col-sm-2 form-check-label"> Select Service </label>
      <div class="col-sm-2">
     <select class="form-select"> 
        <option> Select Service </option>
@@ -281,66 +268,70 @@ Amount/Percent: </label>
     <option> Tele Consultation </option>
  </select>
      </div>
-     <div class="col-xl-8 col-lg-8 col-md-8 col-12 pt-3">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-12 pt-3">
         <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="SKU based Discount" value="option1" />
-    <label class="col-form-label" for="SKU based Discount"> SKU based Discount </label>
+    <label class="form-check-label" for="SKU based Discount"> SKU based Discount </label>
             </div>
             <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Provider based Discount" value="option2" />
-              <label class="col-form-label" for="Provider based Discount"> SKU & Provider based Discount </label>
+              <label class="form-check-label" for="Provider based Discount"> SKU & Provider based Discount </label>
             </div>
               <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="None" value="option2" />
-              <label class="col-form-label" for="None"> None </label>
+              <label class="form-check-label" for="None"> None </label>
             </div>
           </div>
-         
-          <div class="col-xl-10 col-lg-10 col-md-10 col-12 mt-4">
-           <div class="variants">
-    <div class='file file--upload'>
+  <div class="variants col-lg-6 col-12">
+    <div class='file file--upload '>
       <label for='input-file'> <i class="fa-solid fa-upload"></i>
     Upload the Excel
       </label>
       <input id='input-file' type='file' />
     </div>
-<div class='file file--upload'>
+<div class='file file--upload col-lg-6 col-12'>
 <label for='input-file'> <i class="fa-solid fa-download"></i> Download Mapped SKU's/Providers  </label>
       <input id='input-file' type='file' />
     </div>
  </div>
-  </div>
-      <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-5">
+
+
+
+ 
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center mt-5">
        <button class="btn btn-primary"> Add Service </button>
          </div>
-  </div>
- <div class="row pt-5">
-    <div class="col-lg-2">
+   </div>
+
+ <div class="row box">
+    <div class="col-lg-2 col-md-2">
     </div>
-     <div class="col-lg-2">
-      <label class="col-form-label"> Discount Amount or % </label>
+     <div class="col-lg-2 col-md-2">
+      <label class="form-check-label"> Discount Amount or % </label>
   </div>
-     <div class="col-lg-2">
-         <label class="col-form-label"> Max Discount Limit </label>
+     <div class="col-lg-2 col-md-2 ">
+         <label class="form-check-label"> Max Discount Limit </label>
     </div>
-       <div class="col-lg-3">
-            <label class="col-form-label">Max Visit</label>
+       <div class="col-lg-3 col-md-3">
+            <label class="form-check-label">Max Visit</label>
             <br>
     <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Monthly" value="option1" />
-    <label class="col-form-label" for="Monthly">Monthly</label>
+    <label class="form-check-label" for="Monthly">Monthly</label>
             </div>
             <div class="form-check form-check-inline">
 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Yearly" value="option2" />
-  <label class="col-form-label" for="Specific Plan">Yearly</label>
+  <label class="form-check-label" for="Specific Plan">Yearly</label>
             </div>
   </div>
-    <div class="col-lg-2">
-      <label class="col-form-label" style="margin-left:-81px;"> Per Txn Amt Limit[>=] </label>
+    <div class="col-lg-2 col-md-2">
+      <label class="form-check-label" style="margin-left:-81px;"> Per Txn Amt Limit[>=] </label>
     </div>
-</div>
-   <div class="row py-2">
-<label for="staticEmail" class="col-sm-2 col-form-label"> Pharmacy
+
+
+ <div class="row py-2">
+<label for="staticEmail" class="col-sm-2 form-check-label"> Pharmacy
  </label>
      <div class="col-sm-2">
 <input type="text" class="form-control" name="">
@@ -357,70 +348,52 @@ Amount/Percent: </label>
      <div class="col-sm-2">
 <i class="closeicon fa-solid fa-xmark"></i>
      </div>
-</div>
-<div class="row py-2">
-<label for="staticEmail" class="col-sm-2 col-form-label"> Tele-Consultation
- </label>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-      <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<i class="closeicon fa-solid fa-xmark"></i>
-     </div>
-</div>
-<div class="row py-2">
-<label for="staticEmail" class="col-sm-2 col-form-label"> Doctor Consultation </label>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-      <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<input type="text" class="form-control" name="">
-     </div>
-     <div class="col-sm-2">
-<i class="closeicon fa-solid fa-xmark"></i>
-     </div>
-</div>
 </div>
 
+<div class="row py-2">
+<label for="staticEmail" class="col-sm-2 form-check-label"> Tele-Consultation
+ </label>
+     <div class="col-sm-2">
+<input type="text" class="form-control" name="">
+     </div>
+     <div class="col-sm-2">
+<input type="text" class="form-control" name="">
+     </div>
+      <div class="col-sm-2">
+<input type="text" class="form-control" name="">
+     </div>
+     <div class="col-sm-2">
+<input type="text" class="form-control" name="">
+     </div>
+     <div class="col-sm-2">
+<i class="closeicon fa-solid fa-xmark"></i>
+     </div>
+</div>
+</div>
 <div class="row pt-5">
-<label for="staticEmail" class="col-sm-2 col-form-label"> Coupon Code </label>
+<label for="staticEmail" class="col-sm-2 form-check-label"> Coupon Code </label>
      <div class="col-sm-2">
 <input type="text" class="form-control" name="" placeholder="HA261020234">
      </div>
-<label for="staticEmail" class="col-sm-2 col-form-label"> Coupon Limit per user </label>
+<label for="staticEmail" class="col-sm-2 form-check-label"> Coupon Limit per user </label>
      <div class="col-sm-2">
 <input type="number" class="form-control" name="" placeholder="5">
      </div>
      <div class="col-sm-2">
 <input type="date" class="form-control" name="">
      </div>
-  
 </div>
+
 <div class="row">
   <div class="col-lg-12 col-md-12 col-12 text-center pt-5">
     <button class="btn btn-primary"> Submit </button>
   </div>
   </div>
-  
+</div>
 
 
 
-           </div>
+</div>
         </div>
       </section>
     </div>

@@ -4,6 +4,12 @@
 	padding-top: 20px;
 	padding-bottom: 0px;
 }
+.discount_coupon .box{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  border:1px solid #dee2e6;
+}
 .discount_coupon .closeicon{
 	color: #fd0000;
 	cursor: pointer;
@@ -11,22 +17,17 @@
 	font-weight: 700;
 	font-size: 18px;
 }
-
-
-.variants {
+/*.variants {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+}*/
 .variants > div {
   margin-right: 5px;
 }
-
 .variants > div:last-of-type {
   margin-right: 0;
 }
-
 .file {
   position: relative;
   display: flex;
@@ -49,10 +50,6 @@
   border-radius: 6px;
   border-width: 1px;
   padding: 6px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 212px;
   color: #ffffff;
   background-color: #089bab;
 }
@@ -91,11 +88,9 @@
   border-color: hsl(48, 100%, 67%);
   background-color: hsl(48, 100%, 96%);
 }
-
 .file--uploading > label:active {
   background-color: hsl(48, 100%, 91%);
 }
-
 
 @keyframes pulse {
   0% {
@@ -107,4 +102,8 @@
   100% {
     color: hsl(48, 100%, 67%);
   }
+}
+.discount_coupon .form-check-label{
+  font-size: 14px;
+  font-weight: 600;
 }
