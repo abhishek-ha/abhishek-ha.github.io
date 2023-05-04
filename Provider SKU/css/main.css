@@ -471,7 +471,6 @@ color: var(--theme-color) !important;
     color: #000000;
     font-weight: 600;
 }
-
 .providerskumodalbox .modal-content._custom_modal_content{
     border-radius: 6px!important;
 }
@@ -484,7 +483,6 @@ color: var(--theme-color) !important;
     background-color: #F1F2F8!important;
     border-bottom: none;
 }
-
 /*.addusermodalbox input::-webkit-input-placeholder {
     color: var(--theme-color) !important;
 }
