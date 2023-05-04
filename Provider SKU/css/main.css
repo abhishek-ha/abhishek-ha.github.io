@@ -849,19 +849,76 @@ color: var(--theme-color) !important;
     color: #ffffff;
     z-index: 1;
 }
-
 .addsku-btn div{
     display: flex;
     float: left;
 }
-
-
-
-@media only screen and (max-width: 300px) {
- 
-
-
+.chain_provider_tbl thead{
+    background-color: #5252a3;
+    color: #ffffff;
 }
+.chain_provider_tbl thead tr th span img{
+    width: 8px;
+    margin-left: 5px;
+}
+.chain_adduserbtn a{
+    padding: 6px 15px !important;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #5252a3;
+    color: var(--theme-white) !important;
+    min-width: 110px;
+    gap: 10px;
+    display: flex;
+}
+.chain_adduserbtn a:focus{
+    color: #ffffff!important;
+}
+.___parent_container .chain_search a{
+    background-color: #5252a3;
+    padding: 5px 15px;
+    border-radius: 4px;
+    color: var(--theme-white) !important;
+}
+.___parent_container .chain_search a img{
+    width: 14px;
+}
+.chain__close_button{
+    background-color: #5252A3;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px 30px;
+    margin: 5px;
+}
+.chain__close_button:hover{
+    color: #ffffff;
+}
+.chain__close_button:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 10px;
+    color: #ffffff;
+    z-index: 1;
+}
+.savedetailbtn{
+    background-color: #5252a3;
+    color: #ffffff;
+    border-radius: 4px;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+    padding: 6px 18px;
+}
+.savedetailbtn:hover{
+    color: #ffffff;
+}
+
+
 
 
 

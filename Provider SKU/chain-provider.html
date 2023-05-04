@@ -37,20 +37,11 @@
     <div class="main-section">
         <div class="sidebar-menu __custom_scroller__properties" id="sidebar-menu">
             <ul class="__custom_ul">
-<li>  <a class="sidebar-links" href="#">
-<span><img src="images/calendar.png">  </span>
-<span class="sidebar-link-text">Appointments</span>
-                    </a>
-                </li>
- <li class="active">
-        <a class="sidebar-links" href="packages.html">
-             <span> <img src="images/test-packages-icon.png"> </span>
-                        <span class="sidebar-link-text"> Packages <span>
-                    </a>
-                </li>
- <li> <a class="sidebar-links" href="test.html">
+<li class="active">
+<a class="sidebar-links" href="chain-provider.html">
 <span> <img src="images/test-packages-icon.png"> </span>
-<span class="sidebar-link-text"> Test <span> </a> </li>
+<span class="sidebar-link-text"> Chain Provider <span> </a>
+                </li>
 </ul>
  <div class="logout">
 <ul class="__custom_ul">
@@ -73,39 +64,28 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 
 <div class="d-flex align-items-center justify-content-between width-100">
                     <div class="filters gap-10 align-items-center addusermodalbox">
-                       <input type="text" placeholder="Email ID"
-                            class="__inputs font-medium text-black">
-                        <input type="text" placeholder=" Mobile No" class="__inputs font-medium text-black">
+<input type="text" placeholder="Email ID" class="__inputs font-medium text-black">
+<input type="text" placeholder=" Mobile No" class="__inputs font-medium text-black">
   <div>
-                            <select class="form-select">
-                                <option> SRL Diagnostics </option>
-                                <option> Profile Details </option>
-                                <option> Profile Verification </option>
-                                <option> Infrastructure </option>
-                                <option> Staff Details </option>
-                                <option> Payment Details </option>
-                                 </select>
-                           
-                        </div>
-
-                        <div>
-                            <select class="form-select">
-                                <option> Role </option>
-                                <option> Profile Details </option>
-                                <option> Profile Verification </option>
-                                <option> Infrastructure </option>
-                                <option> Staff Details </option>
-                                <option> Payment Details </option>
-                                 </select>
-                           
-                        </div>
-   
-                        <div class="search">
-                            <a class="sidebar-links" href="#">
-                                <span class="custom-svg">
-                                    <svg width="16" height="16" viewBox="0 0 6 6" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
+  <select class="form-select">
+        <option> SRL Diagnostics </option>
+         <option> Lal Path Labs </option>
+         </select>
+          </div>
+<div>
+<select class="form-select">
+        <option> Role </option>
+        <option> Profile Details </option>
+         <option> Profile Verification </option>
+         <option> Infrastructure </option>
+         <option> Staff Details </option>
+          <option> Payment Details </option>
+          </select>
+ </div>
+ <div class="chain_search">
+<a class="sidebar-links" href="#"> <span class="custom-svg">
+<svg width="16" height="16" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path
                                             d="M3.77089 3.32907H3.53919L3.45707 3.24993C3.80902 2.83956 3.99086 2.27971 3.89114 1.68469C3.75329 0.869829 3.07287 0.219113 2.25166 0.119453C1.01106 -0.0329666 -0.0330473 1.01052 0.119462 2.2504C0.21918 3.07113 0.870278 3.75115 1.68562 3.88892C2.28099 3.98858 2.84117 3.80685 3.25177 3.45511L3.33096 3.53718V3.76874L4.57743 5.01448C4.69768 5.13466 4.89418 5.13466 5.01443 5.01448C5.13468 4.8943 5.13468 4.69792 5.01443 4.57774L3.77089 3.32907ZM2.01117 3.32907C1.28088 3.32907 0.691372 2.73991 0.691372 2.01005C0.691372 1.28019 1.28088 0.691029 2.01117 0.691029C2.74145 0.691029 3.33096 1.28019 3.33096 2.01005C3.33096 2.73991 2.74145 3.32907 2.01117 3.32907Z"
                                             fill="white" />
                                     </svg>
@@ -113,7 +93,7 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <span class="sidebar-link-text">Search</span>
                             </a>
                         </div>
-<p class="mb-0"> <a href="#" class="text-decoration text-highlight f-12"> <i class="fa-solid fa-xmark"></i> Clear </a>
+<p class="mb-0"> <a href="#" class="text-decoration text-highlight f-12"> <i class="fa-solid fa-xmark"></i> Clear All Filters </a>
                         </p>
 </div>
  </div>
@@ -121,56 +101,57 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <!-- Filter Ends Here -->
 <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
                     <h6 class="text-unhighlighted font-medium mb-0">Showing 5 Results</h6>
-                    <div class="filters adduserbtn-admin gap-10 align-items-center">
-<a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#AdduserModal"><i class="fa-solid fa-plus pt-1"></i> Add user
-</a>  </div>
-                </div>
-
-                <!--Table Start Here-->
-                <div class="table-responsive __custom__properties">
+                    <div class="filters chain_adduserbtn gap-10 align-items-center">
+<a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#chainadduserModal"><i class="fa-solid fa-plus pt-1"></i> Add user
+</a>  
+</div>
+</div>
+ <!--Table Start Here-->
+                <div class="table-responsive chain_provider_tbl">
                     <table class="table">
                         <thead>
-                            <tr class="avanishtbl">
-<th scope="col">Name<span> <img src="images/arrowupdown.png"></span> </th>
-<th scope="col"> Email<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Role<span> <img src="images/arrowupdown.png" ></span></th>
-<th scope="col"> Last Login<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Join Date<span> <img src="images/arrowupdown.png"></span></th>
-<th scope="col"> Action<span> <img src="images/arrowupdown.png"></span> </th>
+                            <tr>
+<th scope="col">Name<span> <img src="images/arrowupdownwhite.png"></span> </th>
+<th scope="col"> Email<span> <img src="images/arrowupdownwhite.png"></span></th>
+<th scope="col"> Mobile No <span> <img src="images/arrowupdownwhite.png"></span></th>
+<th scope="col"> Role<span> <img src="images/arrowupdownwhite.png" ></span></th>
+<th scope="col"> Last Updated<span> <img src="images/arrowupdownwhite.png"></span></th>
+
+<th scope="col"> Action<span> <img src="images/arrowupdownwhite.png"></span> </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="tbl-textgreen"> Rajnish </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
+<td class="width-200"> rajnish@srlworld.com </td>
+<td> 9999999999 </td>
+                                <td> - </td>
                                 <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
-                             <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+<td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
                            </tr>
                             <tr>
-                                <td class="tbl-textred"> Sachin Kumar </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
+<td class="tbl-textgreen"> Sachin Kumar </td>
+<td class="width-200"> rajnish@srlworld.com </td>
+<td> 9823549680 </td>
+                                   <td> - </td>
                                 <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
-     <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+<td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
                            </tr>
  <tr>
                                 <td class="tbl-textgreen"> Rajnish </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
+<td class="width-200"> rajnish@srlworld.com </td>
+<td> 8423109699 </td>
+                                 <td> - </td>
                                 <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
- <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+<td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
                            </tr>
                           <tr>
-                                <td class="tbl-textred"> Sachin Kumar </td>
-<td class="width-200"> rajnish@healthassure.in </td>
-                                <td> Provider</td>
+<td class="tbl-textgreen"> Sachin Kumar </td>
+<td class="width-200"> rajnish@srlworld.com </td>
+<td> 0123456789 </td>
+                                   <td> - </td>
                                 <td>11 November, 2022</td>
-                                <td>11 November, 2022</td>
- <td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
+<td class="tbl-actionimg"><img src="images/exportsquare.png" > </td>
                            </tr>
                         </tbody>
                     </table>
@@ -180,215 +161,187 @@ stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 
 
 
-
-
-
-
-   
-                <!--Table Ends Here-->
-
-<!-- Start Import SKU Popup -->
-<div class="modal _custom_modal  fade" id="importskuModal" tabindex="-1" aria-labelledby="importskuModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-xl providerskumodalbox">
+<!-- Start Add User Popup -->
+<div class="modal _custom_modal fade" id="chainadduserModal" tabindex="-1" aria-labelledby="chainadduserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg providerskumodalbox">
         <div class="modal-content _custom_modal_content">
                             <div class="modal-header">
     <div class="centre-brand-logo d-flex align-items-center gap-10">
-<h5 class="mb-0  font-bold"> Import Your Data Through CSV File </h5>
-                        
-                                </div>
-<button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-<div class="modal-body">   
-<div class="row skuimport">
-<div class="col-lg-12 col-md-12 col-12">
-  <div class="drop_box">
-<input type="file" hidden accept=".doc,.docx,.pdf, .png, .jpg" id="fileID" style="display:none;">
-<button class="btn fileupload"> <img src="images/csv-upload.png">
-      <h3> Upload CSV File </h3>
-      <p> Approximated time to upload 2MB file is 30 seconds </p>
-        </button>
-    </div>
-    </div>
-    <div class="col-lg-10 col-md-10 col-8 excsv pt-5">
-        <p> Click <a href="#"> here </a> to download sample CSV </p>
-         </div>
-     <div class="col-lg-2 col-md-2 col-4 pt-5">
-<button class="btn next-button"> Next </button>
-</div>
-</div>
-   </div>
-      </div>
-     </div>
-      </div>
-    <!-- End Import SKU Popup -->
-
-
-
-<!-- Start Filter Table Popup -->
-<div class="modal _custom_modal right fade" id="filtertableModal" tabindex="-1" aria-labelledby="filtertableModalLabel" aria-hidden="true">
-    <div class="modal-dialog  providerskumodalbox">
-        <div class="modal-content _custom_modal_content">
-                            <div class="modal-header">
-    <div class="centre-brand-logo d-flex align-items-center gap-10">
-<h5 class="mb-0  font-bold"> Choose To Filter Table </h5>
-    </div>
-<button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-<div class="modal-body">   
-<div class="row filtertable-button">
-<div class="col-lg-12 col-md-12 col-12">
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Centre SKU Code
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    Centre SKU Name
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    MRP (Rs.)
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    Customer Walk-In-Price (Rs.)
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    Home Visit
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    Outsourced
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-    MERA Attach Flag
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-   Disable For Pregnancy
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-   Fasting
-  </label>
-</div>
- </div>
-<div class="choosefilter__bottom">
- <div class="col-lg-8 col-md-8 col-8" >
-        <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-  <label class="form-check-label" for="flexCheckChecked">
-   Select All
-  </label>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-4" >
-<button class="btn"> Show Selected </button>
-</div>
-</div>
-  
- </div>
-   </div>
-    </div>
-    </div>
-    </div>
-    <!-- End Filter Table Popup -->
-
-<!-- Start Product Package Creation Popup -->
-<div class="modal _custom_modal fade" id="packagecreationModal" tabindex="-1" aria-labelledby="packagecreationModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-xl providerskumodalbox">
-        <div class="modal-content _custom_modal_content">
-                            <div class="modal-header">
-    <div class="centre-brand-logo d-flex align-items-center gap-10">
-<h5 class="mb-0  font-bold"> Product Package Creation </h5>
+<h5 class="mb-0  font-bold"> Add User Details </h5>
 </div>
 <button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+</div>
 <div class="modal-body">   
 <div class="row">
-<div class="col-lg-3 col-md-6">
-<label for=" Role" class="col-form-label"> Centre Package Name </label>
-<input type="text" name="" class="form-control inputbgavanish" placeholder="Centre Package Name">
-    </div>
-    <div class="col-lg-3 col-md-6">
-<label for=" Role" class="col-form-label"> Centre Package Code </label>
-<input type="text" name="" class="form-control inputbgavanish" placeholder="Centre Package Code">
-    </div>
-<div class="col-lg-3 col-md-6">
-<label for=" Role" class="col-form-label"> MRP (Rs.) </label>
-<input type="text" name="" class="form-control inputbgavanish" placeholder="MRP (Rs.)">
-    </div>
-    <div class="col-lg-3 col-md-6">
-<label for=" Role" class="col-form-label"> Customer Rate </label>
-<input type="text" name="" class="form-control inputbgavanish" placeholder="Customer Rate">
-    </div>
-<div class="col-lg-4 col-md-4">
-    <label for="User Type" class="col-form-label"> Select Gender </label>
+<div class="col-lg-6 col-md-6">
+<label for="User Type" class="col-form-label"> User Type </label>
     <select class="form-select">
-        <option selected disabled> Select Gender </option>
+        <option> SRL Diagnostics </option>
+        </select>
+    </div>
+<div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Role </label>
+  <select class="form-select">
+        <option> Super Admin </option>
+        <option> Admin </option>
+        </select>
+    </div>
+<div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> First Name* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter First Name">
+    </div>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Last Name* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Last Name">
+    </div>
+<div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Email </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Email Address">
+    </div>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Phone Number* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Phone Number*">
+    </div>
+<div class="col-lg-12 col-md-12 pb-2">
+<label for="Search Tests & Scans" class="col-form-label"> Add Providers </label>
+<select class="form-select">
+<option> Select Provider </option>
+<option> SRL Diagnostics </option>
+<option> 1MG </option>
+<option> Lal Path Labs </option>
+ </select>
+    </div>
+
+<!--Table Start Here-->
+                <div class="table-responsive chain_provider_tbl">
+                    <table class="table">
+                        <thead>
+                            <tr>
+<th scope="col"> Menu Name  </th>
+<th scope="col"> Edit <input type="checkbox" name=""> </th>
+<th scope="col"> View <input type="checkbox" name=""> </th>
+ </tr>
+   </thead>
+     <tbody>
+<tr>
+<td> Provider Detail </td>
+<td> <input type="checkbox" name=""> </td>
+<td> <input type="checkbox" name=""> </td>
+   </tr>
+   <tr>
+<td> Appoinment Management </td>
+<td> <input type="checkbox" name=""> </td>
+<td> <input type="checkbox" name=""> </td>
+   </tr>
+  </tbody>
+      </table>
+                </div>
+                <!--Table Ends Here-->
+<div class="col-lg-12 col-md-12 col-12">
+    <button class="btn savedetailbtn"> Save Details </button>
+</div>
+</div>
+   </div>
+        </div>
+            </div>
+                </div>
+    <!-- End Product Add User Popup -->
+
+
+
+
+<!-- Start Add User Popup -->
+<!--<div class="modal _custom_modal fade" id="chainadduserModal" tabindex="-1" aria-labelledby="chainadduserModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg providerskumodalbox">
+<div class="modal-content _custom_modal_content">
+<div class="modal-header">
+    <div class="centre-brand-logo d-flex align-items-center gap-10">
+<h5 class="mb-0  font-bold"> Add User Details </h5>
+</div>
+<button type="button" class="btn-close normal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">   
+<div class="row">
+<div class="col-lg-6 col-md-6">
+<label for="User Type" class="col-form-label"> User Type </label>
+    <select class="form-select">
+        <option> Chain Provider </option>
         <option> Male </option>
          <option> Female </option>
         </select>
-    </div>   
-<div class="col-lg-4 col-md-4">
-<label for="User Type" class="col-form-label"> Fasting Required </label>
-    <select class="form-select">
-        <option selected disabled> Fasting Required </option>
-        <option> Yes </option>
-         <option> No </option>
+    </div>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Chain Name </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="SRL Diagnostics">
+    </div>
+<div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Role </label>
+  <select class="form-select">
+        <option> Super Admin </option>
+        <option> Admin </option>
         </select>
     </div>
-<div class="col-lg-4 col-md-4">
-<label for="User Type" class="col-form-label"> Visit Type </label>
-    <select class="form-select">
-         <option selected disabled> Visit Type </option>
-        <option> Home Visit </option>
-         <option> Center Visit </option>
-        </select>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> First Name* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter First Name">
+    </div>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Last Name* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Last Name">
+    </div>
+<div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Email </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Email Address">
+    </div>
+    <div class="col-lg-6 col-md-6">
+<label for=" Role" class="col-form-label"> Phone Number* </label>
+<input type="text" name="" class="form-control inputbgavanish" placeholder="Enter Phone Number*">
+    </div>
+<div class="col-lg-12 col-md-12">
+<label for="Search Tests & Scans" class="col-form-label"> Add Providers </label>
+  <input type="text" name="" class="form-control inputbgavanish" placeholder="Search Providers...">
     </div>
 <div class="col-lg-12 col-md-12 col-12 labtest">
-    <label for="Search Tests & Scans" class="col-form-label"> </label>
-  <input type="text" name="" class="form-control inputbgavanish" placeholder="Search Tests & Scans">
-  <div class="py-3">
-   <button class="btn close_button"> Fasting Sugar </button> <button class="btn close_button"> CBC </button> 
-   <button class="btn close_button"> Fasting Sugar </button> 
-   <button class="btn close_button"> Prostate Antigen </button>
-    <button class="btn close_button"> Alkaline Phosphatase </button>
-     <button class="btn close_button"> ECG </button> 
-     <button class="btn close_button"> ESR </button> 
-     <button class="btn close_button"> X- Ray </button>      
-  </div>
+    <div class="py-3">
+   <button class="btn chain__close_button"> Provider 1 </button> <button class="btn chain__close_button"> Provider 2 </button> 
+   <button class="btn chain__close_button"> Provider 3 </button> 
+   <button class="btn chain__close_button"> Provider 4 </button>
+</div>
 </div>
 
+                <div class="table-responsive chain_provider_tbl">
+                    <table class="table">
+                        <thead>
+                            <tr>
+<th scope="col"> Menu Name  </th>
+<th scope="col"> Edit <input type="checkbox" name=""> </th>
+<th scope="col"> View <input type="checkbox" name=""> </th>
+ </tr>
+   </thead>
+     <tbody>
+<tr>
+<td> Provider Detail </td>
+<td> <input type="checkbox" name=""> </td>
+<td> <input type="checkbox" name=""> </td>
+   </tr>
+   <tr>
+<td> Appoinment Management </td>
+<td> <input type="checkbox" name=""> </td>
+<td> <input type="checkbox" name=""> </td>
+   </tr>
+  </tbody>
+      </table>
+                </div>
+                <!--Table Ends Here-->
 <div class="col-lg-12 col-md-12 col-12">
-    <button class="btn save__button">  Save </button>
+    <button class="btn savedetailbtn"> Save Details </button>
 </div>
-
- </div>
+</div>
    </div>
         </div>
-                    </div>
-                </div>
-    <!-- End Product Package Creation Popup -->
+            </div>
+                </div> -->
+    <!-- End Product Add User Popup -->
  </div>
         </div>
     </div>
