@@ -1,0 +1,304 @@
+.accordion-button:not(.collapsed) {
+    color: #ffffff!important;
+    background-color: #104D89!important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-item{
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+    background-color: #F9F9F9!important;
+    border: 1px solid #dee2e6!important;
+}
+.accordion-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 14px 10px!important;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.2)!important;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "\f078";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: #ffffff;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.close_button{
+    display: flex;
+    background-color: #d7e0e8;
+    border-radius: 6px;
+    color:  #104D89;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 30px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 7px;
+}
+.close_button span{
+    float: right;
+    color: red;
+    cursor: pointer;
+}
+/* .close_button:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 10px;
+    color: #6165D7;
+    z-index: 1;
+} */
+.planrefactor .form-label{
+    font-size: 14px!important;
+    font-weight: 600!important;
+    color: #000000;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.planrefactor .form-check-label{
+    font-size: 15px!important;
+    font-weight: 600!important;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+  .planrefactor .addmore_btn{
+    background-color: transparent;
+    color: #104D89;
+    text-decoration: underline;
+    font-size: 14px;
+    padding-top: 20px;
+  }
+.planrefactor .form-select{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    appearance: none;
+    border: 1px solid rgba(16, 77, 137, 0.1);
+}
+.planrefactor .form-control{
+    border: none;
+    border-radius: 4px;
+    border: 1px solid rgba(16, 77, 137, 0.1);
+}
+.planrefactor .heading{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #104D89;
+    padding-top: 20px;
+}
+.relationbox{
+    background-color: #edf0f3;
+    margin-top: 35px;
+    border-radius: 6px;
+}
+.planrefactor .communication_box{
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin:10px 0px;
+    padding: 10px 0px;
+}
+.planrefactor .form-check-input:checked {
+    background-color: #104D89;
+    border-color: #104D89;
+}
+.planrefactor span img{
+    width: 20px;
+}
+.reset__button{
+    background-color: rgba(16, 77, 137, 0.2);
+    color: #104D89;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin:15px 5px;
+}
+.reset__button:hover{
+    background-color: rgba(16, 77, 137, 0.2);
+    color: #104D89;
+}
+.savedetail__button{
+    background-color: #104D89;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin:15px 2px;
+}
+.savedetail__button:hover{
+    background-color: #104D89;
+    color: #ffffff;
+}
+
+.planrefactor .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #104D89;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+.planrefactor .testselected{
+    background-color:#104D89; 
+    color: #ffffff;
+   display: flex;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 20px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.planrefactor .testdeselected{
+    background-color:#e8eef4; 
+    color: #668db4;
+   display: flex;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 20px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.labtest {
+    background-color: #f5f5f5;
+    width: 97%;
+    /* margin: 26px 10px 10px 10px; */
+    border-radius: 8px;
+    padding: 0px 0px;
+    min-height: 40px;
+    margin-top: 2px;
+    margin:auto;
+}
+.labtest .__testbtn{
+    display: flex;
+    background-color: #d7e0e8;
+    border-radius: 20px;
+    color:  #668db4;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 20px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 7px;
+}
+.labtest .__testbtn:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 10px;
+    color: #668db4;
+    z-index: 1;
+    cursor: pointer;
+} 
+.testdetail {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+.testdetail .__testbtn{
+  background-color: #d7e0e8;
+    border-radius: 20px;
+    color:  #668db4;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 30px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 15px;
+}
+.testdetail .__testbtn:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 10px;
+    color: #668db4;
+    z-index: 1;
+    cursor: pointer;
+} 
+.testdetail .scrollbar {
+    height: 50px;
+    max-width: 300px;
+    background: #fff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+    padding: 6px 5px;
+}
+.testdetail .scrollbar::-webkit-scrollbar {
+    width: 4px;
+    background-color: #008391;
+}
+.testdetail .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #008391;
+}
+.testdetail .scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #F5F5F5;
+}
+.planrefactor .addmore__btn {
+    background-color: transparent;
+    color: #104D89;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+    padding: 6px 18px;
+    font-weight: 600;
+    border: none;
+}
