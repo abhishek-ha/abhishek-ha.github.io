@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title> Client Edit </title>
+</head>
+<body>
+<div class="clientmaster"> 
+<section> 
+  <div class="container">
+    <div class="row">
+  <h4 class="plancreationhead" style="font-size:25px;"> Client Master </h4>
+      <div class="col-xl-12 col-lg-12 col-md-12 pt-4">
+        <p class="mb-1"><b> Client Details  </b></p>
+<div class="row bg-white pb-3">
+  <div class="col-md-4">
+    <label for="inputEmail4" class="form-label"> Client Name </label>
+    <input type="text" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-4">
+    <label for="BU Type" class="form-label"> BU Type </label>
+  <select class="form-select"> 
+<option> Select BU Type </option>
+  </select>
+  </div>
+ <div class="col-md-4">
+    <label for="BU Type" class="form-label"> Sub BU Type </label>
+ <select class="form-select"> 
+<option> Select Sub BU Type </option>
+  </select>
+  </div>
+  <div class="col-md-4">
+    <label for="BU Type" class="form-label"> State </label>
+  <select class="form-select">
+<option> Uttar Pradesh </option>
+<option> Delhi </option>
+<option> Uttarakhand </option>
+<option> Bihar </option>
+   </select>
+  </div>
+<div class="col-md-4">
+    <label for="inputCity" class="form-label">City</label>
+     <select class="form-select">
+<option> Gurugram </option>
+<option> Gorakhpur </option>
+<option> Delhi </option>
+<option> Patna </option>
+   </select>
+  </div> <div class="col-md-4">
+    <label for="inputCity" class="form-label"> Address </label>
+<input type="text" class="form-control" name="" placeholder="Address">
+  </div>
+   <div class="col-md-4">
+    <label for="inputCity" class="form-label"> Sales By </label>
+<select class="form-select"> 
+<option> Select Sales By </option> </select>
+  </div>
+   <div class="col-md-4">
+    <label for="inputCity" class="form-label"> Mobile Number </label>
+<input type="text" class="form-control" name="" placeholder="Mobile Number">
+</div>
+   <div class="col-md-4">
+    <label for="inputCity" class="form-label"> Landline Number </label>
+<input type="text" class="form-control" name="" placeholder="Landline Number">
+  </div>
+</div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 pt-4">
+        <p class="mb-1"><b> Other Parameter </b>  </p>
+<div class="row bg-white pb-3">
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> Set Username as </label>
+  <select class="form-select"> 
+<option> Select Email Id </option>
+  </select>
+  </div>
+ <div class="col-md-4">
+    <label for="BU Type" class="form-label"> Regional Manager </label>
+ <select class="form-select"> 
+<option> Select Regional Manager </option>
+  </select>
+  </div>
+ 
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1"> All Service With Plan  </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2"> Client Wise Package </label>
+</div>
+ </div>
+</div>
+</div>
+
+
+<div class="col-xl-12 col-lg-12 col-md-12 pt-4">
+        <p class="mb-1"><b> User Details </b>  </p>
+<div class="row bg-white pb-3">
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> First Name </label>
+<input type="text" class="form-control" name="">
+  </div>
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> Last Name </label>
+<input type="text" class="form-control" name="">
+  </div>
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> Email ID </label>
+<input type="email" class="form-control" name="">
+  </div>
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> Mobile Number </label>
+<input type="email" class="form-control" name=""/>
+  </div>
+<div class="col-md-4 addmoretop">
+   <div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"/>
+  <label class="form-check-label" for="inlineCheckbox1"> View HCK Report  </label>
+</div>
+  </div>
+ </div>
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 pt-4">
+<p class="mb-1"><b> Client Contract Details </b>  </p>
+<div class="row bg-white pb-3">
+<div class="col-md-4">
+    <label for="BU Type" class="form-label"> Choose Date </label>
+<input type="text" id="datepicker" class="form-control" />
+  </div>
+</div>
+</div>
+
+
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-4">
+        <p class="mb-1"><b> Client Details  </b>  </p>
+<form class="row bg-white pb-3">
+ <div class="col-md-4">
+    <label for="BU Type" class="form-label"> Choose Date </label>
+<input type="text" id="datepicker" class="form-control" />
+  </div>
+  <div class="col-md-4">
+    <label for="Status" class="form-label"> Is Active </label>
+  <select class="form-select">
+    <option> Select Is Active </option>
+     <option> Inactive  </option>
+  </select>
+  </div>
+<div class="col-md-4 ">
+<button class="btn clientapplyfilter__button"> Apply Filters </button>
+  </div>
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+    <label for="BU Type" class="form-label"> Search Plans </label>
+<input type="text"  class="form-control" placeholder=" Search Plans" />
+  </div>
+</form>
+ </div>
+
+<div class=" col-xl-12 col-lg-12 col-md-12 col-12 mt-5">
+  <div class="row ">
+     <div class="clientgrid">
+      <p> Client Plan List </p>
+      <p><a href="#"> Add Plan </a> </p>
+ </div> 
+  </div>
+
+  
+
+</div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="row bg-white">
+      <table class="table clienttbl">
+  <thead>
+    <tr>
+       <th scope="col"> Plan Name </th>
+      <th scope="col"> Plan Validity </th>
+      <th scope="col"> Is Credits </th>
+      <th scope="col"> Gender </th>
+      <th scope="col"> Plan Amount </th>
+      <th scope="col"> No. Of Employees </th>
+      <th scope="col"> Is Active </th>
+       <th scope="col"> Edit </th>
+       <th scope="col"> WebApp Customization </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td> FitAssure </td>
+     <td> 04-04-2024 </td>
+       <td> Is Credits </td>
+   <td> Male </td>
+     <td> 2250 </td>
+       <td> 340 </td>
+         <td> Active </td>
+        <td><a href="#"> Edit </a> </td>
+             <td><a href="#"> Customize </a> </td>
+    </tr>
+  <tr>
+        <td> FitAssure </td>
+     <td> 04-04-2024 </td>
+       <td> Is Credits </td>
+   <td> Male </td>
+     <td> 4238 </td>
+       <td> 130 </td>
+         <td> Active </td>
+        <td><a href="#"> Edit </a> </td>
+             <td><a href="#"> Customize </a> </td>
+    </tr>
+ <tr>
+        <td> FitAssure </td>
+     <td> 04-04-2024 </td>
+       <td> Is Credits </td>
+   <td> Male </td>
+     <td> 9250 </td>
+       <td> 290 </td>
+         <td> Active </td>
+        <td><a href="#"> Edit </a> </td>
+             <td><a href="#"> Customize </a> </td>
+    </tr>
+       </tbody>
+</table>
+ </div>
+</div>
+
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+  <nav aria-label="Page navigation pagination example ">
+  <ul class="pagination justify-content-center">
+    <li class="page-item ">
+      <a class="page-link" href="#" > Prev </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#"> 1 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 2 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 3 </a></li>
+     <li class="page-item"><a class="page-link" href="#"> 4 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 5 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 6 </a></li>
+    <li class="page-item">
+      <a class="page-link" href="#"> Next </a>
+    </li>
+  </ul>
+</nav> 
+</div>
+
+
+      </div>
+     </div>
+</section>
+
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
