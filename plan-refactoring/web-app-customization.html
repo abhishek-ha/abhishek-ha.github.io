@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title> Plan Refactoring </title>
+</head>
+<body>
+<section class="planrefactor"> 
+	<div class="container">
+	<div class="row">
+		<h4 class="plancreationhead"> Plan Creation </h4>
+		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+
+
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <!-- Start Plan Details -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="plandetail">
+        Plan Details
+      </button>
+    </h2>
+    <div id="plandetail" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+    <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Clients </label>
+            <select class="form-select">
+              <option> Select Client </option>
+              <option> Care Insurance </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> No. Of Employees </label>
+            <input type="text" class="form-control" placeholder="" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Plan Name </label>
+            <input type="text" class="form-control" placeholder="" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Waiting Period </label>
+            <input type="text" class="form-control" placeholder="" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Plan Code </label>
+            <input type="text" class="form-control" placeholder="" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Choose Date </label>
+ <input type="text"  id="datepicker" class="form-control" placeholder=" Choose Date" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+            <label for="exampleFormControlInput1" class="form-label"> Plan Validity For user</label>
+            <select class="form-select">
+              <option> Select Plan Validity </option>
+              <option> 3 Months </option>
+              <option> 6 Months </option>
+              <option> 9 Months </option>
+              <option> 12 Months </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Plan Amount (Exclusive GST) </label>
+            <select class="form-select">
+              <option> Select Plan Amount </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 addmoretop">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Mid Term Validity </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Mid Term Validity Tenure </label>
+            <select class="form-select">
+              <option> Select Tenure </option>
+              <option> 6 Months </option>
+              <option> 12 Months </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Login By </label>
+            <select class="form-select">
+              <option> Select Login By </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Invoice Type </label>
+            <select class="form-select">
+              <option> Select Invoice Type</option>
+              <option> Care Insurance </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+            <label for="exampleFormControlInput1" class="form-label"> Gender </label>
+            <select class="form-select">
+              <option> Male </option>
+              <option> Female </option>
+            </select>
+          </div>
+        </div>
+        <div class="row border-top secseprator">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 secseprator pb-2">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Insurance Benefits </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Mapped Benefits </label>
+            <select class="form-select">
+              <option> Select Benefits </option>
+              <option> Hospicash </option>
+              <option> Doctor Consultation </option>
+            </select>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Sum Insured / Amount </label>
+            <select class="form-select">
+              <option> Select Benefits </option>
+              <option> Hospicash </option>
+              <option> Doctor Consultation </option>
+            </select>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Insurer Name </label>
+            <select class="form-select">
+              <option> Select Insurer </option>
+              <option> Magma HDI </option>
+              <option> ACKO </option>
+              <option> Aditya Birla </option>
+              <option> ICICI Lombard </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Nominee Required </label>
+            <select class="form-select">
+              <option> Yes </option>
+              <option> No </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <label for="Image Upload" class="form-label"> Image Upload </label>
+<div class="file-upload-wrapper" data-text="Choose File to Upload"> 
+<input name="file-upload-field" type="file" class="file-upload-field  " value="">
+    </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <button class="btn addmore_btn"> Add More </button>
+          </div>
+        </div>
+
+ <div class="row border-top  secseprator">
+          <h3 class="heading"> Add Relation To Plan: </h3>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Type of Coverage </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Self </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> Family </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Max Number Of Member In A Plan </label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Number Of Adults </label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Minimum Age (in Years) </label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Maximum Age (in Years) </label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Number Of Child </label>
+            <input type="text" class="form-control" />
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Minimum Age (in Years) </label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Maximum Age (in Years) </label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Add Relation </label>
+            <select class="form-select"  >
+              <option > Select Multiple Relation </option>
+              <option> Husband </option>
+              <option> Wife </option>
+              <option> Brother </option>
+              <option> Father </option>
+              <option> Mother </option>
+              <option> Sister </option>
+              <option> Son </option>
+              </select>
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-6 col-12 relationbox">
+          <button class='close_button'> Father </button> <button class='close_button'> Brother </button>
+            
+             </div>
+        </div>
+        <div class="row border-top ">
+          <h3 class="heading"> Communication Template: </h3>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 pt-2">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Email </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+          </div>
+ <div class="col-xl-4 col-lg-4 col-md-6 col-12 pt-4">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Webmail </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+          </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12 pt-4">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Transactional Email </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label cclass="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+          </div>
+ <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label">Welcome Emailer (HTML) </label>
+ <div class="file-upload-wrapper" data-text="Choose File to Upload"> 
+<input name="file-upload-field" type="file" class="file-upload-field  " value="">
+    </div>
+          </div>
+   <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Terms & Conditions </label>
+<div class="file-upload-wrapper" data-text="Choose File to Upload"> 
+<input name="file-upload-field" type="file" class="file-upload-field  " value="">
+    </div>
+          </div>
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-3">
+            <label for="exampleFormControlInput1" class="form-label"> Enter Custom HTML Code </label>
+            <textarea  class="form-control"  rows="6" ></textarea>
+          </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <div class="row communication_box">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+              <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> SMS </label>
+            </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+              </div>
+              </div>
+         </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-6">  
+        <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Welcome SMS </label>
+            </div>
+       </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-6"> 
+     <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+         </div>
+     </div>
+     </div>
+         <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Transactional SMS </label>
+            </div>
+               </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+               </div>
+             </div>
+            </div>
+            </div>
+         </div>
+ <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <div class="row communication_box">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+              <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Whatsapp </label>
+            </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+              </div>
+              </div>
+         </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+        <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-6">  
+        <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Welcome SMS </label>
+            </div>
+       </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-6"> 
+     <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+         </div>
+     </div>
+     </div>
+         <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> Transactional SMS </label>
+            </div>
+               </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+               </div>
+             </div>
+            </div>
+            </div>
+         </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <div class="row communication_box">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+              <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="form-check form-check-inline ps-0">
+              <label class="form-check-label" for="inlineRadio1"> COI </label>
+            </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+              <label class="form-check-label" for="inlineRadio1"> Yes </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+              <label class="form-check-label" for="inlineRadio2"> No </label>
+            </div>
+              </div>
+              </div>
+         </div>
+          </div>
+         </div>
+         </div>
+       	</div>
+      </div>
+    </div>
+  <!-- End Plan Details -->
+
+
+
+
+<!-- Start Define Bucket  -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Define Bucket
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+  <div class="row  pb-3">
+  <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
+  	<div class="row">
+  		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  	<h3 class="heading"> CBC Care </h3>
+  		 </div>
+  	</div>
+  	<div class="row bg-white">
+  		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  		 <div class="input-group">
+  <input type="text" class="form-control" placeholder="Search SKU"  />
+  <span class="input-group-text"><img src="images/search-icon.png" alt="search icon"  />   </span>
+</div>	
+  		</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+  </div>
+</div>
+
+<div class="col-xl-8 col-lg-8 col-md-8 col-12">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Credit" value="option1"/>
+  <label class="form-check-label" for="inlineRadio1"> Credit </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2" checked  />
+  <label class="form-check-label" for="inlineRadio2"> Wallet </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> Pay Per Use </label>
+</div> 
+<div class="row bg-white">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Wallet Amount </label>
+          <input type="text" class="form-control" placeholder="Enter Wallet Amount"  />
+          </div>
+ <div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Capping Amount </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> No </label>
+</div> 
+</div>
+<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> SKU Search  </label>
+<input type="text" class="form-control" placeholder="SKU Search"  />
+<input type="text" class="form-control mt-1" placeholder="SKU Search"  />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <label for="exampleFormControlInput1" class="form-label"> SKUs  </label>
+          <div class="labtest ">
+    <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div> 
+   </div>
+   <div class="labtest">
+    <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div> 
+   </div>
+  </div>
+  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+  <label for="exampleFormControlInput1" class="form-label"> Capping Limit </label>
+  <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
+  <input type="text" class="form-control mt-1" placeholder="Capping Limit (in Rs.)"  />
+  </div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+<button class="addmore__btn"> Add More </button>
+  </div>   
+</div>
+
+
+<div class="row bg-white">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Member Level Benefits </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> No </label>
+</div> 
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Relation </label>
+            <select class="form-select">
+              <option> Select Relation </option>
+              <option> Brother </option>
+              <option> Father </option>
+              <option> Mother </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
+          <input type="text" class="form-control" placeholder="Search SKU"  />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <label for="exampleFormControlInput1" class="form-label"> Capping Amount </label>
+          <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
+          </div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest mb-2">
+    <div class="__testbtn"> Fasting Blood Sugar </div>  
+     <div class="__testbtn"> CBC </div> 
+    <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div> 
+    <div class="__testbtn"> SGPT </div> <div class="__testbtn"> 2D Echo </div>
+  </div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <select class="form-select">
+              <option> Select Relation </option>
+              <option> Brother </option>
+              <option> Father </option>
+              <option> Mother </option>
+            </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+         <input type="text" class="form-control" placeholder="Search SKU"  />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+          <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest">
+    <div class="__testbtn"> CBC </div> 
+    <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div> 
+    <div class="__testbtn"> SGPT </div> <div class="__testbtn"> 2D Echo </div>
+  </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+<button class="addmore__btn"> Add More </button>
+  </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Reimbursement Allowed </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> No </label>
+</div> 
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
+         <input type="text" class="form-control" placeholder="Search SKU"  />
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-6 col-12 labtest ">
+            <div class="scrollbar"> 
+            <div class="__testbtn"> CBC </div> 
+    <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div> 
+    <div class="__testbtn"> SGPT </div> <div class="__testbtn"> 2D Echo </div>
+            </div>
+  </div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Part Of Plan </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> No </label>
+</div> 
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> Capping Amount </label>
+         <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> Per Transaction Limit </label>
+         <input type="text" class="form-control" placeholder="Amount Limit (in Rupees)"  />
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Frequency </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yearly </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> Monthly </label>
+</div> 
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> Frequency Limit </label>
+         <input type="text" class="form-control" placeholder="Amount Limit (in Rupees)"  />
+          </div>
+          <div class="col-xl-8 col-lg-8 col-md-8 col-12 pt-5">
+<button class="addmore__btn"> Add More </button>
+  </div>
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="form-check form-check-inline ps-0">
+  <label class="form-check-label" for="inlineRadio1"> Provider / Vendor Mapping </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Wallet" value="option2"/>
+  <label class="form-check-label" for="inlineRadio2"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Pay Per Use" value="option3" />
+  <label class="form-check-label" for="inlineRadio3"> No </label>
+</div> 
+</div>
+<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> Service </label>
+        <select class="form-select"> 
+        <option> Select Service </option>
+        <option> Service1 </option>
+      </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<label for="exampleFormControlInput1" class="form-label"> Providers </label>
+        <select class="form-select"> 
+        <option> Select Providers </option>
+        <option> Service1 </option>
+      </select>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 pt-5">
+          <button class="addmore__btn"> Add More </button>
+          </div>
+</div>
+
+
+  </div>
+ </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End Define Bucket  -->
+
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ruleengine" aria-expanded="false" aria-controls="ruleengine">
+       Rule Engine
+      </button>
+    </h2>
+    <div id="ruleengine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+
+<!-- Start Rule Engine -->
+
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#termsuse" aria-expanded="false" aria-controls="termsuse">
+        Terms Of Use
+      </button>
+    </h2>
+    <div id="termsuse" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+
+  <!-- End Rule Engine -->
+
+
+<!-- Start Plan Variations -->
+
+   <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#planvariations" aria-expanded="false" aria-controls="planvariations">
+     Plan Variations
+      </button>
+    </h2>
+    <div id="planvariations" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+
+  <!-- End Plan Variations -->
+
+<!-- Start Plan Commercial Detail -->
+
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+       Plan Commercial Details
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+
+  <!-- End Plan Commercial Detail -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+</section>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
