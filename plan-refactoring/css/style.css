@@ -617,27 +617,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-.upbtn {
-  border: 1px solid #e7edf3;
-  color: #e7edf3;
-  background-color: white;
-  padding: 8px 20px;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.upload-btn-wrapper input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-}
 .webappcustomization{
     background-color: #f9f9f9;
 }
@@ -651,6 +630,7 @@ input:checked + .slider:before {
     font-size: 18px;
     font-weight: 600;
     color: #000000;
+    padding-top: 5px;
 }
 .webappcustomization .preview{
     background-color: #ffffff;
@@ -665,8 +645,89 @@ input:checked + .slider:before {
     font-weight: 600;
     margin-top: 10px;
 }
+.fileuploadbtn{
+    background-color: #f9f9f9;
+    position: relative;
+}
+.fileuploadbtn .form-control[type=file]{
+    background-color: #f9f9f9;
+    color: #cccccc;
+}
+.fileuploadbtn .form-control[type=file]:after {
+    content: "\f0ee";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 6px;
+    right: 14px;
+    color: #cccccc;
+    z-index: 1;
+}
+input[type=file] {
+  display: none;
+}
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  max-width: 100%;
+  width: 100%;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+.no-js .inputfile + label {
+  display: none;
+}
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile + label {
+  border: 1px solid #e7edf0;
+  background-color: #ffffff;
+  padding: 0;
+}
+.inputfile + label .archive-name,
+.inputfile + label .btn-inputfile {
+   padding: 0.375rem 0.75rem!important;
+/*  height: 50px;*/
+  font-style: normal;
+}
+.inputfile + label .archive-name {
+  width: 60%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
+  color: #919298;
+}
+.inputfile + label .btn-inputfile {
+  color: #cccccc;
+  background-color: transparent;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+.inputfile:focus + label .btn-inputfile,
+.inputfile.has-focus + label .btn-inputfile,
+.inputfile + label:hover .btn-inputfile {
+  background-color: transparent;
+}
 
-
-
-
-
+@media screen and (max-width: 50em) {
+  .inputfile + label .btn-inputfile {
+    display: block;
+  }
+}
