@@ -1,7 +1,6 @@
 body{
     background-color: transparent;
 }
-
 .plancreationhead{
     font-size: 20px;
     line-height: 25px;
@@ -9,7 +8,6 @@ body{
    color: #104D89;
    padding-top: 40px;
 }
-
 .accordion-button:not(.collapsed) {
     color: #ffffff!important;
     background-color: #104D89!important;
@@ -43,7 +41,6 @@ body{
     overflow-anchor: none;
     transition: var(--bs-accordion-transition);
 }
-
 .accordion-button::after {
     flex-shrink: 0;
     margin-left: auto;
@@ -486,9 +483,6 @@ body{
     line-height: 30px;
     padding-top: 40px;
 }
-
-
-
 .clientmaster .form-label{
     font-size: 14px!important;
     font-weight: 600!important;
@@ -640,7 +634,7 @@ input:checked + .slider:before {
     background-color: #e2e8ee;
     color: #104D89;
     font-size: 16px;
-    padding: 18px 0px;
+    padding: 16px 0px;
     width: 100%;
     font-weight: 600;
     margin-top: 10px;
