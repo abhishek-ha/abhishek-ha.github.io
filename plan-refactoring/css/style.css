@@ -143,10 +143,12 @@ body{
     border: 1px solid rgba(16, 77, 137, 0.1);
 }
 .planrefactor .form-control{
+    padding: 0.375rem 0.75rem;
     border: none;
     border-radius: 4px;
     border: 1px solid rgba(16, 77, 137, 0.1);
     color: #cccccc;
+    font-size: 14px;
 }
 .planrefactor .heading{
     font-size: 17px;
@@ -316,6 +318,7 @@ body{
     margin-top: 7px;
     cursor: pointer;
 }
+
 .labtest {
     background-color: #f5f5f5;
     width: 97%;
@@ -333,7 +336,7 @@ body{
     color:  #668db4;
     font-size: 14px;
     font-weight: 500;
-    padding: 2px 20px;
+    padding: 2px 20px 2px 10px;
     margin: 5px;
     border:none;
     justify-content: center;
@@ -352,6 +355,58 @@ body{
     z-index: 1;
     cursor: pointer;
 } 
+
+
+
+
+
+
+
+.sku {
+    width: 97%;
+    /* margin: 26px 10px 10px 10px; */
+    border-radius: 8px;
+    padding: 0px 0px;
+    min-height: 40px;
+    margin-top: 2px;
+    margin:auto;
+}
+.sku .__testbtn{
+    display: flex;
+    background-color: #d7e0e8;
+    border-radius: 20px;
+    color:  #668db4;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px 20px 2px 10px;
+    margin: 5px;
+    border:none;
+    justify-content: center;
+    float: left;
+    align-items: center;
+    margin-top: 7px;
+}
+.sku .__testbtn:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 10px;
+    color: #668db4;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 .testdetail {
     background-color: #f5f5f5;
     border-radius: 8px;
@@ -528,7 +583,8 @@ body{
  
 }
 .clientmaster .form-control {
-    border: none; 
+    border: none;
+        padding: 0.375rem 0.75rem; 
     border-radius: 4px;
     border: 1px solid rgba(16, 77, 137, 0.1);
     color: #cccccc!important;
@@ -725,3 +781,219 @@ input[type=file] {
     display: block;
   }
 }
+/* Rule Engine  */
+.ruleengine_card{
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 10px 0px 5px 0px;
+  }
+.ruleengine h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.ruleengine .addmore_btn{
+    background-color: transparent;
+    color: #104D89;
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 3px 0px 1px 0px;
+    float: right;
+  }
+.ruleengine .form-select{
+    display: block;
+    width: 100%;
+      padding: 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #cccccc;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    appearance: none;
+    border: 1px solid rgba(16, 77, 137, 0.1);
+}
+.addmore_btnright{
+    background-color: transparent;
+    color: #104D89;
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 3px 0px 1px 0px;
+    float: right;
+  }
+.sequencing_card{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0px 5px 0px;
+}
+.sequencing_card div{
+      display: flex;
+      justify-content: flex-start;
+    float: left;
+      width: 14%;
+  }
+.sequencing_card .form-select{
+    font-size: 13px;
+}
+.sequencing_card .mright{
+    margin-right: 55px;
+  }
+.form_heading{
+    font-size: 17px;
+    font-weight: 600;
+  }
+.upload-plus {
+    margin-top: 41px;
+}
+.upload-plus span{
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #104D89;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.containerwidth {
+            width: 100%;
+        }
+.toggle {
+            width: 100%;
+            background-color: transparent;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            font-size: 16px;
+            color: #111130;
+            font-weight: 600;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+        .content {
+            position: relative;
+            font-size: 14px;
+            text-align: justify;
+            line-height: 30px;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+.success_popup{
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+.success_popup .modal-content{
+    border: none;
+}
+.success_popup .modal-content .modal-body img{
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.success_popup .modal-content .modal-header{
+    border: none;
+}
+.success_popup h3{
+    color: #67B59F;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -26px;
+}
+.success_popup p{
+    font-size: 16px;
+    color: #AEC2D8;
+      text-align: center;
+}
+
+
+.definebuckit_accordian{
+   position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+  background-color: #f9f9fA; 
+}
+
+.definebuckit_accordian li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 0 auto 0px auto;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.definebuckit_accordian li.active h3{
+    color: #104D89;
+}
+.definebuckit_accordian li.active h3:after {
+  transform: rotate(180deg);
+   color: #104D89;
+}
+.definebuckit_accordian li h3 {
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+color: #D3DCE6;
+}
+.definebuckit_accordian li h3:after {
+ content: "\f078";
+font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.definebuckit_accordian li div.answer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.definebuckit_accordian li div.answer p {
+  position: relative;
+  display: block;
+  font-weight: 300;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  line-height: 150%;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+
+/*define bucket tabs*/
+
