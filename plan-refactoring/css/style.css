@@ -892,20 +892,21 @@ input[type=file] {
             -o-transition: all 1s;
             transition: all 1s;
         }
-.success_popup{
+.success_popup .modal-dialog{
     background-color: #ffffff;
-    padding: 20px 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
-.success_popup .modal-content{
+.success_popup .modal-dialog .modal-content{
     border: none;
 }
-.success_popup .modal-content .modal-body img{
+.success_popup .modal-dialog .modal-content .modal-body img{
     width: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.success_popup .modal-content .modal-header{
+.success_popup .modal-dialog .modal-content .modal-header{
     border: none;
 }
 .success_popup h3{
@@ -920,8 +921,6 @@ input[type=file] {
     color: #AEC2D8;
       text-align: center;
 }
-
-
 .definebuckit_accordian{
    position: relative;
   display: block;
@@ -932,7 +931,6 @@ input[type=file] {
   list-style: none;
   background-color: #f9f9fA; 
 }
-
 .definebuckit_accordian li {
   position: relative;
   display: block;
@@ -993,7 +991,16 @@ font-family: "FontAwesome";
   margin: 0 0 15px 0;
   font-size: 14px;
 }
-
-
 /*define bucket tabs*/
-
+.answer div{
+    display: flex;
+    border-bottom: 1px solid #f9f9f9;
+}
+.answer div a{
+    float: left;
+    font-size: 14px;
+    color: #104D89;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+}

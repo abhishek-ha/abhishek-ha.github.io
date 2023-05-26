@@ -40,9 +40,6 @@ $( "#datepicker" ).datepicker();
 })( jQuery, window, document );
 
 
-
-
-
 // accordian
 
 
@@ -66,7 +63,27 @@ $(document).ready(function(){
 // end accordian
 
 
+// start define bucket tab
 
+$(document).ready(function(){
+$("#test").click(function(){
+    $(".testbox").show();
+     $(".scanbox").hide();
+      $(".packagebox").hide();
+  });
+$("#scan").click(function(){
+   $(".testbox").hide();
+     $(".scanbox").show();
+      $(".packagebox").hide();
+  });
+
+$("#package").click(function(){
+   $(".testbox").hide();
+     $(".scanbox").hide();
+      $(".packagebox").show();
+  });
+
+ });
 
 
 

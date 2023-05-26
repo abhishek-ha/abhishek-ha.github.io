@@ -482,7 +482,20 @@
   <li>
     <h3> Diagnostics </h3>
  <div class="answer">
-   
+  <div>
+    <a href="javascript:void(0);" id="test"> Tests </a>
+        <a href="javascript:void(0);" id="scan">  Scans </a>
+            <a href="javascript:void(0);" id="package"> Package </a>
+  </div>
+  <div class="testbox">
+<h1> Test Box </h1>
+     </div>
+   <div class="scanbox" style="display: none;">
+    <h1> scan Box </h1>
+</div>
+   <div class="packagebox" style="display: none;">
+    <h1> Package Box </h1>
+</div>
 </div> 
   </li>
   <li>
@@ -528,12 +541,6 @@
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="payperuse" value="option3" />
   <label class="form-check-label" for="inlineRadio3"> Pay Per Use </label>
 </div> 
-
-
-
-
-
-
 
 
 
@@ -1664,8 +1671,8 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="successpopup" tabindex="-1" aria-labelledby="successpopupLabel" aria-hidden="true">
-  <div class="modal-dialog success_popup">
+<div class="modal success_popup fade" id="successpopup" tabindex="-1" aria-labelledby="successpopupLabel" aria-hidden="true">
+  <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="successpopupLabel"> </h5>
@@ -1715,6 +1722,11 @@ $("#payperuse").click(function(){
   });
 
  });
+
+
+
+
+
 
 
 
