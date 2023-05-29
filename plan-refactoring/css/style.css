@@ -1059,4 +1059,14 @@ input[type="checkbox"] {
     margin-right: 2px;
     padding-top: 5px;
 }
+.choices__input{
+background-color: #ffffff;  
+margin-bottom: 0px;  
+padding: 0px 0px 0px 2px;
+}
+.choices__inner{
+    background-color: #ffffff;
+   padding: 0.375rem 0.75rem;
+   min-height: auto;
+}
 

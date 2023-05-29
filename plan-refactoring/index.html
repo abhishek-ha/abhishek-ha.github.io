@@ -6,7 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<title> Plan Refactoring </title>
 </head>
 <body>
@@ -224,16 +227,16 @@
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
             <label for="exampleFormControlInput1" class="form-label"> Add Relation </label>
-            <select class="form-select"  >
-              <option > Select Multiple Relation </option>
-              <option> Husband </option>
-              <option> Wife </option>
-              <option> Brother </option>
-              <option> Father </option>
-              <option> Mother </option>
-              <option> Sister </option>
-              <option> Son </option>
-              </select>
+            <select id="choices-multiple-remove-button" placeholder="Select Multiple Relation" multiple>
+            <option value="Husband"> Husband </option>
+            <option value="Wife"> Wife </option>
+            <option value="Brother"> Brother </option>
+            <option value="Father"> Father </option>
+            <option value="Mother"> Mother </option>
+            <option value="Sister"> Sister </option>
+            <option value="Son"> Son  </option>
+        </select>
+         
           </div>
           <div class="col-xl-8 col-lg-8 col-md-6 col-12 relationbox">
           <button class='close_button'> Father </button> <button class='close_button'> Brother </button>
@@ -1763,6 +1766,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
 $(document).ready(function(){
@@ -1787,7 +1792,16 @@ $("#payperuse").click(function(){
 
 
 
-
+$(document).ready(function(){
+    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount:8,
+        searchResultLimit:8,
+        renderChoiceLimit:8
+      }); 
+     
+     
+ });
 
 
 
