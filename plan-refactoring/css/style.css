@@ -1004,7 +1004,7 @@ font-family: "FontAwesome";
     text-decoration: none;
 }
 .faq-drawer__content-wrapper {
-  font-size: 1.25em;
+
   line-height: 1.4em;
   max-height: 0px;
   overflow: hidden;
@@ -1036,6 +1036,7 @@ font-family: "FontAwesome";
   vertical-align: top;
   width: 10px;
 }
+
 
 /* OPTIONAL HOVER STATE */
 .faq-drawer__title:hover { 
