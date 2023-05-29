@@ -1036,8 +1036,6 @@ font-family: "FontAwesome";
   vertical-align: top;
   width: 10px;
 }
-
-
 /* OPTIONAL HOVER STATE */
 .faq-drawer__title:hover { 
   color: #4E4B52  ;
@@ -1048,12 +1046,17 @@ font-family: "FontAwesome";
   + .faq-drawer__content-wrapper {
   max-height: 350px;
 }
-
 .faq-drawer__trigger:checked + .faq-drawer__title::after {
   transform: rotate(-45deg);
   transition: 0.25s ease-in-out;
 }
-
 input[type="checkbox"] {
   display: none;
 }
+.definebucket_leftside{
+    background-color: #ffffff;
+   margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 5px;
+}
+
