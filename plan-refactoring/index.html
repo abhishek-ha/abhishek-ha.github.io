@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -302,7 +303,7 @@
             <label for="exampleFormControlInput1" class="form-label"> Enter Custom HTML Code </label>
             <textarea  class="form-control"  rows="6" ></textarea>
           </div>
-  <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="col-xl-5 col-lg-5 col-md-6 col-12">
             <div class="row communication_box">
               <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
               <div class="row">
@@ -363,13 +364,13 @@
             </div>
             </div>
          </div>
- <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+ <div class="col-xl-5 col-lg-5 col-md-6 col-12">
             <div class="row communication_box">
               <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
               <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-6">
             <div class="form-check form-check-inline ps-0">
-              <label class="form-check-label" for="inlineRadio1"> Whatsapp </label>
+            <label class="form-check-label" for="inlineRadio1"> Whatsapp </label>
             </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-6">
@@ -388,7 +389,7 @@
         <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-6">  
         <div class="form-check form-check-inline ps-0">
-              <label class="form-check-label" for="inlineRadio1"> Welcome SMS </label>
+              <label class="form-check-label" for="inlineRadio1"> Welcome Whatsapp </label>
             </div>
        </div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-6"> 
@@ -407,7 +408,7 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-6">
             <div class="form-check form-check-inline ps-0">
-              <label class="form-check-label" for="inlineRadio1"> Transactional SMS </label>
+              <label class="form-check-label" for="inlineRadio1"> Transactional Whatsapp </label>
             </div>
                </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-6">
@@ -424,16 +425,16 @@
             </div>
             </div>
          </div>
-  <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+  <div class="col-xl-2 col-lg-2 col-md-6 col-12">
             <div class="row communication_box">
               <div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
               <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-6">
             <div class="form-check form-check-inline ps-0">
               <label class="form-check-label" for="inlineRadio1"> COI </label>
             </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+              <div class="col-xl-8 col-lg-8 col-md-6 col-6">
               <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
               <label class="form-check-label" for="inlineRadio1"> Yes </label>
@@ -475,8 +476,8 @@
   	<div class="row definebucket_leftside">
   		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
   		 <div class="input-group">
-  <input type="text" class="form-control" placeholder="Search SKU"  />
-<span class="input-group-text">
+  <input type="text" class="form-control searchsku" placeholder="Search SKU"  />
+<span class="input-group-text searchsku_inputgroup">
     <img src="images/search-icon.png" alt="search icon"  />   </span>
 </div>	
   		</div>
@@ -487,7 +488,7 @@
         <div class="faq-drawer__content">
         <div class="answer">
   <div class="bg-white">
-    <a href="javascript:void(0);" id="test"> Tests </a>
+    <a href="javascript:void(0);" class="activetest" id="test"> Tests </a>
         <a href="javascript:void(0);" id="scan">  Scans </a>
             <a href="javascript:void(0);" id="package"> Package </a>
   </div>
@@ -503,7 +504,7 @@
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
   <label class="form-check-label" for="flexCheckChecked">
-   Satyam
+   Select All
   </label>
 </div>
 
@@ -681,8 +682,8 @@
 </div>
 <div class="col-xl-3 col-lg-3 col-md-6 col-12">
 <label for="exampleFormControlInput1" class="form-label"> SKU Search  </label>
-<input type="text" class="form-control" placeholder="SKU Search"  />
-<input type="text" class="form-control mt-1" placeholder="SKU Search"  />
+<input type="text" class="form-control"  placeholder="SKU Search"  />
+<input type="text" class="form-control mt-3" placeholder="SKU Search"  />
           </div>
           <div class="col-xl-6 col-lg-6 col-md-6 col-12">
           <label for="exampleFormControlInput1" class="form-label"> SKUs  </label>
@@ -703,7 +704,7 @@
   <div class="col-xl-3 col-lg-3 col-md-6 col-12">
   <label for="exampleFormControlInput1" class="form-label"> Capping Limit </label>
   <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
-  <input type="text" class="form-control mt-1" placeholder="Capping Limit (in Rs.)"  />
+  <input type="text" class="form-control mt-3" placeholder="Capping Limit (in Rs.)"  />
   </div>
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
 <button class="addmore__btn"> Add More </button>
@@ -736,14 +737,18 @@
             </select>
           </div>
 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-<label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
-<input type="text" class="form-control" placeholder="Search SKU"  />
+  <div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+<!-- <label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
+<input type="text" class="form-control" id="tags" placeholder="Search SKU"  /> -->
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
             <label for="exampleFormControlInput1" class="form-label"> Capping Amount </label>
           <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
           </div>
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest scrollbar-right">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest scrollbar-right my-3">
 <div class="__testbtn"> Fasting Blood Sugar </div> <div class="__testbtn"> CBC </div>  <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div> <div class="__testbtn"> SGPT </div> <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> 2D Echo </div>
   </div>
 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
@@ -760,7 +765,7 @@
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
           <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
           </div>
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest scrollbar-right">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest scrollbar-right my-3">
     <div class="__testbtn"> CBC </div> 
     <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div> 
     <div class="__testbtn"> SGPT </div> <div class="__testbtn"> 2D Echo </div>
@@ -1364,7 +1369,7 @@
         </div>
 
 
-<div class="col-lg-12 col-md-12 col-12">
+<div class="col-lg-12 col-md-12 col-12 ">
          <h4> Amount Capping In A Given Time Period </h4>
       <div class="row ruleengine_card">
         <div class="col-lg-4 col-md-4 col-12">
@@ -1461,8 +1466,8 @@
 
 
 
-<div class="col-lg-12 col-md-12 col-12">
-    <h5 class="form_heading"> Amount Capping In A Given Time Period </h5>
+<div class="col-lg-12 col-md-12 col-12 pt-3">
+    <h5 class="form_heading"> Amount to be shown to User </h5>
       <div class="row ruleengine_card">
         <div class="col-lg-6 col-md-6 col-12">
           <div class="labtest">
@@ -1489,7 +1494,7 @@
         </div>
         </div>
 
-<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-3">
  <h5 class="form_heading"> Sequencing Of Events </h5> 
  <div class="row sequencing_card py-2">
   <div class="mright">
@@ -1608,7 +1613,7 @@
 
 
 
-<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-3">
     <h5 class="form_heading"> Pre Conditioned Events </h5>
       <div class="row ruleengine_card">
         <div class="col"> 
@@ -1793,7 +1798,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="successpopupLabel"> </h5>
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <img src="images/success-img.png">
@@ -1820,6 +1825,9 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
 <script src="js/custom.js"></script>
 <script>
 $(document).ready(function(){
@@ -1859,5 +1867,43 @@ $(document).ready(function(){
 
 
 </script>
+
+
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+</script>
+
+
+
+
 </body>
 </html>

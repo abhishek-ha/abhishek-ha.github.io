@@ -1,5 +1,6 @@
 body{
     background-color: transparent;
+
 }
 .plancreationhead{
     font-size: 20px;
@@ -150,6 +151,35 @@ body{
     color: #cccccc;
     font-size: 14px;
 }
+
+.planrefactor .searchsku{
+    padding: 0.375rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    border:none;
+    color: #cccccc;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+
+.searchsku_inputgroup {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent!important;
+    border: none!important;
+    border-radius: var(--bs-border-radius);
+}
+
+
+
 .planrefactor .heading{
     font-size: 17px;
     line-height: 25px;
@@ -1010,7 +1040,6 @@ font-family: "FontAwesome";
     text-decoration: none;
 }
 .faq-drawer__content-wrapper {
-
   line-height: 1.4em;
   max-height: 0px;
   overflow: hidden;
@@ -1023,9 +1052,10 @@ font-family: "FontAwesome";
   font-weight: 600;
   padding: 5px 0 0 0;
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   transition: all 0.25s ease-out;
   color: #c7c7c7;
+
 }
 .faq-drawer__title::after {
   border-style: solid;
@@ -1094,6 +1124,12 @@ padding: 0px 0px 0px 2px;
     font-size: 16px;
     font-weight: 600;
     padding: 10px 15px 10px 15px;
+}
+
+.activetest{
+    border-bottom: 2px solid #104D89;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 
