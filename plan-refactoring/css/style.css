@@ -368,7 +368,7 @@ padding-top: 15px;
     color: #668db4;
    display: flex;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     padding: 2px 20px;
     margin: 5px;
@@ -1058,12 +1058,17 @@ font-family: "FontAwesome";
   font-size: 14px;
 }
 /*define bucket tabs*/
-.answer div{
+/*.answer div{
     border-bottom: 1px solid #f9f9f9;
+}*/
+.answer .testtab{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+     border-bottom: 1px solid #f9f9f9;
 
 }
 .answer div a{
-    float: left;
     font-size: 14px;
     color: #104D89;
     padding: 10px 20px;
