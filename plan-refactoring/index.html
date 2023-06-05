@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
 <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<title> Plan Refactoring </title>
@@ -21,7 +26,7 @@
 		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <!-- Start Plan Details -->
-  <div class="accordion-item">
+  <div class="accordion-item planedited">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="plandetail">
         Plan Details
@@ -30,7 +35,7 @@
     <div id="plandetail" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
     <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
             <label for="exampleFormControlInput1" class="form-label"> Clients </label>
             <select class="form-select">
               <option> Select Client </option>
@@ -460,7 +465,7 @@
 <!-- Start Define Bucket  -->
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#definebucket" aria-expanded="false" aria-controls="definebucket">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#definebucket" aria-expanded="false" aria-controls="definebucket">
         Define Bucket
       </button>
     </h2>
@@ -468,7 +473,7 @@
       <div class="accordion-body">
   <div class="row  pb-3">
   <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
-  	<div class="row">
+  	<div class="row pb-2">
   		<div class="col-xl-12 col-lg-12 col-md-12 col-12">
   	<h3 class="form_heading"> CBC Care </h3>
   		 </div>
@@ -630,15 +635,15 @@
   </div>
 </div>
 <div class="col-xl-8 col-lg-8 col-md-8 col-12">
-<div class="form-check form-check-inline">
+<div class="form-check form-check-inline pb-2">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="credit" value="option1" checked />
   <label class="form-check-label" for="inlineRadio1"> Credit </label>
 </div>
-<div class="form-check form-check-inline">
+<div class="form-check form-check-inline pb-2">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="wallet" value="option2"   />
   <label class="form-check-label" for="inlineRadio2"> Wallet </label>
 </div>
-<div class="form-check form-check-inline">
+<div class="form-check form-check-inline pb-2">
   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="payperuse" value="option3" />
   <label class="form-check-label" for="inlineRadio3"> Pay Per Use </label>
 </div> 
@@ -647,7 +652,7 @@
 
 <div class="creditbox">
 <div class="row bg-white">
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
 <label class="form-check-label" for="Is Credit Unlimited"> Is Credit Unlimited </label>
 </div>
@@ -662,12 +667,12 @@
 </div>
 
 
-  <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-12 coltopspace">
 <label for="exampleFormControlInput1" class="form-label"> Credit Amount </label>
 <input type="text" class="form-control" placeholder="Enter Wallet Amount"  />
           </div>
 
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
   <label class="form-check-label" for="inlineRadio1"> Capping Amount </label>
 </div>
@@ -680,12 +685,12 @@
   <label class="form-check-label" for="inlineRadio3"> No </label>
 </div> 
 </div>
-<div class="col-xl-3 col-lg-3 col-md-6 col-12">
+<div class="col-xl-3 col-lg-3 col-md-6 col-12 coltopspace">
 <label for="exampleFormControlInput1" class="form-label"> SKU Search  </label>
-<input type="text" class="form-control"  placeholder="SKU Search"  />
-<input type="text" class="form-control mt-3" placeholder="SKU Search"  />
+<input type="text" class="form-control" id="sku4"  placeholder="SKU Search"  />
+<input type="text" class="form-control mt-3" id="sku4" placeholder="SKU Search"  />
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12 coltopspace">
           <label for="exampleFormControlInput1" class="form-label"> SKUs  </label>
           <div class="sku scrollbar-right">
 <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div>
@@ -701,7 +706,7 @@
  
    </div>
   </div>
-  <div class="col-xl-3 col-lg-3 col-md-6 col-12">
+  <div class="col-xl-3 col-lg-3 col-md-6 col-12 coltopspace">
   <label for="exampleFormControlInput1" class="form-label"> Capping Limit </label>
   <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
   <input type="text" class="form-control mt-3" placeholder="Capping Limit (in Rs.)"  />
@@ -714,7 +719,7 @@
 
 
 <div class="row bg-white">
-  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
   <label class="form-check-label" for="inlineRadio1"> Member Level Benefits </label>
 </div>
@@ -727,7 +732,7 @@
   <label class="form-check-label" for="inlineRadio3"> No </label>
 </div> 
 </div>
-<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
             <label for="exampleFormControlInput1" class="form-label"> Relation </label>
             <select class="form-select">
               <option> Select Relation </option>
@@ -736,15 +741,11 @@
               <option> Mother </option>
             </select>
           </div>
-<div class="col-xl-4 col-lg-4 col-md-6 col-12">
-  <div class="ui-widget">
-  <label for="tags">Tags: </label>
-  <input id="tags">
-</div>
-<!-- <label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
-<input type="text" class="form-control" id="tags" placeholder="Search SKU"  /> -->
+<div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
+<label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
+<input type="text" class="form-control" id="sku1" placeholder="Search SKU"  />
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
             <label for="exampleFormControlInput1" class="form-label"> Capping Amount </label>
           <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
           </div>
@@ -760,7 +761,7 @@
             </select>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-         <input type="text" class="form-control" placeholder="Search SKU"  />
+         <input type="text" id="sku2" class="form-control" placeholder="Search SKU"  />
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-12">
           <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
@@ -788,15 +789,15 @@
 </div>
 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
 <label for="exampleFormControlInput1" class="form-label"> SKU Search </label>
-<input type="text" class="form-control" placeholder="Search SKU"  />
+<input type="text" class="form-control" id="sku3" placeholder="Search SKU"  />
           </div>
 <div class="col-xl-8 col-lg-8 col-md-6 col-12 labtest scrollbar-right">
 <div class="__testbtn"> CBC </div>  <div class="__testbtn"> ECG </div> 
 <div class="__testbtn"> ESR </div> <div class="__testbtn"> SGPT </div> 
 <div class="__testbtn"> 2D Echo </div> <div class="__testbtn"> ECG </div> <div class="__testbtn"> ESR </div>
-           
-  </div>
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+           </div>
+
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
   <label class="form-check-label" for="inlineRadio1"> Part Of Plan </label>
 </div>
@@ -809,15 +810,15 @@
   <label class="form-check-label" for="inlineRadio3"> No </label>
 </div> 
 </div>
-<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
 <label for="exampleFormControlInput1" class="form-label"> Capping Amount </label>
          <input type="text" class="form-control" placeholder="Capping Limit (in Rs.)"  />
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
 <label for="exampleFormControlInput1" class="form-label"> Per Transaction Limit </label>
          <input type="text" class="form-control" placeholder="Amount Limit (in Rupees)"  />
           </div>
-          <div class="col-xl-12 col-lg-12 col-md-12 col-12 pt-2">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
   <label class="form-check-label" for="inlineRadio1"> Frequency </label>
 </div>
@@ -830,14 +831,14 @@
   <label class="form-check-label" for="inlineRadio3"> Monthly </label>
 </div> 
 </div>
-<div class="col-xl-4 col-lg-4 col-md-6 col-12">
+<div class="col-xl-4 col-lg-4 col-md-6 col-12 coltopspace">
 <label for="exampleFormControlInput1" class="form-label"> Frequency Limit </label>
          <input type="text" class="form-control" placeholder="Amount Limit (in Rupees)"  />
           </div>
           <div class="col-xl-8 col-lg-8 col-md-8 col-12 pt-5">
 <button class="addmore__btn"> Add More </button>
   </div>
-  <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12 coltopspace">
   <div class="form-check form-check-inline ps-0">
   <label class="form-check-label" for="inlineRadio1"> Provider / Vendor Mapping </label>
 </div>
@@ -1825,8 +1826,8 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 <script src="js/custom.js"></script>
 <script>
@@ -1850,8 +1851,6 @@ $("#payperuse").click(function(){
 
  });
 
-
-
 $(document).ready(function(){
     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
         removeItemButton: true,
@@ -1862,42 +1861,81 @@ $(document).ready(function(){
      
      
  });
-
-
-
-
 </script>
 
 
   <script>
   $( function() {
     var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      "Fasting Blood Sugar",
+      "Sugar",
+      "CBC",
+      "2D Echo",
+       "ECG",
+      "ESR",
+      "Lipid Profile",
+      "SGPT",
+      "BUN",
+      "Chlorides",
+      "HBA1c",
+      "HDL Cholestral",
+      "HIV Elisa",
+      "LDL Cholestral",
+      "Liver Function Test",
+      "Pap Smear",
+      "Potassium",
+      "Renal Function Test",
+      "Serum Albumin",
+      "Serum Cholestral",
+       "SGOT"
     ];
-    $( "#tags" ).autocomplete({
+    $( "#sku1" ).autocomplete({
       source: availableTags
     });
+   $( "#sku2" ).autocomplete({
+      source: availableTags
+    });
+
+      $( "#sku3" ).autocomplete({
+      source: availableTags
+    });
+
+         $( "#sku4" ).autocomplete({
+      source: availableTags
+    });
+
+             $( "#sku5" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku6" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku7" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku8" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku9" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku10" ).autocomplete({
+      source: availableTags
+    });
+
+
+
+
   } );
 
 </script>

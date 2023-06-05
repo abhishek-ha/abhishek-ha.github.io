@@ -1,6 +1,6 @@
 body{
     background-color: transparent;
-
+   font-family: 'DM Sans', sans-serif;
 }
 .plancreationhead{
     font-size: 20px;
@@ -42,6 +42,29 @@ body{
     overflow-anchor: none;
     transition: var(--bs-accordion-transition);
 }
+.planedited .accordion-button::after {
+    flex-shrink: 0;
+    margin-left: auto;
+    content: "Edit";
+    font-family: 'DM Sans', sans-serif;
+    position: absolute;
+    text-transform: capitalize!important;
+    top: 14px;
+    right: 30px;
+    text-decoration: underline;
+    color: #104D89;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 16px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+
+
+
 .accordion-button::after {
     flex-shrink: 0;
     margin-left: auto;
@@ -54,6 +77,7 @@ body{
     z-index: 1;
     font-weight: 500;
     font-size: 20px;
+    text-decoration: none;
    background-image: none;
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
@@ -70,6 +94,7 @@ body{
     font-weight: 500;
     font-size: 20px;
     background-image: none;
+    text-decoration: none;
 }
 .close_button{
     display: flex;
@@ -104,6 +129,10 @@ body{
 .planrefactor .secseprator{
     margin-top: 34px;
 }
+.coltopspace{
+padding-top: 15px;
+}
+
 .planrefactor .form-label{
     font-size: 14px!important;
     font-weight: 600!important;
@@ -151,7 +180,14 @@ body{
     color: #cccccc;
     font-size: 14px;
 }
-
+.planrefactor .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    border: 1px solid #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
 .planrefactor .searchsku{
     padding: 0.375rem 0.75rem;
     border: none;
@@ -161,8 +197,6 @@ body{
     font-size: 14px;
     border-bottom: 1px solid #f5f5f5;
 }
-
-
 .searchsku_inputgroup {
     display: flex;
     align-items: center;
@@ -177,9 +211,6 @@ body{
     border: none!important;
     border-radius: var(--bs-border-radius);
 }
-
-
-
 .planrefactor .heading{
     font-size: 17px;
     line-height: 25px;
@@ -337,7 +368,7 @@ body{
     color: #668db4;
    display: flex;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     padding: 2px 20px;
     margin: 5px;
@@ -348,7 +379,6 @@ body{
     margin-top: 7px;
     cursor: pointer;
 }
-
 .labtest {
 /*    background-color: #f5f5f5;*/
     width: 97%;
@@ -616,7 +646,6 @@ position: relative;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     appearance: none;
     border: 1px solid rgba(16, 77, 137, 0.1);
- 
 }
 .clientmaster .form-control {
     border: none;
@@ -917,7 +946,7 @@ input[type=file] {
             cursor: pointer;
             padding: 10px 0;
         }
-        .content {
+.content {
             position: relative;
             font-size: 14px;
             text-align: justify;
@@ -997,7 +1026,7 @@ input[type=file] {
   font-size: 15px;
   letter-spacing: 0.01em;
   cursor: pointer;
-color: #D3DCE6;
+  color: #D3DCE6;
 }
 .definebuckit_accordian li h3:after {
  content: "\f078";
@@ -1016,6 +1045,7 @@ font-family: "FontAwesome";
   margin: 0;
   padding: 0;
   cursor: pointer;
+
 }
 .definebuckit_accordian li div.answer p {
   position: relative;
@@ -1030,6 +1060,7 @@ font-family: "FontAwesome";
 /*define bucket tabs*/
 .answer div{
     border-bottom: 1px solid #f9f9f9;
+
 }
 .answer div a{
     float: left;
@@ -1038,6 +1069,7 @@ font-family: "FontAwesome";
     padding: 10px 20px;
     font-weight: 600;
     text-decoration: none;
+
 }
 .faq-drawer__content-wrapper {
   line-height: 1.4em;
@@ -1055,7 +1087,6 @@ font-family: "FontAwesome";
   margin-bottom: 10px;
   transition: all 0.25s ease-out;
   color: #c7c7c7;
-
 }
 .faq-drawer__title::after {
   border-style: solid;
@@ -1096,7 +1127,6 @@ input[type="checkbox"] {
     margin-right: 2px;
     padding-top: 5px;
 }
-
 .definebucket_leftsidetest{
    display: flex;
    width: 100%;
@@ -1105,8 +1135,6 @@ input[type="checkbox"] {
 .definebucket_leftsidetest div{
     float: left;
 } 
-
-
 .choices__input{
 background-color: #ffffff;  
 margin-bottom: 0px;  
@@ -1117,7 +1145,6 @@ padding: 0px 0px 0px 2px;
    padding: 0.375rem 0.75rem;
    min-height: auto;
 }
-
 .addbucket_btn{
     background-color: transparent;
     color: #104D89;
@@ -1125,13 +1152,8 @@ padding: 0px 0px 0px 2px;
     font-weight: 600;
     padding: 10px 15px 10px 15px;
 }
-
 .activetest{
     border-bottom: 2px solid #104D89;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 16px!important;
+    font-weight: 600!important;
 }
-
-
-
-
