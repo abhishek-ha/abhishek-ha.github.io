@@ -1226,9 +1226,6 @@ padding: 0px 0px 0px 2px;
     font-size: 16px!important;
     font-weight: 600!important;
 }
-
-
-
 /*Check box*/
 input[type="checkbox"] + .label-text:before{
     content: "\f096";
@@ -1248,18 +1245,45 @@ input[type="checkbox"] + .label-text:before{
     background-color: #e8eef4;
     border: none;
 }
-
 input[type="checkbox"]:checked + .label-text:before{
     content: "\f14a";
     color: #2980b9;
     animation: effect 250ms ease-in;
 }
-
 input[type="checkbox"]:disabled + .label-text{
     color: #aaa;
 }
-
 input[type="checkbox"]:disabled + .label-text:before{
     content: "\f0c8";
     color: #ccc;
 }
+.choices__list--multiple .choices__item {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 3.75px;
+    margin-bottom: 3.75px;
+    background-color: #d7e0e8;
+    border: 1px solid  #d7e0e8;
+    color: #668db4;
+    word-break: break-all;
+}
+
+.choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+     content: "\f00d";
+    font-family: "FontAwesome";
+    position: relative;
+    top: 0px;
+    right: 5px;
+    left: 5px;
+    color: #668db4!important;
+    z-index: 1;
+    cursor: pointer;
+   /*background-image: none;*/
+  }
+
+
+
