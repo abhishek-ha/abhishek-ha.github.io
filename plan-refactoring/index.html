@@ -497,12 +497,14 @@
             <a href="javascript:void(0);" id="package"> Package </a>
   </div>
   <div class="testbox"> 
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest mb-2">
-<div class="testdeselected"> CBC </div>  <div class="testselected"> ECG </div> <div class="testdeselected"> ESR </div> <div class="testselected"> SGPT </div> <div class="testselected"> 2D Echo </div> <div class="testselected"> 2D Echo </div> <div class="testselected"> 2D Echo </div> 
+<div class="col-xl-12 col-lg-12 col-md-12 col-12  mb-2">
+<div class="testdeselected"> CBC </div>  
+<div class="testselected"> ECG </div> <div class="testdeselected"> ESR </div> 
+<div class="testselected"> SGPT </div> <div class="testselected"> 2D Echo </div> <div class="testselected"> 2D Echo </div> <div class="testselected"> 2D Echo </div> 
 <div class="testdeselected"> Lipid Profile </div> 
 
 </div>
-<div class="definebucket_leftsidetest">
+<div class="definebucket_leftsidetest pt-3">
   <div>
 
  <div class="form-check">
@@ -520,13 +522,16 @@
 
   </div>
 <div class="scanbox" style="display: none;">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest mb-2">
-<div class="testselected"> Fasting Blood Sugar </div> <div class="testdeselected"> CBC </div>  <div class="testselected"> ECG </div> <div class="testdeselected"> ESR </div> <div class="testselected"> SGPT </div> <div class="testselected"> 2D Echo </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12 mb-2">
+<div class="testselected"> Fasting Blood Sugar </div> 
+<div class="testdeselected"> CBC </div>  <div class="testselected"> ECG </div> <div class="testdeselected"> ESR </div> <div class="testselected"> SGPT </div> <div class="testselected"> 2D Echo </div>
   </div>
 </div>
    <div class="packagebox" style="display: none;">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-12 labtest mb-2">
-<div class="testdeselected"> Fasting Blood Sugar </div> <div class="testdeselected"> CBC </div>  <div class="testselected"> ECG </div> <div class="testdeselected"> ESR </div> <div class="testselected"> SGPT </div> <div class="testdeselected"> 2D Echo </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12  mb-2">
+<div class="testdeselected"> Fasting Blood Sugar </div> 
+<div class="testdeselected"> CBC </div>  <div class="testselected"> ECG </div> 
+<div class="testdeselected"> ESR </div> <div class="testselected"> SGPT </div> <div class="testdeselected"> 2D Echo </div>
   </div>
 </div>
 
@@ -1307,9 +1312,20 @@
          <h4> Waiting Period </h4>
       <div class="row ruleengine_card">
         <div class="col-lg-4 col-md-4 col-12">
-          <div class="labtest">
+ <select id="choices-multiple-remove-button" placeholder="Select Multiple Relation" multiple>
+            <option value="Husband"> Husband </option>
+            <option value="Wife"> Wife </option>
+            <option value="Brother"> Brother </option>
+            <option value="Father"> Father </option>
+            <option value="Mother"> Mother </option>
+            <option value="Sister"> Sister </option>
+            <option value="Son"> Son  </option>
+        </select>
+
+          
+         <!--  <div class="labtest">
     <div class="__testbtn"> Bucket 1 </div> <div class="__testbtn"> Bucket 2 </div>  <div class="__testbtn"> Bucket 3 </div> 
-   </div>
+   </div> -->
         </div>
         <div class="col-lg-2 col-md-2 col-12">
         <label class="form-label"> Time Period </label>
@@ -1334,10 +1350,15 @@
          <h4> Number Of Transaction Limit </h4>
       <div class="row ruleengine_card">
         <div class="col-lg-4 col-md-4 col-12">
-         <div class="labtest">
-    <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div> 
-    <div class="__testbtn"> ESR </div> 
-   </div>
+        <select id="choices-multiple-remove-button" placeholder="Select Multiple Relation" multiple>
+            <option value="Husband"> Husband </option>
+            <option value="Wife"> Wife </option>
+            <option value="Brother"> Brother </option>
+            <option value="Father"> Father </option>
+            <option value="Mother"> Mother </option>
+            <option value="Sister"> Sister </option>
+            <option value="Son"> Son  </option>
+        </select>
         </div>
         <div class="col-lg-2 col-md-2 col-12">
         <label class="form-label"> Time Period </label>
@@ -1370,10 +1391,15 @@
          <h4> Per Transaction Limit </h4>
       <div class="row ruleengine_card">
         <div class="col-lg-4 col-md-4 col-12">
-           <div class="labtest">
-    <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div> 
-    <div class="__testbtn"> ESR </div> 
-   </div>
+    <select id="choices-multiple-remove-button" placeholder="Select Multiple Relation" multiple>
+            <option value="Husband"> Husband </option>
+            <option value="Wife"> Wife </option>
+            <option value="Brother"> Brother </option>
+            <option value="Father"> Father </option>
+            <option value="Mother"> Mother </option>
+            <option value="Sister"> Sister </option>
+            <option value="Son"> Son  </option>
+        </select>
         </div>
         <div class="col-lg-3 col-md-2 col-12">
         <label class="form-label"> Enter Amount (in Rupees) </label>
@@ -1405,10 +1431,15 @@
          <h4> Amount Capping In A Given Time Period </h4>
       <div class="row ruleengine_card">
         <div class="col-lg-4 col-md-4 col-12">
-        <div class="labtest">
-    <div class="__testbtn"> CBC </div> <div class="__testbtn"> ECG </div> 
-    <div class="__testbtn"> ESR </div> 
-   </div>
+ <select id="choices-multiple-remove-button" placeholder="Select Multiple Relation" multiple>
+            <option value="Husband"> Husband </option>
+            <option value="Wife"> Wife </option>
+            <option value="Brother"> Brother </option>
+            <option value="Father"> Father </option>
+            <option value="Mother"> Mother </option>
+            <option value="Sister"> Sister </option>
+            <option value="Son"> Son  </option>
+        </select>
         </div>
         <div class="col-lg-2 col-md-2 col-12">
         <label class="form-label"> Time Period </label>
