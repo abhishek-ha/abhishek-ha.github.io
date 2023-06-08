@@ -1177,7 +1177,8 @@ font-family: "FontAwesome";
   transition: 0.25s ease-in-out;
 }
 input[type="checkbox"] {
-  display: none;
+/*  display: none;*/
+  float:left;
 }
 .definebucket_leftside{
     background-color: #ffffff;
