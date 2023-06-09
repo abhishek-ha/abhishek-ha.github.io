@@ -1176,10 +1176,17 @@ font-family: "FontAwesome";
   transform: rotate(-45deg);
   transition: 0.25s ease-in-out;
 }
-input[type="checkbox"] {
-/*  display: none;*/
-  float:left;
+.faq-drawer input[type="checkbox"] {
+display: none;
 }
+.diagnostic_checkbox input[type="checkbox"] {
+display: block;
+float: left;
+margin-top: 4px;
+margin-right: 2px;
+}
+
+
 .definebucket_leftside{
     background-color: #ffffff;
    margin-left: 2px;
