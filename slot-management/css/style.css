@@ -1,7 +1,11 @@
+body{
+    background-color: transparent;
+   font-family: 'DM Sans', sans-serif;
+}
 .slot_management .days{
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+    margin-top: 50px;
 }
 .slot_management .days .btndayselected{
 	background-color: #3498db;
@@ -131,7 +135,7 @@ border: none;
 	font-weight: 600;
 }
 .slottable td{
-	font-size: 14px;	
+	font-size: 13px;	
 }
 .slot_managementpopup{
 	border-radius: 10px;
@@ -142,17 +146,13 @@ border: none;
 	margin: auto;
 	text-align: center;
 }
-
 .slot_managementpopup .modal-content .modal-header{
 	border: none;
 }
-
-
 .slot_managementpopup .modal-content .modal-body h3{
 	font-size: 20px;
 	margin-top: 20px;
 }
-
 .slot_managementpopup .modal-content .modal-body p{
 	font-size: 16px;
 	font-weight: 600;
