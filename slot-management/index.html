@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Slot Management </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<section class="slot_management">
+	<div class="container pt-5">
+		<div class="row">
+			<h4 class="text-center"> Day's of Week </h4>
+			<div class="col-xl-12 col-lg-12 col-md-12 col-12 days">
+<button class="btn btndayselected"> Mon </button> <button class="btn btndaydeselected"> Tue </button> <button class="btn btndaydeselected"> Wes </button> <button class="btn btndaydeselected"> Thur </button> <button class="btn btndaydeselected"> Fri </button>   <button class="btn btndaydeselected"> Sat </button> <button class="btn btndaydeselected"> Sun </button>
+	</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+<div class="input-group input-form mb-3 mt-3">
+  <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
+ <span class="input-group-text" id="basic-addon2"> <i class="fa-regular fa-clock"></i></span>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 ">
+	<div class="time">
+<button class="btn timeselected"> 9:00 AM </button> <button class="btn timedeselected"> 9:30 AM </button> <button class="btn timedeselected"> 10:00 AM </button> <button class="btn timedeselected"> 10:30 AM </button> <button class="btn timedeselected"> 11:00 AM </button><button class="btn timedeselected"> 11:30 AM </button> <button class="btn timedeselected"> 12:00 AM </button> <button class="btn timeselected"> 12:30 PM </button> <button class="btn timedeselected"> 1:00 PM </button> <button class="btn timedeselected"> 1:30 PM </button> <button class="btn timedeselected"> 2:00 PM </button> <button class="btn timedeselected"> 2:30 PM </button> <button class="btn timeselected"> 3:00 PM </button> <button class="btn timedeselected"> 3:30 AM </button> <button class="btn timedeselected"> 4:00 AM </button> <button class="btn timedeselected"> 4:30 PM </button> <button class="btn timedeselected"> 5:00 PM </button> <button class="btn timedeselected"> 5:30 PM </button> <button class="btn timedeselected"> 6:00 PM </button> <button class="btn timedeselected"> 6:30 PM </button>
+<button class="btn timedeselected"> 7:00 PM </button>
+<button class="btn timedeselected"> 7:30 AM </button>
+<button class="btn timedeselected"> 9:00 AM </button>
+<button class="btn timedeselected"> 9:00 AM </button>
+</div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 bottom_button">
+	<button class="btn slotbtn" data-bs-toggle="modal" data-bs-target="#exampleModal" > Save </button> <button class="btn slotbtn"> View Mapped Slot </button> <button class="btn slotbtnexit"> Exit </button>
+	</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 my-5 slottable">
+	<table class="table table-bordered table-responsive table-hover">
+  <thead >
+    <tr class="table-primary">
+      <th scope="col"> Date </th>
+      <th scope="col"> Sun</th>
+      <th scope="col"> Mon</th>
+      <th scope="col"> Tues</th>
+        <th scope="col"> Wed </th>
+      <th scope="col"> Thur </th>
+      <th scope="col"> Fri </th>
+         <th scope="col"> Sat </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>04-06-2023</td>
+      <td> 6:30 PM to 7:00 PM </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> 8:00 PM to 8:30 PM </td>
+       <td> </td>
+    </tr>
+    <tr>
+      <td>05-06-2023</td>
+      <td> </td>
+      <td>2:00 PM to 2:30 PM </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> 8:00 PM to 8:30 PM </td>
+       <td> </td>
+    </tr>
+
+    <tr>
+      <td>06-06-2023</td>
+      <td> 6:30 PM to 7:00 PM </td>
+      <td> </td>
+      <td>9:00 AM to 9:30 AM </td>
+      <td> 8:00 PM to 8:30 PM </td>
+      <td> </td>
+      <td>  </td>
+       <td> </td>
+    </tr>
+
+    <tr>
+      <td>07-06-2023</td>
+      <td> 6:30 PM to 7:00 PM </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> 8:00 PM to 8:30 PM </td>
+      <td>  </td>
+       <td> </td>
+    </tr>
+
+    <tr>
+      <td>08-06-2023</td>
+      <td> </td>
+      <td> 6:30 PM to 7:00 PM  </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>  </td>
+       <td> 8:00 PM to 8:30 PM </td>
+    </tr>
+   </tbody>
+</table>
+	</div>
+  </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog slot_managementpopup">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="images/check.png">
+      <h3> Success </h3>
+      <p> Your  Slot Saved Successfully </p>
+      </div>
+      </div>
+  
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
