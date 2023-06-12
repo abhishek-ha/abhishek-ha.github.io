@@ -477,15 +477,15 @@
   	<div class="row definebucket_leftside">
   		<div class="col-xl-12 col-lg-12 col-md-12 col-12 border-bottom">
   		 <div class="input-group">
-  <input type="text" class="form-control searchsku" placeholder="Search SKU"  />
+  <input type="text" class="form-control searchsku" id="sku11" placeholder="Search SKU"  />
 <span class="input-group-text searchsku_inputgroup">
-    <img src="images/search-icon.png" alt="search icon"  />   </span>
+    <img src="images/search-icon.png" alt="search icon"/>   </span>
 </div>	
   		</div>
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
   <div class="faq-drawer">
       <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" />
-      <label class="faq-drawer__title" for="faq-drawer"><span class="diagnostic_checkbox"><input type="checkbox" name="">  </span>  Diagnostic      
+      <label class="faq-drawer__title" for="faq-drawer"> Diagnostic      
   </label> 
       <div class="faq-drawer__content-wrapper">
         <div class="faq-drawer__content">
@@ -1983,6 +1983,10 @@ $(document).ready(function(){
 
 
     $( "#sku10" ).autocomplete({
+      source: availableTags
+    });
+
+      $( "#sku11" ).autocomplete({
       source: availableTags
     });
 
