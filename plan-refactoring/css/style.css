@@ -1201,6 +1201,15 @@ margin-top: 10px;
 margin-right: 6px;
 }
 
+.definebucket_leftsidetest input[type="checkbox"] {
+display: block;
+float: left;
+margin-top: 2px;
+margin-right: 6px;
+}
+ 
+
+
 /*.diagnostic_checkbox input[type="checkbox"] {
 display: block;
 float: left;
