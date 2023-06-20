@@ -1,0 +1,349 @@
+body{
+   overflow-x:hidden;
+font-size: 14px;
+}
+html{
+     overflow-x:hidden;
+}
+.box_design .col-form-label{
+    font-weight: 600;
+}
+.book_appoinment{
+    background-color: #004182;
+    color: #ffffff;
+    border: 1px solid #004182;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.book_appoinment:hover{
+      background-color: #004182;
+    color: #ffffff;
+    border: 1px solid #004182;
+}
+.appoinment_cancel{
+     background-color: #FF0000;
+       border-radius: 2px;
+       color: #ffffff;
+       border: 1px solid #FF0000;
+       margin-left: 20px;
+       font-weight: 600;
+         margin-top: 15px;
+}
+.appoinment_cancel:hover{
+       background-color: #FF0000;
+       border-radius: 2px;
+         color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+.box_design{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    margin:5% 10%;
+    padding:20px;
+    background-color: #cadeeb;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+
+}
+.box_design .decline_img img{
+    width: 100px;
+    margin: auto;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+}
+
+
+
+@media only screen and (min-width: 301px) {
+.box_design{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    margin:20px 10px;
+    padding:20px;
+    background-color: #ebf2f7;
+    border-radius: 5px;
+}
+.box_design table{
+    text-align: center;
+}
+.box_design table td{
+    padding-bottom: 5px;
+    padding-top: 12px;
+    font-size: 13px;
+}
+.box_design table td .dropdown{
+    margin-top: -10px;
+}
+.box_design table td .addressbox{
+    padding: 10px;
+}
+.box_design table td .addressbox h5{
+    font-size: 18px;
+}
+.box_design table td .addressbox p{
+    font-size: 14px;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+
+}
+.box_design .decline_img img{
+    width: 150px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+     cursor: pointer;
+}
+}
+
+
+@media only screen and (min-width: 350px) {
+.box_design{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    margin:50px 10px 50px 10px;
+    padding:20px;
+    background-color: #ebf2f7;
+    border-radius: 5px;
+}
+.box_design table{
+    text-align: center;
+}
+.box_design table td{
+    padding-bottom: 5px;
+    padding-top: 12px;
+    font-size: 13px;
+}
+.box_design table td .dropdown{
+    margin-top: -10px;
+}
+.box_design table td .addressbox{
+    padding: 10px;
+}
+.box_design table td .addressbox h5{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.box_design table td .addressbox p{
+    font-size: 14px;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+}
+.box_design .decline_img img{
+    width: 190px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+}
+}
+
+
+
+@media only screen and (min-width: 400px) {
+.box_design{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    margin:50px 10px 50px 10px;
+    padding:20px;
+    background-color: #ebf2f7;
+    border-radius: 5px;
+}
+.box_design table{
+    text-align: center;
+}
+.box_design table td{
+    padding-bottom: 5px;
+    padding-top: 12px;
+    font-size: 13px;
+}
+.box_design table td .dropdown{
+    margin-top: -10px;
+}
+.box_design table td .addressbox{
+    padding: 10px;
+}
+.box_design table td .addressbox h5{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.box_design table td .addressbox p{
+    font-size: 14px;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+}
+.box_design .decline_img img{
+    width: 190px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 700px) {
+.box_design{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    padding:20px;
+    background-color: #ebf2f7;
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box_design table{
+    text-align: center;
+}
+.box_design table td{
+    padding-bottom: 5px;
+    padding-top: 12px;
+    font-size: 14px;
+}
+.box_design table td .dropdown{
+    margin-top: -10px;
+}
+.box_design table td .addressbox{
+    padding: 10px;
+}
+.box_design table td .addressbox h5{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.box_design table td .addressbox p{
+    font-size: 14px;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+}
+.box_design .decline_img img{
+    width: 190px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+}
+}
+
+
+@media only screen and (min-width: 1000px) {
+.box_design{
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    padding:20px;
+    background-color: #ebf2f7;
+    border-radius: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.box_design table{
+    text-align: center;
+}
+.box_design table td{
+    padding-bottom: 5px;
+    padding-top: 12px;
+    font-size: 14px;
+}
+.box_design table td .dropdown{
+    margin-top: -10px;
+}
+.box_design table td .addressbox{
+    padding: 10px;
+}
+.box_design table td .addressbox h5{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.box_design table td .addressbox p{
+    font-size: 14px;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+.box_design p span {
+    font-weight: 600;
+}
+.box_design .decline_img img{
+    width: 190px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+.location_icon{
+    width: 18px;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+.box_design{
+ box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    padding:20px;
+    width: 50%;
+    margin: auto;
+}
+.box_design p{
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+.box_design p span {
+    font-weight: 600;
+}
+.box_design .decline_img img{
+    width: 190px;
+}
+}
+
+
+@media only screen and (min-width: 1300px) {
+.box_design{
+ box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    padding:20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+}
+
+
