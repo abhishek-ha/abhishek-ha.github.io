@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title> Plan Refactoring </title>
+
+<style type="text/css">
+  .amount_box{
+    display: flex;
+   
+  }
+
+  .amount_box div{
+  margin: 10px;
+   position: relative;
+  }
+
+  .amount_box div .iconselected{
+    font-size: 22px;
+       padding: 15px 18px;
+    color: #104D89;
+      border: 1px solid #104D89;
+       border-radius: 4px;
+       cursor: pointer;
+  }
+
+.amount_box div .selected_check{
+  font-size: 14px;
+    color: #104D89;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.amount_box div p{
+  font-size: 11px;
+   color: #104D89;
+   font-weight: 600;
+   text-align: center;
+   margin-top: -16px;
+}
+
+
+   .amount_box div .icondeselected{
+    font-size: 22px;
+     padding: 15px 18px;
+    color: #000000;
+    border: 1px solid #000000;
+     border-radius: 4px;
+      cursor: pointer;
+  }
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12 amount_box">
+        <div>
+          <i class="fa-solid fa-circle-check selected_check"></i>
+         <i class="fa-solid fa-house iconselected"></i> 
+         <p> Credit </p>
+        </div>
+
+         <div>
+         <i class="fa-solid fa-house icondeselected"></i> 
+        </div>
+         <div>
+         <i class="fa-solid fa-house icondeselected"></i> 
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+
+</section>
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+<script src="js/custom.js"></script>
+<script>
+$(document).ready(function(){
+$("#credit").click(function(){
+    $(".creditbox").show();
+     $(".walletbox").hide();
+      $(".payperusebox").hide();
+  });
+$("#wallet").click(function(){
+   $(".creditbox").hide();
+     $(".walletbox").show();
+      $(".payperusebox").hide();
+  });
+
+$("#payperuse").click(function(){
+   $(".creditbox").hide();
+     $(".walletbox").hide();
+      $(".payperusebox").show();
+  });
+
+ });
+
+$(document).ready(function(){
+    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount:8,
+        searchResultLimit:8,
+        renderChoiceLimit:8
+      }); 
+     
+     
+ });
+</script>
+
+
+  <script>
+  $( function() {
+    var availableTags = [
+      "Fasting Blood Sugar",
+      "Sugar",
+      "CBC",
+      "2D Echo",
+       "ECG",
+      "ESR",
+      "Lipid Profile",
+      "SGPT",
+      "BUN",
+      "Chlorides",
+      "HBA1c",
+      "HDL Cholestral",
+      "HIV Elisa",
+      "LDL Cholestral",
+      "Liver Function Test",
+      "Pap Smear",
+      "Potassium",
+      "Renal Function Test",
+      "Serum Albumin",
+      "Serum Cholestral",
+       "SGOT"
+    ];
+    $( "#sku1" ).autocomplete({
+      source: availableTags
+    });
+   $( "#sku2" ).autocomplete({
+      source: availableTags
+    });
+
+      $( "#sku3" ).autocomplete({
+      source: availableTags
+    });
+
+         $( "#sku4" ).autocomplete({
+      source: availableTags
+    });
+
+             $( "#sku5" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku6" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku7" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku8" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku9" ).autocomplete({
+      source: availableTags
+    });
+
+
+    $( "#sku10" ).autocomplete({
+      source: availableTags
+    });
+
+      $( "#sku11" ).autocomplete({
+      source: availableTags
+    });
+
+
+
+
+  } );
+
+</script>
+
+
+
+
+</body>
+</html>
