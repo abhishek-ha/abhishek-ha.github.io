@@ -1,3 +1,18 @@
+body {
+  /* font-size: 1.6rem; */
+  background-color: #f5f6fa !important;
+  margin: 0;
+ font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .graph-filter {
   display: flex;
   gap: 10px;
@@ -151,12 +166,12 @@ height: 260px;
 .clientdash_tbl .form-check-input[type=checkbox] {
   background-color: #e6ecf1;
    width: 16px;
-  height: 15px;
+  height: 16px;
 }
 
 .clientdash_tbl .form-check-input:checked {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #5157a0;
+    border-color: #5157a0;
 }
 
 
@@ -176,6 +191,7 @@ height: 260px;
 }
 .clientdash_tbl td a{
   color: #505a9e;
+  font-weight: 700;
 }
 .clientdash_modal .modal-header{
   background-color: #e7ecf2;
@@ -207,9 +223,8 @@ height: 260px;
 
 
 
-
 .search_section{
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .search_box{
@@ -300,20 +315,13 @@ padding: 0px 0px 15px 0px;
   background-color: #5157a0;
   color: #ffffff;
    border-radius: 4px;
-   padding: 14px;
+   padding: 14px 20px;
    float: right;
 }
 .btn_adduser:hover{
    background-color: #5157a0;
   color: #ffffff;
 }
-
-
-
-
-
-
-
 
 
 
