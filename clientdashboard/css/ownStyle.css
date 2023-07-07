@@ -143,6 +143,11 @@ height: 260px;
 }
 
 
+.sec_right{
+  display: grid;
+  justify-content: end;
+}
+
 
 
 
@@ -186,21 +191,19 @@ height: 260px;
     background-color: #5157a0;
     border-color: #5157a0;
 }
-
-
 .clientdash_tbl .form-check-input:focus {
     border-color: #86b7fe;
     outline: 0;
     box-shadow: none;
 }
-
 .clientdash_tbl th{
-  font-size: 16px;
+  font-size: 15px;
 }
 .clientdash_tbl td{
   font-size: 14px;
   font-weight: 500;
   color: #cbcbcb;
+/*min-width: 120px;*/
 }
 .clientdash_tbl td a{
   color: #505a9e;
@@ -237,15 +240,15 @@ height: 260px;
 
 .clientdash_registeration .form-control::-webkit-input-placeholder { 
   color: #b8bee8;
-  font-weight: 600;
+  font-weight: 400;
 }
 .clientdash_registeration .form-control:-ms-input-placeholder {
   color: #b8bee8;
-   font-weight: 600;
+   font-weight: 400;
 }
 .clientdash_registeration .form-control::placeholder {
    color: #b8bee8;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .search_section{
@@ -270,28 +273,23 @@ height: 260px;
 }
 .search_form .form-control::-webkit-input-placeholder { 
   color: #b8bee8;
-  font-weight: 600;
+  font-weight: 400;
 }
 .search_form .form-control:-ms-input-placeholder {
   color: #b8bee8;
-   font-weight: 600;
+   font-weight: 400;
 }
 .search_form .form-control::placeholder {
    color: #b8bee8;
-    font-weight: 600;
+    font-weight: 400;
 }
-
-
-
-
-
 .download_button{
   background-color: #5157a0;
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
   border-radius: 4px;
-  margin-top: 30px;
+  margin-top: 15px;
      padding: 8px 8px;
   float: right;
 }

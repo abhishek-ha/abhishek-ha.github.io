@@ -174,47 +174,67 @@
                                 <th> Name </th>
                                 <th> Employee ID </th>
                                 <th> Email</th>
+                                <th> Appoinment Completed </th>
                            </tr>
                         </thead>
                         <tbody>
                             <tr>
                   <td> <input class="form-check-input" type="checkbox" > </td>
-                            	<td class="date">01 January 2023 </td>
-                   <td ><a href="#"> Sameer Ale </a></td>
+                            	<td>01 January 2023 </td>
+                   <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Sameer Ale </a></td>
                                 <td> HA20125 </td>
-                                <td>sameer.ale@healthassure.in</td>
+                                <td>xxxxxx@gmail.com</td>
+                                <td> 25 </td>
   </tr>
 <tr>
   <td> <input class="form-check-input" type="checkbox" > </td>
     <td >01 January 2023 </td>
-    <td ><a href="#" > Manoj Singh </a></td>
+    <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Manoj Singh </a></td>
         <td> HA20125 </td>
-    <td>sameer.ale@healthassure.in</td>
+     <td>xxxxxx@gmail.com</td>
+    <td> 07 </td>
   </tr>
 
    <tr>
     <td> <input class="form-check-input" type="checkbox" > </td>
         <td class="date">01 January 2023 </td>
-        <td><a href="#"> Rajkumar Yadav </a></td>
+        <td><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Rajkumar Yadav </a></td>
               <td> HA20125 </td>
-          <td>sameer.ale@healthassure.in</td>
+           <td>xxxxxx@gmail.com</td>
+          <td> 72 </td>
   </tr>
  <tr>
     <td> <input class="form-check-input" type="checkbox" > </td>
                             	<td>01 January 2023 </td>
-                <td ><a href="#" > Rahul </a></td>
+                <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Rahul </a></td>
                                 <td> HA20125 </td>
-                                <td>sameer.ale@healthassure.in</td>
+                               <td>xxxxxx@gmail.com</td>
+                                <td> 15 </td>
   </tr>
  </tbody>
                     </table>
-<div class="float-end pt-5">
-  <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download Selected </button>
-  </div>
- </div>
+                     <div class="sec_right">
+                               <nav aria-label="Page navigation float-right">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-right"></i> </a></li>
+  </ul>
+</nav>   
+                                </div>
+<div>
+  <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download Selected </button>
+</div>
+
+</div>
                 <!--Table Ends Here-->
 
           </div>
+
+
+
         </div>
         <div class="_dashboard_Sidebar">
           <div class="_dashboard_scroller">
@@ -255,7 +275,7 @@
 <button class="btn button_primary" type="button" >
                   <i class="fa fa-download"></i>&nbsp; Download
                 </button>
-                <button class="btn button_primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button class="btn button_primary" type="button" >
                  <i class="fa-regular fa-eye"></i> &nbsp; View Stats
                 </button>
 
@@ -441,11 +461,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="appoinmentModal" tabindex="-1" aria-labelledby="appoinmentModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title " id="exampleModalLabel"> Appoinment Detail </h5>
+        <h5 class="modal-title " id="appoinmentModalLabel"> Appoinment Detail </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
      <div class="modal-body">
@@ -473,6 +493,7 @@
                                         <thead>
                                             <tr>
                                                <th ><input class="form-check-input" type="checkbox"> </th>
+                                               <th>Appoinment ID </th>
                                                 <th > Date </th>
                                                 <th > Name </th>
                                                 <th > Employee ID </th>
@@ -484,47 +505,118 @@
                                         <tbody>
                                             <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
+                                                <td> 649 </td>
                                                 <td>11 November, 2022 </td>
                                                 <td> Sameer Ale </td>
                                                 <td> HA20125 </td>
-                                                <td> Sameer.ale@healthassure.in </td>
-                                                <td> Complete Blood Count </td>
+                                              <td> xxxxxx@gmail.com </td>
+                                                <td> CBC </td>
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
 
                                              <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
                                                 <td>11 November, 2022 </td>
                                                 <td> Sameer Ale </td>
                                                 <td> HA20125 </td>
-                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> xxxxxx@gmail.com </td>
                                                 <td> Lipid Profile </td>
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
 
                                              <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
                                                 <td>11 November, 2022 </td>
                                                 <td> Sameer Ale </td>
                                                 <td> HA20125 </td>
-                                                <td> Sameer.ale@healthassure.in </td>
+                                             <td> xxxxxx@gmail.com </td>
                                                 <td> Serum </td>
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
 
                                              <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
                                                 <td>11 November, 2022 </td>
                                                 <td> Sameer Ale </td>
                                                 <td> HA20125 </td>
-                                                <td> Sameer.ale@healthassure.in </td>
+                                               <td> xxxxxx@gmail.com </td>
                                                 <td> Abdomen Profile </td>
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
-                                       </tbody>
+
+     <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                              <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+
+                                                 <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+
+                                                 <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                                 <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                               <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                             </tbody>
                                     </table>
                                 </div>
                                 <!--Table Ends Here-->
+                                <div class="sec_right">
+                               <nav aria-label="Page navigation float-right">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-right"></i> </a></li>
+  </ul>
+</nav>   
+                                </div>
 <div>
   <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
 </div>
