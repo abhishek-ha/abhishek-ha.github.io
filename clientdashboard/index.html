@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Client Dashboard </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ownStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="top-header">
+      <div class="custom-container">
+        <div>
+          <img src="images/toplogo.png" alt="toplogo" />
+        </div>
+        <div class="profile-name">
+          <img src="images/user.png" width="40" />
+          PlanCover
+        </div>
+      </div>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars" onClick={toggleMenu}></i>
+      </div>
+      <div class="show-notification" style="display:none;">
+        <i class="fa-solid fa-bell"></i>
+        <span class="notification-count">10</span>
+      </div>
+    </div>
+
+
+
+
+
+<div class="main-section">
+       
+ <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-logo">
+        
+            <p class="image-text-logo"> Seeba Group </p>
+     
+            <img src={getClientIcon()} class="img-fluid" alt="" />
+         
+        </div>
+        <ul>
+<li> <span class="icon"> <img src="images/dashboard.png" class="img-fluid" alt="" />
+</span> <span> Dashboard </span> </li>
+<li><a href="allabout-users.html"> <span class="icon"> <img src="images/utilizationIcon.png" class="img-fluid" alt="" />
+</span> <span> All About Users </span> </a> </li>
+<li><a href="account-details.html"> <span class="icon"> <img src="images/utilizationIcon.png" class="img-fluid" alt="" />
+</span> <span> Account Details </span> </a></li>
+
+<li> <span class="icon">
+  <img src="images/logoutIcon.png" class="img-fluid" alt="" />
+            </span>
+            <span style="color: #DD0000;">Logout</span>
+          </li>
+        </ul>
+      </div>
+    
+
+
+
+<div class="right-section">
+      <div class=" _dashboard">
+        <div class="_dashboard_View">
+          <div>
+            <h1 class="clientdash_heading"> All About Users </h1>
+          </div>
+          <div class="_dashboard_View_Cards">
+            <div class="row">
+              <div class="col-lg-4 col-sm-6 mt-3">
+                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                		<p class="_card_View_Number"> 376 </p>
+                		<sup class="_yellow"></sup></div>
+                		<div class="_card_view_Title"> Users Onboarded </div>
+                	</div>
+                </div>
+
+                 <div class="col-lg-4 col-sm-6 mt-3">
+                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                		<p class="_card_View_Number"> 19 </p>
+                		<sup class="_yellow"></sup></div>
+                		<div class="_card_view_Title"> Appoinments in Transit </div>
+                	</div>
+                </div>
+
+                 <div class="col-lg-4 col-sm-6 mt-3">
+                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                		<p class="_card_View_Number"> 10 </p>
+                		<sup class="_yellow"></sup></div>
+                		<div class="_card_view_Title"> Appoinments closed </div>
+                	</div>
+                </div>
+            
+            </div>
+          </div>
+
+<div class="search_section">
+  <div class="row">
+    <div class="col-xl-9 col-lg-9 col-md-9 col-12 ">
+      <div class="search_box"> 
+      <div class="search_form">
+        <input type="text" class="form-control" name="" placeholder="Search by Name, Email ID, Employee ID">
+      </div>
+      <div>
+        <button class="btn btn_search"> Search </button>
+         <button class="btn btn_clear"> <i class="fa-solid fa-xmark"></i> Clear </button>
+      </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+      <button class="btn btn_adduser"> <i class="fa-solid fa-plus"></i> Add User </button>
+ </div>
+    
+  </div>
+
+  
+</div>
+
+
+
+<div class="_appointment_Analytics_View">
+
+<!-- Filter Ends Here -->
+                <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6 class=" mb-0">Showing 5 Results</h6>
+                    <div class="d-flex align-items-center">
+                        <span class="text-unhighlighted font-medium">Sort By</span>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listing Order
+                            </a>
+
+                            <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
+                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+     <!--Table Start Here-->
+                <div class="table-responsive clientdash_tbl">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                               <th><input type="checkbox" > </th>
+                                <th> Registration Date </th>
+                                <th> Name </th>
+                                <th> Employee ID </th>
+                                <th> Email</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            	<td> <input type="checkbox" > </td>
+                            	<td class="date">01 January 2023 </td>
+                            
+                       <td ><a href="#"> Sameer Ale </a></td>
+                                <td> HA20125 </td>
+                                <td>sameer.ale@healthassure.in</td>
+  </tr>
+
+   <tr>
+                            	<td> <input type="checkbox" > </td>
+                            	<td >01 January 2023 </td>
+                              <td ><a href="#" > Manoj Singh
+                           </a></td>
+                                <td> HA20125 </td>
+                                <td>sameer.ale@healthassure.in</td>
+  </tr>
+
+   <tr>
+                            	<td> <input type="checkbox" > </td>
+                            	<td class="date">01 January 2023 </td>
+                            
+                                <td><a href="#"> Rajkumar Yadav
+                           </a></td>
+                                <td> HA20125 </td>
+                                <td>sameer.ale@healthassure.in</td>
+  </tr>
+
+
+   <tr>
+                            	<td> <input type="checkbox" > </td>
+                            	<td>01 January 2023 </td>
+                            
+                                <td ><a href="#" > Rahul
+                           </a></td>
+                                <td> HA20125 </td>
+                                <td>sameer.ale@healthassure.in</td>
+  </tr>
+ 
+                        </tbody>
+                    </table>
+
+<div class="float-end pt-4">
+  <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download Selected </button>
+  
+</div>
+
+                </div>
+                <!--Table Ends Here-->
+
+
+
+          </div>
+        </div>
+        <div class="_dashboard_Sidebar">
+          <div class="_dashboard_scroller">
+            <div class="_download_Reports">
+              <h2 class="clientdash_heading"> Utilisation Reports</h2>
+              <div class="mb-3">
+                <label> Date </label>
+            <input type="date" class="form-control" name="">
+              </div>
+              <div>
+                <div class="mb-3">
+                  <label> Plan Name</label>
+                    <select class="form-select">
+                 	<option> All Plan </option>
+                 	<option> Male </option>
+                 	<option> Female </option>
+                 	
+                 </select>
+                 
+                 
+                </div>
+                <div class="mb-3">
+                  <label>Service Type</label>
+                 <select class="form-select">
+                 	<option> All Services </option>
+                 	<option> Select All </option>
+                 	<option> Blocked or Deleted </option>
+                 	
+                 </select>
+                </div>
+
+                  <div class="mb-3">
+                  <label> Users </label>
+                 <select class="form-select">
+                 	<option> All Users </option>
+                 	<option> Select All </option>
+                 	<option> Blocked or Deleted </option>
+                 	
+                 </select>
+                </div>
+              </div>
+              <div class="_download_Reset_Button">
+<button class="btn btn-primary" type="button" >
+                  <i class="fa fa-download"></i>&nbsp; Download
+                </button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-eye"></i> &nbsp; View Stats
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+ </div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"> Appoinment Detail </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+
+<!-- Filter Ends Here -->
+                <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6 class=" mb-0"> Showing 20 Results </h6>
+                    <div class="d-flex align-items-center">
+                        <span class="text-unhighlighted font-medium">Sort By</span>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listing Order
+                            </a>
+
+                            <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
+                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                               
+                                <!--Table Start Here-->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                               <th ><input type="checkbox"> </th>
+                                                <th > Date </th>
+                                                <th > Name </th>
+                                                <th > Employee ID </th>
+                                                <th > Email ID </th>
+                                                <th > Service </th>
+                                                <th > Report </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                         
+                                        
+                                                                               
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+
+
+<div >
+  <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
+</div>
+ </div>
+ </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

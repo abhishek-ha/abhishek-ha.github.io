@@ -1,0 +1,320 @@
+.graph-filter {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.graph-filter .select__control {
+  min-width: 180px;
+}
+
+.single-select {
+  font-size: 13px;
+  max-width: 150px;
+  padding: 0px;
+  height: 39px;
+  padding-left: 5px;
+}
+
+.resetgraphBtn {
+  margin-left: 6px;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 15px;
+  font-size: 12px;
+}
+.dropdown-heading .dropdown-heading-value span {
+  color: black !important;
+}
+
+.graph-filter .dashboard_date input {
+  font-size: 10px;
+}
+.graph-filter .dashboard_date {
+  width: 190px;
+  margin-bottom: 0px !important;
+}
+.graph-filter .dropdown-heading-value {
+  font-size: 13px;
+}
+.graph-filter .clear-selected-button {
+  align-items: center;
+}
+.graph-filter .resetgraphBtn {
+  padding: 9px 19px !important;
+}
+.graph-filter .resetgraphBtn {
+  margin-left: 0px;
+}
+
+.graph-filter .multi-select {
+  width: 133px;
+}
+
+._dashboard_scroller .dashboard_date input {
+  font-size: 14px;
+}
+
+
+
+
+/*Start Avanish Shukla CSS*/
+
+
+
+.cstm-checkbox{
+  background-color: #f5f5f5;
+}
+.card {
+height: 260px;
+  background-color: #ffffff;
+  padding: 10px 30px 40px;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  
+}
+.drop_box {
+  margin: 10px 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+}
+
+.drop_box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop_box p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #a3a3a3;
+}
+
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+.dashed_border{
+  border-top: 4px dashed #e8e8e8;
+  padding-left: 60px;
+  padding-left: 60x;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.clientdash_heading{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.account_detailbox{
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+}
+.account_detailbox .form-control{
+   background-color: #f5f5f5;
+  border: 1px solid #f7f8fc;
+  color: #b8bee8;
+}
+.account_detailbox .form-label{
+  font-weight: 600;
+}
+.clientdash_tbl .form-check-input{
+  border: none;
+}
+.clientdash_tbl .form-check-input[type=checkbox] {
+  background-color: #e6ecf1;
+   width: 16px;
+  height: 15px;
+}
+
+.clientdash_tbl .form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+
+.clientdash_tbl .form-check-input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.clientdash_tbl th{
+  font-size: 16px;
+}
+.clientdash_tbl td{
+  font-size: 14px;
+  font-weight: 500;
+  color: #cbcbcb;
+}
+.clientdash_tbl td a{
+  color: #505a9e;
+}
+.clientdash_modal .modal-header{
+  background-color: #e7ecf2;
+  color: #5b6dce;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.clientdash_modal .modal-header h5{
+  font-size: 18px;
+  font-weight: 600;
+}
+.clientdash_registeration .modal-header{
+  padding-top: 12px;
+  padding-bottom: 5px;
+  border-bottom: none;
+} 
+.clientdash_registeration .form-control{
+  margin: 6px 0px;
+  background-color: #f5f5f5;
+}
+.clientdash_registeration .form-select{
+  margin: 6px 0px;
+  background-color: #f5f5f5;
+}
+.clientdash_registeration .modal-body{
+  padding: 0px 16px 16px 16px;
+}
+
+
+
+
+
+.search_section{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search_form{
+  width: 66%;
+}
+.search_form .form-control{
+    background-color: #f5f5f5;
+  border: 1px solid #f7f8fc;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.download_button{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  margin-top: 30px;
+  float: right;
+}
+.download_button:hover{
+    background-color: #5157a0;
+  color: #ffffff;
+}
+
+.tabinactive{
+  background-color: transparent;
+  color: #000000;
+  font-weight: 600;
+  font-size: 22px;
+padding: 0px 0px 15px 0px;
+}
+.tabactive{
+  background-color: transparent;
+  color: #5157a0;
+   font-weight: 600;
+  font-size: 22px;
+  padding: 0px 0px 15px 0px;
+}
+.button_default{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+.button_default:hover{
+  background-color: #5157a0;
+  color: #ffffff;
+}
+.passreset_btn{
+  background-color: transparent;
+  color: #5157a0;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: underline;
+}
+.button_default:hover{
+  background-color: #5157a0;
+  color: #ffffff;
+}
+.btn_search{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.btn_search:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.btn_clear{
+  background-color: transparent;
+  color: #5157a0;
+  font-weight: 600;
+    font-size: 14px;
+}
+.btn_adduser{
+  background-color: #5157a0;
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px;
+   float: right;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/*End Avanish Shukla CSS*/
