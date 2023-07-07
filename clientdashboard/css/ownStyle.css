@@ -127,7 +127,15 @@ height: 260px;
 
 
 
+.filter_sec h6{
+  font-size: 15px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
 
+.filter_sec h6 span{
+  color: #cbcbcb;
+}
 
 
 
