@@ -13,6 +13,11 @@
   .moretext {
   display: none;
 }
+
+.moreless-button{
+  float: right;
+}
+
 </style>
 
 
@@ -141,10 +146,9 @@
 
 
 <div class="_appointment_Analytics_View">
-
 <!-- Filter Ends Here -->
-                <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
-                    <h6 class=" mb-0">Showing 5 Results</h6>
+                <div class="d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6 class=" mb-0"> <span> Showing 5 Results </span> </h6>
                     <div class="d-flex align-items-center">
                         <span class="text-unhighlighted font-medium">Sort By</span>
                         <div class="dropdown">
@@ -204,7 +208,7 @@
   </tr>
  </tbody>
                     </table>
-<div class="float-end pt-4">
+<div class="float-end pt-5">
   <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download Selected </button>
   </div>
  </div>
@@ -247,12 +251,12 @@
                  </select>
                 </div>
               </div>
-              <div class="_download_Reset_Button">
-<button class="btn btn-primary" type="button" >
+              <div class="download_viewstats_btn">
+<button class="btn button_primary" type="button" >
                   <i class="fa fa-download"></i>&nbsp; Download
                 </button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <i class="fa-solid fa-eye"></i> &nbsp; View Stats
+                <button class="btn button_primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <i class="fa-regular fa-eye"></i> &nbsp; View Stats
                 </button>
 
               </div>
