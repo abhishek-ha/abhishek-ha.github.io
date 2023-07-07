@@ -283,13 +283,20 @@ height: 260px;
    color: #b8bee8;
     font-weight: 400;
 }
+.width_150{
+  min-width: 150px;
+}
+.width_180{
+  min-width: 210px;
+}
+
 .download_button{
   background-color: #5157a0;
   color: #ffffff;
   font-weight: 600;
   font-size: 14px;
   border-radius: 4px;
-  margin-top: 15px;
+  margin-top: 12px;
      padding: 8px 8px;
   float: right;
 }
