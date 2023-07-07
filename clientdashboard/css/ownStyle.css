@@ -125,12 +125,12 @@ height: 260px;
   border-radius: 4px;
 }
 
-.filter_sec{
+/*.filter_sec{
  display: flex;  
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
-}
+}*/
 
 .filter_sec h6{
   font-size: 15px;
