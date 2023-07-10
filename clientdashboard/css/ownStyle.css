@@ -662,14 +662,14 @@ height: 260px;
   color: #000000;
   font-weight: 600;
   font-size: 22px;
-padding: 0px 0px 15px 0px;
+padding: 0px 0px 2px 0px;
 }
 .tabactive{
   background-color: transparent;
   color: #5157a0;
    font-weight: 600;
   font-size: 22px;
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 2px 0px;
 }
 .button_default{
   background-color: #5157a0;
