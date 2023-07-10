@@ -10,12 +10,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <style>
-  .moretext {
+/*  .moretext {
   display: none;
 }
 
 .moreless-button{
   float: right;
+}*/
+
+#addfields{
+  display: none;
 }
 
 </style>
@@ -92,7 +96,8 @@
           <div class="_dashboard_View_Cards">
             <div class="row">
               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
-                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                	<div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
                 		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
                 		<p class="_card_View_Number"> 376 </p>
                 		<sup class="_yellow"></sup></div>
@@ -101,7 +106,8 @@
                 </div>
 
                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
-                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                	<div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
                 		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
                 		<p class="_card_View_Number"> 19 </p>
                 		<sup class="_yellow"></sup></div>
@@ -110,7 +116,8 @@
                 </div>
 
            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
-                	<div class="_view_Card _bdr_yellow"><div class="d-flex">
+                	<div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
                 		<img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
                 		<p class="_card_View_Number"> 10 </p>
                 		<sup class="_yellow"></sup></div>
@@ -157,15 +164,15 @@
                                 Listing Order
                             </a>
 <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
-                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
+                                <li><a class="dropdown-item" href="#"> Latest </a></li>
+                                <li><a class="dropdown-item" href="#"> Oldest</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
      <!--Table Start Here-->
-                <div class="table-responsive clientdash_tbl scrollbar">
+                <div class="table-responsive clientdash_tbl ">
                     <table class="table">
                         <thead>
                             <tr>
@@ -173,8 +180,8 @@
                                 <th class="width_150"> Registration Date </th>
                                 <th class="width_150"> Name </th>
                                 <th class="width_150"> Employee ID </th>
-                                <th> Email</th>
-                                <th class="width_180"> Appoinment Completed </th>
+                                <!-- <th> Email</th> -->
+                                <th class="width_150"> Appoinment Closed </th>
                            </tr>
                         </thead>
                         <tbody>
@@ -183,7 +190,7 @@
                             	<td>01 January 2023 </td>
                    <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Sameer Ale </a></td>
                                 <td> HA20125 </td>
-                                <td>xxxxxx@gmail.com</td>
+                                <!-- <td>xxxxxx@gmail.com</td> -->
                                 <td> 25 </td>
   </tr>
 <tr>
@@ -191,7 +198,7 @@
     <td >01 January 2023 </td>
     <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Manoj Singh </a></td>
         <td> HA20125 </td>
-     <td>xxxxxx@gmail.com</td>
+     <!-- <td>xxxxxx@gmail.com</td> -->
     <td> 07 </td>
   </tr>
 
@@ -200,7 +207,7 @@
         <td class="date">01 January 2023 </td>
         <td><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Rajkumar Yadav </a></td>
               <td> HA20125 </td>
-           <td>xxxxxx@gmail.com</td>
+           <!-- <td>xxxxxx@gmail.com</td> -->
           <td> 72 </td>
   </tr>
  <tr>
@@ -208,7 +215,7 @@
                             	<td>01 January 2023 </td>
                 <td ><a href="#" data-bs-toggle="modal" data-bs-target="#appoinmentModal"> Rahul </a></td>
                                 <td> HA20125 </td>
-                               <td>xxxxxx@gmail.com</td>
+                               <!-- <td>xxxxxx@gmail.com</td> -->
                                 <td> 15 </td>
   </tr>
 
@@ -280,7 +287,7 @@
 <button class="btn button_primary" type="button" >
                   <i class="fa fa-download"></i>&nbsp; Download
                 </button>
-                <button class="btn button_primary" type="button" >
+                <button class="btn button_primary" type="button" data-bs-toggle="modal" data-bs-target="#viewstatsModal">
                  <i class="fa-regular fa-eye"></i> View Stats
                 </button>
 
@@ -321,33 +328,33 @@
     </div>
  </div>
 <div class="row ">
-  <div class="col-xl-3 col-lg-3 col-md-3 -12">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="First Name">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Last Name">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Employee ID">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Email ID">
      </div>
-       <div class="col-xl-3 col-lg-3 col-md-3 -12">
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Phone Number">
      </div>
 
-       <div class="col-xl-3 col-lg-3 col-md-3 -12">
+       <div class="col-xl-3 col-lg-3 col-md-3col-12">
     <input type="text" id="datepicker" class="form-control" name="" placeholder="Date Of Birth">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
    <select class="form-select">
     <option> Select Gender </option>
     <option> Male </option>
     <option> Female </option>
      </select>
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
    <select class="form-select">
     <option> Select is HNI </option>
     <option> Yes </option>
@@ -362,60 +369,99 @@
 
 <div class="row">
    <h5> Additional Fields </h5>
-    <div class="col-xl-3 col-lg-3 col-md-3 -12">
+    <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Master Policy No">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Insurance Bitly Link">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
   <input type="text" class="form-control" name="" placeholder="Customer Paid Amount">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
 <input type="text" class="form-control" name="" placeholder="Policy No">
      </div>
-       <div class="col-xl-3 col-lg-3 col-md-3 -12">
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
 <input type="text" class="form-control" name="" placeholder="Customer ID">
      </div>
 
-       <div class="col-xl-3 col-lg-3 col-md-3 -12">
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Sub Package ID">
      </div>
- <div class="col-xl-6 col-lg-6 col-md-6 -12">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder="Sub Package Name">
+     </div>
+
+
+ <div class="col-xl-3 col-lg-3 col-md-6 col-12">
     <input type="text" class="form-control" name="" placeholder="Master Policy Holder Name/Partner Name">
      </div>
    </div>
-<div class="row">
-<div class="moretext"> 
-<div class="col-xl-6 col-lg-6 col-md-6 -12">
+<div class="row" id="addfields">
+<!-- <div class="moretext">  -->
+<div class="col-xl-6 col-lg-6 col-md-6 col-12">
     <input type="text" class="form-control" name="" placeholder="Date Of Issuance/ Risk Start Date">
      </div>
- <div class="col-xl-3 col-lg-3 col-md-3 -12">
+ <div class="col-xl-3 col-lg-3 col-md-3 col-12">
   <input type="text" class="form-control" name="" placeholder=" Loan  A/C Number">
      </div>
-<div class="col-xl-3 col-lg-3 col-md-3 -12">
+<div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Govt ID">
      </div>
- <div class="col-xl-3 col-lg-3 col-md-3 -12">
-    <input type="text" class="form-control" name="" placeholder=" User Address">
-     </div>
-     <div class="col-xl-3 col-lg-3 col-md-3 -12">
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder=" Policy Type">
      </div>
-
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
-    <input type="text" class="form-control" name="" placeholder="Relation List">
+ <div class="col-xl-9 col-lg-9 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder=" User Address">
      </div>
-      <div class="col-xl-3 col-lg-3 col-md-3 -12">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder=" Pincode">
+     </div>
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder=" State">
+     </div>
+       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder=" Address Type">
+     </div>
+ <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Wallet Amount">
      </div>
-     </div>
-  <a class="moreless-button" href="#">More Fields</a>
- </div>
-     </div>
-  
 
-<div class="bulkregisterbox" style="display:none;">
+      <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder="Relation Name">
+     </div>
+
+  <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+  <select class="form-select">
+    <option> Relation Gender </option>
+    <option> Male </option>
+    <option> Female </option>
+    
+  </select>
+     </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+    <input type="text" class="form-control" name="" placeholder="Relation DOB">
+     </div>
+<div class="col-xl-3 col-lg-3 col-md-3 col-12 mt-1">
+   <button class="btn button_default"> <i class="fa-solid fa-plus px-2 "></i> </button>
+     </div>
+ </div>
+ 
+  <!-- <a class="moreless-button" href="#">More Fields</a> -->
+  <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12 sec_right mt-1">
+        <button class="btn morefield_btn"> More Fields </button>
+      
+    </div>
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12 sec_right mt-3">
+      <button class="btn button_default"> Register user </button>
+      
+    </div>
+    
+  </div>
+ </div>
+   
+  <div class="bulkregisterbox" style="display:none;">
    <h5> Bulk User Registration </h5>
    <div class="row">
     <div class="col-xl-3 col-lg-3 col-md-3 col-12">
@@ -423,14 +469,11 @@
         <option> Select Plan </option>
         <option> FitAssure </option>
          <option> OptimaAssure </option>
-        
-      </select>
-      
-    </div>
+         </select>
+      </div>
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
- 
-    <div class="drop_box">
+ <div class="drop_box">
       <header class="text-center">
         <i class="fa-solid fa-file-lines fa-3x"></i>
         <h4> Upload to XLS or XLSX </h4>
@@ -443,12 +486,25 @@
 </div>
 </div>
 </div>
+  </div>
 </div>
 </div>
 </div>
   </div>
-</div>
+
 <!-- End Add User Modal -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Modal -->
@@ -460,8 +516,177 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
      <div class="modal-body">
+              <!-- Filter Ends Here -->
+                <div class="filter_sec d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6> <span> Showing 20 Results </span> </h6>
+                    <div class="d-flex align-items-center">
+                      <h6>  <span > Sort By </span></h6>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listing Order
+                            </a>
+<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"> Latest </a></li>
+                                <li><a class="dropdown-item" href="#"> Oldest </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+  <!--Table Start Here-->
+                                <div class="table-responsive clientdash_tbl">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                               <th ><input class="form-check-input" type="checkbox"> </th>
+                                               <th>Appoinment ID </th>
+                                                <th > Date </th>
+                                                <th > Name </th>
+                                                <th > Employee ID </th>
+                                                <th > Email ID </th>
+                                                <th > Service </th>
+                                                <th > Report </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                              <td> xxxxxx@gmail.com </td>
+                                                <td> CBC </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
 
-<!-- Filter Ends Here -->
+                                             <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> xxxxxx@gmail.com </td>
+                                                <td> Lipid Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                             <td> xxxxxx@gmail.com </td>
+                                                <td> Serum </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                              <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                              <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                              <tr>
+                                        <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                                 <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                               <tr>
+                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                                 <td> 649 </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                               <td> xxxxxx@gmail.com </td>
+                                                <td> Abdomen Profile </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                             </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+                                <div class="sec_right">
+                               <nav aria-label="Page navigation float-right">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-right"></i> </a></li>
+  </ul>
+</nav>   
+                                </div>
+<div>
+  <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
+</div>
+</div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="appoinmentModal" tabindex="-1" aria-labelledby="appoinmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="appoinmentModalLabel"> Appoinment Detail </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+              <!-- Filter Ends Here -->
                 <div class="filter_sec d-flex flex-wrap gap-10 justify-content-between align-items-center">
                     <h6> <span> Showing 20 Results </span> </h6>
                     <div class="d-flex align-items-center">
@@ -538,7 +763,7 @@
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
 
-     <tr>
+                                              <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
                                                  <td> 649 </td>
                                                 <td>11 November, 2022 </td>
@@ -548,10 +773,8 @@
                                                 <td> Abdomen Profile </td>
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
-
-
-                                                 <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
+                                              <tr>
+                                        <td> <input class="form-check-input" type="checkbox"> </td>
                                                  <td> 649 </td>
                                                 <td>11 November, 2022 </td>
                                                 <td> Sameer Ale </td>
@@ -561,8 +784,7 @@
                                                 <td><a href="#">View Report </a> </td>
                                             </tr>
 
-
-                                                 <tr>
+                                            <tr>
                                                 <td> <input class="form-check-input" type="checkbox"> </td>
                                                  <td> 649 </td>
                                                 <td>11 November, 2022 </td>
@@ -617,10 +839,101 @@
 </div>
 
 
+<!-- Start View Stats Modal -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="viewstatsModal" tabindex="-1" aria-labelledby="viewstatsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered  usercardboxmodal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="viewstatsModalLabel"> Users Stats </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+         <div class="_dashboard_View_Cards">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+                  <div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
+                    <img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                    <p class="_card_View_Number"> 376 </p>
+                    <sup class="_yellow"></sup></div>
+                    <div class="_card_view_Title"> Users Onboarded </div>
+                  </div>
+                </div>
+
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+                  <div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
+                    <img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                    <p class="_card_View_Number"> 19 </p>
+                    <sup class="_yellow"></sup></div>
+                    <div class="_card_view_Title"> Appoinments in Transit </div>
+                  </div>
+                </div>
+
+           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mt-3">
+                  <div class="_view_Card usercard _bdr_yellow">
+                    <div class="d-flex">
+                    <img src="https://ypultess.sirv.com/Images/svg-icons/card-2.svg" alt="" width="30">
+                    <p class="_card_View_Number"> 10 </p>
+                    <sup class="_yellow"></sup></div>
+                    <div class="_card_view_Title"> Appoinments closed </div>
+                  </div>
+                </div>
+
+                <div class="sec_right mt-5">
+                  <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
+                  
+                </div>
+            
+            </div>
+          </div>
+          
+
+
+
+
+ 
+                               
+
+</div>
+</div>
+  </div>
+</div>
+
+
+
+
+<!-- End View Stats Modal -->
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+  $(document).ready(function(){
+$("#indiregister").click(function(){
+    $(".indiregisterbox").show();
+     $(".bulkregisterbox").hide();
+      });
+$("#bulkregister").click(function(){
+   $(".indiregisterbox").hide();
+     $(".bulkregisterbox").show();
+    });
+});
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
+
+
 <script>
   $(document).ready(function(){
 $("#indiregister").click(function(){
