@@ -457,7 +457,7 @@
       
     </div>
     <div class="col-xl-12 col-lg-12 col-md-12 col-12 sec_right mt-3">
-      <button class="btn button_default"> Register user </button>
+      <button class="btn button_default" data-bs-toggle="modal" data-bs-target="#registerusersModal"> Register user </button>
       
     </div>
     
@@ -498,19 +498,7 @@
 <!-- End Add User Modal -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Modal -->
+<!-- Start Appoinment Modal -->
 <div class="modal fade" id="appoinmentModal" tabindex="-1" aria-labelledby="appoinmentModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
     <div class="modal-content">
@@ -670,6 +658,7 @@
 </div>
   </div>
 </div>
+<!-- End Appoinment Modal -->
 
 
 
@@ -677,176 +666,9 @@
 
 
 
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="appoinmentModal" tabindex="-1" aria-labelledby="appoinmentModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title " id="appoinmentModalLabel"> Appoinment Detail </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-     <div class="modal-body">
-              <!-- Filter Ends Here -->
-                <div class="filter_sec d-flex flex-wrap gap-10 justify-content-between align-items-center">
-                    <h6> <span> Showing 20 Results </span> </h6>
-                    <div class="d-flex align-items-center">
-                      <h6>  <span > Sort By </span></h6>
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Listing Order
-                            </a>
-<ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
-                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-  <!--Table Start Here-->
-                                <div class="table-responsive clientdash_tbl">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                               <th ><input class="form-check-input" type="checkbox"> </th>
-                                               <th>Appoinment ID </th>
-                                                <th > Date </th>
-                                                <th > Name </th>
-                                                <th > Employee ID </th>
-                                                <th > Email ID </th>
-                                                <th > Service </th>
-                                                <th > Report </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                              <td> xxxxxx@gmail.com </td>
-                                                <td> CBC </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                             <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                                <td> xxxxxx@gmail.com </td>
-                                                <td> Lipid Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                             <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                             <td> xxxxxx@gmail.com </td>
-                                                <td> Serum </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                             <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                               <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                              <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                              <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-                                              <tr>
-                                        <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                               <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                               <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-
-                                                 <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                               <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-                                               <tr>
-                                                <td> <input class="form-check-input" type="checkbox"> </td>
-                                                 <td> 649 </td>
-                                                <td>11 November, 2022 </td>
-                                                <td> Sameer Ale </td>
-                                                <td> HA20125 </td>
-                                               <td> xxxxxx@gmail.com </td>
-                                                <td> Abdomen Profile </td>
-                                                <td><a href="#">View Report </a> </td>
-                                            </tr>
-                                             </tbody>
-                                    </table>
-                                </div>
-                                <!--Table Ends Here-->
-                                <div class="sec_right">
-                               <nav aria-label="Page navigation float-right">
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-right"></i> </a></li>
-  </ul>
-</nav>   
-                                </div>
-<div>
-  <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
-</div>
-</div>
-</div>
-  </div>
-</div>
 
 
 <!-- Start View Stats Modal -->
-
-
-
-<!-- Modal -->
 <div class="modal fade" id="viewstatsModal" tabindex="-1" aria-labelledby="viewstatsModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered  usercardboxmodal">
     <div class="modal-content">
@@ -889,28 +711,56 @@
 
                 <div class="sec_right mt-5">
                   <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
-                  
-                </div>
+                   </div>
             
             </div>
           </div>
+      </div>
+</div>
+  </div>
+</div>
+<!-- End View Stats Modal -->
+
+<!-- Start Registration Reports -->
+
+
+
+<div class="modal fade" id="registerusersModal" tabindex="-1" aria-labelledby="registerusersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="registerusersModalLabel"> Registration Reports </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+         <div class="_dashboard_View_Cards">
+            <div class="row">
+              <div class="col-xl-9">
+                <div class="row">
+                  
+                </div>
+
+                
+              </div>
+          
+           
+
           
 
-
-
-
- 
-                               
-
-</div>
+                <div class="sec_right mt-5">
+                  <button class="btn button_default"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
+                   </div>
+            
+            </div>
+          </div>
+      </div>
 </div>
   </div>
 </div>
 
 
 
-
-<!-- End View Stats Modal -->
+<!-- End Registration Reports -->
 
 
 
@@ -935,24 +785,6 @@ $( function() {
     $( "#datepicker" ).datepicker();
   } );
 </script>
-
-
-<script>
-  $(document).ready(function(){
-$("#indiregister").click(function(){
-    $(".indiregisterbox").show();
-     $(".bulkregisterbox").hide();
-      });
-$("#bulkregister").click(function(){
-   $(".indiregisterbox").hide();
-     $(".bulkregisterbox").show();
-    });
-});
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-</script>
-
 
 
 
