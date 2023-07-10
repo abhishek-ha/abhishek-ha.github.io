@@ -75,6 +75,347 @@ body {
 /*Start Avanish Shukla CSS*/
 
 
+@media only screen and (max-width: 300px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 10px 0px 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._appointment_Analytics_View{
+  padding-bottom: 70px;
+  margin-bottom: 20px;
+}
+._dashboard ._dashboard_Sidebar {
+    padding: 15px;
+    min-height: 100%;
+    float: right;
+    right: 0px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.download_viewstats_btn{
+  display: flex;
+   flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.download_viewstats_btn .button_primary{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-size: 14px;
+   border-radius: 4px;
+   padding: 8px 4px;
+   font-weight: 600;
+}
+.btn_adduser{
+  background-color: #5157a0;
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px 20px;
+   float: left;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search_form{
+  width: 100%;
+  margin-bottom: 5px;
+}
+}
+._dashboard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 301px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 15px 0px 15px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._appointment_Analytics_View{
+  padding-bottom: 80px;
+  margin-bottom: 10px;
+}
+
+._dashboard ._dashboard_Sidebar {
+    padding: 20px;
+    min-height: 100%;
+    float: left;
+    right: 0px;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.download_viewstats_btn{
+  display: flex;
+   flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.download_viewstats_btn .button_primary{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-size: 14px;
+   border-radius: 4px;
+   padding: 8px 6px;
+   font-weight: 600;
+}
+.btn_adduser{
+  background-color: #5157a0;
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px 20px;
+   float: left;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search_form{
+  width: 100%;
+}
+
+ }
+
+
+
+
+@media only screen and (min-width: 350px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 30px 0px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._dashboard ._dashboard_Sidebar {
+    padding: 30px;
+    min-height: 100%;
+    /* position: fixed; */
+    float: left;
+    right: 0px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.download_viewstats_btn{
+  display: flex;
+   flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.download_viewstats_btn .button_primary{
+  background-color: #5157a0;
+  color: #ffffff;
+  font-size: 14px;
+   border-radius: 4px;
+   padding: 8px 8px;
+   font-weight: 600;
+}
+.btn_adduser{
+  background-color: #5157a0;
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px 20px;
+   float: left;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+}
+
+
+@media only screen and (min-width: 400px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 30px 0px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._dashboard ._dashboard_Sidebar {
+    padding: 30px;
+    min-height: 100%;
+    /* position: fixed; */
+    float: left;
+    right: 0px;
+    width: 100%;   
+    margin-left: 30px;
+    margin-right: 30px;
+ 
+}
+
+.btn_adduser{
+  background-color: #5157a0;
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px 20px;
+   float: left;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 30px 0px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._dashboard ._dashboard_Sidebar {
+    padding: 30px;
+    min-height: 100%;
+    float: right;
+    right: 0px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.btn_adduser{
+
+  color: #ffffff;
+   border-radius: 4px;
+   padding: 14px 20px;
+   float: right;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search_form{
+  width: 66%;
+}
+ 
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 30px 0px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+}
+._dashboard ._dashboard_Sidebar {
+    min-height: 100%;
+    float: right;
+    right: 0px;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.btn_adduser{
+ border-radius: 4px;
+   padding: 14px 20px;
+   float: right;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.search_box{
+  background-color: #ffffff;
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search_form{
+  width: 66%;
+}
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  ._dashboard ._dashboard_View {
+    padding: 3px 30px 0px 30px;
+    height: 100%;
+    width: 70%;
+}
+._dashboard ._dashboard_Sidebar {
+    padding: 30px;
+    min-height: 100%;
+    /* position: fixed; */
+    float: right;
+    right: 0px;
+    width: 30%;
+  
+    /* overflow-y: scroll; */
+    /* overflow-x: unset; */
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.btn_adduser{
+ padding: 14px 20px;
+   float: right;
+}
+.btn_adduser:hover{
+   background-color: #5157a0;
+  color: #ffffff;
+}
+.search_box{
+ 
+   display: flex;
+    flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+ 
+}
 
 .cstm-checkbox{
   background-color: #f5f5f5;
@@ -137,21 +478,13 @@ height: 260px;
   margin-bottom: 0px;
   font-weight: 500;
 }
-
 .filter_sec h6 span{
   color: #cbcbcb;
 }
-
-
 .sec_right{
   display: grid;
   justify-content: end;
 }
-
-
-
-
-
 .dashed_border{
   border-top: 4px dashed #e8e8e8;
   padding-left: 60px;
@@ -163,7 +496,6 @@ height: 260px;
   font-size: 25px;
   font-weight: 600;
 }
-
 .account_detailbox{
   background-color: #ffffff;
   width: 100%;
@@ -236,8 +568,6 @@ height: 260px;
 .clientdash_registeration .modal-body{
   padding: 0px 16px 16px 16px;
 }
-
-
 .clientdash_registeration .form-control::-webkit-input-placeholder { 
   color: #b8bee8;
   font-weight: 400;
@@ -255,16 +585,8 @@ height: 260px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.search_box{
-  background-color: #ffffff;
-   display: flex;
-    flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
-}
-.search_form{
-  width: 66%;
-}
+
+
 .search_form .form-control{
     background-color: #f5f5f5;
   border: 1px solid #f7f8fc;
@@ -356,32 +678,32 @@ padding: 0px 0px 15px 0px;
   font-weight: 600;
     font-size: 14px;
 }
-.btn_adduser{
-  background-color: #5157a0;
-  color: #ffffff;
-   border-radius: 4px;
-   padding: 14px 20px;
-   float: right;
+
+
+
+.scrollbar {
+ 
+    width: 100%;
+    background: #fff;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+    padding: 6px 5px;
 }
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
-}
-.download_viewstats_btn{
-  display: flex;
-   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 30px;
-  justify-content: space-between;
+.scrollbar::-webkit-scrollbar {
+  margin-top: 40px;
+    width: 4px;
+    height: 4px;
+    background-color: #5157a0;
 }
 
-.download_viewstats_btn .button_primary{
-  background-color: #5157a0;
-  color: #ffffff;
-  font-size: 14px;
-   border-radius: 4px;
-   padding: 8px 8px;
-   font-weight: 600;
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #5157a0;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #F5F5F5;
 }
 
 
