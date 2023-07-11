@@ -628,6 +628,15 @@ height: 260px;
     font-weight: 400;
 }
 
+.registerationreport .modal-content .modal-header h5{
+  font-weight: 600;
+}
+.registerationreport .modal-content .modal-body .success_text p{
+  color: #5157a0;
+  font-weight: 600;
+
+}
+
 .search_section{
   margin-top: 30px;
   margin-bottom: 10px;
