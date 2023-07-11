@@ -140,7 +140,7 @@ body {
    float: left;
 }
 .btn_adduser:hover{
-   background-color: #5157a0;
+   background-color: #0d6efd;
   color: #ffffff;
 }
 .search_box{
@@ -216,7 +216,7 @@ body {
    float: left;
 }
 .btn_adduser:hover{
-   background-color: #5157a0;
+   background-color: #0d6efd;
   color: #ffffff;
 }
 .search_box{
@@ -268,17 +268,19 @@ body {
    padding: 8px 8px;
    font-weight: 600;
 }
+.download_viewstats_btn .button_primary:hover{
+  background-color: #0d6efd;
+}
+
+
+
+
 .btn_adduser{
-  background-color: #5157a0;
-  color: #ffffff;
-   border-radius: 4px;
+  border-radius: 4px;
    padding: 14px 20px;
    float: left;
 }
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
-}
+
 .search_box{
   background-color: #ffffff;
    display: flex;
@@ -308,18 +310,12 @@ body {
     margin-right: 30px;
  
 }
-
 .btn_adduser{
-  background-color: #5157a0;
-  color: #ffffff;
-   border-radius: 4px;
+ border-radius: 4px;
    padding: 14px 20px;
    float: left;
 }
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
-}
+
 
 }
 
@@ -344,15 +340,9 @@ body {
     margin-right: 30px;
 }
 .btn_adduser{
-
-  color: #ffffff;
    border-radius: 4px;
    padding: 14px 20px;
    float: right;
-}
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
 }
 .search_box{
   background-color: #ffffff;
@@ -392,10 +382,6 @@ body {
    padding: 14px 20px;
    float: right;
 }
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
-}
 .search_box{
   background-color: #ffffff;
    display: flex;
@@ -434,20 +420,13 @@ body {
  padding: 14px 20px;
    float: right;
 }
-.btn_adduser:hover{
-   background-color: #5157a0;
-  color: #ffffff;
-}
 .search_box{
- 
-   display: flex;
+ display: flex;
     flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
 }
- 
 }
-
 .cstm-checkbox{
   background-color: #f5f5f5;
 }
@@ -628,6 +607,10 @@ height: 260px;
     font-weight: 400;
 }
 
+.registerationreport .modal-content .modal-header{
+  border-bottom: 1px solid #0d6efd;
+}
+
 .registerationreport .modal-content .modal-header h5{
   font-weight: 600;
 }
@@ -636,13 +619,16 @@ height: 260px;
   font-weight: 600;
 
 }
-
+.exitpopup .modal-content .modal-header{
+  border-bottom: none;
+}
+.exitpopup .modal-content .modal-body .btn{
+  margin:10px;
+}
 .search_section{
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
-
 .search_form .form-control{
     background-color: #f5f5f5;
   border: 1px solid #f7f8fc;
@@ -679,7 +665,7 @@ height: 260px;
   float: right;
 }
 .download_button:hover{
-    background-color: #5157a0;
+    background-color: #0d6efd;
   color: #ffffff;
 }
 .tabinactive{
@@ -705,7 +691,7 @@ padding: 0px 0px 2px 0px;
   border-radius: 4px;
 }
 .button_default:hover{
-  background-color: #5157a0;
+  background-color: #0d6efd;
   color: #ffffff;
 }
 .passreset_btn{
@@ -716,7 +702,20 @@ padding: 0px 0px 2px 0px;
   border-radius: 4px;
   text-decoration: underline;
 }
-
+.no_button{
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #5157a0;
+  font-weight: 600;
+  color: #5157a0;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration:none;
+}
+.no_button:hover{
+   border: 1px solid #0d6efd;
+   color: #0d6efd;
+ }
 .morefield_btn{
   background-color: transparent;
   color: #5157a0;
@@ -736,7 +735,7 @@ padding: 0px 0px 2px 0px;
   border-radius: 4px;
 }
 .btn_search:hover{
-   background-color: #5157a0;
+   background-color: #0d6efd;
   color: #ffffff;
 }
 .btn_clear{
