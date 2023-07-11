@@ -140,7 +140,7 @@ body {
    float: left;
 }
 .btn_adduser:hover{
-   background-color: #0d6efd;
+   background-color: #0052cc;
   color: #ffffff;
 }
 .search_box{
@@ -216,7 +216,7 @@ body {
    float: left;
 }
 .btn_adduser:hover{
-   background-color: #0d6efd;
+   background-color: #0052cc;
   color: #ffffff;
 }
 .search_box{
@@ -269,7 +269,7 @@ body {
    font-weight: 600;
 }
 .download_viewstats_btn .button_primary:hover{
-  background-color: #0d6efd;
+  background-color: #0052cc;
 }
 
 
@@ -608,7 +608,7 @@ height: 260px;
 }
 
 .registerationreport .modal-content .modal-header{
-  border-bottom: 1px solid #0d6efd;
+  border-bottom: 1px solid #0052cc;
 }
 
 .registerationreport .modal-content .modal-header h5{
@@ -665,7 +665,7 @@ height: 260px;
   float: right;
 }
 .download_button:hover{
-    background-color: #0d6efd;
+    background-color: #0052cc;
   color: #ffffff;
 }
 .tabinactive{
@@ -691,7 +691,7 @@ padding: 0px 0px 2px 0px;
   border-radius: 4px;
 }
 .button_default:hover{
-  background-color: #0d6efd;
+  background-color: #0052cc;
   color: #ffffff;
 }
 .passreset_btn{
@@ -713,8 +713,8 @@ padding: 0px 0px 2px 0px;
   text-decoration:none;
 }
 .no_button:hover{
-   border: 1px solid #0d6efd;
-   color: #0d6efd;
+   border: 1px solid #0052cc;
+   color: #0052cc;
  }
 .morefield_btn{
   background-color: transparent;
@@ -735,7 +735,7 @@ padding: 0px 0px 2px 0px;
   border-radius: 4px;
 }
 .btn_search:hover{
-   background-color: #0d6efd;
+   background-color: #0052cc;
   color: #ffffff;
 }
 .btn_clear{
