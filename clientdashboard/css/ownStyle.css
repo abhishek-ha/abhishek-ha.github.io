@@ -60,11 +60,9 @@ body {
 .graph-filter .resetgraphBtn {
   margin-left: 0px;
 }
-
 .graph-filter .multi-select {
   width: 133px;
 }
-
 ._dashboard_scroller .dashboard_date input {
   font-size: 14px;
 }
@@ -75,11 +73,12 @@ body {
 /*Start Avanish Shukla CSS*/
 .usercardboxmodal .modal-content{
   background-color: #f5f5f5;
-  padding: 10px 5px 40px 5px;
+  padding: 10px 5px 10px 5px;
 }
-
 .usercardboxmodal .modal-content .modal-header{
   border: none;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 
@@ -484,7 +483,13 @@ height: 260px;
   justify-content: space-between;
   gap: 10px;
 }*/
-
+.filter_sec .dropdown .dropdown-toggle{
+  font-size: 15px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: #000000;
+  padding-left: 5px;
+}
 .filter_sec h6{
   font-size: 15px;
   margin-bottom: 0px;
