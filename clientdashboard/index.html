@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="css/ownStyle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
 <style>
 /*  .moretext {
   display: none;
@@ -85,7 +90,7 @@
       <div class=" _dashboard">
         <div class="_dashboard_View">
           <div>
-            <h1 class="clientdash_heading"> All About Users <span> <i class="fa-solid fa-circle-exclamation"></i> </h1>
+            <h1 class="clientdash_heading"> All About Users <span> <img src="images/exclamation.png" width="20"> </span> </h1>
           </div>
           <div class="_dashboard_View_Cards">
             <div class="row">
@@ -313,7 +318,7 @@
   </div>
 
 <div class="indiregisterbox">
-  <h5> Mandatory Box </h5>
+  <h5> Mandatory Fields </h5>
   <div class="row">
     <div class="col-xl-3 col-lg-3 col-md-3 col-12">
       <select class="form-select">
@@ -326,23 +331,23 @@
  </div>
 <div class="row ">
   <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="First Name">
+    <input type="text" class="form-control" name="" placeholder="First Name" required>
      </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="Last Name">
+    <input type="text" class="form-control" name="" placeholder="Last Name"required>
      </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="Employee ID">
+    <input type="text" class="form-control" name="" placeholder="Employee ID"required>
      </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="Email ID">
+    <input type="text" class="form-control" name="" placeholder="Email ID"required>
      </div>
        <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="Phone Number">
+    <input type="text" class="form-control" name="" placeholder="Phone Number"required>
      </div>
 
        <div class="col-xl-3 col-lg-3 col-md-3col-12">
-    <input type="text" id="datepicker" class="form-control" name="" placeholder="Date Of Birth">
+    <input type="text" id="datepicker" class="form-control" name="" placeholder=""required>
      </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
    <select class="form-select">
@@ -367,7 +372,7 @@
 <div class="row">
    <h5> Additional Fields </h5>
     <div class="col-xl-3 col-lg-3 col-md-3 col-12">
-    <input type="text" class="form-control" name="" placeholder="Master Policy No">
+    <input type="text" class="form-control" name="" placeholder="Master Policy No" required>
      </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-12">
     <input type="text" class="form-control" name="" placeholder="Insurance Bitly Link">

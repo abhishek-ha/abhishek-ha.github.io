@@ -91,6 +91,7 @@ body {
 @media only screen and (max-width: 300px) {
 
 ._dashboard_View_Cards .usercard ._card_View_Number{
+  font-family: 'Nunito Sans', sans-serif!important;
   font-weight: 600;
 }
 ._dashboard_View_Cards .usercard ._card_view_Title{
@@ -165,7 +166,8 @@ body {
 @media only screen and (min-width: 301px) {
 
 ._dashboard_View_Cards .usercard ._card_View_Number{
-  font-weight: 600;
+  font-family: 'Cabin', sans-serif!important;
+  font-weight: 700;
 }
 ._dashboard_View_Cards .usercard ._card_view_Title{
   font-weight: 600;
@@ -503,8 +505,9 @@ height: 260px;
   padding-bottom: 20px;
 }
 .clientdash_heading{
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 22px!important;
+  font-weight: 700;
+  font-family: 'Cabin', sans-serif!important;
 }
 .account_detailbox{
   background-color: #ffffff;
