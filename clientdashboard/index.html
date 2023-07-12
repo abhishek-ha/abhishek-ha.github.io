@@ -90,7 +90,7 @@
       <div class=" _dashboard">
         <div class="_dashboard_View">
           <div>
-            <h1 class="clientdash_heading"> All About Users <span> <img src="images/exclamation.png" width="20"> </span> </h1>
+            <h1 class="clientdash_heading"> All About Users <a  data-bs-toggle="modal" data-bs-target="#userdetailModal"> <img src="images/exclamation.png" width="20"> </a> </h1>
           </div>
           <div class="_dashboard_View_Cards">
             <div class="row">
@@ -718,6 +718,7 @@
 
 
 
+
 <!-- Start Registration Reports -->
 <div class="modal fade" id="registerusersModal" tabindex="-1" aria-labelledby="registerusersModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered registerationreport">
@@ -759,7 +760,44 @@
 
 
 
-<!-- Start Page Exit Popup -->
+
+
+<!-- Start Registration Reports -->
+<div class="modal fade" id="userdetailModal" tabindex="-1" aria-labelledby="userdetaiModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered userdetailModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="userdetaiModalLabel"> All About Users </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12 table-responsive">
+              <table class="table table-bordered  table-hover">
+      <tr>
+      <th> Users onboard </th>
+      <td class="tdtxt"> 376 </td>
+   </tr>
+      <tr>
+      <th> Appointments in Transit </th>
+      <td class="tdtxt"> 76 </td>
+   </tr>
+      <tr>
+      <th> Appointments Closed </th>
+      <td class="tdtxt"> 1080 </td>
+   </tr>
+</table>
+ </div>
+
+
+   </div>
+       
+      </div>
+</div>
+  </div>
+</div>
+<!-- End Registration Reports -->
+
 
 <!-- Start Registration Reports -->
 <div class="modal fade" id="exitpopupModal" tabindex="-1" aria-labelledby="exitpopupModalLabel" aria-hidden="true">
@@ -848,10 +886,6 @@ input.addEventListener("change", function (e) {
     </form>`;
   dropArea.innerHTML = filedata;
 });
-
 </script>
-
-
-
 </body>
 </html>
