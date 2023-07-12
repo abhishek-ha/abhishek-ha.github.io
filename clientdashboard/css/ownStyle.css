@@ -495,6 +495,29 @@ height: 260px;
   padding: 5px 10px!important;
 }
 
+.utilisation_reports label{
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 3px;
+  font-family: 'Cabin', sans-serif!important;
+}
+
+
+.utilisation_reports .form-select:after{
+ font-family: "FontAwesome";
+    content: "\f00d";
+    position: absolute;
+
+}
+
+.informative_icon{
+  cursor: pointer;
+}
+.informative_icon img{
+  width: 20px;
+}
+
+
 
 
 .filter_sec .dropdown ul{

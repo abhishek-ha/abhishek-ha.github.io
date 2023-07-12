@@ -90,7 +90,7 @@
       <div class=" _dashboard">
         <div class="_dashboard_View">
           <div>
-            <h1 class="clientdash_heading"> All About Users <a  data-bs-toggle="modal" data-bs-target="#userdetailModal"> <img src="images/exclamation.png" width="20"> </a> </h1>
+            <h1 class="clientdash_heading"> All About Users <span class="informative_icon"  data-bs-toggle="modal" data-bs-target="#userdetailModal"> <img src="images/exclamation.png"> </span> </h1>
           </div>
           <div class="_dashboard_View_Cards">
             <div class="row">
@@ -245,31 +245,33 @@
  </div>
         <div class="_dashboard_Sidebar">
           <div class="_dashboard_scroller">
-            <div class="_download_Reports">
-              <h2 class="clientdash_heading"> Utilisation Reports</h2>
+            <div class="_download_Reports utilisation_reports">
+              <h2 class="clientdash_heading"> Utilisation Reports </h2>
               <div class="mb-3">
-                <label> Date </label>
+                <label class="form-label"> Date </label>
             <input type="date" class="form-control" name="">
               </div>
               <div>
                 <div class="mb-3">
-                  <label> Plan Name</label>
+                  <label class="form-label"> Plan Name</label>
                     <select class="form-select">
                  	<option> All Plan </option>
-                 	<option> Male </option>
-                 	<option> Female </option>
+                 	<option> Select All </option>
+                 	<option> Plan 1 </option>
+                  <option> Plan 2 </option>
                </select>
               </div>
                 <div class="mb-3">
-                  <label>Service Type</label>
+                  <label class="form-label">Service Type</label>
                  <select class="form-select">
                  	<option> All Services </option>
                  	<option> Select All </option>
-                 	<option> Blocked or Deleted </option>
+                 	<option> Service 1 </option>
+                      <option> Service 2 </option>
                 </select>
                 </div>
   <div class="mb-3">
-                  <label> Users </label>
+                  <label class="form-label"> Users </label>
                  <select class="form-select">
                  	<option> All Users </option>
                  	<option> Select All </option>
