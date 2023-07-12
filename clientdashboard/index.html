@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/ownStyle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -26,6 +25,68 @@
 /*#addfields{
   display: none;
 }*/
+
+
+
+.select_form {
+ display: block;
+    width: 100%;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+  background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select_form ul li{
+  list-style-type: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.select_form ul{
+  padding-left: 0px;
+}
+
+.select_form a{
+  display: block;
+  padding: 0.5em;
+  color: #000;
+  text-decoration: none;
+}
+.select_form a:focus, a:hover {
+  background: #ecf0f1;
+}
+.select_form a:active {
+  background: #fbfcfc;
+}
+
+.select_form .fa {
+  float: right;
+}
+
+/*/*List*/
+.select_form ul {
+  display: none;
+  border-top: 0.1em solid #c0cdd1;
+}
+.select_form li:last-child {
+  color: #ad0000;
+}
+.select_form li:focus, li:hover {
+  background: #ecf0f1;
+}
+.select_form li:active {
+  background: #fbfcfc;
+}
+
+
 
 </style>
 
@@ -254,12 +315,23 @@
               <div>
                 <div class="mb-3">
                   <label class="form-label"> Plan Name</label>
-                    <select class="form-select">
-                 	<option> All Plan </option>
+<div class="select_form">
+  <a href="#" class="js-link">Select Plan   <i class="fa fa-chevron-down frm-down"></i> <i class="fa-solid fa-xmark frm-close"></i> </a>
+  <ul class="js-dropdown-list">
+    <li> Select All </li>
+    <li> Plan 1  </li>
+    <li> Plan 2 </li>
+   
+  </ul>
+</div>
+
+                  <!--   <select class="form-select frm-close">
+                      <span><i class="fa-solid fa-xmark"></i></span>
+                	<option> All Plan </option>
                  	<option> Select All </option>
                  	<option> Plan 1 </option>
                   <option> Plan 2 </option>
-               </select>
+               </select> -->
               </div>
                 <div class="mb-3">
                   <label class="form-label">Service Type</label>
@@ -766,7 +838,7 @@
 
 <!-- Start Registration Reports -->
 <div class="modal fade" id="userdetailModal" tabindex="-1" aria-labelledby="userdetaiModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered userdetailModal">
+  <div class="modal-dialog modal-lg modal-dialog-centered userdetailModal">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title " id="userdetaiModalLabel"> All About Users </h5>
@@ -774,21 +846,11 @@
       </div>
      <div class="modal-body">
           <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-12 table-responsive">
-              <table class="table table-bordered  table-hover">
-      <tr>
-      <th> Users onboard </th>
-      <td class="tdtxt"> 376 </td>
-   </tr>
-      <tr>
-      <th> Appointments in Transit </th>
-      <td class="tdtxt"> 76 </td>
-   </tr>
-      <tr>
-      <th> Appointments Closed </th>
-      <td class="tdtxt"> 1080 </td>
-   </tr>
-</table>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+      <p><span> Users Onboard :</span> Total users eligible to avail benefits in current date range selected </p>
+      <p><span> Appointments in Transit :</span> Shows the number of appointments in transition that is requested, confirmed, report review </p>  
+      <p><span> Appointments Closed : </span> Shows the number of appointments which are successfully completed and closed. </p>      
+             
  </div>
 
 
@@ -851,9 +913,6 @@ $( function() {
     $( "#datepicker" ).datepicker();
   } );
 </script>
-
-
-
 <script>
 $('.moreless-button').click(function() {
   $('.moretext').slideToggle();
@@ -889,5 +948,28 @@ input.addEventListener("change", function (e) {
   dropArea.innerHTML = filedata;
 });
 </script>
+
+<script>
+  $(function() {
+  var list = $('.js-dropdown-list');
+  var link = $('.js-link');
+  link.click(function(e) {
+    e.preventDefault();
+    list.slideToggle(200);
+  });
+  list.find('li').click(function() {
+    var text = $(this).html();
+    var icon = ' <i class="fa fa-chevron-down frm-down"></i> <i class="fa-solid fa-xmark frm-close"></i>';
+    link.html(text+icon);
+    list.slideToggle(200);
+    if (text === '* Reset') {
+      link.html('Select one option'+icon);
+    }
+  });
+});
+</script>
+
+
+
 </body>
 </html>

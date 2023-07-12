@@ -478,6 +478,7 @@ height: 260px;
   color: #000000;
   padding-left: 5px;
   padding-top: 0px;
+  margin-top: -3px;
 }
 .filter_sec .dropdown .dropdown-toggle::after {
     display: inline-block;
@@ -686,10 +687,60 @@ height: 260px;
  background-color: #f5f5f5; 
  padding: 20px 10px;
 }
+
+
+.userdetailModal .modal-content p{
+  font-size: 17px;
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+.userdetailModal .modal-content p span{
+  font-weight: 600;
+  color: #000000;
+}
+
+
 .tdtxt{
   color: #5157a0;
   font-weight: 600;
 }
+
+/*.frm-close::after {
+    flex-shrink: 0;
+    margin-left: auto;
+    content: "\f078";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: #000000;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}*/
+
+
+
+.frm-close{
+ padding-right: 20px;
+ float: right;
+color: #cbcbcb;
+padding-top: 5px;
+}
+.frm-down{
+   padding-right: 2px;
+  float: right;
+  color: #cbcbcb;
+  padding-top: 5px;
+}
+
+
+
 
 
 
@@ -698,7 +749,9 @@ height: 260px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
+.userdetailModal .modal-content .modal-header h5{
+  font-weight: 600;
+}
 
 .search_section{
   margin-top: 30px;
