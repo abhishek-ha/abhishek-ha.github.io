@@ -724,6 +724,23 @@ height: 260px;
     transition: var(--bs-accordion-btn-icon-transition);
 }*/
 
+.appoinment_box{
+  width: 175px;
+  background-color: #5157a0;
+  color: #ffffff;
+  padding: 25px 15px 25px 15px;
+  margin: auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.appoinment_box h4{
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+
+
 
 
 .frm-close{
