@@ -425,7 +425,6 @@ height: 260px;
   background-color: #ffffff;
   padding: 10px 30px 40px;
 }
-
 .card h3 {
   font-size: 22px;
   font-weight: 600;
@@ -453,8 +452,6 @@ height: 260px;
   font-size: 14px;
   color: #a3a3a3;
 }
-
-
 .form input {
   margin: 10px 0;
   width: 100%;
@@ -495,32 +492,23 @@ height: 260px;
 .cst_pagination .page-link{
   padding: 4px 8px!important;
 }
-
 .utilisation_reports label{
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 3px;
   font-family: 'Cabin', sans-serif!important;
 }
-
-
 .utilisation_reports .form-select:after{
  font-family: "FontAwesome";
     content: "\f00d";
     position: absolute;
-
 }
-
 .informative_icon{
   cursor: pointer;
 }
 .informative_icon img{
   width: 20px;
 }
-
-
-
-
 .filter_sec .dropdown ul{
   width: 70px;
 }
@@ -530,7 +518,6 @@ height: 260px;
   font-weight: 500;
  color: #cbcbcb;
 }
-
 .filter_sec h6{
   font-size: 15px;
   margin-bottom: 0px;
@@ -567,13 +554,10 @@ height: 260px;
 .account_right{
   position: relative;
 }
-
 .account_right img{
   bottom: 10px;
   position: absolute;
 }
-
-
 .account_detailbox .form-control{
    background-color: #f5f5f5;
   border: 1px solid #f7f8fc;
@@ -591,7 +575,6 @@ height: 260px;
    color: #b8bee8;
     font-weight: 400;
 }
-
 .account_detailbox .form-label{
   font-weight: 600;
 }
@@ -603,7 +586,6 @@ height: 260px;
    width: 16px;
   height: 16px;
 }
-
 .clientdash_tbl .form-check-input:checked {
     background-color: #5157a0;
     border-color: #5157a0;
@@ -665,11 +647,9 @@ height: 260px;
    color: #b8bee8;
     font-weight: 400;
 }
-
 .registerationreport .modal-content .modal-header{
   border-bottom: 1px solid #0052cc;
 }
-
 .registerationreport .modal-content .modal-header h5{
   font-weight: 600;
 }
@@ -687,8 +667,6 @@ height: 260px;
  background-color: #f5f5f5; 
  padding: 20px 10px;
 }
-
-
 .userdetailModal .modal-content p{
   font-size: 17px;
   margin-bottom: 12px;
@@ -698,13 +676,10 @@ height: 260px;
   font-weight: 600;
   color: #000000;
 }
-
-
 .tdtxt{
   color: #5157a0;
   font-weight: 600;
 }
-
 /*.frm-close::after {
     flex-shrink: 0;
     margin-left: auto;
@@ -723,7 +698,6 @@ height: 260px;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
 }*/
-
 .appoinment_box{
   width: 175px;
   background-color: #5157a0;
@@ -738,11 +712,6 @@ height: 260px;
   font-weight: 600;
   padding-top: 10px;
 }
-
-
-
-
-
 .frm-close{
  padding-right: 20px;
  float: right;
@@ -755,12 +724,6 @@ padding-top: 5px;
   color: #cbcbcb;
   padding-top: 5px;
 }
-
-
-
-
-
-
 .userdetailModal .modal-content .modal-header{
   border: none;
   padding-top: 10px;
@@ -769,7 +732,6 @@ padding-top: 5px;
 .userdetailModal .modal-content .modal-header h5{
   font-weight: 600;
 }
-
 .search_section{
   margin-top: 30px;
   margin-bottom: 10px;
@@ -870,7 +832,6 @@ padding: 0px 0px 2px 0px;
   text-decoration:none;
   float: right;
 }
-
 .btn_search{
   background-color: #5157a0;
   color: #ffffff;
@@ -889,36 +850,5 @@ padding: 0px 0px 2px 0px;
   font-weight: 600;
   font-size: 14px;
 }
-
-
-
-.scrollbar {
- 
-    width: 100%;
-    background: #fff;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    margin-bottom: 10px;
-    padding: 6px 5px;
-}
-.scrollbar::-webkit-scrollbar {
-  margin-top: 40px;
-    width: 4px;
-    height: 4px;
-    background-color: #5157a0;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-    background-color: #5157a0;
-}
-
-.scrollbar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
-    background-color: #F5F5F5;
-}
-
-
-
-
 
 /*End Avanish Shukla CSS*/
