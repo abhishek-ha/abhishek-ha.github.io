@@ -13495,12 +13495,10 @@ h4{color:#444}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: 2px solid #673ab7;
 }
-
-
-
 .rider_btn {
-    background:#0a8943;
+    background:#0f5fc2;
     color: #ffffff!important;
     border-radius: 4px;
     min-width:210px;
@@ -13517,6 +13515,11 @@ h4{color:#444}
     transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     text-decoration: none;
      cursor: pointer;
+}
+
+.rider_btn.selected{
+ background-color: #0a8943;
+ border:1px solid ;
 }
 
 
