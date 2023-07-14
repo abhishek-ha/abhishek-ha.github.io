@@ -43,8 +43,7 @@
         <![endif]-->
 
     <style>
-     
- .plan ul li:before {
+     .plan ul li:before {
             content: "\f00c";
             font-family: FontAwesome;
             display: inline-block;
@@ -394,6 +393,12 @@
     float: right
 }
 
+.action-button::after {
+   font-family: FontAwesome;
+   content: "\f00c";
+}
+
+
 #msform .action-button:hover,
 #msform .action-button:focus {
     background-color: #311B92
@@ -494,10 +499,8 @@
     background: lightgray;
     border-radius: 50%;
     margin: 0 auto 10px auto;
-    padding: 2px;
-    
+    padding: 2px;   
 }
-
 #progressbar li:after {
     content: '';
     width: 100%;
@@ -508,7 +511,6 @@
     top: 25px;
     z-index: -1
 }
-
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: #673AB7
@@ -523,10 +525,6 @@
     width: 100%;
     object-fit: cover
 }
-
-
-
-
 
 </style>
     <!-- Google Tag Manager -->
@@ -1652,9 +1650,11 @@ Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healt
                     <fieldset>
                         <div class="form-card">
                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
-            <button type="button" class="btn btn6 mx-4" id="hospicash"> Unlimited Physical GP </button>
-            <button type="button" class="btn btn2 mx-4 " id="healthinsurance"> Member Addition </button>
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
+    <div class="riderbox">
+            <button type="button" class="btn rider_btn mx-4" id="hospicash"> Unlimited Physical GP </button>
+            <button type="button" class="btn rider_btn mx-4 " id="healthinsurance"> Member Addition </button>
+            </div>
                                     
                                 </div>
                                 
@@ -1675,6 +1675,9 @@ Copyright @ 2021 HealthAssure | All Rights Reserved | <a href="https://www.healt
 
                         </ul>
                         <p class="pl-5"><b> Terms & Conditions </b></p>
+                        <div class="float-left">
+                        <button class="action-button"> Select </button>
+                        </div>
     </div>
     
 </div>

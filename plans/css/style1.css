@@ -13486,6 +13486,40 @@ h4{color:#444}
     text-decoration: none;
      cursor: pointer;
 }
+
+.riderbox{
+    background-color: #f2f1f6;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.rider_btn {
+    background:#0a8943;
+    color: #ffffff!important;
+    border-radius: 4px;
+    min-width:210px;
+    font-size:16px;
+   font-weight: 700;
+   text-align: center;
+   padding: 10px;  
+   margin-left:0px;
+   border:1px solid #0a8943;
+}
+.rider_btn:hover{
+    background: #000000!important;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 50%);
+    transition: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    text-decoration: none;
+     cursor: pointer;
+}
+
+
 .dashedborder{
     border-bottom:2px dashed #000000;
     width: 90px;
