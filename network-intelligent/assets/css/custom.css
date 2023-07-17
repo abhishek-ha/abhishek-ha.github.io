@@ -1,0 +1,24 @@
+.provider_card{
+	background-color: #ffffff;
+	border-radius: 8px;
+	border: 1px solid #E4E4E4;
+	padding: 10px;
+}
+.provider_card h6{
+	font-size: 14px;
+	color: #AAAAAA;
+	font-weight: 400;
+
+}
+.provider_card p{
+	font-size: 13px;
+	color: #AAAAAA;
+	margin-bottom: 0px;
+}
+.provider_card p span{
+	color: #34D36A;
+}
+.provider_card p span img{
+	width: 30px;
+}
+
