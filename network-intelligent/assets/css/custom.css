@@ -8,7 +8,6 @@
 	font-size: 14px;
 	color: #AAAAAA;
 	font-weight: 400;
-
 }
 .provider_card p{
 	font-size: 13px;
@@ -21,4 +20,49 @@
 .provider_card p span img{
 	width: 30px;
 }
+.payout_box{
+background-color: #ffffff;
+border-radius: 8px;
+ padding: 10px;
+}
+.payout_box h4{
+	font-size: 18px;
+	font-weight: 600;
+}
+.payout_box .pro_sec{
+	border-bottom: 1px solid #E4E4E4;
+	display: flex;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+.payout_box .pro_sec h6{
+	font-size: 15px;
+	color: #000000;
+	margin-bottom: 0px;
+}
+.payout_box .pro_sec .date{
+	font-size: 11px;
+	color: #AAAAAA;
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+.payout_box .pro_sec .amount{
+	font-size: 11px;
+  color: #000000;
+	font-weight: 400;
+	margin-bottom: 0px;
+	right: 9px;
+	position: absolute;
+}
+.payout_box .pro_sec img{
+	width: 30px;
+}
+.gap{
+	gap: 10px;
+}
+
+
+
+
+
 

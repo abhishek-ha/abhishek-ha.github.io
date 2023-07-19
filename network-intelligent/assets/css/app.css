@@ -2004,7 +2004,6 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
 .mini-stat {
     border: none;
 }
-
 .mini-stat .mini-stat-icon i {
     font-size: 30px;
     width: 64px;
@@ -2015,18 +2014,6 @@ body[data-layout="horizontal"][data-layout-size="boxed"] .container-fluid {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: inline-block;
-}
-.inbox-wid .inbox-item {
-    position: relative;
-    border-bottom: 1px solid var(--bs-border-color);
-    overflow: hidden;
-    padding: 10px 0;
-}
-.inbox-wid .inbox-item .inbox-item-date {
-    font-size: 11px;
-    position: absolute;
-    right: 7px;
-    top: 8px;
 }
 .widget-user {
     overflow: hidden;
