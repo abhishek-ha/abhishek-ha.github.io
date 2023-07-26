@@ -271,27 +271,27 @@
                           <div class="row pt-4">
                             <h4>Filters </h4>
         <div class="d-flex flex-wrap justify-content-between">
-                                <div class="w-19">
+                                <div class="w-19 my-2">
                                     <select class="form-select">
                                         <option> Highest Priority </option>
                                     </select>
                                 </div>
 
-                              <div class="w-19">
+                              <div class="w-19 my-2">
                                     <select class="form-select">
                                         <option> Sortimg(Z-A) </option>
                                     </select>
                                 </div>
-                               <div class="w-19">
+                               <div class="w-19 my-2">
                                     <select class="form-select">
                                         <option> Provider Type </option>
                                     </select>
                                 </div>
 
-<div class="w-19">
+<div class="w-19 my-2">
  <input type="text" class="form-control" placeholder="Provider Name/Code" name="">
                                 </div>
-                              <div class="w-19">
+                             <div class="w-19 my-2">
  <input type="text" class="form-control" placeholder="Pincode/City" name="">
                                 </div>
 
@@ -299,16 +299,24 @@
                           </div>
 
 <div class="row pt-4">
-     <div class="d-flex justify-content-between">
-        <div>
-          <input type="checkbox" name="" class="form-check-input" checked> <label> Select All </label>
-        </div>
-        <div class="d-flex gap-10">
-            <input type="date" class="form-control" name="">
-             <input type="text" class="form-control" name="" placeholder="Search">
-             <button class="btn btn_export"><i class="fa-solid fa-file-csv"></i> Export All </button>
-        </div>
-         </div>
+<div class="col-xl-7 col-lg-7 col-md-5 col-12">
+      <h5> <input type="checkbox" name="" class="form-check-input" checked>  <span class="pt-1"> Select All </span> </h5>  
+     </div>
+
+     <div class="col-xl-5 col-lg-5 col-md-7 col-12 float-right">
+       <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 my-2">
+                <input type="date" class="form-control " name=""> 
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 my-2">
+            <input type="text" class="form-control " name="" placeholder="Search">    
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-12 my-2">
+              <button class="btn btn_export"><i class="fa-solid fa-file-csv"></i> Export All </button>   
+            </div>
+       </div>  
+     </div>
+       </div>
 
          <div class="diagnostic_detailbox">
          <div class="diagnostic_centerbox">
@@ -438,25 +446,18 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="d-flex justify-content-center mt-4">
+         <nav aria-label="Page navigation" >
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-left"></i> </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 1 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 2 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> 3 </a></li>
+    <li class="page-item"><a class="page-link" href="#"> <i class="fa-solid fa-chevron-right"></i> </a></li>
+  </ul>
+</nav>
+    </div>
 </div>
-
-
-
 </div>
  </div>
                         <!-- end row -->
