@@ -293,16 +293,7 @@ body[data-layout="horizontal"] .page-content {
         padding-left: 0;
     }
 }
-.page-title-box {
-    padding-bottom: 1.5rem;
-}
-.page-title-box .breadcrumb {
-    background-color: transparent;
-    padding: 0;
-}
-.page-title-box h4 {
-    font-size: 18px !important;
-}
+
 .state-information .state-graph {
     float: right;
     margin-left: 40px;
