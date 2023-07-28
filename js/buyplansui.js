@@ -15,7 +15,10 @@
         "        </style>" +
         "        <div id='buyplanpopup' class='popup-wrapper' >" +
         "            <div class='popup-content'>" +
-        "<iframe id='BuyPlaniframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:fixed;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' allow='geolocation' ></iframe> </div></div></div>");
+        "<iframe id='BuyPlaniframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:fixed;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' allow='geolocation' ></iframe> </div></div></div>" + 
+        "<div id='OpenPlatinumUltimaPopupId' class='popup-wrapper' >" +
+        "            <div class='popup-content'>" +
+        "<iframe id='BuyPlanPlatinumUltimaiframe' frameborder='0' allowtransparency='true' style='overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:fixed;top:0px;left:0px;right:0px;bottom:0px' height='100%' width='100%' allow='geolocation' ></iframe> </div></div></div>");
 })();
 function getUrlVars1(url = window.location.href) {
     var vars = [], hash;
@@ -33,9 +36,16 @@ function OpenBuyPlanPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = fals
     openmodal();
 }
 
+function OpenPlatinumUltimaPopup(popuptitle, PlanCode, CouponCode, IsUserTracker = false, IsVarifyEmail = false, EmailDomain = "", IsVarifyEmailPhoneTNC = false, IsEnableMembersAddtion = false, IsEnableAgent = false, IsEnableApplyCoupon = false, IsHideGenericTNC = false) {
+    $('#BuyPlanPlatinumUltimaiframe').attr('src', 'D:/WorkFolder/abhishek-ha.github.io/plans/platinumUltimaModal.html?PopupTitle=' + popuptitle + '&PlanCode=' + PlanCode + '&CouponCode=' + CouponCode + '&IsUserTracker=' + IsUserTracker + '&utm_source=' + Vars1["utm_source"] + '&utm_medium=' + Vars1["utm_medium"] + '&utm_campaign=' + Vars1["utm_campaign"] + '&utm_term=' + Vars1['utm_term'] + '&utm_content=' + Vars1['utm_content'] + '&IsVarifyEmail=' + IsVarifyEmail + '&EmailDomain=' + EmailDomain + '&IsVarifyEmailPhoneTNC=' + IsVarifyEmailPhoneTNC + '&IsEnableMembersAddtion=' + IsEnableMembersAddtion + '&IsEnableAgent=' + IsEnableAgent + '&IsEnableApplyCoupon=' + IsEnableApplyCoupon + '&IsHideGenericTNC=' + IsHideGenericTNC);
+    openmodalPlatinumUltima();
+}
+
+
 window.addEventListener('message', function (event) {
     if (event.data == 'closebuyplanpopup') {
         closemodal();
+        closemodalPlatinumUltima();
     }
     return;
 });
@@ -47,5 +57,15 @@ function openmodal() {
 
 function closemodal() {
     var modal = document.getElementById("buyplanpopup");
+    modal.style.display = "none";
+}
+
+function openmodalPlatinumUltima() {
+    var modal = document.getElementById("OpenPlatinumUltimaPopupId");
+    modal.style.display = "block";
+}
+
+function closemodalPlatinumUltima() {
+    var modal = document.getElementById("OpenPlatinumUltimaPopupId");
     modal.style.display = "none";
 }
