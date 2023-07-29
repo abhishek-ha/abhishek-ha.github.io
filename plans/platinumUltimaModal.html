@@ -686,15 +686,16 @@
                                             <div class="form-row">
                                                 <div class=" col-md-4">
                                                     <label for="firstname"> First Name </label>
-                                                    <input type="text" class="form-control" id="firstname">
+                                                    <input type="text" class="form-control" id="firstname" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="lastname"> Last Name </label>
-                                                    <input type="text" class="form-control" id="lastname">
+                                                    <input type="text" class="form-control" id="lastname" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="CustomerGender"> Gender </label>
-                                                    <select class="form-select form-control" id="CustomerGender">
+                                                    <select class="form-select form-control" id="CustomerGender"
+                                                        required>
                                                         <option value="Male"> Male </option>
                                                         <option value="Female"> Female </option>
                                                         <option value="Other"> Other </option>
@@ -702,16 +703,18 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="CustomerPhone"> Mobile No </label>
-                                                    <input type="number" class="form-control" id="CustomerPhone">
+                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="CustomerPhone"
+                                                        required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="CustomerEmail"> Email </label>
-                                                    <input type="email" class="form-control" id="CustomerEmail">
+                                                    <input type="email" class="form-control" id="CustomerEmail"
+                                                        required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="CustomerDOB"> Date Of Birth </label>
                                                     <input type="date" id="CustomerDOB" class="form-control datepicker"
-                                                        placeholder="Date Of Birth">
+                                                        placeholder="Date Of Birth" required>
                                                 </div>
                                                 <div class=" col-md-4">
                                                     <label for="CustomerPincode"> Pincode </label>
@@ -734,7 +737,6 @@
                                         </div>
                                         <h4 class="accordion-title js-accordion-title"> Adult </h4>
                                         <div class="accordion-content">
-
                                             <div class="form-row">
                                                 <div class="col-md-4">
                                                     <label for="firstname1"> First Name </label>
@@ -755,7 +757,7 @@
                                                 </div>
                                                 <div class=" col-md-4">
                                                     <label for="MemberMobile1"> Mobile No </label>
-                                                    <input type="number" class="form-control" id="MemberMobile1">
+                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile1">
                                                 </div>
 
                                                 <div class=" col-md-4">
@@ -765,7 +767,7 @@
                                                 <div class=" col-md-4">
                                                     <label for="firstname"> Date Of Birth </label>
                                                     <input type="date" id="MemberDOB1" class="form-control datepicker"
-                                                        placeholder="Date Of Birth">
+                                                        placeholder="Date Of Birth" min="1940-01-01" max="2004-01-01">
                                                 </div>
 
 
@@ -808,7 +810,7 @@
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="MemberMobile2"> Mobile No </label>
-                                                    <input type="number" class="form-control" id="MemberMobile2">
+                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile2">
                                                 </div>
 
                                                 <div class="form-group col-md-4">
@@ -818,7 +820,7 @@
                                                 <div class="form-group col-md-4">
                                                     <label for="MemberDOB2"> Date Of Birth </label>
                                                     <input type="date" id="MemberDOB2" class="form-control datepicker"
-                                                        placeholder="Date Of Birth">
+                                                        placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
                                                 </div>
 
 
@@ -862,7 +864,7 @@
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="MemberMobile3"> Mobile No </label>
-                                                    <input type="number" class="form-control" id="MemberMobile3">
+                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile3">
                                                 </div>
 
                                                 <div class="form-group col-md-4">
@@ -872,7 +874,7 @@
                                                 <div class="form-group col-md-4">
                                                     <label for="MemberDOB2"> Date Of Birth </label>
                                                     <input type="date" id="MemberDOB3" class="form-control datepicker"
-                                                        placeholder="Date Of Birth">
+                                                        placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
                                                 </div>
 
 
@@ -905,8 +907,10 @@
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
                                     <div class="riderbox">
+                                        <input type="checkbox" id="ServiceAdditionCheck" />
                                         <button type="button" class="btn rider_btn mx-4 selected" id="hospicash">
                                             Unlimited Physical GP </button>
+                                        <input type="checkbox" id="MemberAdditionCheck" />
                                         <button type="button" class="btn rider_btn mx-4 MemberAdditionBtn"
                                             id="healthinsurance">
                                             Member Addition </button>
@@ -1026,7 +1030,7 @@
                         <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                     <fieldset>
-                        <div id="paymentSuccessDiv" class="form-card" style="display: none;">
+                        <div id="paymentSuccessDiv" style="display: none;" class="form-card">
                             <div class="row ">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center"> <img
                                         src="../images/greencheck.png" class="img-fluid" width="80"> </div>
@@ -1201,7 +1205,29 @@
         });
     </script>
 
+
+
+
     <script>
+        $(document).ready(function () {
+            $("#hospicash").click(function () {
+                $(".hospicashbox").show();
+                $(".healthinsurancebox").hide();
+            });
+            $("#healthinsurance").click(function () {
+                $(".hospicashbox").hide();
+                $(".healthinsurancebox").show();
+            });
+
+
+
+        });
+
+
+    </script>
+
+    <script>
+        var isNext = false;
         $(document).ready(function () {
 
             var current_fs, next_fs, previous_fs; //fieldsets
@@ -1212,7 +1238,7 @@
             setProgressBar(current);
 
             $(".next").click(function () {
-
+                if (!isNext) return;
                 current_fs = $(this).parent();
                 next_fs = $(this).parent().next();
 
@@ -1278,28 +1304,6 @@
             })
 
         });
-    </script>
-
-
-    <script>
-        $(document).ready(function () {
-            $("#hospicash").click(function () {
-                $(".hospicashbox").show();
-                $(".healthinsurancebox").hide();
-            });
-            $("#healthinsurance").click(function () {
-                $(".hospicashbox").hide();
-                $(".healthinsurancebox").show();
-            });
-
-
-
-        });
-
-
-    </script>
-
-    <script>
         var clientIP = '';
         try {
             $.getJSON("https://api.ipify.org?format=json", function (data) {
@@ -1385,22 +1389,39 @@
 
 
         $('#GetRiderDetails').click(function (e) {
-            GetOPDRiderBenefits('HA001').then(function (result) {
-                $('#RiderBenefits').html('');
-                if (result != null) {
-                    RiderBenefits = '';
-                    jQuery.each(result.results.benefits, function (index, it) {
-                        RiderBenefits += "<li><b> <span>" + (it.valueType == "UNLIMITED" ? " Unlimited " : it.valueType = "WALLET" ? " Rs. " + it.value + " " : " Credits " + it.value) + "</span></b>" + it.benefitName + "</li>";
+            e.preventDefault();
+            var self = GetSelfDetails();
+            var rel = GetRelations();
+            if (self != null && self != [] && self.length > 0) {
+                if (rel != null && rel.length === 3) {
+                    isNext = true;
+                    GetOPDRiderBenefits('HA001').then(function (result) {
+                        $('#RiderBenefits').html('');
+                        if (result != null) {
+                            RiderBenefits = '';
+                            jQuery.each(result.results.benefits, function (index, it) {
+                                RiderBenefits += "<li>" + it.description + "</li>";
+                            });
+                            $('#RiderBenefits').html(RiderBenefits);
+                        }
+                    }).catch(function (error) {
+                        console.warn(error);
                     });
-                    $('#RiderBenefits').html(RiderBenefits);
+                } else {
+                    isNext = false;
+                    alert('Please Enter All Relations Details !');
                 }
-            }).catch(function (error) {
-                console.warn(error);
-            });
+            }
+            else {
+                isNext = false;
+                alert('Please Enter Self Details !');
+            }
+
         });
 
         var count;
         $('.MemberAdditionBtn').click(function (e) {
+            e.preventDefault();
             GetOPDRiderBenefits('HA002').then(function (result) {
                 $('.memberAdditionDiv').html('');
                 if (result != null) {
@@ -1431,7 +1452,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label for="riderMobile${count + 1}"> Mobile No </label>
-                                                            <input type="number" class="form-control"
+                                                            <input onKeyPress="if(this.value.length>9) return false;" type="number" class="form-control"
                                                                 id="riderMobile${count + 1}">
                                                         </div>
 
@@ -1444,7 +1465,7 @@
                                                             <label for="riderDOB${count + 1}"> Date Of Birth </label>
                                                             <input type="date" id="riderDOB${count + 1}"
                                                                 class="form-control datepicker"
-                                                                placeholder="Date Of Birth">
+                                                                placeholder="Date Of Birth" min="1940-01-01" max="2004-01-01">
                                                         </div>
                                                         <div class=" col-md-4">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
@@ -1489,7 +1510,7 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label for="riderMobile${count + 1}"> Mobile No </label>
-                                                            <input type="number" class="form-control"
+                                                            <input onKeyPress="if(this.value.length>9) return false;" type="number" class="form-control"
                                                                 id="riderMobile${count + 1}">
                                                         </div>
 
@@ -1502,7 +1523,7 @@
                                                             <label for="riderDOB${count + 1}"> Date Of Birth </label>
                                                             <input type="date" id="riderDOB${count + 1}"
                                                                 class="form-control datepicker"
-                                                                placeholder="Date Of Birth">
+                                                                placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
                                                         </div>
                                                         <div class=" col-md-4">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
@@ -1547,7 +1568,7 @@
 
             var Address = {};
             Address = { "State": $('#CustomerState').val(), "CityName": $('#CustomerCity').val(), "Address": $('#CustomerAddress').val(), "PinCode": $('#CustomerPincode').val() };
-            BuyOPDPlan($('#firstname').val() + " " + $('#lastname').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('#CustomerGender').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('IsTCAccepted').checked, document.getElementById('GenericTNCAccepted').checked, Address, 'HA001,HA002').then(function (result) {
+            BuyOPDPlan($('#firstname').val() + " " + $('#lastname').val(), $('#CustomerEmail').val(), $('#CustomerPhone').val(), CustomerDOB, $('#CustomerGender').val(), Vars["PlanCode"], $('#CoupanCode').val(), PTitle, UtmSource, Vars["utm_medium"], Vars["utm_campaign"], Vars["utm_term"], Vars["utm_content"], Relations, Agent, clientIP, document.getElementById('IsTCAccepted').checked, document.getElementById('GenericTNCAccepted').checked, Address, riderCode).then(function (result) {
                 $('#firstname').val('');
                 $('#lastname').val('');
                 $('#CustomerEmail').val('');
@@ -1565,14 +1586,28 @@
         });
 
 
-
+        var riderCode;
         $('#planReviewPage').click(function (event) {
             event.preventDefault();
+            riderCode = '';
+            if ($('#ServiceAdditionCheck').is(':checked') && $('#MemberAdditionCheck').is(':checked')) {
+                console.log('ServiceAddition');
+                riderCode = 'HA001,HA002';
+            }
+            else if ($('#ServiceAdditionCheck').is(':checked')) {
+                console.log('ServiceAddition');
+                riderCode = 'HA001';
+            }
+            else if ($('#MemberAdditionCheck').is(':checked')) {
+                console.log('MemberAddition');
+                riderCode = 'HA002';
+            }
+
             $('#totalAmount').text('');
             $('#planAmount').text('');
             $('#gstAmount').text('');
             $('#riderDetailSpan').html('');
-            GetOPDPlanReview(Vars["PlanCode"], 'HA001,HA002').then(function (result) {
+            GetOPDPlanReview(Vars["PlanCode"], riderCode).then(function (result) {
                 $('#planAmount').text(result.results.planAmount);
                 $('#gstAmount').text(result.results.gstAmount);
                 $('#totalAmount').text(result.results.totalAmount);
@@ -1839,6 +1874,7 @@
         }
         function opningPaymentSuccesspage(PlanCode, transactionId) {
             //$('#congratulationsdiv').show();
+            $('#buyplanformdiv').show();
             $('#paymentSuccessDiv').show();
 
             // OpenbuyPlanThankyouPage(PTitle, CustomerPhone_val, PlanCode, transactionId);
@@ -2167,6 +2203,21 @@
             }
 
             return Relations;
+        }
+
+        function GetSelfDetails() {
+            var selfDetails = [];
+            var customerName = $('#firstname').val() + " " + $('#lastname').val();
+            var customerDOB = $('#CustomerDOB').val();
+            var customerGender = $('#CustomerGender').val();
+            var customerEmail = $('#CustomerEmail').val();
+            var customerPhone = $('#CustomerPhone').val();
+
+            if (customerName != null && customerName != '' && customerDOB != null && customerDOB != '' && customerPhone != null && customerPhone != '' && customerEmail != null && customerEmail != '' && customerGender != null && customerGender != '') {
+                selfDetails.push({ "Name": customerName, "DoB": customerDOB, "Gender": customerGender, "EmailId": customerEmail, "MobileNo": customerPhone });
+            }
+
+            return selfDetails;
         }
     </script>
 
