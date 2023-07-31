@@ -8,39 +8,22 @@
 	<title> Rajnish Ops </title>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="container my-5">
-
 <div class="row my-5">
-<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-	<select class="form-select">
-		<option> Report Type </option>
-		<option> Report Type  </option>
-		
-	</select>
-	</div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-12">
-	<div class="d-flex justify-content-between gap-10">
-	<input type="text" name="daterange" class="form-control" placeholder="">
-	<button class="btn search__btn"> <i class="fa-solid fa-magnifying-glass"></i> Search </button>	
-	</div>
-
-
-	</div>
-</div>
-
-		<div class="row my-5">
 			<div class="col-xl-3 col-lg-3 col-md-3 col-12">
 				<div class="servce_box">
 					<div>
 					<img src="images/specialist-consultation.png">	
 					</div>
 					<div>
-					<p> Total Number</p>	
-					<h3> 450 </h3>
+						<h3> 7650 </h3>
+					<p> Providers</p>	
+					
 					</div>
 					<div>
 					</div>
@@ -50,11 +33,12 @@
 <div class="col-xl-3 col-lg-3 col-md-3 col-12">
 				<div class="servce_box">
 					<div>
-					<img src="images/specialist-consultation.png">	
+					<img src="images/accept-reject.png">	
 					</div>
 					<div>
+						<h3> 87% </h3>
 					<p> Accept/Reject </p>	
-					<h3> 450 </h3>
+					
 					</div>
 					<div>
 					</div>
@@ -63,11 +47,12 @@
   	<div class="col-xl-3 col-lg-3 col-md-3 col-12">
 				<div class="servce_box">
 					<div>
-					<img src="images/specialist-consultation.png">	
+					<img src="images/shownoshow.png">	
 					</div>
 					<div>
+						<h3> 82% </h3>
 					<p> Show/NoShow</p>	
-					<h3> 450 </h3>
+					
 					</div>
 					<div>
 					</div>
@@ -80,8 +65,9 @@
 					<img src="images/file_upload.png">	
 					</div>
 					<div>
+						<h3> 2150 </h3>
 					<p> Report Upload </p>	
-					<h3> 450 </h3>
+					
 					</div>
 					<div>
 					</div>
@@ -89,197 +75,150 @@
 			</div>
 </div>
 
+
+<div class="row my-5">
+	<div class="col-xl-4 col-lg-4 col-md-4 col-12 my-1">
+<input type="text"  name="" class="form-control" placeholder="Search">
+	</div>
+<div class="col-xl-4 col-lg-4 col-md-4 col-12 my-1">
+	<select class="form-select">
+		<option> Report Type </option>
+		<option> Accept/Reject  </option>
+		<option> Show/Noshow </option>
+		<option> Report Upload </option>
+		</select>
+	</div>
+<div class="col-xl-4 col-lg-4 col-md-4 col-12 my-1">
+	<div class="d-flex justify-content-between gap-10">
+	<input type="text" name="daterange" class="form-control" placeholder="">
+	<button class="btn search__btn"> <i class="fa-solid fa-magnifying-glass"></i> Search </button>	
+	</div>
+   </div>
+</div>
+
 <div class="row">
-<div class="col-xl-12 col-lg-12 col-md-12 col-12 bg-white py-5">
-	
-<table id="example" class="display " style="width:100%">
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 bg-white pt-5 ">
+	<div class="table-responsive"> 
+	<table id="example" class="table table-striped table-hover  provider_p_tbl">
         <thead>
             <tr>
+            	<th> <input type="checkbox" class="form-check-input"> </th>
                 <th> Provider ID</th>
                 <th>Provider Name </th>
                 <th> Total Appoinment </th>
                 <th>Accept/Reject</th>
                 <th> Show/NoShow</th>
+                 <th> Report Upload </th>
             </tr>
         </thead>
         <tbody>
             <tr>
+            	<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Asiaz Hospital </td>
                 <td> 540</td>
                 <td>Accept </td>
                 <td> Show</td>
+                <td> Not Upload </td>
             </tr>
              <tr>
+             		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Lal Path Lab </td>
-                <td>  Yashoda Hospital</td>
+                <td>  40 </td>
                 <td>Reject </td>
                 <td> NoShow</td>
+                <td> Not Upload </td>
             </tr>
              <tr>
+             		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Apollo Hospital </td>
                 <td> 540</td>
                 <td>Accept </td>
                 <td> Show</td>
+                <td> Not Upload </td>
             </tr>
              <tr>
+             		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td>  Max Hospital </td>
                 <td> 540</td>
                 <td> Reject </td>
                <td> NoShow</td>
+               <td> Upload </td>
             </tr>
              <tr>
+             		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Fortis Hospital </td>
                 <td> 540</td>
                 <td>Accept </td>
                 <td> Show</td>
+                <td> Not Upload </td>
             </tr>
              <tr>
+             		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Asiaz Hospital </td>
                 <td> 540</td>
                 <td>Accept </td>
              <td> NoShow</td>
+             <td> Not Upload </td>
             </tr>
               <tr>
+              		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Asiaz Hospital </td>
                 <td> 540</td>
                 <td> Reject </td>
                 <td> Show</td>
+                  <td> Upload</td>
             </tr>
-              <tr>
+ <tr>
+              		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Asiaz Hospital </td>
                 <td> 540</td>
-                <td>Accept </td>
-           <td> NoShow</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-             <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-               <td> NoShow</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
+                <td> Reject </td>
                 <td> Show</td>
+                  <td> Upload</td>
             </tr>
-              <tr>
+ <tr>
+              		<td><input type="checkbox" class="form-check-input"> </td>
                 <td> HAOPD010105</td>
                 <td> Asiaz Hospital </td>
                 <td> 540</td>
-                <td>Accept </td>
+                <td> Reject </td>
                 <td> Show</td>
+                  <td> Upload</td>
             </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-              <td> NoShow</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-              <td> NoShow</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-              <tr>
-                <td> HAOPD010105</td>
-                <td> Asiaz Hospital </td>
-                <td> 540</td>
-                <td>Accept </td>
-                <td> Show</td>
-            </tr>
-           
-            
-          
-        </tbody>
-        <tfoot>
-            <tr>
-              <th> Provider ID</th>
-                <th>Provider Name </th>
-                <th> Total Appoinment </th>
-                <th>Accept/Reject</th>
-                <th> Show/NoShow</th>
-             </tr>
-        </tfoot>
-    </table>
-
-
-
-
-
-
-	
+ </tbody>
+     </table>
 </div>
+
+<div class="d-flex justify-content-between pt-4">
+	<div>
+	<nav aria-label="Page">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+  </ul>
+</nav>	
+	</div>
+	<div>
+	<button class="btn search__btn"> <i class="fa-solid fa-arrow-down"></i> Download </button>	
+	</div>	
+</div>
+
+
+
+
+</div>
+
 </div>
 </div>
 
@@ -291,7 +230,9 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
-<script type="text/javascript" src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+
+
 
      <script>   
 $(document).ready(function(){
@@ -306,15 +247,7 @@ $(document).ready(function(){
   });
 });
 
-</script>
-
-
-<script >
-	new DataTable('#example');
-
 
 </script>
-
-
 </body>
 </html>
