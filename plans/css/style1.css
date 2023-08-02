@@ -8739,16 +8739,29 @@ height:652px;
    margin-top: -1179px;
     margin-left: 30%;
 }
-
 .renewdigital{
   height:639px;
   }
 .renewdigital1{
   height:645px; 
 }
+}
+
+@media only screen and (min-width: 990px){
+    .platinumultima{
+    height:690px;
+   }
+.platinumultimaimg{
+   margin-top: -1475px;
+   margin-left: 20%;
+   width: 60%;
+}
+
 
 
 }
+
+
 @media only screen and (min-width: 1000px){
 
  .inrspace{
