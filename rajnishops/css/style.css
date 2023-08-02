@@ -66,7 +66,17 @@ html{
 .provider_p_tbl .form-check-input{
     font-size: 18px;
     background-color: #f5f5f5;
+}
 
+.filt__tbl{
+    display: flex;
+    justify-content: space-between;
+}
+.filt__tbl h6 span{
+    color: #cbcbcb;
+}
+.right_drop{
+    margin-top: -8px;
 }
 
 
