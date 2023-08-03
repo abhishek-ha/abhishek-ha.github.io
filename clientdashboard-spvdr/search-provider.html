@@ -62,10 +62,10 @@
    <section class="searchbox">
     <div class="container">
       <div class="row ">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-12 ">
 <h5 style="font-size: 18px;text-align: center;padding-top: 8px;"> What are you  Looking for? </h5>
        </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-12 ">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-12 ">
 <select class="form-select">
   <option> Select Package </option>
   <option> General Checkup - Starter </option>
@@ -77,19 +77,27 @@
   </select>
   </div>
 
-       <div class="col-xl-3 col-lg-3 col-md-6 col-12 ">
-   <select class="form-select">
+<div class="col-xl-5 col-lg-5 col-md-6 col-12 ">
+  <div class="d-flex">
+    <div class="w-75">
+      <select class="form-select">
   <option> Select Plan </option>
   <option> FitAssure </option>
    <option> OptimaAssure </option>
      <option> TotalAssure </option>
   </select>
-  </div>
-      <div class="col-xl-2 col-lg-2 col-md-6 col-12 ">
-         <button class="btn searchbtn"> 
+
+    </div>
+    <div>
+      <button class="btn searchbtn"> 
           <i class="fa-solid fa-magnifying-glass"></i> 
         </button>
-       </div>
+    </div>
+    
+  </div>
+   
+  </div>
+      
 </div>
  </div>
   </section>
@@ -100,10 +108,10 @@
 <section class="popularcountbox">
 <div class="container ">
   <div class="row">
-  <div class="col-lg-8 col-md-8 col-12">
+  <div class="col-xl-8 col-lg-6 col-md-6 col-12">
     <p><span> <i class="fa-solid fa-chart-line"></i> 10K+ </span> Appoinments have been made at this location recently </p>
     </div>
-   <div class="col-lg-4 col-md-4 col-12 text-right">
+   <div class="col-xl-4 col-lg-6 col-md-6 col-12 text-right">
     <button class="btn popular-selected " id="color2" onclick=" clicked2()"> Popular Near You </button>
 <button class="btn popular-selected  " id="color" onclick=" clicked()" > Preferred Centres </button>
   </div>
@@ -116,6 +124,10 @@
 
 <div class="container my-3">
 <div class="row">
+
+
+
+
 <div class="col-xl-3 col-lg-3 col-md-3 col-12 filterbox mob">
 <div class="border-bottom">
 <div class="accordion-container">
@@ -264,7 +276,7 @@
 </div>
 </div>
 
-<div class="col-xl-3 col-lg-3 col-md-3 col-12 filterbox desk">
+<div class="col-xl-3 col-lg-4 col-md-4 col-12 filterbox desk">
 <div class="border-bottom">
  <p class="category "> Location(km) </p>
       <div class="basic"></div>
@@ -408,34 +420,34 @@
 </div>
 </div>
 
-<div class="col-xl-9 col-lg-9 col-md-9 col-12">
+<div class="col-xl-9 col-lg-8 col-md-8 col-12">
   <div class="row">
 
 
 
 
-  <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+
+  <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
     <div class="searchprovider">
       <div class="row pt-3 carddiagnostic">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
     <div class="providerb"> <h3> SWC </h3> </div>
         </div>
-         <div class="col-lg-8 col-md-8 col-sm-8 col-8 ml-3">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-9 ml-3">
           <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
 <div class="ratingstar">
-      <p><img  src="images/star.svg" > 4.5 </p>
-      <p id="star_con" > 20 Review </p>
+      <p class="mb-1"><img  src="images/star.svg" > 4.5 </p>
+      <p class="mb-0" id="star_con" > 20 Review </p>
 <div id="review_con" class="reviewbox">
-       
   </div>
  </div>
  </div>
 </div>
-<div class="row carddiagnostic address ">
-<div class="col-lg-9 col-md-9 col-sm-8 col-8  pt-2 ">
-  <p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+<div class="address">
+<div>
+  <p> Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
   </div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+<div>
  <div class="map-border">
    <a href="https://www.google.com/maps" target="_blank"> <span> <img src="images/location.svg">
  5 Kms </span> </a>
@@ -444,62 +456,52 @@
 </div>
 <div class="row servicebox">
   <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
-    <h3 class="pt-1 mb-1 ml-0"> Services Includes: </h3> 
+    <h3 class="pt-2 mb-1 ml-0"> Services Includes: </h3> 
   </div>
  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
   <p> <img src="images/check-circle.svg"> <span class="pb-1">  Doctor Consultation </span> </p> 
   </div> 
-
-  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
-  <p> <img src="images/check-circle.svg"> Diagnostics </p> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
+  <p> <img src="images/check-circle.svg"> <span class="pb-1"> Diagnostics </span> </p> 
   </div>
 </div>
-  
-<div class="row my-2 mx-left">
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="row my-2 mx-left">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
   <div class="countbox1">
-   <div class="row py-1 ">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-          <img src="images/calender.svg">
+   <div>
+    <img src="images/calender.svg">
       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div class="col-lg-10 col-md-10 col-xl-10 col-9">
           <p> 10,00,000+ Appointments </p>
        </div>
       </div>
       </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+ <div>
        <img src="images/nabl.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> NABL CERTIFIED </p>
+        <div>
+            <p> NABL Certified </p>
        </div>
       </div>
+     </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+  <div class="countbox1">
+<div>
+  <img src="images/iso.svg">
+</div>
+<div>
+   <p> ISO Certified </p>
+</div>
       </div>
   </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-      <img src="images/iso.svg">
-
+   <div>
+  <img src="images/web.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> ISO CERTIFIED </p>
-       </div>
-      </div>
-      </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-  <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-        <img src="images/web.svg">
-       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div>
            <p> 250 + Branches Pan India </p>
        </div>
       </div>
@@ -507,31 +509,32 @@
   </div>
 </div>
 </div>
- </div>
 
 
- <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+
+
+
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
     <div class="searchprovider">
       <div class="row pt-3 carddiagnostic">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
     <div class="providerb"> <h3> SWC </h3> </div>
         </div>
-         <div class="col-lg-8 col-md-8 col-sm-8 col-8 ml-3">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-9 ml-3">
           <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
 <div class="ratingstar">
-      <p><img  src="images/star.svg" > 4.5 </p>
-      <p id="star_con" > 20 Review </p>
+      <p class="mb-1"><img  src="images/star.svg" > 4.5 </p>
+      <p class="mb-0" id="star_con" > 20 Review </p>
 <div id="review_con" class="reviewbox">
-       
   </div>
  </div>
  </div>
 </div>
-<div class="row carddiagnostic address ">
-<div class="col-lg-9 col-md-9 col-sm-8 col-8  pt-2 ">
-  <p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+<div class="address">
+<div>
+  <p> Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
   </div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+<div>
  <div class="map-border">
    <a href="https://www.google.com/maps" target="_blank"> <span> <img src="images/location.svg">
  5 Kms </span> </a>
@@ -540,62 +543,52 @@
 </div>
 <div class="row servicebox">
   <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
-    <h3 class="pt-1 mb-1 ml-0"> Services Includes: </h3> 
+    <h3 class="pt-2 mb-1 ml-0"> Services Includes: </h3> 
   </div>
  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
   <p> <img src="images/check-circle.svg"> <span class="pb-1">  Doctor Consultation </span> </p> 
   </div> 
-
-  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
-  <p> <img src="images/check-circle.svg"> Diagnostics </p> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
+  <p> <img src="images/check-circle.svg"> <span class="pb-1"> Diagnostics </span> </p> 
   </div>
 </div>
-  
-<div class="row my-2 mx-left">
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="row my-2 mx-left">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
   <div class="countbox1">
-   <div class="row py-1 ">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-          <img src="images/calender.svg">
+   <div>
+    <img src="images/calender.svg">
       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div class="col-lg-10 col-md-10 col-xl-10 col-9">
           <p> 10,00,000+ Appointments </p>
        </div>
       </div>
       </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+ <div>
        <img src="images/nabl.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> NABL CERTIFIED </p>
+        <div>
+            <p> NABL Certified </p>
        </div>
       </div>
+     </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+  <div class="countbox1">
+<div>
+  <img src="images/iso.svg">
+</div>
+<div>
+   <p> ISO Certified </p>
+</div>
       </div>
   </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-      <img src="images/iso.svg">
-
+   <div>
+  <img src="images/web.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> ISO CERTIFIED </p>
-       </div>
-      </div>
-      </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-  <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-        <img src="images/web.svg">
-       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div>
            <p> 250 + Branches Pan India </p>
        </div>
       </div>
@@ -603,31 +596,31 @@
   </div>
 </div>
 </div>
- </div>
 
 
- <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+
+
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
     <div class="searchprovider">
       <div class="row pt-3 carddiagnostic">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
     <div class="providerb"> <h3> SWC </h3> </div>
         </div>
-         <div class="col-lg-8 col-md-8 col-sm-8 col-8 ml-3">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-9 ml-3">
           <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
 <div class="ratingstar">
-      <p><img  src="images/star.svg" > 4.5 </p>
-      <p id="star_con" > 20 Review </p>
+      <p class="mb-1"><img  src="images/star.svg" > 4.5 </p>
+      <p class="mb-0" id="star_con" > 20 Review </p>
 <div id="review_con" class="reviewbox">
-       
   </div>
  </div>
  </div>
 </div>
-<div class="row carddiagnostic address ">
-<div class="col-lg-9 col-md-9 col-sm-8 col-8  pt-2 ">
-  <p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+<div class="address">
+<div>
+  <p> Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
   </div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+<div>
  <div class="map-border">
    <a href="https://www.google.com/maps" target="_blank"> <span> <img src="images/location.svg">
  5 Kms </span> </a>
@@ -636,62 +629,52 @@
 </div>
 <div class="row servicebox">
   <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
-    <h3 class="pt-1 mb-1 ml-0"> Services Includes: </h3> 
+    <h3 class="pt-2 mb-1 ml-0"> Services Includes: </h3> 
   </div>
  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
   <p> <img src="images/check-circle.svg"> <span class="pb-1">  Doctor Consultation </span> </p> 
   </div> 
-
-  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
-  <p> <img src="images/check-circle.svg"> Diagnostics </p> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
+  <p> <img src="images/check-circle.svg"> <span class="pb-1"> Diagnostics </span> </p> 
   </div>
 </div>
-  
-<div class="row my-2 mx-left">
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="row my-2 mx-left">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
   <div class="countbox1">
-   <div class="row py-1 ">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-          <img src="images/calender.svg">
+   <div>
+    <img src="images/calender.svg">
       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div class="col-lg-10 col-md-10 col-xl-10 col-9">
           <p> 10,00,000+ Appointments </p>
        </div>
       </div>
       </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+ <div>
        <img src="images/nabl.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> NABL CERTIFIED </p>
+        <div>
+            <p> NABL Certified </p>
        </div>
       </div>
+     </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+  <div class="countbox1">
+<div>
+  <img src="images/iso.svg">
+</div>
+<div>
+   <p> ISO Certified </p>
+</div>
       </div>
   </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-      <img src="images/iso.svg">
-
+   <div>
+  <img src="images/web.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> ISO CERTIFIED </p>
-       </div>
-      </div>
-      </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-  <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-        <img src="images/web.svg">
-       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div>
            <p> 250 + Branches Pan India </p>
        </div>
       </div>
@@ -699,31 +682,30 @@
   </div>
 </div>
 </div>
- </div>
 
 
- <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
+
+<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
     <div class="searchprovider">
       <div class="row pt-3 carddiagnostic">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
     <div class="providerb"> <h3> SWC </h3> </div>
         </div>
-         <div class="col-lg-8 col-md-8 col-sm-8 col-8 ml-3">
+         <div class="col-lg-8 col-md-8 col-sm-8 col-9 ml-3">
           <h3 class="pt-2 mb-0"> SRL Wellness Centre  </h3>
 <div class="ratingstar">
-      <p><img  src="images/star.svg" > 4.5 </p>
-      <p id="star_con" > 20 Review </p>
+      <p class="mb-1"><img  src="images/star.svg" > 4.5 </p>
+      <p class="mb-0" id="star_con" > 20 Review </p>
 <div id="review_con" class="reviewbox">
-       
   </div>
  </div>
  </div>
 </div>
-<div class="row carddiagnostic address ">
-<div class="col-lg-9 col-md-9 col-sm-8 col-8  pt-2 ">
-  <p>Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
+<div class="address">
+<div>
+  <p> Chowk ,Laxmi Road 1001/1002, Gokul Chambers ,Raviwar Peth, 225015</p>
   </div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-3">
+<div>
  <div class="map-border">
    <a href="https://www.google.com/maps" target="_blank"> <span> <img src="images/location.svg">
  5 Kms </span> </a>
@@ -732,62 +714,52 @@
 </div>
 <div class="row servicebox">
   <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
-    <h3 class="pt-1 mb-1 ml-0"> Services Includes: </h3> 
+    <h3 class="pt-2 mb-1 ml-0"> Services Includes: </h3> 
   </div>
  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
   <p> <img src="images/check-circle.svg"> <span class="pb-1">  Doctor Consultation </span> </p> 
   </div> 
-
-  <div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
-  <p> <img src="images/check-circle.svg"> Diagnostics </p> 
+<div class="col-lg-6 col-md-6 col-sm-6 col-6 ml-0">
+  <p> <img src="images/check-circle.svg"> <span class="pb-1"> Diagnostics </span> </p> 
   </div>
 </div>
-  
-<div class="row my-2 mx-left">
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+  <div class="row my-2 mx-left">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
   <div class="countbox1">
-   <div class="row py-1 ">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-          <img src="images/calender.svg">
+   <div>
+    <img src="images/calender.svg">
       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div class="col-lg-10 col-md-10 col-xl-10 col-9">
           <p> 10,00,000+ Appointments </p>
        </div>
       </div>
       </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
+ <div>
        <img src="images/nabl.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> NABL CERTIFIED </p>
+        <div>
+            <p> NABL Certified </p>
        </div>
       </div>
+     </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+  <div class="countbox1">
+<div>
+  <img src="images/iso.svg">
+</div>
+<div>
+   <p> ISO Certified </p>
+</div>
       </div>
   </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
   <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-      <img src="images/iso.svg">
-
+   <div>
+  <img src="images/web.svg">
        </div>
-        <div class="col-lg-11 col-md-11 col-xl-9 col-9 pt-1">
-            <p> ISO CERTIFIED </p>
-       </div>
-      </div>
-      </div>
-  </div>
-<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-  <div class="countbox1">
-   <div class="row py-1">
-        <div class="col-lg-1 col-md-1 col-xl-1 col-3">
-        <img src="images/web.svg">
-       </div>
-        <div class="col-lg-11 col-md-11 col-xl-10 col-9 pt-1">
+        <div>
            <p> 250 + Branches Pan India </p>
        </div>
       </div>
@@ -795,14 +767,6 @@
   </div>
 </div>
 </div>
- </div>
-
-
-
-
-
-
-
 
 
 
