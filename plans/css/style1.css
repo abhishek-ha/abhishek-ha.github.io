@@ -13503,13 +13503,25 @@ h4{color:#444}
 .riderbox{
     background-color: #f2f1f6;
     padding: 10px;
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 2px solid #673ab7;
 }
+.riderboxnote ul {
+            padding-left: 40px;
+        }
+.riderboxnote ul li:before {
+    content: "\f111"!important;
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 1px!important;
+    vertical-align: middle;
+    font-size: 8px;
+}
+
 .rider_btn {
     background:#0f5fc2;
     color: #ffffff!important;
