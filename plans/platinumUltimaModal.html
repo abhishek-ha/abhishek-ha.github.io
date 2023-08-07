@@ -44,6 +44,19 @@
         <![endif]-->
 
     <style>
+
+label{
+    text-align: left;
+        float: left;
+}
+.input-group-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
         body {
             background-color: transparent;
             color: #212121;
@@ -374,7 +387,7 @@
 
         #msform {
             width: 100%;
-            margin: 50px auto;
+            margin: 10px 0px 0px 0px;
             text-align: center;
             position: relative;
         }
@@ -657,22 +670,33 @@
     <div class="container">
         <div class="row ">
             <div class="col-lg-1 col-md-1 col-sm-1"></div>
-            <div id="buyplanformdiv" class="col-lg-10 col-md-10 col-sm-10 model-medium">
+            <div id="buyplanformdiv" class="col-lg-10 col-md-10 col-sm-10 platinumultima_modal">
                 <div class="modal-header">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h3 style="font-size:24px;"> <span id="buyplanpopuptitle1"> <span style="font-weight:600;">
-
-                                    <span></span> <span class="close"><a style="border: radius 0;"
+                         <span class="close"><a style="border: radius 0;"
                                             href="javascript:closeform()">&times;</a></span> </h3>
-                        <div style="border-top:4px solid #457e70;width: 100px; margin-bottom: 5px;">
+                        <div>
                         </div>
                     </div>
                 </div>
                 <form id="msform">
                     <!-- progressbar -->
-                    <label for="AgentId"> Agent Code </label>
-                    <input type="text" id="AgentId">
-                    <ul id="progressbar">
+                    <div class="form-group row">
+                      <div class="col-lg-2 col-md-2 col-4">
+                        <label for="AgentId"> Agent Code:</label>  
+                      </div>  
+                      <div class="col-lg-4 col-md-4 col-8">
+                        <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">HAA_</span>
+  </div>
+  <input type="text" class="form-control" id="AgentId">
+</div>
+                 <!-- <input type="text" class="form-control" id="AgentId" placeholder="HAA_">          -->
+                      </div>
+                    </div>
+          <ul id="progressbar">
                         <li class="active" id="account"><strong>Member Details</strong></li>
                         <li id="personal"><strong> Rider </strong></li>
                         <li id="payment"><strong> Order Summary </strong></li>
@@ -730,8 +754,8 @@
                                                     <label for="CustomerCity"> City </label>
                                                     <input type="text" class="form-control" id="CustomerCity">
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerAddress"> Address </label>
+                                    <div class="col-md-12 col-lg-12 col-12">
+                            <label for="CustomerAddress"> Address </label>
                                                     <textarea class="form-control" rows="2" placeholder="Enter Address"
                                                         id="CustomerAddress"> </textarea>
                                                 </div>
@@ -909,13 +933,20 @@
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
                                     <div class="riderbox">
-                                        <input type="checkbox" id="ServiceAdditionCheck" />
-                                        <button type="button" class="btn rider_btn mx-4 selected" id="hospicash">
+                                        <div>
+    <input type="checkbox" class="form-check-input rider_checkbox" id="ServiceAdditionCheck" />
+                                        <button type="button" class="btn rider_btn ml-4 selected" id="hospicash">
                                             Physical GP and Doctor of Your Choice </button>
-                                        <input type="checkbox" id="MemberAdditionCheck" />
-                                        <button type="button" class="btn rider_btn mx-4 MemberAdditionBtn"
+                                        </div>
+
+<div>
+   <input type="checkbox" class="form-check-input rider_checkbox" id="MemberAdditionCheck"  />
+                                        <button type="button" class="btn rider_btn ml-4 MemberAdditionBtn"
                                             id="healthinsurance">
-                                            Member Addition </button>
+                                            Member Addition </button> 
+</div>
+                                       
+                                        
                                     </div>
 
                                 </div>
@@ -939,22 +970,23 @@
                             </div>
 
                             <div class="row healthinsurancebox" style="display: none;">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-12">
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optradio" value="1">Member Addition 1: 1,700/-
-                                              </label>
-                                              <label class="radio-inline">
-                                                <input type="radio" name="optradio" value="2">Member Addition 2: 3,000/-
-                                              </label>
-                                            <div id="accordion" class="accordion-container memberAdditionDiv">
+                            <div class="col-xl-12 col-lg-12 col-12 text-center py-4">
+<div class="form-check form-check-inline">
+  <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio" value="1">
+  <label class="form-check-label" for="inlineRadio1"> One Member: 1,700/- </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio" value="2">
+  <label class="form-check-label" for="inlineRadio2"> Two Members: 3,000/- </label>
+</div>
+
+                        <!--  <label class="radio-inline mx-4">
+                <input type="radio" class="rider_checkbox" name="optradio" value="1"><span> Member Addition 1: 1,700/-  </span> </label> 
+     <label class="radio-inline mx-4"> <input type="radio" class="rider_checkbox" name="optradio" value="2"><span> Member Addition 2: 3,000/- </span></label>-->
+        <div id="accordion" class="accordion-container memberAdditionDiv">
 
                                             </div>
                                         </div>
-                                    </div>
-
-                                </div>
 
                             </div>
                         </div>
@@ -1465,7 +1497,7 @@
                                                                 class="form-control datepicker"
                                                                 placeholder="Date Of Birth" min="1940-01-01" max="2004-01-01">
                                                         </div>
-                                                        <div class=" col-md-4">
+                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
                                                             <select class="form-select form-control"
                                                                 id="riderRelation${count + 1}">
@@ -1523,7 +1555,7 @@
                                                                 class="form-control datepicker"
                                                                 placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
                                                         </div>
-                                                        <div class=" col-md-4">
+                                                        <div class=" col-md-12">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
                                                             <select class="form-select form-control"
                                                                 id="riderRelation${count + 1}">

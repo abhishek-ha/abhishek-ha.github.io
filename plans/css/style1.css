@@ -62,6 +62,12 @@ a:hover{
 .specialist{
     padding: 33px 0px 33px 0px!important;
 } 
+.platinumultima_modal{
+    background-color: #ffffff;
+    margin:50px 0px 80px;
+}
+
+
 .platinumultima_modal .modal-content{
     background-color: #ffffff;
 }
@@ -69,8 +75,10 @@ a:hover{
     font-size: 20px;
     font-weight: 600;
 }
-.platinumultima_modal .modal-content .modal-body label{
+.platinumultima_modal label{
     font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 .platinumultima_modal .modal-content .modal-body .form-control{
     border-radius: 4px;
@@ -82,7 +90,11 @@ a:hover{
     font-weight: 600;
     text-align: left;
 }
-
+.rider_checkbox{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+}
 .accordion-container .accordion-title {
   position: relative;
   margin: 0;
@@ -13502,8 +13514,8 @@ h4{color:#444}
 
 .riderbox{
     background-color: #f2f1f6;
-    padding: 10px;
-    width: 80%;
+    padding: 10px 20px;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -13526,8 +13538,8 @@ h4{color:#444}
     background:#0f5fc2;
     color: #ffffff!important;
     border-radius: 4px;
-    min-width:210px;
-    font-size:16px;
+    min-width:305px;
+    font-size:14px;
    font-weight: 700;
    text-align: center;
    padding: 10px;  
@@ -13607,16 +13619,17 @@ h4{color:#444}
 .form-control {
     display: block;
     width: 100%;
-    height: calc(2em + 1rem + 2px);
+/*height: calc(2em + 1rem + 2px);*/
+    height: 38px;
     padding: .375rem 1.5rem;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #f7f7ff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: 20px;
+    border-radius: 4px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .service5{
