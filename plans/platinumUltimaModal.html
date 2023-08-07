@@ -670,6 +670,8 @@
                 </div>
                 <form id="msform">
                     <!-- progressbar -->
+                    <label for="AgentId"> Agent Code </label>
+                    <input type="text" id="AgentId">
                     <ul id="progressbar">
                         <li class="active" id="account"><strong>Member Details</strong></li>
                         <li id="personal"><strong> Rider </strong></li>
@@ -923,7 +925,7 @@
                             <div class="row hospicashbox">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 main_benefits">
                                     <ul>
-                                        <h4 class="pl-2"> Main Benefits: </h4>
+                                        <h4 class="pl-2"> Main Benefits: 2500/-</h4>
                                         <span id="RiderBenefits"></span>
                                     </ul>
                                     <div class="riderboxnote">
@@ -940,6 +942,12 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                                     <div class="row">
                                         <div class="col-xl-12 col-lg-12 col-12">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio" value="1">Member Addition 1: 1,700/-
+                                              </label>
+                                              <label class="radio-inline">
+                                                <input type="radio" name="optradio" value="2">Member Addition 2: 3,000/-
+                                              </label>
                                             <div id="accordion" class="accordion-container memberAdditionDiv">
 
                                             </div>
@@ -974,23 +982,7 @@
                                     </div>
                                 </div>
                                 <span id="riderDetailSpan">
-                                    <!-- <div class="d-flex justify-content-between ">
-                            <div>
-                                <p> Rider 1 </p>
-                            </div>
-                            <div>
-                                <p class="amount" id="riderAmount1"> <i class="fa fa-inr" aria-hidden="true"></i> 2427</p>
-                            </div>
-                        </div>
 
-                        <div class="d-flex justify-content-between ">
-                            <div>
-                                <p> Rider 2 </p>
-                            </div>
-                            <div>
-                                <p class="amount" id="riderAmount2"> <i class="fa fa-inr" aria-hidden="true"></i> 2427</p>
-                            </div>
-                        </div> -->
                                 </span>
                                 <div class="d-flex justify-content-between ">
                                     <div>
@@ -1427,9 +1419,8 @@
         });
 
         var count;
-        $('.MemberAdditionBtn').click(function (e) {
-            e.preventDefault();
-            GetOPDRiderBenefits('HA002').then(function (result) {
+        function MemberAdditionBenefitsFun(rCode){
+            GetOPDRiderBenefits(rCode).then(function (result) {
                 $('.memberAdditionDiv').html('');
                 if (result != null) {
                     var MemberAddition = '';
@@ -1549,9 +1540,17 @@
             }).catch(function (error) {
                 console.warn(error);
             });
+        }
+
+        $('input[type=radio][name=optradio]').change(function() {
+            if (this.value == 1) {
+                console.log("Member Addition 1");
+                MemberAdditionBenefitsFun('HA002')
+            }else if (this.value == 2) {
+                console.log("Member Addition 2");
+                MemberAdditionBenefitsFun('HA003')
+            }
         });
-
-
 
         $('#submitPaymentBtn').click(function (e) {
             var CustomerDOB = $('#CustomerDOB').val();
@@ -1598,16 +1597,55 @@
             event.preventDefault();
             riderCode = '';
             if ($('#ServiceAdditionCheck').is(':checked') && $('#MemberAdditionCheck').is(':checked')) {
-                console.log('ServiceAddition');
-                riderCode = 'HA001,HA002';
+                var rel = GetRelations();
+                if($('input[name="optradio"]:checked').val() == '1'){
+                    if(rel != null && rel.length == 4) {
+                    isNext=true;
+                    riderCode = 'HA001,HA002';
+                    }
+                    else{
+                        isNext=false;
+                        alert('Please Enter All relation Details!');
+                    }
+                }
+                else{
+                    if(rel != null && rel.length == 5) {
+                    isNext=true;
+                    riderCode = 'HA001,HA003';
+                    }
+                    else{
+                        isNext=false;
+                        alert('Please Enter All relation Details!');
+                    }
+                }
             }
             else if ($('#ServiceAdditionCheck').is(':checked')) {
-                console.log('ServiceAddition');
+                isNext=true;
                 riderCode = 'HA001';
             }
             else if ($('#MemberAdditionCheck').is(':checked')) {
-                console.log('MemberAddition');
-                riderCode = 'HA002';
+                var rel = GetRelations();
+                if($('input[name="optradio"]:checked').val() == '1'){
+                    if(rel != null && rel.length == 4) {
+                    isNext=true;
+                    riderCode = 'HA002';
+                    }
+                    else{
+                        isNext=false;
+                        alert('Please Enter All relation Details!');
+                    }
+                }
+                else{
+                    if(rel != null && rel.length == 5) {
+                    isNext=true;
+                    riderCode = 'HA003';
+                    }
+                    else{
+                        isNext=false;
+                        alert('Please Enter All relation Details!');
+                    }
+                }
+
             }
 
             $('#totalAmount').text('');
@@ -2193,18 +2231,18 @@
             var MemberGender3 = $('#MemberGender3').val()
 
 
-            if (MemberName1 != null && MemberName1 != '' && MemberDOB1 != null && MemberDOB1 != '') {
+            if (MemberName1 != null && MemberName1 != '' && MemberName1!=" " && MemberDOB1 != null && MemberDOB1 != '' && MemberEmail1 != null && MemberEmail1 != '' && MemberMobile1 != null && MemberMobile1 != '') {
                 Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": MemberGender1, "RelationName": Member1Relative, "EmailId": MemberEmail1, "MobileNo": MemberMobile1 });
             }
-            if (MemberName2 != null && MemberName2 != '' && MemberDOB2 != null && MemberDOB2 != '') {
+            if (MemberName2 != null && MemberName2 != '' && MemberName2!=" " && MemberDOB2 != null && MemberDOB2 != '' && MemberEmail2 != null && MemberEmail2 !='' && MemberMobile2 != null && MemberMobile2 != '') {
                 Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": MemberGender2, "RelationName": Member2Relative, "EmailId": MemberEmail2, "MobileNo": MemberMobile2 });
             }
-            if (MemberName3 != null && MemberName3 != '' && MemberDOB3 != null && MemberDOB3 != '') {
+            if (MemberName3 != null && MemberName3 != '' && MemberName3!=" " && MemberDOB3 != null && MemberDOB3 != '' && MemberEmail3 != null && MemberEmail3 != '' && MemberMobile3 != null && MemberMobile3 != '') {
                 Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": MemberGender3, "RelationName": Member3Relative, "EmailId": MemberEmail3, "MobileNo": MemberMobile3 });
             }
 
             for (var i = 0; i < count; i++) {
-                if (($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != null && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != '' && $(`#riderDOB${i + 1}`).val() != null && $(`#riderDOB${i + 1}`).val() != '') {
+                if (($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != null && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != '' && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != " " && $(`#riderDOB${i + 1}`).val() != null && $(`#riderDOB${i + 1}`).val() != '' && $(`#riderEmail${i + 1}`).val()!=null && $(`#riderEmail${i + 1}`).val()!='' && $(`#riderMobile${i + 1}`).val()!=null && $(`#riderMobile${i + 1}`).val()!='' ) {
                     Relations.push({ "Name": ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()), "DoB": $(`#riderDOB${i + 1}`).val(), "Gender": $(`#riderGender${i + 1}`).val(), "RelationName": $(`#riderRelation${i + 1}`).val(), "EmailId": $(`#riderEmail${i + 1}`).val(), "MobileNo": $(`#riderMobile${i + 1}`).val() });
                 }
             }
@@ -2220,7 +2258,7 @@
             var customerEmail = $('#CustomerEmail').val();
             var customerPhone = $('#CustomerPhone').val();
 
-            if (customerName != null && customerName != '' && customerDOB != null && customerDOB != '' && customerPhone != null && customerPhone != '' && customerEmail != null && customerEmail != '' && customerGender != null && customerGender != '') {
+            if (customerName != null && customerName != '' && customerName != " " && customerDOB != null && customerDOB != '' && customerPhone != null && customerPhone != '' && customerEmail != null && customerEmail != '' && customerGender != null && customerGender != '') {
                 selfDetails.push({ "Name": customerName, "DoB": customerDOB, "Gender": customerGender, "EmailId": customerEmail, "MobileNo": customerPhone });
             }
 
