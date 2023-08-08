@@ -171,8 +171,7 @@
                 margin-top: 130px;
                 padding-bottom: 10px;
             }
-
-            .banner1 {
+ .banner1 {
                 padding-top: 25px;
                 margin-top: 120px;
                 padding-bottom: 10px !important;
@@ -494,13 +493,12 @@ href="mailto:ant.support@healthassure.in"> <i class="fa-regular fa-envelope"></i
     <section>
         <div class="bbb_viewed">
             <div class="container">
-                   <h3 class="head pt-5"> Executive Packages </h3>
+                   <h3 class="head py-5"> Executive Packages </h3>
                 <div class="row">
-
-                    <div class="col">
+                   <div class="col">
                         <div class="bbb_main_container">
                             <div class="bbb_viewed_slider_container">
-                                <div class="owl-carousel owl-theme bbb_viewed_slider">
+                                <div class="owl-carousel owl-theme bbb_viewed_slider1">
                             <div class="owl-item">
                                         <div class="bbb_viewed_item">
                 <div class="package"><img src="images/package29.jpg">
@@ -677,9 +675,9 @@ href="mailto:ant.support@healthassure.in"> <i class="fa-regular fa-envelope"></i
 
                             <div class="bbb_viewed_title_container">
                                 <div class="bbb_viewed_nav_container">
-                                    <div class="bbb_viewed_nav bbb_viewed_prev"><i
+                                    <div class="bbb_viewed_nav bbb_viewed_prev1"><i
                                             class="fa-solid fa-circle-chevron-left"></i></div>
-                                    <div class="bbb_viewed_nav bbb_viewed_next"> <i
+                                    <div class="bbb_viewed_nav bbb_viewed_next1"> <i
                                             class="fa-solid fa-circle-chevron-right"></i> </div>
                                 </div>
                             </div>
@@ -697,8 +695,8 @@ href="mailto:ant.support@healthassure.in"> <i class="fa-regular fa-envelope"></i
 
     <section>
         <div class="bbb_viewed">
-            <div class="container pt-5">
-                <h3 class="head"> General Packages </h3>
+            <div class="container ">
+                <h3 class="head py-5"> General Packages </h3>
                 <div class="row">
                     <div class="col">
                         <div class="bbb_main_container">
@@ -1838,6 +1836,47 @@ href="mailto:ant.support@healthassure.in"> <i class="fa-regular fa-envelope"></i
             }
         });
     </script>
+
+
+
+
+<script>
+        $(document).ready(function () {
+            if ($('.bbb_viewed_slider1').length) {
+                var viewedSlider = $('.bbb_viewed_slider1');
+                viewedSlider.owlCarousel(
+                    {
+                        loop: true,
+                        margin: 15,
+                        autoplay: false,
+                        autoplayTimeout: 6000,
+                        nav: false,
+                        dots: false,
+                        responsive:
+                        {
+                            0: { items: 1 },
+                            575: { items: 2 },
+                            768: { items: 3 },
+                            991: { items: 3 },
+                            1199: { items: 4 }
+                        }
+                    });
+                if ($('.bbb_viewed_prev1').length) {
+                    var prev = $('.bbb_viewed_prev1');
+                    prev.on('click', function () {
+                        viewedSlider.trigger('prev.owl.carousel');
+                    });
+                }
+                if ($('.bbb_viewed_next1').length) {
+                    var next = $('.bbb_viewed_next1');
+                    next.on('click', function () {
+                        viewedSlider.trigger('next.owl.carousel');
+                    });
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
