@@ -3532,10 +3532,11 @@ div {
    color:#ffffff!important;
 }
 .platinumultimaimg{
-    margin-top: -1842px;
-    margin-left: auto;
+   margin-top: -1798px;
+    margin-left: 12%;
     margin-right: auto;
-    position:relative;
+    position: relative;
+    width: 71%;
 }
 
 .cashkarohead{
@@ -4607,7 +4608,6 @@ height:630px;
 .cashkarohead1{
     color: #0f5fc2;
     font-weight: 700!important;
-    font-family: 'Poppins', sans-serif;
     font-size:19px;
 }
 .stamp{
@@ -4887,9 +4887,11 @@ height:630px;
     height:770px;
    }
 .platinumultimaimg{
-     margin-top: -1645px;
-    width: 73%;
-    margin-left: 14%;
+    margin-top: -1637px;
+    margin-left: 17%;
+    margin-right: auto;
+    position: relative;
+    width: 63%;
 }
 }
 
@@ -5350,9 +5352,11 @@ height:630px;
     height:732px;
    }
 .platinumultimaimg{
-     margin-top: -1590px;
-    width: 73%;
-    margin-left: 14%;
+      margin-top: -1560px;
+    margin-left: 21%;
+    margin-right: auto;
+    position: relative;
+    width: 55%;
 }
 }
 
@@ -5413,9 +5417,11 @@ height:630px;
     height:731px;
    }
 .platinumultimaimg{
-    margin-top: -1590px;
-    width: 73%;
-    margin-left: 14%;
+     margin-top: -1560px;
+    margin-left: 21%;
+    margin-right: auto;
+    position: relative;
+    width: 55%;
 }
 }
 
@@ -5727,9 +5733,11 @@ height:630px;
     height:690px;
    }
 .platinumultimaimg{
-   margin-top: -1505px;
-    width: 73%;
-    margin-left: 14%;
+  margin-top: -1465px;
+    margin-left: 21%;
+    margin-right: auto;
+    position: relative;
+    width: 55%;
 }
 }
 
@@ -6087,9 +6095,11 @@ height:630px;
     height:669px;
    }
 .platinumultimaimg{
-    margin-top: -1467px;
-    width: 73%;
-    margin-left: 15%;
+    margin-top: -1425px;
+    margin-left: 21%;
+    margin-right: auto;
+    position: relative;
+    width: 55%;
 }
 }
 
@@ -7709,9 +7719,9 @@ height:321px;
     height:567px;
    }
 .platinumultimaimg{
-  margin-top: -1253px;
-    margin-left: 25%;
-    width: 49%;
+  margin-top: -1142px;
+    margin-left: 35%;
+    width: 30%;
 }
 
 
@@ -7986,9 +7996,9 @@ height:321px;
     height:526px;
    }
 .platinumultimaimg{
-      margin-top: -1187px;
-    margin-left: 27%;
-    width: 43%;
+   margin-top: -1142px;
+    margin-left: 35%;
+    width: 30%;
 }
 }
 @media only screen and (min-width: 800px){
