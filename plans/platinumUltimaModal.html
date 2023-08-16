@@ -44,16 +44,19 @@
         <![endif]-->
 
     <style>
+        label {
+            text-align: left;
+            float: left;
+        }
 
-label{
-    text-align: left;
-        float: left;
-}
-.input-group-text {
-    font-size: 16px;
-    font-weight: 600;
-}
+        .input-group-text {
+            font-size: 16px;
+            font-weight: 600;
+        }
 
+        .GoodHealth {
+            margin-top: 13px;
+        }
 
 
 
@@ -674,7 +677,7 @@ label{
                 <div class="modal-header">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <h3 style="font-size:24px;"> <span id="buyplanpopuptitle1"> <span style="font-weight:600;">
-                         <span class="close"><a style="border: radius 0;"
+                                    <span class="close"><a style="border: radius 0;"
                                             href="javascript:closeform()">&times;</a></span> </h3>
                         <div>
                         </div>
@@ -682,247 +685,272 @@ label{
                 </div>
                 <form id="msform">
                     <!-- progressbar -->
-                    <div class="form-group row">
-                      <div class="col-lg-2 col-md-2 col-4">
-                        <label for="AgentId"> Agent Code:</label>  
-                      </div>  
-                      <div class="col-lg-4 col-md-4 col-8">
-                        <div class="input-group">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">HAA_</span>
-  </div>
-  <input type="text" class="form-control" id="AgentId">
-</div>
-                 <!-- <input type="text" class="form-control" id="AgentId" placeholder="HAA_">          -->
-                      </div>
+                    <div id="divAgentId" class="form-group row">
+                        <div class="col-lg-2 col-md-2 col-4">
+                            <label for="AgentId"> Agent Code:</label>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">HAA_</span>
+                                </div>
+                                <input type="text" class="form-control" id="AgentId">
+                            </div>
+                            <!-- <input type="text" class="form-control" id="AgentId" placeholder="HAA_">          -->
+                        </div>
                     </div>
-          <ul id="progressbar">
+                    <ul id="progressbar">
                         <li class="active" id="account"><strong>Member Details</strong></li>
                         <li id="personal"><strong> Rider </strong></li>
                         <li id="payment"><strong> Order Summary </strong></li>
-                        <li id="confirm"><strong> Payment Success </strong></li>
+                        <li id="confirm"><strong> Payment Initiated </strong></li>
                     </ul>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-12">
+                                    <div id="divFloatRelation" class="">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="1">
+                                            <label class="form-check-label" for=""> 1A </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="2">
+                                            <label class="form-check-label" for=""> 2A </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="3">
+                                            <label class="form-check-label" for=""> 1A1C </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="4">
+                                            <label class="form-check-label" for=""> 1A2C </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="5">
+                                            <label class="form-check-label" for=""> 2A1C </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mt-2" type="radio" name="floatRelation" value="6">
+                                            <label class="form-check-label" for=""> 2A2C </label>
+                                        </div>
+                                    </div>
+
                                     <div id="accordion" class="accordion-container">
-                                        <h4 class="accordion-title js-accordion-title"> Self </h4>
-                                        <div class="accordion-content">
-                                            <div class="form-row">
-                                                <div class=" col-md-4">
-                                                    <label for="firstname"> First Name </label>
-                                                    <input type="text" class="form-control" id="firstname" required>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="lastname"> Last Name </label>
-                                                    <input type="text" class="form-control" id="lastname" required>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerGender"> Gender </label>
-                                                    <select class="form-select form-control" id="CustomerGender"
-                                                        required>
-                                                        <option value="Male"> Male </option>
-                                                        <option value="Female"> Female </option>
-                                                        <option value="Other"> Other </option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerPhone"> Mobile No </label>
-                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="CustomerPhone"
-                                                        required>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerEmail"> Email </label>
-                                                    <input type="email" class="form-control" id="CustomerEmail"
-                                                        required>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerDOB"> Date Of Birth </label>
-                                                    <input type="date" id="CustomerDOB" class="form-control datepicker"
-                                                        placeholder="Date Of Birth" required>
-                                                </div>
-                                                <div class=" col-md-4">
-                                                    <label for="CustomerPincode"> Pincode </label>
-                                                    <input type="email" class="form-control" id="CustomerPincode">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="CustomerState"> State </label>
-                                                    <input type="text" class="form-control" id="CustomerState">
-                                                </div>
-                                                <div class=" col-md-4">
-                                                    <label for="CustomerCity"> City </label>
-                                                    <input type="text" class="form-control" id="CustomerCity">
-                                                </div>
-                                    <div class="col-md-12 col-lg-12 col-12">
-                            <label for="CustomerAddress"> Address </label>
-                                                    <textarea class="form-control" rows="2" placeholder="Enter Address"
-                                                        id="CustomerAddress"> </textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h4 class="accordion-title js-accordion-title"> Adult </h4>
-                                        <div class="accordion-content">
-                                            <div class="form-row">
-                                                <div class="col-md-4">
-                                                    <label for="firstname1"> First Name </label>
-                                                    <input type="text" class="form-control" id="firstname1" />
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="lastname1"> Last Name </label>
-                                                    <input type="text" class="form-control" id="lastname1">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <label for="MemberGender1"> Gender </label>
-                                                    <select class="form-select form-control" id="MemberGender1">
-                                                        <option value="Male"> Male </option>
-                                                        <option value="Female"> Female </option>
-                                                        <option value="Other"> Other </option>
-                                                    </select>
-                                                </div>
-                                                <div class=" col-md-4">
-                                                    <label for="MemberMobile1"> Mobile No </label>
-                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile1">
-                                                </div>
-
-                                                <div class=" col-md-4">
-                                                    <label for="MemberEmail1"> Email </label>
-                                                    <input type="email" class="form-control" id="MemberEmail1">
-                                                </div>
-                                                <div class=" col-md-4">
-                                                    <label for="firstname"> Date Of Birth </label>
-                                                    <input type="date" id="MemberDOB1" class="form-control datepicker"
-                                                        placeholder="Date Of Birth" min="1940-01-01" max="2004-01-01">
-                                                </div>
-
-
-                                                <div class=" col-md-4">
-                                                    <label for="Relative1"> Relation </label>
-                                                    <select class="form-select form-control" id="Relative1"
-                                                        name="Relative1">
-                                                        <option value="SON">SON</option>
-                                                        <option value="DAUGHTER">DAUGHTER</option>
-                                                        <option value="HUSBAND">HUSBAND</option>
-                                                        <option value="WIFE">WIFE</option>
-                                                        <option value="FATHER">FATHER</option>
-                                                        <option value="MOTHER">MOTHER</option>
-                                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
-                                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
-                                                        <option value="OTHER">OTHER</option>
-                                                        <option value="SIBLING">SIBLING</option>
-                                                    </select>
+                                        <div id="divSelf" style="display: none;">
+                                            <h4 class="accordion-title js-accordion-title"> Self </h4>
+                                            <div class="accordion-content">
+                                                <div class="form-row">
+                                                    <div class=" col-md-4">
+                                                        <label for="firstname"> First Name </label>
+                                                        <input type="text" class="form-control" id="firstname" required>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="lastname"> Last Name </label>
+                                                        <input type="text" class="form-control" id="lastname" required>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="CustomerGender"> Gender </label>
+                                                        <select class="form-select form-control" id="CustomerGender"
+                                                            required>
+                                                            <option value="Male"> Male </option>
+                                                            <option value="Female"> Female </option>
+                                                            <option value="Other"> Other </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="CustomerPhone"> Mobile No </label>
+                                                        <input type="number" id="CustomerPhone"
+                                                            class="form-control Mobile1" required onkeyup="check(1); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                            <span id="message1"></span>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="CustomerEmail"> Email </label>
+                                                        <input type="email" class="form-control" id="CustomerEmail"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="CustomerDOB"> Date Of Birth </label>
+                                                        <input type="date" id="CustomerDOB" class="form-control datepicker"
+                                                            placeholder="Date Of Birth" required>
+                                                    </div>
+                                                    <div class=" col-md-4">
+                                                        <label for="CustomerPincode"> Pincode </label>
+                                                        <input type="email" class="form-control" id="CustomerPincode">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="CustomerState"> State </label>
+                                                        <input type="text" class="form-control" id="CustomerState">
+                                                    </div>
+                                                    <div class=" col-md-4">
+                                                        <label for="CustomerCity"> City </label>
+                                                        <input type="text" class="form-control" id="CustomerCity">
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-12">
+                                                        <label for="CustomerAddress"> Address </label>
+                                                        <textarea class="form-control" rows="2" placeholder="Enter Address"
+                                                            id="CustomerAddress"> </textarea>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <h4 class="accordion-title js-accordion-title"> Child 1 </h4>
-                                        <div class="accordion-content">
-                                            <div class="form-row">
-                                                <div class="form-group col-md-4">
-                                                    <label for="firstname2"> First Name </label>
-                                                    <input type="text" class="form-control" id="firstname2">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="lastname2"> Last Name </label>
-                                                    <input type="text" class="form-control" id="lastname2">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberGender2"> Gender </label>
-                                                    <select class="form-select form-control" id="MemberGender2">
-                                                        <option value="Male"> Male </option>
-                                                        <option value="Female"> Female </option>
-                                                        <option value="Other"> Other </option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberMobile2"> Mobile No </label>
-                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile2">
-                                                </div>
-
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberEmail2"> Email </label>
-                                                    <input type="email" class="form-control" id="MemberEmail2">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberDOB2"> Date Of Birth </label>
-                                                    <input type="date" id="MemberDOB2" class="form-control datepicker"
-                                                        placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
-                                                </div>
-
-
-                                                <div class="form-group col-md-4">
-                                                    <label for="Relative2"> Relation </label>
-                                                    <select class="form-select form-control" id="Relative2"
-                                                        name="Relative2">
-                                                        <option value="SON">SON</option>
-                                                        <option value="DAUGHTER">DAUGHTER</option>
-                                                        <option value="HUSBAND">HUSBAND</option>
-                                                        <option value="WIFE">WIFE</option>
-                                                        <option value="FATHER">FATHER</option>
-                                                        <option value="MOTHER">MOTHER</option>
-                                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
-                                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
-                                                        <option value="OTHER">OTHER</option>
-                                                        <option value="SIBLING">SIBLING</option>
-                                                    </select>
+                                        <div id="divAdult" style="display: none;">
+                                            <h4 class="accordion-title js-accordion-title"> Adult </h4>
+                                            <div class="accordion-content">
+                                                <div class="form-row">
+                                                    <div class="col-md-4">
+                                                        <label for="firstname1"> First Name </label>
+                                                        <input type="text" class="form-control" id="firstname1" />
+    
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="lastname1"> Last Name </label>
+                                                        <input type="text" class="form-control" id="lastname1">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="MemberGender1"> Gender </label>
+                                                        <select class="form-select form-control" id="MemberGender1">
+                                                            <option value="Male"> Male </option>
+                                                            <option value="Female"> Female </option>
+                                                            <option value="Other"> Other </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class=" col-md-4">
+                                                        <label for="MemberMobile1"> Mobile No </label>
+                                                        <input type="number" id="MemberMobile1"
+                                                        class="form-control Mobile2 " required onkeyup="check(2); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                        <span id="message2"></span>
+                                                    </div>
+    
+                                                    <div class=" col-md-4">
+                                                        <label for="MemberEmail1"> Email </label>
+                                                        <input type="email" class="form-control" id="MemberEmail1">
+                                                    </div>
+                                                    <div class=" col-md-4">
+                                                        <label for="firstname"> Date Of Birth </label>
+                                                        <input type="date" id="MemberDOB1" class="form-control datepicker"
+                                                            placeholder="Date Of Birth" min="1938-01-01" max="1988-01-01">
+                                                    </div>
+    
+    
+                                                    <div class=" col-md-4">
+                                                        <label for="Relative1"> Relation </label>
+                                                        <select class="form-select form-control" id="Relative1"
+                                                            name="Relative1">
+                                                            <option value="HUSBAND">HUSBAND</option>
+                                                            <option value="WIFE">WIFE</option>
+                                                            <option value="FATHER">FATHER</option>
+                                                            <option value="MOTHER">MOTHER</option>
+                                                            <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                                            <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                                            <option value="OTHER">OTHER</option>
+                                                            <option value="SIBLING">SIBLING</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <h4 class="accordion-title js-accordion-title"> Child 2 </h4>
-                                        <div class="accordion-content">
-
-                                            <div class="form-row">
-                                                <div class="form-group col-md-4">
-                                                    <label for="firstname3"> First Name </label>
-                                                    <input type="text" class="form-control" id="firstname3">
+                                        <div id="divChild1" style="display: none;">
+                                            <h4 class="accordion-title js-accordion-title"> Child 1 </h4>
+                                            <div class="accordion-content">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="firstname2"> First Name </label>
+                                                        <input type="text" class="form-control" id="firstname2">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="lastname2"> Last Name </label>
+                                                        <input type="text" class="form-control" id="lastname2">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberGender2"> Gender </label>
+                                                        <select class="form-select form-control" id="MemberGender2">
+                                                            <option value="Male"> Male </option>
+                                                            <option value="Female"> Female </option>
+                                                            <option value="Other"> Other </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberMobile2"> Mobile No </label>
+                                                        <input type="number" id="MemberMobile2"
+                                                        class="form-control Mobile3" required onkeyup="check(3); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                        <span id="message3"></span>
+                                                    </div>
+    
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberEmail2"> Email </label>
+                                                        <input type="email" class="form-control" id="MemberEmail2">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberDOB2"> Date Of Birth </label>
+                                                        <input type="date" id="MemberDOB2" class="form-control datepicker"
+                                                            placeholder="Date Of Birth" min="1988-01-01" max="2023-08-10">
+                                                    </div>
+    
+    
+                                                    <div class="form-group col-md-4">
+                                                        <label for="Relative2"> Relation </label>
+                                                        <select class="form-select form-control" id="Relative2"
+                                                            name="Relative2">
+                                                            <option value="SON">SON</option>
+                                                            <option value="DAUGHTER">DAUGHTER</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="lastname3"> Last Name </label>
-                                                    <input type="text" class="form-control" id="lastname3">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberGender3"> Gender </label>
-                                                    <select class="form-select form-control" id="MemberGender3">
-                                                        <option value="Male"> Male </option>
-                                                        <option value="Female"> Female </option>
-                                                        <option value="Other"> Other </option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberMobile3"> Mobile No </label>
-                                                    <input type="number" onKeyPress="if(this.value.length>9) return false;" class="form-control" id="MemberMobile3">
-                                                </div>
-
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberEmail3"> Email </label>
-                                                    <input type="email" class="form-control" id="MemberEmail3">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                    <label for="MemberDOB2"> Date Of Birth </label>
-                                                    <input type="date" id="MemberDOB3" class="form-control datepicker"
-                                                        placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
-                                                </div>
-
-
-                                                <div class="form-group col-md-4">
-                                                    <label for="Relative3"> Relation </label>
-                                                    <select class="form-select form-control" id="Relative3"
-                                                        name="Relative3">
-                                                        <option value="SON">SON</option>
-                                                        <option value="DAUGHTER">DAUGHTER</option>
-                                                        <option value="HUSBAND">HUSBAND</option>
-                                                        <option value="WIFE">WIFE</option>
-                                                        <option value="FATHER">FATHER</option>
-                                                        <option value="MOTHER">MOTHER</option>
-                                                        <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
-                                                        <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
-                                                        <option value="OTHER">OTHER</option>
-                                                        <option value="SIBLING">SIBLING</option>
-                                                    </select>
+                                            </div>
+                                        </div>
+                                        <div id="divChild2" style="display: none;">
+                                            <h4 class="accordion-title js-accordion-title"> Child 2 </h4>
+                                            <div class="accordion-content">
+    
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-4">
+                                                        <label for="firstname3"> First Name </label>
+                                                        <input type="text" class="form-control" id="firstname3">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="lastname3"> Last Name </label>
+                                                        <input type="text" class="form-control" id="lastname3">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberGender3"> Gender </label>
+                                                        <select class="form-select form-control" id="MemberGender3">
+                                                            <option value="Male"> Male </option>
+                                                            <option value="Female"> Female </option>
+                                                            <option value="Other"> Other </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberMobile3"> Mobile No </label>
+                                                        <input type="number" id="MemberMobile3"
+                                                        class="form-control Mobile4 " required onkeyup="check(4); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                        <span id="message4"></span>
+                                                    </div>
+    
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberEmail3"> Email </label>
+                                                        <input type="email" class="form-control" id="MemberEmail3">
+                                                    </div>
+                                                    <div class="form-group col-md-4">
+                                                        <label for="MemberDOB2"> Date Of Birth </label>
+                                                        <input type="date" id="MemberDOB3" class="form-control datepicker"
+                                                            placeholder="Date Of Birth" min="1988-01-01" max="2023-08-10">
+                                                    </div>
+    
+    
+                                                    <div class="form-group col-md-4">
+                                                        <label for="Relative3"> Relation </label>
+                                                        <select class="form-select form-control" id="Relative3"
+                                                            name="Relative3">
+                                                            <option value="SON">SON</option>
+                                                            <option value="DAUGHTER">DAUGHTER</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <p><b>Note:- </b>  A: Adult  C: Child</p>
                                 </div>
                             </div>
                         </div>
@@ -934,19 +962,22 @@ label{
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex justify-content-center">
                                     <div class="riderbox">
                                         <div>
-    <input type="checkbox" class="form-check-input rider_checkbox" id="ServiceAdditionCheck" />
-                                        <button type="button" class="btn rider_btn ml-4 selected" id="hospicash">
-                                            Physical GP and Doctor of Your Choice </button>
+                                            <input type="checkbox" class="form-check-input rider_checkbox"
+                                                id="ServiceAdditionCheck" />
+                                            <button type="button" class="btn rider_btn ml-4 selected ServiceAdditionBtn"
+                                                id="hospicash">
+                                                Physical GP and Doctor of Your Choice </button>
                                         </div>
 
-<div>
-   <input type="checkbox" class="form-check-input rider_checkbox" id="MemberAdditionCheck"  />
-                                        <button type="button" class="btn rider_btn ml-4 MemberAdditionBtn"
-                                            id="healthinsurance">
-                                            Member Addition </button> 
-</div>
-                                       
-                                        
+                                        <div>
+                                            <input type="checkbox" class="form-check-input rider_checkbox"
+                                                id="MemberAdditionCheck" />
+                                            <button type="button" class="btn rider_btn ml-4 MemberAdditionBtn"
+                                                id="healthinsurance">
+                                                Member Addition </button>
+                                        </div>
+
+
                                     </div>
 
                                 </div>
@@ -960,38 +991,43 @@ label{
                                         <span id="RiderBenefits"></span>
                                     </ul>
                                     <div class="riderboxnote">
-                                      <ul>
-                                        <p> <b>Note:</b> </p>
-                    <li> General Practioner Consultations can be booked on the HealthAssure Network listed on the HealthAssure website or mobile app. </li>
-                                          <li> Consultation bills to be claimed must not exceed <b> 15 days </b> from the date of consultation. </li>
-                                    </ul>
-                                        </div>
+                                        <ul>
+                                            <p> <b>Note:</b> </p>
+                                            <li> General Practioner Consultations can be booked on the HealthAssure
+                                                Network listed on the HealthAssure website or mobile app. </li>
+                                            <li> Consultation bills to be claimed must not exceed <b> 15 days </b> from
+                                                the date of consultation. </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="row healthinsurancebox" style="display: none;">
-                            <div class="col-xl-12 col-lg-12 col-12 text-center py-4">
-<div class="form-check form-check-inline">
-  <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio" value="1">
-  <label class="form-check-label" for="inlineRadio1"> One Member: 1,700/- </label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio" value="2">
-  <label class="form-check-label" for="inlineRadio2"> Two Members: 3,000/- </label>
-</div>
+                                <div class="col-xl-12 col-lg-12 col-12 text-center py-4">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio"
+                                            value="1">
+                                        <label class="form-check-label" for="inlineRadio1"> One Member: 1,700/- </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input rider_checkbox mt-2" type="radio" name="optradio"
+                                            value="2">
+                                        <label class="form-check-label" for="inlineRadio2"> Two Members: 3,000/-
+                                        </label>
+                                    </div>
 
-                        <!--  <label class="radio-inline mx-4">
+                                    <!--  <label class="radio-inline mx-4">
                 <input type="radio" class="rider_checkbox" name="optradio" value="1"><span> Member Addition 1: 1,700/-  </span> </label> 
      <label class="radio-inline mx-4"> <input type="radio" class="rider_checkbox" name="optradio" value="2"><span> Member Addition 2: 3,000/- </span></label>-->
-        <div id="accordion" class="accordion-container memberAdditionDiv">
+                                    <div id="accordion" class="accordion-container memberAdditionDiv">
 
-                                            </div>
-                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
                         <input type="button" name="next" id="planReviewPage" class="next action-button" value="Next" />
-                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="previous" id="landingPageDiv" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -1006,7 +1042,7 @@ label{
                                 </div>
                                 <div class="d-flex justify-content-between  ">
                                     <div>
-                                        <p> ULTIMA Suraksha </p>
+                                        <p> Platinum Ultima Suraksha </p>
                                     </div>
                                     <div>
                                         <p class="amount" id="planAmount"> <i class="fa fa-inr" aria-hidden="true"></i>
@@ -1032,30 +1068,33 @@ label{
                                         <p class="producthead"> Total </p>
                                     </div>
                                     <div>
-                                        <p class="amount" id="totalAmount"> <i class="fa fa-inr" aria-hidden="true"></i>
-                                            12150
+                                        <p class="amount"> <i class="fa fa-inr" aria-hidden="true"></i>
+                                            <span id="totalAmount">12150</span>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-wrap mt-4">
                                     <div class="form-group form-check mb-0">
-                                        <input type="checkbox" class="form-check-input" id="IsTCAccepted"
-                                            onclick="TnCFunction()">
+                                        <input type="checkbox" class="form-check-input GoodHealth" id="IsTCAccepted"
+                                            onchange="TnCFunction()">
                                         <label class="form-check-label pl-3" for="IsTCAccepted"> I agree to the
                                             Good Health Declaration</label>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-wrap ">
                                     <div class="form-group form-check mb-0">
-                                        <input type="checkbox" class="form-check-input" id="GenericTNCAccepted"
-                                            onclick="TnCFunction()">
+                                        <input type="checkbox" class="form-check-input GoodHealth"
+                                            id="GenericTNCAccepted" onchange="TnCFunction()">
                                         <label class="form-check-label pl-3" for="GenericTNCAccepted"> I agree to the
                                             *Terms & conditions </label>
                                     </div>
                                 </div>
+                                <p id="alertMsg" style="color: red;" class="mt-3">Please Check All the Terms and
+                                    Conditions before Proceed!</p>
                             </div>
-
                         </div>
+                        <p class="mt-3"><b>Note:-</b> Complimentary Hospicash won't be issued If Primary Proposer's age is not between 18 to 65</p>
+
                         <input type="button" name="next" class="next action-button" id="submitPaymentBtn" value="Submit"
                             disabled />
                         <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
@@ -1109,7 +1148,7 @@ label{
         $("#RegistrationformId").submit(function (ev) {
             ev.preventDefault();
             try {
-                var url = "http://uat.healthassure.in/Products/Member/AccessCodeApi?firstname=" + $('#firstname').val() + "&&lastname=" + $('#lastname').val() + "&&gender=" + $('#Gender').val() + "&&mobileno=" + $('#mobileno').val() + "&&emailid=" + $('#emailid').val() + "&&accesscode=" + $('#vouchercode').val();
+                var url = "http://live.healthassure.in/Products/Member/AccessCodeApi?firstname=" + $('#firstname').val() + "&&lastname=" + $('#lastname').val() + "&&gender=" + $('#Gender').val() + "&&mobileno=" + $('#mobileno').val() + "&&emailid=" + $('#emailid').val() + "&&accesscode=" + $('#vouchercode').val();
                 window.open(url, "_blank");
             } catch (e) { debugger; console.log(e) };
         });
@@ -1407,37 +1446,82 @@ label{
             $('#Membersdiv').show();
         }
 
+        function check(item)
+        {
+            var mobile = $(`.Mobile${item}`);
+            var message = document.getElementById(`message${item}`);
+
+            var goodColor = "#E8F0FE";
+            var badColor = "#FF9B37";
+        
+            if(mobile.val() != '' && mobile.val().length != 10){
+                mobile.css("background", badColor);
+                message.style.color = badColor;
+                message.innerHTML = "Mobile Number should be of 10 digits!"
+            }
+            else{
+                mobile.css("background", goodColor);
+                message.innerHTML = ""
+            }
+        }
+
         function TnCFunction() {
             var IsTcAccepted = document.getElementById("IsTCAccepted");
             var GenericTNCAccepted = document.getElementById("GenericTNCAccepted");
+
             if (IsTcAccepted.checked && GenericTNCAccepted.checked) {
+                $('#alertMsg').hide();
                 $('#submitPaymentBtn').prop("disabled", false);
             }
             else {
+                $('#alertMsg').show();
                 $('#submitPaymentBtn').prop("disabled", true);
             }
         }
 
+        $('#landingPageDiv').click(function(e){
+            e.preventDefault();
+            $('#divAgentId').show();  
+        });
 
+        var relationLimit=0;
         $('#GetRiderDetails').click(function (e) {
             e.preventDefault();
             var self = GetSelfDetails();
             var rel = GetRelations();
+            console.log(rel);
+            console.log(relationLimit);
             if (self != null && self != [] && self.length > 0) {
-                if (rel != null && rel.length === 3) {
-                    isNext = true;
-                    GetOPDRiderBenefits('HA001').then(function (result) {
-                        $('#RiderBenefits').html('');
-                        if (result != null) {
-                            RiderBenefits = '';
-                            jQuery.each(result.results.benefits, function (index, it) {
-                                RiderBenefits += "<li>" + it.description + "</li>";
-                            });
-                            $('#RiderBenefits').html(RiderBenefits);
-                        }
+                if (rel.length >= relationLimit) {
+                    VarifyEmailIdForPlan($('#CustomerEmail').val(), $('#CustomerPhone').val(), true, 'HAOPDR00U46').then(async function (result) {
+                    var isUserExist= result.results.isUserExist;
+                    if(isUserExist==false){
+                        await GetOPDRiderBenefits('HA001').then(function (result) {
+                            isNext = true;
+                            $('#RiderBenefits').html('');
+                            if (result != null) {
+                                RiderBenefits = '';
+                                jQuery.each(result.results.benefits, function (index, it) {
+                                    RiderBenefits += "<li>" + it.description + "</li>";
+                                });
+                                $('#RiderBenefits').html(RiderBenefits);
+                                $('#divAgentId').hide();
+                            }
+                        }).catch(function (error) {
+                            isNext = false;
+                            console.warn(error);
+                        });
+                    }
+                    else{
+                        isNext = false;
+                        alert('We would like to inform you that there is already an active plan on the given '+  $('#CustomerEmail').val() + '/' + $('#CustomerPhone').val() + '. Request you to kindly utilize the benefits of the active plan before purchasing a new one');
+                    }
+                        
                     }).catch(function (error) {
+                        isNext = false;
                         console.warn(error);
                     });
+
                 } else {
                     isNext = false;
                     alert('Please Enter All Relations Details !');
@@ -1447,11 +1531,13 @@ label{
                 isNext = false;
                 alert('Please Enter Self Details !');
             }
-
+            console.log(isNext);
         });
 
         var count;
-        function MemberAdditionBenefitsFun(rCode){
+        var riderMobileCount=4;
+
+        function MemberAdditionBenefitsFun(rCode) {
             GetOPDRiderBenefits(rCode).then(function (result) {
                 $('.memberAdditionDiv').html('');
                 if (result != null) {
@@ -1482,8 +1568,9 @@ label{
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label for="riderMobile${count + 1}"> Mobile No </label>
-                                                            <input onKeyPress="if(this.value.length>9) return false;" type="number" class="form-control"
-                                                                id="riderMobile${count + 1}">
+                                                            <input id="riderMobile${count + 1}"
+                                                            class="form-control Mobile${riderMobileCount+1}" required onkeyup="check(${riderMobileCount+1}); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                            <span id="message${riderMobileCount+1}"></span>
                                                         </div>
 
                                                         <div class="col-md-4">
@@ -1495,12 +1582,14 @@ label{
                                                             <label for="riderDOB${count + 1}"> Date Of Birth </label>
                                                             <input type="date" id="riderDOB${count + 1}"
                                                                 class="form-control datepicker"
-                                                                placeholder="Date Of Birth" min="1940-01-01" max="2004-01-01">
+                                                                placeholder="Date Of Birth">
                                                         </div>
                                                         <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
                                                             <select class="form-select form-control"
                                                                 id="riderRelation${count + 1}">
+                                                                <option value="SON">SON</option>
+                                                                <option value="DAUGHTER">DAUGHTER</option>
                                                                 <option value="HUSBAND">HUSBAND</option>
                                                                 <option value="WIFE">WIFE</option>
                                                                 <option value="FATHER">FATHER</option>
@@ -1514,6 +1603,7 @@ label{
                                                     </div>
                                                 </div>`
                         count++;
+                        riderMobileCount++;
                     }
                     for (var i = 0; i < result.results.benefits[0].childCount; i++) {
                         MemberAddition += `<h4 class="accordion-title js-accordion-title"> Member ${count + 1} </h4>
@@ -1540,8 +1630,9 @@ label{
                                                         </div>
                                                         <div class="col-md-4">
                                                             <label for="riderMobile${count + 1}"> Mobile No </label>
-                                                            <input onKeyPress="if(this.value.length>9) return false;" type="number" class="form-control"
-                                                                id="riderMobile${count + 1}">
+                                                            <input id="riderMobile${count + 1}"
+                                                            class="form-control Mobile${riderMobileCount+1} " required onkeyup="check(${riderMobileCount+1}); return false;" onKeyPress="if(this.value.length>9) return false;" >
+                                                            <span id="message${riderMobileCount+1}"></span>
                                                         </div>
 
                                                         <div class="col-md-4">
@@ -1553,7 +1644,7 @@ label{
                                                             <label for="riderDOB${count + 1}"> Date Of Birth </label>
                                                             <input type="date" id="riderDOB${count + 1}"
                                                                 class="form-control datepicker"
-                                                                placeholder="Date Of Birth" min="2004-01-01" max="2023-07-28">
+                                                                placeholder="Date Of Birth">
                                                         </div>
                                                         <div class=" col-md-12">
                                                             <label for="riderRelation${count + 1}"> Relation </label>
@@ -1561,11 +1652,20 @@ label{
                                                                 id="riderRelation${count + 1}">
                                                                 <option value="SON">SON</option>
                                                                 <option value="DAUGHTER">DAUGHTER</option>
+                                                                <option value="HUSBAND">HUSBAND</option>
+                                                                <option value="WIFE">WIFE</option>
+                                                                <option value="FATHER">FATHER</option>
+                                                                <option value="MOTHER">MOTHER</option>
+                                                                <option value="FATHER-IN-LAW">FATHER-IN-LAW</option>
+                                                                <option value="MOTHER-IN-LAW">MOTHER-IN-LAW</option>
+                                                                <option value="OTHER">OTHER</option>
+                                                                <option value="SIBLING">SIBLING</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                 </div>`
                         count++;
+                        riderMobileCount++;
                     }
                     $('.memberAdditionDiv').html(MemberAddition);
                 }
@@ -1574,14 +1674,63 @@ label{
             });
         }
 
-        $('input[type=radio][name=optradio]').change(function() {
+        $('input[type=radio][name=optradio]').change(function () {
             if (this.value == 1) {
                 console.log("Member Addition 1");
                 MemberAdditionBenefitsFun('HA002')
-            }else if (this.value == 2) {
+            } else if (this.value == 2) {
                 console.log("Member Addition 2");
                 MemberAdditionBenefitsFun('HA003')
             }
+        });
+
+        $('input[type=radio][name=floatRelation]').change(function () {
+            $('#divSelf').hide();
+            $('#divAdult').hide();
+            $('#divChild1').hide();
+            $('#divChild2').hide();
+            EmptyRelations()
+
+            if (this.value == 1) {
+                $('#divSelf').show();
+                relationLimit=0;
+                
+            } else if (this.value == 2) {
+                $('#divSelf').show();
+                $('#divAdult').show();
+                relationLimit=1
+            } else if (this.value == 3) {
+                $('#divSelf').show();
+                $('#divChild1').show();
+                relationLimit=1
+            } else if (this.value == 4) {
+                $('#divSelf').show();
+                $('#divChild1').show();
+                $('#divChild2').show();
+                relationLimit=2
+            } else if (this.value == 5) {
+                $('#divSelf').show();
+                $('#divAdult').show();
+                $('#divChild1').show();
+                relationLimit=2
+            } else if (this.value == 6) {
+                $('#divSelf').show();
+                $('#divAdult').show();
+                $('#divChild1').show();
+                $('#divChild2').show();
+                relationLimit=3
+            } 
+
+        });
+
+        $('.ServiceAdditionBtn').click(function () {
+            $('.ServiceAdditionBtn').addClass('selected');
+            $('.MemberAdditionBtn').removeClass('selected');
+        });
+
+        $('.MemberAdditionBtn').click(function () {
+            $('.MemberAdditionBtn').addClass('selected');
+            $('.ServiceAdditionBtn').removeClass('selected');
         });
 
         $('#submitPaymentBtn').click(function (e) {
@@ -1628,52 +1777,57 @@ label{
         $('#planReviewPage').click(function (event) {
             event.preventDefault();
             riderCode = '';
+            var riderType='';
             if ($('#ServiceAdditionCheck').is(':checked') && $('#MemberAdditionCheck').is(':checked')) {
                 var rel = GetRelations();
-                if($('input[name="optradio"]:checked').val() == '1'){
-                    if(rel != null && rel.length == 4) {
-                    isNext=true;
-                    riderCode = 'HA001,HA002';
+                if ($('input[name="optradio"]:checked').val() == '1') {
+                    if (rel != null && rel.length == relationLimit + 1) {
+                        isNext = true;
+                        riderCode = 'HA001,HA002';
+                        riderType='(One Member)';
                     }
-                    else{
-                        isNext=false;
+                    else {
+                        isNext = false;
                         alert('Please Enter All relation Details!');
                     }
                 }
-                else{
-                    if(rel != null && rel.length == 5) {
-                    isNext=true;
-                    riderCode = 'HA001,HA003';
+                else {
+                    if (rel != null && rel.length == relationLimit + 2) {
+                        isNext = true;
+                        riderCode = 'HA001,HA003';
+                        riderType='(Two Members)';
                     }
-                    else{
-                        isNext=false;
+                    else {
+                        isNext = false;
                         alert('Please Enter All relation Details!');
                     }
                 }
             }
             else if ($('#ServiceAdditionCheck').is(':checked')) {
-                isNext=true;
+                isNext = true;
                 riderCode = 'HA001';
             }
             else if ($('#MemberAdditionCheck').is(':checked')) {
                 var rel = GetRelations();
-                if($('input[name="optradio"]:checked').val() == '1'){
-                    if(rel != null && rel.length == 4) {
-                    isNext=true;
-                    riderCode = 'HA002';
+                if ($('input[name="optradio"]:checked').val() == '1') {
+                    if (rel != null && rel.length == relationLimit + 1) {
+                        isNext = true;
+                        riderCode = 'HA002';
+                        riderType='(One Member)';
                     }
-                    else{
-                        isNext=false;
+                    else {
+                        isNext = false;
                         alert('Please Enter All relation Details!');
                     }
                 }
-                else{
-                    if(rel != null && rel.length == 5) {
-                    isNext=true;
-                    riderCode = 'HA003';
+                else {
+                    if (rel != null && rel.length == relationLimit + 2) {
+                        isNext = true;
+                        riderCode = 'HA003';
+                        riderType='(Two Members)';
                     }
-                    else{
-                        isNext=false;
+                    else {
+                        isNext = false;
                         alert('Please Enter All relation Details!');
                     }
                 }
@@ -1681,27 +1835,42 @@ label{
             }
 
             $('#totalAmount').text('');
-            $('#planAmount').text('');
-            $('#gstAmount').text('');
+            $('#planAmount').html('');
+            $('#gstAmount').html('');
             $('#riderDetailSpan').html('');
             GetOPDPlanReview(Vars["PlanCode"], riderCode).then(function (result) {
-                $('#planAmount').text(result.results.planAmount);
-                $('#gstAmount').text(result.results.gstAmount);
+                $('#planAmount').html('<i class="fa fa-inr" aria-hidden="true"></i>' + result.results.planAmount);
+                $('#gstAmount').html('<i class="fa fa-inr" aria-hidden="true"></i>' + result.results.gstAmount);
                 $('#totalAmount').text(result.results.totalAmount);
 
                 var riderPrice = result.results.riderPrice == "" ? [] : result.results.riderPrice.split(",");
 
                 var riderAmountDetails = '';
-                for (var i = 0; i < result.results.riderCount; i++) {
-                    riderAmountDetails += `<div class="d-flex justify-content-between ">
+                if(result.results.riderCount==1){
+                    for (var i = 0; i < result.results.riderCount; i++) {
+                        riderAmountDetails += `<div class="d-flex justify-content-between ">
                                                 <div>
-                                                    <p> Rider ${i + 1} </p>
+                                                    <p> Rider ${i + 1} ${$('#MemberAdditionCheck').is(':checked') ? riderType : ""}</p>
                                                 </div>
                                                 <div>
                                                     <p class="amount" id="riderAmount${i + 1}"> <i class="fa fa-inr" aria-hidden="true"></i> ${riderPrice[i]}</p>
                                                 </div>
                                             </div>`
+                    }
                 }
+                else if(result.results.riderCount==2){
+                    for (var i = 0; i < result.results.riderCount; i++) {
+                        riderAmountDetails += `<div class="d-flex justify-content-between ">
+                                                <div>
+                                                    <p> Rider ${i + 1} ${$('#MemberAdditionCheck').is(':checked') && (i==1) ? riderType : ""}</p>
+                                                </div>
+                                                <div>
+                                                    <p class="amount" id="riderAmount${i + 1}"> <i class="fa fa-inr" aria-hidden="true"></i> ${riderPrice[i]}</p>
+                                                </div>
+                                            </div>`
+                    }
+                }
+
                 $('#riderDetailSpan').html(riderAmountDetails);
 
             }).catch(function (error) {
@@ -1803,7 +1972,7 @@ label{
                 }
                 $.ajax({
                     type: "GET",
-                    url: "https://uat.healthassure.in/ProductApi/api/OPDPlans/GetOPDPlanBuyReview?PlanCode=" + PlanCode + "&RiderCode=" + RiderCode,
+                    url: "https://live.healthassure.in/ProductApi/api/OPDPlans/GetOPDPlanBuyReview?PlanCode=" + PlanCode + "&RiderCode=" + RiderCode,
                     dataType: "json",
                     headers: {
                         'Accept': 'application/json',
@@ -1951,6 +2120,7 @@ label{
         }
         function opningPaymentSuccesspage(PlanCode, transactionId) {
             //$('#congratulationsdiv').show();
+            $('#confirm').html('<strong> Payment Success </strong>');
             $('#buyplanformdiv').show();
             $('#paymentSuccessDiv').show();
 
@@ -2223,6 +2393,38 @@ label{
                 });
             });
         }
+
+        function VarifyEmailIdForPlan(EmailId,MobileNumber ,IsVerifyPlanWise, PlanCode) {
+            return new Promise(function (resolve, reject) {
+                if (MobileNumber == undefined || MobileNumber == '') {
+                    MobileNumber = null;
+                }
+                $.ajax({
+                    type: "GET",
+                    url: "https://live.healthassure.in/ProductApi/api/OPDPlans/VerifyMultiplePolicies?EmailId=" + EmailId + "&MobileNo=" + MobileNumber + "&IsVerifyPlanWise=" + IsVerifyPlanWise + "&PlanCode=" + PlanCode,
+                    dataType: "json",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json',
+                        'ApiKey': 'joxNjM0MjE2NDQ5fQ.nk2tgCC1NRAbaperiPWQXXoNgybL27zdN3T4dC5L-ak'
+                    },
+                    success: function (result) {
+                        console.warn(result.message);
+                        if (result.status) {
+                            resolve(result) // Resolve promise and go to then()
+                        } else {
+                            reject(result) // Reject the promise and go to catch()
+                        }
+                    },
+                    error: function (eror) {
+                        console.warn(eror);
+                        reject(err) // Reject the promise and go to catch()
+                    }
+                });
+            });
+        }
+
+
         function OpenbuyPlanThankyouPage(PlanName, MobileNo, PlanCode, transactionId) {
             var url = "https://live.healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&MobileNo=" + MobileNo + "&PlanCode=" + PlanCode + "&id=" + transactionId;
             window.open(url, "_parent");
@@ -2241,7 +2443,20 @@ label{
                 }
             });
         }
+
+
+        function EmptyRelations(){
+            for(var i=1;i<=3;i++){
+                $(`#firstname${i}`).val("");
+                $(`#lastname${i}`).val("");
+                $(`#MemberDOB${i}`).val("");
+                $(`#MemberEmail${i}`).val("");
+                $(`#MemberMobile${i}`).val("")
+            }
+        }
+
         function GetRelations() {
+
             var Relations = [];
             var MemberName1 = $('#firstname1').val() + " " + $('#lastname1').val();
             var MemberDOB1 = $('#MemberDOB1').val();
@@ -2263,18 +2478,18 @@ label{
             var MemberGender3 = $('#MemberGender3').val()
 
 
-            if (MemberName1 != null && MemberName1 != '' && MemberName1!=" " && MemberDOB1 != null && MemberDOB1 != '' && MemberEmail1 != null && MemberEmail1 != '' && MemberMobile1 != null && MemberMobile1 != '') {
+            if (MemberName1 != null && MemberName1 != '' && MemberName1 != " " && MemberDOB1 != null && MemberDOB1 != '' && MemberEmail1 != null && MemberEmail1 != '' && MemberMobile1 != null && MemberMobile1 != '') {
                 Relations.push({ "Name": MemberName1, "DoB": MemberDOB1, "Gender": MemberGender1, "RelationName": Member1Relative, "EmailId": MemberEmail1, "MobileNo": MemberMobile1 });
             }
-            if (MemberName2 != null && MemberName2 != '' && MemberName2!=" " && MemberDOB2 != null && MemberDOB2 != '' && MemberEmail2 != null && MemberEmail2 !='' && MemberMobile2 != null && MemberMobile2 != '') {
+            if (MemberName2 != null && MemberName2 != '' && MemberName2 != " " && MemberDOB2 != null && MemberDOB2 != '' && MemberEmail2 != null && MemberEmail2 != '' && MemberMobile2 != null && MemberMobile2 != '') {
                 Relations.push({ "Name": MemberName2, "DoB": MemberDOB2, "Gender": MemberGender2, "RelationName": Member2Relative, "EmailId": MemberEmail2, "MobileNo": MemberMobile2 });
             }
-            if (MemberName3 != null && MemberName3 != '' && MemberName3!=" " && MemberDOB3 != null && MemberDOB3 != '' && MemberEmail3 != null && MemberEmail3 != '' && MemberMobile3 != null && MemberMobile3 != '') {
+            if (MemberName3 != null && MemberName3 != '' && MemberName3 != " " && MemberDOB3 != null && MemberDOB3 != '' && MemberEmail3 != null && MemberEmail3 != '' && MemberMobile3 != null && MemberMobile3 != '') {
                 Relations.push({ "Name": MemberName3, "DoB": MemberDOB3, "Gender": MemberGender3, "RelationName": Member3Relative, "EmailId": MemberEmail3, "MobileNo": MemberMobile3 });
             }
 
             for (var i = 0; i < count; i++) {
-                if (($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != null && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != '' && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != " " && $(`#riderDOB${i + 1}`).val() != null && $(`#riderDOB${i + 1}`).val() != '' && $(`#riderEmail${i + 1}`).val()!=null && $(`#riderEmail${i + 1}`).val()!='' && $(`#riderMobile${i + 1}`).val()!=null && $(`#riderMobile${i + 1}`).val()!='' ) {
+                if (($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != null && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != '' && ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()) != " " && $(`#riderDOB${i + 1}`).val() != null && $(`#riderDOB${i + 1}`).val() != '' && $(`#riderEmail${i + 1}`).val() != null && $(`#riderEmail${i + 1}`).val() != '' && $(`#riderMobile${i + 1}`).val() != null && $(`#riderMobile${i + 1}`).val() != '') {
                     Relations.push({ "Name": ($(`#riderFirstName${i + 1}`).val() + " " + $(`#riderLastName${i + 1}`).val()), "DoB": $(`#riderDOB${i + 1}`).val(), "Gender": $(`#riderGender${i + 1}`).val(), "RelationName": $(`#riderRelation${i + 1}`).val(), "EmailId": $(`#riderEmail${i + 1}`).val(), "MobileNo": $(`#riderMobile${i + 1}`).val() });
                 }
             }

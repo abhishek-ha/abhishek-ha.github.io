@@ -8,7 +8,7 @@
     s0.parentNode.insertBefore(s1, s0);
 })();
 
-var BaseUrl = "https://uat.healthassure.in/ProductApi/"
+var BaseUrl = "https://live.healthassure.in/ProductApi/"
 
 async function BuyOPDPlan(Name, Email, MobileNo, DOB, Gender, PlanCode, CouponCode, description, utm_Source, utm_Medium, utm_Campaign, utm_Term, utm_Content, Relations, Agent, clientIP, GHDTNCAccepted, TNCAccepted, Address, RiderCode) {
     var latitude = '', longitude = '';
