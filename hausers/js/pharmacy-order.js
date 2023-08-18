@@ -14,7 +14,7 @@ $(function () {
 
 function LoadData(Appointmentid) {
     $.ajax({
-        url: "https://uat.healthassure.in/ProductApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
+        url: "https://live.healthassure.in/ProductApi/api/UserOPDPlans/AppointmentBoardingPass?Appointmentid=" + Appointmentid,
         type: "GET",
         dataType: "json",
         headers: {
@@ -34,17 +34,16 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").attr('class', 'btn appoinmentbtn');
                     $("[id*='dvEstimateDate']").hide();
                 }
-                else if (statusName == 'Out For Delivery') {
+                else if (statusName == 'Dispatched' || statusName == 'Package Picked') {
                     document.title = ' Pharmacy | Order Out For Delivery';
                     $("[id*='dvOutDelivery']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
-                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('OUT FOR DELIVERY');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
                 }
-                else if (statusName == 'Payment Pending') {
+                else if (statusName == 'Payment Pending' || statusName=='Pending') {
                     document.title = ' Pharmacy | Order Payment Due';
                     $("[id*='dvPaymentDue']").show();
                     $("[id*='dvCenterUseOnly']").show();
@@ -53,27 +52,30 @@ function LoadData(Appointmentid) {
                     $("[id*='btnstatusname']").html('PAYMENT DUE');
                     $("[id*='btnstatusname']").attr('class', 'btn paymentduebtn');
                 }
-                else if (statusName == 'Confirmed') {
+                else if (statusName == 'Confirmed' || statusName == 'Payment Collected') {
                     document.title = ' Pharmacy | Confirm';
                     $("[id*='dvOrderConfirmed']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
-                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('ORDER CONFIRMED');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-outdelivery');
-                    $("[id*='dvEstimateDate']").hide();
                 }
                 else if (statusName == 'Closed' || statusName == 'Delivered') {
                     document.title = ' Pharmacy | Order Completed';
                     $("[id*='dvOrderCompleted']").show();
                     $("[id*='dvCenterUseOnly']").show();
                     $("[id*='dvconfirmPaidBy']").show();
-                    $("[id*='dvconfirmPaidByTest']").html(data.results.paymentSettlementMode === '' || data.results.paymentSettlementMode === null ? 'Healthassure wallet' : 'Online');
                     $("[id*='dvEstimateDate']").hide();
                     $("[id*='accordionFlushExample']").show();
                     $("[id*='btnstatusname']").html('ORDER DELIVERED');
                     $("[id*='btnstatusname']").attr('class', 'btn btn-orange');
+                }
+                else if (statusName == 'Cancelled') {
+                    document.title = ' Pharmacy | Order Cancelled';
+                    $("[id*='dvCancelled']").show();
+                    $("[id*='btnstatusname']").html('APPOINTMENT CANCELLED');
+                    $("[id*='btnstatusname']").attr('class', 'btn btn-red statusbtn');
                 }
 
                 $("[id*='txtMemberName']").html('Hi, ' + data.results.memberName);
@@ -87,11 +89,11 @@ function LoadData(Appointmentid) {
                 $("[id*='btnInvoice']").attr("href", data.results.invoiceLink);
                 $("[id*='paymentLinkBtn']").attr("href", data.results.paymentLink);
 
-                if (data.results.serviceName == "Pharmacy") {
-                    TotalCount = data.results.coveredTests == null ? 0 : data.results.coveredTests.length;
+                if(data.results.serviceName == "Pharmacy"){
+                    TotalCount = data.results.coveredTests == null ?0 : data.results.coveredTests.length;
                     $.each(data.results.coveredTests, function (key, value) {
-                        $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' ' + value.testName + '</a></li>');
-                    });
+                        $("[id*='lstPharmacyOrder']").append('<li><i class="fa-solid fa-circle-check text-success"></i>' + ' '+ value.testName + '</a></li>');
+                    });                    
                 }
                 $("[id*='spnMedicineOrders']").html(TotalCount + '+ Medicines Orders');
             } else {
@@ -103,7 +105,7 @@ function LoadData(Appointmentid) {
             window.location.replace("404.html");
             swal('Error occure');
         }
-
+        
     });
 
 }
