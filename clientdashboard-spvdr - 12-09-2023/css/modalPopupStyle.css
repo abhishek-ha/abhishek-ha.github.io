@@ -1,0 +1,109 @@
+.modal-confirmation-popup {
+  top: 50%;
+  left: 50%;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  outline: 0;
+  min-width: 20em;
+  max-width: 25%;
+}
+@media (max-width: 1440px) {
+  .modal-confirmation-popup {
+    max-width: 35%;
+  }
+}
+@media (max-width: 1024px) {
+  .modal-confirmation-popup {
+    max-width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .modal-confirmation-popup {
+    max-width: 55%;
+  }
+}
+@media (max-width: 500px) {
+  .modal-confirmation-popup {
+    max-width: 95%;
+  }
+}
+.overlay-confirmation-popup {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  opacity: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000078;
+  backdrop-filter: blur(6px);
+}
+
+.modal-content-active-popup {
+  border-radius: 15px !important;
+}
+
+.modal-body-active-popup {
+  text-align: center !important;
+  font-size: 25px !important;
+  margin-top: 20px !important;
+}
+
+.modal-footer-active-popup {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 20px 0px 5px 0px !important;
+  border: none !important;
+}
+
+.modal-header-active-popup {
+  border: none !important;
+}
+.popup-text {
+  font-weight: 600;
+  color: #959393;
+  font-family: "Poppins";
+}
+.btn-logout-no {
+  width: 90px;
+  /* background-color: red; */
+  border-radius: 20px;
+  border: 0;
+  padding: 9px 15px;
+  outline: none;
+  box-shadow: none !important;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.modal-information-popup{
+  max-width: 58% !important;
+}
+
+.modal-information-popup .modal-body{
+  align-items: start !important;
+  padding: 30px 30px 20px 30px;
+}
+.modal-information-popup .modal-body h6{
+  color: black;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.modal-information-popup .modal-body p{
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.modal-information-popup .modal-body span{
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,126 @@
+
+.bg-light{
+    padding: 14px 0px;
+    background-color: #62788F!important;
+}
+
+.flex-groups{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0px!important;
+}
+
+.form-group label {
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+
+.form-group input,
+.form-group select,
+.input-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #f3f3f3;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+
+.searchbox .container{
+    transform: translateY(-60px);
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.input-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2d8cf0;
+    background-color: #ffffff;
+}
+
+
+.form-group input:focus+label span,
+.form-group select:focus+label span,
+.form-group textarea:focus+label span {
+    color: #2d8cf0;
+}
+
+
+.form-group input:focus+label>svg>path,
+.form-group select:focus+label,
+.form-group textarea:focus+label {
+    stroke: #2d8cf0;
+}
+
+
+
+
+
+@media only screen and (max-width: 300px) {
+ .searchbox{
+   background-color: white;
+    padding-top: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    height: 70px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 60px rgb(139 139 139 / 25%);
+    margin-top: 70px;
+    /* transform: translateY(30px); */
+}
+}
+
+
+@media only screen and (min-width: 301px) {
+ .searchbox{
+   background-color: white;
+    padding-top: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 60px rgb(139 139 139 / 25%);
+    margin-top: 70px;
+    /* transform: translateY(30px); */
+}
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+     .searchbox{
+   background-color: white;
+    padding-top: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    height: 70px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 60px rgb(139 139 139 / 25%);
+    margin-top: 120px;
+    /* transform: translateY(30px); */
+}
+
+}
+
+
+

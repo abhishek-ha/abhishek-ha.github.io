@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Assure Health 1 </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .preloader1 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            position: absolute;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 4px solid white;
+            border-top: 4px solid #0f5fc2;
+            border-right: 4px solid #0f5fc2;
+            border-bottom: 4px solid #0f5fc2;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .vertical-center {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style='display: none;' id='Lodingdivid' class='preloader1'></div>
+    <div class="landing-page-container">
+        <div class="landing-page-header">
+            <div class="custom-container d-flex justify-content-between align-items-center">
+                <div class="header-heading">
+                    <h2 class="mb-0">Kuzalin Services Private Limited</h2>
+                </div>
+                <div>
+                    <img src="https://live.healthassure.in/hausers/images/favicon.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="landin-page-main-section">
+            <div class="custom-container d-flex justify-content-between align-items-center">
+                <div class="main-section-top-left">
+                    <h2>HEALTHASSURE SALES PORTAL</h2>
+                </div>
+                <div class="main-section-top-right d-flex align-items-center">
+                    <span class="me-2">Powered By</span>
+                    <img src="./images/healthassure-logo.png" alt="">
+                </div>
+            </div>
+            <div class="custom-container mt-3">
+                <p class="text-end"><span class="me-2">Helpline number :</span><span>022 6167-6633</span></p>
+            </div>
+            <div class="custom-container mt-5">
+                <p style="margin-left: 15px;">Application Number: <strong id="ApplicationNumber"></strong></p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                PRODUCT
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row mb-3">
+                                    <div class="col-3">
+                                        <h3><b>Plan Name</b></h3>
+                                    </div>
+                                    <div class="col-9">
+                                <p id="PlanName"> Assure Health 1 </p>
+                                    </div>
+                                </div>
+                                <h3><b>Benefits</b></h3>
+                                <div class="row mb-3">
+<div class="col-12" id="PlanBenefits"> 
+<div>
+<style>   
+table, th,td {border: 1px solid black;                        
+border-collapse: collapse;                      
+}                        
+th,td {                        
+padding: 10px;
+}                    
+</style>                    
+<div>                      
+<table>                        
+<tbody>                         
+<tr><td rowspan="1" colspan="2" colorname="">
+    <p data-renderer-start-pos="1271"> 
+        <strong> OPD Benefits <strong> </strong></strong></p></td>
+</tr>
+<tr>
+    <td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1289"> Avail Tele-Consultations with General Physicians available on HealthAssure Platform </p></td>
+<td rowspan="1" colspan="1" colorname=""><p data-renderer-start-pos="1311"> Unlimited </p>
+</td>
+</tr>
+
+
+
+<tr>
+<td rowspan="5" colspan="1" colorname="">
+<p data-renderer-start-pos="1599"><b> Exclusive Discounted Platform Benefits: </b> </p>
+</td>
+<td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1644"> Flat Rate on every Test across India </p></td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1730"> Up to. 50% discount on routine Lab tests, Scans, Packages in HA network centers. </p>
+</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1730"> Free Home sample collection on packages across India </p>
+</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1730"> Up to 20% discount on home delivery of prescription medicines ordered via HealthAssure Platform </p>
+</td>
+</tr>
+<tr>
+<td rowspan="1" colspan="1" colorname="">
+<p data-renderer-start-pos="1730"> Free Home delivery of prescription medicines across India </p>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+  </div>
+     </div>
+    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                COVERAGE
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <h3>COVERAGE</h3>
+                                    </div>
+                                    <div class="col-9">
+                                        <p id="COVERAGE">Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#cusromerDetails" aria-expanded="false" aria-controls="collapseThree">
+                                CUSTOMER DETAILS
+                            </button>
+                        </h2>
+                        <div id="cusromerDetails" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div id="PanelShow">
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>RELATION</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Self</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>NAME</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customername"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>GENDER</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customergender"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>DOB</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customerDOB"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>MOBILENO</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customerMOBILENO"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>EMAIL ID</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customerEamilId"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>ADDRESS</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customerAddress"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>PINCODE</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p id="customerPinCode"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-9">
+                                            <h4>Relations</h4>
+                                            <table id="Relationstable">
+                                                <thead>
+                                                    <tr>
+                        <th class="empid"> Name </th>
+                        <th class="fname"> Gender </th>
+                        <th class="lname"> DOB </th>
+                        <th class="lname"> Relation </th>
+                        <th class="lname"> Email </th>
+                        <th class="lname"> Mobile </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="Relationstbody">
+                                             </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="PanelUpdate" style="display: none;">
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>RELATION</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <p>Self</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>NAME</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="txtName" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>GENDER</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <select id="txtGen" name="txtGen" class="form-control">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>DOB</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="date" class="form-control" id="txtDOB" min="1920-01-01"
+                                                max="2021-01-01" required />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>MOBILENO</h4>
+                                        </div>
+                                        <div class="col-9">
+<input type="number" pattern="[0123456789][0-9]{9}"
+                                                title="Please Enter Ten digits Number" class="form-control"
+                                                id="txtMobile" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>EMAIL ID</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="email" class="form-control" id="txtEmail" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>ADDRESS</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="txtAddress" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-3">
+                                            <h4>PINCODE</h4>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="text" class="form-control" id="txtPinCode" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-9">
+                                            <h4>Relations</h4>
+                                            <table id="TextRelationstable">
+                                                <thead>
+                                                    <tr>
+                                    <th class="empid">Name</th>
+                                    <th class="fname">Gender</th>
+                                    <th class="lname">DOB</th>
+                                    <th class="lname">Relation</th>
+                                    <th class="lname">Email</th>
+                                    <th class="lname">Mobile</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="TextRelationstbody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row-mb-2">
+                                    <div class="col-4">
+                                        <button id="btnUpdate" onclick="Editbtnclick();"
+                                            class="btn btn-primary btn-lg">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapseTwo">
+                                PLAN AMOUNT
+                            </button>
+                        </h2>
+                        <div id="collapsePayment" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h2> PLAN COST </h2>
+<p> <span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+id="PlanAmount"></span></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h2>GST (18.00%)</h2>
+                                    <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+                                            id="ServiceTaxAmount"></span></p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h1>TOTAL</h1>
+                                    <h2><span><i class="fa-solid fa-indian-rupee-sign"></i></span> <span
+                                            id="PlanAmountWithGST"></span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"> <span class="me-3"> <input class="form-check-input" id="IsTCAccepted" type="checkbox"> </span> <span class="mt-2">I AGREE TO T&C</span>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="PlanTnCAsHtml">
+
+                                <ul>
+<li> You understand that this plan covers adult in age range of 18-85 years & child in age range of 0-18 years.  </li>
+<li> You have completely understood the benefits, terms & conditions of this plan.  <a href="https://live.healthassure.in/ProductApi/api/files/ViewFile?path=TnCFiles/HA_Asian_TnC.pdf" target="_blank"> Click here to view T&C - </a> </li>
+<li> You understand, that this is purely an OPD health plan and not an investment or debt product. </li>
+<li> You understand & acknowledge that the plan has no implication or binding whatsoever to any other financial product </li>
+<li> You have not been lured /coerced into buying this plan on account of any other financial offering not related to this plan </li>
+<li> You hereby declare that the payment is being made by from your account (primary proposer) and not by anyone else on my behalf. </li>
+<li> No reimbursements are applicable for any service except “Mera Waala Doctor” (if applicable under plan).  </li>
+<li> You understand that all prices mentioned on HealthAssure platform are exclusive of taxes. </li>
+<li> You understand that you have 7 days of freelook period from the date of issuance to cancel the policy (provided no booking is made within the Free Look Period) in case you are not satisfied with the Terms & Conditions of the plan and no cancellations will be entertained post that. All refund requests to be made in writing to <a href="mailto:support@healthassure.in"> support@healthassure.in</a> Refunds for cancellations to be processed within 30 working days after confirmation. </li>
+<li> You confirm that you are not influenced by any middleman or agent, whether representing Healthassure or any other Indian Company, to give a particular response to any question asked. </li>
+<li> You have declared that all proposed members are in good health and entirely free from any mental or physical impairments or deformities, disease/condition. Also, none of the proposed members are habitual consumer of alcohol, tobacco, gutka or any recreational drugs. </li>
+   </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-4">
+                    <button class="btn btn-secondary" disabled id="Submitpaymentbtn" data-bs-toggle="modal"
+                        style="padding: 4px 17px;" data-bs-backdrop="static" data-bs-keyboard="false">
+                        Verify Your Details
+                    </button>
+                </div>
+                <!-- <div class="text-center my-4">
+                            <button class="btn btn-secondary" id="confirmPayBtn" style="display: none;">CONFIRM & PAY</button>
+                        </div> -->
+            </div>
+        </div>
+        <div class="modal fade" id="OTPPopupModal" tabindex="-1" aria-labelledby="OTPPopupModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: 0;width: 350px;max-width: 350px;margin: 0 auto;">
+                    <div class="modal-header justify-content-end" style="border: 0;">
+                        <!-- <h5 class="modal-title" id="OTPPopupModalLabel"></h5> -->
+<button type="button" class="btn btn-cancel" data-bs-dismiss="modal" aria-label="Close" style="padding: 3px 10px;font-size: 1.3rem;" onclick="Otppopupclose()"
+id="Otppopupclosebtn"> Cancel </button>
+                    </div>
+                    <div class="modal-body my-3" style="padding: 5px 10px;">
+                        <div>
+                            <input type="text" class="form-control" placeholder="Enter OTP" maxlength="6"
+                                style="width: 300px;max-width: 300px;margin:0 auto" id="OTP">
+                            <span style="color: red;font-weight: bold;margin-left: 15px;" id="OtpMessage"></span>
+                        </div>
+                    </div>
+                    <div class="modal-footer flex-column justify-content-center" style="border: 0;">
+                        <button type="button" class="btn btn-primary mb-2" style="padding: 4px 13px;font-size: 1.4REM;"
+                            id="btnSubmitOTP">Verify
+                            OTP</button>
+                        <div class="mb-3 mt-3">
+                            <a href="javascript:SendOTPforvarification()"
+                                style="font-size: 1.4rem;color:#da7422;">Resend OTP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="VerifyMultiplePoliciesModal" tabindex="-1"
+            aria-labelledby="VerifyMultiplePoliciesModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="border: 0;width: 350px;max-width: 350px;margin: 0 auto;">
+                    <div class="modal-header justify-content-end" style="border: 0;">
+                        <!-- <h5 class="modal-title" id="OTPPopupModalLabel"></h5> -->
+                        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal" aria-label="Close"
+                            style="padding: 3px 10px;font-size: 1.3rem;" onclick="VerifyMultiplePoliciesClose()"
+                            id="VerifyMultiplePoliciesClosebtn">
+                            Cancel
+                        </button>
+                    </div>
+                    <div class="modal-body my-3" style="padding: 5px 10px;">
+                        <div>
+                            <span style="color: red;font-weight: bold;" id="VerifyMultiplePoliciesMsg">We would like to
+                                inform you that there is already an
+                                active plan on the given EmailID/Mobile Number. Request you kindly utilize the
+                                benefits of the active plan before purchasing a new one.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.lr-in-prod.com/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('jxjhjz/healthassure');</script>
+<script src="https://live.healthassure.in/hausers/js/InsuranceAgent.js"></script>
+    <script>
+        var plan = null;
+        var IsUpdated = false;
+        function Editbtnclick() {
+            if (IsUpdated) {
+                UpdateTransaction();
+            } else {
+                $('#btnUpdate').text('Save');
+                $('#PanelShow').hide();
+                $('#PanelUpdate').show();
+                ViewTransactionDetails();
+            }
+        }
+        function ViewTransactionDetails() {
+            $('#txtName').val(plan.fullName);
+            $('#txtDOB').val(plan.dob);
+            $('#txtDOB').attr('min', plan.ageTo);
+            $('#txtDOB').attr('max', plan.ageFrom);
+            //$('#txtGen').val(plan.gender);
+            $('#txtMobile').val(plan.phoneNo);
+            $('#txtEmail').val(plan.email);
+            $('#txtAddress').val(plan.userAddress.Address);
+            $('#txtPinCode').val(plan.userAddress.PinCode);
+            var txtRelationDetails = "";
+            var i = 1;
+            var relationlist = plan.displayPlanRelation;
+            if (relationlist == null || relationlist == "" || relationlist == undefined) {
+                relationlist = [{ "RelationCode": "SON", "RelationName": "SON" }, { "RelationCode": "DAUGHTER", "RelationName": "DAUGHTER" }, { "RelationCode": "HUSBAND", "RelationName": "HUSBAND" }, { "RelationCode": "WIFE", "RelationName": "WIFE" }, { "RelationCode": "FATHER", "RelationName": "FATHER" }, { "RelationCode": "MOTHER", "RelationName": "MOTHER" }, { "RelationCode": "FATHER-IN-LAW", "RelationName": "FATHER-IN-LAW" }, { "RelationCode": "MOTHER-IN-LAW", "RelationName": "MOTHER-IN-LAW" }, { "RelationCode": "OTHER", "RelationName": "OTHER" }, { "RelationCode": "SIBLING", "RelationName": "SIBLING" }];
+            } else {
+                relationlist = JSON.parse(plan.displayPlanRelation);
+            }
+            var genderlist = ['Male', 'Female', 'Other'];
+
+            $.each(genderlist, function (rkey, rl) {
+                if (rl.toUpperCase() == plan.gender.toUpperCase()) {
+                    $('#txtGen').append('<option selected value="' + rl + '">' + rl + '</option>');
+                } else {
+                    $('#txtGen').append('<option value="' + rl + '">' + rl + '</option>');
+                }
+            });
+            $.each(plan.relationDetails, function (key, r) {
+                var td1 = "t" + i + '1';
+                var td2 = "t" + i + '2';
+                var td3 = "t" + i + '3';
+                var td4 = "t" + i + '4';
+                var td5 = "t" + i + '5';
+                var td6 = "t" + i + '6';
+                var relationselect = '<select id="' + td4 + '" name="' + td4 + '" class="form-control">';
+                $.each(relationlist, function (rkey, rl) {
+                    if (rl.RelationName.toUpperCase() == r.RelationName.toUpperCase()) {
+                        relationselect += '<option selected value="' + rl.RelationCode + '">' + rl.RelationName + '</option>';
+                    } else {
+                        relationselect += '<option value="' + rl.RelationCode + '">' + rl.RelationName + '</option>';
+                    }
+                });
+                relationselect += '</select>';
+                var genderstr = '<select id="' + td2 + '" name="' + td2 + '" class="form-control">';
+                $.each(genderlist, function (rkey, rl) {
+                    if (rl.toUpperCase() == r.Gender.toUpperCase()) {
+                        genderstr += '<option selected value="' + rl + '">' + rl + '</option>';
+                    } else {
+                        genderstr += '<option value="' + rl + '">' + rl + '</option>';
+                    }
+                });
+                genderstr += '</select>';
+                var dbostr = '';
+                if (i === 1) {
+                    dbostr = "<input class='form-control' type='Date' min='" + plan.ageTo + "' max='" + plan.ageFrom + "' required id=" + td3 + " value='" + r.DoB + "'/>";
+                }
+                else {
+                    dbostr = "<input class='form-control' type='Date' min='1920-01-01' max='2021-01-01' required id=" + td3 + " value='" + r.DoB + "'/>";
+                }
+                txtRelationDetails += "<tr><td><input class='form-control' type='text' id=" + td1 + " value='" + r.Name + "'/>" + "</td><td>" + genderstr + "</td><td>" + dbostr + "</td><td>" + relationselect + "</td><td><input class='form-control' type='text' id=" + td5 + " value='" + r.EmailId + "'/></td><td><input class='form-control' type='text' id=" + td6 + " value='" + r.MobileNo + "'/></td></tr>";
+                i++;
+            });
+            if (txtRelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
+                $('#TextRelationstbody').html(txtRelationDetails);
+                $('#RelationsTable').show();
+            }
+            IsUpdated = true;
+        }
+        function UpdateTransaction() {
+            var i = 1;
+            var Relations = [];
+            $.each(plan.relationDetails, function () {
+                Relations.push({ Name: $('#' + "t" + i + '1').val(), Gender: $('#' + "t" + i + '2').val(), DoB: $('#' + "t" + i + '3').val(), RelationName: $('#' + "t" + i + '4').val(), EmailId: $('#' + "t" + i + '5').val(), MobileNo: $('#' + "t" + i + '6').val() });
+                i++;
+            });
+            var UserAddress = { Address: $('#txtAddress').val(), PinCode: $('#txtPinCode').val() };
+            var OpdPayment = { name: $('#txtName').val(), dob: $('#txtDOB').val(), gender: $('#txtGen').val(), email: $('#txtEmail').val(), MobileNo: $('#txtMobile').val(), Relations: Relations, TransactionId: plan.transactionId, UserAddress: UserAddress }
+            UpdateTransactionDetais(OpdPayment).then(function (res) {
+                IsUpdated = false;
+                alert('Record Updated Success');
+                window.location.reload();
+            });
+        }
+
+        var IsotpVerified = 'N';
+        ShowLoding(true);
+        var href = new URL(window.location.href);
+        var TransactionId = href.searchParams.get("id");
+        if (TransactionId != null && TransactionId != "" && TransactionId != "null") {
+            ShowLoding(true);
+            GetTransactionDetails(TransactionId).then(function (result) {
+                plan = result.results.plan;
+                $('#PlanName').html(plan.planName);
+                $('#ApplicationNumber').text(plan.transactionId);
+                if (plan.planBenefits != null && plan.planBenefits != '' && plan.planBenefits != undefined) {
+                    $('#PlanBenefits').html(plan.planBenefits);
+                }
+                if (plan.planTnCAsHtml != null && plan.planTnCAsHtml != '' && plan.planTnCAsHtml != undefined) {
+                    $('#PlanTnCAsHtml').html(plan.planTnCAsHtml);
+                }
+                /*$.each(plan.services, function (key, p) {
+                  if (p.isUnLimited.toUpperCase() == 'Y') {
+                    PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Unlimited</span></p>";
+                  }
+                  else if (parseInt(p.totalWalletAmount, 10) > 0) {
+                    PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Wallet : " + p.totalWalletAmount + "</span></p>";
+                  }
+                  else if (parseInt(p.totalCredits, 10) > 0) {
+                    PlanServices += "<p class='mb-2'><span>" + p.serviceName + " </span> - <span>Credits : " + p.totalCredits + "</span></p>";
+                  }
+                });*/
+                $('#UserEmailId').html(plan.email);
+                $('#COVERAGE').html(parseInt(plan.relCount, 10) > 0 ? 'Family' : 'Self');
+                $('#customername').html(plan.fullName);
+                $('#customergender').html(plan.gender);
+                $('#customerDOB').html(plan.dob);
+                $('#customerMOBILENO').html(plan.phoneNo);
+                $('#customerEamilId').html(plan.email);
+                if (plan.userAddress != null && plan.userAddress != undefined) {
+                    $('#customerAddress').html(plan.userAddress.Address);
+                    $('#customerPinCode').html(plan.userAddress.PinCode);
+                }
+                $('#PlanAmount').html(plan.planAmount);
+                $('#ServiceTaxAmount').html(plan.serviceTaxAmount);
+                $('#PlanAmountWithGST').html(plan.planAmountWithGST);
+                var RelationDetails = "";
+                $.each(plan.relationDetails, function (key, r) {
+                    RelationDetails += "<tr><td>" + r.Name + "</td><td>" + r.Gender + "</td><td>" + r.DoB + "</td><td>" + r.RelationName + "</td><td>" + r.EmailId + "</td><td>" + r.MobileNo + "</td></tr>"
+                });
+                if (RelationDetails != "" && parseInt(plan.relCount, 10) > 0) {
+                    $('#Relationstbody').html(RelationDetails);
+                    $('#RelationsTable').show();
+                }
+                ShowLoding(false);
+            }).catch(function (error) {
+                ShowLoding(false);
+                if (error.subCode == 408) {
+                    alert(error.message);
+                }
+                console.warn(error);
+            });
+        } else {
+            alert('Inavlid URL');
+        }
+
+        $('#IsTCAccepted').click(function (e) {
+            IsSubmitpaymentbtnEnabled(this.checked)
+        });
+        function IsSubmitpaymentbtnEnabled(flag) {
+            if (flag) {
+                $("#Submitpaymentbtn").prop('disabled', false);
+            } else {
+                $("#Submitpaymentbtn").prop('disabled', true);
+            }
+        }
+
+        $().ready(function () {
+            $('#OTPPopupModal').modal({
+                backdrop: 'static',
+                keyboard: false
+            })
+        });
+        function ShowLoding(flag = true) {
+            if (flag) {
+                $('#Lodingdivid').show();
+            } else {
+                $('#Lodingdivid').hide();
+            }
+        }
+        function Otppopupclose() {
+            $('#OtpMessage').html('');
+            $('#Submitpaymentbtn').text('Verify Your Details');
+            IsSubmitpaymentbtnEnabled(true);
+        }
+
+        function VerifyMultiplePoliciesClose() {
+            $('#Submitpaymentbtn').text('Verify Your Details');
+            $('#VerifyMultiplePoliciesModal').modal('hide');
+        }
+        $('#Submitpaymentbtn').click(function () {
+            $('#Submitpaymentbtn').text('Loding....');
+            VerifyMultiplePolicies($('#customerMOBILENO').text(), $('#customerEamilId').text()).then(function (result) {
+                //console.log(result);
+                if (result != '' && result != null && result != undefined && result.results.isUserExist) {
+                    // open pop for multiple policies exixst
+                    $('#VerifyMultiplePoliciesMsg').text('We would like to inform you that there is already an active plan on the given ' + $('#customerMOBILENO').text() + '/' + $('#customerEamilId').text() + '. Request you to kindly utilize the benefits of the active plan before purchasing a new one.')
+                    $('#VerifyMultiplePoliciesModal').modal('show');
+                }
+                else {
+                    if (IsotpVerified == 'Y') {
+                        $('#Submitpaymentbtn').text('Loding....');
+                        IsSubmitpaymentbtnEnabled(false);
+                        BuyOPDPlan(plan.transactionId, plan.paymentGatewaykey, plan.planAmountWithGST + "00", plan.paymentOrderId, plan.planName, plan.fullName, plan.email, plan.phoneNo).then(function (res) {
+
+                        }).catch(function (err) {
+                            console.log(err);
+                        });
+                    } else if (IsotpVerified == 'D') {
+                        alert('Payment has been done');
+                    } else {
+                        SendOTPforvarification();
+                    }
+                }
+            }).catch(function (error) {
+                ShowLoding(false);
+                if (error.subCode == 408) {
+                    alert(error.message);
+                }
+                console.warn(error);
+            });
+        });
+        function opningPaymentSuccesspage(transactionId) {
+            OpenbuyPlanThankyouPage(plan.planName, transactionId);
+        }
+        function opningPaymentfailedpage() {
+            IsotpVerified = 'F'
+            IsSubmitpaymentbtnEnabled(false);
+            $('#Submitpaymentbtn').text('Failed');
+        }
+        function OpenbuyPlanThankyouPage(PlanName, transactionId) {
+            IsotpVerified = 'D'
+            IsSubmitpaymentbtnEnabled(false);
+            $('#Submitpaymentbtn').text('Done');
+            var url = "https://healthassure.in/buyPlanThankyou.html?PlanName=" + PlanName + "&id=" + transactionId;
+            window.open(url, "_parent");
+        }
+        function SendOTPforvarification() {
+            $('#OtpMessage').html('');
+            $('#Submitpaymentbtn').text('Loding....');
+            IsSubmitpaymentbtnEnabled(false);
+            GetOTPForEmailId($('#customerEamilId').text(), '', $('#customerMOBILENO').text(), plan.planCode).then(function (result) {
+                $('#OTPPopupModal').modal('show');
+            }).catch(function (error) {
+                $('#OtpMessage').html(error.message);
+                if (error.subCode == 408) {
+                    alert(error.message);
+                }
+            });
+        }
+
+        $('#btnSubmitOTP').click(function () {
+            $('#OtpMessage').html('');
+            VerifyEmailId($('#customerMOBILENO').text(), $('#OTP').val(), $('#customerEamilId').text(), '').then(function (result) {
+                $('#OTPPopupModal').modal('hide');
+                $('#OTP').val("");
+                $('#Submitpaymentbtn').text('Confirm and pay');
+                IsSubmitpaymentbtnEnabled(true);
+                IsotpVerified = 'Y';
+            }).catch(function (error) {
+                $('#OtpMessage').html(error.message);
+                if (error.subCode == 408) {
+                    alert(error.message);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

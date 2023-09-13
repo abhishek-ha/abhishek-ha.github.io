@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Client Dashboard </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/ownStyle.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="top-header">
+      <div class="custom-container">
+        <div>
+          <img src="images/toplogo.png" alt="toplogo" />
+        </div>
+        <div class="profile-name">
+          <img src="images/user.png" width="40" />
+          PlanCover
+        </div>
+      </div>
+      <div class="toggle-menu">
+        <i class="fa-solid fa-bars" onClick={toggleMenu}></i>
+      </div>
+      <div class="show-notification" style="display:none;">
+        <i class="fa-solid fa-bell"></i>
+        <span class="notification-count">10</span>
+      </div>
+    </div>
+
+
+
+
+
+<div class="main-section">
+       
+ <div class="sidebar-menu" id="sidebar-menu">
+        <div class="sidebar-logo">
+        
+            <p class="image-text-logo"> Seeba Group </p>
+     
+            <img src={getClientIcon()} class="img-fluid" alt="" />
+         
+        </div>
+      <ul>
+  <li> <span class="icon"><img src="./images/homeicon.png" class="img-fluid" alt=""> </span>  <a href="index.html">  <span> Dashboard</span> </a> </li>
+<li> <span class="icon"> <img src="./images/utilizationIcon.png" class="img-fluid" alt=""> </span> <a href="allabout-users.html"><span> All About Users </span>
+                    </a> </li>
+<li> <span class="icon">  <img src="images/utilizationIcon.png" class="img-fluid" alt=""> </span> <a href="account-details.html">   <span> Account Details</span>
+                    </a> </li>
+<li> <span class="icon">
+                            <img src="images/utilizationIcon.png" class="img-fluid" alt="">
+                        </span>
+                       <a href="infrastructure-details.html">    <span> Search Provider </span>
+                    </a>
+
+                </li>
+      </ul>
+      </div>
+    
+
+
+
+<div class="right-section">
+      <div class=" _dashboard">
+          <div class="col-xl-9 col-lg-9 col-md-9 col-12">
+    <div class="account_detailbox">
+      <form class="row g-3">
+<h3> Users Details <span> <img src="images/exclamation.png" width="25"> </span> </h3>
+  <div class="col-md-6">
+    <label for="firstname" class="form-label"> First Name<span class="text-danger">* </span> </label>
+    <input type="text" class="form-control" placeholder="Sameer " readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="lastname" class="form-label"> Last Name<span class="text-danger">* </span> </label>
+    <input type="text" class="form-control" placeholder="Ale" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="emailid" class="form-label"> Email ID<span class="text-danger">* </span> </label>
+    <input type="email" class="form-control" placeholder="sameer.ale@healthassure.in" readonly>
+  </div>
+  <div class="col-md-6">
+    <label for="phoneno" class="form-label"> Phone Number<span class="text-danger">* </span> </label>
+    <input type="text" class="form-control" placeholder="9999999999" readonly>
+  </div>
+<div class="col-12">
+    <label for="inputAddress" class="form-label"> Address<span class="text-danger">* </span></label>
+     <textarea class="form-control" placeholder=" BPTP Park Centra, 802, 8th Floor, Tower A, Sector 30, Gurugram, Harya"  rows="4"readonly></textarea>
+  
+  </div>
+
+
+
+<!-- <div class="d-flex justify-content-between">
+  <button class="btn passreset_btn"> Change Password </button>
+   <button class="btn button_default"> Save Details </button>
+</div>-->
+
+
+</form>
+
+  </div>
+</div>
+<div class="col-xl-3 col-lg-3 col-12 account_right">
+    <img src="images/account-right.png" class="img-fluid">
+    
+</div>
+
+
+ 
+
+      
+ 
+      </div>
+    
+    </div>
+ </div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered clientdash_modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"> Appoinment Detail </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+     <div class="modal-body">
+
+<!-- Filter Ends Here -->
+                <div class="sortby d-flex flex-wrap gap-10 justify-content-between align-items-center">
+                    <h6 class=" mb-0"> Showing 20 Results </h6>
+                    <div class="d-flex align-items-center">
+                        <span class="text-unhighlighted font-medium">Sort By</span>
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle font-medium" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Listing Order
+                            </a>
+
+                            <ul class="dropdown-menu __custom_ul" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Ascending Order</a></li>
+                                <li><a class="dropdown-item" href="#">Descending Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                               
+                                <!--Table Start Here-->
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                               <th ><input type="checkbox"> </th>
+                                                <th > Date </th>
+                                                <th > Name </th>
+                                                <th > Employee ID </th>
+                                                <th > Email ID </th>
+                                                <th > Service </th>
+                                                <th > Report </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+
+                                             <tr>
+                                                <td> <input type="checkbox"> </td>
+                                                <td>11 November, 2022 </td>
+                                                <td> Sameer Ale </td>
+                                                <td> HA20125 </td>
+                                                <td> Sameer.ale@healthassure.in </td>
+                                                <td> Complete Blood Count </td>
+                                                <td><a href="#">View Report </a> </td>
+                                            </tr>
+                                         
+                                        
+                                                                               
+                                       
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Table Ends Here-->
+
+
+<div >
+  <button class="btn download_button"> <i class="fa-solid fa-arrow-down-long"></i> Download </button>
+</div>
+
+
+                            </div>
+
+
+
+    
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
