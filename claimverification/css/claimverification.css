@@ -23,13 +23,26 @@
     border-left: 0.3em solid transparent;
     appearance: none;
     -webkit-appearance: none;
+    visibility: hidden;
 }
-.claimverificbtn .drp-icon::after{
+
+.claimverificbtn::after{
 	 content: "\f142";
 	   font-family: "FontAwesome";
 	   position: static;
 	   font-size: 16px;
 }
+
+
+
+
+
+/*.claimverificbtn .drp-icon::after{
+	 content: "\f142";
+	   font-family: "FontAwesome";
+	   position: static;
+	   font-size: 16px;
+}*/
 .claimverification_box h4{
 	font-size: 16px;
 	font-weight: 600;
