@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Paid Copy </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Claim Verification </title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/claimverification.css">
   </head>
   <body>
-
+    <!-- profile sidebar -->
     <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
       <section class="profile-sidebar open" id="profile-sidebar">
         <div class="profile-sidebar__inner">
@@ -47,9 +47,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fa-solid fa-hand-point-right me-3"></i>
-                      Non-usage
-                    </a>
+  <i class="fa-solid fa-hand-point-right me-3"></i> Non-usage </a>
                   </li>
                   
                 </ul>
@@ -72,10 +70,13 @@
                   
                 </ul>
               </div>
-        
-        <div class="accordion-item">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree"> <i class="fa-solid fa-arrows-spin me-3"></i>
-                  <span> Customer Feedback </span>
+
+              
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Customer Feedback</span>
                 </button>
                 
                 <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
@@ -112,13 +113,17 @@
                 </ul>
               </div>
 
+
+
+
+
        <div class="accordion-item">
                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="collapseThree">
                 <i class="fa-solid fa-file-invoice me-3"></i>
                   <span> Plan Details </span>
                 </button>
                 
-                <ul id="plandetail" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+ <ul id="plandetail" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
                   <li>
                     <a href="topup.html">
                        <i class="fa-solid fa-indian-rupee-sign me-3"></i>
@@ -127,7 +132,7 @@
                   </li>
 
                    <li>
-                    <a href="topup.html">
+                    <a href="coupan.html">
                        <i class="fa-solid fa-receipt me-3"></i>
                       <span> Coupan </span>
                     </a>
@@ -139,14 +144,50 @@
                       <span> Additional Plan Detail </span>
                     </a>
                   </li>
-                  <li>
-                    <a href="paid-member-addition.html">
-                      <i class="fa-solid fa-user-plus me-3"></i>
-                      <span> Paid Member Addition </span>
-                    </a>
-                  </li>
+
                 </ul>
               </div>
+
+
+
+
+  <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reimbursement" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-indian-rupee-sign me-3"></i>
+                  <span> Reimbursement </span>
+                </button>
+                
+ <ul id="reimbursement" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="topup.html">
+                      <i class="fa-solid fa-address-card me-3"></i></i>
+                      <span> Appoinment Confirmation </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="coupan.html">
+                       <i class="fa-solid fa-receipt me-3"></i>
+                      <span> Appoinment Fullfillment </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="claimverificbtn.html">
+                      <i class="fa-solid fa-clipboard-check me-3"></i>
+                      <span> Claim Verification</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+
+
+
+
+
+
            </div>
           </div>
         </div>
@@ -171,7 +212,7 @@
                 <li>
                   <a class="dropdown-item mt-2" href="#">
                     <i class="fa-solid fa-user me-3"></i>
-                    <span> Profile Setting </span>
+                    <span>Profile Setting</span>
                   </a>
                 </li>
                 <li>
@@ -186,94 +227,145 @@
           </div>
           <div class="container-fluid">
             <div class="row">
-<div class="col-lg-8 col-md-8 offset-md-1">
-    <h2 class="header-content pt-3 pb-5"><b> Product Plan Copy Creation </b></h2> 
+<div class="col-lg-12 col-md-12">
+    <h2 class="header-content pt-3 pb-5"><b> Claim Verification </b></h2> 
             </div>
+</div>
 
 
- <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-1 col-form-label"> Select Client </label>
-<div class="col-sm-9">
-     <select id="choices-multiple-remove-button" class="form-select form-control" placeholder="Select Client" multiple>
 
-            <option value="HTML" >ABG Ultatech </option>
-            <option value="Jquery"> Care Insurance </option>
-            <option value="CSS">JP Cement </option>
-        </select>
-   </div>
+
+
+
+
+
+ <div class="claimverification_box">
+<div class="row">
+
+  <div class="verification_status">
+<div>
+  <h4> Status: <span> Verification Pending </span> <div class="btn-group claimverificbtn">
+  <button type="button" class="btn drp-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Verified </a> </li>
+     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Rejected </a> </li>
+      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Hold </a> </li>
+       <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > View Document </a> </li>
+ 
+  </ul>
+</div></h4>
   </div>
-
-
-<div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 offset-md-1  col-form-label"> Select Plan </label>
-    <div class="col-sm-9">
-      <select class="form-select">
-  <option> Select Plan </option>
-  <option> Fitassure </option>
-  <option> Optimaassure </option>
-    <option> TotalAssure </option>
-    <option> FitAssure Plus </option>
-    <option> FitAssure Platinum Plus </option>
-  </select>
-   </div>
-  </div>
+</div>
+<div class="col-lg-4 col-xl-4 col-12">
+  <h4> Nilanjan Bank: FitAssure Plus </h4>  
+  <p>Gender: <span> Female </span> </p>
+  <p> Relation: <span> Other </span> </p>
+  <p> Booked by: <span> Pintu Saha </span> </p>
+  <p>Last Update  by: <span> Pintu Saha </span> </p>
+  <p>Agent No:<span> 0 </span> </p>
+</div>
+<div class="col-lg-4 col-xl-4 col-12">
+  <h4> Client: HA-OPD Digital </h4>
+    <p> <i class="fa-solid fa-envelope"></i>  aayan.life@gmail.com </p>
+  <p> Service Booked for <span> Specialist Consultation </span> </p>
+  <p> Tax Amount: <span> 500 </span> </p>
+  <p> Payment Transfer type: <span> UPI </span> </p>
+  <p> Current Claim No:<span> 1 </span> </p>
   
-
-    <div class="mb-3 row">
-  <label for="staticEmail" class="col-sm-2 offset-md-1 pt-5 col-form-label"> ABG UltraTech </label>
-    <div class="col-sm-3">
-      <label class="col-form-label"> Plan Name </label>
-<input type="text" class="form-control" name="" placeholder=" Enter Plan Name">
- </div>
- <div class="col-sm-3">
-  <label class="col-form-label"> Plan Code </label>
-<input type="text" class="form-control" name="" placeholder="Enter Plan Code">
- </div>
- <div class="col-sm-3">
-  <label class="col-form-label"> Plan Amount(Excluding GST) </label>
-<input type="text" class="form-control" name="" placeholder="Enter Plan Amount">
- </div>
+</div>
+<div class="col-lg-4 col-xl-4 col-12">
+    <h4> Case No: HA04102023 </h4>
+    <p>Appoinment Date: <span> Sept 30, 2023 12:10 PM </span> </p>
+  <p> <i class="fa-solid fa-phone"></i> <span> 9999785612 </span> </p>
   </div>
-
-
-<div class="mb-3 row">
-  <div class="col-md-4  offset-md-4 py-5">
-<button class="btn btn-plancopy"> Save </button> <button class="btn btn-danger ms-5"> Cancel </button>
- </div>
   </div>
-
-                
-              </div>
-            </div>
+</div>
+ </div>
            </div>
         </div>
       </section>
     </div>
 
 
- <script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+    <h3 class="modal-title" id="exampleModalLabel"><b> Remarks </b> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row">
+          <div class="mb-3 remark">
+<label for="Remarks" class="col-form-label"> Remarks </label>
+<textarea class="form-control"  rows="5" required></textarea>
+</div>
+ <div class="col-md-12 py-5 d-flex justify-content-end">
+<button type="submit" class="btn btn-primary"> Save </button> <button class="btn btn-danger ms-5"> Cancel </button>
+ </div>
+  </form>
+     
+
+
+
+
+
+</div>
+   </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/custom.js"></script>
 
-<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
 
-
-
-<script>
+<script >
   
-$(document).ready(function(){
-    
-     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-        removeItemButton: true,
-        maxItemCount:5,
-        searchResultLimit:5,
-        renderChoiceLimit:5
-      }); 
-     
-     
- });
 
+//dropdown on  click //
+$(".dropdown_click .selected").on('click', function() {
+    $(".dropdown_click .drop-content ul").slideToggle();
+});
 
+$(".dropdown_click .drop-content ul li span").on('click', function() {
+    // var bindText = $(this).html();
+    $(".dropdown_click .selected  span").html($(this).html());
+    $(".dropdown_click .drop-content ul").slideUp();
+}); 
+
+//dropdown on  hover //
+$(".dropdown_hover ").on({
+    mouseenter: function () {
+       $(".drop-content .drop-hover").slideDown();
+    },
+    mouseleave: function () {
+       $(".drop-content .drop-hover").slideUp();
+    }
+});
+
+$(".dropdown_hover .drop-content .drop-hover li span").on('click', function() {
+    $(".dropdown_hover .selected  span").html($(this).html());
+    $(".dropdown_hover .drop-content .drop-hover").slideUp();
+}); 
+
+$(document).bind('click', function(e) {
+    var $clickhide = $(e.target);
+    if (! $clickhide.parents().hasClass("dropdown_c"))
+        $(".dropdown_c .drop-content ul").slideUp();
+});
+  
 </script>
 
 

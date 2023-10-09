@@ -9,7 +9,7 @@
 	font-size: 14px;
 }
 .claimverificbtn .dropdown-toggle{
-	   appearance: none;
+	   appearance: none!important;
     -webkit-appearance: none;
 }
 .claimverificbtn .dropdown-toggle::after {
@@ -51,8 +51,9 @@
 .verification_status{
 	display: flex;
 	 justify-content: flex-end;
+	 right: 10px;
+	
 }
-
 .remark textarea{
 	height: 100px;
 }
@@ -60,5 +61,28 @@
 	font-weight: 600;
 	font-size: 14px!important;
 }
+
+.claimverificstatus{
+	 position: inherit;
+		margin-top: 30px;
+}
+.claimverificstatus li{
+	list-style-type: none;
+}
+
+
+.filter_claimverification .form-control{
+	margin-bottom: 15px;
+}
+
+.filter_claimverification .form-select{
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
 
 
