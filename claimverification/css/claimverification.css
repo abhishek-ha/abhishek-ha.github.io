@@ -52,6 +52,7 @@
 	display: flex;
 	 justify-content: flex-end;
 }
+
 .remark textarea{
 	height: 100px;
 }
