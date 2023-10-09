@@ -1,0 +1,96 @@
+.discount_coupon h3{
+	font-size: 16px;
+	font-weight: 600;
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+.discount_coupon .box{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  border:1px solid #dee2e6;
+}
+.discount_coupon .closeicon{
+	color: #fd0000;
+	cursor: pointer;
+	padding-top: 7px;
+	font-weight: 700;
+	font-size: 18px;
+}
+/*.variants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+/*.variants > div {
+  margin-right: 5px;
+}
+.variants > div:last-of-type {
+  margin-right: 0;
+}*/
+.file {
+  position: relative;
+  margin-top: 20px;
+}
+.file > input[type='file'] {
+  display: none
+}
+.file > label {
+ font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  outline: 0;
+  user-select: none;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 6px 8px;
+  color: #ffffff;
+  background-color: #089bab;
+}
+.file > label:hover {
+  border-color: hsl(0, 0%, 21%);
+  background-color: hsl(0, 0%, 21%);
+}
+.file > label:active {
+  background-color: hsl(0, 0%, 96%);
+}
+.file > label > i {
+  padding-right: 5px;
+}
+.file--upload > label:hover {
+  border-color: #104d89;
+   background-color: #104d89;
+}
+.file--upload > label:active {
+  background-color: hsl(204, 86%, 91%);
+}
+.file--uploading > label {
+  color: hsl(48, 100%, 67%);
+  border-color: hsl(48, 100%, 67%);
+}
+.file--uploading > label > i {
+  animation: pulse 5s infinite;
+}
+.file--uploading > label:hover {
+  border-color: hsl(48, 100%, 67%);
+  background-color: hsl(48, 100%, 96%);
+}
+.file--uploading > label:active {
+  background-color: hsl(48, 100%, 91%);
+}
+@keyframes pulse {
+  0% {
+    color: hsl(48, 100%, 67%);
+  }
+  50% {
+    color: hsl(48, 100%, 38%);
+  }
+  100% {
+    color: hsl(48, 100%, 67%);
+  }
+}
+.discount_coupon .form-check-label{
+  font-size: 14px;
+  font-weight: 600;
+}

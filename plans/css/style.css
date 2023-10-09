@@ -8,8 +8,7 @@
  }
 
 body {
-    font-family: 'Poppins', sans-serif!important;
-        font-family: 'Rubik', sans-serif !important;
+    font-family: 'Rubik', sans-serif !important;
             overflow-x: hidden!important;
             font-size: 15px;
         }
@@ -6305,8 +6304,6 @@ a:hover{
 }
 /*new css*/
 
-@charset "UTF-8";
-
 li {
     list-style: none;
 }
@@ -6316,8 +6313,6 @@ li {
 .mt-8{
     margin-top: 80px;
 }
-.w-100{
-    width: 100%;
 }
 .font-50{
     font-size: 50px;

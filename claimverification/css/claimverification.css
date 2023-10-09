@@ -1,0 +1,68 @@
+.claimverification_box{
+     background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+    padding: 15px 15px 25px 15px;
+    border-radius: 5px;
+    margin: 20px 0px 30px 0px;
+}
+.claimverification_box .dropdown-menu .dropdown-item{
+	font-size: 14px;
+}
+.claimverificbtn .dropdown-toggle{
+	   appearance: none;
+    -webkit-appearance: none;
+}
+.claimverificbtn .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    content: "";
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.claimverificbtn .drp-icon::after{
+	 content: "\f142";
+	   font-family: "FontAwesome";
+	   position: static;
+	   font-size: 16px;
+
+}
+.claimverification_box h4{
+	font-size: 16px;
+	font-weight: 600;
+	color: #089bab;
+}
+
+.claimverification_box h4 span{
+	background-color: #089bab;
+	color: #ffffff;
+	font-size: 12px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.claimverification_box p{
+	font-size: 14px;
+}
+.claimverification_box p span{
+	font-weight: 600;
+}
+.verification_status{
+	display: flex;
+	 justify-content: flex-end;
+}
+
+.remark textarea{
+	height: 100px;
+}
+
+.remark label{
+	font-weight: 600;
+	font-size: 14px;
+}
+
+
