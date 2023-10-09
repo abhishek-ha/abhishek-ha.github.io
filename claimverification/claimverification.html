@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/claimverification.css">
   </head>
   <body>
@@ -233,6 +232,7 @@
             </div>
 </div>
 
+
 <div class="d-flex justify-content-between mb-3">
   <div>
    <h4> Confirmation</h4> 
@@ -243,6 +243,7 @@
   </div>
   
 </div>
+
 
 
 <div class="mb-5 row filter_claimverification">
@@ -310,22 +311,14 @@
 
 
 
+
+
  <div class="claimverification_box">
 <div class="row">
+
   <div class="verification_status">
 <div>
-  <h4> Status: <span> Verification Pending </span>
-   <div class="btn-group claimverificbtn">
-<!-- <div class="ms-3" id="claimverificbtnstatus"> <i class="fa-solid fa-ellipsis-vertical fa-2x" ></i> </div>
-<ul class="claimverificstatus" style="display:none;">
-    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Verified </a> </li>
-     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Rejected </a> </li>
-      <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Hold </a> </li>
-       <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > View Document </a> </li>
- 
-  </ul>
- -->
-
+  <h4> Status: <span> Verification Pending </span> <div class="btn-group claimverificbtn">
   <button type="button" class="btn drp-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     </button>
   <ul class="dropdown-menu">
@@ -334,8 +327,8 @@
       <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > Hold </a> </li>
        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" > View Document </a> </li>
  
-  </ul> 
-</h4>
+  </ul>
+</div></h4>
   </div>
 </div>
 <div class="col-lg-4 col-xl-4 col-12">
@@ -410,12 +403,44 @@
     <script src="js/bootstrap-tagsinput.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/custom.js"></script>
-<!-- <script>
-  $("#claimverificbtnstatus").click(function(e){
-    $(".claimverificstatus").toggle();
 
-  });
-</script> -->
+
+<script >
+  
+
+//dropdown on  click //
+$(".dropdown_click .selected").on('click', function() {
+    $(".dropdown_click .drop-content ul").slideToggle();
+});
+
+$(".dropdown_click .drop-content ul li span").on('click', function() {
+    // var bindText = $(this).html();
+    $(".dropdown_click .selected  span").html($(this).html());
+    $(".dropdown_click .drop-content ul").slideUp();
+}); 
+
+//dropdown on  hover //
+$(".dropdown_hover ").on({
+    mouseenter: function () {
+       $(".drop-content .drop-hover").slideDown();
+    },
+    mouseleave: function () {
+       $(".drop-content .drop-hover").slideUp();
+    }
+});
+
+$(".dropdown_hover .drop-content .drop-hover li span").on('click', function() {
+    $(".dropdown_hover .selected  span").html($(this).html());
+    $(".dropdown_hover .drop-content .drop-hover").slideUp();
+}); 
+
+$(document).bind('click', function(e) {
+    var $clickhide = $(e.target);
+    if (! $clickhide.parents().hasClass("dropdown_c"))
+        $(".dropdown_c .drop-content ul").slideUp();
+});
+  
+</script>
 
 
 
