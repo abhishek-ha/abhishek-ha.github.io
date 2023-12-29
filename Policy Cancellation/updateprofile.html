@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Update Profile </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/policycanel.css">
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+              <a href="index.html">
+                <img src="images/healthassure-logo.png" class="img-fluid"/>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                
+                <button id="onboardbtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnboardId" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-arrows-spin me-3"></i><span>Customer Experience</span>
+                </button>
+                
+                <ul id="collapseOnboardId" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      New onboarding
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      First appointment booking
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+  <i class="fa-solid fa-hand-point-right me-3"></i> Non-usage </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewalId" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewals & Upsell</span>
+                </button>
+                
+                <ul id="collapseRenewalId" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Renewal pending Customers</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Customer Feedback</span>
+                </button>
+                
+                <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Recently booked customers</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+     <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId3" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+                
+                <ul id="collapseMenuId3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+       <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-file-invoice me-3"></i>
+                  <span> Plan Details </span>
+                </button>
+                
+ <ul id="plandetail" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="topup.html">
+                       <i class="fa-solid fa-indian-rupee-sign me-3"></i>
+                      <span> Top Up </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="coupan.html">
+                       <i class="fa-solid fa-receipt me-3"></i>
+                      <span> Coupan </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="additional-plan-detail.html">
+                      <i class="fa-solid fa-user-plus me-3"></i>
+                      <span> Additional Plan Detail </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+
+
+       <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#policycancel" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-file-invoice me-3"></i>
+                  <span> Policy Cancellation </span>
+                </button>
+                
+ <ul id="policycancel" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="topup.html">
+                       <i class="fa-solid fa-indian-rupee-sign me-3"></i>
+                      <span> Top Up </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="coupan.html">
+                       <i class="fa-solid fa-receipt me-3"></i>
+                      <span> Coupan </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="additional-plan-detail.html">
+                      <i class="fa-solid fa-user-plus me-3"></i>
+                      <span> Additional Plan Detail </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+           <!--  <h4 class="header-content">Operation-Customer Module</h4> -->
+            <div class="mobile-view">
+              <i class="fa-solid fa-bars toggleNavMenu" onclick="toggleMenu()"></i>
+              
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/profileLogo.jpg" alt="">
+              </div>
+            
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row mb-5">
+<div class="col-lg-12 col-md-12">
+    <h2 class="header-content pt-3 pb-5"><b> Policy Cancellation  </b></h2> 
+      </div>
+<div class="col-lg-12 col-md-12 col-12">
+<div class="plancard">
+  <div class="d-flex justify-content-between">
+    <div>
+      <h3> Insta Tele </h3>
+    </div>
+    <div>
+      <h3>
+          <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Cancel Policy </a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+       </h3>
+    </div>
+    
+  </div>
+  <h4> Policy No: HDBO23113547902 </h4>
+  <div class="d-flex justify-content-between">
+    <div>
+     <p class="pt-2"> Sameer Ale </p> 
+    </div>
+    <div>
+      <img src="images/favicon.png">
+    </div>
+    
+  </div>
+<div class="validity">
+<p> Validity from 30/11/2023 to 29/11/2024 </p>
+</div>
+  </div>
+</div>
+</div>
+<div class="row">
+<form class="plancncl_form">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Name </label>
+    <div class="col-sm-4">
+  <input type="email" class="form-control"placeholder="Sameer Ale" readonly>
+    </div>
+    <label for="inputPassword3" class="col-sm-2 col-form-label"> Services </label>
+    <div class="col-sm-4">
+    <select class="form-select">
+      <option> Service Type </option>
+         <option> Service Type </option>
+      
+    </select>
+    </div>
+</div>
+
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Requested Amount </label>
+    <div class="col-sm-4">
+     <div class="input-group">
+      <div class="input-group-text"> <i class="fa-solid fa-indian-rupee-sign"></i> </div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="10540">
+    </div>
+  </div>
+    
+    <label for="inputPassword3" class="col-sm-2 col-form-label"> Service Request Reason </label>
+    <div class="col-sm-4">
+    <select class="form-select">
+      <option> Select Reason </option>
+         <option> Service Not Available  </option>
+      
+    </select>
+    </div>
+</div>
+
+ <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Unavailable Service Name </label>
+    <div class="col-sm-10">
+       <textarea class="form-control" placeholder="Mention the name of facility/sku/service requirment that unavailable in HA" rows="3"></textarea>
+    </div>
+</div>
+
+
+ <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Cancellation Case No </label>
+    <div class="col-sm-4">
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="yes" value="option1">
+  <label class="form-check-label" for="inlineRadio1"> Yes </label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no" value="option2">
+  <label class="form-check-label" for="inlineRadio2"> No </label>
+</div>
+  </div>
+
+  
+<label for="inputPassword3" class="col-sm-2 col-form-label"> Service Request Reason </label>
+    <div class="col-sm-4">
+   <input type="text" class="form-control" placeholder="Mention here" name="">
+    </div>
+</div>
+
+ <div class="row mb-3 cancellationcaseyesbox" style="display: none;">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Enter Cancellation case No </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="" placeholder="Enter Cancellation case No">
+  </div>
+</div>
+
+
+ <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"> Service Avail Date </label>
+    <div class="col-sm-4">
+  <input type="date" class="form-control" name="">
+  </div>
+    
+    <label for="inputPassword3" class="col-sm-2 col-form-label"> Upload Document </label>
+    <div class="col-sm-4">
+  <input type="file" class="form-control" name="">
+    </div>
+</div>
+
+
+<div class="text-center mt-5">
+<button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#successpopup"> Submit </button>
+</div>
+
+
+</form>
+  
+</div>
+</div>
+           </div>
+        </div>
+      </section>
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal success_popup fade" id="successpopup" tabindex="-1" aria-labelledby="successpopupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successpopupLabel"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/success-img.png">
+
+      <h3> Success </h3>
+      <h4> Your Refrence No is:<span> HAOPD23294 </span> </h4>
+      
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  
+$(document).ready(function(){
+$("#yes").click(function(){
+    $(".cancellationcaseyesbox").show();  
+  });
+$("#no").click(function(){
+   $(".cancellationcaseyesbox").hide();
+  });
+
+ });
+
+</script>
+
+
+
+
+  </body>
+</html>

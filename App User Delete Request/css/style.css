@@ -1,0 +1,155 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     box-sizing: border-box;
+ }
+body {
+    font-family: 'Rubik', sans-serif;
+            overflow-x:hidden;
+            font-size: 14px;
+             background-color: #f2f1f6;
+        }
+html{
+     overflow-x:hidden!important;
+}
+
+.head_sec{
+    height: 100px;
+}
+
+.logo{
+    width: 150px;
+    padding: 20px 0px 40px 0px;
+}
+
+.usrrequestbg{
+    background-color: #f2f1f6;
+    margin-top: 200px;
+}
+
+.formbox{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    margin: 100px 10px;
+
+}
+
+.formbox label{
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 2px;
+}
+
+.submit_btn{
+    background-color: #5252a3;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 40px;
+    margin-top: 30px;
+}
+
+.feedback_60 h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.feedback_60 p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.contact_box{
+ background-color: #457e70;
+ color: #ffffff;
+ padding: 60px 50px 150px 50px;
+ min-height: 100%;
+}
+
+.contact_box h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact_box ul{
+    padding-left: 0px;
+}
+.contact_box ul li{
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+.contact_box ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.successmodal img{
+    width: 100px;
+    text-align: center;
+}
+
+.successmodal h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.successmodal h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+ .feedback_40{
+    width: 100%;
+}
+
+.feedback_60{
+    width: 100%;
+}
+
+}
+
+
+@media only screen and (min-width: 301px) {
+ .feedback_40{
+    width: 100%;
+}
+
+.feedback_60{
+    width: 100%;
+}
+}
+
+
+@media only screen and (min-width: 701px) {
+ .feedback_40{
+    width: 40%;
+}
+
+.feedback_60{
+    width: 60%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+ .feedback_40{
+    width: 40%;
+}
+
+.feedback_60{
+    width: 60%;
+}
+
+}

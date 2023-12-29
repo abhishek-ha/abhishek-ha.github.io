@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Policy Cancellation </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/policycanel.css">
+  </head>
+  <body>
+    <!-- profile sidebar -->
+    <div class="sidebar-open sidebar-responsive" id="responsiveSidebar">
+      <section class="profile-sidebar open" id="profile-sidebar">
+        <div class="profile-sidebar__inner">
+          <div class="profile-sidebar__top">
+            <div class="text-center">
+              <a href="index.html">
+                <img src="images/healthassure-logo.png" class="img-fluid"/>
+              </a>
+            </div>
+          </div>
+
+          <div class="profile-sidebar__links">
+            <div class="accordion" id="accordionSidebarMenu">
+              <div class="accordion-item">
+                
+                <button id="onboardbtn" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnboardId" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fa-solid fa-arrows-spin me-3"></i><span>Customer Experience</span>
+                </button>
+                
+                <ul id="collapseOnboardId" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      New onboarding
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      First appointment booking
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+  <i class="fa-solid fa-hand-point-right me-3"></i> Non-usage </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRenewalId" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Renewals & Upsell</span>
+                </button>
+                
+                <ul id="collapseRenewalId" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Renewal pending Customers</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+              
+              <div class="accordion-item">
+                
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId4" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Customer Feedback</span>
+                </button>
+                
+                <ul id="collapseMenuId4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Recently booked customers</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+     <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenuId3" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fa-solid fa-arrows-spin me-3"></i>
+                  <span>Administrator</span>
+                </button>
+                
+                <ul id="collapseMenuId3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      <span>Add User</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-solid fa-hand-point-right me-3"></i>
+                      Master Data management
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+
+       <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plandetail" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-file-invoice me-3"></i>
+                  <span> Plan Details </span>
+                </button>
+                
+ <ul id="plandetail" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="topup.html">
+                       <i class="fa-solid fa-indian-rupee-sign me-3"></i>
+                      <span> Top Up </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="coupan.html">
+                       <i class="fa-solid fa-receipt me-3"></i>
+                      <span> Coupan </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="additional-plan-detail.html">
+                      <i class="fa-solid fa-user-plus me-3"></i>
+                      <span> Additional Plan Detail </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+
+
+       <div class="accordion-item">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#policycancel" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa-solid fa-file-invoice me-3"></i>
+                  <span> Policy Cancellation </span>
+                </button>
+                
+ <ul id="policycancel" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSidebarMenu">
+                  <li>
+                    <a href="topup.html">
+                       <i class="fa-solid fa-indian-rupee-sign me-3"></i>
+                      <span> Top Up </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="coupan.html">
+                       <i class="fa-solid fa-receipt me-3"></i>
+                      <span> Coupan </span>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="additional-plan-detail.html">
+                      <i class="fa-solid fa-user-plus me-3"></i>
+                      <span> Additional Plan Detail </span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section -->
+      <section class="right-section profile-right-section">
+        <div class="profile-container">
+          <div class="profile-container__header">
+           <!--  <h4 class="header-content">Operation-Customer Module</h4> -->
+            <div class="mobile-view">
+              <i class="fa-solid fa-bars toggleNavMenu" onclick="toggleMenu()"></i>
+              
+              <img src="images/healthassure-logo.png" class="img-fluid" />
+            </div>
+            <div class="dropdown profile-dropdown">
+              <div class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/profileLogo.jpg" alt="">
+              </div>
+            
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item mt-2" href="#">
+                    <i class="fa-solid fa-user me-3"></i>
+                    <span>Profile Setting</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="fa-solid fa-right-from-bracket me-3"></i>
+                    Logout
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+<div class="col-lg-12 col-md-12">
+    <h2 class="header-content pt-3 pb-5"><b> Policy Cancellation  </b></h2> 
+    </div>
+</div>
+<div class="row">
+<form class="plancncl_form">
+
+<div class="mb-5 row">
+  <div class="col-sm-3 mb-3">
+      <select class="form-select">
+  <option> Select Client Type </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+   <div class="col-sm-3 mb-3">
+      <select class="form-select">
+  <option> Select Client </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+
+   <div class="col-sm-3 mb-3">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+<div class="col-sm-3 mb-3">
+    <input type="text" name="" class="form-control" placeholder="Enter Phone no">
+   </div>
+   <div class="col-sm-3 mb-3">
+    <input type="text" name="" class="form-control" placeholder="Enter Unique Id">
+   </div>
+   <div class="col-sm-3 mb-3">
+    <input type="text" name="" class="form-control" placeholder="Employee no">
+   </div>
+   <div class="col-sm-3 mb-3">
+    <input type="text" name="" class="form-control" placeholder="Enter Member Name">
+   </div>
+   <div class="col-sm-3 mb-3">
+    <input type="text" name="" class="form-control" placeholder="Enter Email">
+   </div>
+
+
+<div class="col-lg-12 col-md-12 col-12 mt-5 text-center">
+  <button class="btn btn-primary me-1" type="submit">Search </button> <button class="btn btn-danger me-1" type="reset"> Clear </button>
+  </div>
+ </div>
+</form>
+</div>
+
+
+<div class="row pt-5">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-12 bg-white shadow-sm py-5 px-5">
+<div class="table-responsive policydtl">
+<table class="table table-bordered table-striped table-hover">
+  <thead>
+    <tr>
+      <th class="thwidth-125"> Email </th>
+      <th class="thwidth-125"> Policy No </th>
+      <th class="thwidth-125"> Employee No </th>
+      <th class="thwidth-125"> Status </th>
+      <th class="thwidth-125"> Client Hr Detail </th>
+      <th class="thwidth-125"> Plan Start Date  </th>
+      <th class="thwidth-125"> Expiry Date </th>
+       <th > Action </th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+   <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+
+     <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+
+     <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+     <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+
+     <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+
+     <tr>
+      <td> sameer.ale@healthassure.in</td>
+      <td> HAOPD1231 </td>
+      <td> MAX01290 </td>
+      <td> Active </td>
+      <td> Name: Sameer<br/>
+      Email: sameer.ale@healthassure.in </td>
+      <td> 01-05-2023 </td>
+      <td> 30-05-2024 </td>
+        <td>    <div class="dropdown policy_drop">
+  <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-ellipsis-vertical" ></i>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#"> Update Call Log </a></li>
+    <li><a class="dropdown-item" href="#"> Add Client hr Detail</a></li>
+    <li><a class="dropdown-item" href="#"> User profile </a></li>
+  </ul>
+</div> 
+ </td> 
+   </tr>
+
+
+ 
+ </tbody>
+</table>
+  </div>
+</div>
+  <div class="col-lg-12 ">
+    <nav aria-label="Page navigation ">
+  <ul class="pagination float-end mt-4 mb-5">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+    
+  </div>
+   </div>
+            </div>
+           </div>
+        </div>
+      </section>
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel"><b> Usage Details </b> </h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+  
+  <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label"> Select Plan </label>
+    <div class="col-sm-6">
+      <select class="form-select">
+  <option> Select Plan </option>
+  <option> Fitassure </option>
+  <option> Optimaassure </option>
+    <option> TotalAssure </option>
+    <option> FitAssure Plus </option>
+    <option> FitAssure Platinum Plus </option>
+  </select>
+   </div>
+  </div>
+
+
+ <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Member to be Shown Upfront </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-6 col-form-label"> No of Members to be shown </label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="" placeholder="">
+     </div>
+</div>
+
+
+
+ <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Good Health Declaration </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+
+
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Agent Id to be Shown </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+
+
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"> </span> 
+</label>
+    </div>
+  </div>
+
+
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-6 col-form-label"> Corporate Email Domain Validation </label>
+    <div class="col-sm-6">
+    <input type="text" class="form-control" placeholder="You can enter more than 1 domain">
+    </div>
+  </div>
+
+<div class="mb-3 row">
+  <div class="col-md-6  offset-md-6 py-5">
+<button class="btn btn-primary"> Save </button> <button class="btn btn-danger ms-5"> Cancel </button>
+ </div>
+  </div>
+   
+    </div>
+</div>
+   </div>
+  </div>
+</div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
