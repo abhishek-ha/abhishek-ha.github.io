@@ -31,63 +31,15 @@ html{
      color: #000000;
 }
 
-.qc_table{
-    border: 1px solid #dee2e6;
-}
-.qc_table_head p{
+.qc_table th{
      font-size: 14px;
      font-weight: 600;
-     padding: 8px 8px;
-     margin-bottom: 0px;
+      padding: 5px 8px;
 }
-
-
-.qc_tbl_bdy{
-     border-top: 1px solid #dee2e6;
-     display: flex;
-      align-items: center;
+.qc_table td{
+     font-size: 13px;
+     padding: 5px 8px;
 }
-.qc_tbl_bdy p{
-       font-size: 13px;
-     padding: 8px 8px;
-     margin-bottom: 0px;
-
-}
-
-
-
-.qc_table_body .qc_tbl_bdy:nth-of-type(odd){
-     color: #000;
-     background-color: #f2f2f2;
-}
-
-.qc_table_body .qc_tbl_bdy:nth-child(even) {
-     color: #000000;
-     background-color: #ffffff;
-}
-
-
-
-
-
-
-.w-35{
-     width: 35%;
-}
-.w-50{
-     width: 48%;
-}
-.w-15{
-     width: 17%;
-}
-.w-20{
-     width: 20%;
-}
-
-
-
-
-
 
 .qcstep{
      display: inline;
@@ -159,6 +111,10 @@ html{
      margin: 5px 0px 2px 0px;
 
 }
+
+
+
+
 .btn_reset{
      background-color: transparent;
      color: #fc031c;
@@ -174,14 +130,19 @@ html{
      color: #fc031c;
        border: 1px solid #fc031c;
 }
+
 .check-verified{
      width: 20px;
 }
+
+
+
+
 .btn_action_view{
      color: #104D89;
      font-size: 14px;
      font-weight: 600;
-     padding: 0px;
+     padding: 0px 0px 0px 8px;
 }
 .btn_action_trash{
      color: #ed091c;
@@ -189,12 +150,15 @@ html{
      font-weight: 600;
      padding: 0px 0px 0px 8px;
 }
+
 .btn_action_refresh{
      color: #4285f4;
      font-size: 14px;
      font-weight: 600;
      padding: 0px 0px 0px 8px;
 }
+
+
 .tbl_bdr_left{
      border-left: 1px solid #dee2e6;
 }
@@ -204,11 +168,6 @@ html{
 .gap-20{
      gap: 20px;
 }
-
-.tbl_check{
-     padding: 6px 8px;
-}
-
 .cstm-checkbox{
      border: 1px solid #dee2e6;
      border-radius: 4px;
@@ -227,17 +186,13 @@ html{
 .cstm-checkbox .form-check-input{
      margin-top: 2px;
 }
+
+
 .cstm-checkbox .form-check-input:checked {
     background-color: #104d89;
     border-color: #104d89;
 }
-.fileupload_sec{
-     border-top: 1px solid #dee2e6;
-     padding: 4px 8px;
-}
-.fileupload_sec p{
-     margin-bottom: 0px;
-}
+
 .upload_button{
      background-color: #104D89;
      color: #ffffff;
@@ -267,6 +222,8 @@ html{
      padding: 0px 2px;
 }
 
+
+
 .custom-file-button input[type=file] {
   margin-left: -2px !important;
 }
@@ -287,9 +244,12 @@ html{
      font-size: 14px;
 }
 .qcscroll {
-    height: 240px;
+    height: 220px;
     background: #fff;
     overflow-y: scroll;
+    margin-bottom: 10px;
+    display: table-caption;
+    width: 100%;
 }
 .qcscroll::-webkit-scrollbar {
     width: 8px;
@@ -309,6 +269,9 @@ html{
   display: block;
   height: 0;
 }
+
+
+
 
 .arrow-steps .step {
   font-size: 14px;
