@@ -16,20 +16,7 @@ body{
 html{
      overflow-x:hidden!important;
 }
-.casedetail{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: flex-start;
-     gap: 40px;
-     align-items: center;
-}
-.casedetail p{
-     font-size: 15px;
-     font-weight: 600;
-}
-.casedetail p span{
-     color: #000000;
-}
+
 
 .qc_table{
     border: 1px solid #dee2e6;
@@ -67,10 +54,6 @@ html{
 }
 
 
-
-
-
-
 .w-35{
      width: 35%;
 }
@@ -84,11 +67,6 @@ html{
      width: 20%;
 }
 
-
-
-
-
-
 .qcstep{
      display: inline;
      justify-content: flex-start;
@@ -96,8 +74,6 @@ html{
      align-items: center;
      margin: 10px 0px;
 }
-
-
 .tbl_head{
      background-color: #104D89;
      color: #ffffff;
@@ -132,8 +108,6 @@ html{
      height: 220px;
      padding: 10px;
 }
-
-
 .phto-matchbtn{
      background-color: #34a853;
      color: #ffffff;
@@ -148,16 +122,10 @@ html{
      background-color: #000000;
      color: #ffffff;
 }
-
-
-
-
-
 .remark_form label{
      font-weight: 600;
      font-size: 14px;
      margin: 5px 0px 2px 0px;
-
 }
 .btn_reset{
      background-color: transparent;
@@ -310,22 +278,6 @@ html{
   height: 0;
 }
 
-.arrow-steps .step {
-  font-size: 14px;
-  text-align: center;
-  color: #777;
-  cursor: default;
-  margin: 0 1px 0 0;
-  padding: 10px 0px 6px 0px;
-  width: 15%;
-  float: left;
-  position: relative;
-  background-color: #ddd;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
 .arrow-steps .step a {
   color: #777;
@@ -434,6 +386,40 @@ html{
      color: #ffffff;
 }
 
+.arrow-steps .step {
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+  cursor: default;
+  margin: 0 1px 0 0;
+  padding: 10px 0px 6px 0px;
+  width: 30%;
+  float: left;
+  position: relative;
+  background-color: #ddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 40px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
+
+
+
 }
 
 @media only screen and (min-width: 301px) {
@@ -455,6 +441,39 @@ html{
      background-color: #000000;
      color: #ffffff;
 }
+.arrow-steps .step {
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+  cursor: default;
+  margin: 0 1px 0 0;
+  padding: 10px 0px 6px 0px;
+  width: 30%;
+  float: left;
+  position: relative;
+  background-color: #ddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 0px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
+
 
 }
 
@@ -472,6 +491,26 @@ html{
      background-color: #000000;
      color: #ffffff;
 }
+.arrow-steps .step {
+ width: 30%;
+ 
+}
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 10px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
+
 
 }
 
@@ -484,7 +523,13 @@ html{
     margin:30px 0px 0px 0px;
      float: left;
 }
-
+.arrow-steps .step {
+ width: 30%; 
+}
+.casedetail{
+    gap: 10px;
+    
+}
 }
 
 
@@ -496,6 +541,25 @@ html{
     margin:30px 0px 0px 0px;
        float: right;
 }
+.arrow-steps .step {
+  width: 15%;
+}
+
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 40px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
 
 }
 
@@ -509,6 +573,40 @@ html{
     margin:30px 0px 0px 0px;
      float: right;
 }
+
+.arrow-steps .step {
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+  cursor: default;
+  margin: 0 1px 0 0;
+  padding: 10px 0px 6px 0px;
+  width: 15%;
+  float: left;
+  position: relative;
+  background-color: #ddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 40px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
+
 }
 
 
@@ -521,4 +619,24 @@ html{
     margin:30px 0px 0px 0px;
      float: right;
 }
+
+.arrow-steps .step {
+ width: 15%;
+}
+.casedetail{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 40px;
+     align-items: center;
+}
+.casedetail p{
+     font-size: 15px;
+     font-weight: 600;
+}
+.casedetail p span{
+     color: #000000;
+}
+
+
 }
