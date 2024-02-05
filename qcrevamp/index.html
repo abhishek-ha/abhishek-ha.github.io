@@ -33,7 +33,10 @@
     <p> Proposer Name : Sameer Ale </p>
   </div>
    <div>
-    <p> <a href="#" id="appoinment_hstry"> Appoinment History </a> </p>
+    <p> <a href="#" > Appoinment History </a> </p>
+  </div>
+    <div>
+    <p ><a href="#" id="appoinment_hstry"> Case Log </a> </p>
   </div>
 </div>
 <div class="qcstep">
@@ -317,7 +320,7 @@
 </div>
 
 <div class="d-flex justify-content-between align-items-center gap-10 fileupload_sec">
-<button class="btn  phto-matchbtn"> Complete </button>
+<button class="btn  phto-matchbtn" data-bs-toggle="modal" data-bs-target="#remarkpopup"> Complete </button>
 <p> This step will be skipped if you come back to this page for this case </p>
 </div> 
 </div>
@@ -341,7 +344,7 @@
   
 </div>
 <div  class="col-xl-2 col-lg-2 col-md-2 col-12">
-   <button type="submit" class="btn remark_savebtn"> Save </button> </div>
+   <button type="submit" class="btn remark_savebtn" > Save </button> </div>
 </form>
 </div>
 </div>
@@ -944,7 +947,7 @@
 
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="remarkpopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content ">
       <div class="modal-header">
@@ -954,34 +957,79 @@
 <div class="modal-body">
   <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-12 remark-check py-3">
-       <div class="remark-checkbox">
+<ul type="none" class="mx-auto">
+  <li> 
+<div class="remark-check">
+   <div class="remark-checkbox">
    <input type="checkbox" class="form-check-input " name="">  <label> Mask Id </label>
+  </div> 
+  <div>
+    <input type="text" class="form-control" placeholder="Remark" name="">
   </div>
 
-   <div class="remark-checkbox">
+</div>
+
+
+</li>
+   <li>
+
+<div class="remark-check">
+    <div class="remark-checkbox">
     <input type="checkbox" class="form-check-input " name=""> <label> Certain MER Questions </label>
+  </div> 
+   <div>
+    <input type="text" class="form-control" placeholder="Remark" name="">
   </div>
-   <div class="remark-checkbox">
+</div>
+</li>
+    <li> 
+<div class="remark-check">
+     <div class="remark-checkbox">
     <input type="checkbox" class="form-check-input " name=""> <label> Self Declaration </label>
+  </div> 
+   <div>
+    <input type="text" class="form-control" placeholder="Remark" name="">
   </div>
-   <div class="remark-checkbox">
-    <input type="checkbox" class="form-check-input " name=""> <label> Confirm Test Category </label>
+</div>
+</li>
+<li> 
+  <div class="remark-check">
+<div class="remark-checkbox">
+<input type="checkbox" class="form-check-input " name=""> <label> Confirm Test Category </label>
   </div>
-     <div class="remark-checkbox">
+<div>
+<input type="text" class="form-control" placeholder="Remark" name=""></div>
+  </div> 
+</li>
+<li>
+    <div class="remark-check">
+<div class="remark-checkbox">
    <input type="checkbox" class="form-check-input " name="">  <label> Signature Missed MER(Doctor) </label>
-  </div>
-     <div class="remark-checkbox">
+  </div> 
+  <div>
+<input type="text" class="form-control" placeholder="Remark" name=""></div>
+</div></li>
+<li>
+<div class="remark-check">
+<div class="remark-checkbox">
    <input type="checkbox" class="form-check-input " name="">  <label> TMT Stages </label>
   </div>
-      <div class="remark-checkbox">
+   <div>
+<input type="text" class="form-control" placeholder="Remark" name=""></div>
+  </div> </li>
+<li>
+<div class="remark-check">
+ <div class="remark-checkbox">
    <input type="checkbox" class="form-check-input " name="">  <label> Rescan ID & Photo </label>
   </div>
-      
-    </div>
-    
-  </div>
-  
+    <div>
+<input type="text" class="form-control" placeholder="Remark" name=""></div>
+</div> </li>
+
+</ul>
  </div>
+</div>
+</div>
       <div class="modal-footer">    
 <button type="button" class="btn save_btn"> Submit </button>
       </div>
@@ -993,7 +1041,7 @@
 
 
 
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content ">
       <div class="modal-header">
@@ -1042,7 +1090,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 
 
