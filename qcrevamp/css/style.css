@@ -17,6 +17,14 @@ html{
      overflow-x:hidden!important;
 }
 
+.appoinment_hstry>thead>tr>th{
+     background-color: #104D89;
+     color: #ffffff;
+     font-weight: 600;
+     padding: 8px 16px;
+}
+
+
 
 .qc_table{
     border: 1px solid #dee2e6;
@@ -27,8 +35,6 @@ html{
      padding: 8px 8px;
      margin-bottom: 0px;
 }
-
-
 .qc_tbl_bdy{
      border-top: 1px solid #dee2e6;
      display: flex;
@@ -38,10 +44,7 @@ html{
        font-size: 13px;
      padding: 8px 8px;
      margin-bottom: 0px;
-
 }
-
-
 
 .qc_table_body .qc_tbl_bdy:nth-of-type(odd){
      color: #000;
@@ -53,7 +56,10 @@ html{
      background-color: #ffffff;
 }
 
-
+.qc_tbl_active{
+     background-color: #4285f4!important;
+     color: #ffffff!important;
+}
 .w-35{
      width: 35%;
 }
@@ -145,6 +151,43 @@ html{
 .check-verified{
      width: 20px;
 }
+
+ 
+
+
+
+
+
+
+
+
+.qc_tbl_active .btn_action_view{
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 0px;
+}
+.qc_tbl_active .btn_action_trash{
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 0px 0px 0px 8px;
+}
+.qc_tbl_active .btn_action_refresh{
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 0px 0px 0px 8px;
+}
+
+
+
+
+
+
+
+
+
 .btn_action_view{
      color: #104D89;
      font-size: 14px;
@@ -176,6 +219,42 @@ html{
 .tbl_check{
      padding: 6px 8px;
 }
+
+.remark-check{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     gap: 15px;
+     align-items: center;
+}
+
+
+.remark-checkbox{
+     border: 1px solid #dee2e6;
+     border-radius: 4px;
+     padding: 4px 10px;
+}
+.remark-checkbox label{
+     font-size: 13px;
+     font-weight: 600;
+     padding-top: 0px;
+     vertical-align: middle;
+}
+.remark-checkbox input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+.remark-checkbox .form-check-input{
+     margin-top: 2px;
+}
+.remark-checkbox .form-check-input:checked {
+    background-color: #104d89;
+    border-color: #104d89;
+}
+
+
+
+
 
 .cstm-checkbox{
      border: 1px solid #dee2e6;
@@ -386,6 +465,26 @@ html{
      color: #ffffff;
 }
 
+
+.save_btn{
+     background-color: #104D89;
+     color: #ffffff;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 20px;
+     border-radius: 2px;
+     padding: 6px 25px;
+     margin:30px 0px 0px 0px;
+     float: right;
+}
+.save_btn:hover{
+     background-color: #000000;
+     color: #ffffff;
+}
+
+
+
+
 .arrow-steps .step {
   font-size: 14px;
   text-align: center;
@@ -416,10 +515,6 @@ html{
 .casedetail p span{
      color: #000000;
 }
-
-
-
-
 }
 
 @media only screen and (min-width: 301px) {
@@ -441,6 +536,27 @@ html{
      background-color: #000000;
      color: #ffffff;
 }
+
+
+
+.save_btn{
+     background-color: #104D89;
+     color: #ffffff;
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 20px;
+     border-radius: 2px;
+     padding: 6px 30px;
+     margin: 0px 0px 0px 0px;
+     float: left;
+}
+.save_btn:hover{
+     background-color: #000000;
+     color: #ffffff;
+}
+
+
+
 .arrow-steps .step {
   font-size: 14px;
   text-align: center;

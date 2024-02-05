@@ -33,7 +33,7 @@
     <p> Proposer Name : Sameer Ale </p>
   </div>
    <div>
-    <p> <a href="#"> Appoinment History </a> </p>
+    <p> <a href="#" id="appoinment_hstry"> Appoinment History </a> </p>
   </div>
 </div>
 <div class="qcstep">
@@ -107,9 +107,9 @@
   <p> <button class="btn btn_action_view"> <i class="fa-regular fa-eye"></i> </button>  <button class="btn btn_action_refresh"> <i class="fa-solid fa-rotate"></i> </button> </p>
 </div>
   </div>
-   <div class="qc_tbl_bdy">
+   <div class="qc_tbl_bdy qc_tbl_active">
       <div class="w-35">
-  <p> Sameer Ale </p>
+  <p> Rahul Kumar </p>
 </div>
 <div class="w-50">
   <p >  01/01/2024- 10:30 AM </p>
@@ -318,19 +318,20 @@
 
 <div class="d-flex justify-content-between align-items-center gap-10 fileupload_sec">
 <button class="btn  phto-matchbtn"> Complete </button>
+<p> This step will be skipped if you come back to this page for this case </p>
 </div> 
 </div>
 </div>
 
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-<form class="row remark_form">
+<form class="row remark_form pt-3">
 <div class="col-xl-5 col-lg-5 col-md-5 col-12">
    <label for="inputEmail4" class="form-label"> Status </label>
   <select class="form-select ">
     <option selected disabled> Select Status  </option>
     <option> Active </option>
-      <option> Pending </option>
+      <option> Report on Hold </option>
     
   </select>
 </div>
@@ -343,7 +344,6 @@
    <button type="submit" class="btn remark_savebtn"> Save </button> </div>
 </form>
 </div>
-
 </div>
 </div>
 </section>
@@ -469,9 +469,6 @@
 </div> 
 </div>
 </div>
-
-
-
 <div class="col-xl-6 col-lg-6 col-md-6 col-12 ">
 <div class="qc_table">
  <div class="d-flex justify-content-between align-items-center  tbl_head">
@@ -493,7 +490,7 @@
 </div>
 
 <div class="w-15 tbl_bdr_left me-2">
-  <p> Verify </p>
+  <p> Verify  </p>
 </div>
 </div>
 
@@ -669,13 +666,13 @@
 </div>
   </div>
 </div>
+
 <div class="d-flex justify-content-between align-items-center gap-10 fileupload_sec">
 <button class="btn  phto-matchbtn"> Complete </button>
+<p> This step will be skipped if you come back to this page for this case </p>
 </div> 
 </div>
 </div>
-
-
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
 <form class="row remark_form">
@@ -700,10 +697,6 @@
 </div>
 </div>
 </section>
-
-
-
-
 
 <section class="qcstep3box" style="display: none;"> 
 <div class="container pb-5">
@@ -825,10 +818,6 @@
 </div> 
 </div>
 </div>
-
-
-
-
 <div class="col-xl-6 col-lg-6 col-md-6 col-12">
   <table class="table  table-bordered  qc_table">
     <div class="d-flex justify-content-between align-items-center tbl_head">
@@ -869,17 +858,19 @@
      </td>
 </tr>
    <tr>
-     <td colspan="3">
-       <button class="btn  phto-matchbtn"> Complete </button>
+
+ <td colspan="3">
+    <div class="d-flex justify-content-between align-items-center gap-10 fileupload_sec">
+<button class="btn  phto-matchbtn"> Complete </button>
+<p> This step will be skipped if you come back to this page for this case </p>
+</div> 
+       <!-- <button class="btn  phto-matchbtn"> Complete </button>
+       <p> This step will be skipped if you come back to this page for this case </p> -->
      </td>
    </tr>
 </tbody>
 </table> 
 </div>
-
-
-
-
 
 <div class="col-xl-12 col-lg-12 col-md-12 col-12">
 <form class="row remark_form">
@@ -887,7 +878,7 @@
    <label for="inputEmail4" class="form-label"> Status </label>
   <select class="form-select ">
     <option selected disabled> Select Status  </option>
-    <option> Active </option>
+    <option id="remark"> Report on Hold </option>
       <option> Pending </option>
     </select>
 </div>
@@ -899,11 +890,6 @@
    <button type="submit" class="btn remark_savebtn"> Save </button> </div>
 </form>
 </div>
-
-
-
-
-
 </div>
 </div>
 </section>
@@ -912,10 +898,104 @@
 
 
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+<table class="table table-bordered table-striped appoinment_hstry" style="display: none;">
+  <thead>
+    <tr>
+      <th> Status </th>
+      <th> Remarks </th>
+      <th> Updated By </th>
+      <th> Updated Date & Time </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Report in QC </td>
+      <td> Confirm DC </td>
+      <td> Sameer Ale </td>
+      <td> 01/01/2024- 10:30 AM </td>
+    </tr>
+    <tr>
+      <td> Report in QC </td>
+      <td> Confirm DC </td>
+      <td> Sameer Ale </td>
+      <td> 01/01/2024- 10:30 AM </td>
+    </tr>
+    <tr>
+      <td> Report in QC </td>
+      <td> Confirm DC </td>
+      <td> Sameer Ale </td>
+      <td> 01/01/2024- 10:30 AM </td>
+    </tr>
+
+ 
+  </tbody>
+</table>
+
+        
+      </div> 
+    </div> 
+  </div>
+</section>
+
+
+
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content ">
+      <div class="modal-header">
+<h2 class="modal-title fs-5" id="exampleModalLabel"> <b> Clarifications </b> </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-12 remark-check py-3">
+       <div class="remark-checkbox">
+   <input type="checkbox" class="form-check-input " name="">  <label> Mask Id </label>
+  </div>
+
+   <div class="remark-checkbox">
+    <input type="checkbox" class="form-check-input " name=""> <label> Certain MER Questions </label>
+  </div>
+   <div class="remark-checkbox">
+    <input type="checkbox" class="form-check-input " name=""> <label> Self Declaration </label>
+  </div>
+   <div class="remark-checkbox">
+    <input type="checkbox" class="form-check-input " name=""> <label> Confirm Test Category </label>
+  </div>
+     <div class="remark-checkbox">
+   <input type="checkbox" class="form-check-input " name="">  <label> Signature Missed MER(Doctor) </label>
+  </div>
+     <div class="remark-checkbox">
+   <input type="checkbox" class="form-check-input " name="">  <label> TMT Stages </label>
+  </div>
+      <div class="remark-checkbox">
+   <input type="checkbox" class="form-check-input " name="">  <label> Rescan ID & Photo </label>
+  </div>
+      
+    </div>
+    
+  </div>
+  
+ </div>
+      <div class="modal-footer">    
+<button type="button" class="btn save_btn"> Submit </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content ">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -926,39 +1006,29 @@
      <div>
         <p> Case Test Details (Step 2/3) </p>
      </div>
-     <div>
-       <p> <i class="fa-solid fa-angle-down"></i> </p>
-     </div>
-      
-    </div>
+</div>
   <thead>
      <tr>
       <th> Test Name </th>
       <th> Appoinment Date & Time </th>
        <th> DC Name </th>
-       <th> Verify </th>
+       <th> Verify All <img src="images/unverified.png" class="check-verified"> </th>
       </tr>
   </thead>
   <tbody>
-
-
- <tr>
+   <tr>
       <td> Hba1c </td>
       <td> 01/01/2024- 10:30 AM </td>
         <td> Indigo Diagnostic </td>
  <td> <img src="images/verified.png" class="check-verified"> </td> 
    </tr>
-
-
-<tr>
+   <tr>
       <td> CBC </td>
       <td> 01/01/2024- 10:30 AM </td>
         <td> Kamal Hospital </td>
-  <td> <img src="images/unverified.png" class="check-verified"> </td> 
+<td> <img src="images/unverified.png" class="check-verified"> </td> 
    </tr>
-
-
-  <tr>
+    <tr>
       <td> MER Sign </td>
       <td> 01/01/2024- 10:30 AM </td>
         <td> Shivam Hospital </td>
@@ -972,7 +1042,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -1011,6 +1081,11 @@ $("#qcstep3").click(function(){
 
  });
 
+
+$("#appoinment_hstry").click(function(){
+   $(".appoinment_hstry").show();
+
+      });
 
 
 $(document).ready(function() {
